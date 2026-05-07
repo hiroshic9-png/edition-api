@@ -1,11 +1,11 @@
 {
-  "name": "japan-ops-mcp-server",
+  "name": "edition-mcp-server",
   "version": "0.1.0",
-  "description": "MCP server for Japan Operations Layer — memory infrastructure + regulation check for AI agents operating in Japan",
+  "description": "EDITION Intelligence Platform — MCP server for Japanese business memory + regulation check",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
-    "japan-ops-mcp": "dist/index.js"
+    "edition-mcp": "dist/index.js"
   },
   "scripts": {
     "build": "tsc",

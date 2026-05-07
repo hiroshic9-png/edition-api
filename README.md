@@ -1,4 +1,4 @@
-# Japan Operations Layer
+# EDITION Intelligence Platform
 
 **The missing infrastructure for AI agents operating in Japan.**
 
@@ -69,8 +69,8 @@ curl -X POST /api/v1/regulation/check \
 ### Backend
 
 ```bash
-git clone https://github.com/hiroshic9-png/japan-ops-layer.git
-cd japan-ops-layer
+git clone https://github.com/hiroshic9-png/edition.git
+cd edition
 python3 -m venv venv && source venv/bin/activate
 pip install fastapi 'uvicorn[standard]' pydantic sqlalchemy aiosqlite chromadb python-dotenv google-genai
 
@@ -92,12 +92,12 @@ Add to `claude_desktop_config.json`:
 ```json
 {
   "mcpServers": {
-    "japan-ops": {
+    "edition": {
       "command": "node",
       "args": ["/path/to/mcp-server/dist/index.js"],
       "env": {
-        "JAPAN_OPS_API_URL": "http://localhost:8000",
-        "JAPAN_OPS_API_KEY": "your_api_key"
+        "EDITION_API_URL": "http://localhost:8000",
+        "EDITION_API_KEY": "your_api_key"
       }
     }
   }
@@ -126,7 +126,7 @@ Add to `claude_desktop_config.json`:
 ## Tech Stack
 
 | Layer | Technology |
-|-------|-----------|
+|-------|-----------| 
 | API | FastAPI (Python) |
 | Memory Store | SQLite + ChromaDB (vector search) |
 | MCP | TypeScript SDK v1.29 |

@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 /**
- * Japan Operations Layer — MCP Server
+ * EDITION Intelligence Platform — MCP Server
  *
  * AI agents can use these tools to:
  * - Store and recall memories with Japanese language understanding
  * - Check Japanese business regulations and compliance requirements
  * - Get tourist/visitor information for Japan
  *
- * Connects to the Japan Ops REST API backend.
+ * Connects to the EDITION REST API backend.
  */
 
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
@@ -16,8 +16,8 @@ import { z } from "zod";
 
 // ── Configuration ───────────────────────────────────
 
-const API_BASE = process.env.JAPAN_OPS_API_URL || "http://localhost:8000";
-const API_KEY = process.env.JAPAN_OPS_API_KEY || "jpops_dev_key_for_testing";
+const API_BASE = process.env.EDITION_API_URL || "http://localhost:8000";
+const API_KEY = process.env.EDITION_API_KEY || "edition_dev_key_for_testing";
 
 // ── HTTP helpers ────────────────────────────────────
 
@@ -52,7 +52,7 @@ async function apiPost(path: string, body: any): Promise<any> {
 // ── MCP Server ──────────────────────────────────────
 
 const server = new McpServer({
-  name: "japan-ops",
+  name: "edition",
   version: "0.1.0",
 });
 
@@ -278,7 +278,7 @@ server.tool(
 async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error("Japan Operations Layer MCP server started (stdio)");
+  console.error("EDITION Intelligence Platform MCP server started (stdio)");
 }
 
 main().catch((err) => {

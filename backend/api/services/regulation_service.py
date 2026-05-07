@@ -136,7 +136,7 @@ class RegulationService:
             "overview": reg["overview"],
             "key_rules": reg["key_rules"],
             "confidence": 0.9,
-            "source": "japan-ops knowledge base (tourist regulations)",
+            "source": "EDITION knowledge base (tourist regulations)",
             "disclaimer": "この情報は参考用です。最新の規則は公式情報を確認してください。",
         }
         if "penalties" in reg:
@@ -161,10 +161,14 @@ class RegulationService:
             "costs": reg.get("costs", ""),
             "renewal": reg.get("renewal", ""),
             "confidence": 0.9,
-            "source": "japan-ops knowledge base",
+            "source": "EDITION knowledge base",
             "references": reg.get("references", []),
             "disclaimer": "この情報は参考用です。法的助言ではありません。最新の法令を確認し、専門家にご相談ください。",
         }
+
+        if reg.get("procedures"):
+            result["procedures"] = reg["procedures"]
+            result["procedures_count"] = len(reg["procedures"])
 
         if reg.get("recent_changes"):
             result["recent_changes"] = reg["recent_changes"]
