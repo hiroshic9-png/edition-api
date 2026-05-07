@@ -1,0 +1,32 @@
+{
+  "name": "japan-ops-mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server for Japan Operations Layer — memory infrastructure + regulation check for AI agents operating in Japan",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "japan-ops-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "japan",
+    "memory",
+    "regulation",
+    "agent",
+    "ai",
+    "compliance"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0"
+  }
+}

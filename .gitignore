@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+.env
+*.db
+chroma_data/
+node_modules/
+dist/
+uvicorn_mvp.log
+uvicorn.log
+.DS_Store
+community_post_draft.md
