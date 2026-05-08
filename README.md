@@ -2,7 +2,7 @@
 
 **The missing infrastructure for AI agents operating in Japan.**
 
-Memory API + Regulation Check API + MCP Server — purpose-built for Japanese business context.
+Memory API + Regulation Check API + Procedural Knowledge + MCP Server — purpose-built for Japanese business context.
 
 ---
 
@@ -45,6 +45,8 @@ Pre-built regulatory database covering:
 - EC sites, Real estate, Staffing, Food service, Construction
 - Healthcare, Finance, Transport, Education, Accommodation
 - Tourist categories: Visa, Tax-free, Transit, Medical, Manners
+
+**6 industries include step-by-step procedural guides** (39 total steps) — covering what to do, how, where, required documents, costs, timelines, and common pitfalls.
 
 ```bash
 curl -X POST /api/v1/regulation/check \
