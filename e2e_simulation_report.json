@@ -1,0 +1,253 @@
+[
+  {
+    "step": "0. 対応業種の確認",
+    "method": "GET",
+    "path": "/api/v1/regulation/industries",
+    "body": null,
+    "status": "OK",
+    "response_keys": [
+      "industries",
+      "count"
+    ],
+    "useful_fields": [
+      "industries list"
+    ],
+    "gaps": [
+      "飲食店が一覧に含まれていない"
+    ]
+  },
+  {
+    "step": "1. 飲食店の規制情報取得",
+    "method": "POST",
+    "path": "/api/v1/regulation/check",
+    "body": {
+      "industry": "飲食店",
+      "business_type": "レストラン"
+    },
+    "status": "FAIL",
+    "response_keys": [
+      "detail"
+    ],
+    "useful_fields": [],
+    "gaps": [
+      "飲食店の規制情報が取得できない"
+    ]
+  },
+  {
+    "step": "2. 物件契約の商慣習確認",
+    "method": "POST",
+    "path": "/api/v1/protocol/check",
+    "body": {
+      "query": "不動産 賃貸 契約 交渉"
+    },
+    "status": "OK",
+    "response_keys": [
+      "matched_protocol",
+      "message",
+      "available_protocols",
+      "confidence"
+    ],
+    "useful_fields": [],
+    "gaps": [
+      "不動産契約交渉に関するプロトコルがマッチしない",
+      "物件探し（不動産仲介の利用方法、敷金・礼金・保証金の説明）が欠落"
+    ]
+  },
+  {
+    "step": "3. 東京の地域規制確認",
+    "method": "POST",
+    "path": "/api/v1/regional/check",
+    "body": {
+      "query": "東京 飲食店 条例"
+    },
+    "status": "OK",
+    "response_keys": [
+      "category_id",
+      "name_ja",
+      "name_en",
+      "category",
+      "summary",
+      "notable_examples",
+      "minimum_wage_variation",
+      "agent_tips",
+      "confidence",
+      "source",
+      "disclaimer"
+    ],
+    "useful_fields": [],
+    "gaps": [
+      "東京+飲食店の組み合わせにマッチしない",
+      "東京都の飲食店特有の条例（深夜営業、路上看板等）の詳細がない"
+    ]
+  },
+  {
+    "step": "4. 開業の最適タイミング確認",
+    "method": "POST",
+    "path": "/api/v1/calendar/check",
+    "body": {
+      "query": "開業 タイミング 時期 いつ"
+    },
+    "status": "OK",
+    "response_keys": [
+      "category_id",
+      "name_ja",
+      "name_en",
+      "category",
+      "summary",
+      "monthly_guide",
+      "confidence",
+      "source",
+      "disclaimer"
+    ],
+    "useful_fields": [],
+    "gaps": [
+      "開業タイミングの質問にマッチしない",
+      "飲食店特有の季節性（忘年会シーズンに開業すべきか等）の判断材料がない"
+    ]
+  },
+  {
+    "step": "5. 仕入先との支払慣行確認",
+    "method": "POST",
+    "path": "/api/v1/organization/check",
+    "body": {
+      "query": "支払い 仕入先 請求書"
+    },
+    "status": "OK",
+    "response_keys": [
+      "category_id",
+      "name_ja",
+      "name_en",
+      "category",
+      "summary",
+      "standard_terms",
+      "payment_methods",
+      "agent_tips",
+      "confidence",
+      "source",
+      "disclaimer"
+    ],
+    "useful_fields": [],
+    "gaps": [
+      "支払い慣行にマッチしない",
+      "飲食店の仕入れ（食品卸の見つけ方、現金取引の割合等）の業種特化情報がない"
+    ]
+  },
+  {
+    "step": "6. 名刺交換プロトコル確認",
+    "method": "GET",
+    "path": "/api/v1/protocol/meishi",
+    "body": null,
+    "status": "OK",
+    "response_keys": [
+      "protocol_id",
+      "name_ja",
+      "name_en",
+      "category",
+      "importance",
+      "summary",
+      "protocol",
+      "taboos",
+      "modern_notes",
+      "confidence",
+      "source",
+      "disclaimer"
+    ],
+    "useful_fields": [
+      "protocol steps",
+      "taboos",
+      "modern_notes"
+    ],
+    "gaps": []
+  },
+  {
+    "step": "7a. 飲食店規制（横断テスト）",
+    "method": "POST",
+    "path": "/api/v1/regulation/check",
+    "body": {
+      "industry": "飲食店"
+    },
+    "status": "FAIL",
+    "response_keys": [
+      "detail"
+    ],
+    "useful_fields": [],
+    "gaps": []
+  },
+  {
+    "step": "7b. 大阪地域情報（横断テスト）",
+    "method": "POST",
+    "path": "/api/v1/regional/check",
+    "body": {
+      "query": "大阪 飲食店"
+    },
+    "status": "OK",
+    "response_keys": [
+      "category_id",
+      "name_ja",
+      "name_en",
+      "category",
+      "summary",
+      "regions",
+      "confidence",
+      "source",
+      "disclaimer"
+    ],
+    "useful_fields": [],
+    "gaps": []
+  },
+  {
+    "step": "7c. 開業カレンダー（横断テスト）",
+    "method": "POST",
+    "path": "/api/v1/calendar/check",
+    "body": {
+      "query": "開業"
+    },
+    "status": "OK",
+    "response_keys": [
+      "category_id",
+      "name_ja",
+      "name_en",
+      "category",
+      "summary",
+      "monthly_guide",
+      "confidence",
+      "source",
+      "disclaimer"
+    ],
+    "useful_fields": [],
+    "gaps": []
+  },
+  {
+    "step": "7. ドメイン横断クエリ",
+    "method": "MULTI",
+    "path": "cross-domain",
+    "body": "大阪で飲食店を開業する手順と地域の注意点",
+    "status": "PARTIAL",
+    "response_keys": [],
+    "useful_fields": [],
+    "gaps": [
+      "横断検索API（/search）が存在しない — エージェントが3回APIを叩く必要がある",
+      "3つのレスポンスを統合する責任がエージェント側にある",
+      "大阪の飲食店特有の情報（客引き規制条例等）が自動で紐づかない"
+    ]
+  },
+  {
+    "step": "8. 完全に欠落している機能",
+    "method": "N/A",
+    "path": "N/A",
+    "body": null,
+    "status": "ANALYSIS",
+    "response_keys": [],
+    "useful_fields": [],
+    "gaps": [
+      "法人設立の手続き（会社設立 → 定款認証 → 登記）が規制KBに含まれていない",
+      "ビザ・在留資格（経営管理ビザ）の取得手続きが欠落",
+      "銀行口座開設の手続き・必要書類（外国人は困難）が欠落",
+      "税務署・都道府県への開業届出の詳細が手続きステップに含まれていない（Step 6に概要のみ）",
+      "物件探しのプロセス（不動産仲介、居抜き物件、敷金礼金の概念）が欠落",
+      "従業員の採用・労務管理（雇用契約、就業規則、36協定等）の知識が欠落",
+      "多言語対応なし — APIレスポンスは全て日本語。英語UIなしで外国エージェントが使いにくい",
+      "コスト総額のシミュレーション機能がない（資本金 + 物件 + 設備 + 許認可 = 合計いくら？）"
+    ]
+  }
+]

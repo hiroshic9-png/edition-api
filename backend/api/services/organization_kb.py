@@ -173,9 +173,9 @@ ORGANIZATION_DB = {
 # ── Keyword matching ──────────────────────────────────
 
 ORGANIZATION_KEYWORDS = {
-    "corporate_hierarchy": ["役職", "hierarchy", "部長", "課長", "社長", "取締役", "title", "position", "肩書き"],
-    "keiretsu": ["系列", "keiretsu", "企業グループ", "三菱", "三井", "住友", "トヨタ", "グループ"],
-    "payment_practices": ["支払い", "payment", "振込", "手形", "請求書", "invoice", "支払サイト", "入金"],
-    "contract_customs": ["契約", "contract", "印鑑", "押印", "収入印紙", "基本契約", "覚書", "MOU"],
-    "industry_associations": ["業界団体", "association", "経団連", "商工会議所", "組合", "団体"],
+    "corporate_hierarchy": ["役職", "hierarchy", "部長", "課長", "社長", "取締役", "title", "position", "肩書き", "係長", "主任", "執行役員", "常務", "専務", "本部長", "次長", "manager", "director", "officer", "階層", "組織図"],
+    "keiretsu": ["系列", "keiretsu", "企業グループ", "三菱", "三井", "住友", "トヨタ", "グループ", "group", "下請け", "サプライチェーン", "supply chain", "ピラミッド", "メインバンク"],
+    "payment_practices": ["支払い", "payment", "振込", "手形", "請求書", "invoice", "支払サイト", "入金", "仕入", "仕入先", "supplier", "買掛", "売掛", "月末締め", "翌月末", "現金", "cash", "銀行", "bank", "口座", "account", "でんさい", "インボイス"],
+    "contract_customs": ["契約", "contract", "印鑑", "押印", "収入印紙", "基本契約", "覚書", "MOU", "lease", "賃貸", "不動産", "物件", "敷金", "礼金", "保証金", "テナント", "署名", "sign", "電子契約", "更新", "解約", "自動更新", "交渉", "negotiation"],
+    "industry_associations": ["業界団体", "association", "経団連", "商工会議所", "組合", "団体", "加入", "会員", "ネットワーク", "network", "ロビイング", "lobby", "協会"],
 }
