@@ -8,6 +8,8 @@ from backend.api.services.calendar_service import CalendarService
 from backend.api.services.regional_service import RegionalService
 from backend.api.services.organization_service import OrganizationService
 from backend.api.services.foreign_entry_service import ForeignEntryService
+from backend.api.services.travel_service import search_travel
+from backend.api.services.entertainment_service import search_entertainment
 
 logger = logging.getLogger(__name__)
 
@@ -119,9 +121,35 @@ class SearchService:
         except Exception as e:
             logger.warning(f"Foreign entry search failed: {e}")
 
+        # 7. Travel
+        try:
+            trv = search_travel(query)
+            if trv and trv.get("total_matches", 0) > 0:
+                results["travel"] = {
+                    "matched": True,
+                    "topics": [r["topic"] for r in trv.get("results", [])[:limit]],
+                    "total_matches": trv.get("total_matches", 0),
+                }
+                domain_hits += 1
+        except Exception as e:
+            logger.warning(f"Travel search failed: {e}")
+
+        # 8. Entertainment
+        try:
+            ent = search_entertainment(query)
+            if ent and ent.get("total_matches", 0) > 0:
+                results["entertainment"] = {
+                    "matched": True,
+                    "topics": [r["topic"] for r in ent.get("results", [])[:limit]],
+                    "total_matches": ent.get("total_matches", 0),
+                }
+                domain_hits += 1
+        except Exception as e:
+            logger.warning(f"Entertainment search failed: {e}")
+
         return {
             "query": query,
-            "domains_searched": 6,
+            "domains_searched": 8,
             "domains_matched": domain_hits,
             "results": results,
             "source": "EDITION cross-domain search",
