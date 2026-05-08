@@ -273,6 +273,224 @@ server.tool(
   }
 );
 
+// ── Tool: protocol_check ────────────────────────────
+
+server.tool(
+  "protocol_check",
+  "日本のビジネスプロトコル（根回し、稟議、報連相、名刺交換、席順、贈答）を検索します。",
+  {
+    query: z.string().describe("検索クエリ（例: '名刺交換の作法', '根回し'）"),
+  },
+  async ({ query }) => {
+    const result = await apiPost("/api/v1/protocol/check", { query });
+    if (!result.protocol_id && !result.name_ja) {
+      return { content: [{ type: "text" as const, text: `❌ '${query}' に該当するプロトコルが見つかりませんでした。` }] };
+    }
+    let text = `🤝 ${result.name_ja || result.protocol_id}\n`;
+    text += `📋 ${result.summary || ""}\n`;
+    if (result.how_to) {
+      text += `\n📌 手順:\n`;
+      for (const step of result.how_to) {
+        text += `  ${step.step}. ${step.action}: ${step.detail}\n`;
+      }
+    }
+    if (result.protocol) {
+      text += `\n📌 手順:\n`;
+      for (const step of result.protocol) {
+        text += `  ${step.step}. ${step.action}: ${step.detail}\n`;
+      }
+    }
+    text += `\n📊 確度: ${((result.confidence || 0) * 100).toFixed(0)}%`;
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
+// ── Tool: protocol_list ─────────────────────────────
+
+server.tool(
+  "protocol_list",
+  "日本のビジネスプロトコルの一覧を取得します。",
+  {},
+  async () => {
+    const result = await apiGet("/api/v1/protocol/list");
+    let text = `🤝 プロトコル一覧 (${result.count}件):\n\n`;
+    for (const p of result.protocols) {
+      text += `  • ${p.name_ja} (${p.name_en}) — ${p.importance}\n    ${p.summary}\n\n`;
+    }
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
+// ── Tool: calendar_check ────────────────────────────
+
+server.tool(
+  "calendar_check",
+  "日本のビジネスカレンダー情報を検索します。祝日、決算期、贈答シーズン、行政締切、季節性ビジネスの5カテゴリ。",
+  {
+    query: z.string().describe("検索クエリ（例: '開業のベストタイミング', 'GW', '確定申告の締切'）"),
+  },
+  async ({ query }) => {
+    const result = await apiPost("/api/v1/calendar/check", { query });
+    if (!result.category_id) {
+      return { content: [{ type: "text" as const, text: `❌ '${query}' に該当するカレンダー情報が見つかりませんでした。` }] };
+    }
+    let text = `📅 ${result.name_ja}\n📋 ${result.summary}\n`;
+    text += `\n📊 確度: ${((result.confidence || 0) * 100).toFixed(0)}%`;
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
+// ── Tool: calendar_list ─────────────────────────────
+
+server.tool(
+  "calendar_list",
+  "日本のビジネスカレンダーの全カテゴリ一覧を取得します。",
+  {},
+  async () => {
+    const result = await apiGet("/api/v1/calendar/list");
+    let text = `📅 カレンダーカテゴリ一覧 (${result.count}件):\n\n`;
+    for (const c of result.categories) {
+      text += `  • ${c.name_ja} (${c.name_en})\n    ${c.summary}\n\n`;
+    }
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
+// ── Tool: regional_check ────────────────────────────
+
+server.tool(
+  "regional_check",
+  "日本の地域別ビジネス情報を検索します。主要都市の特性、自治体の助成金・補助金、地域条例、商慣習の違い。",
+  {
+    query: z.string().describe("検索クエリ（例: '大阪の飲食店条例', '東京のスタートアップ助成金'）"),
+  },
+  async ({ query }) => {
+    const result = await apiPost("/api/v1/regional/check", { query });
+    if (!result.category_id) {
+      return { content: [{ type: "text" as const, text: `❌ '${query}' に該当する地域情報が見つかりませんでした。` }] };
+    }
+    let text = `🗺️ ${result.name_ja}\n📋 ${result.summary}\n`;
+    text += `\n📊 確度: ${((result.confidence || 0) * 100).toFixed(0)}%`;
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
+// ── Tool: regional_list ─────────────────────────────
+
+server.tool(
+  "regional_list",
+  "日本の地域別ビジネス情報の全カテゴリ一覧を取得します。",
+  {},
+  async () => {
+    const result = await apiGet("/api/v1/regional/list");
+    let text = `🗺️ 地域情報カテゴリ一覧 (${result.count}件):\n\n`;
+    for (const c of result.categories) {
+      text += `  • ${c.name_ja} (${c.name_en})\n    ${c.summary}\n\n`;
+    }
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
+// ── Tool: organization_check ────────────────────────
+
+server.tool(
+  "organization_check",
+  "日本の組織構造・商慣行を検索します。役職体系、系列、支払慣行、契約慣行、業界団体。",
+  {
+    query: z.string().describe("検索クエリ（例: '支払いサイトの標準', '契約書の印鑑', '部長と課長の違い'）"),
+  },
+  async ({ query }) => {
+    const result = await apiPost("/api/v1/organization/check", { query });
+    if (!result.category_id) {
+      return { content: [{ type: "text" as const, text: `❌ '${query}' に該当する組織情報が見つかりませんでした。` }] };
+    }
+    let text = `🏛️ ${result.name_ja}\n📋 ${result.summary}\n`;
+    text += `\n📊 確度: ${((result.confidence || 0) * 100).toFixed(0)}%`;
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
+// ── Tool: organization_list ─────────────────────────
+
+server.tool(
+  "organization_list",
+  "日本の組織構造・商慣行の全カテゴリ一覧を取得します。",
+  {},
+  async () => {
+    const result = await apiGet("/api/v1/organization/list");
+    let text = `🏛️ 組織情報カテゴリ一覧 (${result.count}件):\n\n`;
+    for (const c of result.categories) {
+      text += `  • ${c.name_ja} (${c.name_en})\n    ${c.summary}\n\n`;
+    }
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
+// ── Tool: foreign_entry_check ───────────────────────
+
+server.tool(
+  "foreign_entry_check",
+  "外国企業・外国人の日本進出に必要な基盤知識を検索します。法人設立、経営管理ビザ、銀行口座開設、物件探し、税務届出の5カテゴリ。",
+  {
+    query: z.string().describe("検索クエリ（例: '法人設立の手順', 'ビザ取得', '銀行口座開設'）"),
+  },
+  async ({ query }) => {
+    const result = await apiPost("/api/v1/foreign-entry/check", { query });
+    if (!result.category_id) {
+      return { content: [{ type: "text" as const, text: `❌ '${query}' に該当する進出情報が見つかりませんでした。` }] };
+    }
+    let text = `🌐 ${result.name_ja}\n📋 ${result.summary}\n`;
+    if (result.procedures) {
+      text += `\n📌 手順 (${result.procedures.length}ステップ):\n`;
+      for (const s of result.procedures) {
+        text += `  ${s.step}. ${s.what}: ${s.detail}\n`;
+      }
+    }
+    text += `\n📊 確度: ${((result.confidence || 0) * 100).toFixed(0)}%`;
+    text += `\n⚠️ ${result.disclaimer || "この情報は一般的なガイダンスです。"}`;
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
+// ── Tool: foreign_entry_list ────────────────────────
+
+server.tool(
+  "foreign_entry_list",
+  "外国企業・外国人の日本進出に関する知識カテゴリの一覧を取得します。",
+  {},
+  async () => {
+    const result = await apiGet("/api/v1/foreign-entry/list");
+    let text = `🌐 日本進出カテゴリ一覧 (${result.count}件):\n\n`;
+    for (const c of result.categories) {
+      text += `  • ${c.name_ja} (${c.name_en})\n    ${c.summary}\n\n`;
+    }
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
+// ── Tool: search ────────────────────────────────────
+
+server.tool(
+  "search",
+  "EDITION全ドメインを横断検索します。1回のリクエストで規制・プロトコル・カレンダー・地域・組織・進出手続きの全6ドメインを同時検索。",
+  {
+    query: z.string().describe("検索クエリ（例: '大阪で飲食店を開業', '外国人のビザ取得と銀行口座'）"),
+  },
+  async ({ query }) => {
+    const result = await apiPost("/api/v1/search", { query });
+    let text = `🔍 横断検索結果: ${result.domains_matched}/${result.domains_searched} ドメインでヒット\n\n`;
+    for (const [domain, data] of Object.entries(result.results) as [string, any][]) {
+      const name = data.name_ja || data.industry || domain;
+      text += `  ✅ ${domain}: ${name} (確度: ${((data.confidence || 0) * 100).toFixed(0)}%)\n`;
+      if (data.summary) text += `     ${data.summary}\n`;
+    }
+    if (result.domains_matched === 0) {
+      text += `  ❌ 該当する情報が見つかりませんでした。\n`;
+    }
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
 // ── Start ───────────────────────────────────────────
 
 async function main() {
