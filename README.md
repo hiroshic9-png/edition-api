@@ -46,7 +46,7 @@ Pre-built regulatory database covering:
 - Healthcare, Finance, Transport, Education, Accommodation
 - Tourist categories: Visa, Tax-free, Transit, Medical, Manners
 
-**6 industries include step-by-step procedural guides** (39 total steps) — covering what to do, how, where, required documents, costs, timelines, and common pitfalls.
+**All 10 industries include step-by-step procedural guides** (65 total steps) — covering what to do, how, where, required documents, costs, timelines, and common pitfalls.
 
 ```bash
 curl -X POST /api/v1/regulation/check \
