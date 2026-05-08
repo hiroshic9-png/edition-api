@@ -12,12 +12,18 @@ regulation_service = RegulationService()
 # ── Request schemas ──────────────────────────────────
 
 class RegulationCheckRequest(BaseModel):
-    action: str = Field(..., description="実行しようとしているアクション (日本語/英語対応)")
+    action: Optional[str] = Field(None, description="実行しようとしているアクション (日本語/英語対応)")
+    query: Optional[str] = Field(None, description="検索クエリ（actionのエイリアス。他ドメインと統一インターフェース）")
     industry: Optional[str] = Field(None, description="業種")
     entity_type: str = Field(
         "foreign_company",
         description="主体の種別 (foreign_company / domestic_company / individual / tourist)",
     )
+
+    @property
+    def effective_action(self) -> str:
+        """action or query — whichever is provided."""
+        return self.action or self.query or ""
 
 
 # ── Endpoints ────────────────────────────────────────
@@ -29,20 +35,26 @@ def check_regulation(body: RegulationCheckRequest):
     - 10業種の構造化された規制データベースから即座に回答
     - 訪日旅行者向けの規制情報にも対応
     - DBにない質問にはLLM RAGでフォールバック回答（確度は低め）
+    - `action` と `query` の両方を受け付けます（他ドメインとの統一インターフェース）
     """
+    effective = body.effective_action
+    if not effective:
+        raise HTTPException(status_code=422, detail="'action' または 'query' のいずれかを指定してください。")
     return regulation_service.check(
-        action=body.action,
+        action=effective,
         industry=body.industry,
         entity_type=body.entity_type,
     )
 
 
 @router.get("/industries")
+@router.get("/list")
 def list_industries():
-    """対応業種一覧（10業種）"""
+    """対応業種一覧（10業種）。/list は他ドメインとの統一パスエイリアス。"""
+    industries = regulation_service.list_industries()
     return {
-        "industries": regulation_service.list_industries(),
-        "count": len(regulation_service.list_industries()),
+        "industries": industries,
+        "count": len(industries),
     }
 
 

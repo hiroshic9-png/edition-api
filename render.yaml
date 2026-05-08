@@ -1,6 +1,7 @@
 services:
   - type: web
     name: edition-api
+    region: oregon
     runtime: python
     plan: free
     buildCommand: pip install -r requirements.txt
@@ -10,9 +11,3 @@ services:
         value: "3.11"
       - key: GEMINI_API_KEY
         sync: false
-      - key: CHROMA_PERSIST_DIR
-        value: /var/data/chroma
-    disk:
-      name: edition-data
-      mountPath: /var/data
-      sizeGB: 1
