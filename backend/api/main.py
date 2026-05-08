@@ -6,7 +6,7 @@ from backend.api.db.database import init_db, get_db, SessionLocal
 from backend.api.models.tenant import Tenant
 from backend.api.models.episode import Episode
 from backend.api.models.fact import Fact
-from backend.api.routes import memory, regulation
+from backend.api.routes import memory, regulation, protocol
 
 app = FastAPI(
     title="EDITION Intelligence Platform",
@@ -28,6 +28,7 @@ app.add_middleware(
 # Routes
 app.include_router(memory.router)
 app.include_router(regulation.router)
+app.include_router(protocol.router)
 
 
 @app.on_event("startup")
@@ -60,6 +61,7 @@ def root():
         "endpoints": {
             "memory": "/api/v1/memory",
             "regulation": "/api/v1/regulation",
+            "protocol": "/api/v1/protocol",
         },
     }
 
