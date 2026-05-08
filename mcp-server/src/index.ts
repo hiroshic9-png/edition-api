@@ -16,7 +16,7 @@ import { z } from "zod";
 
 // ── Configuration ───────────────────────────────────
 
-const API_BASE = process.env.EDITION_API_URL || "https://edition-api.onrender.com";
+const API_BASE = process.env.EDITION_API_URL || "https://api.edition.sh";
 const API_KEY = process.env.EDITION_API_KEY || "edition_dev_key_for_testing";
 
 // ── HTTP helpers ────────────────────────────────────
