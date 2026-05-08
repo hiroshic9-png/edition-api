@@ -1,0 +1,184 @@
+"""Regional knowledge base — Key regional differences for business in Japan.
+
+Rather than covering all 47 prefectures in detail, this focuses on the
+most operationally significant regional differences that impact business.
+"""
+
+REGIONAL_DB = {
+    "major_regions": {
+        "name_ja": "主要地域の特性",
+        "name_en": "Major Regional Characteristics",
+        "category": "overview",
+        "summary": "日本は地域によってビジネスの慣習・規制・市場特性が大きく異なる。東京一極集中だが、地方市場にも独自の機会がある。",
+        "regions": [
+            {
+                "region": "東京",
+                "business_characteristics": "日本のビジネスの中心。大企業本社が集中。スピードと効率が重視される",
+                "market_size": "GDP約100兆円（全国の約20%）",
+                "key_industries": ["金融", "IT", "メディア", "コンサルティング"],
+                "regulatory_notes": "東京都独自の条例が多い（環境規制、雇用促進条例等）",
+                "tips": "商談はテンポよく進む。決定も比較的早い。ただし競争が激しい",
+            },
+            {
+                "region": "大阪・関西",
+                "business_characteristics": "コスト意識が高い。合理的な提案が好まれる。直接的なコミュニケーションスタイル",
+                "market_size": "GDP約40兆円",
+                "key_industries": ["製造業", "商社", "医薬品", "食品"],
+                "regulatory_notes": "大阪府・市の統合による規制変更に注意。2025年万博関連の特区制度",
+                "tips": "「で、いくらなん？」が典型。価格交渉が東京より激しい。ユーモアも大切",
+            },
+            {
+                "region": "名古屋・中部",
+                "business_characteristics": "堅実で保守的。信頼関係の構築に時間をかける。一度取引が始まると長期継続",
+                "market_size": "GDP約40兆円",
+                "key_industries": ["自動車", "航空宇宙", "セラミックス", "工作機械"],
+                "regulatory_notes": "トヨタグループの影響が非常に大きい。系列取引が根強い",
+                "tips": "「損をしない」提案が好まれる。派手な提案より堅実さが評価される",
+            },
+            {
+                "region": "福岡・九州",
+                "business_characteristics": "アジアへのゲートウェイ。スタートアップエコシステムが成長中",
+                "market_size": "GDP約50兆円（九州全体）",
+                "key_industries": ["半導体（TSMC進出）", "自動車", "農業", "観光"],
+                "regulatory_notes": "福岡市のグローバル創業特区（スタートアップビザ等）",
+                "tips": "人間関係を重視。飲み会での交流が商談に大きく影響する文化",
+            },
+            {
+                "region": "北海道",
+                "business_characteristics": "広大な土地を活かした産業。観光・農業が中心",
+                "market_size": "GDP約20兆円",
+                "key_industries": ["農業", "観光", "食品加工", "データセンター"],
+                "regulatory_notes": "寒冷地特有の建築基準。農地法の規制が厳格",
+                "tips": "札幌に経済機能が集中。地方部はアクセスに時間がかかることを考慮",
+            },
+        ],
+    },
+
+    "prefectural_incentives": {
+        "name_ja": "自治体の助成金・優遇制度",
+        "name_en": "Prefectural Incentives",
+        "category": "incentive",
+        "summary": "多くの自治体が企業誘致のための助成金・税制優遇・補助金を用意している。",
+        "common_incentives": [
+            {
+                "type": "企業立地促進補助金",
+                "description": "工場・オフィスの新設・増設に対する補助金",
+                "typical_amount": "設備投資額の5-20%（上限数億円）",
+                "conditions": "常勤雇用者数、投資額の最低基準あり",
+            },
+            {
+                "type": "雇用促進助成金",
+                "description": "地域での新規雇用に対する助成",
+                "typical_amount": "1人あたり50-100万円",
+                "conditions": "正規雇用であること。地元住民の雇用が優遇",
+            },
+            {
+                "type": "固定資産税の減免",
+                "description": "新規設備に対する固定資産税の減額・免除",
+                "typical_period": "3-5年間",
+                "conditions": "自治体の指定区域内での設備投資",
+            },
+            {
+                "type": "スタートアップ支援",
+                "description": "創業支援の補助金・インキュベーション施設の提供",
+                "typical_amount": "50-300万円",
+                "conditions": "自治体による。外国人起業家向けのスタートアップビザも一部自治体で利用可能",
+            },
+        ],
+        "startup_visa_cities": [
+            "福岡市", "東京都", "大阪府", "愛知県", "広島県", "神戸市", "仙台市", "北九州市",
+        ],
+        "agent_tips": [
+            "助成金の公募期間は限定的。定期的に自治体のWebサイトを確認する必要がある",
+            "中小企業庁の「ミラサポplus」で全国の補助金・助成金を横断検索できる",
+            "申請書類は日本語が必須。行政書士や中小企業診断士に依頼するケースが多い",
+        ],
+    },
+
+    "regional_regulations": {
+        "name_ja": "地域特有の規制・条例",
+        "name_en": "Regional Regulations",
+        "category": "regulation",
+        "summary": "国の法律に加え、都道府県・市区町村独自の条例が事業に影響する。",
+        "notable_examples": [
+            {
+                "region": "東京都",
+                "regulation": "環境確保条例",
+                "impact": "大規模事業所のCO2排出削減義務。排出量取引制度あり",
+            },
+            {
+                "region": "京都市",
+                "regulation": "景観条例",
+                "impact": "看板の色・大きさ・高さに厳格な制限。マクドナルドの看板が茶色になるほど",
+            },
+            {
+                "region": "大阪府",
+                "regulation": "客引き行為等の規制に関する条例",
+                "impact": "繁華街での客引き行為に罰則。飲食店の営業活動に影響",
+            },
+            {
+                "region": "沖縄県",
+                "regulation": "文化観光スポーツ部の各種規制",
+                "impact": "米軍基地関連の土地利用制限。独自の振興計画による税制優遇",
+            },
+            {
+                "region": "北海道ニセコ町",
+                "regulation": "まちづくり条例（景観・開発規制）",
+                "impact": "リゾート開発に対する厳格な景観・環境規制",
+            },
+        ],
+        "minimum_wage_variation": {
+            "explanation": "最低賃金は都道府県ごとに異なる（2024年度）",
+            "highest": "東京都: 1,163円",
+            "lowest": "岩手県等: 943円",
+            "gap": "最大220円の差がある",
+        },
+        "agent_tips": [
+            "事業所を設置する前に、必ず当該自治体の独自条例を確認する",
+            "看板・広告の規制は自治体によって大きく異なる（特に京都、鎌倉等の観光地）",
+            "飲食店の深夜営業規制は自治体の条例で異なる",
+        ],
+    },
+
+    "regional_business_culture": {
+        "name_ja": "地域のビジネス文化",
+        "name_en": "Regional Business Culture",
+        "category": "culture",
+        "summary": "日本のビジネス文化は地域によって微妙に異なる。東京の常識が地方では通用しないことがある。",
+        "differences": [
+            {
+                "aspect": "商談のスピード",
+                "tokyo": "効率重視。初回面談で核心に入ることも",
+                "osaka": "合理性重視。結論を急ぐ。「で、結局どうなん？」",
+                "regional": "関係構築に時間をかける。初回は挨拶のみの場合も",
+            },
+            {
+                "aspect": "接待・飲み会",
+                "tokyo": "適度。二次会は減少傾向",
+                "osaka": "盛大。食事の質にこだわる。「ケチ」は最大の侮辱",
+                "regional": "重要。飲み会の参加が信頼構築に必須な地域も多い",
+            },
+            {
+                "aspect": "価格交渉",
+                "tokyo": "RFP・相見積もりで形式的に行われることが多い",
+                "osaka": "激しい。値引き交渉が文化。「もうちょい安ならへんの？」",
+                "regional": "穏やか。既存取引先を大切にする傾向",
+            },
+            {
+                "aspect": "意思決定",
+                "tokyo": "比較的早い。部長決裁で進むことが多い",
+                "osaka": "トップダウンが多い。オーナー企業が多く社長決裁が早い",
+                "regional": "時間がかかる。地域の有力者・地元銀行の意見が影響することも",
+            },
+        ],
+    },
+}
+
+# ── Keyword matching ──────────────────────────────────
+
+REGIONAL_KEYWORDS = {
+    "major_regions": ["地域", "region", "東京", "大阪", "名古屋", "福岡", "北海道", "関西", "中部", "九州"],
+    "prefectural_incentives": ["助成金", "補助金", "incentive", "subsidy", "優遇", "スタートアップビザ", "企業誘致"],
+    "regional_regulations": ["条例", "地域規制", "最低賃金", "景観", "看板", "regulation", "ordinance"],
+    "regional_business_culture": ["地域文化", "商慣習", "地方", "文化の違い", "culture", "regional"],
+}

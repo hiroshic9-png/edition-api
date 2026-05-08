@@ -6,7 +6,7 @@ from backend.api.db.database import init_db, get_db, SessionLocal
 from backend.api.models.tenant import Tenant
 from backend.api.models.episode import Episode
 from backend.api.models.fact import Fact
-from backend.api.routes import memory, regulation, protocol
+from backend.api.routes import memory, regulation, protocol, calendar, regional, organization
 
 app = FastAPI(
     title="EDITION Intelligence Platform",
@@ -29,6 +29,9 @@ app.add_middleware(
 app.include_router(memory.router)
 app.include_router(regulation.router)
 app.include_router(protocol.router)
+app.include_router(calendar.router)
+app.include_router(regional.router)
+app.include_router(organization.router)
 
 
 @app.on_event("startup")
@@ -62,6 +65,9 @@ def root():
             "memory": "/api/v1/memory",
             "regulation": "/api/v1/regulation",
             "protocol": "/api/v1/protocol",
+            "calendar": "/api/v1/calendar",
+            "regional": "/api/v1/regional",
+            "organization": "/api/v1/organization",
         },
     }
 
