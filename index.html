@@ -417,7 +417,7 @@
 
     <div class="stats">
       <div class="stat">
-        <div class="stat-number">30</div>
+        <div class="stat-number">36</div>
         <div class="stat-label">API Endpoints</div>
       </div>
       <div class="stat">
@@ -425,7 +425,7 @@
         <div class="stat-label">MCP Tools</div>
       </div>
       <div class="stat">
-        <div class="stat-number">8</div>
+        <div class="stat-number">10</div>
         <div class="stat-label">Knowledge Domains</div>
       </div>
       <div class="stat">
@@ -468,6 +468,16 @@
           <p>Company incorporation, management visa, bank accounts, property search, and tax registration for foreign businesses.</p>
         </div>
         <div class="domain-card">
+          <h3>✈️ Travel</h3>
+          <div class="domain-sub">/api/v1/travel</div>
+          <p>Transportation (shinkansen, IC cards), accommodation (ryokan etiquette), dining manners, and practical visitor intelligence.</p>
+        </div>
+        <div class="domain-card">
+          <h3>🎭 Entertainment</h3>
+          <div class="domain-sub">/api/v1/entertainment</div>
+          <p>Oshi-katsu fan culture, anime pilgrimage, live event manners, ticket acquisition, and seasonal cultural events.</p>
+        </div>
+        <div class="domain-card">
           <h3>🧠 Memory</h3>
           <div class="domain-sub">/api/v1/memory</div>
           <p>Three-layer persistent memory — episodes, structured facts, and context summaries with Japanese language understanding.</p>
@@ -475,7 +485,7 @@
         <div class="domain-card">
           <h3>🔍 Cross-Domain Search</h3>
           <div class="domain-sub">/api/v1/search</div>
-          <p>Query all 6 knowledge domains at once. One request returns regulations, protocols, calendar, regional, and organizational data.</p>
+          <p>Query all 8 knowledge domains at once. One request returns regulations, protocols, travel, entertainment, and more.</p>
         </div>
       </div>
     </section>
@@ -485,24 +495,65 @@
       <div class="code-block">
         <div class="code-header">
           <div class="code-tabs">
-            <button class="code-tab active">curl</button>
-            <button class="code-tab">MCP</button>
+            <button class="code-tab active" onclick="switchTab(0)">curl</button>
+            <button class="code-tab" onclick="switchTab(1)">Python</button>
+            <button class="code-tab" onclick="switchTab(2)">MCP</button>
           </div>
           <span>api.edition.sh</span>
         </div>
-        <div class="code-body">
+        <div class="code-body" id="code-panel-0">
 <span class="cmt"># Cross-domain search — one query, all knowledge</span>
 curl <span class="str">https://api.edition.sh/api/v1/search</span> \
   -H <span class="str">"Content-Type: application/json"</span> \
   -d <span class="str">'{"query": "Opening a restaurant in Tokyo"}'</span>
 
 <span class="cmt"># Response: matched across regulation, calendar,</span>
-<span class="cmt"># regional, and foreign-entry domains</span>
-<span class="cmt"># with confidence scores and source citations</span>
+<span class="cmt"># regional, travel, and foreign-entry domains</span>
+        </div>
+        <div class="code-body" id="code-panel-1" style="display:none">
+<span class="kw">import</span> requests
+
+resp = requests.<span class="fn">post</span>(
+    <span class="str">"https://api.edition.sh/api/v1/search"</span>,
+    json={<span class="str">"query"</span>: <span class="str">"推し活のチケット購入方法"</span>}
+)
+data = resp.<span class="fn">json</span>()
+
+<span class="cmt"># 8 knowledge domains searched simultaneously</span>
+<span class="kw">for</span> domain, result <span class="kw">in</span> data[<span class="str">"results"</span>].items():
+    <span class="fn">print</span>(f<span class="str">"  {domain}: matched"</span>)
+        </div>
+        <div class="code-body" id="code-panel-2" style="display:none">
+<span class="cmt">// claude_desktop_config.json</span>
+{
+  <span class="str">"mcpServers"</span>: {
+    <span class="str">"edition"</span>: {
+      <span class="str">"command"</span>: <span class="str">"npx"</span>,
+      <span class="str">"args"</span>: [<span class="str">"edition-mcp-server"</span>]
+    }
+  }
+}
+
+<span class="cmt">// Then ask Claude:</span>
+<span class="cmt">// "東京で飲食店を開業するには？"</span>
+<span class="cmt">// "What are the business card exchange rules?"</span>
+<span class="cmt">// "推し活のマナーを教えて"</span>
         </div>
       </div>
     </section>
   </main>
+
+  <script>
+    function switchTab(idx) {
+      document.querySelectorAll('.code-tab').forEach((t, i) => {
+        t.classList.toggle('active', i === idx);
+      });
+      for (let i = 0; i < 3; i++) {
+        const panel = document.getElementById('code-panel-' + i);
+        if (panel) panel.style.display = i === idx ? 'block' : 'none';
+      }
+    }
+  </script>
 
   <footer>
     <p>
