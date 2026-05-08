@@ -1,7 +1,7 @@
 {
   "name": "edition-mcp-server",
-  "version": "0.1.0",
-  "description": "EDITION Intelligence Platform — MCP server for Japanese business memory + regulation check",
+  "version": "0.1.1",
+  "description": "EDITION Intelligence Platform \u2014 MCP server for Japanese business memory + regulation check",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
