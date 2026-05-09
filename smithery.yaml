@@ -1,0 +1,41 @@
+name: "@edition/japan-operations"
+displayName: "EDITION Intelligence Platform"
+description: "Japan Operations OS for autonomous AI agents. 10 knowledge domains, 23 MCP tools. Verified knowledge covering regulations, procedures, protocols, calendar, regional differences, organizational structures, foreign market entry, travel, entertainment, and persistent memory."
+version: "0.3.0"
+author: "EDITION"
+homepage: "https://edition.sh"
+repository: "https://github.com/hiroshic9-png/edition-api"
+license: "MIT"
+tags:
+  - japan
+  - business
+  - regulations
+  - compliance
+  - protocols
+  - travel
+  - entertainment
+  - memory
+  - knowledge-base
+  - agent-os
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      EDITION_API_URL:
+        type: string
+        default: "https://api.edition.sh"
+        description: "EDITION API base URL"
+      EDITION_API_KEY:
+        type: string
+        default: "edition_dev_key_for_testing"
+        description: "API key for authentication (free beta key provided)"
+  commandFunction: |-
+    (config) => ({
+      command: 'npx',
+      args: ['-y', 'edition-mcp-server'],
+      env: {
+        EDITION_API_URL: config.EDITION_API_URL ?? 'https://api.edition.sh',
+        EDITION_API_KEY: config.EDITION_API_KEY ?? 'edition_dev_key_for_testing'
+      }
+    })

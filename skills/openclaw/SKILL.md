@@ -1,3 +1,21 @@
+---
+name: japan-business-operations
+version: 1.0.0
+description: "Japan Operations OS — Verified knowledge across 10 domains for AI agents operating in the Japanese market. Regulations, protocols, calendar, regional, foreign entry, travel, entertainment, and persistent memory."
+author: EDITION
+tags:
+  - japan
+  - business
+  - regulations
+  - compliance
+  - travel
+  - culture
+  - protocols
+  - memory
+  - knowledge-base
+  - agent-os
+---
+
 # Japan Business Operations — EDITION Intelligence Platform
 
 > Your always-on knowledge layer for operating in the Japanese market.
@@ -114,7 +132,7 @@ curl -X POST https://api.edition.sh/api/v1/memory/episodes/search \
 
 ## MCP Server
 
-For direct MCP integration:
+For direct MCP integration (23 tools):
 
 ```bash
 npx -y edition-mcp-server

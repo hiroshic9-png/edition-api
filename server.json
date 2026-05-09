@@ -1,0 +1,64 @@
+{
+  "$schema": "https://registry.modelcontextprotocol.io/schemas/server.json",
+  "name": "io.github.hiroshic9-png/edition",
+  "displayName": "EDITION Intelligence Platform",
+  "description": "Japan Operations OS for autonomous AI agents. Provides verified, structured knowledge across 10 domains: regulations (10 industries), procedures, business protocols, calendar, regional differences, organizational structures, foreign market entry, travel, entertainment, and persistent multi-layer memory. 23 MCP tools available.",
+  "version": "0.3.0",
+  "publisher": {
+    "name": "EDITION",
+    "url": "https://edition.sh"
+  },
+  "sourceUrl": "https://github.com/hiroshic9-png/edition-api",
+  "homepage": "https://edition.sh",
+  "license": "MIT",
+  "runtime": "node",
+  "packages": {
+    "npm": {
+      "name": "edition-mcp-server",
+      "version": "0.1.2"
+    }
+  },
+  "installation": {
+    "stdio": {
+      "command": "npx",
+      "args": ["-y", "edition-mcp-server"],
+      "env": {
+        "EDITION_API_URL": {
+          "description": "EDITION API base URL",
+          "default": "https://api.edition.sh"
+        },
+        "EDITION_API_KEY": {
+          "description": "API key for authentication",
+          "default": "edition_dev_key_for_testing"
+        }
+      }
+    }
+  },
+  "tools": [
+    "memory_store",
+    "memory_recall",
+    "memory_facts",
+    "memory_context",
+    "memory_extract",
+    "regulation_check",
+    "regulation_industries",
+    "regulation_tourist",
+    "protocol_check",
+    "protocol_list",
+    "calendar_check",
+    "calendar_list",
+    "regional_check",
+    "regional_list",
+    "organization_check",
+    "organization_list",
+    "foreign_entry_check",
+    "foreign_entry_list",
+    "travel_search",
+    "travel_list",
+    "entertainment_search",
+    "entertainment_list",
+    "search"
+  ],
+  "categories": ["knowledge-management", "data"],
+  "tags": ["japan", "business", "regulations", "compliance", "protocols", "travel", "culture", "memory", "agent-os"]
+}
