@@ -10,8 +10,31 @@ from backend.api.services.organization_service import OrganizationService
 from backend.api.services.foreign_entry_service import ForeignEntryService
 from backend.api.services.travel_service import search_travel
 from backend.api.services.entertainment_service import search_entertainment
+from backend.api.services.daily_life_service import search_daily_life
+from backend.api.services.language_service import search_language
+from backend.api.services.food_service import search_food
+from backend.api.services.disaster_service import search_disaster
 
 logger = logging.getLogger(__name__)
+
+
+def _search_keyword_domain(search_fn, domain_name, query, limit, results, domain_hits):
+    """Helper to search a keyword-based domain (travel/entertainment/daily_life/etc)."""
+    try:
+        res = search_fn(query)
+        if res and res.get("total_matches", 0) > 0:
+            top = res["results"][0]
+            results[domain_name] = {
+                "matched": True,
+                "name_ja": top.get("name_ja", ""),
+                "summary": top.get("summary", ""),
+                "topics": [r["topic"] for r in res.get("results", [])[:limit]],
+                "total_matches": res.get("total_matches", 0),
+                "confidence": min(top.get("relevance_score", 1) * 0.3, 1.0),
+            }
+            domain_hits[0] += 1
+    except Exception as e:
+        logger.warning(f"{domain_name} search failed: {e}")
 
 
 class SearchService:
@@ -28,7 +51,7 @@ class SearchService:
     def search(self, query: str, limit: int = 3) -> dict:
         """Search all domains for the given query and return combined results."""
         results = {}
-        domain_hits = 0
+        domain_hits = [0]  # mutable for helper
 
         # 1. Regulation — try to match industry
         try:
@@ -42,7 +65,7 @@ class SearchService:
                     "procedures_count": reg.get("procedures_count", 0),
                     "confidence": reg.get("confidence", 0),
                 }
-                domain_hits += 1
+                domain_hits[0] += 1
         except Exception as e:
             logger.warning(f"Regulation search failed: {e}")
 
@@ -57,7 +80,7 @@ class SearchService:
                     "summary": proto.get("summary"),
                     "confidence": proto.get("confidence", 0),
                 }
-                domain_hits += 1
+                domain_hits[0] += 1
         except Exception as e:
             logger.warning(f"Protocol search failed: {e}")
 
@@ -72,7 +95,7 @@ class SearchService:
                     "summary": cal.get("summary"),
                     "confidence": cal.get("confidence", 0),
                 }
-                domain_hits += 1
+                domain_hits[0] += 1
         except Exception as e:
             logger.warning(f"Calendar search failed: {e}")
 
@@ -87,7 +110,7 @@ class SearchService:
                     "summary": reg.get("summary"),
                     "confidence": reg.get("confidence", 0),
                 }
-                domain_hits += 1
+                domain_hits[0] += 1
         except Exception as e:
             logger.warning(f"Regional search failed: {e}")
 
@@ -102,7 +125,7 @@ class SearchService:
                     "summary": org.get("summary"),
                     "confidence": org.get("confidence", 0),
                 }
-                domain_hits += 1
+                domain_hits[0] += 1
         except Exception as e:
             logger.warning(f"Organization search failed: {e}")
 
@@ -117,48 +140,25 @@ class SearchService:
                     "summary": fe.get("summary"),
                     "confidence": fe.get("confidence", 0),
                 }
-                domain_hits += 1
+                domain_hits[0] += 1
         except Exception as e:
             logger.warning(f"Foreign entry search failed: {e}")
 
-        # 7. Travel
-        try:
-            trv = search_travel(query)
-            if trv and trv.get("total_matches", 0) > 0:
-                top = trv["results"][0]
-                results["travel"] = {
-                    "matched": True,
-                    "name_ja": top.get("name_ja", ""),
-                    "summary": top.get("summary", ""),
-                    "topics": [r["topic"] for r in trv.get("results", [])[:limit]],
-                    "total_matches": trv.get("total_matches", 0),
-                    "confidence": min(top.get("relevance_score", 1) * 0.3, 1.0),
-                }
-                domain_hits += 1
-        except Exception as e:
-            logger.warning(f"Travel search failed: {e}")
-
-        # 8. Entertainment
-        try:
-            ent = search_entertainment(query)
-            if ent and ent.get("total_matches", 0) > 0:
-                top = ent["results"][0]
-                results["entertainment"] = {
-                    "matched": True,
-                    "name_ja": top.get("name_ja", ""),
-                    "summary": top.get("summary", ""),
-                    "topics": [r["topic"] for r in ent.get("results", [])[:limit]],
-                    "total_matches": ent.get("total_matches", 0),
-                    "confidence": min(top.get("relevance_score", 1) * 0.3, 1.0),
-                }
-                domain_hits += 1
-        except Exception as e:
-            logger.warning(f"Entertainment search failed: {e}")
+        # 7-12. Keyword-based domains
+        for fn, name in [
+            (search_travel, "travel"),
+            (search_entertainment, "entertainment"),
+            (search_daily_life, "daily_life"),
+            (search_language, "language"),
+            (search_food, "food"),
+            (search_disaster, "disaster"),
+        ]:
+            _search_keyword_domain(fn, name, query, limit, results, domain_hits)
 
         return {
             "query": query,
-            "domains_searched": 8,
-            "domains_matched": domain_hits,
+            "domains_searched": 12,
+            "domains_matched": domain_hits[0],
             "results": results,
             "source": "EDITION cross-domain search",
         }
