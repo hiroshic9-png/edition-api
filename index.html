@@ -399,9 +399,9 @@
 
   <main>
     <section class="hero">
-      <div class="hero-badge">Live — v0.2.0 Open Beta</div>
+      <div class="hero-badge">Live — v0.4.0 Open Beta</div>
       <h1>Japan intelligence<br>for AI agents</h1>
-      <p>Three-layer contextual knowledge — rules, cultural context, and experience wisdom — for autonomous agents operating in Japan.</p>
+      <p>14 knowledge domains, 50+ endpoints, 31 MCP tools — structured intelligence for autonomous agents operating in Japan.</p>
       <div class="hero-actions">
         <a href="https://api.edition.sh/docs" class="btn btn-primary" target="_blank">Explore API →</a>
         <a href="https://github.com/hiroshic9-png/edition-api" class="btn btn-secondary" target="_blank">View Source</a>
@@ -417,19 +417,19 @@
 
     <div class="stats">
       <div class="stat">
-        <div class="stat-number">36</div>
+        <div class="stat-number">50+</div>
         <div class="stat-label">API Endpoints</div>
       </div>
       <div class="stat">
-        <div class="stat-number">23</div>
+        <div class="stat-number">31</div>
         <div class="stat-label">MCP Tools</div>
       </div>
       <div class="stat">
-        <div class="stat-number">10</div>
+        <div class="stat-number">14</div>
         <div class="stat-label">Knowledge Domains</div>
       </div>
       <div class="stat">
-        <div class="stat-number">64+</div>
+        <div class="stat-number">100+</div>
         <div class="stat-label">Experience Tips</div>
       </div>
     </div>
@@ -500,6 +500,26 @@
           <p>Oshi-katsu fan culture, anime pilgrimage, live event manners, ticket acquisition, and seasonal cultural events.</p>
         </div>
         <div class="domain-card">
+          <h3>🏠 Daily Life</h3>
+          <div class="domain-sub">/api/v1/daily-life</div>
+          <p>Postal system, garbage sorting rules, utilities (electricity, gas, water, NHK), and healthcare — essential knowledge for living in Japan.</p>
+        </div>
+        <div class="domain-card">
+          <h3>🗾 Language</h3>
+          <div class="domain-sub">/api/v1/language</div>
+          <p>Keigo honorific system, counter words, name/address structure, and business Japanese templates for phone, email, and meetings.</p>
+        </div>
+        <div class="domain-card">
+          <h3>🍣 Food Culture</h3>
+          <div class="domain-sub">/api/v1/food</div>
+          <p>Dining etiquette, cuisine classification, restaurant navigation (shokkenki, izakaya, sushi), and dietary restriction guides (halal, vegetarian).</p>
+        </div>
+        <div class="domain-card">
+          <h3>⚠️ Disaster & Safety</h3>
+          <div class="domain-sub">/api/v1/disaster</div>
+          <p>Earthquake shindo scale & EEW alerts, typhoon warning levels, emergency contacts (110/119), and disaster preparedness guides.</p>
+        </div>
+        <div class="domain-card">
           <h3>🧠 Memory</h3>
           <div class="domain-sub">/api/v1/memory</div>
           <p>Three-layer persistent memory — episodes, structured facts, and context summaries with Japanese language understanding.</p>
@@ -507,7 +527,7 @@
         <div class="domain-card">
           <h3>🔍 Cross-Domain Search</h3>
           <div class="domain-sub">/api/v1/search</div>
-          <p>Query all 8 knowledge domains at once. One request returns regulations, protocols, travel, entertainment, and more.</p>
+          <p>Query all 12 knowledge domains at once. One request returns regulations, protocols, food culture, disaster safety, and more.</p>
         </div>
       </div>
     </section>
@@ -541,7 +561,7 @@ resp = requests.<span class="fn">post</span>(
 )
 data = resp.<span class="fn">json</span>()
 
-<span class="cmt"># 8 knowledge domains searched simultaneously</span>
+<span class="cmt"># 12 knowledge domains searched simultaneously</span>
 <span class="kw">for</span> domain, result <span class="kw">in</span> data[<span class="str">"results"</span>].items():
     <span class="fn">print</span>(f<span class="str">"  {domain}: matched"</span>)
         </div>
