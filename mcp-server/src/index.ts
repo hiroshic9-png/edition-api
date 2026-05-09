@@ -53,7 +53,7 @@ async function apiPost(path: string, body: any): Promise<any> {
 
 const server = new McpServer({
   name: "edition",
-  version: "0.1.2",
+  version: "0.1.5",
 });
 
 // ── Tool: memory_store ──────────────────────────────
@@ -542,13 +542,161 @@ server.tool(
   }
 );
 
+// ── Tool: daily_life_search ─────────────────────────
+
+server.tool(
+  "daily_life_search",
+  "日本の日常生活に関する知識を検索します。住所・郵便システム、ゴミ分別ルール、公共料金（電気・ガス・水道・NHK）、医療・健康保険制度。外国人が日本で生活するために必要な実用知識。",
+  {
+    query: z.string().describe("検索クエリ（例: 'ゴミの分別方法', '健康保険の加入', '引っ越しの手続き'）"),
+  },
+  async ({ query }) => {
+    const result = await apiPost("/api/v1/daily-life/search", { query });
+    if (!result.results?.length) {
+      return { content: [{ type: "text" as const, text: `❌ '${query}' に該当する日常生活情報が見つかりませんでした。` }] };
+    }
+    let text = `🏠 日常生活情報 (${result.total_matches}件ヒット):\n\n`;
+    for (const r of result.results) {
+      text += `  📌 ${r.name_ja} (${r.name_en})\n     ${r.summary}\n\n`;
+    }
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
+// ── Tool: daily_life_list ──────────────────────────
+
+server.tool(
+  "daily_life_list",
+  "日本の日常生活知識のトピック一覧を取得します。",
+  {},
+  async () => {
+    const result = await apiGet("/api/v1/daily-life/list");
+    let text = `🏠 日常生活トピック一覧 (${result.total}件):\n\n`;
+    for (const t of result.topics) {
+      text += `  • ${t.name_ja} (${t.name_en})\n    ${t.summary}\n\n`;
+    }
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
+// ── Tool: language_search ──────────────────────────
+
+server.tool(
+  "language_search",
+  "日本語の構造的知識を検索します。敬語体系（尊敬語・謙譲語・丁寧語）、助数詞（数え方）、名前・住所の構造パターン、ビジネス日本語（電話応対・クッション言葉・メールテンプレート）。",
+  {
+    query: z.string().describe("検索クエリ（例: '敬語の使い方', '助数詞の一覧', 'ビジネスメールの書き方'）"),
+  },
+  async ({ query }) => {
+    const result = await apiPost("/api/v1/language/search", { query });
+    if (!result.results?.length) {
+      return { content: [{ type: "text" as const, text: `❌ '${query}' に該当する日本語情報が見つかりませんでした。` }] };
+    }
+    let text = `🗾 日本語知識 (${result.total_matches}件ヒット):\n\n`;
+    for (const r of result.results) {
+      text += `  📌 ${r.name_ja} (${r.name_en})\n     ${r.summary}\n\n`;
+    }
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
+// ── Tool: language_list ────────────────────────────
+
+server.tool(
+  "language_list",
+  "日本語知識のトピック一覧を取得します。",
+  {},
+  async () => {
+    const result = await apiGet("/api/v1/language/list");
+    let text = `🗾 日本語トピック一覧 (${result.total}件):\n\n`;
+    for (const t of result.topics) {
+      text += `  • ${t.name_ja} (${t.name_en})\n    ${t.summary}\n\n`;
+    }
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
+// ── Tool: food_search ──────────────────────────────
+
+server.tool(
+  "food_search",
+  "日本の食文化に関する知識を検索します。食事マナー（箸のタブー・乾杯・割り勘）、料理分類（懐石・定食・ラーメン・郷土料理）、飲食店ガイド（食券機・居酒屋・回転寿司・おまかせ）、アレルギー・食制限（ハラル・ベジタリアン対応）。",
+  {
+    query: z.string().describe("検索クエリ（例: '箸のマナー', 'ハラル対応レストラン', '回転寿司の注文方法'）"),
+  },
+  async ({ query }) => {
+    const result = await apiPost("/api/v1/food/search", { query });
+    if (!result.results?.length) {
+      return { content: [{ type: "text" as const, text: `❌ '${query}' に該当する食文化情報が見つかりませんでした。` }] };
+    }
+    let text = `🍣 食文化情報 (${result.total_matches}件ヒット):\n\n`;
+    for (const r of result.results) {
+      text += `  📌 ${r.name_ja} (${r.name_en})\n     ${r.summary}\n\n`;
+    }
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
+// ── Tool: food_list ────────────────────────────────
+
+server.tool(
+  "food_list",
+  "日本の食文化知識のトピック一覧を取得します。",
+  {},
+  async () => {
+    const result = await apiGet("/api/v1/food/list");
+    let text = `🍣 食文化トピック一覧 (${result.total}件):\n\n`;
+    for (const t of result.topics) {
+      text += `  • ${t.name_ja} (${t.name_en})\n    ${t.summary}\n\n`;
+    }
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
+// ── Tool: disaster_search ──────────────────────────
+
+server.tool(
+  "disaster_search",
+  "日本の災害・安全に関する知識を検索します。地震（震度スケール・緊急地震速報・耐震基準）、台風・水害（警戒レベル・計画運休）、緊急連絡先（110/119/多言語対応）、防災準備（防災バッグ・ハザードマップ・避難所マナー）。",
+  {
+    query: z.string().describe("検索クエリ（例: '地震が来たらどうする', '緊急連絡先', '防災バッグの中身'）"),
+  },
+  async ({ query }) => {
+    const result = await apiPost("/api/v1/disaster/search", { query });
+    if (!result.results?.length) {
+      return { content: [{ type: "text" as const, text: `❌ '${query}' に該当する災害・安全情報が見つかりませんでした。` }] };
+    }
+    let text = `⚠️ 災害・安全情報 (${result.total_matches}件ヒット):\n\n`;
+    for (const r of result.results) {
+      text += `  📌 ${r.name_ja} (${r.name_en})\n     ${r.summary}\n\n`;
+    }
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
+// ── Tool: disaster_list ────────────────────────────
+
+server.tool(
+  "disaster_list",
+  "日本の災害・安全知識のトピック一覧を取得します。",
+  {},
+  async () => {
+    const result = await apiGet("/api/v1/disaster/list");
+    let text = `⚠️ 災害・安全トピック一覧 (${result.total}件):\n\n`;
+    for (const t of result.topics) {
+      text += `  • ${t.name_ja} (${t.name_en})\n    ${t.summary}\n\n`;
+    }
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
 // ── Tool: search ────────────────────────────────────
 
 server.tool(
   "search",
-  "EDITION全ドメインを横断検索します。1回のリクエストで規制・プロトコル・カレンダー・地域・組織・進出手続き・旅行・エンタメの全8ドメインを同時検索。",
+  "EDITION全14ドメインを横断検索します。1回のリクエストで規制・プロトコル・カレンダー・地域・組織・進出手続き・旅行・エンタメ・日常生活・日本語・食文化・災害安全の全12ドメインを同時検索。",
   {
-    query: z.string().describe("検索クエリ（例: '大阪で飲食店を開業', '推し活のマナー', '外国人のビザ取得'）"),
+    query: z.string().describe("検索クエリ（例: '大阪で飲食店を開業', '地震の避難方法', '敬語の使い方'）"),
   },
   async ({ query }) => {
     const result = await apiPost("/api/v1/search", { query });

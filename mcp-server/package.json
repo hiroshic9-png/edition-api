@@ -1,8 +1,8 @@
 {
   "name": "edition-mcp-server",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "mcpName": "io.github.hiroshic9-png/japan-business-operations",
-  "description": "EDITION Intelligence Platform \u2014 MCP server for Japan operations intelligence (10 knowledge domains)",
+  "description": "EDITION Intelligence Platform \u2014 MCP server for Japan operations intelligence (14 knowledge domains, 31 tools)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
