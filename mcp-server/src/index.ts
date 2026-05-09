@@ -53,7 +53,7 @@ async function apiPost(path: string, body: any): Promise<any> {
 
 const server = new McpServer({
   name: "edition",
-  version: "0.1.0",
+  version: "0.1.2",
 });
 
 // ── Tool: memory_store ──────────────────────────────
@@ -468,13 +468,87 @@ server.tool(
   }
 );
 
+// ── Tool: travel_search ─────────────────────────────
+
+server.tool(
+  "travel_search",
+  "日本の旅行・観光に関する知識を検索します。交通（新幹線・ICカード・タクシー）、宿泊（旅館マナー・ホテル）、飲食（ラーメン地域差・箸マナー・チップ不要）、実用情報（SIM・ATM・緊急連絡先・マナー）。",
+  {
+    query: z.string().describe("検索クエリ（例: '新幹線の乗り方', '旅館のマナー', 'ラーメンの食べ方'）"),
+  },
+  async ({ query }) => {
+    const result = await apiPost("/api/v1/travel/search", { query });
+    if (!result.results?.length) {
+      return { content: [{ type: "text" as const, text: `❌ '${query}' に該当する旅行情報が見つかりませんでした。` }] };
+    }
+    let text = `✈️ 旅行情報 (${result.total_matches}件ヒット):\n\n`;
+    for (const r of result.results) {
+      text += `  📌 ${r.name_ja} (${r.name_en})\n     ${r.summary}\n\n`;
+    }
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
+// ── Tool: travel_list ───────────────────────────────
+
+server.tool(
+  "travel_list",
+  "日本の旅行知識のトピック一覧を取得します。",
+  {},
+  async () => {
+    const result = await apiGet("/api/v1/travel/list");
+    let text = `✈️ 旅行トピック一覧 (${result.total}件):\n\n`;
+    for (const t of result.topics) {
+      text += `  • ${t.name_ja} (${t.name_en})\n    ${t.summary}\n\n`;
+    }
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
+// ── Tool: entertainment_search ──────────────────────
+
+server.tool(
+  "entertainment_search",
+  "日本のエンターテインメント・ポップカルチャーに関する知識を検索します。推し活（チケット取得・転売法）、アニメ聖地巡礼、ライブマナー（ペンライト・コール）、季節イベント（花見・花火・初詣）。",
+  {
+    query: z.string().describe("検索クエリ（例: '推し活のチケット購入', 'コミケの参加方法', '花見のマナー'）"),
+  },
+  async ({ query }) => {
+    const result = await apiPost("/api/v1/entertainment/search", { query });
+    if (!result.results?.length) {
+      return { content: [{ type: "text" as const, text: `❌ '${query}' に該当するエンタメ情報が見つかりませんでした。` }] };
+    }
+    let text = `🎭 エンタメ情報 (${result.total_matches}件ヒット):\n\n`;
+    for (const r of result.results) {
+      text += `  📌 ${r.name_ja} (${r.name_en})\n     ${r.summary}\n\n`;
+    }
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
+// ── Tool: entertainment_list ────────────────────────
+
+server.tool(
+  "entertainment_list",
+  "日本のエンタメ知識のトピック一覧を取得します。",
+  {},
+  async () => {
+    const result = await apiGet("/api/v1/entertainment/list");
+    let text = `🎭 エンタメトピック一覧 (${result.total}件):\n\n`;
+    for (const t of result.topics) {
+      text += `  • ${t.name_ja} (${t.name_en})\n    ${t.summary}\n\n`;
+    }
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
 // ── Tool: search ────────────────────────────────────
 
 server.tool(
   "search",
-  "EDITION全ドメインを横断検索します。1回のリクエストで規制・プロトコル・カレンダー・地域・組織・進出手続きの全6ドメインを同時検索。",
+  "EDITION全ドメインを横断検索します。1回のリクエストで規制・プロトコル・カレンダー・地域・組織・進出手続き・旅行・エンタメの全8ドメインを同時検索。",
   {
-    query: z.string().describe("検索クエリ（例: '大阪で飲食店を開業', '外国人のビザ取得と銀行口座'）"),
+    query: z.string().describe("検索クエリ（例: '大阪で飲食店を開業', '推し活のマナー', '外国人のビザ取得'）"),
   },
   async ({ query }) => {
     const result = await apiPost("/api/v1/search", { query });
