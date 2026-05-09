@@ -62,7 +62,7 @@ def startup():
 def root():
     return {
         "service": "EDITION Intelligence Platform",
-        "version": "0.1.0",
+        "version": "0.2.0",
         "status": "running",
         "docs": "/docs",
         "endpoints": {
