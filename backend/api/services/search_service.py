@@ -125,10 +125,14 @@ class SearchService:
         try:
             trv = search_travel(query)
             if trv and trv.get("total_matches", 0) > 0:
+                top = trv["results"][0]
                 results["travel"] = {
                     "matched": True,
+                    "name_ja": top.get("name_ja", ""),
+                    "summary": top.get("summary", ""),
                     "topics": [r["topic"] for r in trv.get("results", [])[:limit]],
                     "total_matches": trv.get("total_matches", 0),
+                    "confidence": min(top.get("relevance_score", 1) * 0.3, 1.0),
                 }
                 domain_hits += 1
         except Exception as e:
@@ -138,10 +142,14 @@ class SearchService:
         try:
             ent = search_entertainment(query)
             if ent and ent.get("total_matches", 0) > 0:
+                top = ent["results"][0]
                 results["entertainment"] = {
                     "matched": True,
+                    "name_ja": top.get("name_ja", ""),
+                    "summary": top.get("summary", ""),
                     "topics": [r["topic"] for r in ent.get("results", [])[:limit]],
                     "total_matches": ent.get("total_matches", 0),
+                    "confidence": min(top.get("relevance_score", 1) * 0.3, 1.0),
                 }
                 domain_hits += 1
         except Exception as e:
