@@ -1,6 +1,7 @@
 {
   "name": "edition-mcp-server",
-  "version": "0.1.2",
+  "version": "0.1.3",
+  "mcpName": "io.github.hiroshic9-png/edition-api",
   "description": "EDITION Intelligence Platform \u2014 MCP server for Japan operations intelligence (10 knowledge domains)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
