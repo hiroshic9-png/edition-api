@@ -67,6 +67,7 @@ server.tool(
     role: z.enum(["user", "assistant", "system"]).default("user").describe("発話者の役割"),
     auto_extract: z.boolean().default(false).describe("LLMでファクトを自動抽出するか"),
   },
+  { readOnlyHint: false, destructiveHint: false, idempotentHint: false },
   async ({ content, session_id, role, auto_extract }) => {
     const result = await apiPost("/api/v1/memory/episodes", {
       content,
@@ -94,6 +95,7 @@ server.tool(
     query: z.string().describe("検索クエリ（日本語/英語対応）"),
     limit: z.number().int().min(1).max(20).default(5).describe("取得件数"),
   },
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async ({ query, limit }) => {
     const result = await apiPost("/api/v1/memory/episodes/search", {
       query,
@@ -119,6 +121,7 @@ server.tool(
   {
     valid_only: z.boolean().default(true).describe("有効なファクトのみ取得するか"),
   },
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async ({ valid_only }) => {
     const result = await apiGet(`/api/v1/memory/facts?valid_only=${valid_only}`);
     if (!result.facts?.length) {
@@ -141,6 +144,7 @@ server.tool(
   {
     session_id: z.string().optional().describe("セッションID（省略で全体）"),
   },
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async ({ session_id }) => {
     const params = session_id ? `?session_id=${encodeURIComponent(session_id)}` : "";
     const result = await apiGet(`/api/v1/memory/context${params}`);
@@ -162,6 +166,7 @@ server.tool(
     context_hint: z.string().default("").describe("コンテキストヒント（例: ビジネスミーティング）"),
     store: z.boolean().default(false).describe("抽出したファクトを永続保存するか"),
   },
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async ({ text, context_hint, store }) => {
     const result = await apiPost("/api/v1/memory/extract", {
       text,
@@ -191,6 +196,7 @@ server.tool(
     industry: z.string().optional().describe("業種（省略可、自動判定）"),
     entity_type: z.enum(["foreign_company", "domestic_company", "individual", "tourist"]).default("foreign_company").describe("主体の種別"),
   },
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async ({ action, industry, entity_type }) => {
     const result = await apiPost("/api/v1/regulation/check", {
       action,
@@ -244,6 +250,7 @@ server.tool(
   "regulation_industries",
   "日本の規制データベースに登録されている業種の一覧を取得します。",
   {},
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async () => {
     const result = await apiGet("/api/v1/regulation/industries");
     let text = `🗾 対応業種一覧 (${result.count}業種):\n\n`;
@@ -263,6 +270,7 @@ server.tool(
   "regulation_tourist",
   "訪日旅行者向けの規制・マナー情報のカテゴリ一覧を取得します。ビザ、免税、交通、宿泊、医療、マナーの6カテゴリ。",
   {},
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async () => {
     const result = await apiGet("/api/v1/regulation/tourist");
     let text = `🗾 訪日旅行者向け規制カテゴリ (${result.count}件):\n\n`;
@@ -281,6 +289,7 @@ server.tool(
   {
     query: z.string().describe("検索クエリ（例: '名刺交換の作法', '根回し'）"),
   },
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async ({ query }) => {
     const result = await apiPost("/api/v1/protocol/check", { query });
     if (!result.protocol_id && !result.name_ja) {
@@ -311,6 +320,7 @@ server.tool(
   "protocol_list",
   "日本のビジネスプロトコルの一覧を取得します。",
   {},
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async () => {
     const result = await apiGet("/api/v1/protocol/list");
     let text = `🤝 プロトコル一覧 (${result.count}件):\n\n`;
@@ -329,6 +339,7 @@ server.tool(
   {
     query: z.string().describe("検索クエリ（例: '開業のベストタイミング', 'GW', '確定申告の締切'）"),
   },
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async ({ query }) => {
     const result = await apiPost("/api/v1/calendar/check", { query });
     if (!result.category_id) {
@@ -346,6 +357,7 @@ server.tool(
   "calendar_list",
   "日本のビジネスカレンダーの全カテゴリ一覧を取得します。",
   {},
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async () => {
     const result = await apiGet("/api/v1/calendar/list");
     let text = `📅 カレンダーカテゴリ一覧 (${result.count}件):\n\n`;
@@ -364,6 +376,7 @@ server.tool(
   {
     query: z.string().describe("検索クエリ（例: '大阪の飲食店条例', '東京のスタートアップ助成金'）"),
   },
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async ({ query }) => {
     const result = await apiPost("/api/v1/regional/check", { query });
     if (!result.category_id) {
@@ -381,6 +394,7 @@ server.tool(
   "regional_list",
   "日本の地域別ビジネス情報の全カテゴリ一覧を取得します。",
   {},
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async () => {
     const result = await apiGet("/api/v1/regional/list");
     let text = `🗺️ 地域情報カテゴリ一覧 (${result.count}件):\n\n`;
@@ -399,6 +413,7 @@ server.tool(
   {
     query: z.string().describe("検索クエリ（例: '支払いサイトの標準', '契約書の印鑑', '部長と課長の違い'）"),
   },
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async ({ query }) => {
     const result = await apiPost("/api/v1/organization/check", { query });
     if (!result.category_id) {
@@ -416,6 +431,7 @@ server.tool(
   "organization_list",
   "日本の組織構造・商慣行の全カテゴリ一覧を取得します。",
   {},
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async () => {
     const result = await apiGet("/api/v1/organization/list");
     let text = `🏛️ 組織情報カテゴリ一覧 (${result.count}件):\n\n`;
@@ -434,6 +450,7 @@ server.tool(
   {
     query: z.string().describe("検索クエリ（例: '法人設立の手順', 'ビザ取得', '銀行口座開設'）"),
   },
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async ({ query }) => {
     const result = await apiPost("/api/v1/foreign-entry/check", { query });
     if (!result.category_id) {
@@ -458,6 +475,7 @@ server.tool(
   "foreign_entry_list",
   "外国企業・外国人の日本進出に関する知識カテゴリの一覧を取得します。",
   {},
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async () => {
     const result = await apiGet("/api/v1/foreign-entry/list");
     let text = `🌐 日本進出カテゴリ一覧 (${result.count}件):\n\n`;
@@ -476,6 +494,7 @@ server.tool(
   {
     query: z.string().describe("検索クエリ（例: '新幹線の乗り方', '旅館のマナー', 'ラーメンの食べ方'）"),
   },
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async ({ query }) => {
     const result = await apiPost("/api/v1/travel/search", { query });
     if (!result.results?.length) {
@@ -495,6 +514,7 @@ server.tool(
   "travel_list",
   "日本の旅行知識のトピック一覧を取得します。",
   {},
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async () => {
     const result = await apiGet("/api/v1/travel/list");
     let text = `✈️ 旅行トピック一覧 (${result.total}件):\n\n`;
@@ -513,6 +533,7 @@ server.tool(
   {
     query: z.string().describe("検索クエリ（例: '推し活のチケット購入', 'コミケの参加方法', '花見のマナー'）"),
   },
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async ({ query }) => {
     const result = await apiPost("/api/v1/entertainment/search", { query });
     if (!result.results?.length) {
@@ -532,6 +553,7 @@ server.tool(
   "entertainment_list",
   "日本のエンタメ知識のトピック一覧を取得します。",
   {},
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async () => {
     const result = await apiGet("/api/v1/entertainment/list");
     let text = `🎭 エンタメトピック一覧 (${result.total}件):\n\n`;
@@ -550,6 +572,7 @@ server.tool(
   {
     query: z.string().describe("検索クエリ（例: 'ゴミの分別方法', '健康保険の加入', '引っ越しの手続き'）"),
   },
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async ({ query }) => {
     const result = await apiPost("/api/v1/daily-life/search", { query });
     if (!result.results?.length) {
@@ -569,6 +592,7 @@ server.tool(
   "daily_life_list",
   "日本の日常生活知識のトピック一覧を取得します。",
   {},
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async () => {
     const result = await apiGet("/api/v1/daily-life/list");
     let text = `🏠 日常生活トピック一覧 (${result.total}件):\n\n`;
@@ -587,6 +611,7 @@ server.tool(
   {
     query: z.string().describe("検索クエリ（例: '敬語の使い方', '助数詞の一覧', 'ビジネスメールの書き方'）"),
   },
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async ({ query }) => {
     const result = await apiPost("/api/v1/language/search", { query });
     if (!result.results?.length) {
@@ -606,6 +631,7 @@ server.tool(
   "language_list",
   "日本語知識のトピック一覧を取得します。",
   {},
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async () => {
     const result = await apiGet("/api/v1/language/list");
     let text = `🗾 日本語トピック一覧 (${result.total}件):\n\n`;
@@ -624,6 +650,7 @@ server.tool(
   {
     query: z.string().describe("検索クエリ（例: '箸のマナー', 'ハラル対応レストラン', '回転寿司の注文方法'）"),
   },
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async ({ query }) => {
     const result = await apiPost("/api/v1/food/search", { query });
     if (!result.results?.length) {
@@ -643,6 +670,7 @@ server.tool(
   "food_list",
   "日本の食文化知識のトピック一覧を取得します。",
   {},
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async () => {
     const result = await apiGet("/api/v1/food/list");
     let text = `🍣 食文化トピック一覧 (${result.total}件):\n\n`;
@@ -661,6 +689,7 @@ server.tool(
   {
     query: z.string().describe("検索クエリ（例: '地震が来たらどうする', '緊急連絡先', '防災バッグの中身'）"),
   },
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async ({ query }) => {
     const result = await apiPost("/api/v1/disaster/search", { query });
     if (!result.results?.length) {
@@ -680,6 +709,7 @@ server.tool(
   "disaster_list",
   "日本の災害・安全知識のトピック一覧を取得します。",
   {},
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async () => {
     const result = await apiGet("/api/v1/disaster/list");
     let text = `⚠️ 災害・安全トピック一覧 (${result.total}件):\n\n`;
@@ -698,6 +728,7 @@ server.tool(
   {
     query: z.string().describe("検索クエリ（例: '大阪で飲食店を開業', '地震の避難方法', '敬語の使い方'）"),
   },
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async ({ query }) => {
     const result = await apiPost("/api/v1/search", { query });
     let text = `🔍 横断検索結果: ${result.domains_matched}/${result.domains_searched} ドメインでヒット\n\n`;

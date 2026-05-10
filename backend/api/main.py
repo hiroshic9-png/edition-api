@@ -177,38 +177,41 @@ app.include_router(analytics.router)
 # Handles initialize + tools/list for Smithery registration.
 # No external MCP SDK dependency — pure JSON-RPC over HTTP.
 
+READ_ONLY = {"readOnlyHint": True, "destructiveHint": False, "idempotentHint": True}
+WRITE = {"readOnlyHint": False, "destructiveHint": False, "idempotentHint": False}
+
 MCP_TOOLS = [
-    {"name": "memory_store", "description": "Store episodes to persistent memory with Japanese language understanding", "inputSchema": {"type": "object", "properties": {"content": {"type": "string"}, "session_id": {"type": "string"}, "role": {"type": "string"}, "auto_extract": {"type": "boolean"}}, "required": ["content"]}},
-    {"name": "memory_recall", "description": "Semantic search across stored memories", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}, "limit": {"type": "integer"}}, "required": ["query"]}},
-    {"name": "memory_facts", "description": "List structured facts", "inputSchema": {"type": "object", "properties": {"valid_only": {"type": "boolean"}}}},
-    {"name": "memory_context", "description": "Get current session context summary", "inputSchema": {"type": "object", "properties": {"session_id": {"type": "string"}}}},
-    {"name": "memory_extract", "description": "Auto-extract structured facts from text", "inputSchema": {"type": "object", "properties": {"text": {"type": "string"}, "store": {"type": "boolean"}}, "required": ["text"]}},
-    {"name": "regulation_check", "description": "Check Japan business regulations for 10 industries", "inputSchema": {"type": "object", "properties": {"action": {"type": "string"}, "industry": {"type": "string"}, "entity_type": {"type": "string"}}, "required": ["action"]}},
-    {"name": "regulation_industries", "description": "List all regulated industries", "inputSchema": {"type": "object", "properties": {}}},
-    {"name": "regulation_tourist", "description": "Tourist regulation categories", "inputSchema": {"type": "object", "properties": {}}},
-    {"name": "protocol_check", "description": "Search Japanese business protocols", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
-    {"name": "protocol_list", "description": "List all business protocols", "inputSchema": {"type": "object", "properties": {}}},
-    {"name": "calendar_check", "description": "Search Japan business calendar", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
-    {"name": "calendar_list", "description": "List all calendar categories", "inputSchema": {"type": "object", "properties": {}}},
-    {"name": "regional_check", "description": "Search regional business differences", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
-    {"name": "regional_list", "description": "List all regional categories", "inputSchema": {"type": "object", "properties": {}}},
-    {"name": "organization_check", "description": "Search organizational structures", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
-    {"name": "organization_list", "description": "List all organization categories", "inputSchema": {"type": "object", "properties": {}}},
-    {"name": "foreign_entry_check", "description": "Foreign market entry guides", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
-    {"name": "foreign_entry_list", "description": "List all foreign entry categories", "inputSchema": {"type": "object", "properties": {}}},
-    {"name": "travel_search", "description": "Search Japan travel knowledge", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
-    {"name": "travel_list", "description": "List all travel topics", "inputSchema": {"type": "object", "properties": {}}},
-    {"name": "entertainment_search", "description": "Search Japan entertainment/pop culture", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
-    {"name": "entertainment_list", "description": "List all entertainment topics", "inputSchema": {"type": "object", "properties": {}}},
-    {"name": "daily_life_search", "description": "Search daily life knowledge (postal, garbage, utilities, healthcare)", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
-    {"name": "daily_life_list", "description": "List all daily life topics", "inputSchema": {"type": "object", "properties": {}}},
-    {"name": "language_search", "description": "Search Japanese language knowledge (keigo, counters, business Japanese)", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
-    {"name": "language_list", "description": "List all language topics", "inputSchema": {"type": "object", "properties": {}}},
-    {"name": "food_search", "description": "Search food culture (etiquette, cuisine, restaurants, dietary)", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
-    {"name": "food_list", "description": "List all food culture topics", "inputSchema": {"type": "object", "properties": {}}},
-    {"name": "disaster_search", "description": "Search disaster and safety knowledge (earthquakes, typhoons, emergency)", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
-    {"name": "disaster_list", "description": "List all disaster and safety topics", "inputSchema": {"type": "object", "properties": {}}},
-    {"name": "search", "description": "Cross-domain search across all 14 knowledge domains simultaneously", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
+    {"name": "memory_store", "description": "Store episodes to persistent memory with Japanese language understanding", "inputSchema": {"type": "object", "properties": {"content": {"type": "string"}, "session_id": {"type": "string"}, "role": {"type": "string"}, "auto_extract": {"type": "boolean"}}, "required": ["content"]}, "annotations": WRITE},
+    {"name": "memory_recall", "description": "Semantic search across stored memories", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}, "limit": {"type": "integer"}}, "required": ["query"]}, "annotations": READ_ONLY},
+    {"name": "memory_facts", "description": "List structured facts", "inputSchema": {"type": "object", "properties": {"valid_only": {"type": "boolean"}}}, "annotations": READ_ONLY},
+    {"name": "memory_context", "description": "Get current session context summary", "inputSchema": {"type": "object", "properties": {"session_id": {"type": "string"}}}, "annotations": READ_ONLY},
+    {"name": "memory_extract", "description": "Auto-extract structured facts from text", "inputSchema": {"type": "object", "properties": {"text": {"type": "string"}, "store": {"type": "boolean"}}, "required": ["text"]}, "annotations": READ_ONLY},
+    {"name": "regulation_check", "description": "Check Japan business regulations for 10 industries", "inputSchema": {"type": "object", "properties": {"action": {"type": "string"}, "industry": {"type": "string"}, "entity_type": {"type": "string"}}, "required": ["action"]}, "annotations": READ_ONLY},
+    {"name": "regulation_industries", "description": "List all regulated industries", "inputSchema": {"type": "object", "properties": {}}, "annotations": READ_ONLY},
+    {"name": "regulation_tourist", "description": "Tourist regulation categories", "inputSchema": {"type": "object", "properties": {}}, "annotations": READ_ONLY},
+    {"name": "protocol_check", "description": "Search Japanese business protocols", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}, "annotations": READ_ONLY},
+    {"name": "protocol_list", "description": "List all business protocols", "inputSchema": {"type": "object", "properties": {}}, "annotations": READ_ONLY},
+    {"name": "calendar_check", "description": "Search Japan business calendar", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}, "annotations": READ_ONLY},
+    {"name": "calendar_list", "description": "List all calendar categories", "inputSchema": {"type": "object", "properties": {}}, "annotations": READ_ONLY},
+    {"name": "regional_check", "description": "Search regional business differences", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}, "annotations": READ_ONLY},
+    {"name": "regional_list", "description": "List all regional categories", "inputSchema": {"type": "object", "properties": {}}, "annotations": READ_ONLY},
+    {"name": "organization_check", "description": "Search organizational structures", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}, "annotations": READ_ONLY},
+    {"name": "organization_list", "description": "List all organization categories", "inputSchema": {"type": "object", "properties": {}}, "annotations": READ_ONLY},
+    {"name": "foreign_entry_check", "description": "Foreign market entry guides", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}, "annotations": READ_ONLY},
+    {"name": "foreign_entry_list", "description": "List all foreign entry categories", "inputSchema": {"type": "object", "properties": {}}, "annotations": READ_ONLY},
+    {"name": "travel_search", "description": "Search Japan travel knowledge", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}, "annotations": READ_ONLY},
+    {"name": "travel_list", "description": "List all travel topics", "inputSchema": {"type": "object", "properties": {}}, "annotations": READ_ONLY},
+    {"name": "entertainment_search", "description": "Search Japan entertainment/pop culture", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}, "annotations": READ_ONLY},
+    {"name": "entertainment_list", "description": "List all entertainment topics", "inputSchema": {"type": "object", "properties": {}}, "annotations": READ_ONLY},
+    {"name": "daily_life_search", "description": "Search daily life knowledge (postal, garbage, utilities, healthcare)", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}, "annotations": READ_ONLY},
+    {"name": "daily_life_list", "description": "List all daily life topics", "inputSchema": {"type": "object", "properties": {}}, "annotations": READ_ONLY},
+    {"name": "language_search", "description": "Search Japanese language knowledge (keigo, counters, business Japanese)", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}, "annotations": READ_ONLY},
+    {"name": "language_list", "description": "List all language topics", "inputSchema": {"type": "object", "properties": {}}, "annotations": READ_ONLY},
+    {"name": "food_search", "description": "Search food culture (etiquette, cuisine, restaurants, dietary)", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}, "annotations": READ_ONLY},
+    {"name": "food_list", "description": "List all food culture topics", "inputSchema": {"type": "object", "properties": {}}, "annotations": READ_ONLY},
+    {"name": "disaster_search", "description": "Search disaster and safety knowledge (earthquakes, typhoons, emergency)", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}, "annotations": READ_ONLY},
+    {"name": "disaster_list", "description": "List all disaster and safety topics", "inputSchema": {"type": "object", "properties": {}}, "annotations": READ_ONLY},
+    {"name": "search", "description": "Cross-domain search across all 14 knowledge domains simultaneously", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}, "annotations": READ_ONLY},
 ]
 
 
@@ -493,7 +496,17 @@ def root():
 
 @app.get("/health")
 def health():
-    return {"status": "ok"}
+    import time
+    return {
+        "status": "ok",
+        "version": "0.5.0",
+        "domains": 14,
+        "tools": len(MCP_TOOLS),
+        "resources": 2,
+        "prompts": 2,
+        "quality_score": 96.0,
+        "timestamp": int(time.time()),
+    }
 
 
 # ── Agent Discovery Endpoints ───────────────────────────────
