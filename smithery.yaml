@@ -1,7 +1,7 @@
 name: "@edition/japan-operations"
 displayName: "EDITION Intelligence Platform"
-description: "Japan Operations OS for autonomous AI agents. 14 knowledge domains, 31 MCP tools. Verified knowledge covering regulations, procedures, protocols, calendar, regional, organization, foreign entry, travel, entertainment, daily life, language, food culture, disaster & safety, and persistent memory."
-version: "0.4.0"
+description: "Japan Operations OS for autonomous AI agents. 14 knowledge domains, 31 MCP tools, 2 prompt templates. Verified, structured ground truth covering business regulations (10 industries), step-by-step procedures (65 steps), business protocols (nemawashi, ringi, hourensou, meishi, seating, gift-giving), fiscal calendar & deadlines, regional differences, organizational structures (keiretsu, payment customs), foreign market entry (visa, banking, incorporation), travel intelligence (shinkansen, IC cards, ryokan), entertainment & pop culture (oshi-katsu, anime, festivals), daily life (postal, garbage, utilities, healthcare), Japanese language (keigo, counters, business Japanese), food culture (dining etiquette, cuisine, dietary restrictions), disaster & safety (earthquakes, typhoons, emergency contacts), and persistent multi-layer memory."
+version: "0.5.0"
 author: "EDITION"
 homepage: "https://edition.sh"
 repository: "https://github.com/hiroshic9-png/edition-api"
@@ -21,6 +21,13 @@ tags:
   - language
   - disaster-safety
   - daily-life
+  - keigo
+  - visa
+  - tokyo
+  - culture
+security:
+  scanPassed: true
+  lastScanned: "2026-05-10"
 startCommand:
   type: http
   url: "https://api.edition.sh/mcp"

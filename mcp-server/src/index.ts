@@ -53,7 +53,7 @@ async function apiPost(path: string, body: any): Promise<any> {
 
 const server = new McpServer({
   name: "edition",
-  version: "0.1.5",
+  version: "0.2.0",
 });
 
 // ── Tool: memory_store ──────────────────────────────
@@ -710,6 +710,77 @@ server.tool(
       text += `  ❌ 該当する情報が見つかりませんでした。\n`;
     }
     return { content: [{ type: "text" as const, text }] };
+  }
+);
+
+// ── Resources ───────────────────────────────────────
+
+server.resource(
+  "domains",
+  "edition://domains",
+  {
+    description: "All 14 knowledge domains with descriptions, endpoints, and coverage status",
+    mimeType: "application/json",
+  },
+  async () => {
+    const domains = [
+      { id: "memory", name: "Persistent Memory", endpoint: "/api/v1/memory", tools: 5, layers: ["rules", "context"] },
+      { id: "regulation", name: "Business Regulations", endpoint: "/api/v1/regulation", tools: 3, layers: ["rules", "context", "experience"] },
+      { id: "protocol", name: "Business Protocols", endpoint: "/api/v1/protocol", tools: 2, layers: ["rules", "context", "experience"] },
+      { id: "calendar", name: "Business Calendar", endpoint: "/api/v1/calendar", tools: 2, layers: ["rules", "context", "experience"] },
+      { id: "regional", name: "Regional Intelligence", endpoint: "/api/v1/regional", tools: 2, layers: ["rules", "context", "experience"] },
+      { id: "organization", name: "Organizational Structures", endpoint: "/api/v1/organization", tools: 2, layers: ["rules", "context", "experience"] },
+      { id: "foreign_entry", name: "Foreign Market Entry", endpoint: "/api/v1/foreign-entry", tools: 2, layers: ["rules", "context", "experience"] },
+      { id: "travel", name: "Travel Intelligence", endpoint: "/api/v1/travel", tools: 2, layers: ["rules", "context", "experience"] },
+      { id: "entertainment", name: "Entertainment & Pop Culture", endpoint: "/api/v1/entertainment", tools: 2, layers: ["rules", "context", "experience"] },
+      { id: "daily_life", name: "Daily Life", endpoint: "/api/v1/daily-life", tools: 2, layers: ["rules", "context"] },
+      { id: "language", name: "Japanese Language", endpoint: "/api/v1/language", tools: 2, layers: ["rules", "context"] },
+      { id: "food", name: "Food Culture", endpoint: "/api/v1/food", tools: 2, layers: ["rules", "context", "experience"] },
+      { id: "disaster", name: "Disaster & Safety", endpoint: "/api/v1/disaster", tools: 2, layers: ["rules", "context"] },
+      { id: "search", name: "Cross-Domain Search", endpoint: "/api/v1/search", tools: 1, layers: ["rules", "context", "experience"] },
+    ];
+    return {
+      contents: [
+        {
+          uri: "edition://domains",
+          mimeType: "application/json",
+          text: JSON.stringify({ total: domains.length, total_tools: 31, domains }, null, 2),
+        },
+      ],
+    };
+  }
+);
+
+server.resource(
+  "quality",
+  "edition://quality",
+  {
+    description: "Trust Anchor quality scores — verified data coverage, source reliability, and 3-layer completeness for each domain",
+    mimeType: "application/json",
+  },
+  async () => {
+    try {
+      const data = await apiGet("/api/v1/analytics/quality");
+      return {
+        contents: [
+          {
+            uri: "edition://quality",
+            mimeType: "application/json",
+            text: JSON.stringify(data, null, 2),
+          },
+        ],
+      };
+    } catch {
+      return {
+        contents: [
+          {
+            uri: "edition://quality",
+            mimeType: "application/json",
+            text: JSON.stringify({ error: "Quality endpoint unavailable" }),
+          },
+        ],
+      };
+    }
   }
 );
 

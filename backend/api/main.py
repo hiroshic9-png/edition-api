@@ -252,7 +252,20 @@ async def mcp_handler(request: Request):
     elif method == "resources/list":
         return JSONResponse({
             "jsonrpc": "2.0",
-            "result": {"resources": []},
+            "result": {"resources": [
+                {
+                    "uri": "edition://domains",
+                    "name": "Knowledge Domains",
+                    "description": "All 14 knowledge domains with descriptions, endpoints, and 3-layer coverage status",
+                    "mimeType": "application/json"
+                },
+                {
+                    "uri": "edition://quality",
+                    "name": "Trust Anchor Quality Scores",
+                    "description": "Verified data coverage metrics, source reliability, and quality scores for each domain",
+                    "mimeType": "application/json"
+                }
+            ]},
             "id": req_id
         })
     elif method == "prompts/list":

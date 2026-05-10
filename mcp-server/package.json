@@ -1,8 +1,8 @@
 {
   "name": "edition-mcp-server",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "mcpName": "io.github.hiroshic9-png/japan-business-operations",
-  "description": "EDITION Intelligence Platform \u2014 MCP server for Japan operations intelligence (14 knowledge domains, 31 tools)",
+  "description": "EDITION Intelligence Platform — MCP server for Japan operations intelligence. 14 knowledge domains, 31 tools, 2 prompts, 2 resources. Verified ground truth: regulations, procedures, protocols, calendar, regional, organization, foreign entry, travel, entertainment, daily life, language, food culture, disaster safety, and persistent memory.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
@@ -24,8 +24,22 @@
     "travel",
     "entertainment",
     "protocol",
-    "calendar"
+    "calendar",
+    "keigo",
+    "business",
+    "culture",
+    "food",
+    "disaster",
+    "safety",
+    "language",
+    "knowledge-base"
   ],
+  "homepage": "https://edition.sh",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hiroshic9-png/edition-api"
+  },
+  "author": "EDITION <h.sato@c-9.co.jp>",
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.1"
