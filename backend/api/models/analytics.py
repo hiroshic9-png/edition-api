@@ -20,3 +20,6 @@ class ApiRequestLog(Base):
     ip_address = Column(String, nullable=True)
     api_key_prefix = Column(String(8), nullable=True)
     domain = Column(String, nullable=True, index=True)
+    mcp_tool_name = Column(String, nullable=True)
+    mcp_session_id = Column(String, nullable=True, index=True)
+    response_domains = Column(String, nullable=True)  # comma-separated domains hit

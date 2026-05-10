@@ -147,3 +147,192 @@ def analytics_agents(db: Session = Depends(get_db)):
             for a in agent_stats
         ]
     }
+
+
+# ── Phase 5A: MCP Telemetry ──────────────────────────────────
+
+@router.get("/mcp")
+def analytics_mcp(
+    period: str = Query("30d", description="Period: 1h, 24h, 7d, 30d"),
+    db: Session = Depends(get_db),
+):
+    """MCP-specific telemetry — tool usage breakdown by domain."""
+    now = datetime.now(timezone.utc)
+    period_map = {"1h": 1/24, "24h": 1, "7d": 7, "30d": 30}
+    days = period_map.get(period, 30)
+    since = now - timedelta(days=days)
+
+    # MCP tool calls (identified by path = /mcp)
+    mcp_logs = (
+        db.query(ApiRequestLog)
+        .filter(ApiRequestLog.timestamp >= since)
+        .filter(ApiRequestLog.path == "/mcp")
+        .all()
+    )
+
+    # Tool usage breakdown
+    tool_counts = {}
+    domain_via_mcp = {}
+    sessions = set()
+    for log in mcp_logs:
+        if log.mcp_tool_name:
+            tool_counts[log.mcp_tool_name] = tool_counts.get(log.mcp_tool_name, 0) + 1
+        if log.response_domains:
+            for d in log.response_domains.split(","):
+                d = d.strip()
+                if d:
+                    domain_via_mcp[d] = domain_via_mcp.get(d, 0) + 1
+        if log.mcp_session_id:
+            sessions.add(log.mcp_session_id)
+
+    # REST API calls for comparison
+    rest_total = (
+        db.query(ApiRequestLog)
+        .filter(ApiRequestLog.timestamp >= since)
+        .filter(ApiRequestLog.path != "/mcp")
+        .filter(ApiRequestLog.path.like("/api/v1/%"))
+        .count()
+    )
+
+    return {
+        "period": period,
+        "since": since.isoformat(),
+        "mcp": {
+            "total_calls": len(mcp_logs),
+            "unique_sessions": len(sessions),
+            "tool_usage": dict(sorted(tool_counts.items(), key=lambda x: -x[1])),
+            "domains_accessed": dict(sorted(domain_via_mcp.items(), key=lambda x: -x[1])),
+        },
+        "rest": {
+            "total_calls": rest_total,
+        },
+        "mcp_ratio": round(len(mcp_logs) / max(len(mcp_logs) + rest_total, 1) * 100, 1),
+    }
+
+
+# ── Phase 5B: Quality Scoring (Trust Anchor) ─────────────────
+
+DOMAIN_QUALITY = {
+    "memory": {"rules": True, "context": True, "experience": False, "entries": 5, "verified": True, "source": "system"},
+    "regulation": {"rules": True, "context": True, "experience": True, "entries": 10, "verified": True, "source": "official_law"},
+    "procedure": {"rules": True, "context": True, "experience": True, "entries": 65, "verified": True, "source": "official_gov"},
+    "protocol": {"rules": True, "context": True, "experience": True, "entries": 6, "verified": True, "source": "domain_expert"},
+    "calendar": {"rules": True, "context": True, "experience": True, "entries": 5, "verified": True, "source": "official_gov"},
+    "regional": {"rules": True, "context": True, "experience": True, "entries": 4, "verified": True, "source": "official_gov"},
+    "organization": {"rules": True, "context": True, "experience": True, "entries": 5, "verified": True, "source": "domain_expert"},
+    "foreign_entry": {"rules": True, "context": True, "experience": True, "entries": 5, "verified": True, "source": "official_gov"},
+    "travel": {"rules": True, "context": True, "experience": True, "entries": 4, "verified": True, "source": "domain_expert"},
+    "entertainment": {"rules": True, "context": True, "experience": True, "entries": 4, "verified": True, "source": "domain_expert"},
+    "daily_life": {"rules": True, "context": True, "experience": False, "entries": 4, "verified": True, "source": "official_gov"},
+    "language": {"rules": True, "context": True, "experience": False, "entries": 4, "verified": True, "source": "domain_expert"},
+    "food": {"rules": True, "context": True, "experience": True, "entries": 4, "verified": True, "source": "domain_expert"},
+    "disaster": {"rules": True, "context": True, "experience": False, "entries": 4, "verified": True, "source": "official_gov"},
+}
+
+
+@router.get("/quality")
+def analytics_quality():
+    """Knowledge quality dashboard — Trust Anchor scoring for each domain."""
+    domains = []
+    total_score = 0
+    for domain_id, meta in DOMAIN_QUALITY.items():
+        layers = sum([meta["rules"], meta["context"], meta["experience"]])
+        layer_score = layers / 3.0
+        verified_score = 1.0 if meta["verified"] else 0.5
+        source_weights = {"official_law": 1.0, "official_gov": 0.95, "domain_expert": 0.85, "community": 0.7, "llm_generated": 0.3}
+        source_score = source_weights.get(meta["source"], 0.5)
+        quality = round((layer_score * 0.4 + verified_score * 0.35 + source_score * 0.25) * 100, 1)
+        total_score += quality
+        domains.append({
+            "domain": domain_id,
+            "quality_score": quality,
+            "layers": {
+                "rules": meta["rules"],
+                "context": meta["context"],
+                "experience": meta["experience"],
+            },
+            "entries": meta["entries"],
+            "verified": meta["verified"],
+            "source": meta["source"],
+        })
+
+    avg_score = round(total_score / len(DOMAIN_QUALITY), 1)
+    full_coverage = sum(1 for d in DOMAIN_QUALITY.values() if all([d["rules"], d["context"], d["experience"]]))
+
+    return {
+        "platform_quality_score": avg_score,
+        "total_domains": len(DOMAIN_QUALITY),
+        "full_3layer_coverage": full_coverage,
+        "total_entries": sum(d["entries"] for d in DOMAIN_QUALITY.values()),
+        "all_verified": all(d["verified"] for d in DOMAIN_QUALITY.values()),
+        "domains": sorted(domains, key=lambda x: -x["quality_score"]),
+    }
+
+
+# ── Phase 5C: Agent Reputation Protocol ──────────────────────
+
+@router.get("/reputation")
+def analytics_reputation(
+    period: str = Query("30d", description="Period: 7d, 30d"),
+    db: Session = Depends(get_db),
+):
+    """Agent reputation — usage patterns, depth of engagement, domain diversity."""
+    now = datetime.now(timezone.utc)
+    period_map = {"7d": 7, "30d": 30}
+    days = period_map.get(period, 30)
+    since = now - timedelta(days=days)
+
+    # Get all agent stats grouped by name
+    agent_data = (
+        db.query(
+            ApiRequestLog.agent_name,
+            func.count().label("total"),
+            func.avg(ApiRequestLog.latency_ms).label("avg_latency"),
+            func.min(ApiRequestLog.timestamp).label("first_seen"),
+            func.max(ApiRequestLog.timestamp).label("last_seen"),
+        )
+        .filter(ApiRequestLog.timestamp >= since)
+        .group_by(ApiRequestLog.agent_name)
+        .order_by(desc(func.count()))
+        .all()
+    )
+
+    agents = []
+    for a in agent_data:
+        name = a.agent_name or "unknown"
+
+        # Domain diversity for this agent
+        domain_result = (
+            db.query(ApiRequestLog.domain, func.count())
+            .filter(ApiRequestLog.timestamp >= since)
+            .filter(ApiRequestLog.agent_name == a.agent_name)
+            .filter(ApiRequestLog.domain.isnot(None))
+            .group_by(ApiRequestLog.domain)
+            .all()
+        )
+        domains_used = {d: c for d, c in domain_result}
+
+        # Calculate reputation score
+        diversity = min(len(domains_used) / 14.0, 1.0)  # breadth across 14 domains
+        volume = min(a.total / 100.0, 1.0)  # usage volume (cap at 100)
+        recency_days = (now - a.last_seen.replace(tzinfo=timezone.utc)).days if a.last_seen else 30
+        recency = max(1.0 - recency_days / 30.0, 0.0)
+        rep_score = round((diversity * 0.4 + volume * 0.3 + recency * 0.3) * 100, 1)
+
+        agents.append({
+            "agent": name,
+            "reputation_score": rep_score,
+            "total_requests": a.total,
+            "domains_used": len(domains_used),
+            "domain_breakdown": domains_used,
+            "avg_latency_ms": round(a.avg_latency or 0, 2),
+            "first_seen": a.first_seen.isoformat() if a.first_seen else None,
+            "last_seen": a.last_seen.isoformat() if a.last_seen else None,
+        })
+
+    return {
+        "period": period,
+        "since": since.isoformat(),
+        "total_agents": len(agents),
+        "agents": sorted(agents, key=lambda x: -x["reputation_score"]),
+    }

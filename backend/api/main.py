@@ -135,7 +135,7 @@ class AnalyticsMiddleware(BaseHTTPMiddleware):
 app = FastAPI(
     title="EDITION Intelligence Platform",
     description="Japan Operations OS for autonomous AI agents. Verified, structured knowledge across 14 domains: regulations, procedures, protocols, calendar, regional, organization, foreign entry, travel, entertainment, daily life, Japanese language, food culture, disaster & safety, and persistent memory.",
-    version="0.4.0",
+    version="0.5.0",
     docs_url="/docs",
     redoc_url="/redoc",
 )
@@ -235,7 +235,7 @@ async def mcp_handler(request: Request):
                 },
                 "serverInfo": {
                     "name": "EDITION Intelligence Platform",
-                    "version": "0.4.0",
+                    "version": "0.5.0",
                     "description": "Japan Operations OS for autonomous AI agents. 14 knowledge domains, 50+ REST endpoints, 31 MCP tools. Verified ground truth covering regulations, procedures, protocols, calendar, regional intelligence, organizational structures, foreign entry, travel, entertainment, daily life, language, food culture, disaster safety, and persistent memory."
                 }
             },
@@ -329,6 +329,37 @@ async def mcp_handler(request: Request):
                     result_data = resp.json()
                 else:
                     result_data = {"error": f"Unknown tool: {tool_name}"}
+
+            # ── MCP Telemetry: log tool call details ──
+            try:
+                mcp_domain = tool_name.split("_")[0] if "_" in tool_name else tool_name
+                mcp_session = request.headers.get("mcp-session-id", None)
+                db = SessionLocal()
+                try:
+                    mcp_log = ApiRequestLog(
+                        method="POST",
+                        path="/mcp",
+                        query_text=tool_args.get("query") or tool_args.get("action"),
+                        status_code=200,
+                        latency_ms=0,
+                        user_agent=request.headers.get("user-agent", "")[:500],
+                        agent_name=detect_agent(request.headers.get("user-agent", "")),
+                        ip_address=request.client.host if request.client else None,
+                        domain=mcp_domain,
+                        mcp_tool_name=tool_name,
+                        mcp_session_id=mcp_session,
+                        response_domains=mcp_domain,
+                    )
+                    db.add(mcp_log)
+                    db.commit()
+                except Exception as e:
+                    logger.warning(f"MCP telemetry log failed: {e}")
+                    db.rollback()
+                finally:
+                    db.close()
+            except Exception:
+                pass
+
             return JSONResponse({
                 "jsonrpc": "2.0",
                 "result": {"content": [{"type": "text", "text": json.dumps(result_data, ensure_ascii=False)}]},
@@ -419,7 +450,7 @@ def startup():
 def root():
     return {
         "service": "EDITION Intelligence Platform",
-        "version": "0.4.0",
+        "version": "0.5.0",
         "status": "running",
         "docs": "/docs",
         "discovery": {
@@ -461,7 +492,7 @@ def agent_card():
     return JSONResponse(content={
         "name": "EDITION Intelligence Platform",
         "description": "Japan Operations OS for autonomous AI agents. Provides verified, structured knowledge across 14 domains essential for operating in the Japanese market: business regulations (10 industries), step-by-step procedures, business protocols (nemawashi, ringi, hourensou, meishi, seating, gift-giving), fiscal calendar & deadlines, regional differences, organizational structures (keiretsu, payment customs), foreign market entry (visa, banking, real estate), travel intelligence, entertainment & pop culture, daily life (postal, garbage, utilities, healthcare), Japanese language (keigo, counters, business Japanese), food culture (etiquette, cuisine, restaurants, dietary restrictions), disaster & safety (earthquakes, typhoons, emergency contacts), and persistent multi-layer memory.",
-        "version": "0.4.0",
+        "version": "0.5.0",
         "url": "https://api.edition.sh",
         "provider": {
             "organization": "EDITION",
@@ -566,7 +597,7 @@ def mcp_server_card():
     return JSONResponse(content={
         "serverInfo": {
             "name": "EDITION Intelligence Platform",
-            "version": "0.4.0"
+            "version": "0.5.0"
         },
         "authentication": {
             "required": False
@@ -574,7 +605,7 @@ def mcp_server_card():
         "name": "edition",
         "displayName": "EDITION Intelligence Platform",
         "description": "Japan Operations OS for autonomous AI agents. 14 knowledge domains, 50+ REST endpoints, 31 MCP tools. Covers regulations, procedures, protocols, calendar, regional, organization, foreign entry, travel, entertainment, daily life, language, food culture, disaster & safety, and persistent memory.",
-        "version": "0.4.0",
+        "version": "0.5.0",
         "publisher": {
             "name": "EDITION",
             "url": "https://edition.sh"
