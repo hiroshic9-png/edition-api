@@ -172,27 +172,17 @@ app.include_router(disaster.router)
 # Routes — Analytics
 app.include_router(analytics.router)
 
-# ── MCP Streamable HTTP Transport ───────────────────────────
-# Exposes all REST endpoints as MCP tools via /mcp
-_mcp_status = {"enabled": False, "error": None}
-try:
-    from fastapi_mcp import FastApiMCP
-    mcp = FastApiMCP(app, name="edition", description="Japan Operations OS — 14 knowledge domains for AI agents")
-    mcp.mount_http(mount_path="/mcp")
-    _mcp_status = {"enabled": True, "error": None}
-    logger.info("✅ MCP Streamable HTTP mounted at /mcp")
-except ImportError as e:
-    _mcp_status = {"enabled": False, "error": f"ImportError: {e}"}
-    logger.warning(f"fastapi-mcp not installed — MCP HTTP transport disabled: {e}")
-except Exception as e:
-    _mcp_status = {"enabled": False, "error": f"{type(e).__name__}: {e}"}
-    logger.warning(f"MCP mount failed: {e}")
-
-
+# ── MCP Info Endpoint ────────────────────────────────────────
+# Smithery registration uses /.well-known/mcp/server-card.json
 @app.get("/mcp-status")
 def mcp_status():
-    """Debug endpoint to check MCP transport status."""
-    return _mcp_status
+    """MCP transport info — Smithery uses static server card."""
+    return {
+        "mcp_transport": "stdio (via npx edition-mcp-server)",
+        "server_card": "/.well-known/mcp/server-card.json",
+        "smithery": "hiroshi-c9/edition",
+        "note": "Use stdio transport or server-card.json for MCP integration"
+    }
 
 
 @app.on_event("startup")
@@ -364,6 +354,13 @@ def agent_card():
 def mcp_server_card():
     """MCP Server Card — Enables MCP registry discovery."""
     return JSONResponse(content={
+        "serverInfo": {
+            "name": "EDITION Intelligence Platform",
+            "version": "0.4.0"
+        },
+        "authentication": {
+            "required": False
+        },
         "name": "edition",
         "displayName": "EDITION Intelligence Platform",
         "description": "Japan Operations OS for autonomous AI agents. 14 knowledge domains, 50+ REST endpoints, 31 MCP tools. Covers regulations, procedures, protocols, calendar, regional, organization, foreign entry, travel, entertainment, daily life, language, food culture, disaster & safety, and persistent memory.",

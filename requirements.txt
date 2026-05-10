@@ -7,4 +7,3 @@ aiosqlite==0.22.1
 chromadb==1.5.9
 python-dotenv==1.2.1
 google-genai==1.47.0
-fastapi-mcp==0.4.0
