@@ -172,16 +172,100 @@ app.include_router(disaster.router)
 # Routes — Analytics
 app.include_router(analytics.router)
 
-# ── MCP Info Endpoint ────────────────────────────────────────
-# Smithery registration uses /.well-known/mcp/server-card.json
+# ── MCP Streamable HTTP Transport (Minimal) ─────────────────
+# Handles initialize + tools/list for Smithery registration.
+# No external MCP SDK dependency — pure JSON-RPC over HTTP.
+
+MCP_TOOLS = [
+    {"name": "memory_store", "description": "Store episodes to persistent memory with Japanese language understanding", "inputSchema": {"type": "object", "properties": {"content": {"type": "string"}, "session_id": {"type": "string"}, "role": {"type": "string"}, "auto_extract": {"type": "boolean"}}, "required": ["content"]}},
+    {"name": "memory_recall", "description": "Semantic search across stored memories", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}, "limit": {"type": "integer"}}, "required": ["query"]}},
+    {"name": "memory_facts", "description": "List structured facts", "inputSchema": {"type": "object", "properties": {"valid_only": {"type": "boolean"}}}},
+    {"name": "memory_context", "description": "Get current session context summary", "inputSchema": {"type": "object", "properties": {"session_id": {"type": "string"}}}},
+    {"name": "memory_extract", "description": "Auto-extract structured facts from text", "inputSchema": {"type": "object", "properties": {"text": {"type": "string"}, "store": {"type": "boolean"}}, "required": ["text"]}},
+    {"name": "regulation_check", "description": "Check Japan business regulations for 10 industries", "inputSchema": {"type": "object", "properties": {"action": {"type": "string"}, "industry": {"type": "string"}, "entity_type": {"type": "string"}}, "required": ["action"]}},
+    {"name": "regulation_industries", "description": "List all regulated industries", "inputSchema": {"type": "object", "properties": {}}},
+    {"name": "regulation_tourist", "description": "Tourist regulation categories", "inputSchema": {"type": "object", "properties": {}}},
+    {"name": "protocol_check", "description": "Search Japanese business protocols", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
+    {"name": "protocol_list", "description": "List all business protocols", "inputSchema": {"type": "object", "properties": {}}},
+    {"name": "calendar_check", "description": "Search Japan business calendar", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
+    {"name": "calendar_list", "description": "List all calendar categories", "inputSchema": {"type": "object", "properties": {}}},
+    {"name": "regional_check", "description": "Search regional business differences", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
+    {"name": "regional_list", "description": "List all regional categories", "inputSchema": {"type": "object", "properties": {}}},
+    {"name": "organization_check", "description": "Search organizational structures", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
+    {"name": "organization_list", "description": "List all organization categories", "inputSchema": {"type": "object", "properties": {}}},
+    {"name": "foreign_entry_check", "description": "Foreign market entry guides", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
+    {"name": "foreign_entry_list", "description": "List all foreign entry categories", "inputSchema": {"type": "object", "properties": {}}},
+    {"name": "travel_search", "description": "Search Japan travel knowledge", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
+    {"name": "travel_list", "description": "List all travel topics", "inputSchema": {"type": "object", "properties": {}}},
+    {"name": "entertainment_search", "description": "Search Japan entertainment/pop culture", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
+    {"name": "entertainment_list", "description": "List all entertainment topics", "inputSchema": {"type": "object", "properties": {}}},
+    {"name": "daily_life_search", "description": "Search daily life knowledge (postal, garbage, utilities, healthcare)", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
+    {"name": "daily_life_list", "description": "List all daily life topics", "inputSchema": {"type": "object", "properties": {}}},
+    {"name": "language_search", "description": "Search Japanese language knowledge (keigo, counters, business Japanese)", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
+    {"name": "language_list", "description": "List all language topics", "inputSchema": {"type": "object", "properties": {}}},
+    {"name": "food_search", "description": "Search food culture (etiquette, cuisine, restaurants, dietary)", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
+    {"name": "food_list", "description": "List all food culture topics", "inputSchema": {"type": "object", "properties": {}}},
+    {"name": "disaster_search", "description": "Search disaster and safety knowledge (earthquakes, typhoons, emergency)", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
+    {"name": "disaster_list", "description": "List all disaster and safety topics", "inputSchema": {"type": "object", "properties": {}}},
+    {"name": "search", "description": "Cross-domain search across all 12 knowledge domains simultaneously", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
+]
+
+
+@app.post("/mcp")
+async def mcp_handler(request: Request):
+    """Minimal MCP Streamable HTTP handler for Smithery integration."""
+    try:
+        body = await request.json()
+    except Exception:
+        return JSONResponse({"jsonrpc": "2.0", "error": {"code": -32700, "message": "Parse error"}, "id": None})
+
+    method = body.get("method", "")
+    req_id = body.get("id")
+
+    if method == "initialize":
+        return JSONResponse({
+            "jsonrpc": "2.0",
+            "result": {
+                "protocolVersion": "2025-06-18",
+                "capabilities": {"tools": {"listChanged": False}},
+                "serverInfo": {"name": "edition", "version": "0.4.0"}
+            },
+            "id": req_id
+        })
+    elif method == "notifications/initialized":
+        return JSONResponse({"jsonrpc": "2.0", "result": {}, "id": req_id})
+    elif method == "tools/list":
+        return JSONResponse({
+            "jsonrpc": "2.0",
+            "result": {"tools": MCP_TOOLS},
+            "id": req_id
+        })
+    else:
+        return JSONResponse({
+            "jsonrpc": "2.0",
+            "error": {"code": -32601, "message": f"Method not found: {method}"},
+            "id": req_id
+        })
+
+
+@app.get("/mcp")
+async def mcp_sse_stub():
+    """SSE stub — returns 405 for GET (SSE not supported)."""
+    return JSONResponse(
+        status_code=405,
+        content={"error": "SSE not supported. Use POST for JSON-RPC."}
+    )
+
+
 @app.get("/mcp-status")
 def mcp_status():
-    """MCP transport info — Smithery uses static server card."""
+    """MCP transport info."""
     return {
-        "mcp_transport": "stdio (via npx edition-mcp-server)",
+        "mcp_transport": "streamable-http",
+        "mcp_endpoint": "/mcp",
+        "tools_count": len(MCP_TOOLS),
         "server_card": "/.well-known/mcp/server-card.json",
-        "smithery": "hiroshi-c9/edition",
-        "note": "Use stdio transport or server-card.json for MCP integration"
+        "smithery": "hiroshi-c9/edition"
     }
 
 
