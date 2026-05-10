@@ -165,13 +165,13 @@ server.tool(
 
 server.tool(
   "memory_extract",
-  "テキストからファクトを自動抽出します。日本語の敬語・主語省略・社会的階層を分析して構造化します。store=trueで永続保存。",
+  "テキストからファクト（主語→述語→目的語の三つ組）を自動抽出します。日本語の敬語・主語省略・社会的階層を分析して構造化します。store=trueにすると抽出結果をメモリに永続保存します（書き込み発生）。store=false（デフォルト）なら読み取り専用で、保存せずに抽出結果のみ返します。memory_storeとの違い: memory_storeはエピソード全体を保存、memory_extractはテキストからファクトのみを抽出。",
   {
     text: z.string().describe("ファクトを抽出するテキスト"),
     context_hint: z.string().default("").describe("コンテキストヒント（例: ビジネスミーティング）"),
-    store: z.boolean().default(false).describe("抽出したファクトを永続保存するか"),
+    store: z.boolean().default(false).describe("抽出したファクトを永続保存するか（trueで書き込み発生）"),
   },
-  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
+  { readOnlyHint: false, destructiveHint: false, idempotentHint: true },
   async ({ text, context_hint, store }) => {
     const result = await apiPost("/api/v1/memory/extract", {
       text,
