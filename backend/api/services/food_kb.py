@@ -6,6 +6,15 @@ dining etiquette, cuisine classification, restaurant navigation, dietary restric
 
 FOOD_DB = {
     "dining_etiquette": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "農林水産省、消費者庁 食品表示法、日本食文化研究資料",
+            "source_url": "https://www.maff.go.jp/",
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "食事マナー",
         "name_en": "Dining Etiquette",
         "category": "culture",
@@ -48,6 +57,15 @@ FOOD_DB = {
         },
     },
     "cuisine_types": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "農林水産省、消費者庁 食品表示法、日本食文化研究資料",
+            "source_url": "https://www.maff.go.jp/",
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "料理分類",
         "name_en": "Cuisine Classification",
         "category": "food_knowledge",
@@ -76,6 +94,15 @@ FOOD_DB = {
         },
     },
     "restaurant_guide": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "農林水産省、消費者庁 食品表示法、日本食文化研究資料",
+            "source_url": "https://www.maff.go.jp/",
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "飲食店ガイド",
         "name_en": "Restaurant Navigation",
         "category": "practical",
@@ -117,6 +144,15 @@ FOOD_DB = {
         },
     },
     "dietary_restrictions": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "農林水産省、消費者庁 食品表示法、日本食文化研究資料",
+            "source_url": "https://www.maff.go.jp/",
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "アレルギー・食制限",
         "name_en": "Dietary Restrictions & Allergies",
         "category": "safety",

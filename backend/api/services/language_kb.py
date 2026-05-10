@@ -6,6 +6,15 @@ of the Japanese language: keigo, counters, address/name patterns, business Japan
 
 LANGUAGE_DB = {
     "keigo": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "文化庁 敬語の指針、日本語教育学会資料",
+            "source_url": "https://www.bunka.go.jp/",
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "敬語体系",
         "name_en": "Keigo (Honorific System)",
         "category": "communication",
@@ -53,6 +62,15 @@ LANGUAGE_DB = {
         ],
     },
     "counters": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "文化庁 敬語の指針、日本語教育学会資料",
+            "source_url": "https://www.bunka.go.jp/",
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "助数詞（数え方）",
         "name_en": "Counter Words (Josushi)",
         "category": "grammar",
@@ -85,6 +103,15 @@ LANGUAGE_DB = {
         ],
     },
     "names_addresses": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "文化庁 敬語の指針、日本語教育学会資料",
+            "source_url": "https://www.bunka.go.jp/",
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "名前と住所の構造",
         "name_en": "Names & Address Structure",
         "category": "structure",
@@ -113,6 +140,15 @@ LANGUAGE_DB = {
         ],
     },
     "business_japanese": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "文化庁 敬語の指針、日本語教育学会資料",
+            "source_url": "https://www.bunka.go.jp/",
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "ビジネス日本語",
         "name_en": "Business Japanese",
         "category": "communication",

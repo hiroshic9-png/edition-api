@@ -10,6 +10,15 @@ Japan's entertainment culture has deeply codified unwritten rules.
 
 ENTERTAINMENT_DB = {
     "oshikatsu": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "各業界団体、イベント主催者公式情報、文化庁",
+            "source_url": None,
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "推し活",
         "name_en": "Oshi-katsu (Fan Support Activities)",
         "category": "fan_culture",
@@ -52,6 +61,15 @@ ENTERTAINMENT_DB = {
         "economic_scale": "推し活市場は約7,000億円（2023年推定）。ファン1人あたりの年間支出は平均約4万円。ただし上位10%のファンが支出の50%以上を占める「パレートの法則」が顕著。",
     },
     "anime_manga": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "各業界団体、イベント主催者公式情報、文化庁",
+            "source_url": None,
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "アニメ・マンガ",
         "name_en": "Anime & Manga",
         "category": "content",
@@ -104,6 +122,15 @@ ENTERTAINMENT_DB = {
         },
     },
     "live_entertainment": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "各業界団体、イベント主催者公式情報、文化庁",
+            "source_url": None,
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "ライブエンターテインメント",
         "name_en": "Live Entertainment",
         "category": "events",
@@ -145,6 +172,15 @@ ENTERTAINMENT_DB = {
         ],
     },
     "seasonal_events": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "各業界団体、イベント主催者公式情報、文化庁",
+            "source_url": None,
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "季節のイベント",
         "name_en": "Seasonal Events",
         "category": "cultural_events",

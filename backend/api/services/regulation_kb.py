@@ -8,6 +8,24 @@ REGULATION_DB = {
     # ── 既存5業種（拡充） ──────────────────────────────
 
     "人材派遣": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "厚生労働省 労働者派遣事業の適正な運営の確保及び派遣労働者の保護等に関する法律",
+
+            "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/haken-shoukai/",
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "licenses": ["一般労働者派遣事業許可"],
         "governing_body": "厚生労働省",
         "governing_law": "労働者派遣法（昭和60年法律第88号）",
@@ -153,6 +171,24 @@ REGULATION_DB = {
     },
 
     "飲食店": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "厚生労働省 食品衛生法、各都道府県保健所",
+
+            "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/",
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "licenses": ["食品衛生責任者", "飲食店営業許可"],
         "governing_body": "保健所（管轄の都道府県）",
         "governing_law": "食品衛生法、食品表示法",
@@ -323,6 +359,24 @@ REGULATION_DB = {
     },
 
     "不動産業": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "国土交通省 宅地建物取引業法",
+
+            "source_url": "https://www.mlit.go.jp/totikensangyo/const/sosei_const_tk3_000066.html",
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "licenses": ["宅地建物取引業免許"],
         "governing_body": "国土交通省（2以上の都道府県）/ 都道府県知事（1つの都道府県）",
         "governing_law": "宅地建物取引業法",
@@ -446,6 +500,24 @@ REGULATION_DB = {
     },
 
     "ECサイト": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "消費者庁 特定商取引法、景品表示法",
+
+            "source_url": "https://www.caa.go.jp/policies/policy/consumer_transaction/",
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "licenses": ["特定商取引法に基づく表記"],
         "governing_body": "消費者庁",
         "governing_law": "特定商取引法、景品表示法、個人情報保護法",
@@ -604,6 +676,24 @@ REGULATION_DB = {
     },
 
     "建設業": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "国土交通省 建設業法",
+
+            "source_url": "https://www.mlit.go.jp/totikensangyo/const/",
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "licenses": ["建設業許可（一般/特定）"],
         "governing_body": "国土交通省 / 都道府県知事",
         "governing_law": "建設業法",
@@ -752,6 +842,24 @@ REGULATION_DB = {
     # ── 新規5業種 ──────────────────────────────────
 
     "宿泊業": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "厚生労働省 旅館業法、住宅宿泊事業法（民泊新法）",
+
+            "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/seikatsu-eisei/ryokangyou/",
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "licenses": ["旅館業許可（旅館・ホテル営業）"],
         "governing_body": "保健所（管轄の都道府県）",
         "governing_law": "旅館業法、住宅宿泊事業法（民泊新法）",
@@ -913,6 +1021,24 @@ REGULATION_DB = {
     },
 
     "医療・介護": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "厚生労働省 医療法、各地方厚生局",
+
+            "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/",
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "licenses": ["医療法人設立認可", "病院/診療所開設許可", "介護事業者指定"],
         "governing_body": "厚生労働省、都道府県知事",
         "governing_law": "医療法、介護保険法、医師法",
@@ -1077,6 +1203,24 @@ REGULATION_DB = {
     },
 
     "金融・保険": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "金融庁 金融商品取引法",
+
+            "source_url": "https://www.fsa.go.jp/",
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "licenses": ["銀行業免許", "金融商品取引業登録", "保険業免許", "貸金業登録"],
         "governing_body": "金融庁",
         "governing_law": "銀行法、金融商品取引法、保険業法、貸金業法",
@@ -1227,6 +1371,24 @@ REGULATION_DB = {
     },
 
     "運送業": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "国土交通省 貨物自動車運送事業法",
+
+            "source_url": "https://www.mlit.go.jp/jidosha/jidosha_tk4_000003.html",
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "licenses": ["一般貨物自動車運送事業許可", "一般旅客自動車運送事業許可"],
         "governing_body": "国土交通省（地方運輸局）",
         "governing_law": "貨物自動車運送事業法、道路運送法",
@@ -1391,6 +1553,24 @@ REGULATION_DB = {
     },
 
     "教育": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "文部科学省 学校教育法、出入国在留管理庁 日本語教育機関認定法",
+
+            "source_url": "https://www.mext.go.jp/",
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "licenses": ["学校設置認可", "各種学校認可"],
         "governing_body": "文部科学省、都道府県知事",
         "governing_law": "学校教育法、私立学校法",
@@ -1539,6 +1719,15 @@ REGULATION_DB = {
 
 TOURIST_REGULATIONS = {
     "入国・ビザ": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "EDITION knowledge base",
+            "source_url": None,
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "overview": "短期滞在（90日以内）は68カ国・地域がビザ免除。それ以外は短期滞在ビザが必要。",
         "key_rules": [
             "パスポートの残存有効期間: 滞在日数以上（推奨6ヶ月以上）",
@@ -1550,6 +1739,15 @@ TOURIST_REGULATIONS = {
         "recent_changes": "2026年: 入国審査手数料の新設検討中",
     },
     "免税・税関": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "EDITION knowledge base",
+            "source_url": None,
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "overview": "非居住者は1店舗で5,000円以上（税抜）購入時に消費税10%が免税。",
         "key_rules": [
             "免税対象: 非居住者（日本滞在6ヶ月未満）",
@@ -1562,6 +1760,15 @@ TOURIST_REGULATIONS = {
         "recent_changes": "2025年: 免税制度の見直し議論中。転売防止策の強化",
     },
     "交通・運転": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "EDITION knowledge base",
+            "source_url": None,
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "overview": "国際運転免許証（ジュネーブ条約加盟国発行）で運転可能。一部の国はJAF翻訳で対応。",
         "key_rules": [
             "日本は左側通行・右ハンドル",
@@ -1573,6 +1780,15 @@ TOURIST_REGULATIONS = {
         "penalties": "飲酒運転: 5年以下の懲役または100万円以下の罰金。無免許運転: 3年以下の懲役または50万円以下の罰金",
     },
     "宿泊・滞在": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "EDITION knowledge base",
+            "source_url": None,
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "overview": "ホテル・旅館は旅館業法、民泊は住宅宿泊事業法で規制。宿泊税を課す自治体あり。",
         "key_rules": [
             "チェックイン時のパスポート提示・コピーが義務（旅館業法）",
@@ -1582,6 +1798,15 @@ TOURIST_REGULATIONS = {
         ],
     },
     "医療・緊急": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "EDITION knowledge base",
+            "source_url": None,
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "overview": "救急車は119番で無料。外国人患者受入れ認証医療機関（JMIP）制度あり。",
         "key_rules": [
             "救急車: 119番（無料）。英語対応は地域による",
@@ -1593,6 +1818,15 @@ TOURIST_REGULATIONS = {
         "recent_changes": "2026年: 外国人の未払い医療費に対する入国審査への影響措置を検討中",
     },
     "マナー・文化": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "EDITION knowledge base",
+            "source_url": None,
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "overview": "日本特有のマナーや文化的規範。法律ではないが遵守が強く期待される。",
         "key_rules": [
             "公共交通機関での通話は控える（マナーモード推奨）",

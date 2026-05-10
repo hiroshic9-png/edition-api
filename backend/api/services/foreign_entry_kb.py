@@ -11,6 +11,15 @@ This is a cross-industry foundational knowledge base covering:
 
 FOREIGN_ENTRY_DB = {
     "company_incorporation": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "法務省 出入国在留管理庁、JETRO対日投資ガイド",
+            "source_url": "https://www.moj.go.jp/isa/",
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "法人設立",
         "name_en": "Company Incorporation",
         "category": "legal",
@@ -84,6 +93,24 @@ FOREIGN_ENTRY_DB = {
     },
 
     "business_visa": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "法務省 出入国在留管理庁、JETRO対日投資ガイド",
+
+            "source_url": "https://www.moj.go.jp/isa/",
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "name_ja": "経営管理ビザ（在留資格）",
         "name_en": "Business Manager Visa",
         "category": "immigration",
@@ -146,6 +173,24 @@ FOREIGN_ENTRY_DB = {
     },
 
     "bank_account": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "法務省 出入国在留管理庁、JETRO対日投資ガイド",
+
+            "source_url": "https://www.moj.go.jp/isa/",
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "name_ja": "法人銀行口座の開設",
         "name_en": "Corporate Bank Account Opening",
         "category": "finance",
@@ -180,6 +225,24 @@ FOREIGN_ENTRY_DB = {
     },
 
     "real_estate": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "法務省 出入国在留管理庁、JETRO対日投資ガイド",
+
+            "source_url": "https://www.moj.go.jp/isa/",
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "name_ja": "事務所・店舗の物件探し",
         "name_en": "Office / Shop Leasing",
         "category": "real_estate",
@@ -210,6 +273,24 @@ FOREIGN_ENTRY_DB = {
     },
 
     "tax_registration": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "法務省 出入国在留管理庁、JETRO対日投資ガイド",
+
+            "source_url": "https://www.moj.go.jp/isa/",
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "name_ja": "税務届出",
         "name_en": "Tax Registration",
         "category": "tax",

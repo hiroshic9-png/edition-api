@@ -7,6 +7,15 @@ LLM hallucination in this domain is potentially life-threatening.
 
 DISASTER_DB = {
     "earthquake": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "気象庁、内閣府防災、消防庁、各自治体防災マニュアル",
+            "source_url": "https://www.jma.go.jp/",
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "地震",
         "name_en": "Earthquakes",
         "category": "natural_disaster",
@@ -51,6 +60,15 @@ DISASTER_DB = {
         ],
     },
     "typhoon_flood": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "気象庁、内閣府防災、消防庁、各自治体防災マニュアル",
+            "source_url": "https://www.jma.go.jp/",
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "台風・水害",
         "name_en": "Typhoons & Flooding",
         "category": "natural_disaster",
@@ -85,6 +103,15 @@ DISASTER_DB = {
         ],
     },
     "emergency_contacts": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "気象庁、内閣府防災、消防庁、各自治体防災マニュアル",
+            "source_url": "https://www.jma.go.jp/",
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "緊急連絡先",
         "name_en": "Emergency Contacts",
         "category": "safety_essentials",
@@ -112,6 +139,15 @@ DISASTER_DB = {
         ],
     },
     "disaster_preparation": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "気象庁、内閣府防災、消防庁、各自治体防災マニュアル",
+            "source_url": "https://www.jma.go.jp/",
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "防災準備",
         "name_en": "Disaster Preparedness",
         "category": "safety_essentials",

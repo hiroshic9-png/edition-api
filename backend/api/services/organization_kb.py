@@ -6,6 +6,15 @@ corporate hierarchy, and decision-making patterns unique to Japan.
 
 ORGANIZATION_DB = {
     "corporate_hierarchy": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "経済産業省、日本経済団体連合会、各業界団体公式資料",
+            "source_url": None,
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "企業の役職体系",
         "name_en": "Corporate Hierarchy",
         "category": "structure",
@@ -38,6 +47,24 @@ ORGANIZATION_DB = {
     },
 
     "keiretsu": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "経済産業省、日本経済団体連合会、各業界団体公式資料",
+
+            "source_url": None,
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "name_ja": "系列・企業グループ",
         "name_en": "Keiretsu (Corporate Groups)",
         "category": "structure",
@@ -80,6 +107,24 @@ ORGANIZATION_DB = {
     },
 
     "payment_practices": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "経済産業省、日本経済団体連合会、各業界団体公式資料",
+
+            "source_url": None,
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "name_ja": "支払慣行",
         "name_en": "Payment Practices",
         "category": "transaction",
@@ -118,6 +163,24 @@ ORGANIZATION_DB = {
     },
 
     "contract_customs": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "経済産業省、日本経済団体連合会、各業界団体公式資料",
+
+            "source_url": None,
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "name_ja": "契約慣行",
         "name_en": "Contract Customs",
         "category": "transaction",
@@ -161,6 +224,24 @@ ORGANIZATION_DB = {
     },
 
     "industry_associations": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "経済産業省、日本経済団体連合会、各業界団体公式資料",
+
+            "source_url": None,
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "name_ja": "業界団体",
         "name_en": "Industry Associations",
         "category": "network",

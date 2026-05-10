@@ -6,6 +6,15 @@ most operationally significant regional differences that impact business.
 
 REGIONAL_DB = {
     "major_regions": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "各都道府県庁公式サイト、中小企業庁、JETRO地域情報",
+            "source_url": "https://www.jetro.go.jp/",
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "主要地域の特性",
         "name_en": "Major Regional Characteristics",
         "category": "overview",
@@ -60,6 +69,24 @@ REGIONAL_DB = {
     },
 
     "prefectural_incentives": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "各都道府県庁公式サイト、中小企業庁、JETRO地域情報",
+
+            "source_url": "https://www.jetro.go.jp/",
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "name_ja": "自治体の助成金・優遇制度",
         "name_en": "Prefectural Incentives",
         "category": "incentive",
@@ -105,6 +132,24 @@ REGIONAL_DB = {
     },
 
     "regional_regulations": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "各都道府県庁公式サイト、中小企業庁、JETRO地域情報",
+
+            "source_url": "https://www.jetro.go.jp/",
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "name_ja": "地域特有の規制・条例",
         "name_en": "Regional Regulations",
         "category": "regulation",
@@ -154,6 +199,24 @@ REGIONAL_DB = {
     },
 
     "regional_business_culture": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "各都道府県庁公式サイト、中小企業庁、JETRO地域情報",
+
+            "source_url": "https://www.jetro.go.jp/",
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "name_ja": "地域のビジネス文化",
         "name_en": "Regional Business Culture",
         "category": "culture",

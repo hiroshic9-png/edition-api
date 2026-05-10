@@ -7,6 +7,15 @@ seasonal business patterns.
 
 CALENDAR_DB = {
     "fiscal_year": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "内閣府 祝日法、国税庁 税務カレンダー、各業界団体資料",
+            "source_url": "https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html",
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "会計年度",
         "name_en": "Fiscal Year",
         "category": "business_cycle",
@@ -46,6 +55,24 @@ CALENDAR_DB = {
     },
 
     "public_holidays": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "内閣府 祝日法、国税庁 税務カレンダー、各業界団体資料",
+
+            "source_url": "https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html",
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "name_ja": "祝日・大型連休",
         "name_en": "Public Holidays & Extended Breaks",
         "category": "holidays",
@@ -111,6 +138,24 @@ CALENDAR_DB = {
     },
 
     "gift_seasons": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "内閣府 祝日法、国税庁 税務カレンダー、各業界団体資料",
+
+            "source_url": "https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html",
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "name_ja": "贈答シーズン",
         "name_en": "Gift-Giving Seasons",
         "category": "relationship",
@@ -164,6 +209,24 @@ CALENDAR_DB = {
     },
 
     "administrative_deadlines": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "内閣府 祝日法、国税庁 税務カレンダー、各業界団体資料",
+
+            "source_url": "https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html",
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "name_ja": "行政・税務の主要締切",
         "name_en": "Administrative & Tax Deadlines",
         "category": "compliance",
@@ -243,6 +306,24 @@ CALENDAR_DB = {
     },
 
     "seasonal_business": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "内閣府 祝日法、国税庁 税務カレンダー、各業界団体資料",
+
+            "source_url": "https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html",
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "name_ja": "季節性のあるビジネスイベント",
         "name_en": "Seasonal Business Events",
         "category": "business_cycle",

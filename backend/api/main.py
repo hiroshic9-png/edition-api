@@ -19,7 +19,7 @@ from backend.api.models.analytics import ApiRequestLog
 from backend.api.routes import (
     memory, regulation, protocol, calendar, regional,
     organization, search, foreign_entry, travel, entertainment,
-    daily_life, language, food, disaster, analytics,
+    daily_life, language, food, disaster, analytics, freshness,
 )
 
 logger = logging.getLogger(__name__)
@@ -135,7 +135,7 @@ class AnalyticsMiddleware(BaseHTTPMiddleware):
 app = FastAPI(
     title="EDITION Intelligence Platform",
     description="Japan Operations OS for autonomous AI agents. Verified, structured knowledge across 14 domains: regulations, procedures, protocols, calendar, regional, organization, foreign entry, travel, entertainment, daily life, Japanese language, food culture, disaster & safety, and persistent memory.",
-    version="0.5.0",
+    version="0.6.0",
     docs_url="/docs",
     redoc_url="/redoc",
 )
@@ -172,6 +172,9 @@ app.include_router(disaster.router)
 
 # Routes — Analytics
 app.include_router(analytics.router)
+
+# Routes — Knowledge Quality (Freshness, Updates, Audit)
+app.include_router(freshness.router)
 
 # ── MCP Streamable HTTP Transport (Minimal) ─────────────────
 # Handles initialize + tools/list for Smithery registration.
@@ -467,7 +470,7 @@ def startup():
 def root():
     return {
         "service": "EDITION Intelligence Platform",
-        "version": "0.5.0",
+        "version": "0.6.0",
         "status": "running",
         "docs": "/docs",
         "discovery": {
@@ -491,6 +494,9 @@ def root():
             "food": "/api/v1/food",
             "disaster": "/api/v1/disaster",
             "analytics": "/api/v1/analytics",
+            "freshness": "/api/v1/freshness",
+            "updates": "/api/v1/updates",
+            "audit": "/api/v1/audit",
         },
     }
 
@@ -498,14 +504,26 @@ def root():
 @app.get("/health")
 def health():
     import time
+    # Quick freshness summary
+    try:
+        from backend.api.services.freshness import freshness_report as fr
+        report = fr.generate_report()
+        freshness_health = report.get("platform", {}).get("health_score", 0)
+        stale_count = report.get("action_required", {}).get("total_action_needed", 0)
+    except Exception:
+        freshness_health = 0
+        stale_count = 0
     return {
         "status": "ok",
-        "version": "0.5.0",
+        "version": "0.6.0",
         "domains": 14,
         "tools": len(MCP_TOOLS),
         "resources": 2,
         "prompts": 2,
-        "quality_score": 96.0,
+        "knowledge_freshness": {
+            "health_score": freshness_health,
+            "stale_entries": stale_count,
+        },
         "timestamp": int(time.time()),
     }
 

@@ -6,6 +6,15 @@ navigating everyday life in Japan: postal, garbage, utilities, healthcare.
 
 DAILY_LIFE_DB = {
     "postal_address": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "各自治体公式サイト、日本郵便、厚生労働省",
+            "source_url": None,
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "住所・郵便",
         "name_en": "Postal & Address System",
         "category": "daily_essentials",
@@ -39,6 +48,15 @@ DAILY_LIFE_DB = {
         ],
     },
     "garbage_sorting": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "各自治体公式サイト、日本郵便、厚生労働省",
+            "source_url": None,
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "ゴミ分別",
         "name_en": "Garbage Sorting & Recycling",
         "category": "daily_essentials",
@@ -69,6 +87,15 @@ DAILY_LIFE_DB = {
         ],
     },
     "utilities": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "各自治体公式サイト、日本郵便、厚生労働省",
+            "source_url": None,
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "公共料金",
         "name_en": "Utilities & Bills",
         "category": "daily_essentials",
@@ -103,6 +130,15 @@ DAILY_LIFE_DB = {
         ],
     },
     "healthcare": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "各自治体公式サイト、日本郵便、厚生労働省",
+            "source_url": None,
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "医療",
         "name_en": "Healthcare System",
         "category": "daily_essentials",

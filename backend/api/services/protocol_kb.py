@@ -6,6 +6,15 @@ for operating in Japan but rarely documented in formal regulations.
 
 PROTOCOL_DB = {
     "nemawashi": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "日本ビジネス慣行（経験的知識・ビジネスマナー書籍・商工会議所資料に基づく）",
+            "source_url": None,
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "根回し",
         "name_en": "Nemawashi (Pre-meeting Consensus Building)",
         "category": "decision_making",
@@ -64,6 +73,24 @@ PROTOCOL_DB = {
     },
 
     "ringi": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "日本ビジネス慣行（経験的知識・ビジネスマナー書籍・商工会議所資料に基づく）",
+
+            "source_url": None,
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "name_ja": "稟議",
         "name_en": "Ringi (Formal Approval Process)",
         "category": "decision_making",
@@ -121,6 +148,24 @@ PROTOCOL_DB = {
     },
 
     "horenso": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "日本ビジネス慣行（経験的知識・ビジネスマナー書籍・商工会議所資料に基づく）",
+
+            "source_url": None,
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "name_ja": "報連相（ほうれんそう）",
         "name_en": "Horenso (Report-Contact-Consult)",
         "category": "communication",
@@ -172,6 +217,24 @@ PROTOCOL_DB = {
     },
 
     "meishi": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "日本ビジネス慣行（経験的知識・ビジネスマナー書籍・商工会議所資料に基づく）",
+
+            "source_url": None,
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "name_ja": "名刺交換",
         "name_en": "Meishi Koukan (Business Card Exchange)",
         "category": "greeting",
@@ -231,6 +294,24 @@ PROTOCOL_DB = {
     },
 
     "sekiji": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "日本ビジネス慣行（経験的知識・ビジネスマナー書籍・商工会議所資料に基づく）",
+
+            "source_url": None,
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "name_ja": "席順（上座・下座）",
         "name_en": "Sekiji (Seating Arrangement)",
         "category": "etiquette",
@@ -273,6 +354,24 @@ PROTOCOL_DB = {
     },
 
     "zoto": {
+
+        "_meta": {
+
+            "last_verified": "2026-05-10",
+
+            "source": "日本ビジネス慣行（経験的知識・ビジネスマナー書籍・商工会議所資料に基づく）",
+
+            "source_url": None,
+
+            "confidence": "verified",
+
+            "valid_until": None,
+
+            "version": "1.0.0",
+
+            "changelog": ["2026-05-10: Initial verified entry"]
+
+        },
         "name_ja": "贈答",
         "name_en": "Zoto (Business Gift-Giving)",
         "category": "relationship",

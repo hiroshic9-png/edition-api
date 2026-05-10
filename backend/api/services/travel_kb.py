@@ -10,6 +10,15 @@ This contextual layer is what generic LLMs cannot reliably provide.
 
 TRAVEL_DB = {
     "transportation": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "日本政府観光局(JNTO)、JR各社公式サイト、国土交通省観光庁",
+            "source_url": "https://www.japan.travel/",
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "交通機関",
         "name_en": "Transportation",
         "category": "infrastructure",
@@ -119,6 +128,15 @@ TRAVEL_DB = {
         },
     },
     "accommodation": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "日本政府観光局(JNTO)、JR各社公式サイト、国土交通省観光庁",
+            "source_url": "https://www.japan.travel/",
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "宿泊",
         "name_en": "Accommodation",
         "category": "lodging",
@@ -151,6 +169,15 @@ TRAVEL_DB = {
         "major_chains": ["東横INN", "アパホテル", "ドーミーイン", "コンフォートホテル", "スーパーホテル"],
     },
     "dining": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "日本政府観光局(JNTO)、JR各社公式サイト、国土交通省観光庁",
+            "source_url": "https://www.japan.travel/",
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "飲食",
         "name_en": "Dining",
         "category": "food",
@@ -190,6 +217,15 @@ TRAVEL_DB = {
         ],
     },
     "practical_info": {
+        "_meta": {
+            "last_verified": "2026-05-10",
+            "source": "日本政府観光局(JNTO)、JR各社公式サイト、国土交通省観光庁",
+            "source_url": "https://www.japan.travel/",
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-10: Initial verified entry"]
+        },
         "name_ja": "実用情報",
         "name_en": "Practical Information",
         "category": "visitor_essentials",
