@@ -207,7 +207,7 @@ MCP_TOOLS = [
     {"name": "food_list", "description": "List all food culture topics", "inputSchema": {"type": "object", "properties": {}}},
     {"name": "disaster_search", "description": "Search disaster and safety knowledge (earthquakes, typhoons, emergency)", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
     {"name": "disaster_list", "description": "List all disaster and safety topics", "inputSchema": {"type": "object", "properties": {}}},
-    {"name": "search", "description": "Cross-domain search across all 12 knowledge domains simultaneously", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
+    {"name": "search", "description": "Cross-domain search across all 14 knowledge domains simultaneously", "inputSchema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
 ]
 
 
@@ -228,7 +228,11 @@ async def mcp_handler(request: Request):
             "result": {
                 "protocolVersion": "2025-06-18",
                 "capabilities": {"tools": {"listChanged": False}},
-                "serverInfo": {"name": "edition", "version": "0.4.0"}
+                "serverInfo": {
+                    "name": "EDITION Intelligence Platform",
+                    "version": "0.4.0",
+                    "description": "Japan Operations OS for autonomous AI agents. 14 knowledge domains, 50+ REST endpoints, 31 MCP tools. Verified ground truth covering regulations, procedures, protocols, calendar, regional intelligence, organizational structures, foreign entry, travel, entertainment, daily life, language, food culture, disaster safety, and persistent memory."
+                }
             },
             "id": req_id
         })
