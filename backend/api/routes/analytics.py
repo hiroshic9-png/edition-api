@@ -336,3 +336,136 @@ def analytics_reputation(
         "total_agents": len(agents),
         "agents": sorted(agents, key=lambda x: -x["reputation_score"]),
     }
+
+
+@router.get("/weekly")
+def weekly_summary(db: Session = Depends(get_db)):
+    """Weekly intelligence summary — demand detection + platform health.
+
+    Designed to be checked every Monday to detect usage patterns,
+    new agent arrivals, and knowledge freshness degradation.
+    """
+    now = datetime.now(timezone.utc)
+    week_ago = now - timedelta(days=7)
+    prev_week_start = week_ago - timedelta(days=7)
+
+    # Current week stats
+    current_logs = db.query(ApiRequestLog).filter(ApiRequestLog.timestamp >= week_ago)
+    current_total = current_logs.count()
+
+    # Previous week stats (for comparison)
+    prev_logs = db.query(ApiRequestLog).filter(
+        ApiRequestLog.timestamp >= prev_week_start,
+        ApiRequestLog.timestamp < week_ago,
+    )
+    prev_total = prev_logs.count()
+
+    # Growth rate
+    growth = round(((current_total - prev_total) / max(prev_total, 1)) * 100, 1)
+
+    # Domain heat map (which domains are getting attention)
+    domain_heat = dict(
+        current_logs.with_entities(ApiRequestLog.domain, func.count())
+        .filter(ApiRequestLog.domain.isnot(None))
+        .group_by(ApiRequestLog.domain)
+        .order_by(desc(func.count()))
+        .all()
+    )
+
+    # New agents detected this week
+    all_agents_before = set(
+        a[0] for a in db.query(ApiRequestLog.agent_name)
+        .filter(ApiRequestLog.timestamp < week_ago)
+        .filter(ApiRequestLog.agent_name.isnot(None))
+        .distinct()
+        .all()
+    )
+    current_agents = set(
+        a[0] for a in current_logs
+        .with_entities(ApiRequestLog.agent_name)
+        .filter(ApiRequestLog.agent_name.isnot(None))
+        .distinct()
+        .all()
+    )
+    new_agents = list(current_agents - all_agents_before)
+
+    # Peak hours (UTC)
+    hour_dist = dict(
+        current_logs.with_entities(
+            func.extract("hour", ApiRequestLog.timestamp).label("hour"),
+            func.count(),
+        )
+        .group_by("hour")
+        .order_by(desc(func.count()))
+        .limit(5)
+        .all()
+    )
+
+    # Top queries this week
+    top_queries = [
+        {"query": q, "count": c}
+        for q, c in current_logs
+        .with_entities(ApiRequestLog.query_text, func.count())
+        .filter(ApiRequestLog.query_text.isnot(None))
+        .group_by(ApiRequestLog.query_text)
+        .order_by(desc(func.count()))
+        .limit(10)
+        .all()
+    ]
+
+    # MCP tool usage
+    mcp_usage = dict(
+        current_logs.with_entities(ApiRequestLog.mcp_tool_name, func.count())
+        .filter(ApiRequestLog.mcp_tool_name.isnot(None))
+        .group_by(ApiRequestLog.mcp_tool_name)
+        .order_by(desc(func.count()))
+        .all()
+    )
+
+    # Knowledge freshness summary
+    try:
+        from backend.api.services.freshness import freshness_report
+        fr = freshness_report.generate_report()
+        freshness = {
+            "health_score": fr["platform"]["health_score"],
+            "total_entries": fr["platform"]["total_entries"],
+            "stale_count": fr["action_required"]["total_action_needed"],
+            "next_review": fr["next_review"]["recommended_date"],
+        }
+    except Exception:
+        freshness = {"health_score": 0, "note": "Could not generate freshness report"}
+
+    return {
+        "report_type": "weekly_intelligence_summary",
+        "period": {
+            "start": week_ago.isoformat(),
+            "end": now.isoformat(),
+        },
+        "traffic": {
+            "total_requests": current_total,
+            "previous_week": prev_total,
+            "growth_percent": growth,
+            "trend": "up" if growth > 0 else ("down" if growth < 0 else "flat"),
+        },
+        "domain_heat": domain_heat,
+        "agents": {
+            "total_active": len(current_agents),
+            "new_this_week": new_agents,
+            "new_count": len(new_agents),
+        },
+        "peak_hours_utc": hour_dist,
+        "top_queries": top_queries,
+        "mcp_tool_usage": mcp_usage,
+        "knowledge_freshness": freshness,
+        "demand_signals": {
+            "has_real_traffic": current_total > 10,
+            "has_agent_traffic": len(current_agents) > 0,
+            "dominant_domain": max(domain_heat, key=domain_heat.get) if domain_heat else None,
+            "recommendation": (
+                "Real demand detected. Analyze top queries for feature prioritization."
+                if current_total > 10
+                else "No significant traffic yet. Continue marketing efforts."
+            ),
+        },
+    }
+
