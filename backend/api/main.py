@@ -630,7 +630,7 @@ def mcp_server_card():
         },
         "name": "edition",
         "displayName": "EDITION Intelligence Platform",
-        "description": "Japan Operations OS for autonomous AI agents. 14 knowledge domains, 50+ REST endpoints, 31 MCP tools. Covers regulations, procedures, protocols, calendar, regional, organization, foreign entry, travel, entertainment, daily life, language, food culture, disaster & safety, and persistent memory.",
+        "description": "Japan Operations OS for autonomous AI agents. 14 knowledge domains, 55+ REST endpoints, 31 MCP tools (all with annotations), 2 prompts, 2 resources. Quality score: 96.0/100. Covers regulations, procedures, protocols, calendar, regional, organization, foreign entry, travel, entertainment, daily life, language, food culture, disaster & safety, and persistent memory.",
         "version": "0.5.0",
         "publisher": {
             "name": "EDITION",
