@@ -172,6 +172,18 @@ app.include_router(disaster.router)
 # Routes — Analytics
 app.include_router(analytics.router)
 
+# ── MCP Streamable HTTP Transport ───────────────────────────
+# Exposes all REST endpoints as MCP tools via /mcp
+try:
+    from fastapi_mcp import FastApiMCP
+    mcp = FastApiMCP(app, name="edition", description="Japan Operations OS — 14 knowledge domains for AI agents")
+    mcp.mount_http(mount_path="/mcp")
+    logger.info("✅ MCP Streamable HTTP mounted at /mcp")
+except ImportError:
+    logger.warning("fastapi-mcp not installed — MCP HTTP transport disabled")
+except Exception as e:
+    logger.warning(f"MCP mount failed: {e}")
+
 
 @app.on_event("startup")
 def startup():
