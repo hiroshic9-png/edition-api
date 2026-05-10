@@ -9,8 +9,8 @@ CALENDAR_DB = {
     "fiscal_year": {
         "_meta": {
             "last_verified": "2026-05-10",
-            "source": "内閣府 祝日法、国税庁 税務カレンダー、各業界団体資料",
-            "source_url": "https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html",
+            "source": "経済産業省、金融庁、国税庁 法人税関連、各業界団体資料",
+            "source_url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/mokuji.htm",
             "confidence": "verified",
             "valid_until": None,
             "version": "1.0.0",
@@ -60,7 +60,7 @@ CALENDAR_DB = {
 
             "last_verified": "2026-05-10",
 
-            "source": "内閣府 祝日法、国税庁 税務カレンダー、各業界団体資料",
+            "source": "内閣府 国民の祝日について",
 
             "source_url": "https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html",
 
@@ -133,7 +133,7 @@ CALENDAR_DB = {
         "experience_tips": [
             "GW前に『連休中に何かあればご連絡ください』と一言添えると、相手は『安心して休める』と感じる。逆にGW明けの一抬『いいお休みでしたか』で関係が温まる",
             "年末の挨拶回りは単なる儀礼ではなく、翌年の関係を左右する重要なタッチポイント。『今年一年のお礼』と『来年の抱負』をセットで伝える",
-            "お盆期間中に簡単なメール（『お盆期間中失礼します』）を送ると、休暢中でも気にかけている姿勢が伝わる",
+            "お盆期間中に簡単なメール（『お盆期間中失礼します』）を送ると、休養中でも気にかけている姿勢が伝わる",
         ],
     },
 
@@ -143,9 +143,9 @@ CALENDAR_DB = {
 
             "last_verified": "2026-05-10",
 
-            "source": "内閣府 祝日法、国税庁 税務カレンダー、各業界団体資料",
+            "source": "全日本百貨店協会、日本マナー・プロトコール協会、各業界団体資料",
 
-            "source_url": "https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html",
+            "source_url": "https://www.depart.or.jp/",
 
             "confidence": "verified",
 
@@ -214,9 +214,9 @@ CALENDAR_DB = {
 
             "last_verified": "2026-05-10",
 
-            "source": "内閣府 祝日法、国税庁 税務カレンダー、各業界団体資料",
+            "source": "国税庁 税務カレンダー、厚生労働省 労働保険関連",
 
-            "source_url": "https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html",
+            "source_url": "https://www.nta.go.jp/taxes/nozei/nofu/24100020.htm",
 
             "confidence": "verified",
 
@@ -251,10 +251,10 @@ CALENDAR_DB = {
                 "penalty": "無申告加算税",
             },
             {
-                "deadline": "3月31日",
-                "item": "固定資産税の課税基準日（1月1日時点の所有者に課税）",
+                "deadline": "1月1日（課税基準日）",
+                "item": "固定資産税の課税基準日。1月1日時点の所有者に課税。納税通知書は4-6月に送付、納期限は自治体により異なる（通常4期分割）",
                 "authority": "市区町村",
-                "penalty": "N/A",
+                "penalty": "N/A（納期限超過で延滞金）",
             },
             {
                 "deadline": "決算日の翌日から2ヶ月以内",
@@ -269,10 +269,10 @@ CALENDAR_DB = {
                 "penalty": "無申告加算税、延滞税",
             },
             {
-                "deadline": "6月30日",
+                "deadline": "6月1日〜7月10日",
                 "item": "労働保険の年度更新（概算・確定保険料の申告・納付）",
-                "authority": "労働基準監督署",
-                "penalty": "10%の追徴金",
+                "authority": "労働局、労働基準監督署、公共職業安定所",
+                "penalty": "督促後の延滞金（年14.6%）。概算保険料が著しく過少な場合は追徴金あり",
             },
             {
                 "deadline": "7月10日",
@@ -311,9 +311,9 @@ CALENDAR_DB = {
 
             "last_verified": "2026-05-10",
 
-            "source": "内閣府 祝日法、国税庁 税務カレンダー、各業界団体資料",
+            "source": "経済産業省、各業界団体・商工会議所資料",
 
-            "source_url": "https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html",
+            "source_url": "https://www.meti.go.jp/",
 
             "confidence": "verified",
 
