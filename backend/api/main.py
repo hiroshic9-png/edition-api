@@ -1,5 +1,6 @@
 """EDITION Intelligence Platform — FastAPI Application."""
 import time
+import json
 import logging
 import re
 from typing import Optional
@@ -227,7 +228,11 @@ async def mcp_handler(request: Request):
             "jsonrpc": "2.0",
             "result": {
                 "protocolVersion": "2025-06-18",
-                "capabilities": {"tools": {"listChanged": False}},
+                "capabilities": {
+                    "tools": {"listChanged": False},
+                    "resources": {"listChanged": False},
+                    "prompts": {"listChanged": False}
+                },
                 "serverInfo": {
                     "name": "EDITION Intelligence Platform",
                     "version": "0.4.0",
@@ -242,6 +247,123 @@ async def mcp_handler(request: Request):
         return JSONResponse({
             "jsonrpc": "2.0",
             "result": {"tools": MCP_TOOLS},
+            "id": req_id
+        })
+    elif method == "resources/list":
+        return JSONResponse({
+            "jsonrpc": "2.0",
+            "result": {"resources": []},
+            "id": req_id
+        })
+    elif method == "prompts/list":
+        return JSONResponse({
+            "jsonrpc": "2.0",
+            "result": {"prompts": [
+                {
+                    "name": "japan_business_briefing",
+                    "description": "Generate a comprehensive Japan business briefing for a specific industry. Covers regulations, required protocols, cultural considerations, and seasonal calendar awareness.",
+                    "arguments": [
+                        {"name": "industry", "description": "Target industry (e.g. food_service, real_estate, finance)", "required": True},
+                        {"name": "context", "description": "Additional context such as company size or entry stage", "required": False}
+                    ]
+                },
+                {
+                    "name": "japan_travel_guide",
+                    "description": "Generate a practical travel guide covering transport, accommodation, dining etiquette, emergency procedures, and useful Japanese phrases for a specific destination.",
+                    "arguments": [
+                        {"name": "destination", "description": "City or region in Japan (e.g. Tokyo, Osaka, Hokkaido)", "required": True},
+                        {"name": "duration", "description": "Length of stay (e.g. 3 days, 1 week)", "required": False}
+                    ]
+                }
+            ]},
+            "id": req_id
+        })
+    elif method == "tools/call":
+        tool_name = body.get("params", {}).get("name", "")
+        tool_args = body.get("params", {}).get("arguments", {})
+        # Proxy to REST API
+        import httpx
+        base = "https://api.edition.sh/api/v1"
+        try:
+            async with httpx.AsyncClient(timeout=30) as client:
+                # Route tool calls to appropriate REST endpoints
+                endpoint_map = {
+                    "search": ("POST", f"{base}/search"),
+                    "memory_store": ("POST", f"{base}/memory/episodes"),
+                    "memory_recall": ("POST", f"{base}/memory/recall"),
+                    "memory_facts": ("GET", f"{base}/memory/facts"),
+                    "memory_context": ("GET", f"{base}/memory/context"),
+                    "memory_extract": ("POST", f"{base}/memory/extract"),
+                    "regulation_check": ("POST", f"{base}/regulation/check"),
+                    "regulation_industries": ("GET", f"{base}/regulation/industries"),
+                    "regulation_tourist": ("GET", f"{base}/regulation/tourist"),
+                    "protocol_check": ("POST", f"{base}/protocol/check"),
+                    "protocol_list": ("GET", f"{base}/protocol/list"),
+                    "calendar_check": ("POST", f"{base}/calendar/check"),
+                    "calendar_list": ("GET", f"{base}/calendar/list"),
+                    "regional_check": ("POST", f"{base}/regional/check"),
+                    "regional_list": ("GET", f"{base}/regional/list"),
+                    "organization_check": ("POST", f"{base}/organization/check"),
+                    "organization_list": ("GET", f"{base}/organization/list"),
+                    "foreign_entry_check": ("POST", f"{base}/foreign-entry/check"),
+                    "foreign_entry_list": ("GET", f"{base}/foreign-entry/list"),
+                    "travel_search": ("POST", f"{base}/travel/search"),
+                    "travel_list": ("GET", f"{base}/travel/list"),
+                    "entertainment_search": ("POST", f"{base}/entertainment/search"),
+                    "entertainment_list": ("GET", f"{base}/entertainment/list"),
+                    "daily_life_search": ("POST", f"{base}/daily-life/search"),
+                    "daily_life_list": ("GET", f"{base}/daily-life/list"),
+                    "language_search": ("POST", f"{base}/language/search"),
+                    "language_list": ("GET", f"{base}/language/list"),
+                    "food_search": ("POST", f"{base}/food/search"),
+                    "food_list": ("GET", f"{base}/food/list"),
+                    "disaster_search": ("POST", f"{base}/disaster/search"),
+                    "disaster_list": ("GET", f"{base}/disaster/list"),
+                }
+                if tool_name in endpoint_map:
+                    http_method, url = endpoint_map[tool_name]
+                    if http_method == "GET":
+                        resp = await client.get(url)
+                    else:
+                        resp = await client.post(url, json=tool_args)
+                    result_data = resp.json()
+                else:
+                    result_data = {"error": f"Unknown tool: {tool_name}"}
+            return JSONResponse({
+                "jsonrpc": "2.0",
+                "result": {"content": [{"type": "text", "text": json.dumps(result_data, ensure_ascii=False)}]},
+                "id": req_id
+            })
+        except Exception as e:
+            return JSONResponse({
+                "jsonrpc": "2.0",
+                "result": {"content": [{"type": "text", "text": json.dumps({"error": str(e)})}], "isError": True},
+                "id": req_id
+            })
+    elif method == "prompts/get":
+        prompt_name = body.get("params", {}).get("name", "")
+        prompt_args = body.get("params", {}).get("arguments", {})
+        if prompt_name == "japan_business_briefing":
+            industry = prompt_args.get("industry", "general")
+            context = prompt_args.get("context", "")
+            text = f"Generate a comprehensive Japan business briefing for the {industry} industry. Include: 1) Key regulations and compliance requirements, 2) Required business protocols (nemawashi, ringi, horenso), 3) Cultural considerations and seasonal timing, 4) Step-by-step market entry procedures. {f'Additional context: {context}' if context else ''}"
+            return JSONResponse({
+                "jsonrpc": "2.0",
+                "result": {"messages": [{"role": "user", "content": {"type": "text", "text": text}}]},
+                "id": req_id
+            })
+        elif prompt_name == "japan_travel_guide":
+            dest = prompt_args.get("destination", "Tokyo")
+            duration = prompt_args.get("duration", "")
+            text = f"Create a practical Japan travel guide for {dest}. Cover: 1) Transportation options and IC cards, 2) Accommodation types and booking tips, 3) Dining etiquette and must-try local cuisine, 4) Emergency contacts and disaster preparedness, 5) Essential Japanese phrases. {f'Trip duration: {duration}.' if duration else ''}"
+            return JSONResponse({
+                "jsonrpc": "2.0",
+                "result": {"messages": [{"role": "user", "content": {"type": "text", "text": text}}]},
+                "id": req_id
+            })
+        return JSONResponse({
+            "jsonrpc": "2.0",
+            "error": {"code": -32602, "message": f"Unknown prompt: {prompt_name}"},
             "id": req_id
         })
     else:
