@@ -176,19 +176,19 @@ FOREIGN_ENTRY_DB = {
 
         "_meta": {
 
-            "last_verified": "2026-05-10",
+            "last_verified": "2026-05-11",
 
-            "source": "法務省 出入国在留管理庁、JETRO対日投資ガイド",
+            "source": "全国銀行協会、JETRO対日投資ガイド、各銀行公式情報",
 
-            "source_url": "https://www.moj.go.jp/isa/",
+            "source_url": "https://www.zenginkyo.or.jp/",
 
             "confidence": "verified",
 
             "valid_until": None,
 
-            "version": "1.0.0",
+            "version": "1.0.1",
 
-            "changelog": ["2026-05-10: Initial verified entry"]
+            "changelog": ["2026-05-10: Initial verified entry", "2026-05-11: source/source_url修正（入管庁→全銀協）、誤字修正"]
 
         },
         "name_ja": "法人銀行口座の開設",
@@ -220,7 +220,7 @@ FOREIGN_ENTRY_DB = {
         ],
         "experience_tips": [
             "口座開設の面談で『日本で長期的に事業を展開したい』と明確に伝えると、銀行の審査担当の印象が変わる。短期的な印象を与えるとマネロンリスクと見なされる",
-            "信用金庫は『地域に貫献する企業』を支援する使命がある。『この地域で雇用を生みたい』と伝えると対応が変わる",
+            "信用金庫は『地域に貢献する企業』を支援する使命がある。『この地域で雇用を生みたい』と伝えると対応が変わる",
         ],
     },
 
@@ -228,19 +228,19 @@ FOREIGN_ENTRY_DB = {
 
         "_meta": {
 
-            "last_verified": "2026-05-10",
+            "last_verified": "2026-05-11",
 
-            "source": "法務省 出入国在留管理庁、JETRO対日投資ガイド",
+            "source": "国土交通省、宅地建物取引業法、JETRO対日投資ガイド",
 
-            "source_url": "https://www.moj.go.jp/isa/",
+            "source_url": "https://www.mlit.go.jp/",
 
             "confidence": "verified",
 
             "valid_until": None,
 
-            "version": "1.0.0",
+            "version": "1.0.1",
 
-            "changelog": ["2026-05-10: Initial verified entry"]
+            "changelog": ["2026-05-10: Initial verified entry", "2026-05-11: source/source_url修正（入管庁→国交省）、誤字修正"]
 
         },
         "name_ja": "事務所・店舗の物件探し",
@@ -261,13 +261,13 @@ FOREIGN_ENTRY_DB = {
             "risk": "設備の状態を入念にチェック。前テナントの撤退理由も確認すべき",
         },
         "tips": [
-            "外国人はの賃貸は拒否されるケースがある。外国人対応の仲介会社を選ぶ",
+            "外国人の賃貸は拒否されるケースがある。外国人対応の仲介会社を選ぶ",
             "経営管理ビザ申請前に事務所を確保する必要がある（バーチャルオフィス不可）",
             "契約書は日本語のみの場合が多い。翻訳・説明を仲介会社に求める",
             "居抜き物件は「造作譲渡費」として前テナントに50-300万円を支払うケースがある",
         ],
         "experience_tips": [
-            "不動産仲介の担当者と信頼関係を築くと、公開前の良い物件を紹介してもらえる。『から来る』のではなく『こちらから探している』と伝えると動いてくれる",
+            "不動産仲介の担当者と信頼関係を築くと、公開前の良い物件を紹介してもらえる。受け身で『紹介を待つ』のではなく『こういう条件で探している』と具体的に伝えると担当者が積極的に動いてくれる",
             "内見で物件の良い点を褒めると、大家や管理会社の印象が良くなり審査が有利に働くことがある",
         ],
     },
@@ -276,19 +276,19 @@ FOREIGN_ENTRY_DB = {
 
         "_meta": {
 
-            "last_verified": "2026-05-10",
+            "last_verified": "2026-05-11",
 
-            "source": "法務省 出入国在留管理庁、JETRO対日投資ガイド",
+            "source": "国税庁、JETRO対日投資ガイド",
 
-            "source_url": "https://www.moj.go.jp/isa/",
+            "source_url": "https://www.nta.go.jp/",
 
             "confidence": "verified",
 
             "valid_until": None,
 
-            "version": "1.0.0",
+            "version": "1.0.1",
 
-            "changelog": ["2026-05-10: Initial verified entry"]
+            "changelog": ["2026-05-10: Initial verified entry", "2026-05-11: source/source_url修正（入管庁→国税庁）"]
 
         },
         "name_ja": "税務届出",
@@ -343,6 +343,86 @@ FOREIGN_ENTRY_DB = {
             "初回の確定申告を丁寧に行うと、税務署からの心証が変わる。『しっかりした会社』という印象はその後の税務調査の対応にも影響する",
         ],
     },
+    "employee_hiring": {
+        "_meta": {
+            "last_verified": "2026-05-11",
+            "source": "厚生労働省、労働基準法、JETRO対日投資ガイド",
+            "source_url": "https://www.mhlw.go.jp/",
+            "confidence": "verified",
+            "valid_until": None,
+            "version": "1.0.0",
+            "changelog": ["2026-05-11: Initial verified entry"]
+        },
+        "name_ja": "従業員の雇用",
+        "name_en": "Employee Hiring Basics",
+        "category": "labor",
+        "summary": "日本の労働法は従業員保護が手厚い。解雇規制、社会保険、有給休暇のルールを理解せずに雇用すると深刻なトラブルに発展する。",
+        "employment_types": [
+            {
+                "type": "正社員（無期雇用）",
+                "characteristics": "期間の定めなし。フルタイム。解雇は極めて困難（解雇権濫用法理）",
+                "benefits": "社会保険完備、賞与、退職金が一般的",
+                "recommended_for": "コア人材。長期的な事業運営に必要なポジション",
+            },
+            {
+                "type": "契約社員（有期雇用）",
+                "characteristics": "契約期間あり（通常1年、最長3年）。5年超で無期転換権が発生（労働契約法18条）",
+                "benefits": "正社員と同等の社会保険。同一労働同一賃金の原則",
+                "recommended_for": "プロジェクト型の業務、事業の初期段階",
+            },
+            {
+                "type": "パート・アルバイト",
+                "characteristics": "短時間労働。週20時間以上で社会保険加入義務",
+                "benefits": "有給休暇は勤務日数に応じて付与（比例付与）",
+                "recommended_for": "補助的業務、繁忙期の人員確保",
+            },
+            {
+                "type": "業務委託（フリーランス）",
+                "characteristics": "雇用関係なし。指揮命令権なし。偽装請負に注意",
+                "benefits": "社会保険・有給休暇の義務なし。ただしフリーランス保護法（2024年11月施行）で契約条件の明示等が義務化",
+                "recommended_for": "専門性の高い業務、IT開発等",
+            },
+        ],
+        "mandatory_obligations": [
+            {
+                "item": "社会保険の加入",
+                "detail": "法人は従業員1名でも加入義務。健康保険+厚生年金。保険料は労使折半",
+                "deadline": "雇用開始から5日以内に届出",
+            },
+            {
+                "item": "労働保険の加入",
+                "detail": "雇用保険+労災保険。労災保険は全額事業主負担",
+                "deadline": "従業員雇用から10日以内に届出",
+            },
+            {
+                "item": "労働条件通知書",
+                "detail": "賃金、労働時間、休日、契約期間等を書面で明示する義務（労働基準法15条）",
+                "deadline": "雇用契約締結時",
+            },
+            {
+                "item": "36協定の届出",
+                "detail": "法定労働時間（1日8時間、週40時間）を超える残業には労使協定が必要",
+                "deadline": "残業が発生する前に届出",
+            },
+        ],
+        "dismissal_rules": {
+            "summary": "日本の解雇規制は世界でも最も厳しい水準。客観的に合理的な理由がなく、社会通念上相当と認められない解雇は無効（労働契約法16条）",
+            "notice_period": "30日前の予告、または30日分以上の解雇予告手当の支払い",
+            "common_pitfalls": [
+                "能力不足による解雇は、改善指導の記録が必須。即日解雇はほぼ不可能",
+                "整理解雇（リストラ）には4要件が必要: 人員削減の必要性、解雇回避努力、人選の合理性、手続きの妥当性",
+                "試用期間中の解雇も制限あり。14日以降は解雇予告が必要",
+            ],
+        },
+        "paid_leave": {
+            "entitlement": "入社6ヶ月・出勤率80%以上で10日付与。以後1年ごとに増加し最大20日",
+            "obligation": "年5日の有給取得義務（2019年4月〜）。違反は1人あたり30万円以下の罰金",
+        },
+        "experience_tips": [
+            "日本では『採用は慎重に、解雇はほぼ不可能』が大原則。欧米の感覚で『合わなければ辞めてもらう』は通用しない。採用時の見極めが全て",
+            "社会保険労務士（社労士）への顧問契約を強く推奨。月額2-5万円で労務管理の法的リスクを大幅に軽減できる。特に外国人経営者には必須",
+        ],
+    },
 }
 
 # ── Keyword matching ──────────────────────────────────
@@ -353,4 +433,5 @@ FOREIGN_ENTRY_KEYWORDS = {
     "bank_account": ["銀行口座", "bank account", "口座開設", "法人口座", "振込", "ゆうちょ", "都市銀行", "ネット銀行"],
     "real_estate": ["物件", "不動産", "real estate", "賃貸", "lease", "事務所", "office", "店舗", "shop", "敷金", "礼金", "居抜き", "テナント", "仲介"],
     "tax_registration": ["税務届出", "tax registration", "法人設立届", "青色申告", "税務署", "開業届", "インボイス", "税理士", "確定申告", "消費税"],
+    "employee_hiring": ["雇用", "hiring", "従業員", "employee", "採用", "recruitment", "労働", "labor", "社会保険", "解雇", "dismissal", "正社員", "契約社員", "パート", "アルバイト", "有給", "36協定", "社労士", "労働基準法", "フリーランス", "業務委託"],
 }

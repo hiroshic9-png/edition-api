@@ -11,13 +11,13 @@ Japan's entertainment culture has deeply codified unwritten rules.
 ENTERTAINMENT_DB = {
     "oshikatsu": {
         "_meta": {
-            "last_verified": "2026-05-10",
-            "source": "各業界団体、イベント主催者公式情報、文化庁",
-            "source_url": None,
+            "last_verified": "2026-05-11",
+            "source": "経済産業省コンテンツ産業政策、コミックマーケット準備会、文化庁",
+            "source_url": "https://www.meti.go.jp/policy/mono_info_service/contents/",
             "confidence": "verified",
             "valid_until": None,
-            "version": "1.0.0",
-            "changelog": ["2026-05-10: Initial verified entry"]
+            "version": "1.0.1",
+            "changelog": ["2026-05-10: Initial verified entry", "2026-05-11: source_url追加"]
         },
         "name_ja": "推し活",
         "name_en": "Oshi-katsu (Fan Support Activities)",
@@ -62,13 +62,13 @@ ENTERTAINMENT_DB = {
     },
     "anime_manga": {
         "_meta": {
-            "last_verified": "2026-05-10",
-            "source": "各業界団体、イベント主催者公式情報、文化庁",
-            "source_url": None,
+            "last_verified": "2026-05-11",
+            "source": "日本動画協会、コミックマーケット準備会、観光庁",
+            "source_url": "https://aja.gr.jp/",
             "confidence": "verified",
             "valid_until": None,
-            "version": "1.0.0",
-            "changelog": ["2026-05-10: Initial verified entry"]
+            "version": "1.0.1",
+            "changelog": ["2026-05-10: Initial verified entry", "2026-05-11: source_url追加、コミケ参加者数修正"]
         },
         "name_ja": "アニメ・マンガ",
         "name_en": "Anime & Manga",
@@ -76,7 +76,7 @@ ENTERTAINMENT_DB = {
         "summary": "日本のアニメ・マンガ産業は海外売上が国内を上回る（2023年: 海外1.67兆円 vs 国内1.47兆円）。聖地巡礼、コミケ、同人文化が独自のエコシステムを形成。",
         "major_events": [
             {"name": "コミックマーケット（コミケ）", "period": "8月・12月（年2回、3日間）", "venue": "東京ビッグサイト",
-             "scale": "参加者約17万人/日", "tips": "サークル参加は半年前に申込。一般参加もリストバンド制に移行（¥500）。始発電車で来ても2-3時間待ちの可能性あり"},
+             "scale": "参加者約19万人/日", "tips": "サークル参加は半年前に申込。一般参加もリストバンド制に移行（¥500）。始発電車で来ても2-3時間待ちの可能性あり"},
             {"name": "AnimeJapan", "period": "3月", "venue": "東京ビッグサイト",
              "scale": "約15万人", "tips": "業界最大の商談会も併設。B2Bデーと一般デーがある"},
             {"name": "ジャンプフェスタ", "period": "12月", "venue": "幕張メッセ",
@@ -123,13 +123,13 @@ ENTERTAINMENT_DB = {
     },
     "live_entertainment": {
         "_meta": {
-            "last_verified": "2026-05-10",
-            "source": "各業界団体、イベント主催者公式情報、文化庁",
-            "source_url": None,
+            "last_verified": "2026-05-11",
+            "source": "コンサートプロモーターズ協会、音楽制作者連盟、各イベント主催者",
+            "source_url": "https://www.acpc.or.jp/",
             "confidence": "verified",
             "valid_until": None,
-            "version": "1.0.0",
-            "changelog": ["2026-05-10: Initial verified entry"]
+            "version": "1.0.1",
+            "changelog": ["2026-05-10: Initial verified entry", "2026-05-11: source_url追加、ドリンク代修正"]
         },
         "name_ja": "ライブエンターテインメント",
         "name_en": "Live Entertainment",
@@ -147,7 +147,7 @@ ENTERTAINMENT_DB = {
             "live_houses": {
                 "description": "小規模なライブハウス。キャパ100-2,000人。アーティストとの距離が近い",
                 "famous": ["Zepp（全国展開）", "LIQUIDROOM（恵比寿）", "下北沢SHELTER", "新宿LOFT"],
-                "system": "整理番号順入場が基本。「前番」（若い番号）ほど前方確保可能。ドリンク代¥600が別途必要（1ドリンク制）",
+                "system": "整理番号順入場が基本。「前番」（若い番号）ほど前方確保可能。ドリンク代¥700が別途必要（1ドリンク制）",
             },
         },
         "concert_manners": {
@@ -173,13 +173,13 @@ ENTERTAINMENT_DB = {
     },
     "seasonal_events": {
         "_meta": {
-            "last_verified": "2026-05-10",
-            "source": "各業界団体、イベント主催者公式情報、文化庁",
-            "source_url": None,
+            "last_verified": "2026-05-11",
+            "source": "各神社仏閣、観光庁、各自治体観光情報",
+            "source_url": "https://www.japan.travel/",
             "confidence": "verified",
             "valid_until": None,
-            "version": "1.0.0",
-            "changelog": ["2026-05-10: Initial verified entry"]
+            "version": "1.0.1",
+            "changelog": ["2026-05-10: Initial verified entry", "2026-05-11: source_url追加"]
         },
         "name_ja": "季節のイベント",
         "name_en": "Seasonal Events",

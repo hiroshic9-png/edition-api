@@ -9,7 +9,7 @@ ORGANIZATION_DB = {
         "_meta": {
             "last_verified": "2026-05-10",
             "source": "経済産業省、日本経済団体連合会、各業界団体公式資料",
-            "source_url": None,
+            "source_url": "https://www.meti.go.jp/",
             "confidence": "verified",
             "valid_until": None,
             "version": "1.0.0",
@@ -54,7 +54,7 @@ ORGANIZATION_DB = {
 
             "source": "経済産業省、日本経済団体連合会、各業界団体公式資料",
 
-            "source_url": None,
+            "source_url": "https://www.meti.go.jp/",
 
             "confidence": "verified",
 
@@ -114,7 +114,7 @@ ORGANIZATION_DB = {
 
             "source": "経済産業省、日本経済団体連合会、各業界団体公式資料",
 
-            "source_url": None,
+            "source_url": "https://www.meti.go.jp/",
 
             "confidence": "verified",
 
@@ -170,7 +170,7 @@ ORGANIZATION_DB = {
 
             "source": "経済産業省、日本経済団体連合会、各業界団体公式資料",
 
-            "source_url": None,
+            "source_url": "https://www.meti.go.jp/",
 
             "confidence": "verified",
 
@@ -231,7 +231,7 @@ ORGANIZATION_DB = {
 
             "source": "経済産業省、日本経済団体連合会、各業界団体公式資料",
 
-            "source_url": None,
+            "source_url": "https://www.keidanren.or.jp/",
 
             "confidence": "verified",
 

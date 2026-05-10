@@ -7,13 +7,13 @@ navigating everyday life in Japan: postal, garbage, utilities, healthcare.
 DAILY_LIFE_DB = {
     "postal_address": {
         "_meta": {
-            "last_verified": "2026-05-10",
-            "source": "各自治体公式サイト、日本郵便、厚生労働省",
-            "source_url": None,
+            "last_verified": "2026-05-11",
+            "source": "日本郵便、各自治体公式サイト",
+            "source_url": "https://www.post.japanpost.jp/",
             "confidence": "verified",
             "valid_until": None,
-            "version": "1.0.0",
-            "changelog": ["2026-05-10: Initial verified entry"]
+            "version": "1.0.1",
+            "changelog": ["2026-05-10: Initial verified entry", "2026-05-11: 郵便料金2024年10月改定反映、source_url追加"]
         },
         "name_ja": "住所・郵便",
         "name_en": "Postal & Address System",
@@ -27,8 +27,8 @@ DAILY_LIFE_DB = {
         },
         "postal_services": {
             "types": [
-                "普通郵便: はがき¥63、定形封筒¥84〜。1-3日",
-                "速達: +¥260。翌日届く",
+                "普通郵便: はがき¥85、定形封筒¥110〜。2024年10月改定。到着まで1-3日",
+                "速達: +¥300。翌日届く",
                 "書留: +¥480。追跡+補償あり",
                 "ゆうパック: 荷物配送。コンビニ持込割¥120引き",
                 "レターパック: 370(投函) / 520(対面)。全国一律",
@@ -49,13 +49,13 @@ DAILY_LIFE_DB = {
     },
     "garbage_sorting": {
         "_meta": {
-            "last_verified": "2026-05-10",
-            "source": "各自治体公式サイト、日本郵便、厚生労働省",
-            "source_url": None,
+            "last_verified": "2026-05-11",
+            "source": "各自治体公式サイト、環境省",
+            "source_url": "https://www.env.go.jp/",
             "confidence": "verified",
             "valid_until": None,
-            "version": "1.0.0",
-            "changelog": ["2026-05-10: Initial verified entry"]
+            "version": "1.0.1",
+            "changelog": ["2026-05-10: Initial verified entry", "2026-05-11: source_url追加、source修正"]
         },
         "name_ja": "ゴミ分別",
         "name_en": "Garbage Sorting & Recycling",
@@ -88,13 +88,13 @@ DAILY_LIFE_DB = {
     },
     "utilities": {
         "_meta": {
-            "last_verified": "2026-05-10",
-            "source": "各自治体公式サイト、日本郵便、厚生労働省",
-            "source_url": None,
+            "last_verified": "2026-05-11",
+            "source": "経済産業省、各電力・ガス会社公式情報",
+            "source_url": "https://www.meti.go.jp/",
             "confidence": "verified",
             "valid_until": None,
-            "version": "1.0.0",
-            "changelog": ["2026-05-10: Initial verified entry"]
+            "version": "1.0.1",
+            "changelog": ["2026-05-10: Initial verified entry", "2026-05-11: source_url追加"]
         },
         "name_ja": "公共料金",
         "name_en": "Utilities & Bills",
@@ -131,13 +131,13 @@ DAILY_LIFE_DB = {
     },
     "healthcare": {
         "_meta": {
-            "last_verified": "2026-05-10",
-            "source": "各自治体公式サイト、日本郵便、厚生労働省",
-            "source_url": None,
+            "last_verified": "2026-05-11",
+            "source": "厚生労働省、国民健康保険法、各都道府県医療情報",
+            "source_url": "https://www.mhlw.go.jp/",
             "confidence": "verified",
             "valid_until": None,
-            "version": "1.0.0",
-            "changelog": ["2026-05-10: Initial verified entry"]
+            "version": "1.0.1",
+            "changelog": ["2026-05-10: Initial verified entry", "2026-05-11: source_url追加"]
         },
         "name_ja": "医療",
         "name_en": "Healthcare System",
@@ -159,7 +159,7 @@ DAILY_LIFE_DB = {
             "5. 会計→処方箋を院外薬局で提出→薬受取",
         ],
         "emergency": {
-            "ambulance": "119番（無料）。到着まで平均8.9分",
+            "ambulance": "119番（無料）。到着まで平均約9.4分（令和4年版消防白書）",
             "consultation": "#7119（救急安心センター）: 救急車を呼ぶべきか判断",
             "multilingual": "AMDA国際医療情報センター: 03-6233-9266",
             "context": "救急車は無料だが軽症利用の増加が社会問題。救急隊員の英語対応は限定的。スマートフォンに翻訳アプリを入れておく、または緊急フレーズカードを持ち歩くことを推奨。",
