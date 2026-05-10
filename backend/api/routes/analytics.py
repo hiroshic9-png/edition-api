@@ -223,10 +223,10 @@ DOMAIN_QUALITY = {
     "foreign_entry": {"rules": True, "context": True, "experience": True, "entries": 5, "verified": True, "source": "official_gov"},
     "travel": {"rules": True, "context": True, "experience": True, "entries": 4, "verified": True, "source": "domain_expert"},
     "entertainment": {"rules": True, "context": True, "experience": True, "entries": 4, "verified": True, "source": "domain_expert"},
-    "daily_life": {"rules": True, "context": True, "experience": False, "entries": 4, "verified": True, "source": "official_gov"},
-    "language": {"rules": True, "context": True, "experience": False, "entries": 4, "verified": True, "source": "domain_expert"},
+    "daily_life": {"rules": True, "context": True, "experience": True, "entries": 4, "verified": True, "source": "official_gov"},
+    "language": {"rules": True, "context": True, "experience": True, "entries": 4, "verified": True, "source": "domain_expert"},
     "food": {"rules": True, "context": True, "experience": True, "entries": 4, "verified": True, "source": "domain_expert"},
-    "disaster": {"rules": True, "context": True, "experience": False, "entries": 4, "verified": True, "source": "official_gov"},
+    "disaster": {"rules": True, "context": True, "experience": True, "entries": 4, "verified": True, "source": "official_gov"},
 }
 
 
