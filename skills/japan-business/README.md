@@ -14,6 +14,7 @@ These Skills files follow the emerging MCP Skills primitive format — Markdown 
 | [japan-daily-living](./japan-daily-living.md) | daily_life, food, language | Living in Japan as a foreigner |
 | [japan-cultural-context](./japan-cultural-context.md) | protocol, organization, language | Cultural intelligence for agents |
 | [japan-safety-compliance](./japan-safety-compliance.md) | disaster, regulation | Safety & regulatory compliance |
+| [japan-governance-compliance](./japan-governance-compliance.md) | regulation, governance | Audit trails, compliance reporting |
 
 ## How to Use
 

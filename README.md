@@ -6,7 +6,7 @@
 
 **Japan Knowledge Gateway for autonomous AI agents.**
 
-14 knowledge domains · 31 MCP tools · 6 Skills Packs · 55+ REST endpoints
+14 knowledge domains · 33 MCP tools · 7 Skills Packs · 55+ REST endpoints
 Verified ground truth for operating in the Japanese market.
 
 > **Production API:** [api.edition.sh](https://api.edition.sh) — Free beta, no registration required.
@@ -63,8 +63,28 @@ Pre-built knowledge packs that bundle domain expertise, SOPs, and tool orchestra
 | [japan-daily-living](./skills/japan-business/japan-daily-living.md) | daily_life, food, language | Utilities, garbage, healthcare |
 | [japan-cultural-context](./skills/japan-business/japan-cultural-context.md) | protocol, organization, language | Implicit communication, hierarchy |
 | [japan-safety-compliance](./skills/japan-business/japan-safety-compliance.md) | disaster, regulation | Earthquake response, regulatory compliance |
+| [japan-governance-compliance](./skills/japan-business/japan-governance-compliance.md) | regulation, governance | Audit trails, compliance reporting, AI Act readiness |
 
 → [Full Skills Pack documentation](./skills/japan-business/README.md)
+
+---
+
+## Governance Intelligence
+
+EDITION includes built-in compliance audit trail tools for agents operating under governance requirements. Available in **both** Progressive Discovery and Legacy modes.
+
+```
+regulation_check → compliance_log → compliance_report
+      ↓                   ↓                  ↓
+  Check rules      Record audit       Generate report
+```
+
+| Tool | Purpose |
+|------|---------|
+| `compliance_log` | Create immutable, timestamped audit record after any regulatory check |
+| `compliance_report` | Generate governance reports (summary / detailed / JSON) from audit trail |
+
+Designed for EU AI Act (Aug 2026) and upcoming Japan AI governance compliance.
 
 ---
 
