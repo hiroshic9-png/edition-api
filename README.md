@@ -4,9 +4,9 @@
 [![npm](https://img.shields.io/npm/v/edition-mcp-server)](https://www.npmjs.com/package/edition-mcp-server)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Japan Operations OS for autonomous AI agents.**
+**Japan Knowledge Gateway for autonomous AI agents.**
 
-14 knowledge domains · 31 MCP tools · 55+ REST endpoints · 2 prompts · 2 resources
+14 knowledge domains · 31 MCP tools · 6 Skills Packs · 55+ REST endpoints
 Verified ground truth for operating in the Japanese market.
 
 > **Production API:** [api.edition.sh](https://api.edition.sh) — Free beta, no registration required.
@@ -48,6 +48,23 @@ AI agents working in Japan hit walls that generic LLMs can't solve:
 | 12 | **Food Culture** | `food_search` `food_list` | Dining etiquette, cuisine classification, restaurant navigation (shokkenki, izakaya, sushi counter), dietary restrictions (halal, vegetarian, allergies) |
 | 13 | **Disaster & Safety** | `disaster_search` `disaster_list` | Earthquake shindo scale & EEW, typhoon warning levels, emergency contacts (110/119/118), preparedness checklists |
 | 14 | **Cross-Domain** | `search` | Search all 14 domains simultaneously with a single query |
+
+---
+
+## Skills Packs (MCP Skills Primitive)
+
+Pre-built knowledge packs that bundle domain expertise, SOPs, and tool orchestration instructions. Skills-aware agents can load these to gain structured Japan operational knowledge.
+
+| Skill Pack | Domains | Use Case |
+|-----------|---------|----------|
+| [japan-market-entry](./skills/japan-business/japan-market-entry.md) | regulation, foreign_entry, organization | Company incorporation, visa, banking |
+| [japan-business-ops](./skills/japan-business/japan-business-ops.md) | protocol, calendar, regional, language | Meetings, nemawashi, business Japanese |
+| [japan-travel-guide](./skills/japan-business/japan-travel-guide.md) | travel, food, entertainment, disaster | Tourist assistance, dining, safety |
+| [japan-daily-living](./skills/japan-business/japan-daily-living.md) | daily_life, food, language | Utilities, garbage, healthcare |
+| [japan-cultural-context](./skills/japan-business/japan-cultural-context.md) | protocol, organization, language | Implicit communication, hierarchy |
+| [japan-safety-compliance](./skills/japan-business/japan-safety-compliance.md) | disaster, regulation | Earthquake response, regulatory compliance |
+
+→ [Full Skills Pack documentation](./skills/japan-business/README.md)
 
 ---
 
