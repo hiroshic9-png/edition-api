@@ -1,0 +1,74 @@
+{
+  "入国・ビザ": [
+    "visa",
+    "ビザ",
+    "入国",
+    "entry",
+    "immigration",
+    "パスポート",
+    "passport",
+    "滞在"
+  ],
+  "免税・税関": [
+    "免税",
+    "tax free",
+    "duty free",
+    "税関",
+    "customs",
+    "消費税",
+    "tax refund"
+  ],
+  "交通・運転": [
+    "運転",
+    "driving",
+    "車",
+    "car",
+    "免許",
+    "license",
+    "電車",
+    "train",
+    "交通",
+    "transport",
+    "suica",
+    "pasmo"
+  ],
+  "宿泊・滞在": [
+    "宿泊",
+    "stay",
+    "hotel",
+    "ホテル",
+    "accommodation",
+    "チェックイン",
+    "check-in",
+    "宿泊税"
+  ],
+  "医療・緊急": [
+    "医療",
+    "medical",
+    "病院",
+    "hospital",
+    "緊急",
+    "emergency",
+    "救急",
+    "ambulance",
+    "保険",
+    "insurance",
+    "薬",
+    "medicine"
+  ],
+  "マナー・文化": [
+    "マナー",
+    "manner",
+    "etiquette",
+    "文化",
+    "culture",
+    "チップ",
+    "tip",
+    "靴",
+    "shoes",
+    "タトゥー",
+    "tattoo",
+    "温泉",
+    "onsen"
+  ]
+}
