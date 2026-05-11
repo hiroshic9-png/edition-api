@@ -10,6 +10,8 @@
 Verified ground truth for operating in the Japanese market.
 
 > **Production API:** [api.edition.sh](https://api.edition.sh) — Free beta, no registration required.
+>
+> **Interactive Demo:** [Tourist Agent Demo](https://hiroshic9-png.github.io/edition-api/demo.html) — Watch 6 domains work together in real-time.
 
 ---
 
@@ -210,6 +212,10 @@ Sources include: 厚生労働省 (MHLW), 国税庁 (NTA), 法務省 (MOJ), 国�
 | A2A Agent Card | `GET https://api.edition.sh/.well-known/agent.json` |
 | MCP Server Card | `GET https://api.edition.sh/.well-known/mcp/server-card.json` |
 | OpenAPI / Swagger | `GET https://api.edition.sh/docs` |
+
+## Agent Harness Compatible
+
+EDITION is designed as a **Tool Registry / Japan Knowledge Layer** for agent harnesses. All 31 tools include MCP annotations (`readOnlyHint`, `destructiveHint`, `idempotentHint`), usage guidelines, and behavioral transparency metadata — enabling harness frameworks to auto-discover, evaluate, and integrate EDITION tools without manual configuration.
 
 ## Registries
 
