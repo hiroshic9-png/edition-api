@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EDITION Intelligence Platform — Operations Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-primary: #0a0e1a;
+    --bg-card: rgba(15, 23, 42, 0.8);
+    --bg-card-hover: rgba(20, 30, 55, 0.9);
+    --border: rgba(56, 189, 248, 0.15);
+    --text-primary: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --accent: #38bdf8;
+    --accent-green: #34d399;
+    --accent-amber: #fbbf24;
+    --accent-rose: #fb7185;
+    --accent-violet: #a78bfa;
+    --gradient-1: linear-gradient(135deg, #38bdf8, #818cf8);
+    --gradient-2: linear-gradient(135deg, #34d399, #38bdf8);
+    --gradient-3: linear-gradient(135deg, #fbbf24, #fb7185);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    top: -50%; left: -50%;
+    width: 200%; height: 200%;
+    background: radial-gradient(ellipse at 30% 20%, rgba(56,189,248,0.06) 0%, transparent 50%),
+                radial-gradient(ellipse at 70% 80%, rgba(129,140,248,0.04) 0%, transparent 50%);
+    z-index: 0;
+    pointer-events: none;
+  }
+  .dashboard { position: relative; z-index: 1; padding: 24px; max-width: 1440px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 32px; padding: 20px 28px;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 16px; backdrop-filter: blur(12px);
+  }
+  .header-left { display: flex; align-items: center; gap: 16px; }
+  .logo {
+    width: 48px; height: 48px; border-radius: 12px;
+    background: var(--gradient-1); display: flex; align-items: center;
+    justify-content: center; font-size: 22px; font-weight: 700; color: white;
+  }
+  .header h1 { font-size: 22px; font-weight: 600; letter-spacing: -0.3px; }
+  .header .subtitle { font-size: 13px; color: var(--text-secondary); margin-top: 2px; }
+  .status-badge {
+    display: flex; align-items: center; gap: 8px;
+    padding: 8px 16px; border-radius: 24px;
+    background: rgba(52,211,153,0.1); border: 1px solid rgba(52,211,153,0.3);
+    font-size: 13px; font-weight: 500; color: var(--accent-green);
+  }
+  .status-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--accent-green);
+    animation: pulse-dot 2s infinite;
+  }
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(52,211,153,0.4); }
+    50% { opacity: 0.8; box-shadow: 0 0 0 6px rgba(52,211,153,0); }
+  }
+
+  /* KPI Row */
+  .kpi-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-bottom: 24px; }
+  .kpi-card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 14px; padding: 20px 22px;
+    transition: all 0.3s ease; position: relative; overflow: hidden;
+  }
+  .kpi-card:hover { transform: translateY(-2px); border-color: rgba(56,189,248,0.3); }
+  .kpi-card::after {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    border-radius: 14px 14px 0 0;
+  }
+  .kpi-card:nth-child(1)::after { background: var(--gradient-1); }
+  .kpi-card:nth-child(2)::after { background: var(--gradient-2); }
+  .kpi-card:nth-child(3)::after { background: var(--gradient-3); }
+  .kpi-card:nth-child(4)::after { background: linear-gradient(135deg, #a78bfa, #f472b6); }
+  .kpi-card:nth-child(5)::after { background: linear-gradient(135deg, #34d399, #fbbf24); }
+  .kpi-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 500; }
+  .kpi-value { font-size: 32px; font-weight: 700; margin: 8px 0 4px; letter-spacing: -1px; }
+  .kpi-meta { font-size: 12px; color: var(--text-secondary); }
+
+  /* Grid */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+
+  /* Cards */
+  .card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 14px; padding: 24px;
+    transition: all 0.3s ease;
+  }
+  .card:hover { border-color: rgba(56,189,248,0.25); }
+  .card-title {
+    font-size: 14px; font-weight: 600; color: var(--text-secondary);
+    text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .card-title .icon { font-size: 16px; }
+
+  /* Domain Grid */
+  .domain-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; }
+  .domain-item {
+    background: rgba(15,23,42,0.5); border: 1px solid rgba(56,189,248,0.1);
+    border-radius: 10px; padding: 12px 10px; text-align: center;
+    transition: all 0.3s ease; cursor: default;
+  }
+  .domain-item:hover { border-color: var(--accent); transform: scale(1.03); }
+  .domain-emoji { font-size: 20px; margin-bottom: 4px; }
+  .domain-name { font-size: 10px; color: var(--text-secondary); font-weight: 500; }
+  .domain-score { font-size: 18px; font-weight: 700; color: var(--accent-green); margin-top: 2px; }
+
+  /* Bar Chart */
+  .bar-chart { display: flex; flex-direction: column; gap: 10px; }
+  .bar-row { display: flex; align-items: center; gap: 12px; }
+  .bar-label { font-size: 12px; color: var(--text-secondary); width: 110px; flex-shrink: 0; text-align: right; font-family: monospace; }
+  .bar-track { flex: 1; height: 24px; background: rgba(15,23,42,0.5); border-radius: 6px; overflow: hidden; position: relative; }
+  .bar-fill {
+    height: 100%; border-radius: 6px; transition: width 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+    position: relative;
+  }
+  .bar-fill::after {
+    content: attr(data-value); position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+    font-size: 11px; font-weight: 600; color: white;
+  }
+  .bar-fill.gradient-1 { background: var(--gradient-1); }
+  .bar-fill.gradient-2 { background: var(--gradient-2); }
+  .bar-fill.gradient-3 { background: var(--gradient-3); }
+
+  /* Table */
+  .data-table { width: 100%; border-collapse: collapse; }
+  .data-table th {
+    font-size: 11px; color: var(--text-muted); text-transform: uppercase;
+    letter-spacing: 0.5px; text-align: left; padding: 8px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .data-table td {
+    font-size: 13px; padding: 10px 12px;
+    border-bottom: 1px solid rgba(56,189,248,0.05);
+  }
+  .data-table tr:hover td { background: rgba(56,189,248,0.03); }
+  .tag {
+    display: inline-block; padding: 2px 8px; border-radius: 4px;
+    font-size: 11px; font-weight: 500;
+  }
+  .tag-green { background: rgba(52,211,153,0.15); color: var(--accent-green); }
+  .tag-blue { background: rgba(56,189,248,0.15); color: var(--accent); }
+  .tag-amber { background: rgba(251,191,36,0.15); color: var(--accent-amber); }
+
+  /* Glama Score */
+  .score-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .score-item {
+    text-align: center; padding: 16px;
+    background: rgba(15,23,42,0.5); border-radius: 10px;
+    border: 1px solid rgba(56,189,248,0.1);
+  }
+  .score-letter {
+    font-size: 36px; font-weight: 700;
+    background: var(--gradient-1); -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .score-name { font-size: 11px; color: var(--text-muted); margin-top: 4px; text-transform: uppercase; }
+
+  /* Footer */
+  .footer {
+    text-align: center; padding: 24px; margin-top: 16px;
+    font-size: 12px; color: var(--text-muted);
+  }
+
+  /* Loading animation */
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  .loading {
+    background: linear-gradient(90deg, transparent 25%, rgba(56,189,248,0.08) 50%, transparent 75%);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+
+  @media (max-width: 900px) {
+    .kpi-row { grid-template-columns: repeat(2, 1fr); }
+    .grid-2, .grid-3 { grid-template-columns: 1fr; }
+    .domain-grid { grid-template-columns: repeat(4, 1fr); }
+    .score-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+<div class="dashboard">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <div class="logo">E</div>
+      <div>
+        <h1>EDITION Intelligence Platform</h1>
+        <div class="subtitle">Japan Operations OS — Real-time Telemetry Dashboard</div>
+      </div>
+    </div>
+    <div class="status-badge"><div class="status-dot"></div>v0.6.1 — Production</div>
+  </div>
+
+  <!-- KPIs -->
+  <div class="kpi-row">
+    <div class="kpi-card">
+      <div class="kpi-label">Knowledge Domains</div>
+      <div class="kpi-value" style="color: var(--accent);">14</div>
+      <div class="kpi-meta">Full 3-layer coverage</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">MCP Tools</div>
+      <div class="kpi-value" style="color: var(--accent-green);">31</div>
+      <div class="kpi-meta">All with annotations</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">API Requests (30d)</div>
+      <div class="kpi-value" id="kpi-requests" style="color: var(--accent-amber);">—</div>
+      <div class="kpi-meta" id="kpi-requests-meta">Loading...</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Active Agents</div>
+      <div class="kpi-value" id="kpi-agents" style="color: var(--accent-violet);">—</div>
+      <div class="kpi-meta" id="kpi-agents-meta">Unique clients</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Quality Score</div>
+      <div class="kpi-value" id="kpi-quality" style="color: var(--accent-green);">—</div>
+      <div class="kpi-meta">Platform average</div>
+    </div>
+  </div>
+
+  <!-- Row: Domains + Glama Scores -->
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title"><span class="icon">🗾</span> Knowledge Domain Coverage</div>
+      <div class="domain-grid" id="domain-grid">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🏆</span> Glama Registry Scores</div>
+      <div class="score-grid">
+        <div class="score-item"><div class="score-letter">A</div><div class="score-name">Coherence</div></div>
+        <div class="score-item"><div class="score-letter">B</div><div class="score-name">TDQS</div></div>
+        <div class="score-item"><div class="score-letter">B</div><div class="score-name">Maintenance</div></div>
+        <div class="score-item"><div class="score-letter">A</div><div class="score-name">License</div></div>
+      </div>
+      <div style="margin-top: 20px;">
+        <div class="card-title" style="font-size:12px;"><span class="icon">📡</span> Registry Presence</div>
+        <table class="data-table">
+          <tr><td>npm</td><td><span class="tag tag-green">v0.2.5</span></td><td style="color:var(--text-muted)">edition-mcp-server</td></tr>
+          <tr><td>Smithery</td><td><span class="tag tag-green">Listed</span></td><td style="color:var(--text-muted)">31 tools detected</td></tr>
+          <tr><td>Glama</td><td><span class="tag tag-blue">Scored</span></td><td style="color:var(--text-muted)">Coherence A</td></tr>
+          <tr><td>GitHub</td><td><span class="tag tag-green">v0.6.1</span></td><td style="color:var(--text-muted)">CI passing</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row: MCP Telemetry + Tool Usage -->
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title"><span class="icon">⚡</span> MCP Tool Usage (30d)</div>
+      <div class="bar-chart" id="tool-chart">
+        <div style="color: var(--text-muted); font-size: 13px; text-align: center; padding: 40px 0;">Loading telemetry...</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🤖</span> Agent Activity</div>
+      <div id="agent-table">
+        <div style="color: var(--text-muted); font-size: 13px; text-align: center; padding: 40px 0;">Loading agents...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row: Weekly Intelligence + Quality -->
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title"><span class="icon">📊</span> Weekly Intelligence Summary</div>
+      <div id="weekly-summary">
+        <div style="color: var(--text-muted); font-size: 13px; text-align: center; padding: 40px 0;">Loading weekly report...</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🛡️</span> Trust Anchor — Domain Quality</div>
+      <div class="bar-chart" id="quality-chart">
+        <div style="color: var(--text-muted); font-size: 13px; text-align: center; padding: 40px 0;">Loading quality scores...</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    EDITION Intelligence Platform v0.6.1 — Japan Operations OS<br>
+    <span style="color: var(--accent);">api.edition.sh</span> · MIT License · © 2026
+  </div>
+</div>
+
+<script>
+const API = 'https://edition-api.onrender.com';
+const DOMAIN_META = {
+  memory: {emoji:'🧠', label:'Memory'},
+  regulation: {emoji:'⚖️', label:'Regulation'},
+  protocol: {emoji:'🤝', label:'Protocol'},
+  calendar: {emoji:'📅', label:'Calendar'},
+  regional: {emoji:'🗺️', label:'Regional'},
+  organization: {emoji:'🏢', label:'Organization'},
+  foreign_entry: {emoji:'🛂', label:'Entry'},
+  travel: {emoji:'🚅', label:'Travel'},
+  entertainment: {emoji:'🎌', label:'Entertain'},
+  daily_life: {emoji:'🏡', label:'Daily Life'},
+  language: {emoji:'📝', label:'Language'},
+  food: {emoji:'🍣', label:'Food'},
+  disaster: {emoji:'🌊', label:'Disaster'},
+};
+
+async function fetchJSON(path) {
+  try {
+    const r = await fetch(API + path);
+    return await r.json();
+  } catch(e) { return null; }
+}
+
+function makeBar(label, value, max, cls, suffix='') {
+  const pct = Math.min((value/max)*100, 100);
+  return `<div class="bar-row">
+    <div class="bar-label">${label}</div>
+    <div class="bar-track"><div class="bar-fill ${cls}" style="width:${pct}%" data-value="${value}${suffix}"></div></div>
+  </div>`;
+}
+
+async function loadDashboard() {
+  const [summary, mcp, quality, weekly, agents] = await Promise.all([
+    fetchJSON('/api/v1/analytics/summary?period=30d'),
+    fetchJSON('/api/v1/analytics/mcp?period=30d'),
+    fetchJSON('/api/v1/analytics/quality'),
+    fetchJSON('/api/v1/analytics/weekly'),
+    fetchJSON('/api/v1/analytics/agents'),
+  ]);
+
+  // KPIs
+  if (summary) {
+    document.getElementById('kpi-requests').textContent = summary.total_requests.toLocaleString();
+    document.getElementById('kpi-requests-meta').textContent = `Avg ${summary.avg_latency_ms}ms latency`;
+    document.getElementById('kpi-agents').textContent = summary.unique_user_agents;
+  }
+  if (quality) {
+    document.getElementById('kpi-quality').textContent = quality.platform_quality_score + '%';
+  }
+
+  // Domain grid
+  if (quality && quality.domains) {
+    const grid = document.getElementById('domain-grid');
+    grid.innerHTML = quality.domains.map(d => {
+      const m = DOMAIN_META[d.domain] || {emoji:'📦', label: d.domain};
+      return `<div class="domain-item">
+        <div class="domain-emoji">${m.emoji}</div>
+        <div class="domain-name">${m.label}</div>
+        <div class="domain-score">${d.quality_score}%</div>
+      </div>`;
+    }).join('');
+  }
+
+  // MCP Tool chart
+  if (mcp && mcp.mcp) {
+    const tools = Object.entries(mcp.mcp.tool_usage);
+    const maxVal = tools.length > 0 ? Math.max(...tools.map(t=>t[1])) : 1;
+    const chart = document.getElementById('tool-chart');
+    if (tools.length === 0) {
+      chart.innerHTML = `<div style="color:var(--text-muted);font-size:13px;text-align:center;padding:20px">
+        MCP ratio: ${mcp.mcp_ratio}% — ${mcp.mcp.total_calls} MCP calls / ${mcp.rest.total_calls} REST calls
+      </div>`;
+    } else {
+      chart.innerHTML = tools.slice(0,8).map((t,i) =>
+        makeBar(t[0], t[1], maxVal, ['gradient-1','gradient-2','gradient-3'][i%3])
+      ).join('');
+    }
+  }
+
+  // Agent table
+  if (agents && agents.agents) {
+    const el = document.getElementById('agent-table');
+    if (agents.agents.length === 0) {
+      el.innerHTML = '<div style="color:var(--text-muted);font-size:13px;text-align:center;padding:20px">No agent activity recorded yet</div>';
+    } else {
+      el.innerHTML = `<table class="data-table">
+        <thead><tr><th>Agent</th><th>Requests</th><th>Latency</th><th>Last Seen</th></tr></thead>
+        <tbody>${agents.agents.slice(0,6).map(a => `<tr>
+          <td style="font-weight:500">${a.name}</td>
+          <td>${a.total_requests}</td>
+          <td>${a.avg_latency_ms}ms</td>
+          <td style="color:var(--text-muted)">${a.last_seen ? new Date(a.last_seen).toLocaleDateString() : '—'}</td>
+        </tr>`).join('')}</tbody>
+      </table>`;
+    }
+  }
+
+  // Weekly summary
+  if (weekly) {
+    const el = document.getElementById('weekly-summary');
+    const t = weekly.traffic;
+    const trendIcon = t.trend === 'up' ? '📈' : t.trend === 'down' ? '📉' : '➡️';
+    el.innerHTML = `
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">
+        <div style="background:rgba(15,23,42,0.5);padding:14px;border-radius:10px;border:1px solid var(--border)">
+          <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase">This Week</div>
+          <div style="font-size:24px;font-weight:700;color:var(--accent)">${t.total_requests}</div>
+        </div>
+        <div style="background:rgba(15,23,42,0.5);padding:14px;border-radius:10px;border:1px solid var(--border)">
+          <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase">Growth</div>
+          <div style="font-size:24px;font-weight:700;color:${t.growth_percent>=0?'var(--accent-green)':'var(--accent-rose)'}">${trendIcon} ${t.growth_percent}%</div>
+        </div>
+      </div>
+      <div style="font-size:12px;color:var(--text-muted);margin-bottom:8px">🔍 Demand Signal</div>
+      <div style="font-size:13px;color:var(--text-secondary);background:rgba(15,23,42,0.5);padding:12px;border-radius:8px;border:1px solid var(--border)">${weekly.demand_signals.recommendation}</div>
+      ${weekly.agents.new_count > 0 ? `<div style="margin-top:12px;font-size:12px;color:var(--accent-green)">🆕 ${weekly.agents.new_count} new agent(s): ${weekly.agents.new_this_week.join(', ')}</div>` : ''}
+    `;
+  }
+
+  // Quality chart
+  if (quality && quality.domains) {
+    const chart = document.getElementById('quality-chart');
+    const maxQ = 100;
+    chart.innerHTML = quality.domains.map((d,i) => {
+      const m = DOMAIN_META[d.domain] || {emoji:'📦', label: d.domain};
+      return makeBar(`${m.emoji} ${m.label}`, d.quality_score, maxQ, ['gradient-1','gradient-2','gradient-3'][i%3], '%');
+    }).join('');
+  }
+}
+
+loadDashboard();
+setInterval(loadDashboard, 60000);
+</script>
+</body>
+</html>
