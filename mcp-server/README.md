@@ -115,7 +115,7 @@ By default connects to `https://api.edition.sh`. Override with environment varia
 
 | Tool | Description |
 |------|-------------|
-| `foreign_entry_check` | Japan market entry guides — incorporation, management visa, bank account, real estate, tax registration |
+| `foreign_entry_check` | Japan market entry guides — incorporation (KK/GK), management visa, bank account, real estate, tax registration, employee hiring (labor law, dismissal rules) |
 | `foreign_entry_list` | List all foreign entry categories |
 
 ### Travel (2 tools)
