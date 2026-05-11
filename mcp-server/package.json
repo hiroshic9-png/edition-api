@@ -1,6 +1,6 @@
 {
   "name": "edition-mcp-server",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "mcpName": "io.github.hiroshic9-png/japan-business-operations",
   "description": "EDITION Intelligence Platform — MCP server for Japan operations intelligence. 14 knowledge domains, 31 tools, 2 prompts, 2 resources. Verified ground truth: regulations, procedures, protocols, calendar, regional, organization, foreign entry, travel, entertainment, daily life, language, food culture, disaster safety, and persistent memory.",
   "main": "dist/index.js",
