@@ -1,17 +1,17 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.hiroshic9-png/japan-business-operations",
-  "description": "Japan Operations OS for AI agents — 14 knowledge domains, 31 tools via REST+MCP.",
+  "name": "io.github.hiroshic9-png/edition-intelligence-platform",
+  "description": "Japan Operations OS for autonomous AI agents — 14 knowledge domains covering regulations, protocols, calendar, travel, food culture, language, disaster safety, daily life, and persistent memory. 31 MCP tools via REST + Streamable HTTP.",
   "repository": {
     "url": "https://github.com/hiroshic9-png/edition-api",
     "source": "github"
   },
-  "version": "0.5.0",
+  "version": "0.6.1",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "edition-mcp-server",
-      "version": "0.2.2",
+      "version": "0.2.5",
       "transport": {
         "type": "stdio"
       },
@@ -23,6 +23,23 @@
           "isSecret": false,
           "name": "EDITION_API_URL"
         },
+        {
+          "description": "API key for authentication (free beta key provided by default)",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": true,
+          "name": "EDITION_API_KEY"
+        }
+      ]
+    }
+  ],
+  "remoteEndpoints": [
+    {
+      "url": "https://api.edition.sh/mcp",
+      "transport": {
+        "type": "streamable-http"
+      },
+      "environmentVariables": [
         {
           "description": "API key for authentication (free beta key provided by default)",
           "isRequired": false,
