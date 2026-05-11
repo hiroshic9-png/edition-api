@@ -1061,6 +1061,144 @@ server.resource(
 
 } // end of legacy mode else block
 
+// ── Governance Intelligence Layer (both modes) ──────
+// These tools are ALWAYS available regardless of Progressive/Legacy mode.
+// They provide compliance audit trails and governance reporting,
+// capturing structured metadata from every regulatory interaction.
+
+interface AuditEntry {
+  id: string;
+  timestamp: string;
+  domain: string;
+  action: string;
+  query: string;
+  result_summary: string;
+  confidence: number;
+  compliant: boolean;
+  metadata: Record<string, any>;
+}
+
+const auditLog: AuditEntry[] = [];
+let auditCounter = 0;
+
+function recordAudit(entry: Omit<AuditEntry, "id" | "timestamp">): AuditEntry {
+  const record: AuditEntry = {
+    id: `AUDIT-${++auditCounter}-${Date.now()}`,
+    timestamp: new Date().toISOString(),
+    ...entry,
+  };
+  auditLog.push(record);
+  return record;
+}
+
+// Tool: compliance_log — Record a compliance check with audit trail
+server.tool(
+  "compliance_log",
+  "Record a Japan regulatory/compliance check with full audit trail. Use this AFTER performing a regulation_check, foreign_entry_check, or any compliance-sensitive query. Creates an immutable, timestamped record for governance reporting. Agents operating under compliance requirements should call this after every regulatory lookup.",
+  {
+    domain: z.string().describe("Knowledge domain checked (e.g. 'regulation', 'foreign_entry', 'protocol')"),
+    action: z.string().describe("Action that was checked (e.g. 'open restaurant in Tokyo', 'apply for management visa')"),
+    query: z.string().describe("The original query/action that triggered the compliance check"),
+    result_summary: z.string().describe("Summary of the compliance check result"),
+    confidence: z.number().min(0).max(1).describe("Confidence score of the check (0-1)"),
+    compliant: z.boolean().describe("Whether the action was found to be compliant"),
+    context: z.record(z.string(), z.any()).optional().describe("Additional context (industry, entity_type, jurisdiction, etc.)"),
+  },
+  { readOnlyHint: false, destructiveHint: false, idempotentHint: false },
+  async ({ domain, action, query, result_summary, confidence, compliant, context }) => {
+    const record = recordAudit({
+      domain,
+      action,
+      query,
+      result_summary,
+      confidence,
+      compliant,
+      metadata: {
+        ...context,
+        server_version: "0.3.1",
+        mode: PROGRESSIVE ? "progressive" : "legacy",
+      },
+    });
+
+    let text = `📋 Compliance Audit Record Created\n`;
+    text += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
+    text += `  ID: ${record.id}\n`;
+    text += `  Timestamp: ${record.timestamp}\n`;
+    text += `  Domain: ${record.domain}\n`;
+    text += `  Action: ${record.action}\n`;
+    text += `  Status: ${record.compliant ? "✅ COMPLIANT" : "⚠️ NON-COMPLIANT / REQUIRES REVIEW"}\n`;
+    text += `  Confidence: ${(record.confidence * 100).toFixed(0)}%\n`;
+    text += `  Summary: ${record.result_summary}\n`;
+    text += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
+    text += `\nTotal audit records this session: ${auditLog.length}`;
+
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
+// Tool: compliance_report — Generate governance report from audit trail
+server.tool(
+  "compliance_report",
+  "Generate a structured compliance/governance report from accumulated audit records. Returns all logged compliance checks with statistics. Use for periodic compliance reviews, audit preparation, or governance dashboards. Supports filtering by domain, date range, or compliance status.",
+  {
+    domain: z.string().optional().describe("Filter by domain (e.g. 'regulation'). Omit for all domains."),
+    compliant_only: z.boolean().optional().describe("If true, show only compliant records. If false, show only non-compliant. Omit for all."),
+    format: z.enum(["summary", "detailed", "json"]).default("summary").describe("Report format: summary (overview + stats), detailed (all records), json (machine-readable)"),
+  },
+  { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
+  async ({ domain, compliant_only, format }) => {
+    let records = [...auditLog];
+    if (domain) records = records.filter(r => r.domain === domain);
+    if (compliant_only !== undefined) records = records.filter(r => r.compliant === compliant_only);
+
+    if (records.length === 0) {
+      return { content: [{ type: "text" as const, text: "📊 No compliance records found for the specified criteria.\n\n💡 Use compliance_log after regulatory checks to build your audit trail." }] };
+    }
+
+    if (format === "json") {
+      return { content: [{ type: "text" as const, text: JSON.stringify({ total: records.length, records }, null, 2) }] };
+    }
+
+    // Statistics
+    const total = records.length;
+    const compliant = records.filter(r => r.compliant).length;
+    const nonCompliant = total - compliant;
+    const avgConfidence = records.reduce((sum, r) => sum + r.confidence, 0) / total;
+    const domains = [...new Set(records.map(r => r.domain))];
+    const timeRange = records.length > 0
+      ? `${records[0].timestamp} → ${records[records.length - 1].timestamp}`
+      : "N/A";
+
+    let text = `\n📊 EDITION Compliance Governance Report\n`;
+    text += `══════════════════════════════════════\n\n`;
+    text += `📅 Period: ${timeRange}\n`;
+    text += `📈 Total Checks: ${total}\n`;
+    text += `  ✅ Compliant: ${compliant} (${((compliant / total) * 100).toFixed(1)}%)\n`;
+    text += `  ⚠️  Review Needed: ${nonCompliant} (${((nonCompliant / total) * 100).toFixed(1)}%)\n`;
+    text += `  📊 Average Confidence: ${(avgConfidence * 100).toFixed(1)}%\n`;
+    text += `  🗂️  Domains Covered: ${domains.join(", ")}\n`;
+    text += `\n══════════════════════════════════════\n`;
+
+    if (format === "detailed") {
+      text += `\n📋 Detailed Records:\n\n`;
+      for (const r of records) {
+        text += `  ─── ${r.id} ───\n`;
+        text += `  Time: ${r.timestamp}\n`;
+        text += `  Domain: ${r.domain} | Action: ${r.action}\n`;
+        text += `  Query: ${r.query}\n`;
+        text += `  Result: ${r.result_summary}\n`;
+        text += `  Status: ${r.compliant ? "✅ COMPLIANT" : "⚠️ REVIEW"} | Confidence: ${(r.confidence * 100).toFixed(0)}%\n\n`;
+      }
+    }
+
+    text += `\n⚠️ Disclaimer: This report is generated from EDITION audit records. `;
+    text += `It serves as a structured reference for governance reviews but does not constitute legal certification.`;
+    text += `\n📌 Data source: EDITION Intelligence Platform (api.edition.sh) — Verified Japan regulatory knowledge.`;
+
+    return { content: [{ type: "text" as const, text }] };
+  }
+);
+
 // ── Start ───────────────────────────────────────────
 
 async function main() {
