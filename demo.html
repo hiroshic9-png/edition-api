@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EDITION — Tourist Agent Demo</title>
+<meta name="description" content="Interactive demo showing how AI agents use EDITION to assist tourists visiting Japan">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#09090b;--surface:#18181b;--surface2:#27272a;--border:#3f3f46;
+  --text:#fafafa;--text2:#a1a1aa;--text3:#71717a;
+  --accent:#22d3ee;--accent2:#06b6d4;--green:#34d399;--amber:#fbbf24;--red:#f87171;
+  --radius:12px;--font:'Inter',system-ui,sans-serif;
+}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+.container{max-width:1100px;margin:0 auto;padding:0 24px}
+
+/* Header */
+header{padding:32px 0 16px;border-bottom:1px solid var(--border)}
+header .brand{display:flex;align-items:center;gap:12px}
+header .logo{font-size:20px;font-weight:700;letter-spacing:2px}
+header .tag{font-size:12px;color:var(--text3);background:var(--surface);padding:4px 10px;border-radius:20px;border:1px solid var(--border)}
+
+/* Hero */
+.hero{padding:48px 0 32px;text-align:center}
+.hero h1{font-size:clamp(28px,4vw,42px);font-weight:700;margin-bottom:12px;background:linear-gradient(135deg,var(--text),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{color:var(--text2);font-size:16px;max-width:640px;margin:0 auto 24px}
+.scenario-badge{display:inline-flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--border);padding:8px 16px;border-radius:24px;font-size:13px;color:var(--text2)}
+.scenario-badge .dot{width:8px;height:8px;background:var(--green);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+/* Timeline */
+.timeline{padding:32px 0 64px;position:relative}
+.timeline::before{content:'';position:absolute;left:28px;top:0;bottom:0;width:2px;background:var(--border)}
+.step{position:relative;padding-left:72px;margin-bottom:32px}
+.step-num{position:absolute;left:12px;top:4px;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;z-index:1;transition:all .3s}
+.step-num.pending{background:var(--surface);border:2px solid var(--border);color:var(--text3)}
+.step-num.active{background:var(--accent);color:var(--bg);border:2px solid var(--accent);box-shadow:0 0 16px rgba(34,211,238,.3)}
+.step-num.done{background:var(--green);color:var(--bg);border:2px solid var(--green)}
+.step-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:border-color .3s}
+.step-card.active{border-color:var(--accent)}
+.step-header{padding:16px 20px;display:flex;align-items:center;gap:12px;cursor:pointer;user-select:none}
+.step-header:hover{background:var(--surface2)}
+.step-icon{font-size:22px;flex-shrink:0}
+.step-title{flex:1}
+.step-title h3{font-size:15px;font-weight:600}
+.step-title .domains{display:flex;gap:6px;margin-top:4px;flex-wrap:wrap}
+.domain-tag{font-size:11px;padding:2px 8px;border-radius:12px;background:var(--surface2);color:var(--text3);border:1px solid var(--border)}
+.domain-tag.active{background:rgba(34,211,238,.1);color:var(--accent);border-color:rgba(34,211,238,.3)}
+.step-status{font-size:12px;padding:4px 10px;border-radius:12px;font-weight:500}
+.status-ready{background:var(--surface2);color:var(--text3)}
+.status-running{background:rgba(34,211,238,.1);color:var(--accent);animation:pulse 1.5s infinite}
+.status-done{background:rgba(52,211,153,.1);color:var(--green)}
+.status-error{background:rgba(248,113,113,.1);color:var(--red)}
+
+/* Body */
+.step-body{display:none;padding:0 20px 20px}
+.step-body.show{display:block}
+.query-block{background:var(--bg);border-radius:8px;padding:14px;margin-bottom:12px;font-family:'SF Mono','Fira Code',monospace;font-size:12px;overflow-x:auto;border:1px solid var(--border)}
+.query-block .method{color:var(--accent);font-weight:600}
+.query-block .url{color:var(--text2)}
+.query-block .payload{color:var(--text3);margin-top:6px;white-space:pre-wrap}
+.response-block{background:var(--bg);border-radius:8px;padding:16px;border:1px solid var(--border);max-height:400px;overflow-y:auto;font-size:13px}
+.response-block h4{font-size:12px;color:var(--text3);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
+.insight{padding:10px 14px;border-left:3px solid var(--accent);margin-bottom:8px;background:rgba(34,211,238,.03);border-radius:0 8px 8px 0}
+.insight .label{font-size:11px;color:var(--accent);font-weight:600;text-transform:uppercase;letter-spacing:.5px}
+.insight .value{font-size:13px;color:var(--text);margin-top:2px}
+.insight .context{font-size:12px;color:var(--text3);margin-top:4px;font-style:italic}
+.insight-warn{border-left-color:var(--amber)}
+.insight-warn .label{color:var(--amber)}
+.insight-danger{border-left-color:var(--red)}
+.insight-danger .label{color:var(--red)}
+.insight-success{border-left-color:var(--green)}
+.insight-success .label{color:var(--green)}
+
+.run-btn{background:var(--accent);color:var(--bg);border:none;padding:10px 20px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;font-family:var(--font);transition:all .2s;display:inline-flex;align-items:center;gap:8px;margin-top:8px}
+.run-btn:hover{transform:translateY(-1px);box-shadow:0 4px 16px rgba(34,211,238,.3)}
+.run-btn:disabled{opacity:.4;cursor:not-allowed;transform:none;box-shadow:none}
+.run-all-btn{background:linear-gradient(135deg,var(--accent),var(--accent2));color:var(--bg);border:none;padding:14px 28px;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--font);display:inline-flex;align-items:center;gap:10px;transition:all .2s;margin-bottom:32px}
+.run-all-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(34,211,238,.25)}
+.run-all-btn:disabled{opacity:.4;cursor:not-allowed;transform:none;box-shadow:none}
+
+/* Stats bar */
+.stats{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+.stat{background:var(--surface);border:1px solid var(--border);padding:12px 20px;border-radius:var(--radius);text-align:center;min-width:120px}
+.stat .num{font-size:22px;font-weight:700;color:var(--accent)}
+.stat .lbl{font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:1px}
+
+/* Footer */
+footer{padding:24px 0;border-top:1px solid var(--border);text-align:center;color:var(--text3);font-size:12px}
+footer a{color:var(--accent);text-decoration:none}
+
+/* Scrollbar */
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="brand">
+      <span class="logo">EDITION</span>
+      <span class="tag">Tourist Agent Demo</span>
+    </div>
+  </header>
+
+  <div class="hero">
+    <h1>First Trip to Tokyo</h1>
+    <p>Watch an AI agent use EDITION's 6 knowledge domains to build a comprehensive travel briefing — from transportation to earthquake safety.</p>
+    <div class="scenario-badge"><span class="dot"></span> Live API — api.edition.sh</div>
+    <div style="margin-top:20px">
+      <button class="run-all-btn" id="runAll" onclick="runAll()">▶ Run Full Scenario</button>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="num" id="statDomains">0</div><div class="lbl">Domains</div></div>
+      <div class="stat"><div class="num" id="statInsights">0</div><div class="lbl">Insights</div></div>
+      <div class="stat"><div class="num" id="statTime">0ms</div><div class="lbl">Total Time</div></div>
+    </div>
+  </div>
+
+  <div class="timeline" id="timeline"></div>
+
+  <footer>
+    Powered by <a href="https://edition.sh" target="_blank">EDITION Intelligence Platform</a> · <a href="https://api.edition.sh/docs" target="_blank">API Docs</a>
+  </footer>
+</div>
+
+<script>
+const API = 'https://api.edition.sh/api/v1';
+
+const STEPS = [
+  {
+    id: 'travel',
+    icon: '🚄',
+    title: 'Transportation & Practical Info',
+    domains: ['travel'],
+    query: { method: 'POST', path: '/travel/search', body: { query: 'transportation' } },
+    extract: (data) => {
+      const r = data.results?.[0]?.data;
+      if (!r) return [{ label:'No data', value:'API returned empty results', type:'warn' }];
+      const out = [];
+      if (r.shinkansen) out.push({ label:'Shinkansen', value: r.shinkansen.tokyo_osaka || 'Tokyo–Osaka bullet train info', type:'' });
+      if (r.ic_cards) out.push({ label:'IC Cards', value: typeof r.ic_cards === 'string' ? r.ic_cards : 'Suica/PASMO — tap-to-pay for all transit', type:'' });
+      if (r.tips) r.tips.slice(0,3).forEach(t => out.push({ label:'Tip', value: t, type:'success' }));
+      // Fallback: show summary
+      if (out.length === 0) {
+        out.push({ label:'Transport', value: data.results[0].summary, type:'' });
+        const keys = Object.keys(r).filter(k=>k!=='_meta'&&k!=='name_ja'&&k!=='name_en'&&k!=='category'&&k!=='summary');
+        keys.slice(0,3).forEach(k => {
+          const v = r[k];
+          if (typeof v === 'string') out.push({ label: k.replace(/_/g,' '), value: v, type:'' });
+          else if (Array.isArray(v)) out.push({ label: k.replace(/_/g,' '), value: v.slice(0,2).join(' | '), type:'' });
+          else if (typeof v === 'object' && v.context) out.push({ label: k.replace(/_/g,' '), value: v.context.substring(0,150)+'…', type:'', context: null });
+        });
+      }
+      return out;
+    }
+  },
+  {
+    id: 'food',
+    icon: '🍣',
+    title: 'Dining Etiquette & Restaurants',
+    domains: ['food'],
+    query: { method: 'POST', path: '/food/search', body: { query: 'dining etiquette restaurant' } },
+    extract: (data) => {
+      const out = [];
+      (data.results||[]).forEach(r => {
+        const d = r.data;
+        if (d.chopstick_rules?.taboos) {
+          out.push({ label:'Chopstick Taboos', value: d.chopstick_rules.taboos.slice(0,3).join(' · '), type:'warn', context: d.chopstick_rules.context?.substring(0,120) });
+        }
+        if (d.drinking_culture?.kanpai) {
+          out.push({ label:'Kanpai Rule', value: d.drinking_culture.kanpai, type:'' });
+        }
+        if (d.restaurant_types) {
+          const types = Array.isArray(d.restaurant_types) ? d.restaurant_types : Object.keys(d.restaurant_types);
+          out.push({ label:'Restaurant Types', value: types.slice(0,4).join(', '), type:'success' });
+        }
+        if (d.shokkenki) {
+          out.push({ label:'Ticket Machine (食券機)', value: typeof d.shokkenki === 'string' ? d.shokkenki : 'Vending machine ordering system — common at ramen shops', type:'' });
+        }
+        if (out.length === 0) {
+          out.push({ label: r.name_en || r.topic, value: r.summary, type:'' });
+        }
+      });
+      return out.length ? out : [{ label:'Food Culture', value:'Dining etiquette data loaded', type:'' }];
+    }
+  },
+  {
+    id: 'calendar',
+    icon: '📅',
+    title: 'Holidays & Seasonal Awareness',
+    domains: ['calendar'],
+    query: { method: 'POST', path: '/calendar/check', body: { query: 'public_holidays' } },
+    extract: (data) => {
+      const out = [];
+      if (data.holidays) {
+        const gw = data.holidays.filter(h => h.business_impact && h.business_impact.includes('GW'));
+        if (gw.length) out.push({ label:'Golden Week', value: gw.map(h=>`${h.date} ${h.name}`).join(' → '), type:'warn', context:'GW中はビジネスが実質停止。ホテルは通常の2-3倍。' });
+        const obon = data.holidays.find(h => h.name && h.name.includes('盆'));
+        if (obon) out.push({ label:'Obon', value: `${obon.date} ${obon.name}`, type:'warn' });
+        // Show first 3 holidays as general info
+        data.holidays.slice(0,3).forEach(h => {
+          if (!gw.includes(h)) out.push({ label: h.name, value: `${h.date} — ${h.business_impact||''}`, type:'' });
+        });
+      }
+      if (data.extended_breaks) {
+        Object.entries(data.extended_breaks).slice(0,2).forEach(([k,v]) => {
+          out.push({ label: k, value: typeof v === 'string' ? v : JSON.stringify(v).substring(0,100), type:'warn' });
+        });
+      }
+      if (out.length === 0) {
+        out.push({ label:'Calendar', value: data.name_en || data.summary || 'Holiday calendar loaded', type:'' });
+        if (data.holidays) out.push({ label:'Total Holidays', value: `${data.holidays.length} national holidays per year`, type:'' });
+      }
+      return out;
+    }
+  },
+  {
+    id: 'language',
+    icon: '🗣️',
+    title: 'Essential Japanese Phrases',
+    domains: ['language'],
+    query: { method: 'POST', path: '/language/search', body: { query: 'keigo' } },
+    extract: (data) => {
+      const out = [];
+      const r = data.results?.[0]?.data;
+      if (!r) return [{ label:'Language', value:'No results', type:'warn' }];
+      if (r.types) {
+        Object.entries(r.types).forEach(([k,v]) => {
+          out.push({ label: v.name || k, value: (v.examples||[]).slice(0,3).join(', '), type: k==='sonkeigo'?'success':'' });
+        });
+      }
+      if (r.common_mistakes) {
+        out.push({ label:'Common Mistakes', value: r.common_mistakes.slice(0,2).join(' | '), type:'danger' });
+      }
+      if (out.length===0) out.push({ label:'Keigo', value: r.summary || data.results[0].summary, type:'' });
+      return out;
+    }
+  },
+  {
+    id: 'disaster',
+    icon: '🔔',
+    title: 'Earthquake & Disaster Safety',
+    domains: ['disaster'],
+    query: { method: 'POST', path: '/disaster/search', body: { query: 'earthquake' } },
+    extract: (data) => {
+      const out = [];
+      const r = data.results?.[0]?.data;
+      if (!r) return [{ label:'Safety', value:'No results', type:'warn' }];
+      if (r.shindo_scale?.levels) {
+        const levels = r.shindo_scale.levels;
+        const keys = Object.keys(levels);
+        out.push({ label:'Shindo Scale', value: `${keys.length} levels: ${keys.slice(0,4).join(', ')}…`, type:'danger', context: r.shindo_scale.context?.substring(0,150) });
+      }
+      if (r.eew) {
+        out.push({ label:'EEW (Early Warning)', value: typeof r.eew === 'string' ? r.eew.substring(0,120) : 'Earthquake Early Warning system — alerts arrive seconds before shaking', type:'warn' });
+      }
+      if (r.action_guide) {
+        const firstKey = Object.keys(r.action_guide)[0];
+        if (firstKey) out.push({ label:'Action: '+firstKey, value: typeof r.action_guide[firstKey] === 'string' ? r.action_guide[firstKey] : JSON.stringify(r.action_guide[firstKey]).substring(0,100), type:'danger' });
+      }
+      if (out.length===0) out.push({ label:'Earthquake', value: data.results[0].summary, type:'danger' });
+      return out;
+    }
+  },
+  {
+    id: 'entertainment',
+    icon: '🎌',
+    title: 'Pop Culture & Seasonal Events',
+    domains: ['entertainment'],
+    query: { method: 'POST', path: '/entertainment/search', body: { query: 'anime pilgrimage' } },
+    extract: (data) => {
+      const out = [];
+      (data.results||[]).forEach(r => {
+        out.push({ label: r.name_en || r.topic, value: r.summary, type:'success' });
+        const d = r.data;
+        if (d.popular_spots) out.push({ label:'Popular Spots', value: d.popular_spots.slice(0,3).join(', '), type:'' });
+        if (d.manners) {
+          const m = Array.isArray(d.manners) ? d.manners : (d.manners.rules || []);
+          if (m.length) out.push({ label:'Manners', value: m.slice(0,2).join(' · '), type:'warn' });
+        }
+      });
+      if (out.length===0) out.push({ label:'Entertainment', value:'Entertainment data loaded', type:'' });
+      return out;
+    }
+  }
+];
+
+let totalInsights = 0;
+let totalTime = 0;
+let completedSteps = 0;
+
+function init() {
+  const tl = document.getElementById('timeline');
+  STEPS.forEach((s, i) => {
+    tl.innerHTML += `
+    <div class="step" id="step-${s.id}">
+      <div class="step-num pending" id="num-${s.id}">${i+1}</div>
+      <div class="step-card" id="card-${s.id}">
+        <div class="step-header" onclick="toggle('${s.id}')">
+          <span class="step-icon">${s.icon}</span>
+          <div class="step-title">
+            <h3>${s.title}</h3>
+            <div class="domains">${s.domains.map(d=>`<span class="domain-tag" id="dtag-${s.id}-${d}">${d}</span>`).join('')}</div>
+          </div>
+          <span class="step-status status-ready" id="status-${s.id}">Ready</span>
+        </div>
+        <div class="step-body" id="body-${s.id}">
+          <div class="query-block">
+            <span class="method">${s.query.method}</span> <span class="url">${API}${s.query.path}</span>
+            <div class="payload">${JSON.stringify(s.query.body, null, 2)}</div>
+          </div>
+          <div id="response-${s.id}"></div>
+          <button class="run-btn" id="btn-${s.id}" onclick="runStep('${s.id}')">▶ Run</button>
+        </div>
+      </div>
+    </div>`;
+  });
+}
+
+function toggle(id) {
+  const body = document.getElementById('body-' + id);
+  body.classList.toggle('show');
+}
+
+async function runStep(id) {
+  const step = STEPS.find(s => s.id === id);
+  const btn = document.getElementById('btn-' + id);
+  const status = document.getElementById('status-' + id);
+  const num = document.getElementById('num-' + id);
+  const card = document.getElementById('card-' + id);
+  const resp = document.getElementById('response-' + id);
+  const body = document.getElementById('body-' + id);
+
+  btn.disabled = true;
+  status.className = 'step-status status-running';
+  status.textContent = 'Calling…';
+  num.className = 'step-num active';
+  card.classList.add('active');
+  body.classList.add('show');
+  step.domains.forEach(d => {
+    document.getElementById(`dtag-${id}-${d}`).classList.add('active');
+  });
+
+  const t0 = performance.now();
+  try {
+    const res = await fetch(API + step.query.path, {
+      method: step.query.method,
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(step.query.body)
+    });
+    const data = await res.json();
+    const elapsed = Math.round(performance.now() - t0);
+    totalTime += elapsed;
+
+    const insights = step.extract(data);
+    totalInsights += insights.length;
+    completedSteps++;
+
+    let html = `<div class="response-block"><h4>Agent Insights · ${elapsed}ms</h4>`;
+    insights.forEach(ins => {
+      const cls = ins.type === 'warn' ? 'insight-warn' : ins.type === 'danger' ? 'insight-danger' : ins.type === 'success' ? 'insight-success' : '';
+      html += `<div class="insight ${cls}"><div class="label">${ins.label}</div><div class="value">${ins.value}</div>${ins.context ? `<div class="context">${ins.context}</div>` : ''}</div>`;
+    });
+    html += '</div>';
+    resp.innerHTML = html;
+
+    status.className = 'step-status status-done';
+    status.textContent = `✓ ${elapsed}ms`;
+    num.className = 'step-num done';
+    card.classList.remove('active');
+  } catch (e) {
+    const elapsed = Math.round(performance.now() - t0);
+    resp.innerHTML = `<div class="response-block"><h4>Error</h4><div class="insight insight-danger"><div class="label">Request Failed</div><div class="value">${e.message}</div></div></div>`;
+    status.className = 'step-status status-error';
+    status.textContent = 'Error';
+    num.className = 'step-num pending';
+    card.classList.remove('active');
+    btn.disabled = false;
+  }
+
+  document.getElementById('statDomains').textContent = completedSteps;
+  document.getElementById('statInsights').textContent = totalInsights;
+  document.getElementById('statTime').textContent = totalTime + 'ms';
+}
+
+async function runAll() {
+  const btn = document.getElementById('runAll');
+  btn.disabled = true;
+  btn.textContent = '⟳ Running…';
+  totalInsights = 0; totalTime = 0; completedSteps = 0;
+
+  for (const step of STEPS) {
+    await runStep(step.id);
+    await new Promise(r => setTimeout(r, 300));
+  }
+  btn.textContent = '✓ Complete';
+}
+
+init();
+</script>
+</body>
+</html>
