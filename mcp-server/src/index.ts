@@ -186,7 +186,7 @@ async function apiPost(path: string, body: any): Promise<any> {
 const server = new McpServer(
   {
     name: "edition",
-    version: "0.3.0",
+    version: "0.3.2",
   },
   {
     instructions: PROGRESSIVE
@@ -384,7 +384,7 @@ server.tool(
 
 server.tool(
   "memory_context",
-  "現在のセッション状態（有効な事実・合意事項のサマリー）を取得します。エージェントのプロンプトに注入して文脈を維持するために使います。",
+  "現在のセッション状態（有効な事実・合意事項のサマリー）を取得します。エージェントのプロンプトに注入して文脈を維持するために使います。新しい会話セッション開始時や、長い会話の途中で文脈を再確認したい場合に呼び出してください。個別のファクトを一覧で見たい場合はmemory_factsを使ってください。",
   {
     session_id: z.string().optional().describe("セッションID（省略で全体）"),
   },
@@ -492,7 +492,7 @@ server.tool(
 
 server.tool(
   "regulation_industries",
-  "日本の規制データベースに登録されている業種の一覧を取得します。",
+  "日本の規制データベースに登録されている業種の一覧を取得します。対応業種を確認したい場合や、regulation_checkに渡すindustryパラメータの値を調べたい場合に使ってください。特定の規制内容を知りたい場合はregulation_checkを使ってください。",
   {},
   { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async () => {
@@ -512,7 +512,7 @@ server.tool(
 
 server.tool(
   "regulation_tourist",
-  "訪日旅行者向けの規制・マナー情報のカテゴリ一覧を取得します。ビザ、免税、交通、宿泊、医療、マナーの6カテゴリ。",
+  "訪日旅行者向けの規制・マナー情報のカテゴリ一覧を取得します。ビザ、免税、交通、宿泊、医療、マナーの6カテゴリ。どのカテゴリがあるか一覧で確認したい場合に使ってください。特定のカテゴリの詳細を知りたい場合はregulation_check（entity_type='tourist'）を使ってください。",
   {},
   { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
   async () => {
@@ -968,7 +968,7 @@ server.tool(
 
 server.tool(
   "search",
-  "EDITION全14ドメインを横断検索します。1回のリクエストで規制・プロトコル・カレンダー・地域・組織・進出手続き・旅行・エンタメ・日常生活・日本語・食文化・災害安全の全12ドメインを同時検索。",
+  "EDITION全14ドメインを横断検索します。1回のリクエストで規制・プロトコル・カレンダー・地域・組織・進出手続き・旅行・エンタメ・日常生活・日本語・食文化・災害安全・メモリの全14ドメインを同時検索します。日本に関する幅広い質問で、どのドメインに該当するかわからない場合にまずこのツールを使ってください。特定ドメインの詳細が必要な場合は、各ドメイン専用の_checkまたは_searchツールを使ってください。",
   {
     query: z.string().describe("検索クエリ（例: '大阪で飲食店を開業', '地震の避難方法', '敬語の使い方'）"),
   },
