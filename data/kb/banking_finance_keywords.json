@@ -1,0 +1,11 @@
+{
+  "primary": ["銀行", "口座", "送金", "ATM", "クレジットカード", "PayPay", "Suica", "キャッシュレス", "両替", "為替", "振込", "引き落とし", "印鑑", "通帳"],
+  "secondary": ["bank", "account", "transfer", "remittance", "credit card", "debit", "ATM", "cashless", "payment", "exchange", "currency", "wire transfer", "SWIFT", "Wise"],
+  "semantic_aliases": {
+    "bank_account": ["口座開設", "bank account", "opening account"],
+    "transfer": ["送金", "振込", "wire transfer", "remittance"],
+    "mobile_pay": ["モバイル決済", "PayPay", "Suica", "PASMO", "mobile payment", "cashless"],
+    "credit": ["クレジットカード", "credit card", "クレカ"],
+    "exchange": ["両替", "外貨", "為替", "currency exchange", "forex"]
+  }
+}

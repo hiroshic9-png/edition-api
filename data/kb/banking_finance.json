@@ -1,0 +1,200 @@
+{
+  "bank_account_opening": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "全国銀行協会 外国人の口座開設",
+      "source_url": "https://www.zenginkyo.or.jp/",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "銀行口座開設",
+    "name_en": "Bank Account Opening",
+    "description": "How to open a bank account in Japan as a foreigner",
+    "bank_types": {
+      "mega_banks": {"names": ["三菱UFJ銀行", "三井住友銀行", "みずほ銀行"], "pros": "全国にATM・支店あり。安定性抜群", "cons": "外国人の口座開設が厳しい場合あり。来日6ヶ月未満は断られることが多い"},
+      "jp_bank": {"name": "ゆうちょ銀行", "pros": "全国の郵便局で利用可能。外国人に比較的開設しやすい", "cons": "送金限度額が低め。法人口座は取扱なし"},
+      "net_banks": {"names": ["楽天銀行", "住信SBIネット銀行", "PayPay銀行"], "pros": "オンラインで完結。手数料が安い", "cons": "在留期間6ヶ月以上が必要な場合が多い"},
+      "shinsei_prestia": {"name": "SMBC信託銀行プレスティア（旧シティバンク）", "pros": "英語対応が充実。外国人にフレンドリー", "cons": "最低預入額の条件あり"}
+    },
+    "required_documents": [
+      "在留カード（6ヶ月以上の在留期間が目安）",
+      "パスポート",
+      "印鑑（銀行による。サインで代替可能な銀行も増加中）",
+      "マイナンバー通知カードまたはマイナンバーカード",
+      "日本国内の住所を証明する書類（住民票等）",
+      "電話番号（日本の携帯番号）"
+    ],
+    "process": [
+      {"step": 1, "action": "住民登録", "detail": "市区町村役場で転入届を提出。住民票を取得"},
+      {"step": 2, "action": "銀行選定", "detail": "在留期間・言語サポート・目的に合わせて選択"},
+      {"step": 3, "action": "窓口訪問または オンライン申込", "detail": "必要書類を持参。英語対応可能な支店を事前に確認"},
+      {"step": 4, "action": "審査", "detail": "即日〜2週間。キャッシュカードは後日郵送（1-2週間）"},
+      {"step": 5, "action": "オンラインバンキング設定", "detail": "初回ログイン・アプリ設定"}
+    ],
+    "pitfalls": [
+      "来日直後（6ヶ月未満）はメガバンクで口座開設を断られることが多い→ゆうちょ銀行を推奨",
+      "印鑑は100円ショップで購入可能だが、銀行届出印は同じものを使い続ける必要がある",
+      "マイナンバーの届出は口座開設後でも可能だが、届出しないと将来的に口座が凍結される可能性",
+      "法人口座の開設は個人口座よりはるかに厳しい（事業計画・実態の詳細な審査あり）"
+    ]
+  },
+  "international_transfers": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "金融庁 外国送金",
+      "source_url": "https://www.fsa.go.jp/",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "海外送金・国際送金",
+    "name_en": "International Wire Transfers",
+    "description": "Methods and regulations for sending money internationally from Japan",
+    "methods": [
+      {"service": "銀行送金（SWIFT）", "cost": "3,000〜7,500円/回 + 中継銀行手数料", "speed": "2-5営業日", "limit": "100万円以上は本人確認強化", "notes": "最も伝統的だが最も高コスト"},
+      {"service": "Wise（旧TransferWise）", "cost": "0.5-2%程度", "speed": "1-2営業日", "limit": "100万円/回まで", "notes": "実勢レートで送金。コスパ最良"},
+      {"service": "PayPal", "cost": "3-4%", "speed": "即時〜数日", "limit": "口座による", "notes": "個人間送金に便利だが為替手数料が高い"},
+      {"service": "ゆうちょ銀行（国際送金）", "cost": "2,500円/回", "speed": "4-6営業日", "limit": "窓口のみ", "notes": "住所確認送金サービスあり"},
+      {"service": "SBI Remit", "cost": "480円〜", "speed": "最短10分", "limit": "対応国が限定", "notes": "フィリピン等への送金に特化"}
+    ],
+    "regulations": {
+      "reporting": "100万円超の海外送金は銀行が税務署に「国外送金等調書」を提出（自動報告）",
+      "foreign_exchange_law": "外為法に基づく本人確認・取引目的の確認が必要",
+      "tax_implications": "海外送金自体に税金はかからないが、送金の目的（贈与、不動産購入等）によっては課税対象",
+      "anti_money_laundering": "犯罪収益移転防止法により、200万円超の取引は厳格な本人確認（eKYC不可、対面確認）が必要"
+    },
+    "pitfalls": [
+      "SWIFT送金は送金銀行・中継銀行・受取銀行のそれぞれで手数料が発生する",
+      "為替レートは銀行の「TTS」レートが適用され、実勢レートより1-2円高い",
+      "海外送金を頻繁に行うと口座が凍結される場合がある（マネーロンダリング対策）",
+      "年間合計で100万円以上の海外送金は税務署にチェックされる可能性が高い"
+    ]
+  },
+  "mobile_payments": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "キャッシュレス推進協議会",
+      "source_url": "https://www.paymentsjapan.or.jp/",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "モバイル決済・キャッシュレス",
+    "name_en": "Mobile Payments & Cashless",
+    "description": "Japan's mobile payment ecosystem for residents and visitors",
+    "qr_code_payments": [
+      {"name": "PayPay", "users": "6,000万+", "pros": "最大シェア。個人店舗も対応多い", "setup": "電話番号で登録。銀行口座orクレカからチャージ"},
+      {"name": "楽天ペイ", "users": "3,000万+", "pros": "楽天ポイントが貯まる。楽天経済圏と相性抜群"},
+      {"name": "d払い", "users": "3,000万+", "pros": "ドコモユーザーは電話料金合算払い可"},
+      {"name": "au PAY", "users": "2,000万+", "pros": "Pontaポイント連携"},
+      {"name": "LINE Pay", "users": "統合中", "pros": "LINE内で送金可能。PayPayと統合進行中"}
+    ],
+    "ic_cards": [
+      {"name": "Suica/PASMO", "type": "交通系IC", "usage": "電車・バス・コンビニ・自販機", "setup": "駅の券売機で購入（デポジット500円）またはApple Pay/Google Pay"},
+      {"name": "nanaco", "type": "流通系IC", "usage": "セブンイレブン・イトーヨーカドー等"},
+      {"name": "WAON", "type": "流通系IC", "usage": "イオングループ"},
+      {"name": "楽天Edy", "type": "電子マネー", "usage": "コンビニ・ドラッグストア等"}
+    ],
+    "for_foreigners": [
+      "Visit Japan WebでSuicaをApple Payに追加可能（入国前に設定推奨）",
+      "PayPayは日本の電話番号があれば外国人でも登録可能",
+      "クレジットカードのタッチ決済（Visa/Mastercard）対応店舗が急増中",
+      "現金主義の店舗はまだ多い（特に個人経営の飲食店、神社・寺院）"
+    ],
+    "cashless_rate": "日本のキャッシュレス決済比率: 約42%（2024年時点）。韓国95%、中国83%と比較するとまだ低い"
+  },
+  "credit_cards": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "日本クレジット協会",
+      "source_url": "https://www.j-credit.or.jp/",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "クレジットカード",
+    "name_en": "Credit Cards",
+    "description": "Credit card application and usage for foreigners in Japan",
+    "foreigner_friendly_cards": [
+      {"name": "楽天カード", "brand": "Visa/Mastercard/JCB", "annual_fee": "無料", "notes": "外国人でも比較的審査に通りやすい。オンライン申込可"},
+      {"name": "エポスカード", "brand": "Visa", "annual_fee": "無料", "notes": "マルイで即日発行可能。海外旅行保険が自動付帯"},
+      {"name": "三井住友カード(NL)", "brand": "Visa/Mastercard", "annual_fee": "永年無料", "notes": "ナンバーレスでセキュリティ高い"},
+      {"name": "ライフカード", "brand": "Visa/Mastercard/JCB", "annual_fee": "無料", "notes": "審査が比較的緩いと言われる"}
+    ],
+    "application_requirements": [
+      "日本国内に住所があること",
+      "安定した収入（勤務先情報が必要）",
+      "日本の銀行口座（引き落とし用）",
+      "在留カード（在留期間が1年以上が望ましい）",
+      "電話番号（在籍確認の電話がかかってくる場合あり）"
+    ],
+    "credit_history": {
+      "cic": "CIC（指定信用情報機関）にクレジットヒストリーが蓄積される",
+      "no_history_problem": "来日直後は信用情報がゼロ（スーパーホワイト）のため審査に落ちやすい",
+      "building_credit": "まず楽天カード等の審査が緩いカードで実績を積み、6ヶ月以上の利用実績を作る"
+    },
+    "pitfalls": [
+      "留学生ビザでは審査に通りにくい（収入証明が困難）",
+      "在留期間が短い（1年未満）と審査に不利",
+      "リボ払いの金利は年15-18%と非常に高い。一括払いを推奨",
+      "申込書の勤務先電話番号に在籍確認の電話が入ることがある"
+    ]
+  },
+  "atm_usage": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "各銀行・コンビニATM情報",
+      "source_url": "https://www.sevenbank.co.jp/intlcard/",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "ATM利用ガイド",
+    "name_en": "ATM Usage Guide",
+    "description": "Using ATMs in Japan with foreign cards",
+    "international_card_atms": [
+      {"name": "セブン銀行ATM", "location": "全国のセブンイレブン（約27,000台）", "hours": "原則24時間", "cards": "Visa, Mastercard, JCB, Amex, Diners, UnionPay, Discover", "fee": "110-220円/回", "notes": "英語・中国語・韓語対応。外国カード対応の定番"},
+      {"name": "ゆうちょ銀行ATM", "location": "全国の郵便局（約32,000台）", "hours": "郵便局の営業時間", "cards": "Visa, Mastercard, JCB, UnionPay", "fee": "110円/回", "notes": "地方でも見つけやすい"},
+      {"name": "ローソン銀行ATM", "location": "全国のローソン", "hours": "原則24時間", "cards": "Visa, Mastercard, JCB, UnionPay", "fee": "110-220円/回"},
+      {"name": "イオン銀行ATM", "location": "イオン・ミニストップ等", "hours": "店舗営業時間", "cards": "Visa, Mastercard, JCB", "fee": "110-220円/回"}
+    ],
+    "tips": [
+      "海外カードでの引き出しは1回あたり5-10万円の上限がある場合が多い",
+      "手数料は日本のATM側 + カード発行会社側の両方で発生する",
+      "為替レートはカード会社の決済レートが適用される",
+      "磁気ストライプのみのカードはATMで使えないことがある（ICチップ付き推奨）",
+      "深夜・早朝はATM手数料が加算される銀行がある"
+    ]
+  },
+  "foreign_exchange": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "金融庁 外国為替",
+      "source_url": "https://www.fsa.go.jp/",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "外貨両替・為替",
+    "name_en": "Foreign Exchange & Currency",
+    "description": "Currency exchange options and regulations in Japan",
+    "exchange_methods": [
+      {"method": "銀行窓口", "rate": "スプレッド: USD約2-3円/EUR約3-4円", "notes": "安心だが為替レートは最も不利"},
+      {"method": "空港の両替所", "rate": "スプレッド: USD約3-4円", "notes": "到着時に最低限のみ両替を推奨"},
+      {"method": "Wise/Revolut等のデジタルサービス", "rate": "実勢レート+0.5-1%", "notes": "最もレートが良い。事前にアカウント開設が必要"},
+      {"method": "コンビニATM（海外カード）", "rate": "カード会社のレート+ATM手数料", "notes": "セブン銀行が最も便利"},
+      {"method": "金券ショップ", "rate": "銀行より若干有利", "notes": "大黒屋等。主要駅の近くにある"}
+    ],
+    "regulations": {
+      "declaration": "100万円相当額を超える現金等の持ち込み・持ち出しは税関への申告が必要",
+      "reporting": "200万円超の両替は犯罪収益移転防止法による厳格な本人確認が必要"
+    }
+  }
+}
