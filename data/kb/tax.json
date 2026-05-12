@@ -1,0 +1,388 @@
+{
+  "income_tax": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "国税庁 所得税法",
+      "source_url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/index.htm",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "所得税（個人）",
+    "name_en": "Individual Income Tax",
+    "description": "Japan individual income tax system for residents and non-residents",
+    "tax_rates": [
+      {"bracket": "〜195万円", "rate": "5%", "deduction": "0円"},
+      {"bracket": "195万〜330万円", "rate": "10%", "deduction": "97,500円"},
+      {"bracket": "330万〜695万円", "rate": "20%", "deduction": "427,500円"},
+      {"bracket": "695万〜900万円", "rate": "23%", "deduction": "636,000円"},
+      {"bracket": "900万〜1,800万円", "rate": "33%", "deduction": "1,536,000円"},
+      {"bracket": "1,800万〜4,000万円", "rate": "40%", "deduction": "2,796,000円"},
+      {"bracket": "4,000万円〜", "rate": "45%", "deduction": "4,796,000円"}
+    ],
+    "residence_tax": "一律10%（都道府県民税4% + 市区町村民税6%）。翌年6月〜翌々年5月に納付",
+    "filing_period": "毎年2月16日〜3月15日（確定申告期間）",
+    "key_deductions": [
+      "基礎控除: 48万円（合計所得2,400万円以下）",
+      "配偶者控除: 最大38万円",
+      "扶養控除: 38〜63万円/人（年齢による）",
+      "社会保険料控除: 全額",
+      "医療費控除: 10万円超の部分",
+      "住宅ローン控除: 最大35万円/年（2024年入居分）",
+      "ふるさと納税（寄附金控除）: 自己負担2,000円で住民税・所得税を軽減"
+    ],
+    "foreign_resident_rules": {
+      "resident": "日本に住所があるか、1年以上居住している者。全世界所得に課税",
+      "non_permanent_resident": "過去10年間で日本に住所・居所を有する期間が5年以下の居住者。国外源泉所得のうち国外送金分のみ課税",
+      "non_resident": "上記以外。日本源泉所得のみ課税（源泉徴収20.42%が原則）"
+    },
+    "e_tax": {
+      "url": "https://www.e-tax.nta.go.jp/",
+      "requirements": "マイナンバーカード + ICカードリーダー（またはスマートフォン対応機種）",
+      "benefits": "自宅から確定申告可能、還付金の処理が早い（約3週間）"
+    },
+    "pitfalls": [
+      "住民税は前年の所得に基づくため、来日1年目は住民税なし → 2年目に高額請求が来ることがある",
+      "退職時に一括払いを求められる場合がある",
+      "ふるさと納税のワンストップ特例は確定申告する場合は使えない"
+    ]
+  },
+  "consumption_tax": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "国税庁 消費税法",
+      "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/shouhi.htm",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "消費税・インボイス",
+    "name_en": "Consumption Tax & Invoice System",
+    "description": "Japan consumption tax (VAT equivalent) and qualified invoice system",
+    "rate": {
+      "standard": "10%",
+      "reduced": "8%（食料品・新聞）",
+      "tax_free_shopping": "免税対象: 訪日外国人旅行者（合計5,000円以上の購入で免税）"
+    },
+    "invoice_system": {
+      "name": "適格請求書等保存方式（インボイス制度）",
+      "start_date": "2023年10月1日",
+      "registration": "税務署に「適格請求書発行事業者の登録申請書」を提出",
+      "required_items": [
+        "適格請求書発行事業者の氏名または名称",
+        "登録番号（T + 13桁の数字）",
+        "取引年月日",
+        "取引内容（軽減税率対象品目の区分）",
+        "税率ごとに区分した合計額",
+        "税率ごとの消費税額"
+      ],
+      "impact": "未登録事業者からの仕入れは仕入税額控除の対象外（経過措置あり：2026年9月まで80%控除）"
+    },
+    "filing": {
+      "threshold": "基準期間（前々事業年度）の課税売上高が1,000万円超で課税事業者",
+      "period": "法人: 事業年度終了後2ヶ月以内 / 個人: 翌年3月31日まで",
+      "simplified": "基準期間の課税売上高5,000万円以下の場合、簡易課税制度を選択可能"
+    },
+    "pitfalls": [
+      "免税事業者がインボイス登録すると課税事業者になり消費税の納付義務が発生",
+      "経過措置: 2023年10月〜2026年9月は2割特例あり（納税額が売上税額の2割）",
+      "輸出は消費税0%だが、仕入税額控除で還付を受けられる"
+    ]
+  },
+  "corporate_tax": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "国税庁 法人税法",
+      "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/hojin.htm",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "法人税",
+    "name_en": "Corporate Tax",
+    "description": "Japan corporate tax system including national, local, and enterprise taxes",
+    "effective_rate": "実効税率: 約29.74%（資本金1億円超の場合）/ 約33.58%（東京都の場合、超過税率含む）",
+    "national_tax_rates": {
+      "standard": "23.2%",
+      "small_medium": "15%（年800万円以下の所得部分、資本金1億円以下の中小法人）"
+    },
+    "local_taxes": {
+      "enterprise_tax": "標準税率: 3.5%〜7%（所得に応じた超過累進税率）",
+      "inhabitant_tax": "法人税額の7%〜10.4%（都道府県民税）+ 法人税額の12.1%（市区町村民税）",
+      "special_local_corporate_tax": "事業税額の37%"
+    },
+    "filing": {
+      "deadline": "事業年度終了後2ヶ月以内（延長申請で3ヶ月）",
+      "interim": "事業年度が6ヶ月超の場合、中間申告が必要",
+      "blue_return": "青色申告承認で欠損金の繰越控除（10年間）が可能"
+    },
+    "foreign_company_notes": [
+      "日本に恒久的施設（PE）がある場合、日本源泉所得に課税",
+      "租税条約による減免あり（二重課税の防止）",
+      "移転価格税制に注意（関連会社間取引の独立企業間価格）",
+      "タックスヘイブン対策税制（CFC税制）の適用可能性"
+    ],
+    "pitfalls": [
+      "設立初年度から法人住民税の均等割（最低7万円/年）は赤字でも発生",
+      "消費税の課税事業者判定は資本金1,000万円以上で初年度から課税",
+      "役員報酬は原則として期中変更不可（定期同額給与の原則）"
+    ]
+  },
+  "withholding_tax": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "国税庁 源泉徴収制度",
+      "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/gensen.htm",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "源泉徴収・年末調整",
+    "name_en": "Withholding Tax & Year-End Adjustment",
+    "description": "Japan's pay-as-you-earn tax withholding system and year-end adjustment",
+    "withholding_types": {
+      "employment_income": "給与所得: 源泉徴収税額表（月額表/日額表）に基づき毎月徴収",
+      "non_resident_employment": "非居住者の給与: 原則20.42%",
+      "dividends": "配当: 上場株式 15.315%（所得税） + 5%（住民税）",
+      "interest": "利子: 15.315%（所得税）+ 5%（住民税）",
+      "royalties": "使用料: 20.42%（租税条約で減免の可能性）",
+      "business_income_freelance": "報酬・料金等: 10.21%（100万円以下）/ 20.42%（100万円超の部分）"
+    },
+    "year_end_adjustment": {
+      "name_ja": "年末調整（ねんまつちょうせい）",
+      "timing": "12月の最終給与支払日（通常12月25日前後）",
+      "who": "給与所得のみの従業員（給与収入2,000万円以下）",
+      "employer_duties": [
+        "従業員から各種控除の申告書を回収",
+        "年間の所得税を再計算し、過不足を調整",
+        "翌年1月に法定調書（給与支払報告書）を市区町村に提出",
+        "源泉徴収票を従業員に交付"
+      ],
+      "employee_forms": [
+        "扶養控除等(異動)申告書",
+        "保険料控除申告書",
+        "基礎控除申告書 兼 配偶者控除等申告書 兼 所得金額調整控除申告書",
+        "住宅借入金等特別控除申告書（2年目以降）"
+      ]
+    },
+    "pitfalls": [
+      "年末調整では医療費控除・ふるさと納税（5自治体超）は処理できない → 確定申告が必要",
+      "外国人従業員は租税条約の届出をすると源泉徴収が減免される場合がある",
+      "フリーランスへの支払いは源泉徴収義務あり（忘れると追徴課税）"
+    ]
+  },
+  "tax_treaty": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "財務省 租税条約",
+      "source_url": "https://www.mof.go.jp/tax_policy/summary/international/tax_convention/index.htm",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "租税条約・二重課税",
+    "name_en": "Tax Treaties & Double Taxation",
+    "description": "Japan's tax treaty network and mechanisms to avoid double taxation",
+    "treaty_count": "日本は約80カ国・地域と租税条約を締結（2026年時点）",
+    "key_treaties": {
+      "USA": "日米租税条約（2004年発効、2019年改正議定書）",
+      "UK": "日英租税条約（2006年発効）",
+      "China": "日中租税協定（1984年発効）",
+      "Korea": "日韓租税条約（1999年発効）",
+      "Germany": "日独租税協定（2016年改正発効）",
+      "Singapore": "日星租税協定（2010年改正発効）"
+    },
+    "common_benefits": [
+      "配当: 源泉税率の引下げ（多くの条約で5%〜10%に軽減）",
+      "利子: 源泉税率の引下げ（多くの条約で10%に軽減、免除の場合も）",
+      "使用料: 源泉税率の引下げ（多くの条約で10%に軽減、免除の場合も）",
+      "事業所得: PE（恒久的施設）がない場合は課税なし",
+      "短期滞在者免税: 183日ルール（暦年または12ヶ月間で183日以下の滞在）"
+    ],
+    "application_procedure": {
+      "form": "租税条約に関する届出書（国税庁様式）",
+      "submission": "支払者を通じて所轄税務署に提出",
+      "timing": "最初の支払い日の前日まで",
+      "required_docs": [
+        "租税条約に関する届出書",
+        "居住者証明書（相手国の税務当局発行）",
+        "特典条項に関する付表（LOB条項がある条約の場合）"
+      ]
+    },
+    "pitfalls": [
+      "租税条約の届出をしないと自動的には適用されない（申請主義）",
+      "居住者証明書は相手国の税務当局に英文で発行を依頼する必要がある",
+      "LOB条項（特典制限条項）により、ペーパーカンパニーは条約特典を受けられない"
+    ]
+  },
+  "furusato_nozei": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "総務省 ふるさと納税ポータル",
+      "source_url": "https://www.soumu.go.jp/main_sosiki/jichi_zeisei/czaisei/czaisei_seido/furusato/about/",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "ふるさと納税",
+    "name_en": "Hometown Tax (Furusato Nozei)",
+    "description": "Japan's unique tax donation system with return gifts",
+    "how_it_works": [
+      "自分が選んだ自治体に寄附（納税）する制度",
+      "寄附額のうち2,000円を超える部分が、所得税・住民税から控除される",
+      "寄附先から返礼品（地域の特産品等）を受け取れる",
+      "控除上限額は年収・家族構成により異なる"
+    ],
+    "control_limit_examples": {
+      "年収400万円・独身": "約42,000円",
+      "年収600万円・夫婦": "約69,000円",
+      "年収800万円・夫婦+子1人": "約120,000円",
+      "年収1,000万円・夫婦+子2人": "約166,000円"
+    },
+    "procedures": {
+      "one_stop": {
+        "name": "ワンストップ特例制度",
+        "conditions": [
+          "確定申告が不要な給与所得者",
+          "1年間の寄附先が5自治体以内"
+        ],
+        "how": "寄附先自治体に申請書を提出（翌年1月10日必着）",
+        "effect": "住民税から全額控除（所得税からの控除はなし）"
+      },
+      "kakutei_shinkoku": {
+        "name": "確定申告での控除",
+        "conditions": ["6自治体以上に寄附した場合", "確定申告が必要な者（自営業等）"],
+        "how": "確定申告書に寄附金受領証明書を添付",
+        "effect": "所得税の還付 + 住民税の減額"
+      }
+    },
+    "for_foreigners": [
+      "日本で住民税を納めている外国人居住者も利用可能",
+      "マイナンバーが必要",
+      "ワンストップ特例の申請書にはマイナンバーの記載が必要",
+      "英語対応のポータルサイトもある（ふるさとチョイス等）"
+    ],
+    "popular_portals": [
+      "ふるさとチョイス (furusato-tax.jp)",
+      "さとふる (satofull.jp)",
+      "楽天ふるさと納税 (rakuten.co.jp)",
+      "ふるなび (furunavi.jp)"
+    ],
+    "pitfalls": [
+      "控除上限額を超えて寄附すると、超過分は自己負担",
+      "ワンストップ特例と確定申告は併用不可（確定申告する場合はワンストップ無効）",
+      "返礼品の調達割合は寄附額の30%以下（総務省ルール）",
+      "12月31日までの寄附が当年分の控除対象"
+    ]
+  },
+  "capital_gains": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "国税庁 譲渡所得",
+      "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1463.htm",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "譲渡所得・株式・暗号資産",
+    "name_en": "Capital Gains — Stocks & Crypto",
+    "description": "Tax treatment of investment income including stocks, crypto, and real estate in Japan",
+    "stock_tax": {
+      "listed_stocks": "上場株式等: 申告分離課税 20.315%（所得税15.315% + 住民税5%）",
+      "unlisted_stocks": "非上場株式: 申告分離課税 20.315%",
+      "nisa": {
+        "name": "NISA（少額投資非課税制度）",
+        "annual_limit": "成長投資枠240万円 + つみたて投資枠120万円 = 年間360万円",
+        "lifetime_limit": "生涯投資枠1,800万円",
+        "benefit": "配当金・売却益が非課税（恒久化: 2024年〜）",
+        "eligibility": "日本に住所があり、マイナンバーを持つ18歳以上の居住者"
+      }
+    },
+    "crypto_tax": {
+      "classification": "雑所得（総合課税）として申告",
+      "rate": "他の所得と合算して累進課税（最大55.945%: 所得税45% + 住民税10% + 復興特別所得税）",
+      "taxable_events": [
+        "暗号資産の売却（日本円への換金）",
+        "暗号資産同士の交換",
+        "暗号資産での商品購入",
+        "マイニング・ステーキング報酬の受取"
+      ],
+      "filing": "年間の利益が20万円を超える場合、確定申告が必要",
+      "calculation": "総平均法または移動平均法で取得原価を計算"
+    },
+    "real_estate_gains": {
+      "short_term": "5年以下の所有: 39.63%（所得税30.63% + 住民税9%）",
+      "long_term": "5年超の所有: 20.315%（所得税15.315% + 住民税5%）",
+      "primary_residence_exemption": "居住用財産の3,000万円特別控除（マイホーム売却時）"
+    },
+    "pitfalls": [
+      "暗号資産は株式と異なり損益通算が限定的（他の雑所得のみ）",
+      "暗号資産の損失は翌年以降に繰越せない（株式は3年間繰越可能）",
+      "非居住者が日本の上場株式を売却した場合、原則非課税（ただし25%以上保有は課税）",
+      "NISA口座は海外転出すると一時凍結される場合がある"
+    ]
+  },
+  "kakutei_shinkoku": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "国税庁 確定申告特集",
+      "source_url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tokushu/index.htm",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "確定申告",
+    "name_en": "Final Tax Return (Kakutei Shinkoku)",
+    "description": "Annual tax filing procedures and requirements for individuals in Japan",
+    "filing_period": "毎年2月16日〜3月15日（還付申告は1月1日から可能）",
+    "who_must_file": [
+      "自営業者・フリーランス",
+      "給与収入が2,000万円超の会社員",
+      "2ヶ所以上から給与を受けている者",
+      "副業所得が20万円超の会社員",
+      "不動産所得がある者",
+      "株式・暗号資産の譲渡所得がある者",
+      "医療費控除やふるさと納税（6自治体以上）の適用を受けたい者",
+      "年の途中で退職し年末調整を受けていない者",
+      "外国から所得がある居住者"
+    ],
+    "filing_methods": [
+      {
+        "method": "e-Tax（電子申告）",
+        "how": "国税庁の確定申告書等作成コーナーからオンライン提出",
+        "requirements": "マイナンバーカード + スマートフォンまたはICカードリーダー",
+        "benefits": "自宅で完結、還付が早い（約3週間）、添付書類の提出省略"
+      },
+      {
+        "method": "税務署窓口",
+        "how": "最寄りの税務署に申告書を持参・提出",
+        "notes": "確定申告期間中は特設会場が設置される場合あり。混雑注意"
+      },
+      {
+        "method": "郵送",
+        "how": "申告書を管轄税務署に郵送（3月15日の消印有効）",
+        "notes": "控えの返送を希望する場合は返信用封筒を同封"
+      }
+    ],
+    "for_foreigners": {
+      "language": "申告書は日本語のみ。英語の手引きは国税庁サイトに一部あり",
+      "tax_office_support": "税務署の相談窓口は日本語対応のみが多い。税理士に依頼する外国人が多い",
+      "departure": "出国前に確定申告が必要（納税管理人の届出をすれば出国後の申告も可能）",
+      "tax_accountant_cost": "税理士費用: 個人の確定申告 3-10万円程度"
+    },
+    "pitfalls": [
+      "申告期限を過ぎると無申告加算税（5-20%）+ 延滞税（最大14.6%/年）",
+      "還付申告は5年間遡って可能",
+      "e-Taxのマイナンバーカード方式は初回セットアップに時間がかかる場合がある",
+      "医療費控除は家族分をまとめて所得の高い人が申告するのが有利"
+    ]
+  }
+}

@@ -20,7 +20,7 @@ from backend.api.routes import (
     memory, regulation, protocol, calendar, regional,
     organization, search, foreign_entry, travel, entertainment,
     daily_life, language, food, disaster, analytics, freshness,
-    telemetry,
+    telemetry, tax,
 )
 
 logger = logging.getLogger(__name__)
@@ -189,6 +189,9 @@ app.include_router(language.router)
 app.include_router(food.router)
 app.include_router(disaster.router)
 
+# Routes — Phase 2 expansion domains
+app.include_router(tax.router)
+
 # Routes — Analytics
 app.include_router(analytics.router)
 
@@ -236,7 +239,9 @@ MCP_TOOLS = [
     {"name": "food_list", "description": "List all food culture topics covering etiquette, cuisines, restaurant types, and dietary accommodations. Usage: Use this to browse topics. For specific queries, use food_search. Behavior: Read-only, no side effects.", "inputSchema": {"type": "object", "properties": {}}, "annotations": READ_ONLY},
     {"name": "disaster_search", "description": "Search disaster and safety knowledge: earthquake shindo scale and EEW early warning system, typhoon warning levels and evacuation procedures, emergency contacts (110 police/119 fire-ambulance/118 coast guard), and disaster preparedness checklists. Usage: Use this for specific safety queries. For browsing all topics, use disaster_list. Behavior: Read-only, no side effects.", "inputSchema": {"type": "object", "properties": {"query": {"type": "string", "description": "Search query in Japanese or English"}}, "required": ["query"]}, "annotations": READ_ONLY},
     {"name": "disaster_list", "description": "List all disaster and safety topics covering earthquakes, typhoons, emergency contacts, and preparedness. Usage: Use this to browse topics. For specific queries, use disaster_search. Behavior: Read-only, no side effects.", "inputSchema": {"type": "object", "properties": {}}, "annotations": READ_ONLY},
-    {"name": "search", "description": "Cross-domain search across all 14 knowledge domains simultaneously. One query returns matched results from regulations, protocols, calendar, regional, organization, foreign entry, travel, entertainment, daily life, language, food, and disaster domains. Usage: Use this when the query spans multiple domains or you are unsure which domain to search. For domain-specific queries, use the dedicated _check/_search tool for better precision. Behavior: Read-only, no side effects.", "inputSchema": {"type": "object", "properties": {"query": {"type": "string", "description": "Search query in Japanese or English"}}, "required": ["query"]}, "annotations": READ_ONLY},
+    {"name": "tax_search", "description": "Search Japanese tax system knowledge: income tax brackets and deductions, consumption tax and invoice system, corporate tax, withholding tax and year-end adjustment (nenmatsu chosei), tax treaties, furusato nozei (hometown tax), capital gains on stocks and crypto, and annual tax filing (kakutei shinkoku). Usage: Use this for specific tax queries. For browsing all topics, use tax_list. Behavior: Read-only, no side effects.", "inputSchema": {"type": "object", "properties": {"query": {"type": "string", "description": "Search query in Japanese or English"}}, "required": ["query"]}, "annotations": READ_ONLY},
+    {"name": "tax_list", "description": "List all tax topics covering income tax, consumption tax, corporate tax, withholding, tax treaties, furusato nozei, capital gains, and tax filing. Usage: Use this to browse topics. For specific queries, use tax_search. Behavior: Read-only, no side effects.", "inputSchema": {"type": "object", "properties": {}}, "annotations": READ_ONLY},
+    {"name": "search", "description": "Cross-domain search across all 15 knowledge domains simultaneously. One query returns matched results from regulations, protocols, calendar, regional, organization, foreign entry, travel, entertainment, daily life, language, food, disaster, and tax domains. Usage: Use this when the query spans multiple domains or you are unsure which domain to search. For domain-specific queries, use the dedicated _check/_search tool for better precision. Behavior: Read-only, no side effects.", "inputSchema": {"type": "object", "properties": {"query": {"type": "string", "description": "Search query in Japanese or English"}}, "required": ["query"]}, "annotations": READ_ONLY},
 ]
 
 
@@ -499,7 +504,7 @@ def root():
             "a2a": "/.well-known/agent.json",
             "mcp": "/.well-known/mcp/server-card.json",
         },
-        "domains": 14,
+        "domains": 15,
         "endpoints": {
             "memory": "/api/v1/memory",
             "regulation": "/api/v1/regulation",
@@ -515,12 +520,14 @@ def root():
             "language": "/api/v1/language",
             "food": "/api/v1/food",
             "disaster": "/api/v1/disaster",
+            "tax": "/api/v1/tax",
             "analytics": "/api/v1/analytics",
             "freshness": "/api/v1/freshness",
             "updates": "/api/v1/updates",
             "audit": "/api/v1/audit",
             "telemetry": "/api/v1/telemetry",
             "quality_gate": "/api/v1/telemetry/quality-gate",
+            "expansion": "/api/v1/telemetry/expansion",
         },
     }
 
@@ -540,7 +547,7 @@ def health():
     return {
         "status": "ok",
         "version": "0.7.0",
-        "domains": 14,
+        "domains": 15,
         "tools": len(MCP_TOOLS),
         "resources": 2,
         "prompts": 2,

@@ -83,6 +83,7 @@ def load_all_domains() -> dict[str, dict]:
         "regulation", "protocol", "calendar", "regional",
         "organization", "foreign_entry", "travel", "entertainment",
         "daily_life", "language", "food", "disaster",
+        "tax",
     ]
     domains = {}
     for name in domain_names:

@@ -1,0 +1,12 @@
+{
+  "primary": ["税金", "税務", "所得税", "消費税", "法人税", "源泉徴収", "確定申告", "年末調整", "ふるさと納税", "インボイス", "租税条約", "NISA", "暗号資産", "住民税", "e-Tax"],
+  "secondary": ["tax", "income tax", "corporate tax", "consumption tax", "withholding", "filing", "deduction", "tax return", "capital gains", "crypto tax", "furusato", "nozei", "kakutei shinkoku", "tax treaty"],
+  "semantic_aliases": {
+    "tax_return": ["確定申告", "tax filing", "kakutei shinkoku"],
+    "payroll_tax": ["源泉徴収", "年末調整", "withholding", "nenmatsu chosei"],
+    "sales_tax": ["消費税", "consumption tax", "VAT", "invoice"],
+    "crypto": ["暗号資産", "仮想通貨", "cryptocurrency", "bitcoin", "ビットコイン"],
+    "investment": ["NISA", "株式", "配当", "投資", "stock", "dividend"],
+    "hometown_tax": ["ふるさと納税", "furusato nozei", "hometown tax"]
+  }
+}

@@ -73,3 +73,37 @@ def quality_gate_domain(domain: str):
     if domain not in domains:
         return {"error": f"Domain '{domain}' not found", "available": list(domains.keys())}
     return quality_gate.evaluate_domain(domain, domains[domain])
+
+
+# ── Domain Expansion Planning (Phase 2) ────────────────────────
+
+@router.get("/expansion")
+def expansion_roadmap():
+    """Domain expansion roadmap — prioritized candidates for 14→20 domains.
+
+    Shows data-driven expansion candidates with priority scoring,
+    source authority, and estimated implementation effort.
+    """
+    from backend.api.services.domain_expansion import expansion_planner
+    return expansion_planner.get_expansion_roadmap()
+
+
+@router.get("/expansion/{domain_id}")
+def expansion_candidate_detail(domain_id: str):
+    """Detailed info for a specific expansion candidate."""
+    from backend.api.services.domain_expansion import expansion_planner
+    detail = expansion_planner.get_candidate_detail(domain_id)
+    if not detail:
+        return {"error": f"Candidate '{domain_id}' not found"}
+    return detail
+
+
+@router.get("/expansion/demand-signals")
+def expansion_demand_signals(db: Session = Depends(get_db)):
+    """Analyze telemetry data for expansion domain demand signals.
+
+    Cross-references actual queries with expansion candidate keywords
+    to data-drive domain expansion decisions.
+    """
+    from backend.api.services.domain_expansion import expansion_planner
+    return expansion_planner.evaluate_demand_from_telemetry(db)
