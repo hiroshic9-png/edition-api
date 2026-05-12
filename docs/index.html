@@ -399,9 +399,9 @@
 
   <main>
     <section class="hero">
-      <div class="hero-badge">Live — v0.5.0 Open Beta</div>
+      <div class="hero-badge">Live — v0.7.0 Open Beta</div>
       <h1>Japan intelligence<br>for AI agents</h1>
-      <p>14 knowledge domains, 55+ endpoints, 31 MCP tools — structured intelligence for autonomous agents operating in Japan.</p>
+      <p>20 knowledge domains, 70+ endpoints, 43 MCP tools — structured intelligence for autonomous agents operating in Japan.</p>
       <div class="hero-actions">
         <a href="https://api.edition.sh/docs" class="btn btn-primary" target="_blank">Explore API →</a>
         <a href="https://github.com/hiroshic9-png/edition-api" class="btn btn-secondary" target="_blank">View Source</a>
@@ -417,19 +417,19 @@
 
     <div class="stats">
       <div class="stat">
-        <div class="stat-number">55+</div>
+        <div class="stat-number">70+</div>
         <div class="stat-label">API Endpoints</div>
       </div>
       <div class="stat">
-        <div class="stat-number">31</div>
+        <div class="stat-number">43</div>
         <div class="stat-label">MCP Tools</div>
       </div>
       <div class="stat">
-        <div class="stat-number">14</div>
+        <div class="stat-number">20</div>
         <div class="stat-label">Knowledge Domains</div>
       </div>
       <div class="stat">
-        <div class="stat-number">96.0</div>
+        <div class="stat-number">97.8</div>
         <div class="stat-label">Quality Score</div>
       </div>
     </div>
@@ -527,7 +527,37 @@
         <div class="domain-card">
           <h3>🔍 Cross-Domain Search</h3>
           <div class="domain-sub">/api/v1/search</div>
-          <p>Query all 12 knowledge domains at once. One request returns regulations, protocols, food culture, disaster safety, and more.</p>
+          <p>Query all 20 knowledge domains at once. One request returns regulations, protocols, food culture, disaster safety, and more.</p>
+        </div>
+        <div class="domain-card">
+          <h3>💴 Tax System</h3>
+          <div class="domain-sub">/api/v1/tax</div>
+          <p>Income tax, consumption tax, corporate tax, withholding, furusato nozei, capital gains, and tax filing procedures.</p>
+        </div>
+        <div class="domain-card">
+          <h3>🛂 Visa & Immigration</h3>
+          <div class="domain-sub">/api/v1/visa</div>
+          <p>29 residence status categories, permanent residency, points-based system, management visa, and naturalization.</p>
+        </div>
+        <div class="domain-card">
+          <h3>🏦 Banking & Finance</h3>
+          <div class="domain-sub">/api/v1/banking</div>
+          <p>Bank account opening for foreigners, international wire transfers, mobile payments (PayPay, Suica), credit cards, and ATM usage.</p>
+        </div>
+        <div class="domain-card">
+          <h3>🏥 Healthcare</h3>
+          <div class="domain-sub">/api/v1/healthcare</div>
+          <p>Health insurance system (NHI, employee), high-cost medical benefit, hospital visits, prescriptions, maternity, mental health, and long-term care.</p>
+        </div>
+        <div class="domain-card">
+          <h3>🎓 Education</h3>
+          <div class="domain-sub">/api/v1/education</div>
+          <p>School system (6-3-3-4), university admission (EJU), MEXT/JASSO scholarships, Japanese language schools, JLPT, and student life.</p>
+        </div>
+        <div class="domain-card">
+          <h3>🏠 Real Estate & Housing</h3>
+          <div class="domain-sub">/api/v1/real-estate</div>
+          <p>Apartment renting (shikikin, reikin, initial costs), property purchase by foreigners, UR housing, housing support, and moving procedures.</p>
         </div>
       </div>
     </section>
@@ -561,7 +591,7 @@ resp = requests.<span class="fn">post</span>(
 )
 data = resp.<span class="fn">json</span>()
 
-<span class="cmt"># 12 knowledge domains searched simultaneously</span>
+<span class="cmt"># 20 knowledge domains searched simultaneously</span>
 <span class="kw">for</span> domain, result <span class="kw">in</span> data[<span class="str">"results"</span>].items():
     <span class="fn">print</span>(f<span class="str">"  {domain}: matched"</span>)
         </div>
@@ -589,19 +619,19 @@ data = resp.<span class="fn">json</span>()
       <div class="section-title">Trust Anchor — Verified Intelligence</div>
       <div class="domains" style="grid-template-columns: repeat(3, 1fr);">
         <div class="domain-card" style="text-align: center;">
-          <div style="font-size: 28px; font-weight: 700; margin-bottom: 4px;">13/14</div>
-          <div style="font-size: 12px; color: var(--text-muted);">Full 3-Layer Coverage</div>
-          <p style="margin-top: 12px;">Rules + Context + Experience tips across nearly all domains</p>
+          <div style="font-size: 28px; font-weight: 700; margin-bottom: 4px;">20</div>
+          <div style="font-size: 12px; color: var(--text-muted);">Knowledge Domains</div>
+          <p style="margin-top: 12px;">From business regulations to healthcare, education, real estate — full-spectrum Japan intelligence</p>
         </div>
         <div class="domain-card" style="text-align: center;">
-          <div style="font-size: 28px; font-weight: 700; margin-bottom: 4px;">129</div>
+          <div style="font-size: 28px; font-weight: 700; margin-bottom: 4px;">97</div>
           <div style="font-size: 12px; color: var(--text-muted);">Knowledge Entries</div>
           <p style="margin-top: 12px;">Verified against official sources — government, legal, domain experts</p>
         </div>
         <div class="domain-card" style="text-align: center;">
-          <div style="font-size: 28px; font-weight: 700; margin-bottom: 4px;">6</div>
-          <div style="font-size: 12px; color: var(--text-muted);">Analytics APIs</div>
-          <p style="margin-top: 12px;">MCP telemetry, quality scoring, agent reputation tracking</p>
+          <div style="font-size: 28px; font-weight: 700; margin-bottom: 4px;">97.8</div>
+          <div style="font-size: 12px; color: var(--text-muted);">Quality Score</div>
+          <p style="margin-top: 12px;">Automated quality gating with real-time telemetry and freshness tracking</p>
         </div>
       </div>
     </section>
