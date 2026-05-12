@@ -6,8 +6,8 @@
 
 **Japan Knowledge Gateway for autonomous AI agents.**
 
-14 knowledge domains · 33 MCP tools · 7 Skills Packs · 55+ REST endpoints
-Verified ground truth for operating in the Japanese market.
+20 knowledge domains · 43 MCP tools · 7 Skills Packs · 100+ REST endpoints
+Verified ground truth for operating in the Japanese market. Quality score: 97.8/100.
 
 > **Production API:** [api.edition.sh](https://api.edition.sh) — Free beta, no registration required.
 >
@@ -30,7 +30,7 @@ AI agents working in Japan hit walls that generic LLMs can't solve:
 
 ---
 
-## 14 Knowledge Domains
+## 20 Knowledge Domains
 
 | # | Domain | Tools | What it covers |
 |---|--------|-------|----------------|
@@ -47,7 +47,13 @@ AI agents working in Japan hit walls that generic LLMs can't solve:
 | 11 | **Language** | `language_search` `language_list` | Keigo honorific system, counter words (josushi), name/address structure, business Japanese templates |
 | 12 | **Food Culture** | `food_search` `food_list` | Dining etiquette, cuisine classification, restaurant navigation (shokkenki, izakaya, sushi counter), dietary restrictions (halal, vegetarian, allergies) |
 | 13 | **Disaster & Safety** | `disaster_search` `disaster_list` | Earthquake shindo scale & EEW, typhoon warning levels, emergency contacts (110/119/118), preparedness checklists |
-| 14 | **Cross-Domain** | `search` | Search all 14 domains simultaneously with a single query |
+| 14 | **Healthcare** | `healthcare_search` `healthcare_list` | National health insurance, hospital navigation, prescription system, medical Japanese terminology |
+| 15 | **Education** | `education_search` `education_list` | School system (6-3-3-4), entrance exams, international schools, university admission for foreigners |
+| 16 | **Real Estate** | `real_estate_search` `real_estate_list` | Rental process (shikikin/reikin/hoshoukin), property types, foreigner-friendly agencies, contract terms |
+| 17 | **Tax** | `tax_search` `tax_list` | Income tax, consumption tax, withholding, year-end adjustment, tax filing for foreigners and businesses |
+| 18 | **Banking & Finance** | `banking_search` `banking_list` | Bank account types, remittance, fintech services, corporate banking, payment systems |
+| 19 | **Visa & Immigration** | `visa_search` `visa_list` | Visa categories, status of residence, renewal procedures, permanent residency, naturalization |
+| 20 | **Cross-Domain** | `search` | Search all 20 domains simultaneously with a single query |
 
 ---
 
@@ -164,7 +170,7 @@ Three-layer architecture:
 
 | Category | Count | Details |
 |----------|-------|---------|
-| **Tools** | 31 | All with annotations (`readOnlyHint`, `destructiveHint`, `idempotentHint`) |
+| **Tools** | 43 | All with annotations (`readOnlyHint`, `destructiveHint`, `idempotentHint`) |
 | **Resources** | 2 | `edition://domains` (domain catalog), `edition://quality` (trust scores) |
 | **Prompts** | 2 | `japan_business_briefing` (by industry), `japan_travel_guide` (by destination) |
 
@@ -213,11 +219,17 @@ Three-layer architecture:
 | POST | `/api/v1/language/search` | Japanese language |
 | POST | `/api/v1/food/search` | Food culture |
 | POST | `/api/v1/disaster/search` | Disaster & safety |
+| POST | `/api/v1/healthcare/search` | Healthcare system |
+| POST | `/api/v1/education/search` | Education system |
+| POST | `/api/v1/real-estate/search` | Real estate |
+| POST | `/api/v1/tax/search` | Tax system |
+| POST | `/api/v1/banking/search` | Banking & finance |
+| POST | `/api/v1/visa/search` | Visa & immigration |
 
 ### Cross-Domain
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| POST | `/api/v1/search` | Search all 14 domains simultaneously |
+| POST | `/api/v1/search` | Search all 20 domains simultaneously |
 
 ---
 
@@ -252,14 +264,24 @@ Sources include: 厚生労働省 (MHLW), 国税庁 (NTA), 法務省 (MOJ), 国�
 
 ## Agent Harness Compatible
 
-EDITION is designed as a **Tool Registry / Japan Knowledge Layer** for agent harnesses. All 31 tools include MCP annotations (`readOnlyHint`, `destructiveHint`, `idempotentHint`), usage guidelines, and behavioral transparency metadata — enabling harness frameworks to auto-discover, evaluate, and integrate EDITION tools without manual configuration.
+EDITION is designed as a **Tool Registry / Japan Knowledge Layer** for agent harnesses. All 43 tools include MCP annotations (`readOnlyHint`, `destructiveHint`, `idempotentHint`), usage guidelines, and behavioral transparency metadata — enabling harness frameworks to auto-discover, evaluate, and integrate EDITION tools without manual configuration.
+
+## Freemium Access
+
+| Tier | Domains | Rate Limit | Price |
+|------|---------|------------|-------|
+| **Free** | 14 core domains | 100 req/day | Free |
+| **Pro** | All 20 domains (incl. tax, banking, visa) | 10,000 req/day | Contact |
+| **Enterprise** | All domains + priority support | Unlimited | Contact |
+
+Anonymous access defaults to Free tier. Register for an API key at `POST /api/v1/auth/register`.
 
 ## Registries
 
 | Registry | Status |
 |----------|--------|
-| [npm](https://www.npmjs.com/package/edition-mcp-server) | ✅ Published (v0.2.4) |
-| [Smithery](https://smithery.ai/server/@hiroshi-c9/edition) | ✅ Listed (31 tools) |
+| [npm](https://www.npmjs.com/package/edition-mcp-server) | ✅ Published (v0.4.0) |
+| [Smithery](https://smithery.ai/server/@hiroshi-c9/edition) | ✅ Listed (43 tools) |
 | [Glama](https://glama.ai/mcp/servers/hiroshic9-png/edition-api) | ✅ Grade A Coherence |
 
 ## Why Not Mem0 / Letta / Zep?
@@ -268,7 +290,7 @@ Those are excellent general-purpose memory tools. But they don't:
 - Parse Japanese keigo levels (丁寧語 / 尊敬語 / 謙譲語)
 - Detect implicit social hierarchy from honorific patterns
 - Score confidence based on Japanese speech patterns (断定 vs 推測 vs 伝聞)
-- Include a Japanese regulatory database with 14 knowledge domains
+- Include a Japanese regulatory database with 20 knowledge domains
 
 **Japanese business context is structurally different.** Agents need purpose-built infrastructure to navigate it.
 
