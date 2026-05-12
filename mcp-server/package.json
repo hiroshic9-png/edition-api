@@ -1,8 +1,8 @@
 {
   "name": "edition-mcp-server",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "mcpName": "io.github.hiroshic9-png/japan-business-operations",
-  "description": "EDITION — Japan Knowledge Gateway for AI agents. 14 knowledge domains, 6 Skills Packs, 31 MCP tools, Progressive Discovery support. Verified ground truth: regulations, procedures, protocols, calendar, regional, organization, foreign entry, travel, entertainment, daily life, language, food culture, disaster safety, and persistent memory.",
+  "description": "EDITION — Japan Knowledge Gateway for AI agents. 20 knowledge domains, 8 Skills Packs, 43 MCP tools, Progressive Discovery support. Verified ground truth: regulations, procedures, protocols, calendar, regional, organization, foreign entry, travel, entertainment, daily life, language, food culture, disaster safety, tax, visa/immigration, banking/finance, healthcare, education, real estate, and persistent memory.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
@@ -35,7 +35,13 @@
     "disaster",
     "safety",
     "language",
-    "knowledge-base"
+    "knowledge-base",
+    "tax",
+    "visa",
+    "banking",
+    "healthcare",
+    "education",
+    "real-estate"
   ],
   "homepage": "https://edition.sh",
   "repository": {
