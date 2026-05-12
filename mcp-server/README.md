@@ -1,6 +1,6 @@
 # EDITION Intelligence Platform — MCP Server
 
-Japan Operations OS for autonomous AI agents. 14 knowledge domains, 31 MCP tools, 2 prompt templates — verified, structured intelligence for agents operating in Japan.
+Japan Operations OS for autonomous AI agents. 20 knowledge domains, 43 MCP tools, 2 prompt templates — verified, structured intelligence for agents operating in Japan.
 
 [![npm](https://img.shields.io/npm/v/edition-mcp-server)](https://www.npmjs.com/package/edition-mcp-server)
 [![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](https://opensource.org/licenses/MIT)
@@ -164,7 +164,7 @@ By default connects to `https://api.edition.sh`. Override with environment varia
 
 | Tool | Description |
 |------|-------------|
-| `search` | Cross-domain search across all 14 knowledge domains simultaneously — one query returns matches from all domains |
+| `search` | Cross-domain search across all 20 knowledge domains simultaneously — one query returns matches from all domains |
 
 ## Prompt Templates
 
@@ -177,7 +177,7 @@ By default connects to `https://api.edition.sh`. Override with environment varia
 
 | Resource | Description |
 |----------|-------------|
-| `edition://domains` | List of all 14 knowledge domains with descriptions and endpoint information |
+| `edition://domains` | List of all 20 knowledge domains with descriptions and endpoint information |
 | `edition://quality` | Trust Anchor quality scores for each domain — verified data coverage metrics |
 
 ## Architecture

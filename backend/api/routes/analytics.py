@@ -313,7 +313,7 @@ def analytics_reputation(
         domains_used = {d: c for d, c in domain_result}
 
         # Calculate reputation score
-        diversity = min(len(domains_used) / 14.0, 1.0)  # breadth across 14 domains
+        diversity = min(len(domains_used) / 20.0, 1.0)  # breadth across 20 domains
         volume = min(a.total / 100.0, 1.0)  # usage volume (cap at 100)
         recency_days = (now - a.last_seen.replace(tzinfo=timezone.utc)).days if a.last_seen else 30
         recency = max(1.0 - recency_days / 30.0, 0.0)

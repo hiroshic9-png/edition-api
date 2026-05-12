@@ -3,7 +3,7 @@
 Analyzes telemetry data + external signals to recommend new knowledge domains.
 Provides a structured framework for evaluating domain candidates.
 
-Current 14 domains:
+Current 20 domains:
   regulation, protocol, calendar, regional, organization, foreign_entry,
   travel, entertainment, daily_life, language, food, disaster
 

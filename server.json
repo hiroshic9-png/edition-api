@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.hiroshic9-png/edition-intelligence-platform",
-  "description": "Japan Operations OS for autonomous AI agents — 14 knowledge domains covering regulations, protocols, calendar, travel, food culture, language, disaster safety, daily life, and persistent memory. 31 MCP tools via REST + Streamable HTTP.",
+  "description": "Japan Operations OS for autonomous AI agents — 20 knowledge domains covering regulations, tax, banking, healthcare, education, real estate, visa, protocols, calendar, travel, food culture, language, disaster safety, daily life, and persistent memory. 43 MCP tools via REST + Streamable HTTP.",
   "repository": {
     "url": "https://github.com/hiroshic9-png/edition-api",
     "source": "github"

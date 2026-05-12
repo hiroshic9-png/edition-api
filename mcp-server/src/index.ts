@@ -352,7 +352,7 @@ if (PROGRESSIVE) {
   );
 
 } else {
-// ── Legacy Mode: All 31 Individual Tools ────────────
+// ── Legacy Mode: All 43 Individual Tools ────────────
 
 // ── Tool: memory_store ──────────────────────────────
 
@@ -1486,7 +1486,7 @@ server.tool(
 async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  const mode = PROGRESSIVE ? "progressive (3 meta-tools)" : "legacy (31 tools)";
+  const mode = PROGRESSIVE ? "progressive (3 meta-tools)" : "legacy (43 tools)";
   console.error(`EDITION Japan Knowledge Gateway MCP server started (${mode})`);
 }
 
