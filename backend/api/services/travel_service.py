@@ -1,6 +1,8 @@
 """Travel intelligence service — query handler for Japan travel knowledge."""
 
-from ..services.travel_kb import TRAVEL_DB, TRAVEL_KEYWORDS
+from backend.api.services.kb_loader import load_domain
+
+TRAVEL_DB, TRAVEL_KEYWORDS = load_domain("travel")
 
 
 def search_travel(query: str) -> dict:

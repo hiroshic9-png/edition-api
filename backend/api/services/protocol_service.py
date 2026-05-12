@@ -2,9 +2,11 @@
 import logging
 from typing import Optional
 
-from backend.api.services.protocol_kb import PROTOCOL_DB, PROTOCOL_KEYWORDS
+from backend.api.services.kb_loader import load_domain
 
 logger = logging.getLogger(__name__)
+
+PROTOCOL_DB, PROTOCOL_KEYWORDS = load_domain("protocol")
 
 
 class ProtocolService:

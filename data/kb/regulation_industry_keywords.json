@@ -1,0 +1,107 @@
+{
+  "人材派遣": [
+    "派遣",
+    "staffing",
+    "人材",
+    "recruitment",
+    "temporary",
+    "hiring"
+  ],
+  "飲食店": [
+    "飲食",
+    "レストラン",
+    "restaurant",
+    "food",
+    "カフェ",
+    "cafe",
+    "bar",
+    "居酒屋",
+    "izakaya"
+  ],
+  "不動産業": [
+    "不動産",
+    "real estate",
+    "property",
+    "賃貸",
+    "rental",
+    "物件",
+    "apartment"
+  ],
+  "ECサイト": [
+    "EC",
+    "ecommerce",
+    "e-commerce",
+    "通販",
+    "online shop",
+    "ネットショップ",
+    "オンラインストア"
+  ],
+  "建設業": [
+    "建設",
+    "construction",
+    "建築",
+    "工事",
+    "リフォーム",
+    "renovation"
+  ],
+  "宿泊業": [
+    "宿泊",
+    "ホテル",
+    "hotel",
+    "旅館",
+    "ryokan",
+    "民泊",
+    "airbnb",
+    "minpaku",
+    "hostel",
+    "ゲストハウス"
+  ],
+  "医療・介護": [
+    "医療",
+    "medical",
+    "病院",
+    "hospital",
+    "クリニック",
+    "clinic",
+    "介護",
+    "nursing",
+    "care",
+    "薬局",
+    "pharmacy"
+  ],
+  "金融・保険": [
+    "金融",
+    "finance",
+    "銀行",
+    "bank",
+    "保険",
+    "insurance",
+    "証券",
+    "securities",
+    "投資",
+    "investment",
+    "fintech"
+  ],
+  "運送業": [
+    "運送",
+    "transport",
+    "物流",
+    "logistics",
+    "配送",
+    "delivery",
+    "タクシー",
+    "taxi",
+    "trucking"
+  ],
+  "教育": [
+    "教育",
+    "education",
+    "学校",
+    "school",
+    "塾",
+    "language school",
+    "日本語学校",
+    "インターナショナル",
+    "international school"
+  ]
+}

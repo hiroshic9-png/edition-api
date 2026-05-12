@@ -1,6 +1,8 @@
 """Japanese language service — query handler for language knowledge."""
 
-from ..services.language_kb import LANGUAGE_DB, LANGUAGE_KEYWORDS
+from backend.api.services.kb_loader import load_domain
+
+LANGUAGE_DB, LANGUAGE_KEYWORDS = load_domain("language")
 
 
 def search_language(query: str) -> dict:

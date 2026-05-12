@@ -147,35 +147,9 @@ class FreshnessReport:
         self.checker = FreshnessChecker()
 
     def _load_all_domains(self) -> dict:
-        """Load all KB modules and extract their entries with metadata."""
-        domains = {}
-
-        # Import all KBs
-        domain_configs = [
-            ("regulation", "backend.api.services.regulation_kb", "REGULATION_DB"),
-            ("protocol", "backend.api.services.protocol_kb", "PROTOCOL_DB"),
-            ("calendar", "backend.api.services.calendar_kb", "CALENDAR_DB"),
-            ("regional", "backend.api.services.regional_kb", "REGIONAL_DB"),
-            ("organization", "backend.api.services.organization_kb", "ORGANIZATION_DB"),
-            ("foreign_entry", "backend.api.services.foreign_entry_kb", "FOREIGN_ENTRY_DB"),
-            ("travel", "backend.api.services.travel_kb", "TRAVEL_DB"),
-            ("entertainment", "backend.api.services.entertainment_kb", "ENTERTAINMENT_DB"),
-            ("daily_life", "backend.api.services.daily_life_kb", "DAILY_LIFE_DB"),
-            ("language", "backend.api.services.language_kb", "LANGUAGE_DB"),
-            ("food", "backend.api.services.food_kb", "FOOD_DB"),
-            ("disaster", "backend.api.services.disaster_kb", "DISASTER_DB"),
-        ]
-
-        for domain_name, module_path, var_name in domain_configs:
-            try:
-                import importlib
-                module = importlib.import_module(module_path)
-                db = getattr(module, var_name, {})
-                domains[domain_name] = db
-            except Exception as e:
-                logger.warning(f"Could not load KB for {domain_name}: {e}")
-
-        return domains
+        """Load all KB domains from JSON files."""
+        from backend.api.services.kb_loader import load_all_domains
+        return load_all_domains()
 
     def generate_report(self) -> dict:
         """Generate comprehensive freshness report for all domains."""

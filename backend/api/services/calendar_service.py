@@ -1,11 +1,12 @@
 """Calendar service — Japanese business calendar and seasonal awareness."""
 import logging
-from datetime import date
 from typing import Optional
 
-from backend.api.services.calendar_kb import CALENDAR_DB, CALENDAR_KEYWORDS
+from backend.api.services.kb_loader import load_domain
 
 logger = logging.getLogger(__name__)
+
+CALENDAR_DB, CALENDAR_KEYWORDS = load_domain("calendar")
 
 
 class CalendarService:

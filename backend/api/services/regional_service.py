@@ -1,9 +1,11 @@
 """Regional service — Japanese regional differences for business."""
 import logging
 from typing import Optional
-from backend.api.services.regional_kb import REGIONAL_DB, REGIONAL_KEYWORDS
+from backend.api.services.kb_loader import load_domain
 
 logger = logging.getLogger(__name__)
+
+REGIONAL_DB, REGIONAL_KEYWORDS = load_domain("regional")
 
 
 class RegionalService:

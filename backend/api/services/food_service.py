@@ -1,6 +1,8 @@
 """Food culture service — query handler for food knowledge."""
 
-from ..services.food_kb import FOOD_DB, FOOD_KEYWORDS
+from backend.api.services.kb_loader import load_domain
+
+FOOD_DB, FOOD_KEYWORDS = load_domain("food")
 
 
 def search_food(query: str) -> dict:

@@ -1,6 +1,8 @@
 """Disaster & safety service — query handler for disaster knowledge."""
 
-from ..services.disaster_kb import DISASTER_DB, DISASTER_KEYWORDS
+from backend.api.services.kb_loader import load_domain
+
+DISASTER_DB, DISASTER_KEYWORDS = load_domain("disaster")
 
 
 def search_disaster(query: str) -> dict:

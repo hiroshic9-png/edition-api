@@ -1,6 +1,8 @@
 """Daily life service — query handler for Japan daily life knowledge."""
 
-from ..services.daily_life_kb import DAILY_LIFE_DB, DAILY_LIFE_KEYWORDS
+from backend.api.services.kb_loader import load_domain
+
+DAILY_LIFE_DB, DAILY_LIFE_KEYWORDS = load_domain("daily_life")
 
 
 def search_daily_life(query: str) -> dict:

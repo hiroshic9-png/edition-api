@@ -2,9 +2,11 @@
 import logging
 from typing import Optional
 
-from backend.api.services.organization_kb import ORGANIZATION_DB, ORGANIZATION_KEYWORDS
+from backend.api.services.kb_loader import load_domain
 
 logger = logging.getLogger(__name__)
+
+ORGANIZATION_DB, ORGANIZATION_KEYWORDS = load_domain("organization")
 
 
 class OrganizationService:

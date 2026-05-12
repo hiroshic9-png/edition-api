@@ -1,9 +1,11 @@
 """Foreign entry service — Japan market entry knowledge for foreign companies."""
 import logging
 from typing import Optional
-from backend.api.services.foreign_entry_kb import FOREIGN_ENTRY_DB, FOREIGN_ENTRY_KEYWORDS
+from backend.api.services.kb_loader import load_domain
 
 logger = logging.getLogger(__name__)
+
+FOREIGN_ENTRY_DB, FOREIGN_ENTRY_KEYWORDS = load_domain("foreign_entry")
 
 
 class ForeignEntryService:

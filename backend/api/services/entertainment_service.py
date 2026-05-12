@@ -1,6 +1,8 @@
 """Entertainment intelligence service — query handler for Japan entertainment knowledge."""
 
-from ..services.entertainment_kb import ENTERTAINMENT_DB, ENTERTAINMENT_KEYWORDS
+from backend.api.services.kb_loader import load_domain
+
+ENTERTAINMENT_DB, ENTERTAINMENT_KEYWORDS = load_domain("entertainment")
 
 
 def search_entertainment(query: str) -> dict:

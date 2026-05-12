@@ -8,12 +8,9 @@ Architecture:
 import logging
 from typing import Optional
 
-from backend.api.services.regulation_kb import (
-    REGULATION_DB,
-    TOURIST_REGULATIONS,
-    INDUSTRY_KEYWORDS,
-    TOURIST_KEYWORDS,
-)
+from backend.api.services.kb_loader import load_regulation
+
+REGULATION_DB, TOURIST_REGULATIONS, INDUSTRY_KEYWORDS, TOURIST_KEYWORDS = load_regulation()
 
 logger = logging.getLogger(__name__)
 
