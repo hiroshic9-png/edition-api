@@ -1,0 +1,332 @@
+{
+  "status_of_residence": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "出入国在留管理庁 在留資格一覧",
+      "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "在留資格の種類",
+    "name_en": "Status of Residence Categories",
+    "description": "29 categories of status of residence in Japan",
+    "work_permitted": [
+      {"status": "技術・人文知識・国際業務", "romaji": "Engineer/Specialist in Humanities/International Services", "description": "IT、翻訳、マーケティング等のホワイトカラー職", "period": "5年/3年/1年/3ヶ月"},
+      {"status": "経営・管理", "romaji": "Business Manager", "description": "会社経営者、管理職。資本金500万円以上or常勤2名以上", "period": "5年/3年/1年/4ヶ月/3ヶ月"},
+      {"status": "技能", "romaji": "Skilled Labor", "description": "外国料理の調理師、スポーツ指導者等。実務経験10年以上", "period": "5年/3年/1年/3ヶ月"},
+      {"status": "特定技能1号", "romaji": "Specified Skilled Worker (i)", "description": "14分野の人手不足産業。日本語N4+技能試験合格", "period": "通算5年（更新1年/6ヶ月）"},
+      {"status": "特定技能2号", "romaji": "Specified Skilled Worker (ii)", "description": "熟練技能。家族帯同可、更新回数制限なし", "period": "3年/1年/6ヶ月"},
+      {"status": "高度専門職1号", "romaji": "Highly Skilled Professional (i)", "description": "ポイント制70点以上。学歴・年収・年齢等で評価", "period": "5年"},
+      {"status": "高度専門職2号", "romaji": "Highly Skilled Professional (ii)", "description": "1号で3年以上活動。在留期間無期限", "period": "無期限"},
+      {"status": "教授", "romaji": "Professor", "description": "大学教授、准教授、講師", "period": "5年/3年/1年/3ヶ月"},
+      {"status": "研究", "romaji": "Researcher", "description": "研究機関での研究活動", "period": "5年/3年/1年/3ヶ月"},
+      {"status": "教育", "romaji": "Instructor", "description": "小中高等学校での語学教師等", "period": "5年/3年/1年/3ヶ月"},
+      {"status": "医療", "romaji": "Medical Services", "description": "医師、歯科医師、看護師等", "period": "5年/3年/1年/3ヶ月"},
+      {"status": "介護", "romaji": "Nursing Care", "description": "介護福祉士の資格を有する者", "period": "5年/3年/1年/3ヶ月"},
+      {"status": "興行", "romaji": "Entertainer", "description": "演劇、演奏、スポーツ等の興行", "period": "3年/1年/6ヶ月/3ヶ月/15日"},
+      {"status": "報道", "romaji": "Journalist", "description": "外国の報道機関の記者、カメラマン", "period": "5年/3年/1年/3ヶ月"}
+    ],
+    "no_work_restriction": [
+      {"status": "永住者", "romaji": "Permanent Resident", "description": "活動制限なし。在留期間無期限"},
+      {"status": "日本人の配偶者等", "romaji": "Spouse/Child of Japanese National", "description": "活動制限なし"},
+      {"status": "永住者の配偶者等", "romaji": "Spouse/Child of Permanent Resident", "description": "活動制限なし"},
+      {"status": "定住者", "romaji": "Long-Term Resident", "description": "日系人等。活動制限なし"}
+    ],
+    "no_work_permitted": [
+      {"status": "留学", "romaji": "Student", "description": "資格外活動許可で週28時間まで就労可"},
+      {"status": "家族滞在", "romaji": "Dependent", "description": "資格外活動許可で週28時間まで就労可"},
+      {"status": "短期滞在", "romaji": "Temporary Visitor", "description": "観光・商用。就労不可。90日/30日/15日"},
+      {"status": "文化活動", "romaji": "Cultural Activities", "description": "無報酬の学術・芸術活動"}
+    ]
+  },
+  "permanent_residency": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "出入国在留管理庁 永住許可に関するガイドライン",
+      "source_url": "https://www.moj.go.jp/isa/publications/materials/nyukan_nyukan50.html",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "永住許可（永住権）",
+    "name_en": "Permanent Residency",
+    "description": "Requirements and procedures for obtaining permanent residency in Japan",
+    "general_requirements": [
+      "素行が善良であること（犯罪歴なし、納税義務の履行）",
+      "独立の生計を営むに足りる資産又は技能を有すること",
+      "その者の永住が日本国の利益に合すると認められること",
+      "原則として引き続き10年以上日本に在留していること",
+      "そのうち就労資格又は居住資格で5年以上在留していること"
+    ],
+    "special_cases": {
+      "japanese_spouse": "婚姻3年以上 + 日本在留1年以上",
+      "permanent_resident_spouse": "婚姻3年以上 + 日本在留1年以上",
+      "long_term_resident": "5年以上の在留",
+      "highly_skilled_professional": {
+        "80_points_or_more": "1年以上の在留で申請可能",
+        "70_points_or_more": "3年以上の在留で申請可能"
+      },
+      "refugee": "認定後5年以上の在留"
+    },
+    "required_documents": [
+      "永住許可申請書",
+      "写真（4cm×3cm）",
+      "理由書（永住を希望する理由）",
+      "身元保証書（身元保証人は日本人又は永住者）",
+      "身元保証人の職業を証明する資料",
+      "身元保証人の直近1年分の所得証明書",
+      "申請人の在留カードのコピー",
+      "パスポートのコピー",
+      "住民票（世帯全員記載）",
+      "直近5年分の住民税の課税証明書・納税証明書",
+      "国民健康保険・国民年金の納付証明書（直近2年分）",
+      "預貯金通帳のコピー又は残高証明書"
+    ],
+    "processing_time": "標準処理期間: 4ヶ月（実際は6-12ヶ月かかることが多い）",
+    "fee": "8,000円（収入印紙）",
+    "pitfalls": [
+      "年金・健康保険の未納があると不許可になる可能性が極めて高い",
+      "過去の出国歴が多い場合、「引き続き10年」の要件を満たさないと判断されることがある",
+      "年間で合計100日以上出国すると在留の継続性が否定される可能性",
+      "交通違反（速度超過等）でも素行要件に影響する場合がある",
+      "身元保証人は法的な経済的保証義務を負わない（道義的責任のみ）"
+    ]
+  },
+  "points_based_system": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "出入国在留管理庁 高度人材ポイント制",
+      "source_url": "https://www.moj.go.jp/isa/publications/materials/newimmiact_3_system_index.html",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "高度人材ポイント制",
+    "name_en": "Points-Based Preferential Immigration Treatment",
+    "description": "Japan's points system for highly skilled professionals",
+    "categories": {
+      "academic_research": "高度学術研究活動（大学教授、研究者等）",
+      "specialized_technical": "高度専門・技術活動（IT技術者、エンジニア等）",
+      "business_management": "高度経営・管理活動（経営者、役員等）"
+    },
+    "point_items": {
+      "education": {"博士": 30, "修士": 20, "学士": 10},
+      "work_experience": {"10年以上": 25, "7年以上": 20, "5年以上": 15, "3年以上": 10},
+      "annual_salary": {"1000万以上": 40, "900万以上": 35, "800万以上": 30, "700万以上": 25, "600万以上": 20, "500万以上": 15, "400万以上": 10},
+      "age": {"29歳以下": 15, "30-34歳": 10, "35-39歳": 5},
+      "bonus_items": [
+        "日本の大学卒業: +10",
+        "日本語能力N1: +15 / N2: +10",
+        "成長分野（AI、IoT等）: +10",
+        "試験研究費比率3%超の企業: +5",
+        "職務に関連する日本の資格: +5"
+      ]
+    },
+    "benefits_70_points": [
+      "複合的な在留活動の許容",
+      "在留期間「5年」の付与",
+      "永住許可の要件緩和（3年→永住）",
+      "配偶者の就労許可",
+      "親の帯同（年収800万円以上等の条件あり）",
+      "家事使用人の帯同（年収1,000万円以上等の条件あり）",
+      "入国・在留手続きの優先処理"
+    ],
+    "benefits_80_points": [
+      "上記全て + 永住許可の大幅緩和（1年→永住）"
+    ]
+  },
+  "management_visa": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "出入国在留管理庁 経営・管理ビザ",
+      "source_url": "https://www.moj.go.jp/isa/applications/procedures/16-1.html",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "経営・管理ビザ",
+    "name_en": "Business Manager Visa",
+    "description": "Visa for starting and managing a business in Japan",
+    "requirements": [
+      "日本国内に事業所（オフィス）を確保していること",
+      "資本金500万円以上、又は常勤従業員2名以上",
+      "事業の安定性・継続性が認められること（事業計画書で証明）"
+    ],
+    "procedures": [
+      {"step": 1, "title": "会社設立", "description": "日本で株式会社または合同会社を設立。定款作成→公証人認証→法務局登記", "duration": "2-4週間", "cost": "約25-35万円 + 資本金500万円以上"},
+      {"step": 2, "title": "事業所の確保", "description": "バーチャルオフィスは原則不可。独立した事業所が必要", "duration": "1-3週間"},
+      {"step": 3, "title": "事業計画書の作成", "description": "向こう1-3年の事業計画。売上・利益予測、人員計画を含む", "duration": "1-2週間"},
+      {"step": 4, "title": "在留資格認定証明書の申請", "description": "出入国在留管理局に申請。審査に1-3ヶ月", "duration": "1-3ヶ月"},
+      {"step": 5, "title": "査証（ビザ）の申請", "description": "在外日本大使館・領事館で査証を取得", "duration": "5営業日〜2週間"},
+      {"step": 6, "title": "入国・在留カード取得", "description": "空港で在留カードを受け取る。住所届出は14日以内"}
+    ],
+    "pitfalls": [
+      "資本金500万円は「見せ金」では不可。出所の証明が求められる",
+      "事業計画の実現可能性が低いと判断されると不許可",
+      "飲食店経営の場合、自ら調理に従事すると「技能」の在留資格に該当し不許可になるリスク",
+      "更新時に赤字が続いていると更新が困難になる",
+      "共同経営の場合、各経営者が実質的な経営活動を行っていることの証明が必要"
+    ]
+  },
+  "work_visa_change": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "出入国在留管理庁 在留資格変更",
+      "source_url": "https://www.moj.go.jp/isa/applications/procedures/16-2.html",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "在留資格の変更・更新",
+    "name_en": "Change/Renewal of Status of Residence",
+    "description": "Procedures for changing or renewing visa status in Japan",
+    "change_of_status": {
+      "common_patterns": [
+        "留学 → 技術・人文知識・国際業務（新卒就職）",
+        "技術・人文知識 → 経営・管理（起業）",
+        "家族滞在 → 技術・人文知識（就職）",
+        "短期滞在 → 日本人の配偶者等（結婚）"
+      ],
+      "required_documents": [
+        "在留資格変更許可申請書",
+        "写真（4cm×3cm）",
+        "パスポート・在留カードの提示",
+        "変更先の在留資格に応じた立証資料",
+        "手数料: 4,000円（収入印紙）"
+      ],
+      "processing_time": "2週間〜1ヶ月（変更内容による）"
+    },
+    "renewal": {
+      "timing": "在留期間満了日の3ヶ月前から申請可能",
+      "required_documents": [
+        "在留期間更新許可申請書",
+        "パスポート・在留カードの提示",
+        "現在の活動を証明する資料（在職証明書、確定申告書等）",
+        "手数料: 4,000円（収入印紙）"
+      ],
+      "processing_time": "2週間〜1ヶ月",
+      "special_activity_31days": "申請中に在留期間が満了した場合、「特定活動（出国準備）」として2ヶ月の在留が認められる"
+    },
+    "pitfalls": [
+      "申請中は「申請受付票」を携帯すること。在留期限が切れていても合法だが証明が必要",
+      "転職した場合、14日以内に入管に届出（所属機関の変更届出）が必要",
+      "届出を怠ると次回の更新・変更で不利になる可能性"
+    ]
+  },
+  "immigration_procedures": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "出入国在留管理庁",
+      "source_url": "https://www.moj.go.jp/isa/index.html",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "入管手続き・届出",
+    "name_en": "Immigration Bureau Procedures",
+    "description": "Key immigration procedures and reporting obligations",
+    "regional_bureaus": [
+      {"name": "東京出入国在留管理局", "jurisdiction": "東京都、埼玉県、千葉県、茨城県、栃木県、群馬県、山梨県、長野県、新潟県"},
+      {"name": "名古屋出入国在留管理局", "jurisdiction": "愛知県、三重県、岐阜県、静岡県、福井県、富山県、石川県"},
+      {"name": "大阪出入国在留管理局", "jurisdiction": "大阪府、京都府、兵庫県、奈良県、滋賀県、和歌山県"},
+      {"name": "福岡出入国在留管理局", "jurisdiction": "福岡県、佐賀県、長崎県、熊本県、大分県、宮崎県、鹿児島県、沖縄県"}
+    ],
+    "mandatory_notifications": [
+      {"event": "住所変更", "deadline": "14日以内", "where": "市区町村役場"},
+      {"event": "所属機関の変更（転職等）", "deadline": "14日以内", "where": "出入国在留管理局"},
+      {"event": "所属機関の消滅（退職等）", "deadline": "14日以内", "where": "出入国在留管理局"},
+      {"event": "配偶者との離婚・死別", "deadline": "14日以内", "where": "出入国在留管理局"},
+      {"event": "在留カードの紛失", "deadline": "14日以内", "where": "出入国在留管理局"}
+    ],
+    "re_entry_permit": {
+      "deemed_re_entry": "在留カード所持者は出国後1年以内（在留期限内）であれば再入国許可不要（みなし再入国許可）",
+      "special_re_entry": "1年を超える出国の場合は再入国許可が必要。有効期間最長5年",
+      "fee": "1回限り: 3,000円 / 数次: 6,000円"
+    },
+    "online_services": {
+      "url": "https://www.moj.go.jp/isa/applications/online/index.html",
+      "available_procedures": ["在留期間更新", "在留資格変更", "再入国許可", "資格外活動許可"],
+      "requirements": "在留カード + マイナンバーカード（またはパスワード登録）"
+    },
+    "pitfalls": [
+      "届出義務違反は20万円以下の罰金。悪質な場合は在留資格取消しの事由にもなる",
+      "みなし再入国許可で出国し、1年以内に戻らないと在留資格を失う",
+      "在留カードは常時携帯義務あり。違反は20万円以下の罰金"
+    ]
+  },
+  "visa_exempt_countries": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "外務省 ビザ免除国・地域",
+      "source_url": "https://www.mofa.go.jp/mofaj/toko/visa/tanki/novisa.html",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "ビザ免除国・短期滞在",
+    "name_en": "Visa Exemption & Short-Term Stay",
+    "description": "Countries with visa exemption agreements with Japan",
+    "overview": "68カ国・地域の国民はビザなしで短期滞在（観光・商用）が可能",
+    "major_countries_90days": ["アメリカ", "カナダ", "イギリス", "フランス", "ドイツ", "イタリア", "オーストラリア", "韓国", "シンガポール", "タイ"],
+    "major_countries_30days": ["ブルネイ"],
+    "major_countries_15days": ["マレーシア"],
+    "no_visa_exemption": ["中国", "インド", "ベトナム", "フィリピン", "インドネシア", "ロシア"],
+    "short_term_stay_rules": {
+      "permitted_activities": ["観光", "親族訪問", "商用（会議出席、商談、市場調査等）", "知人訪問"],
+      "prohibited_activities": ["就労（報酬を受ける活動全般）", "長期留学"],
+      "extension": "やむを得ない事情がある場合、90日まで延長可能（管轄入管に申請）"
+    },
+    "pitfalls": [
+      "ビザ免除は「短期滞在」のみ。就労・留学は別途ビザが必要",
+      "入国拒否されるケース: 帰りの航空券がない、滞在費用を証明できない、犯罪歴がある",
+      "「ビザラン」（短期滞在を繰り返して長期滞在する行為）は入国拒否の原因になる"
+    ]
+  },
+  "naturalization": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "法務省 帰化許可申請",
+      "source_url": "https://www.moj.go.jp/MINJI/minji78.html",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "帰化（日本国籍取得）",
+    "name_en": "Naturalization (Japanese Citizenship)",
+    "description": "Requirements and procedures for acquiring Japanese citizenship",
+    "requirements": [
+      "引き続き5年以上日本に住所を有すること",
+      "20歳以上で本国法によって行為能力を有すること",
+      "素行が善良であること",
+      "生計を営むに足りる資産または技能を有すること",
+      "国籍を有せず、又は日本の国籍の取得によってその国籍を失うべきこと（二重国籍の禁止）",
+      "日本語能力（小学校3年生程度の読み書き）"
+    ],
+    "simplified_requirements": {
+      "japanese_spouse": "3年以上日本に住所 + 婚姻3年以上",
+      "special_permanent_resident": "在日韓国・朝鮮人等は居住要件が緩和"
+    },
+    "process": {
+      "consultation": "法務局での事前相談（予約制、数回の面談）",
+      "application": "必要書類を法務局に提出",
+      "interview": "法務局担当官による面接（日本語での質疑）",
+      "decision": "法務大臣の許可 → 官報告示",
+      "total_duration": "申請から許可まで約8ヶ月〜1年半"
+    },
+    "pitfalls": [
+      "日本は二重国籍を認めていない。帰化すると元の国籍を失う",
+      "帰化後は日本のパスポートのみ使用可能",
+      "過去の納税・年金・健康保険の未納があると不許可リスクが高い",
+      "配偶者が帰化しても、その配偶者に永住権が自動で付与されるわけではない"
+    ]
+  }
+}

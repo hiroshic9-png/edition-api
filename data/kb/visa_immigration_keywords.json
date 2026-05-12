@@ -1,0 +1,12 @@
+{
+  "primary": ["ビザ", "在留資格", "永住", "帰化", "入管", "在留カード", "経営管理ビザ", "高度人材", "特定技能", "技術人文知識", "再入国", "資格変更", "在留期間", "マイナンバー"],
+  "secondary": ["visa", "immigration", "permanent residence", "naturalization", "status of residence", "work permit", "residence card", "management visa", "highly skilled", "points system", "re-entry", "COE", "certificate of eligibility"],
+  "semantic_aliases": {
+    "work_visa": ["就労ビザ", "技術人文知識", "work permit", "employment visa"],
+    "business_visa": ["経営管理", "management visa", "business manager", "起業ビザ"],
+    "permanent_residence": ["永住", "永住権", "permanent residency", "eijuken", "PR"],
+    "student": ["留学", "student visa", "留学ビザ"],
+    "spouse": ["配偶者", "spouse visa", "結婚ビザ"],
+    "naturalization": ["帰化", "国籍取得", "citizenship", "naturalization"]
+  }
+}
