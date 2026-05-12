@@ -1,0 +1,78 @@
+{
+  "renting_apartment": {
+    "_meta": {"last_verified": "2026-05-12", "source": "国土交通省 賃貸住宅", "source_url": "https://www.mlit.go.jp/jutakukentiku/house/jutakukentiku_house_tk3_000015.html", "confidence": "verified", "valid_until": null, "version": "1.0.0", "changelog": ["2026-05-12: Initial verified entry"]},
+    "name_ja": "賃貸住宅（部屋探し）",
+    "name_en": "Renting an Apartment",
+    "description": "Complete guide to renting in Japan",
+    "initial_costs": {
+      "shikikin": {"name": "敷金", "amount": "家賃1-2ヶ月分", "description": "保証金。退去時に原状回復費を差し引いて返金"},
+      "reikin": {"name": "礼金", "amount": "家賃0-2ヶ月分", "description": "大家への謝礼。返金なし。最近はゼロの物件が増加"},
+      "chukai": {"name": "仲介手数料", "amount": "家賃0.5-1ヶ月分+税", "description": "不動産会社への手数料"},
+      "first_month": {"name": "前家賃", "amount": "家賃1ヶ月分+日割り", "description": "入居月の家賃"},
+      "guarantor_fee": {"name": "保証会社利用料", "amount": "家賃0.5-1ヶ月分", "description": "保証人の代わり。外国人は保証会社必須の場合が多い"},
+      "fire_insurance": {"name": "火災保険", "amount": "1.5-2万円/2年", "description": "入居時に加入必須"},
+      "key_change": {"name": "鍵交換費用", "amount": "1-2万円", "description": "前入居者からの防犯対策"}
+    },
+    "total_initial_cost": "家賃の4-6ヶ月分が目安。東京のワンルーム（家賃7万円）なら初期費用は約30-40万円",
+    "for_foreigners": [
+      "外国人入居不可の物件がまだ存在する（減少傾向だが特に個人オーナー物件で）",
+      "保証人は日本人が求められることが多い→保証会社で代替可能",
+      "在留カード・パスポート・在職証明書が必要",
+      "外国語対応の不動産会社: Real Estate Japan、GaijinPot Apartment、SUUMO英語版"
+    ]
+  },
+  "buying_property": {
+    "_meta": {"last_verified": "2026-05-12", "source": "国土交通省 不動産取引", "source_url": "https://www.mlit.go.jp/totikensangyo/totikensangyo_tk5_000001.html", "confidence": "verified", "valid_until": null, "version": "1.0.0", "changelog": ["2026-05-12: Initial verified entry"]},
+    "name_ja": "不動産購入",
+    "name_en": "Buying Property in Japan",
+    "description": "Guide to purchasing real estate in Japan as a foreigner",
+    "key_facts": [
+      "外国人でも日本の不動産を購入可能（在留資格の有無を問わない）",
+      "住宅ローンは永住権がないと困難（一部の銀行は永住権なしでも対応）",
+      "土地・建物の所有権は外国人にも認められる（一部の国とは異なる）"
+    ],
+    "purchase_process": [
+      {"step": 1, "title": "物件探し", "detail": "SUUMO、HOME'S、at homeなどのポータルサイト、または不動産会社に相談"},
+      {"step": 2, "title": "内見・申込", "detail": "購入申込書（買付証明書）を提出"},
+      {"step": 3, "title": "重要事項説明", "detail": "宅地建物取引士が物件の重要事項を説明（法的義務）"},
+      {"step": 4, "title": "売買契約", "detail": "手付金（購入価格の5-10%）を支払い"},
+      {"step": 5, "title": "住宅ローン申請", "detail": "金融機関に正式申請。審査に2-4週間"},
+      {"step": 6, "title": "決済・引渡し", "detail": "残金支払い・所有権移転登記。司法書士が代行"}
+    ],
+    "costs": {
+      "purchase_tax": "不動産取得税: 固定資産税評価額の3%（住宅用土地・建物）",
+      "registration_tax": "登録免許税: 固定資産税評価額の0.1-2%",
+      "stamp_duty": "印紙税: 1-6万円（契約金額による）",
+      "agent_fee": "仲介手数料: 売買価格の3%+6万円+税（上限）",
+      "annual_property_tax": "固定資産税: 評価額の1.4% + 都市計画税: 評価額の0.3%"
+    }
+  },
+  "housing_support": {
+    "_meta": {"last_verified": "2026-05-12", "source": "国土交通省 住宅支援", "source_url": "https://www.mlit.go.jp/jutakukentiku/house/index.html", "confidence": "verified", "valid_until": null, "version": "1.0.0", "changelog": ["2026-05-12: Initial verified entry"]},
+    "name_ja": "住宅支援制度",
+    "name_en": "Housing Support Programs",
+    "description": "Government housing support programs in Japan",
+    "programs": [
+      {"name": "UR都市機構", "description": "保証人不要・礼金不要・仲介手数料不要の公的賃貸住宅。外国人にもフレンドリー", "url": "https://www.ur-net.go.jp/"},
+      {"name": "住宅確保要配慮者（セーフティネット住宅）", "description": "高齢者・外国人・低所得者等に対する家賃補助付き住宅", "url": "https://www.safetynet-jutaku.jp/"},
+      {"name": "住宅ローン減税", "description": "住宅ローンの年末残高の0.7%を所得税から最大13年間控除"},
+      {"name": "すまい給付金", "description": "収入に応じて最大50万円の給付（新築住宅取得時）"}
+    ]
+  },
+  "moving_procedures": {
+    "_meta": {"last_verified": "2026-05-12", "source": "総務省 転入届・転出届", "source_url": "https://www.soumu.go.jp/", "confidence": "verified", "valid_until": null, "version": "1.0.0", "changelog": ["2026-05-12: Initial verified entry"]},
+    "name_ja": "引っ越し手続き",
+    "name_en": "Moving Procedures",
+    "description": "Administrative procedures when moving within Japan",
+    "checklist": [
+      {"when": "2週間前〜", "action": "転出届（旧市区町村役場）", "note": "同一市区町村内の引越しの場合は転居届のみ"},
+      {"when": "引越し後14日以内", "action": "転入届（新市区町村役場）", "note": "在留カードの住所も変更される"},
+      {"when": "引越し後14日以内", "action": "国民健康保険の届出", "note": "社会保険の場合は会社が手続き"},
+      {"when": "引越し後14日以内", "action": "マイナンバーカードの住所変更"},
+      {"when": "引越し後速やかに", "action": "郵便物の転送届（郵便局）", "note": "1年間無料で転送"},
+      {"when": "引越し後速やかに", "action": "銀行口座・クレジットカードの住所変更"},
+      {"when": "引越し後速やかに", "action": "運転免許証の住所変更（警察署）"},
+      {"when": "引越し後速やかに", "action": "電気・ガス・水道の開始届"}
+    ]
+  }
+}

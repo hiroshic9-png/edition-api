@@ -1,0 +1,197 @@
+{
+  "health_insurance": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "厚生労働省 医療保険制度",
+      "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/index.html",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "健康保険制度",
+    "name_en": "Health Insurance System",
+    "description": "Japan's universal health insurance system",
+    "types": {
+      "employee_insurance": {"name": "健康保険（社会保険）", "who": "会社員・公務員", "cost": "標準報酬月額の約10%（労使折半）", "provider": "全国健康保険協会（協会けんぽ）or 健康保険組合"},
+      "national_health_insurance": {"name": "国民健康保険（国保）", "who": "自営業・フリーランス・無職・退職者", "cost": "前年所得に基づき自治体が算定。年間上限106万円", "provider": "市区町村"},
+      "late_stage_elderly": {"name": "後期高齢者医療制度", "who": "75歳以上（65歳以上で一定の障害がある者を含む）", "cost": "所得に応じた保険料", "provider": "後期高齢者医療広域連合"}
+    },
+    "coverage": {
+      "copay_rate": {"under_6": "2割", "6_to_69": "3割", "70_to_74": "2割（現役並み所得者は3割）", "75_plus": "1割（現役並み所得者は3割）"},
+      "covered": ["診察・検査", "手術・入院", "処方薬", "リハビリテーション", "歯科治療（基本）", "訪問看護"],
+      "not_covered": ["美容整形", "正常分娩（帝王切開は対象）", "予防接種（一部公費あり）", "先進医療の一部", "差額ベッド代", "歯科矯正（一部例外あり）"]
+    },
+    "for_foreigners": [
+      "3ヶ月以上の在留資格がある外国人は加入義務あり",
+      "会社員は入社時に自動加入（社会保険）",
+      "それ以外は住民登録後14日以内に国民健康保険に加入",
+      "保険料を滞納すると在留資格の更新に影響する可能性あり"
+    ]
+  },
+  "high_cost_medical": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "厚生労働省 高額療養費制度",
+      "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/juuyou/kougakuiryou/index.html",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "高額療養費制度",
+    "name_en": "High-Cost Medical Expense Benefit",
+    "description": "System that caps monthly out-of-pocket medical expenses",
+    "monthly_limits": [
+      {"income_level": "年収約1,160万円〜", "limit": "252,600円 +（医療費-842,000円）×1%"},
+      {"income_level": "年収約770万〜1,160万円", "limit": "167,400円 +（医療費-558,000円）×1%"},
+      {"income_level": "年収約370万〜770万円", "limit": "80,100円 +（医療費-267,000円）×1%"},
+      {"income_level": "年収〜約370万円", "limit": "57,600円"},
+      {"income_level": "住民税非課税", "limit": "35,400円"}
+    ],
+    "how_to_use": [
+      "事後申請: 医療費を一旦全額（3割）支払い、後日保険者に申請して差額を還付",
+      "事前申請（限度額適用認定証）: 入院前に保険者に申請し、窓口支払いを自己負担限度額までに抑える",
+      "マイナ保険証: マイナンバーカードを保険証として使えば認定証なしで限度額が適用される"
+    ],
+    "multi_month_provision": "直近12ヶ月以内に3回以上高額療養費に該当した場合、4回目以降は自己負担限度額がさらに引き下げ"
+  },
+  "hospital_visit": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "厚生労働省 医療機関受診",
+      "source_url": "https://www.mhlw.go.jp/",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "病院受診ガイド",
+    "name_en": "Hospital Visit Guide",
+    "description": "How to visit a doctor in Japan",
+    "facility_types": {
+      "clinic": {"name": "診療所・クリニック", "beds": "19床以下", "use": "日常的な診察、かかりつけ医", "referral": "不要"},
+      "general_hospital": {"name": "総合病院", "beds": "20床以上", "use": "専門的な検査・治療", "referral": "紹介状なしは選定療養費（7,000円〜）が加算"},
+      "university_hospital": {"name": "大学病院・特定機能病院", "beds": "400床以上", "use": "高度医療", "referral": "紹介状が原則必要"}
+    },
+    "visit_process": [
+      {"step": 1, "action": "受付", "detail": "保険証（在留カード）を提示。初診の場合は問診票を記入"},
+      {"step": 2, "action": "診察", "detail": "医師の診察。必要に応じて検査"},
+      {"step": 3, "action": "処方", "detail": "処方箋を受け取り、調剤薬局で薬を購入"},
+      {"step": 4, "action": "会計", "detail": "窓口で自己負担分を支払い（3割）。クレジットカード対応の病院が増加中"}
+    ],
+    "for_foreigners": [
+      "英語対応の医療機関リスト: AMDA国際医療情報センター (03-6233-9266)",
+      "JNTO医療機関検索: https://www.jnto.go.jp/emergency/jpn/mi_guide.html",
+      "通訳サービス: 一部の自治体で医療通訳派遣制度あり",
+      "救急車は119番。無料だが、軽症での利用は社会問題化しているため注意"
+    ]
+  },
+  "prescription_system": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "厚生労働省 薬事制度",
+      "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000177084.html",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "処方薬・薬局",
+    "name_en": "Prescription & Pharmacy System",
+    "description": "Japan's prescription drug and pharmacy system",
+    "process": "医院分業制: 医師が処方箋を発行 → 調剤薬局で薬を受け取る（院内処方の医院も一部あり）",
+    "drug_categories": {
+      "prescription": "処方薬（医師の処方箋が必要）",
+      "otc_class1": "第1類医薬品（薬剤師の説明が必要。ロキソニンS等）",
+      "otc_class2": "第2類医薬品（薬剤師or登録販売者。風邪薬等）",
+      "otc_class3": "第3類医薬品（特に制限なし。ビタミン剤等）"
+    },
+    "important_notes": [
+      "海外の処方薬を日本に持ち込む場合、1ヶ月分まで（外用薬は標準サイズ1個）",
+      "それ以上は厚生労働省の薬監証明が必要",
+      "アデラル・モダフィニル等の一部薬物は日本では覚醒剤取締法等により所持自体が違法",
+      "ジェネリック医薬品（後発品）の選択が可能。薬剤師に相談すると費用を抑えられる",
+      "お薬手帳を持参すると薬の重複や飲み合わせのチェックが受けられる"
+    ]
+  },
+  "maternity_childcare": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "厚生労働省 母子保健",
+      "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/boshi-hoken/index.html",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "出産・育児支援",
+    "name_en": "Maternity & Childcare Benefits",
+    "description": "Financial support for pregnancy, childbirth, and childcare in Japan",
+    "benefits": [
+      {"name": "出産育児一時金", "amount": "50万円", "description": "出産時に健康保険から支給。直接支払制度で病院に直接支払われる"},
+      {"name": "出産手当金", "amount": "標準報酬日額の2/3", "description": "産前42日+産後56日。健康保険（社保）加入者のみ"},
+      {"name": "育児休業給付金", "amount": "休業開始時賃金の67%（180日経過後50%）", "description": "雇用保険から支給。最長2歳まで延長可能"},
+      {"name": "児童手当", "amount": "月15,000円（3歳未満）/10,000円（3歳〜中学生）", "description": "所得制限あり。第3子以降は増額"},
+      {"name": "出産・子育て応援交付金", "amount": "計10万円相当", "description": "妊娠届出時5万円+出生届出時5万円（クーポン等）"}
+    ],
+    "for_foreigners": [
+      "健康保険に加入していれば国籍を問わず出産育児一時金を受給可能",
+      "母子健康手帳は市区町村で交付。多言語版（英語・中国語等）がある自治体も",
+      "乳幼児医療費助成: 自治体により異なるが、多くの自治体で中学生まで無料"
+    ]
+  },
+  "mental_health": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "厚生労働省 こころの健康",
+      "source_url": "https://www.mhlw.go.jp/kokoro/",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "メンタルヘルス",
+    "name_en": "Mental Health Services",
+    "description": "Mental health support and services in Japan",
+    "services": {
+      "psychiatry": "精神科（psychiatry）: 精神疾患の診断・薬物治療。保険適用",
+      "psychosomatic": "心療内科（psychosomatic medicine）: ストレス性の身体症状。保険適用。精神科より受診のハードルが低い",
+      "counseling": "カウンセリング: 臨床心理士・公認心理師によるカウンセリング。保険適用外が多い（1回5,000-10,000円）"
+    },
+    "support_systems": {
+      "jiritsushien": {"name": "自立支援医療", "description": "精神科通院の自己負担を3割→1割に軽減する制度。市区町村に申請"},
+      "disability_pension": {"name": "障害年金", "description": "精神障害が一定以上の場合、障害基礎年金を受給可能"},
+      "hotlines": [
+        {"name": "いのちの電話", "number": "0120-783-556", "hours": "毎日16-21時、毎月10日は8-翌8時"},
+        {"name": "よりそいホットライン", "number": "0120-279-338", "hours": "24時間。外国語対応あり"},
+        {"name": "TELL Lifeline（英語）", "number": "03-5774-0992", "hours": "9-23時"}
+      ]
+    }
+  },
+  "long_term_care": {
+    "_meta": {
+      "last_verified": "2026-05-12",
+      "source": "厚生労働省 介護保険制度",
+      "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/gaiyo/index.html",
+      "confidence": "verified",
+      "valid_until": null,
+      "version": "1.0.0",
+      "changelog": ["2026-05-12: Initial verified entry"]
+    },
+    "name_ja": "介護保険制度",
+    "name_en": "Long-Term Care Insurance",
+    "description": "Japan's mandatory long-term care insurance system",
+    "eligibility": {
+      "category_1": "65歳以上（第1号被保険者）: 原因を問わず介護認定を受ければサービス利用可",
+      "category_2": "40-64歳（第2号被保険者）: 特定疾病（がん末期、脳血管疾患等16疾病）に起因する場合のみ"
+    },
+    "care_levels": [
+      {"level": "要支援1-2", "description": "日常生活に一部支援が必要。予防給付の対象"},
+      {"level": "要介護1-5", "description": "常時介護が必要。要介護5が最も重度。介護給付の対象"}
+    ],
+    "services": ["訪問介護（ホームヘルプ）", "通所介護（デイサービス）", "短期入所（ショートステイ）", "特別養護老人ホーム（特養）", "介護老人保健施設（老健）", "福祉用具の貸与・購入"],
+    "copay": "1割（一定以上の所得者は2割or3割）",
+    "premium": "65歳以上: 自治体により月額3,000-9,000円程度。40-64歳: 健康保険料に上乗せ"
+  }
+}

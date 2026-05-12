@@ -1,0 +1,9 @@
+{
+  "primary": ["賃貸", "家賃", "敷金", "礼金", "不動産", "引越し", "マンション", "アパート", "住宅ローン", "UR"],
+  "secondary": ["rent", "apartment", "housing", "real estate", "property", "deposit", "moving", "mortgage", "lease"],
+  "semantic_aliases": {
+    "rent": ["賃貸", "家賃", "部屋探し", "rent", "apartment", "lease"],
+    "buy": ["不動産購入", "住宅ローン", "property", "mortgage", "buying"],
+    "move": ["引越し", "転入届", "転出届", "moving", "relocation"]
+  }
+}

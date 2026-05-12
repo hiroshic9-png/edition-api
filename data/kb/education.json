@@ -1,0 +1,59 @@
+{
+  "school_system": {
+    "_meta": {"last_verified": "2026-05-12", "source": "文部科学省 学校教育制度", "source_url": "https://www.mext.go.jp/a_menu/shotou/index.htm", "confidence": "verified", "valid_until": null, "version": "1.0.0", "changelog": ["2026-05-12: Initial verified entry"]},
+    "name_ja": "学校制度（6-3-3-4制）",
+    "name_en": "School System (6-3-3-4)",
+    "description": "Japan's education system structure",
+    "structure": [
+      {"level": "小学校", "years": "6年（6-12歳）", "compulsory": true},
+      {"level": "中学校", "years": "3年（12-15歳）", "compulsory": true},
+      {"level": "高等学校", "years": "3年（15-18歳）", "compulsory": false, "enrollment_rate": "約99%"},
+      {"level": "大学", "years": "4年（医学部6年）", "compulsory": false, "enrollment_rate": "約58%"}
+    ],
+    "academic_year": "4月始まり、3月終わり。3学期制が主流",
+    "for_foreign_children": ["義務教育は日本国籍の児童のみ対象だが、外国籍の児童も希望すれば公立学校に無償で就学可能", "日本語指導が必要な児童には「取り出し指導」や「日本語学級」が設置される場合あり", "インターナショナルスクールは義務教育の対象外。学費は年間200-300万円程度"]
+  },
+  "university_admission": {
+    "_meta": {"last_verified": "2026-05-12", "source": "文部科学省 大学入学", "source_url": "https://www.mext.go.jp/a_menu/koutou/index.htm", "confidence": "verified", "valid_until": null, "version": "1.0.0", "changelog": ["2026-05-12: Initial verified entry"]},
+    "name_ja": "大学入学（留学生向け）",
+    "name_en": "University Admission for Foreign Students",
+    "description": "How to enter a Japanese university as an international student",
+    "pathways": [
+      {"path": "EJU（日本留学試験）", "description": "JASSO実施。日本語・理科・数学・総合科目。年2回（6月・11月）"},
+      {"path": "大学独自試験", "description": "各大学が独自に実施する入学試験"},
+      {"path": "英語プログラム", "description": "TOEFL/IELTS + 書類審査。東大PEAK、早稲田SILS等"}
+    ],
+    "scholarships": [
+      {"name": "MEXT奨学金（国費留学生）", "amount": "月額約14.5万円 + 学費免除 + 渡航費", "source": "文部科学省"},
+      {"name": "JASSO奨学金", "amount": "月額4.8-8万円", "source": "日本学生支援機構"},
+      {"name": "大学独自奨学金", "amount": "大学による", "source": "各大学"}
+    ],
+    "tuition": {"national_university": "年間約54万円（入学金約28万円）", "private_university": "年間約90-150万円（学部による）"}
+  },
+  "japanese_language_schools": {
+    "_meta": {"last_verified": "2026-05-12", "source": "法務省 日本語教育機関", "source_url": "https://www.moj.go.jp/isa/", "confidence": "verified", "valid_until": null, "version": "1.0.0", "changelog": ["2026-05-12: Initial verified entry"]},
+    "name_ja": "日本語学校",
+    "name_en": "Japanese Language Schools",
+    "description": "Japanese language education for foreign students",
+    "overview": "全国に約800校。留学ビザで最長2年間在籍可能",
+    "tuition": "年間約60-100万円（学校・地域による）",
+    "enrollment_periods": "4月入学（1年/2年コース）、10月入学（1.5年コース）、1月入学（1年3ヶ月コース）",
+    "visa": "日本語学校が在留資格認定証明書を代理申請。審査は入管が実施",
+    "jlpt_levels": [
+      {"level": "N5", "description": "基本的な日本語。ひらがな・カタカナ・基本漢字"},
+      {"level": "N4", "description": "基本的な日常会話。特定技能の要件"},
+      {"level": "N3", "description": "日常会話がある程度可能"},
+      {"level": "N2", "description": "ビジネスレベル。多くの大学入学の要件"},
+      {"level": "N1", "description": "高度な日本語。大学院・専門職の要件。高度人材ポイント+15"}
+    ]
+  },
+  "student_life": {
+    "_meta": {"last_verified": "2026-05-12", "source": "JASSO 留学生生活", "source_url": "https://www.jasso.go.jp/ryugaku/", "confidence": "verified", "valid_until": null, "version": "1.0.0", "changelog": ["2026-05-12: Initial verified entry"]},
+    "name_ja": "留学生活ガイド",
+    "name_en": "Student Life Guide",
+    "description": "Practical guide for student life in Japan",
+    "living_costs": {"tokyo": "月額約10-15万円", "osaka": "月額約8-12万円", "regional": "月額約7-10万円"},
+    "part_time_work": {"limit": "週28時間（長期休暇中は1日8時間まで）", "permit": "資格外活動許可が必要（在留カードの裏面に記載）", "common_jobs": ["コンビニ", "飲食店", "塾講師", "通訳・翻訳"], "minimum_wage": "地域による（東京1,163円、最低1,004円/2024年）"},
+    "housing": ["大学寮（月額2-5万円）", "民間アパート（東京ワンルーム月額5-8万円）", "JASSO留学生宿舎", "シェアハウス（月額3-6万円）"]
+  }
+}

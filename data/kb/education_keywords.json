@@ -1,0 +1,10 @@
+{
+  "primary": ["学校", "大学", "留学", "教育", "奨学金", "日本語学校", "入学", "学費", "JLPT", "日本語能力試験"],
+  "secondary": ["school", "university", "education", "scholarship", "student", "admission", "tuition", "JLPT", "language school", "study abroad"],
+  "semantic_aliases": {
+    "school": ["学校", "小学校", "中学校", "高校", "school", "elementary", "junior high"],
+    "university": ["大学", "大学院", "university", "college", "graduate school"],
+    "scholarship": ["奨学金", "MEXT", "JASSO", "scholarship", "financial aid"],
+    "language": ["日本語学校", "日本語能力試験", "JLPT", "language school", "Japanese study"]
+  }
+}

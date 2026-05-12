@@ -1,0 +1,11 @@
+{
+  "primary": ["健康保険", "国保", "社会保険", "病院", "医療", "高額療養費", "処方薬", "薬局", "介護", "出産", "育児", "メンタルヘルス", "精神科", "心療内科", "救急"],
+  "secondary": ["health insurance", "hospital", "doctor", "medical", "prescription", "pharmacy", "maternity", "childcare", "mental health", "nursing care", "ambulance", "clinic"],
+  "semantic_aliases": {
+    "insurance": ["健康保険", "国民健康保険", "社会保険", "health insurance", "NHI"],
+    "hospital": ["病院", "クリニック", "診療所", "hospital", "clinic", "doctor"],
+    "medicine": ["処方薬", "薬局", "ジェネリック", "prescription", "pharmacy", "medicine"],
+    "maternity": ["出産", "育児", "妊娠", "maternity", "childcare", "pregnancy"],
+    "mental": ["メンタルヘルス", "うつ", "精神科", "心療内科", "mental health", "depression", "counseling"]
+  }
+}
