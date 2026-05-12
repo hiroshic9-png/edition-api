@@ -270,8 +270,8 @@ EDITION is designed as a **Tool Registry / Japan Knowledge Layer** for agent har
 
 | Tier | Domains | Rate Limit | Price |
 |------|---------|------------|-------|
-| **Free** | 14 core domains | 100 req/day | Free |
-| **Pro** | All 20 domains (incl. tax, banking, visa) | 10,000 req/day | Contact |
+| **Free** | 8 core domains | 100 req/day | Free |
+| **Pro** | All 20 domains (incl. tax, banking, healthcare, visa) | 10,000 req/day | ¥2,980/mo |
 | **Enterprise** | All domains + priority support | Unlimited | Contact |
 
 Anonymous access defaults to Free tier. Register for an API key at `POST /api/v1/auth/register`.
