@@ -1,0 +1,27 @@
+{
+  "free": {
+    "name": "Free",
+    "daily_limit": 100,
+    "rate_limit_per_min": 10,
+    "domains": ["regulation", "protocol", "calendar", "regional", "organization", "foreign_entry", "travel", "search"],
+    "features": ["basic_search", "list_topics"],
+    "price": 0
+  },
+  "pro": {
+    "name": "Pro",
+    "daily_limit": 10000,
+    "rate_limit_per_min": 100,
+    "domains": "all",
+    "features": ["basic_search", "list_topics", "quality_metadata", "telemetry_access", "priority_response"],
+    "price_monthly_jpy": 2980,
+    "price_monthly_usd": 19.99
+  },
+  "enterprise": {
+    "name": "Enterprise",
+    "daily_limit": -1,
+    "rate_limit_per_min": -1,
+    "domains": "all",
+    "features": ["basic_search", "list_topics", "quality_metadata", "telemetry_access", "priority_response", "dedicated_support", "custom_domains", "sla"],
+    "price": "custom"
+  }
+}

@@ -21,7 +21,9 @@ from backend.api.routes import (
     organization, search, foreign_entry, travel, entertainment,
     daily_life, language, food, disaster, analytics, freshness,
     telemetry, tax, visa, banking, healthcare, education, real_estate,
+    auth,
 )
+from backend.api.middleware.api_key import APIKeyMiddleware
 
 logger = logging.getLogger(__name__)
 
@@ -202,6 +204,12 @@ app.include_router(analytics.router)
 
 # Routes — Knowledge Quality (Freshness, Updates, Audit)
 app.include_router(freshness.router)
+
+# Routes — Auth
+app.include_router(auth.router)
+
+# ── API Key Middleware (after routers, before requests) ──────
+app.add_middleware(APIKeyMiddleware)
 
 # Routes — Telemetry & Quality Gate (Phase 1)
 app.include_router(telemetry.router)
