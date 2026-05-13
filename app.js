@@ -200,6 +200,45 @@
         </div>
       </section>
 
+      <div class="divider divider--gold"></div>
+
+      <section class="section section--large" style="background: var(--bg-alt);">
+        <div class="container">
+          <div class="auth-promo reveal">
+            <div class="auth-promo__text">
+              <p class="text-label" style="color: var(--gold); margin-bottom: 1rem;">Authentication Intelligence</p>
+              <h2 style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 1.5rem;">
+                Trust, Verified
+              </h2>
+              <p style="color: var(--text-secondary); line-height: 1.9; margin-bottom: 1.5rem;">
+                EDITION employs a four-layer authentication framework combining traditional
+                connoisseurship with AI-driven pattern recognition. Our proprietary system
+                analyzes brushstrokes, hamon patterns, glaze compositions, and provenance
+                chains to support expert authentication decisions.
+              </p>
+              <a href="/authenticate" data-link class="editorial__link">
+                Explore Our Methodology
+                <span class="editorial__link-arrow">\u2192</span>
+              </a>
+            </div>
+            <div class="auth-promo__metrics reveal reveal--delay-1">
+              <div class="auth-promo__metric">
+                <span class="auth-promo__metric-value">4</span>
+                <span class="auth-promo__metric-label">Verification Layers</span>
+              </div>
+              <div class="auth-promo__metric">
+                <span class="auth-promo__metric-value">9</span>
+                <span class="auth-promo__metric-label">Asset Categories</span>
+              </div>
+              <div class="auth-promo__metric">
+                <span class="auth-promo__metric-value">24/7</span>
+                <span class="auth-promo__metric-label">AI Learning Active</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       ${renderFooter()}
     `;
   }

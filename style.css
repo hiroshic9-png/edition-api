@@ -1403,3 +1403,63 @@ h3 { font-size: var(--fs-h3); }
   }
 }
 
+/* ── Auth Promo (Homepage) ── */
+.auth-promo {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: var(--space-xl);
+  align-items: center;
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+.auth-promo__metrics {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.auth-promo__metric {
+  padding: 1.5rem 2rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  text-align: center;
+  transition: border-color var(--duration) ease;
+}
+
+.auth-promo__metric:hover {
+  border-color: var(--gold);
+}
+
+.auth-promo__metric-value {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 300;
+  color: var(--gold);
+  line-height: 1.2;
+  margin-bottom: 0.35rem;
+}
+
+.auth-promo__metric-label {
+  font-family: var(--font-sans);
+  font-size: var(--fs-caption);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .auth-promo {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+  .auth-promo__metrics {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-promo__metrics {
+    grid-template-columns: 1fr;
+  }
+}
