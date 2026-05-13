@@ -1030,3 +1030,376 @@ h3 { font-size: var(--fs-h3); }
   .mobile-nav-toggle { display: flex; }
 }
 
+/* ═══════════════════════════════════════════════════════════
+   Authentication Page
+   ═══════════════════════════════════════════════════════════ */
+
+.auth-page {
+  padding-top: var(--header-h);
+}
+
+/* ── Auth Hero ── */
+.auth-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  padding: var(--space-xl) var(--gutter);
+  background: var(--bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-hero::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  border: 1px solid var(--gold-dim);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: authPulse 8s ease-in-out infinite;
+}
+
+.auth-hero::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  border: 1px solid var(--gold-dim);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: authPulse 8s ease-in-out infinite 2s;
+}
+
+@keyframes authPulse {
+  0%, 100% { opacity: 0.3; transform: translate(-50%, -50%) scale(1); }
+  50% { opacity: 0.7; transform: translate(-50%, -50%) scale(1.08); }
+}
+
+.auth-hero__content {
+  text-align: center;
+  max-width: 720px;
+  position: relative;
+  z-index: 1;
+}
+
+.auth-hero__title {
+  font-family: var(--font-serif);
+  font-size: var(--fs-hero);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
+}
+
+.auth-hero__desc {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  color: var(--text-secondary);
+  line-height: 1.9;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+/* ── Philosophy Section ── */
+.auth-philosophy {
+  padding: var(--space-xl) var(--gutter);
+  background: var(--bg-alt);
+}
+
+.auth-philosophy__grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: var(--space-xl);
+  align-items: center;
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+.auth-philosophy__visual {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.auth-stat {
+  padding: 2rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  text-align: center;
+  transition: border-color var(--duration) ease;
+}
+
+.auth-stat:hover {
+  border-color: var(--gold);
+}
+
+.auth-stat__number {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 300;
+  color: var(--gold);
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.auth-stat__label {
+  font-family: var(--font-sans);
+  font-size: var(--fs-caption);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+/* ── Layers Section ── */
+.auth-layers {
+  padding: var(--space-xl) var(--gutter);
+  background: var(--bg);
+}
+
+.auth-layers__stack {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.auth-layer {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 2rem;
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.auth-layer:last-child {
+  border-bottom: none;
+}
+
+.auth-layer__marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding-top: 0.25rem;
+}
+
+.auth-layer__number {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.auth-layer__line {
+  width: 1px;
+  flex: 1;
+  min-height: 40px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+}
+
+.auth-layer__content {
+  padding-bottom: 0.5rem;
+}
+
+.auth-layer__title {
+  font-family: var(--font-serif);
+  font-size: var(--fs-h3);
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+
+.auth-layer__subtitle {
+  font-family: var(--font-sans);
+  font-size: var(--fs-caption);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.auth-layer__desc {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  color: var(--text-secondary);
+  line-height: 1.85;
+  margin-bottom: 1.25rem;
+}
+
+.auth-layer__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.auth-layer__tags span {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  padding: 0.4rem 0.85rem;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  transition: all var(--duration-fast) ease;
+}
+
+.auth-layer__tags span:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+/* Scientific Methods */
+.auth-layer__methods {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.auth-method {
+  padding: 1.25rem;
+  border: 1px solid var(--border-light);
+  background: var(--bg-alt);
+  transition: border-color var(--duration) ease;
+}
+
+.auth-method:hover {
+  border-color: var(--gold);
+}
+
+.auth-method__name {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--gold);
+  margin-bottom: 0.4rem;
+}
+
+.auth-method__desc {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* ── Threats Section ── */
+.auth-threats {
+  padding: var(--space-xl) var(--gutter);
+  background: var(--bg-alt);
+}
+
+.auth-threats__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+.auth-threat-card {
+  padding: 2.5rem 2rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  transition: all var(--duration) ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-threat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--duration) ease;
+}
+
+.auth-threat-card:hover::before {
+  transform: scaleX(1);
+}
+
+.auth-threat-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.auth-threat-card__level {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+}
+
+.auth-threat-card__title {
+  font-family: var(--font-serif);
+  font-size: var(--fs-h3);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.auth-threat-card__desc {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+}
+
+.auth-threat-card__defense {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  color: var(--text-caption);
+  line-height: 1.6;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-light);
+}
+
+/* ── Auth CTA ── */
+.auth-cta {
+  padding: var(--space-xl) var(--gutter);
+  background: var(--bg);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .auth-philosophy__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+  .auth-philosophy__visual {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .auth-threats__grid {
+    grid-template-columns: 1fr;
+  }
+  .auth-layer__methods {
+    grid-template-columns: 1fr;
+  }
+  .auth-layer {
+    grid-template-columns: 48px 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-philosophy__visual {
+    grid-template-columns: 1fr;
+  }
+}
+

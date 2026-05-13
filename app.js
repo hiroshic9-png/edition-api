@@ -40,6 +40,7 @@
     const path = window.location.pathname.replace(/\/$/, '') || '/';
     if (path === '/' || path === '/index.html') return { page: 'home' };
     if (path === '/discover') return { page: 'discover' };
+    if (path === '/authenticate') return { page: 'authenticate' };
     const match = path.match(/^\/discover\/(.+)$/);
     if (match) return { page: 'category', slug: match[1] };
     return { page: 'home' };
@@ -71,6 +72,7 @@
     switch (route.page) {
       case 'home': renderHome(); break;
       case 'discover': renderDiscover(); break;
+      case 'authenticate': renderAuthenticate(); break;
       case 'category': renderCategory(route.slug); break;
       default: renderHome();
     }
@@ -316,6 +318,239 @@
     `;
   }
 
+  /* ── Authenticate Page ── */
+  function renderAuthenticate() {
+    app.innerHTML = `
+      ${renderHeader()}
+
+      <div class="auth-page">
+        <section class="auth-hero">
+          <div class="auth-hero__content">
+            <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1.5rem; letter-spacing: 0.25em;">Authentication Intelligence</p>
+            <h1 class="auth-hero__title reveal reveal--delay-1">The Science<br>of Certainty</h1>
+            <p class="auth-hero__desc reveal reveal--delay-2">
+              Four layers of verification — from the connoisseur's trained eye to AI-driven pattern recognition.
+              EDITION builds trust through rigorous, transparent methodology.
+            </p>
+          </div>
+        </section>
+
+        <section class="auth-philosophy">
+          <div class="container">
+            <div class="auth-philosophy__grid">
+              <div class="auth-philosophy__text reveal">
+                <p class="text-label" style="color: var(--gold); margin-bottom: 1rem;">Our Approach</p>
+                <h2 style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 1.5rem;">Human Expertise,<br>Augmented by Technology</h2>
+                <p style="color: var(--text-secondary); line-height: 1.9; margin-bottom: 1.5rem;">
+                  In the tradition of Sotheby's Scientific Research Department and Christie's provenance methodology,
+                  EDITION employs a multi-layered authentication framework. AI is never the sole arbiter —
+                  it is a powerful lens that reveals what the human eye alone cannot see.
+                </p>
+                <p style="color: var(--text-secondary); line-height: 1.9;">
+                  Every assessment is transparent. Every methodology is documented.
+                  Every conclusion is defensible.
+                </p>
+              </div>
+              <div class="auth-philosophy__visual reveal reveal--delay-1">
+                <div class="auth-stat">
+                  <span class="auth-stat__number">4</span>
+                  <span class="auth-stat__label">Verification Layers</span>
+                </div>
+                <div class="auth-stat">
+                  <span class="auth-stat__number">12</span>
+                  <span class="auth-stat__label">Asset Categories</span>
+                </div>
+                <div class="auth-stat">
+                  <span class="auth-stat__number">7+</span>
+                  <span class="auth-stat__label">Scientific Methods</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="divider divider--gold"></div>
+
+        <section class="auth-layers">
+          <div class="container">
+            <div style="text-align: center; margin-bottom: var(--space-xl);">
+              <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1rem;">Framework</p>
+              <h2 class="reveal reveal--delay-1" style="font-family: var(--font-serif); font-weight: 300;">
+                Four-Layer Authentication Architecture
+              </h2>
+            </div>
+
+            <div class="auth-layers__stack">
+              <div class="auth-layer reveal" data-layer="4">
+                <div class="auth-layer__marker">
+                  <span class="auth-layer__number">IV</span>
+                  <span class="auth-layer__line"></span>
+                </div>
+                <div class="auth-layer__content">
+                  <h3 class="auth-layer__title">Market Intelligence</h3>
+                  <p class="auth-layer__subtitle">Anomaly Detection & Pattern Analysis</p>
+                  <p class="auth-layer__desc">
+                    Statistical analysis of listing patterns across global auction houses.
+                    Detection of duplicate listings, price anomalies, and provenance gaps
+                    that may indicate fraudulent activity.
+                  </p>
+                  <div class="auth-layer__tags">
+                    <span>Price Anomaly Detection</span>
+                    <span>Duplicate Listing Analysis</span>
+                    <span>Provenance Network Mapping</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="auth-layer reveal" data-layer="3">
+                <div class="auth-layer__marker">
+                  <span class="auth-layer__number">III</span>
+                  <span class="auth-layer__line"></span>
+                </div>
+                <div class="auth-layer__content">
+                  <h3 class="auth-layer__title">AI Forensics</h3>
+                  <p class="auth-layer__subtitle">Pattern Recognition & Deep Analysis</p>
+                  <p class="auth-layer__desc">
+                    Convolutional neural networks trained on authenticated works analyze
+                    stylistic fingerprints invisible to the human eye — brushstroke patterns,
+                    hamon classifications in swords, glaze composition signatures in ceramics.
+                  </p>
+                  <div class="auth-layer__tags">
+                    <span>CNN Brushstroke Analysis</span>
+                    <span>Hamon Pattern Classification</span>
+                    <span>Glaze Spectral Matching</span>
+                    <span>3D Surface Topology</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="auth-layer reveal" data-layer="2">
+                <div class="auth-layer__marker">
+                  <span class="auth-layer__number">II</span>
+                  <span class="auth-layer__line"></span>
+                </div>
+                <div class="auth-layer__content">
+                  <h3 class="auth-layer__title">Scientific Verification</h3>
+                  <p class="auth-layer__subtitle">Material & Compositional Analysis</p>
+                  <p class="auth-layer__desc">
+                    Following the standard established by Sotheby's Orion Analytical laboratory,
+                    we employ non-destructive scientific testing to verify material authenticity.
+                    Period-inconsistent materials are identified with certainty.
+                  </p>
+                  <div class="auth-layer__methods">
+                    <div class="auth-method">
+                      <span class="auth-method__name">XRF</span>
+                      <span class="auth-method__desc">X-Ray Fluorescence — Elemental composition of pigments, metals, and glazes</span>
+                    </div>
+                    <div class="auth-method">
+                      <span class="auth-method__name">FTIR</span>
+                      <span class="auth-method__desc">Fourier Transform Infrared — Organic binders, resins, and lacquer analysis</span>
+                    </div>
+                    <div class="auth-method">
+                      <span class="auth-method__name">Raman</span>
+                      <span class="auth-method__desc">Raman Spectroscopy — Molecular-level pigment and mineral identification</span>
+                    </div>
+                    <div class="auth-method">
+                      <span class="auth-method__name">IRR</span>
+                      <span class="auth-method__desc">Infrared Reflectography — Underdrawings, pentimenti, and hidden alterations</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="auth-layer reveal" data-layer="1">
+                <div class="auth-layer__marker">
+                  <span class="auth-layer__number">I</span>
+                  <span class="auth-layer__line"></span>
+                </div>
+                <div class="auth-layer__content">
+                  <h3 class="auth-layer__title">Connoisseurship & Provenance</h3>
+                  <p class="auth-layer__subtitle">Expert Evaluation & Historical Documentation</p>
+                  <p class="auth-layer__desc">
+                    The foundation of all authentication. Trained specialists evaluate works
+                    through direct examination — assessing form, technique, patina, and the
+                    subtle markers that distinguish a master's hand. Provenance is traced through
+                    historical records, exhibition catalogues, and institutional archives.
+                  </p>
+                  <div class="auth-layer__tags">
+                    <span>NBTHK Certification</span>
+                    <span>Catalogue Raisonné</span>
+                    <span>Kiln Site Database</span>
+                    <span>Hakogaki Analysis</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="divider divider--gold"></div>
+
+        <section class="auth-threats">
+          <div class="container">
+            <div style="text-align: center; margin-bottom: var(--space-xl);">
+              <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1rem;">Defense</p>
+              <h2 class="reveal reveal--delay-1" style="font-family: var(--font-serif); font-weight: 300;">
+                Evolving Threat Landscape
+              </h2>
+              <p class="reveal reveal--delay-2" style="color: var(--text-secondary); max-width: 640px; margin: 1.5rem auto 0; line-height: 1.8;">
+                As generative AI enables increasingly sophisticated forgeries,
+                EDITION maintains continuous intelligence on emerging threats.
+              </p>
+            </div>
+
+            <div class="auth-threats__grid">
+              <div class="auth-threat-card reveal">
+                <div class="auth-threat-card__level">Critical</div>
+                <h3 class="auth-threat-card__title">Provenance Fabrication</h3>
+                <p class="auth-threat-card__desc">
+                  LLM-generated sales records, certificates, and ownership histories
+                  that bypass traditional document verification.
+                </p>
+                <p class="auth-threat-card__defense">Defense: Blockchain-anchored provenance chain + document metadata forensics</p>
+              </div>
+
+              <div class="auth-threat-card reveal reveal--delay-1">
+                <div class="auth-threat-card__level">High</div>
+                <h3 class="auth-threat-card__title">AI Style Mimicry</h3>
+                <p class="auth-threat-card__desc">
+                  GANs and diffusion models trained to replicate specific artistic styles,
+                  guiding physical reproduction of paintings and prints.
+                </p>
+                <p class="auth-threat-card__defense">Defense: Multi-modal analysis — frequency domain + material verification</p>
+              </div>
+
+              <div class="auth-threat-card reveal reveal--delay-2">
+                <div class="auth-threat-card__level">Emerging</div>
+                <h3 class="auth-threat-card__title">Precision Replication</h3>
+                <p class="auth-threat-card__desc">
+                  CT-scan data combined with AI-optimized CNC/robotics
+                  to produce structurally accurate physical reproductions.
+                </p>
+                <p class="auth-threat-card__defense">Defense: Molecular-level patina analysis + nanoscale aging verification</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="auth-cta">
+          <div class="container" style="text-align: center;">
+            <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1rem;">Coming Soon</p>
+            <h2 class="reveal reveal--delay-1" style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 1.5rem;">
+              EDITION Certified
+            </h2>
+            <p class="reveal reveal--delay-2" style="color: var(--text-secondary); max-width: 560px; margin: 0 auto; line-height: 1.8;">
+              A new standard in Japanese cultural asset authentication.
+              Transparent methodology. Immutable records. Absolute confidence.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      ${renderFooter()}
+    `;
+  }
+
   /* ── Shared Components ── */
   function renderHeader() {
     const theme = document.documentElement.getAttribute('data-theme') || 'light';
@@ -325,6 +560,7 @@
         <a href="/" data-link class="header__logo">Edition</a>
         <nav class="header__nav">
           <a href="/discover" data-link class="header__link">Collection</a>
+          <a href="/authenticate" data-link class="header__link">Authenticate</a>
           <a href="https://api.edition.sh/docs" target="_blank" class="header__link">API</a>
           <button class="header__theme-toggle" id="theme-toggle" aria-label="Toggle theme">
             <span style="font-size: 14px;">${icon}</span>
@@ -341,6 +577,7 @@
           <span class="footer__brand">Edition</span>
           <div class="footer__links">
             <a href="/discover" data-link class="footer__link">Collection</a>
+            <a href="/authenticate" data-link class="footer__link">Authenticate</a>
             <a href="https://api.edition.sh/docs" target="_blank" class="footer__link">API</a>
             <a href="https://github.com/hiroshic9-png/edition-api" target="_blank" class="footer__link">GitHub</a>
           </div>
