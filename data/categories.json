@@ -62,8 +62,12 @@
         "intro": "Ukiyo-e — 'pictures of the floating world' — began as popular entertainment and became one of the most influential art forms in history. When these prints reached Paris in the 1860s, they detonated a revolution in Western art.",
         "sections": [
           {
-            "title": "Japonisme and the Western Revolution",
-            "body": "At the 1867 Paris Exposition, Japanese woodblock prints stunned the European art world. Monet painted 'La Japonaise.' Van Gogh meticulously copied Hiroshige's plum blossoms. Debussy placed Hokusai's wave on the cover of 'La Mer.' The flat compositions, bold outlines, and asymmetric framing of ukiyo-e shattered Western conventions of perspective and shading, catalyzing Impressionism and Art Nouveau."
+            "title": "The Floating World",
+            "body": "Ukiyo-e — literally \"pictures of the floating world\" — emerged in 17th-century Edo (modern Tokyo) as an art form intimately connected to the pleasure quarters and kabuki theaters. What began as paintings for wealthy patrons transformed into woodblock prints accessible to a broad urban audience.\n\nThe process itself is a collaboration between three masters: the eshi (designer), the horishi (carver), and the surishi (printer). A single print might require dozens of separate color blocks, each aligned with microscopic precision. The best prints — known as shozuri (first editions) — display a depth of color and sharpness that later impressions cannot replicate."
+          },
+          {
+            "title": "Authentication Considerations",
+            "body": "Ukiyo-e authentication demands attention to multiple layers: the quality of the washi (handmade paper), the vibrancy of mineral and vegetable pigments, and the crispness of the carved line. Later impressions from worn blocks show characteristic softening of detail.\n\nModern forgeries often fail at the paper level — genuine Edo-period washi contains fibers from specific plants (kōzo, mitsumata, gampi) in proportions that vary by region and era. AI-assisted fiber analysis can identify anachronistic paper compositions with high accuracy."
           }
         ]
       }
@@ -80,7 +84,16 @@
       "hero_image": "https://images.metmuseum.org/CRDImages/as/web-large/DP362631.jpg",
       "article": {
         "intro": "From the monochrome ink of Zen masters to the golden splendor of Momoyama screens, Japanese painting encompasses a vast range of expression — always grounded in the primacy of the brushstroke.",
-        "sections": []
+        "sections": [
+          {
+            "title": "From Ink to Gold",
+            "body": "Japanese painting encompasses an extraordinary range — from the monochrome ink landscapes (suiboku-ga) of Zen masters like Sesshū Tōyō to the lavish gold-leaf screens of the Kanō school, and the naturalistic beauty of the Rinpa tradition founded by Hon'ami Kōetsu and Tawaraya Sōtatsu.\n\nThe formats are themselves an art: hanging scrolls (kakemono) designed for seasonal rotation in the tokonoma alcove, hand scrolls (emakimono) that unfold narrative scenes horizontally, and massive folding screens (byōbu) that define architectural space."
+          },
+          {
+            "title": "Schools and Lineages",
+            "body": "Understanding Japanese painting requires knowledge of its school system (ryūha). The Kanō school dominated official painting for over 400 years, serving shōguns and daimyō. The Tosa school preserved the yamato-e tradition of native Japanese subjects. The Rimpa school broke from both, creating bold decorative works that merged painting with craft.\n\nEach school transmitted specific techniques through master-apprentice relationships, and their stylistic DNA — brushwork rhythm, compositional formulas, palette preferences — forms the basis for authentication analysis."
+          }
+        ]
       }
     },
     {
@@ -95,7 +108,16 @@
       "hero_image": "https://images.metmuseum.org/CRDImages/as/web-large/DP-43061-001.jpg",
       "article": {
         "intro": "In English, 'japan' once meant lacquerware — so completely was the craft identified with its origin. Maki-e, the art of sprinkling gold and silver powder onto wet lacquer, represents perhaps the most refined decorative technique ever devised.",
-        "sections": []
+        "sections": [
+          {
+            "title": "Layers of Perfection",
+            "body": "Japanese lacquer (urushi) is among the most labor-intensive art forms ever developed. A single piece may require thirty or more individual coats, each applied, dried in controlled humidity, and polished before the next. The finest maki-e (sprinkled picture) works incorporate gold and silver powder in multiple particle sizes, creating depth effects that appear to glow from within.\n\nThe art reached its apex during the Edo period, when inrō (medicine containers), suzuribako (writing boxes), and jubako (tiered food boxes) became canvases for extraordinary decorative expression."
+          },
+          {
+            "title": "The Inrō Tradition",
+            "body": "Inrō — the nested medicine cases suspended from the obi sash — represent perhaps the most concentrated form of Japanese decorative art. Masters like Ogawa Haritsu (Ritsuō) and the Kajikawa family created pieces where every surface, including the interior, displays consummate skill.\n\nAuthentication of lacquerware is uniquely challenging: the techniques for creating artificial aging (nureba aging) have been refined over centuries. CT scanning reveals the layer structure — genuine Edo-period pieces show characteristic variations in lacquer thickness that machine-applied modern copies lack."
+          }
+        ]
       }
     },
     {
@@ -110,7 +132,16 @@
       "hero_image": "https://images.metmuseum.org/CRDImages/as/web-large/LC-10_211_72-001.jpg",
       "article": {
         "intro": "What began as a practical fastener — a toggle to secure pouches to the kimono sash — became one of the most extraordinary art forms in miniature. Today, a single netsuke can command over £1 million at auction.",
-        "sections": []
+        "sections": [
+          {
+            "title": "Miniature Masterworks",
+            "body": "Netsuke — the toggles used to suspend sagemono (hanging objects) from the obi sash — are among the most intimately scaled works in all of art history. Rarely exceeding two inches, the finest examples display a command of form, surface, and narrative that rivals any sculptural tradition.\n\nThe major schools — Osaka, Kyoto, Edo, and Nagoya — each developed distinctive approaches. Osaka netsuke favor realism and dramatic expression; Kyoto works tend toward elegance and literary allusion; Edo pieces often display humor and contemporary social commentary."
+          },
+          {
+            "title": "Material and Patina",
+            "body": "The most prized netsuke material is hippopotamus ivory (now legally restricted), followed by elephant ivory, boxwood (tsuge), and deer antler. The patina — the warm golden-brown surface acquired through decades of handling — is a critical authentication marker.\n\nGenuine patina penetrates the material at a molecular level. Modern artificial aging (tea staining, chemical treatment) remains on the surface and is detectable under UV light and magnification. AI-assisted surface texture analysis can distinguish natural wear patterns from simulated ones with increasing precision."
+          }
+        ]
       }
     },
     {
@@ -125,7 +156,16 @@
       "hero_image": "https://images.metmuseum.org/CRDImages/as/web-large/1978.157.1_F.jpg",
       "article": {
         "intro": "The kimono is not merely clothing — it is a canvas. Yūzen dyeing, tsujigahana tie-dyeing, shibori, and elaborate embroidery transform fabric into narrative art that is worn, not hung.",
-        "sections": []
+        "sections": [
+          {
+            "title": "Wearable Art",
+            "body": "Japanese textiles — from the formal kosode of the Momoyama period to the exuberant yūzen-dyed kimono of Edo — represent a tradition where clothing transcended function to become the primary medium of personal artistic expression.\n\nThe techniques are staggering in variety: shibori (tie-dyeing), yūzen (paste-resist dyeing), surihaku (gold leaf application), nui-haku (embroidery with gold leaf), and tsujigahana (a lost technique combining shibori, drawing, and gold leaf). A single garment might combine multiple techniques requiring months of specialized labor."
+          },
+          {
+            "title": "Dye Analysis and Dating",
+            "body": "Textile authentication relies heavily on dye analysis. Before the Meiji era (1868), all dyes were natural: indigo (ai) from polygonum, red from safflower (benibana) or madder (akane), purple from gromwell (murasaki). The introduction of synthetic aniline dyes after 1856 provides a critical dating marker.\n\nFTIR spectroscopy can distinguish natural from synthetic dyes non-destructively. Thread count analysis, weave structure, and the specific characteristics of silk fiber (from different silkworm varieties) provide additional authentication data points."
+          }
+        ]
       }
     },
     {
@@ -140,7 +180,16 @@
       "hero_image": "https://images.metmuseum.org/CRDImages/aa/web-large/43.120.692_004may2014.jpg",
       "article": {
         "intro": "Japanese metalworkers achieved effects in iron, copper, gold, and their alloys that remain technically unmatched. The tsuba — a sword guard no larger than a hand — became a canvas for landscapes, mythology, and botanical studies executed in astonishing detail.",
-        "sections": []
+        "sections": [
+          {
+            "title": "The Alloys of Japan",
+            "body": "Japanese metalwork developed alloys unknown in the West: shakudō (copper-gold, producing a deep blue-black patina), shibuichi (copper-silver, yielding subtle grey tones), and sentoku (a yellow copper alloy). The mastery of these materials, combined with techniques like nunome-zōgan (textile-pattern inlay) and takabori (high-relief carving), created works of extraordinary refinement.\n\nThe tsuba — the sword guard — became the primary canvas for metalwork artistry. Schools like the Gotō, Yokoya, and Nara lineages developed distinctive styles that connoisseurs can identify at a glance."
+          },
+          {
+            "title": "Authentication Through Composition",
+            "body": "XRF analysis is particularly powerful for metalwork authentication. The precise ratios of copper, gold, silver, and trace elements in shakudō and shibuichi varied by school, period, and individual maker. Modern reproductions often use commercially available alloys with compositions that differ subtly but detectably from historical formulations.\n\nThe patina itself — the controlled chemical coloring of the metal surface — follows specific recipes (niiro-shi) passed down within metalworking families. AI pattern recognition can distinguish naturally developed patina from modern chemical treatments."
+          }
+        ]
       }
     },
     {
@@ -170,7 +219,16 @@
       "hero_image": "https://images.metmuseum.org/CRDImages/as/web-large/DP219474.jpg",
       "article": {
         "intro": "Japanese Buddhist sculpture is among the most accomplished in the world. The carved-wood tradition, refined over twelve centuries, produced works of profound spiritual presence — from the colossal Daibutsu to intimate devotional figures.",
-        "sections": []
+        "sections": [
+          {
+            "title": "Sacred and Secular",
+            "body": "Japanese sculpture is dominated by Buddhist imagery — from the serene gilt-bronze Buddhas of the Asuka period to the dramatic realism of Kamakura-era guardian figures (niō). The great master Unkei and his school achieved a psychological intensity in wooden sculpture that has few parallels anywhere in the world.\n\nThe primary medium is Japanese cypress (hinoki), joined using the yosegi-zukuri (joined woodblock) technique that allowed larger, lighter, and more detailed figures than earlier single-block (ichiboku-zukuri) methods. Crystal eyes (gyokugan) set from inside the hollow head added startling lifelike quality."
+          },
+          {
+            "title": "Wood Analysis and Dating",
+            "body": "Sculpture authentication combines art-historical knowledge with wood science. Dendrochronology (tree-ring dating) can establish when the timber was felled. CT scanning reveals the internal joint structure — the specific joinery methods used are diagnostic of period and school.\n\nThe lacquer and gold leaf (kirikane) applied to Buddhist sculptures provide additional authentication data. Layer structure, adhesive composition, and application technique all evolved over time, creating a datable fingerprint that AI-assisted image analysis can help decode."
+          }
+        ]
       }
     },
     {
