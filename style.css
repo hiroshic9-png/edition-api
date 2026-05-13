@@ -1463,3 +1463,31 @@ h3 { font-size: var(--fs-h3); }
     grid-template-columns: 1fr;
   }
 }
+
+/* ── Discover Search ── */
+.discover-search {
+  max-width: 480px;
+  margin: 2rem auto 0;
+}
+
+.discover-search__input {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  outline: none;
+  transition: border-color var(--duration) ease;
+}
+
+.discover-search__input::placeholder {
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.discover-search__input:focus {
+  border-color: var(--gold);
+}

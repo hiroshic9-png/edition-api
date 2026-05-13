@@ -270,9 +270,13 @@
         <p class="page-header__desc reveal reveal--delay-2">
           Twelve categories spanning over a millennium of Japanese artistic mastery.
         </p>
+        <div class="discover-search reveal reveal--delay-3">
+          <input type="text" id="category-search" class="discover-search__input"
+                 placeholder="Search categories\u2026" autocomplete="off" />
+        </div>
       </div>
 
-      <div class="categories-grid" style="max-width: var(--max-w); margin: 0 auto;">
+      <div class="categories-grid" id="categories-grid" style="max-width: var(--max-w); margin: 0 auto;">
         ${categoriesData.map((cat, i) => renderCategoryCard(cat, i)).join('')}
       </div>
 
@@ -280,6 +284,18 @@
 
       ${renderFooter()}
     `;
+
+    // Search filter
+    const searchInput = document.getElementById('category-search');
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase();
+        document.querySelectorAll('.category-card').forEach(card => {
+          const text = card.textContent.toLowerCase();
+          card.style.display = text.includes(query) ? '' : 'none';
+        });
+      });
+    }
   }
 
   /* ── Category Detail Page ── */
