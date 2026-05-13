@@ -204,7 +204,16 @@
       "hero_image": "https://images.metmuseum.org/CRDImages/as/web-large/DP-14464-025.jpg",
       "article": {
         "intro": "A bonsai is not a small tree — it is a meditation on time, patience, and the relationship between human intention and natural form. Some specimens have been trained for centuries, passing through generations of caretakers.",
-        "sections": []
+        "sections": [
+          {
+            "title": "Living Sculpture",
+            "body": "Bonsai is unique among Japanese art forms — it is a living artwork whose creation spans generations. The finest specimens, known as meiboku (named trees), have documented histories stretching back centuries. A single Japanese black pine (kuromatsu) displayed at the National Bonsai Museum in Ōmiya has been in continuous cultivation since 1610.\n\nThe art encompasses not just trees but viewing stones (suiseki), accent plants (kusamono), and display alcoves (tokonoma). A properly composed bonsai display tells a story of seasons, landscape, and the profound Japanese aesthetic of finding infinity within constraint."
+          },
+          {
+            "title": "Provenance and Valuation",
+            "body": "Bonsai authentication centers on provenance — the chain of ownership and care. Unlike static art objects, a bonsai can be damaged or transformed by a single season of poor care. The most valuable trees come with meticulous records (kanri-kiroku) documenting decades of styling, repotting, and exhibition history.\n\nAntique containers (kobachi) are themselves collectible art objects. Pots from the Chinese Yixing kilns of the Qing dynasty, or Japanese masterworks by Hattori Ikkō and other noted potters, can be worth as much as the trees they hold. XRF analysis of clay composition can authenticate claimed origins."
+          }
+        ]
       }
     },
     {
@@ -243,7 +252,16 @@
       "hero_image": "https://images.metmuseum.org/CRDImages/as/web-large/DT231.jpg",
       "article": {
         "intro": "In Japan, the boundary between architecture and art dissolves. Sliding screens become paintings, transoms become sculptures, and chests become statements of craft. The Japanese interior is not decorated — it is composed.",
-        "sections": []
+        "sections": [
+          {
+            "title": "Wood, Paper, and Light",
+            "body": "Japanese architecture represents one of the world's great building traditions — a system where structure, space, and nature interpenetrate. The shoin-zukuri style of the Muromachi period established elements that define Japanese interiors to this day: the tokonoma alcove, the chigaidana staggered shelves, and the shōji translucent screens that transform walls into membranes of diffused light.\n\nThe tea room (chashitsu) took this even further — Sen no Rikyū's ideal of the humble grass hut (sōan) created spaces of extraordinary intentionality where every element, from the roji garden path to the nijiriguchi crawl-through entrance, was designed to transform consciousness."
+          },
+          {
+            "title": "Architectural Salvage and Fittings",
+            "body": "The collectible market for Japanese architectural elements centers on ranma (transom carvings), fusuma (sliding panel paintings), temple fittings (kanagu), and structural timber from dismantled buildings. Authentication requires knowledge of joinery techniques — Japanese carpentry uses no nails or screws, relying instead on complex interlocking joints (tsugite and shiguchi) that evolved over centuries.\n\nDendrochronology can date the timber, while tool mark analysis reveals the specific planes (kanna) and chisels (nomi) used — their marks are as diagnostic of period as brushstrokes in painting."
+          }
+        ]
       }
     },
     {
@@ -258,7 +276,16 @@
       "hero_image": "https://images.metmuseum.org/CRDImages/as/web-large/DP704980.jpg",
       "article": {
         "intro": "Japan's contemporary art scene is a unique tension between deep reverence for tradition and radical experimentation. From Gutai's performative destruction to Murakami's Superflat theory, Japanese artists continually redefine the relationship between past and present.",
-        "sections": []
+        "sections": [
+          {
+            "title": "Tradition Transformed",
+            "body": "Contemporary Japanese art occupies a unique position — simultaneously rooted in centuries of aesthetic tradition and radically engaged with global contemporary discourse. From the Gutai group's pioneering performance art of the 1950s to Takashi Murakami's 'Superflat' theory merging Edo-period flatness with anime aesthetics, Japanese artists have consistently redefined the boundaries of contemporary practice.\n\nThe Living National Treasure (Ningen Kokuhō) system formally recognizes masters of traditional crafts, creating a unique bridge between heritage and living practice. Artists like ceramic master Tokuda Yasokichi III or lacquer artist Murose Kazumi are both preservers and innovators."
+          },
+          {
+            "title": "Authentication in Contemporary Practice",
+            "body": "Contemporary art authentication involves different challenges — edition management, certificate of authenticity verification, gallery provenance chains, and increasingly, protection against unauthorized reproductions using AI image generation.\n\nFor Living National Treasure works, the certification system itself provides a layer of authentication. Exhibition history at the Japan Traditional Art Crafts Exhibition (Nihon Dentō Kōgei-ten) and major gallery representation create verifiable provenance chains that EDITION tracks and analyzes."
+          }
+        ]
       }
     }
   ]
