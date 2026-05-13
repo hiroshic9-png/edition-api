@@ -1,0 +1,207 @@
+{
+  "categories": [
+    {
+      "id": "swords",
+      "slug": "swords",
+      "title_en": "Swords & Armor",
+      "title_jp": "刀剣・甲冑",
+      "description": "From the five great traditions of the Gokaden to the masterworks of legendary smiths — the soul of the samurai, forged in steel.",
+      "image": "https://images.metmuseum.org/CRDImages/aa/web-large/DT306021.jpg",
+      "image_alt": "Blades and Mountings for a Pair of Swords (Daishō), The Metropolitan Museum of Art",
+      "image_credit": "The Metropolitan Museum of Art, CC0",
+      "hero_image": "https://images.metmuseum.org/CRDImages/aa/web-large/DP368606.jpg",
+      "article": {
+        "intro": "The Japanese sword is not merely a weapon — it is the convergence of metallurgy, spirituality, and aesthetic philosophy. For over a millennium, swordsmiths have refined techniques that produce blades of extraordinary beauty and devastating function.",
+        "sections": [
+          {
+            "title": "The Five Traditions — Gokaden",
+            "body": "The classical schools of Japanese swordmaking are organized into five great traditions, each producing blades with distinctive characteristics born from their regional materials, climate, and patronage.\n\nYamato-den (Nara) — Forged for warrior monks, these blades emphasize function over form, with masame-hada grain and suguha temper lines.\n\nYamashiro-den (Kyoto) — Refined under aristocratic influence, known for elegant suguha and ko-midare temper patterns.\n\nBizen-den (Okayama) — The largest school, famous for the gorgeous chōji (clove) temper pattern.\n\nSōshū-den (Kamakura) — Born of warfare, producing aggressive nie-based temper patterns with wild activity in the steel.\n\nMino-den (Gifu) — Practical blades for the age of warring states, with pointed togari-ba temper lines."
+          },
+          {
+            "title": "Eras of the Blade",
+            "body": "Japanese swords are classified by their era of production, each reflecting the political and cultural conditions of its time.\n\nKotō (古刀, pre-1596) — Old swords. The classical period, encompassing the Gokaden traditions.\n\nShintō (新刀, 1596-1780) — New swords. Peace under the Tokugawa brought new materials and techniques.\n\nShinshintō (新々刀, 1781-1876) — Revival swords. A conscious return to kotō methods.\n\nGendaitō (現代刀, 1876-) — Modern swords, produced after the Meiji restoration."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ceramics",
+      "slug": "ceramics",
+      "title_en": "Ceramics & Tea",
+      "title_jp": "陶磁器・茶道具",
+      "description": "Six ancient kilns, the wabi-sabi revolution of tea ceremony, and the porcelain that inspired Europe's Meissen.",
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP244298.jpg",
+      "image_alt": "Clog-shaped tea bowl with plum blossoms, The Metropolitan Museum of Art",
+      "image_credit": "The Metropolitan Museum of Art, CC0",
+      "hero_image": "https://images.metmuseum.org/CRDImages/as/web-large/DP260410.jpg",
+      "article": {
+        "intro": "Japanese ceramics embody a unique aesthetic revolution: the elevation of imperfection. While China pursued flawless porcelain, Japan's tea masters found beauty in the rough, the asymmetric, and the accidental — a philosophy that would reshape global aesthetics.",
+        "sections": [
+          {
+            "title": "The Six Ancient Kilns — Rokkoyo",
+            "body": "Long before the tea ceremony transformed Japanese ceramics, six kiln sites had been producing utilitarian stonewares for centuries: Seto, Tokoname, Bizen, Shigaraki, Tamba, and Echizen. These rokkoyo represent the deep roots of Japanese ceramic tradition."
+          },
+          {
+            "title": "The Tea Revolution",
+            "body": "Sen no Rikyū's radical aesthetic — finding transcendence in a simple tea bowl — created an entirely new category of art. Chōjirō, working under Rikyū's guidance, produced the first Raku tea bowls: hand-shaped, deliberately irregular, and fired at low temperatures. The Raku family continues this tradition today, now in its 16th generation."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ukiyoe",
+      "slug": "ukiyoe",
+      "title_en": "Ukiyo-e & Prints",
+      "title_jp": "浮世絵・版画",
+      "description": "The floating world captured in woodblock — from Hokusai's Great Wave to the mysteries of Sharaku.",
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP141042.jpg",
+      "image_alt": "Under the Wave off Kanagawa (The Great Wave) by Katsushika Hokusai, The Metropolitan Museum of Art",
+      "image_credit": "The Metropolitan Museum of Art, CC0",
+      "hero_image": "https://images.metmuseum.org/CRDImages/as/web-large/DP141081.jpg",
+      "article": {
+        "intro": "Ukiyo-e — 'pictures of the floating world' — began as popular entertainment and became one of the most influential art forms in history. When these prints reached Paris in the 1860s, they detonated a revolution in Western art.",
+        "sections": [
+          {
+            "title": "Japonisme and the Western Revolution",
+            "body": "At the 1867 Paris Exposition, Japanese woodblock prints stunned the European art world. Monet painted 'La Japonaise.' Van Gogh meticulously copied Hiroshige's plum blossoms. Debussy placed Hokusai's wave on the cover of 'La Mer.' The flat compositions, bold outlines, and asymmetric framing of ukiyo-e shattered Western conventions of perspective and shading, catalyzing Impressionism and Art Nouveau."
+          }
+        ]
+      }
+    },
+    {
+      "id": "painting",
+      "slug": "painting",
+      "title_en": "Painting & Calligraphy",
+      "title_jp": "日本画・書",
+      "description": "Ink on silk, gold on folding screens — the quiet power of Japanese painting across a thousand years.",
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP-15584-008.jpg",
+      "image_alt": "Gibbons in a Landscape, The Metropolitan Museum of Art",
+      "image_credit": "The Metropolitan Museum of Art, CC0",
+      "hero_image": "https://images.metmuseum.org/CRDImages/as/web-large/DP362631.jpg",
+      "article": {
+        "intro": "From the monochrome ink of Zen masters to the golden splendor of Momoyama screens, Japanese painting encompasses a vast range of expression — always grounded in the primacy of the brushstroke.",
+        "sections": []
+      }
+    },
+    {
+      "id": "lacquerware",
+      "slug": "lacquerware",
+      "title_en": "Lacquerware & Maki-e",
+      "title_jp": "漆器・蒔絵",
+      "description": "So synonymous with Japan that English adopted the word — lacquer elevated to art through gold dust and patience.",
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP-43061-001.jpg",
+      "image_alt": "Inrō with floating fans, The Metropolitan Museum of Art",
+      "image_credit": "The Metropolitan Museum of Art, CC0",
+      "hero_image": "https://images.metmuseum.org/CRDImages/as/web-large/DP-43061-001.jpg",
+      "article": {
+        "intro": "In English, 'japan' once meant lacquerware — so completely was the craft identified with its origin. Maki-e, the art of sprinkling gold and silver powder onto wet lacquer, represents perhaps the most refined decorative technique ever devised.",
+        "sections": []
+      }
+    },
+    {
+      "id": "netsuke",
+      "slug": "netsuke",
+      "title_en": "Netsuke & Miniatures",
+      "title_jp": "根付・小彫刻",
+      "description": "A universe carved in three centimeters — from functional toggle to the world's most coveted miniature sculptures.",
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/LC-10_211_72-001.jpg",
+      "image_alt": "Netsuke, The Metropolitan Museum of Art",
+      "image_credit": "The Metropolitan Museum of Art, CC0",
+      "hero_image": "https://images.metmuseum.org/CRDImages/as/web-large/LC-10_211_72-001.jpg",
+      "article": {
+        "intro": "What began as a practical fastener — a toggle to secure pouches to the kimono sash — became one of the most extraordinary art forms in miniature. Today, a single netsuke can command over £1 million at auction.",
+        "sections": []
+      }
+    },
+    {
+      "id": "textiles",
+      "slug": "textiles",
+      "title_en": "Textiles & Kimono",
+      "title_jp": "染織・着物",
+      "description": "Yūzen dyeing, silk brocade, and indigo — Japan's textile mastery woven into wearable art.",
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/1978.157.1_F.jpg",
+      "image_alt": "Kimono, The Metropolitan Museum of Art",
+      "image_credit": "The Metropolitan Museum of Art, CC0",
+      "hero_image": "https://images.metmuseum.org/CRDImages/as/web-large/1978.157.1_F.jpg",
+      "article": {
+        "intro": "The kimono is not merely clothing — it is a canvas. Yūzen dyeing, tsujigahana tie-dyeing, shibori, and elaborate embroidery transform fabric into narrative art that is worn, not hung.",
+        "sections": []
+      }
+    },
+    {
+      "id": "metalwork",
+      "slug": "metalwork",
+      "title_en": "Metalwork & Ornaments",
+      "title_jp": "金工・装身具",
+      "description": "Tsuba sword guards, ornate kanzashi hairpins, and kiseru pipes — metalcraft as personal expression.",
+      "image": "https://images.metmuseum.org/CRDImages/aa/web-large/43.120.692_004may2014.jpg",
+      "image_alt": "Sword Guard (Tsuba), The Metropolitan Museum of Art",
+      "image_credit": "The Metropolitan Museum of Art, CC0",
+      "hero_image": "https://images.metmuseum.org/CRDImages/aa/web-large/43.120.692_004may2014.jpg",
+      "article": {
+        "intro": "Japanese metalworkers achieved effects in iron, copper, gold, and their alloys that remain technically unmatched. The tsuba — a sword guard no larger than a hand — became a canvas for landscapes, mythology, and botanical studies executed in astonishing detail.",
+        "sections": []
+      }
+    },
+    {
+      "id": "bonsai",
+      "slug": "bonsai",
+      "title_en": "Bonsai & Suiseki",
+      "title_jp": "盆栽・水石",
+      "description": "Living sculpture shaped across decades — where horticulture becomes philosophy.",
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP-14464-025.jpg",
+      "image_alt": "Bonsai Plum Tree on Bench and Box, The Metropolitan Museum of Art",
+      "image_credit": "The Metropolitan Museum of Art, CC0",
+      "hero_image": "https://images.metmuseum.org/CRDImages/as/web-large/DP-14464-025.jpg",
+      "article": {
+        "intro": "A bonsai is not a small tree — it is a meditation on time, patience, and the relationship between human intention and natural form. Some specimens have been trained for centuries, passing through generations of caretakers.",
+        "sections": []
+      }
+    },
+    {
+      "id": "sculpture",
+      "slug": "sculpture",
+      "title_en": "Sculpture & Buddhist Art",
+      "title_jp": "彫刻・仏像",
+      "description": "From the serene Buddhas of Nara to Unkei's fierce guardians — wood and bronze given transcendent form.",
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP219474.jpg",
+      "image_alt": "Buddha, The Metropolitan Museum of Art",
+      "image_credit": "The Metropolitan Museum of Art, CC0",
+      "hero_image": "https://images.metmuseum.org/CRDImages/as/web-large/DP219474.jpg",
+      "article": {
+        "intro": "Japanese Buddhist sculpture is among the most accomplished in the world. The carved-wood tradition, refined over twelve centuries, produced works of profound spiritual presence — from the colossal Daibutsu to intimate devotional figures.",
+        "sections": []
+      }
+    },
+    {
+      "id": "architecture",
+      "slug": "architecture",
+      "title_en": "Architecture & Furnishing",
+      "title_jp": "建築・調度",
+      "description": "Ranma transoms, tansu chests, and byōbu screens — the art of Japanese interior space.",
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DT1615.jpg",
+      "image_alt": "Rough Waves by Ogata Kōrin, The Metropolitan Museum of Art",
+      "image_credit": "The Metropolitan Museum of Art, CC0",
+      "hero_image": "https://images.metmuseum.org/CRDImages/as/web-large/DT231.jpg",
+      "article": {
+        "intro": "In Japan, the boundary between architecture and art dissolves. Sliding screens become paintings, transoms become sculptures, and chests become statements of craft. The Japanese interior is not decorated — it is composed.",
+        "sections": []
+      }
+    },
+    {
+      "id": "contemporary",
+      "slug": "contemporary",
+      "title_en": "Contemporary Art",
+      "title_jp": "現代アート",
+      "description": "Where tradition meets rupture — contemporary Japanese artists reimagining cultural heritage.",
+      "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP704980.jpg",
+      "image_alt": "Goose and Reeds, The Metropolitan Museum of Art",
+      "image_credit": "The Metropolitan Museum of Art, CC0",
+      "hero_image": "https://images.metmuseum.org/CRDImages/as/web-large/DP704980.jpg",
+      "article": {
+        "intro": "Japan's contemporary art scene is a unique tension between deep reverence for tradition and radical experimentation. From Gutai's performative destruction to Murakami's Superflat theory, Japanese artists continually redefine the relationship between past and present.",
+        "sections": []
+      }
+    }
+  ]
+}
