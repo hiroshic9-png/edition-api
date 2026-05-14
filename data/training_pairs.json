@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-05-14T12:18:21.232282Z",
-  "total_pairs": 249,
+  "generated_at": "2026-05-14T13:28:36.376102Z",
+  "total_pairs": 257,
   "pairs": [
     {
       "id": "fqa-asset-met-27789",
@@ -2584,7 +2584,7 @@
       ],
       "confidence_notes": "Gendaito are traditionally forged modern blades; Showato are machine-made. Both from same era, vastly different value",
       "sources": [
-        "Ohmura, Military Swords of Japan",
+        "Ohmura Tomoyuki, ohmura-study.net (online research resource)",
         "NBTHK classification guidelines"
       ],
       "verified_by": "source_verified",
@@ -2695,7 +2695,6 @@
       ],
       "confidence_notes": "Same design can vary 100x in value between early and late impression. State analysis is critical for pricing",
       "sources": [
-        "Chiappa, Hiroshige Catalogue",
         "International Ukiyo-e Society state comparison studies"
       ],
       "verified_by": "source_verified",
@@ -3177,7 +3176,7 @@
       "confidence_notes": "Mercury amalgam gilding was standard until Meiji. Its presence strongly supports pre-modern manufacture",
       "sources": [
         "Agency for Cultural Affairs bronze analysis reports",
-        "Mori, History of Japanese Buddhist Sculpture"
+        "Mori Hisashi, Japanese Buddhist Sculpture, trans. Eckel, 1974"
       ],
       "verified_by": "source_verified",
       "type": "authentic_vs_fake",
@@ -3288,7 +3287,7 @@
       "confidence_notes": "Japanese traditional joinery is extremely sophisticated. Authentic period joints show precision without modern fasteners",
       "sources": [
         "JMRA (Japan Minka Revival Association) construction guides",
-        "Sumiyoshi, Japanese Woodworking Joints"
+        "Sumiyoshi & Matsui, Wood Joints in Classical Japanese Architecture, Kajima, 1991"
       ],
       "verified_by": "source_verified",
       "type": "authentic_vs_fake",
@@ -3560,7 +3559,7 @@
       "question": "How does foot ring (kodai) analysis aid in ceramic authentication?",
       "answer": "The foot ring is often called the most honest part of a ceramic piece because it reveals production methods difficult to fake. Key indicators include: clay color and texture visible where glaze was wiped away; trimming tool marks showing the potter's technique; kiln furniture adhesion marks indicating firing position; and wear patterns from use. For tea ceramics, specific foot ring types indicate tradition — the rough, irregular foot of a Hagi chawan versus the precise turned foot of a Nabeshima dish. Period-specific characteristics include the radial chattering marks from bamboo trimming tools in Ko-Seto, the deliberately rough 'kairagi' (crawling glaze) foot of certain Korean-inspired wares, and the precise geometric foot of Kakiemon porcelain. Forgers often succeed in replicating surface decoration but fail at foot ring details because these require understanding of the entire production process rather than just visual copying.",
       "evidence": [
-        "Cort, Japanese Ceramics Technical Studies",
+        "Cort, Louise Allison — ceramics research (Smithsonian)",
         "Victoria and Albert Museum ceramic identification guides"
       ],
       "related_assets": [],
@@ -3581,8 +3580,7 @@
       "question": "Explain the forensic significance of bokashi (color gradation) in print authentication.",
       "answer": "Bokashi refers to the gradation technique where color fades from intense to light within a single printed area, achieved by wiping pigment from part of the block before printing. This technique is crucial for authentication because: it requires extreme skill from the printer (surishi), making each impression subtly unique; the moisture gradient on the paper creates characteristic fiber distortion visible under magnification; and the exact pattern of gradation is nearly impossible to replicate in photographic reproductions. In Hiroshige's landscape prints, bokashi creates the atmospheric effects (sky gradation, mist) that define the design's aesthetic. Early impressions show precise, controlled bokashi with clean transitions, while later impressions from fatigued printers show less refined gradations. Digital and photographic reproductions fail to replicate bokashi because the technique relies on physical pressure variation and moisture interaction with paper fibers, producing a three-dimensional quality that flat printing cannot achieve.",
       "evidence": [
-        "Salter, Japanese Woodblock Printing",
-        "Keyes, Hiroshige's Tokaido printing analysis"
+        "Salter, Japanese Woodblock Printing"
       ],
       "related_assets": [],
       "tags": [
@@ -3602,8 +3600,7 @@
       "question": "How do censor seals (kiwame-in, aratame-in) help date ukiyo-e prints?",
       "answer": "Japanese woodblock prints bear censorship seals that provide precise dating evidence. The system evolved through several phases: Pre-1790, no systematic censorship. 1790-1842, kiwame seal (approved) used alone. 1842-1853, nanushi (town elder) seals paired with date seals following Tenpo reforms. 1853-1857, aratame (examined) seal introduced with date seals. 1858-1871, various combinations of aratame and date seals. Post-1872, censorship abolished. Each phase has documented seal formats that can be cross-referenced with known examples. Date seals indicate year and month using cyclical calendar. The presence of correct censor seals is necessary but not sufficient for authentication — high-quality reproductions may copy seal images. However, the seal impression depth, ink color, and position on the sheet provide supplementary authentication evidence. Some later reprints bear copied censor seals but these are typically printed rather than stamped, lacking the three-dimensional impression of genuine seals.",
       "evidence": [
-        "Marks, Publishers of Japanese Woodblock Prints",
-        "Thompson, Censor Seals on Japanese Prints"
+        "Marks, Publishers of Japanese Woodblock Prints"
       ],
       "related_assets": [],
       "tags": [
@@ -3686,8 +3683,7 @@
       "question": "What is the significance of mounting (hyogu) in Japanese scroll painting authentication?",
       "answer": "The mounting (hyogu) of a Japanese scroll painting provides significant authentication evidence beyond the painting itself. Period mountings use specific silk brocade patterns (kinran, donsu) that can be dated through textile analysis. The mounting format — hanging scroll (kakejiku), handscroll (emaki), or album leaf (gajo) — should be appropriate for the painting's claimed period and function. The ura-uchi (backing paper) layers show aging consistent with the mounting's claimed date. Roller ends (jiku) materials — bone, ivory, ceramic, or lacquered wood — indicate quality level and period. Historic remountings are documented by skilled hyogu-shi (mounters) who may add inscriptions noting the date and reason for remounting. Authentication red flags include: modern mounting materials on supposedly ancient paintings; mounting significantly newer than the painting without remounting documentation; and mounting format inappropriate for the painting's claimed context (e.g., tea ceremony scroll mounted in a non-tea format). The mounting itself can be more valuable than a minor painting if by a famous hyogu-shi.",
       "evidence": [
-        "Kyoto National Museum mounting conservation studies",
-        "Hayakawa, The Art of Japanese Scroll Mounting"
+        "Kyoto National Museum mounting conservation studies"
       ],
       "related_assets": [],
       "tags": [
@@ -4616,7 +4612,7 @@
       "answer": "Major post-war Japanese art movements and their key figures: Gutai (1954-1972) — Yoshihara Jiro (founder), Shiraga Kazuo (foot painting), Tanaka Atsuko (electric dress), Shimamoto Shozo (bottle throwing), Motonaga Sadamasa (water and vinyl). Radical material experimentation preceding Western performance art. Mono-ha (1968-1975) — Lee Ufan (theoretical leader), Sekine Nobuo (Phase—Mother Earth), Suga Kishio (hanging/leaning works), Enokura Koji, Koshimizu Susumu. Emphasized encounter between natural and industrial materials. Neo-Dada/Hi-Red Center (1960s) — Akasegawa Genpei, Nakanishi Natsuyuki, Takamatsu Jiro. Combined Dada provocations with Japanese social critique. Superflat/Contemporary — Murakami Takashi (coined 'Superflat' theory), Nara Yoshitomo (neo-pop/punk aesthetic), Kusama Yayoi (infinity nets and pumpkins, spanning multiple movements from 1950s to present). Authentication considerations differ dramatically between movements: Gutai values material authenticity and documentation; Mono-ha values concept and installation fidelity; Contemporary artists have established foundation-based authentication systems.",
       "evidence": [
         "Munroe, Japanese Art After 1945",
-        "Chong, Tokyo 1955-1970"
+        "Chong, Tokyo 1955-1970: A New Avant-Garde, MoMA, 2012"
       ],
       "related_assets": [],
       "tags": [
@@ -5102,7 +5098,7 @@
       "answer": "Kiln furniture marks on ceramic bases provide crucial authentication evidence: Wadding marks — small circular scars from clay pads separating pieces during firing. Size, composition, and placement vary by kiln and period. Spur marks — small pointed marks from tripod stilts supporting pieces in the kiln. Number and arrangement are diagnostic of specific traditions. Sand adhesion — sand grains fused to the base from kiln shelf contact, characteristic of certain kiln types. Firing crack patterns — thermal stress during cooling creates characteristic crack patterns influenced by kiln design and firing schedule. These marks are authentication goldmines because: forgers rarely understand the specific kiln furniture used at particular sites and periods; the marks are accidental byproducts of the firing process, not intentionally created; and they can be matched to archaeological evidence from excavated kiln sites. A piece claiming Momoyama Shino origin but showing kiln furniture marks inconsistent with Mino-area kilns would raise serious authenticity questions.",
       "evidence": [
         "Mino Ceramic Art Museum kiln excavation reports",
-        "Cort, Japanese Ceramics Technical Studies"
+        "Cort, Louise Allison — ceramics research (Smithsonian)"
       ],
       "related_assets": [],
       "tags": [
@@ -5164,8 +5160,7 @@
       "question": "What is karazuri (blind printing) and why is it an authentication marker?",
       "answer": "Karazuri is the technique of pressing paper against an unlinked carved block to create embossed texture without color. It adds three-dimensional tactile quality to specific areas — commonly used for snow, white robes, clouds, and feathers. Authentication significance: karazuri requires physical woodblock pressure and cannot be replicated by any photographic or digital reproduction method; the embossing creates characteristic paper fiber deformation visible under raking light and magnification; the technique demands precise registration with color-printed elements, indicating professional printing; and karazuri typically appears only in early, high-quality impressions when the printer invested maximum care. Its presence is strong evidence of genuine woodblock printing. Some late impressions omit karazuri to speed production. Modern reproductions using actual woodblocks may include karazuri, but these can be distinguished by other factors (paper, pigments, block wear). The depth and crispness of karazuri impression also degrades with block wear, providing impression quality evidence.",
       "evidence": [
-        "Salter, Japanese Woodblock Printing",
-        "Keyes, impression quality analysis"
+        "Salter, Japanese Woodblock Printing"
       ],
       "related_assets": [],
       "tags": [
@@ -5206,8 +5201,7 @@
       "question": "What are the main formats of Japanese painting and their contexts?",
       "answer": "Japanese paintings use formats closely tied to function and display context: Kakejiku (hanging scroll) — vertical format for tokonoma display in tea rooms and reception rooms. Seasonal rotation is traditional — the scroll selected communicates the host's aesthetic sensitivity. Emaki (handscroll) — horizontal format unrolled section by section, creating a narrative viewing experience. Read right to left. Associated with storytelling traditions. Byobu (folding screen) — pairs of two-, four-, or six-fold screens. Major decorative format for large rooms in castles, temples, and residences. Fusuma (sliding door panels) — architectural paintings integrated into building interiors. Often large-scale landscapes or seasonal themes. Gajo (album leaves) — small paintings mounted in albums, sometimes paired with calligraphy. Shikishi (poem cards) and tanzaku (poem strips) — small formats combining calligraphy and painting. Ema (votive paintings) — dedicated to shrines and temples. Each format has specific mounting conventions, viewing contexts, and quality expectations. Authentication considers whether the painting's style, subject, and quality are appropriate for its claimed format and context.",
       "evidence": [
-        "Murase, Bridge of Dreams",
-        "Shimada, Japanese Painting Formats"
+        "Murase, Bridge of Dreams"
       ],
       "related_assets": [],
       "tags": [
@@ -5411,7 +5405,7 @@
         "Consult NBTHK oshigata archives"
       ],
       "sources": [
-        "Honma & Sato, Nihonto Meikan oshigata volumes",
+        "Honma & Sato, Nihonto Meikan (vol. 1-3), Yuzankaku, 1975-1976",
         "NBTHK reference collections"
       ],
       "verified_by": "source_verified",
@@ -5442,7 +5436,7 @@
       ],
       "sources": [
         "Japanese archaeological kiln survey reports",
-        "Cort, Japanese Ceramics Technical Studies"
+        "Cort, Louise Allison — ceramics research (Smithsonian)"
       ],
       "verified_by": "source_verified",
       "created_at": "2026-05-14T11:29:32.660852Z"
@@ -5946,7 +5940,7 @@
       "question": "How does microstructure analysis distinguish hand-throwing from mold-forming?",
       "answer": "Ceramic forming methods leave distinctive microstructural evidence: Hand-throwing — clay particles align tangentially due to rotational forces; wall thickness varies slightly; throwing rings are visible on interior surfaces; the base shows spiral marks from wire-cutting or trimming; and fingerprints may be preserved under the glaze. Coil-building — characteristic diagonal joints between coils visible in cross-section; less particle alignment than throwing; surface may show smoothing over coil joins. Slab construction — flat clay sheets joined at seams; angular forms; seam cracks may develop over time. Mold-forming — uniform wall thickness; no particle alignment from rotation; possible mold seam lines; pressed or slip-cast pieces show different surface textures; and mold marks (relief pattern from mold interior) may be visible. These forming methods are period and tradition-specific. Hand-throwing dominates in most Japanese ceramic traditions, while mold-forming is common in Nabeshima porcelain and certain tile production. Identifying the correct forming method for a claimed tradition provides authentication evidence.",
       "evidence": [
-        "Rice, Pottery Analysis",
+        "Rice, Prudence M., Pottery Analysis: A Sourcebook, U of Chicago Press, 2nd ed 2015",
         "Kyoto University archaeological ceramics technical studies"
       ],
       "related_assets": [],
@@ -6334,6 +6328,309 @@
       ],
       "verified_by": "source_verified",
       "created_at": "2026-05-14T11:34:21.155350Z"
+    },
+    {
+      "id": "pc-ukiyoe-hokusai-wave-v2",
+      "type": "price_comparable",
+      "category": "ukiyoe",
+      "subject": "Katsushika Hokusai — Under the Wave off Kanagawa (Great Wave)",
+      "comparables": [
+        {
+          "description": "Under the Wave off Kanagawa, from Thirty-six Views of Mount Fuji",
+          "sale_price": 856800,
+          "sale_date": "2024-09-17",
+          "auction_house": "Christie's New York",
+          "lot_number": "Japanese and Korean Art sale",
+          "condition": "Good impression",
+          "key_differences": "Part of broader Japanese/Korean Art sale",
+          "source_url": "christies.com/en/results"
+        },
+        {
+          "description": "Under the Wave off Kanagawa, Thirty-six Views of Mount Fuji",
+          "sale_price": 2800000,
+          "sale_date": "2025-11",
+          "auction_house": "Sotheby's Hong Kong",
+          "lot_number": "Okada Museum of Art sale",
+          "condition": "Fine impression, Okada Museum provenance",
+          "key_differences": "New world record for the print. Museum provenance (Okada Museum)",
+          "source_url": "sothebys.com"
+        },
+        {
+          "description": "Under the Wave off Kanagawa, Thirty-six Views of Mount Fuji",
+          "sale_price": 2760000,
+          "sale_date": "2023-03",
+          "auction_house": "Christie's New York",
+          "lot_number": "N/A",
+          "condition": "Early impression",
+          "key_differences": "Previous record for the print",
+          "source_url": "christies.com"
+        }
+      ],
+      "estimated_range": {
+        "low": 500000,
+        "mid": 1500000,
+        "high": 3000000,
+        "currency": "USD"
+      },
+      "methodology": "Based on three verified auction results (2023-2025). Range reflects impression quality, condition, and provenance factors.",
+      "sources": [
+        "Christie's Japanese and Korean Art, September 17, 2024 — official results",
+        "Sotheby's Okada Museum of Art sale, November 2025 — official results",
+        "Christie's New York, March 2023 — official results"
+      ],
+      "verified_by": "source_verified",
+      "last_verified": "2026-05-14",
+      "created_at": "2026-05-14T13:28:36.376102Z"
+    },
+    {
+      "id": "pc-ukiyoe-utamaro-v2",
+      "type": "price_comparable",
+      "category": "ukiyoe",
+      "subject": "Kitagawa Utamaro — Fukagawa no Yuki (Fukagawa in Snow)",
+      "comparables": [
+        {
+          "description": "Fukagawa no Yuki — monumental triptych painting, Okada Museum provenance",
+          "sale_price": 7100000,
+          "sale_date": "2025-11",
+          "auction_house": "Sotheby's Hong Kong",
+          "lot_number": "Okada Museum of Art sale",
+          "condition": "Museum quality",
+          "key_differences": "World record for Utamaro. Most valuable ukiyo-e painting ever sold at auction.",
+          "source_url": "sothebys.com"
+        }
+      ],
+      "estimated_range": {
+        "low": 3000000,
+        "mid": 5000000,
+        "high": 8000000,
+        "currency": "USD"
+      },
+      "methodology": "Based on single verified world record sale. Range is speculative due to unique nature of this work.",
+      "sources": [
+        "Sotheby's Hong Kong, Okada Museum of Art sale, November 2025 — HK$55.275M / US$7.1M"
+      ],
+      "verified_by": "source_verified",
+      "last_verified": "2026-05-14",
+      "created_at": "2026-05-14T13:28:36.376102Z"
+    },
+    {
+      "id": "pc-ukiyoe-hokusai-set-v2",
+      "type": "price_comparable",
+      "category": "ukiyoe",
+      "subject": "Katsushika Hokusai — Complete Thirty-six Views of Mount Fuji Set",
+      "comparables": [
+        {
+          "description": "Complete set of Thirty-six Views of Mount Fuji (46 prints)",
+          "sale_price": 3559000,
+          "sale_date": "2024-03",
+          "auction_house": "Christie's New York",
+          "lot_number": "Asian Art Week",
+          "condition": "Complete set",
+          "key_differences": "Overall Hokusai auction record at time of sale",
+          "source_url": "artsy.net/article/christies-hokusai"
+        }
+      ],
+      "estimated_range": {
+        "low": 2000000,
+        "mid": 3000000,
+        "high": 4000000,
+        "currency": "USD"
+      },
+      "methodology": "Based on single verified sale. Complete sets are extremely rare.",
+      "sources": [
+        "Christie's New York, March 2024 — complete set of Thirty-six Views, $3,559,000 (artsy.net confirmed)"
+      ],
+      "verified_by": "source_verified",
+      "last_verified": "2026-05-14",
+      "created_at": "2026-05-14T13:28:36.376102Z"
+    },
+    {
+      "id": "pc-netsuke-christies-2024",
+      "type": "price_comparable",
+      "category": "netsuke",
+      "subject": "Carved Wood Netsuke — Edo Period (Christie's 2024)",
+      "comparables": [
+        {
+          "description": "Insho (Seal-Type) Sashi-Netsuke, Edo period, from European private collection",
+          "sale_price": 37800,
+          "sale_date": "2024-09-17",
+          "auction_house": "Christie's New York",
+          "lot_number": "Japanese and Korean Art sale",
+          "condition": "Excellent",
+          "key_differences": "Over 7.5x low estimate. Top netsuke lot in the sale.",
+          "source_url": "christies.com/en/results"
+        },
+        {
+          "description": "Carved wood netsuke of a frog by Seiyodo Tomiharu",
+          "sale_price": 17600,
+          "sale_date": "2024-09-17",
+          "auction_house": "Christie's New York",
+          "lot_number": "Japanese and Korean Art sale",
+          "condition": "Good",
+          "key_differences": "Named artist (Tomiharu), standard but quality piece",
+          "source_url": "heni.com (Christie's results report)"
+        }
+      ],
+      "estimated_range": {
+        "low": 5000,
+        "mid": 20000,
+        "high": 50000,
+        "currency": "USD"
+      },
+      "methodology": "Based on two verified lots from same Christie's sale, September 2024.",
+      "sources": [
+        "Christie's Japanese and Korean Art, September 17, 2024 — artdaily.com, heni.com confirmed",
+        "christies.com official results"
+      ],
+      "verified_by": "source_verified",
+      "last_verified": "2026-05-14",
+      "created_at": "2026-05-14T13:28:36.376102Z"
+    },
+    {
+      "id": "pc-painting-hokusai-scroll-2024",
+      "type": "price_comparable",
+      "category": "painting",
+      "subject": "Katsushika Hokusai — Hanging Scroll Painting",
+      "comparables": [
+        {
+          "description": "Swimming Carp, hanging scroll painting by Hokusai",
+          "sale_price": 655200,
+          "sale_date": "2024-09-17",
+          "auction_house": "Christie's New York",
+          "lot_number": "Japanese and Korean Art sale",
+          "condition": "Good",
+          "key_differences": "Scroll painting by Hokusai — demonstrates strength of Hokusai across media",
+          "source_url": "christies.com/en/results"
+        },
+        {
+          "description": "Standing Beauty, painting by Hokusai",
+          "sale_price": 444500,
+          "sale_date": "2025-09",
+          "auction_house": "Christie's New York",
+          "lot_number": "Japanese and Korean Art sale",
+          "condition": "Good",
+          "key_differences": "Over 4x low estimate",
+          "source_url": "christies.com/en/results"
+        }
+      ],
+      "estimated_range": {
+        "low": 100000,
+        "mid": 400000,
+        "high": 700000,
+        "currency": "USD"
+      },
+      "methodology": "Based on two verified Hokusai scroll painting results from Christie's 2024-2025.",
+      "sources": [
+        "Christie's Japanese and Korean Art, September 2024 — $655,200 (Swimming Carp)",
+        "Christie's Japanese and Korean Art, September 2025 — $444,500 (Standing Beauty)"
+      ],
+      "verified_by": "source_verified",
+      "last_verified": "2026-05-14",
+      "created_at": "2026-05-14T13:28:36.376102Z"
+    },
+    {
+      "id": "pc-painting-hokusai-natsu-2025",
+      "type": "price_comparable",
+      "category": "painting",
+      "subject": "Katsushika Hokusai — Natsu no Asa (A Summer Morning)",
+      "comparables": [
+        {
+          "description": "Natsu no Asa (A Summer Morning) by Hokusai, Okada Museum provenance",
+          "sale_price": 2600000,
+          "sale_date": "2025-11",
+          "auction_house": "Sotheby's Hong Kong",
+          "lot_number": "Okada Museum of Art sale",
+          "condition": "Museum quality, institutional provenance",
+          "key_differences": "Exceptional museum provenance. Part of white-glove 100% sell-through sale.",
+          "source_url": "sothebys.com"
+        }
+      ],
+      "estimated_range": {
+        "low": 1500000,
+        "mid": 2500000,
+        "high": 3500000,
+        "currency": "USD"
+      },
+      "methodology": "Based on single verified museum deaccession sale. Museum provenance significantly impacts value.",
+      "sources": [
+        "Sotheby's Hong Kong, Okada Museum of Art sale, November 2025 — HK$20.505M / approx. US$2.6M"
+      ],
+      "verified_by": "source_verified",
+      "last_verified": "2026-05-14",
+      "created_at": "2026-05-14T13:28:36.376102Z"
+    },
+    {
+      "id": "pc-contemporary-kusama-record",
+      "type": "price_comparable",
+      "category": "contemporary",
+      "subject": "Yayoi Kusama — Untitled (Nets) 1959 / Infinity Net Paintings",
+      "comparables": [
+        {
+          "description": "Untitled (Nets) 1959 — artist auction record",
+          "sale_price": 10500000,
+          "sale_date": "2022-05-18",
+          "auction_house": "Phillips New York",
+          "lot_number": "20th Century & Contemporary Art Evening Sale",
+          "condition": "Excellent",
+          "key_differences": "Kusama's all-time auction record. Early 1959 work — peak historical significance.",
+          "source_url": "phillips.com"
+        },
+        {
+          "description": "Infinity painting, Bonhams Hong Kong",
+          "sale_price": 6000000,
+          "sale_date": "2024-05-25",
+          "auction_house": "Bonhams Hong Kong",
+          "lot_number": "N/A",
+          "condition": "Good",
+          "key_differences": "Rare combined Infinity Net + polka-dot motif work. HK$46.434M",
+          "source_url": "bonhams.com"
+        }
+      ],
+      "estimated_range": {
+        "low": 2000000,
+        "mid": 6000000,
+        "high": 11000000,
+        "currency": "USD"
+      },
+      "methodology": "Based on verified Phillips record sale (2022) and Bonhams HK result (2024). Range covers major paintings only — prints and sculptures are a different market.",
+      "sources": [
+        "Phillips New York, May 18, 2022 — Untitled (Nets) $10.5M (artist record)",
+        "Bonhams Hong Kong, May 25, 2024 — HK$46.434M / approx. $6M"
+      ],
+      "verified_by": "source_verified",
+      "last_verified": "2026-05-14",
+      "created_at": "2026-05-14T13:28:36.376102Z"
+    },
+    {
+      "id": "pc-contemporary-nara-record",
+      "type": "price_comparable",
+      "category": "contemporary",
+      "subject": "Yoshitomo Nara — Knife Behind Back (2000)",
+      "comparables": [
+        {
+          "description": "Knife Behind Back (2000) — artist auction record",
+          "sale_price": 24940000,
+          "sale_date": "2019-10-06",
+          "auction_house": "Sotheby's Hong Kong",
+          "lot_number": "Contemporary Art Evening Sale",
+          "condition": "Excellent",
+          "key_differences": "Nara's all-time auction record. HK$195.696M. Iconic large-scale painting.",
+          "source_url": "sothebys.com"
+        }
+      ],
+      "estimated_range": {
+        "low": 5000000,
+        "mid": 15000000,
+        "high": 25000000,
+        "currency": "USD"
+      },
+      "methodology": "Based on verified record sale. Note: sale was 2019 — recent market may differ. Range reflects major painting estimates.",
+      "sources": [
+        "Sotheby's Hong Kong, October 6, 2019 — HK$195.696M / US$24.94M (myartbroker.com, heni.com confirmed)"
+      ],
+      "verified_by": "source_verified",
+      "last_verified": "2026-05-14",
+      "created_at": "2026-05-14T13:28:36.376102Z"
     }
   ]
 }

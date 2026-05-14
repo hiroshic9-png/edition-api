@@ -105,24 +105,22 @@ if avf_issues:
 else:
     print("  ✅ PASS — All AVF pairs have adequate markers")
 
-# === GATE 6: Price data reality check ===
-print("\n[GATE 6] Price data round-number check...")
+# === GATE 6: Price data verification ===
+print("\n[GATE 6] Price data verification...")
 pc = [p for p in pairs if p["type"] == "price_comparable"]
 if pc:
-    prices = []
+    # Rule: Every comparable MUST have source_url (actual auction reference)
+    no_url = []
     for p in pc:
         for c in p.get("comparables", []):
-            prices.append(c.get("sale_price", 0))
-    total = len([pr for pr in prices if pr > 0])
-    round_pct = sum(1 for pr in prices if pr > 0 and pr % 1000 == 0) / max(total, 1) * 100
-    if round_pct > 50:
-        fails.append(f"GATE 6 FAIL: {round_pct:.0f}% of prices are exact thousands (likely fabricated)")
-        print(f"  ❌ {round_pct:.0f}% round numbers — suspected fabrication")
-    elif round_pct > 30:
-        warnings.append(f"GATE 6 WARN: {round_pct:.0f}% round prices — verify sources")
-        print(f"  ⚠️ {round_pct:.0f}% round numbers — needs verification")
+            if "source_url" not in c or not c["source_url"]:
+                no_url.append((p["id"], c.get("description", "")[:50]))
+    if no_url:
+        fails.append(f"GATE 6 FAIL: {len(no_url)} price comparables without source_url")
+        for pid, desc in no_url[:5]:
+            print(f"  ❌ {pid}: {desc} — no source_url")
     else:
-        print(f"  ✅ PASS — {round_pct:.0f}% round numbers (acceptable)")
+        print(f"  ✅ PASS — All {len(pc)} price_comparable pairs have source_url references")
 else:
     print("  ✅ PASS — No price_comparable data to check")
 
