@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-05-14T13:28:36.376102Z",
-  "total_pairs": 257,
+  "generated_at": "2026-05-14T13:32:48.849085Z",
+  "total_pairs": 261,
   "pairs": [
     {
       "id": "fqa-asset-met-27789",
@@ -6631,6 +6631,151 @@
       "verified_by": "source_verified",
       "last_verified": "2026-05-14",
       "created_at": "2026-05-14T13:28:36.376102Z"
+    },
+    {
+      "id": "pc-swords-daisho-bonhams-2025",
+      "type": "price_comparable",
+      "category": "swords",
+      "subject": "Daisho Set — Kaga Fujishima / Yamato Hosho Attribution",
+      "comparables": [
+        {
+          "description": "Finely mounted daisho set, katana attributed to Kaga Fujishima group, wakizashi to Yamato Hosho group",
+          "sale_price": 25600,
+          "sale_date": "2025",
+          "auction_house": "Bonhams",
+          "lot_number": "Arts of the Samurai",
+          "condition": "Good, mounted",
+          "key_differences": "Attributed to specific schools, with mounting",
+          "source_url": "bonhams.com"
+        }
+      ],
+      "estimated_range": {
+        "low": 10000,
+        "mid": 25000,
+        "high": 50000,
+        "currency": "USD"
+      },
+      "methodology": "Based on single verified Bonhams Arts of the Samurai sale result. NBTHK certification level significantly impacts pricing.",
+      "sources": [
+        "Bonhams Arts of the Samurai sale, 2025 — daisho $25,600 (bonhams.com)"
+      ],
+      "verified_by": "source_verified",
+      "last_verified": "2026-05-14",
+      "created_at": "2026-05-14T13:32:48.849085Z"
+    },
+    {
+      "id": "pc-ceramics-tenmoku-sothebys-2023",
+      "type": "price_comparable",
+      "category": "ceramics",
+      "subject": "Jian Tenmoku Tea Bowl — Southern Song Dynasty (Karamono in Japanese Tea)",
+      "comparables": [
+        {
+          "description": "Rare heirloom Jian 'nogime tenmoku' tea bowl, Southern Song Dynasty, from Japanese collection",
+          "sale_price": 617000,
+          "sale_date": "2023-10-09",
+          "auction_house": "Sotheby's Hong Kong",
+          "lot_number": "Karamono and Tea Wares sale",
+          "condition": "Good, historical Japanese provenance",
+          "key_differences": "HK$4,826,000. Chinese-made but Japanese tea ceremony provenance. Nogime (rabbit hair) type.",
+          "source_url": "sothebys.com"
+        },
+        {
+          "description": "Group of 29 tenmoku tea bowls",
+          "sale_price": 154300,
+          "sale_date": "2023-10-09",
+          "auction_house": "Sotheby's Hong Kong",
+          "lot_number": "Karamono and Tea Wares sale",
+          "condition": "Various",
+          "key_differences": "HK$1,206,500. Group lot — avg ~$5,320 per bowl.",
+          "source_url": "sothebys.com"
+        }
+      ],
+      "estimated_range": {
+        "low": 5000,
+        "mid": 50000,
+        "high": 700000,
+        "currency": "USD"
+      },
+      "methodology": "Based on verified Sotheby's Hong Kong Karamono sale, October 2023. Tenmoku bowls with Japanese tea provenance command premium over standard examples.",
+      "sources": [
+        "Sotheby's Hong Kong, October 9, 2023 — Karamono and Tea Wares, nogime tenmoku HK$4,826,000 (sothebys.com)"
+      ],
+      "verified_by": "source_verified",
+      "last_verified": "2026-05-14",
+      "created_at": "2026-05-14T13:32:48.849085Z"
+    },
+    {
+      "id": "pc-metalwork-bonhams-2023-2024",
+      "type": "price_comparable",
+      "category": "metalwork",
+      "subject": "Meiji Period Bronze and Metalwork — Decorative Arts",
+      "comparables": [
+        {
+          "description": "Pair of inlaid bronze baluster vases by Yukimasa, Meiji era",
+          "sale_price": 2600,
+          "sale_date": "2023-12",
+          "auction_house": "Bonhams London",
+          "lot_number": "Fine Japanese Art",
+          "condition": "Good",
+          "key_differences": "£2,048 incl. premium. Standard decorative Meiji metalwork.",
+          "source_url": "bonhams.com"
+        },
+        {
+          "description": "Bronze cockerel okimono, Meiji era",
+          "sale_price": 1380,
+          "sale_date": "2024",
+          "auction_house": "Bonhams London",
+          "lot_number": "Fine Japanese Art",
+          "condition": "Good",
+          "key_differences": "£1,088 incl. premium. Decorative okimono — lower end of market.",
+          "source_url": "bonhams.com"
+        }
+      ],
+      "estimated_range": {
+        "low": 500,
+        "mid": 5000,
+        "high": 50000,
+        "currency": "USD"
+      },
+      "methodology": "Based on verified Bonhams London results 2023-2024. Meiji metalwork has wide range: export-grade decorative pieces at £1-5K, while imperial exhibition masterpieces (Miyao, Myochin) can reach six figures.",
+      "sources": [
+        "Bonhams London, December 2023 — Yukimasa vases £2,048 (bonhams.com)",
+        "Bonhams London, 2024 — bronze cockerel £1,088 (bonhams.com)"
+      ],
+      "verified_by": "source_verified",
+      "last_verified": "2026-05-14",
+      "created_at": "2026-05-14T13:32:48.849085Z"
+    },
+    {
+      "id": "pc-lacquerware-inro-zeshin-record",
+      "type": "price_comparable",
+      "category": "lacquerware",
+      "subject": "Shibata Zeshin — Maki-e Inro (Historical Record)",
+      "comparables": [
+        {
+          "description": "Single-case inro by Shibata Zeshin, world record for inro at auction",
+          "sale_price": 480000,
+          "sale_date": "2012",
+          "auction_house": "Bonhams London",
+          "lot_number": "Edward Wrangham Collection",
+          "condition": "Excellent",
+          "key_differences": "£301,250. World record for an inro. From the definitive Wrangham Collection. Historical benchmark.",
+          "source_url": "bonhams.com"
+        }
+      ],
+      "estimated_range": {
+        "low": 50000,
+        "mid": 200000,
+        "high": 500000,
+        "currency": "USD"
+      },
+      "methodology": "Based on verified world record sale. Zeshin inro at this level are extraordinarily rare. Note: this 2012 result remains the benchmark — no subsequent inro has exceeded it.",
+      "sources": [
+        "Bonhams London, 2012 — Zeshin inro £301,250 / world record (bonhams.com, Edward Wrangham Collection sale)"
+      ],
+      "verified_by": "source_verified",
+      "last_verified": "2026-05-14",
+      "created_at": "2026-05-14T13:32:48.849085Z"
     }
   ]
 }
