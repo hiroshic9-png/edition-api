@@ -195,7 +195,8 @@
       "description": "Mary Griggs Burke Collection. Pair of hanging scrolls; ink and light color on paper",
       "significance": "Metropolitan Museum of Art",
       "source": "Metropolitan Museum of Art",
-      "source_url": "https://www.metmuseum.org/art/collection/search/45464"
+      "source_url": "https://www.metmuseum.org/art/collection/search/45464",
+      "license": "CC0"
     },
     {
       "id": "met-44866",
@@ -212,7 +213,8 @@
       "description": "The Howard Mansfield Collection. Powdered gold (maki-e) on lacquer with ceramic, lead, and mother-of-pearl inlays",
       "significance": "Metropolitan Museum of Art, Accession: 36.100.188",
       "source": "Metropolitan Museum of Art",
-      "source_url": "https://www.metmuseum.org/art/collection/search/44866"
+      "source_url": "https://www.metmuseum.org/art/collection/search/44866",
+      "license": "CC0"
     },
     {
       "id": "met-50688",
@@ -229,7 +231,8 @@
       "description": "Gift of Mr. and Mrs. Paul T. Nomura. Embroidery and gold leaf on plain-weave silk",
       "significance": "Metropolitan Museum of Art, Accession: 1992.253",
       "source": "Metropolitan Museum of Art",
-      "source_url": "https://www.metmuseum.org/art/collection/search/50688"
+      "source_url": "https://www.metmuseum.org/art/collection/search/50688",
+      "license": "CC0"
     },
     {
       "id": "met-25649",
@@ -246,7 +249,8 @@
       "description": "Rogers Fund, 1912. Iron, shakudō, shibuichi, gold, bronze, copper",
       "significance": "Metropolitan Museum of Art, Accession: 12.37.176",
       "source": "Metropolitan Museum of Art",
-      "source_url": "https://www.metmuseum.org/art/collection/search/25649"
+      "source_url": "https://www.metmuseum.org/art/collection/search/25649",
+      "license": "CC0"
     },
     {
       "id": "met-34952",
@@ -263,7 +267,8 @@
       "description": "Gift of Mrs. Adrian H. Joline, 1914. Iron, bronze, gold, silver, copper",
       "significance": "Metropolitan Museum of Art, Accession: 14.60.53",
       "source": "Metropolitan Museum of Art",
-      "source_url": "https://www.metmuseum.org/art/collection/search/34952"
+      "source_url": "https://www.metmuseum.org/art/collection/search/34952",
+      "license": "CC0"
     },
     {
       "id": "met-53176",
@@ -280,7 +285,8 @@
       "description": "Mary Griggs Burke Collection, Gift of the Mary and Jackson Burke Foundation, 2015",
       "significance": "Metropolitan Museum of Art, Accession: 2015.300.252a, b",
       "source": "Metropolitan Museum of Art",
-      "source_url": "https://www.metmuseum.org/art/collection/search/53176"
+      "source_url": "https://www.metmuseum.org/art/collection/search/53176",
+      "license": "CC0"
     },
     {
       "id": "met-53167",
@@ -297,7 +303,8 @@
       "description": "Mary Griggs Burke Collection. Japanese cypress with lacquer and gold",
       "significance": "Metropolitan Museum of Art, Accession: 2015.300.251a, b",
       "source": "Metropolitan Museum of Art",
-      "source_url": "https://www.metmuseum.org/art/collection/search/53167"
+      "source_url": "https://www.metmuseum.org/art/collection/search/53167",
+      "license": "CC0"
     },
     {
       "id": "met-59166",
@@ -648,16 +655,17 @@
       "license": "CC0"
     },
     {
-      "id": "edition-bonsai-001",
+      "id": "met-55117",
       "category": "bonsai",
-      "title_en": "Sandai-Shōgun no Matsu — Third Shōgun's Pine",
-      "title_jp": "三代将軍の松",
-      "period": "ca. 1610 (estimated planting)",
-      "era": "Early Edo period",
-      "origin": "Imperial Bonsai Collection, Tokyo",
-      "medium": "Pinus parviflora (Japanese White Pine), ceramic container",
-      "description": "One of the most celebrated bonsai in the world — a Japanese white pine (goyōmatsu) that has been in continuous cultivation since approximately 1610, making it over 400 years old. Tradition holds that it was first trained by Tokugawa Iemitsu, the third shōgun. The tree was donated to the United States as a gift of friendship in 1976, and now resides at the National Bonsai & Penjing Museum in Washington, D.C. Its massive trunk and cascading branches speak to centuries of patient, deliberate shaping across dozens of caretakers.",
-      "significance": "This pine embodies the Japanese concept of 'living heritage' — a work of art that transcends any single lifetime. Its documented provenance across the Tokugawa shōgunate and its diplomatic significance as a gift between nations make it both a horticultural masterpiece and a cultural artifact of the highest order.",
+      "title_en": "Potted Pine Tree, Drum and Seven Herbs Planted in a Box",
+      "title_jp": "鉢植松・太鼓・箱入り七草",
+      "period": "18th–19th century",
+      "era": "Edo period (1615–1868)",
+      "origin": "Japan",
+      "medium": "Woodblock print (surimono); ink and color on paper",
+      "dimensions": "21.3 × 18.6 cm",
+      "description": "A surimono by Sunayama Gosei depicting a potted pine tree alongside a drum and a box planted with the seven herbs of spring (nanakusa). Surimono were privately commissioned prints of exceptional quality, produced in limited editions for poetry circles and special occasions. The potted pine (hachi-ue no matsu) is a New Year's motif symbolizing longevity and constancy — its careful training in a container reflects the bonsai aesthetic of nature refined through human patience.",
+      "significance": "This print captures the deep cultural connection between potted trees and Japanese seasonal celebration. The potted pine is both a decorative element and a philosophical statement — nature contained, shaped, and revered. The surimono format, with its superior paper and metallic pigments, elevates a seasonal greeting into fine art.",
       "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP138423.jpg",
       "image_alt": "Potted Pine Tree, Drum and Seven Herbs Planted in a Box by Sunayama Gosei, The Metropolitan Museum of Art",
       "source": "The Metropolitan Museum of Art",
@@ -665,16 +673,17 @@
       "license": "CC0"
     },
     {
-      "id": "edition-bonsai-002",
+      "id": "met-53986",
       "category": "bonsai",
-      "title_en": "Chokkan — Formal Upright Black Pine",
-      "title_jp": "直幹 黒松",
-      "period": "Estimated 150+ years in cultivation",
-      "era": "Modern (continuously trained)",
-      "origin": "Ōmiya Bonsai Village, Saitama",
-      "medium": "Pinus thunbergii (Japanese Black Pine), traditional stoneware container",
-      "description": "The chokkan (formal upright) style represents the most disciplined expression of bonsai aesthetics — a single, perfectly vertical trunk from which branches extend in carefully balanced asymmetry. Japanese black pine (kuromatsu) is the most revered species for this style, its rugged bark and dense needle clusters conveying an impression of great age and endurance. This form echoes the solitary pine clinging to a mountain peak, a pervasive motif in Japanese art and poetry.",
-      "significance": "The chokkan form is the foundation of bonsai training — every student begins here. Its apparent simplicity conceals decades of precise pruning, wiring, and root management. The formal upright pine is to bonsai what the tea bowl is to ceramics: the purest distillation of the art's essential principles.",
+      "title_en": "Kakemono of Monkey, Wine Cup and Potted Plants",
+      "title_jp": "掛物 猿・盃・鉢植え",
+      "period": "probably 1812",
+      "era": "Edo period (1615–1868)",
+      "origin": "Japan",
+      "medium": "Woodblock print (surimono); ink and color on paper",
+      "dimensions": "19.7 × 16.7 cm",
+      "description": "A surimono by Keisai Eisen depicting a hanging scroll painting of a monkey, accompanied by a wine cup and potted plants. The composition layers multiple levels of representation — a print depicting a painting depicting nature — in a characteristically Japanese play on illusion and reality. The potted plants reflect the Edo-period fascination with cultivating nature in miniature, the same impulse that elevated bonsai from simple horticulture to high art.",
+      "significance": "Keisai Eisen (1790–1848) was a versatile ukiyo-e artist known primarily for bijin-ga but equally accomplished in surimono. This print belongs to the H. O. Havemeyer Collection — one of the most distinguished collections of Japanese art ever assembled in America, bequeathed to the Metropolitan Museum in 1929.",
       "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP138452.jpg",
       "image_alt": "Kakemono of Monkey, Wine Cup and Potted Plants by Keisai Eisen, The Metropolitan Museum of Art",
       "source": "The Metropolitan Museum of Art",
@@ -682,16 +691,17 @@
       "license": "CC0"
     },
     {
-      "id": "edition-contemporary-001",
+      "id": "met-44858",
       "category": "contemporary",
-      "title_en": "Yōhen Tenmoku Tea Bowl — Living National Treasure",
-      "title_jp": "曜変天目茶碗（現代再現）",
-      "period": "Contemporary",
-      "era": "Modern",
+      "title_en": "Old Plum",
+      "title_jp": "老梅図",
+      "period": "1646",
+      "era": "Edo period (1615–1868)",
       "origin": "Japan",
-      "medium": "Stoneware with iron glaze, wood-fired",
-      "description": "The yōhen tenmoku — a tea bowl whose black glaze erupts with iridescent 'stars' of blue, violet, and gold — is considered the Holy Grail of Japanese ceramics. Only three complete examples survive from Song-dynasty China, all designated National Treasures of Japan. Modern Japanese potters, including Living National Treasures, have spent decades attempting to recreate this accidental miracle of chemistry and fire. The quest itself has become a defining narrative of contemporary Japanese ceramics.",
-      "significance": "The pursuit of yōhen tenmoku represents the unique relationship between tradition and innovation in Japanese contemporary art. Living National Treasures (Ningen Kokuhō) are simultaneously preservers and creators, pushing the boundaries of ancient techniques while maintaining the spiritual core of their practice.",
+      "medium": "Four sliding-door panels (fusuma); ink, color, gold, and gold leaf on paper",
+      "dimensions": "174.6 × 485.5 cm (overall)",
+      "description": "One of the most celebrated works in Japanese painting — Kano Sansetsu's monumental 'Old Plum' originally decorated the fusuma (sliding doors) of Tenshōin, a sub-temple of Myōshin-ji in Kyoto. The ancient plum tree erupts from the lower left in a massive, gnarled trunk that twists and branches across all four panels with explosive energy. Young blossoms burst from aged wood — a profound metaphor for renewal emerging from endurance. The gold-leaf ground transforms the wall surface into an infinite, radiant space.",
+      "significance": "Kano Sansetsu (1589–1651) inherited the Kyoto branch of the Kanō school and pushed its decorative vocabulary to surreal extremes. This work's dramatic tension between the organic, almost violent trunk and the delicate blossoms creates an effect that feels startlingly modern — a quality that has made it one of the Metropolitan Museum's most iconic Asian art holdings.",
       "image": "https://images.metmuseum.org/CRDImages/as/original/DT229.jpg",
       "image_alt": "Old Plum by Kano Sansetsu, 1646, The Metropolitan Museum of Art",
       "source": "The Metropolitan Museum of Art",
@@ -699,16 +709,17 @@
       "license": "CC0"
     },
     {
-      "id": "edition-contemporary-002",
+      "id": "met-671024",
       "category": "contemporary",
-      "title_en": "Superflat Composition — Nihonga Meets Pop",
-      "title_jp": "スーパーフラット構図",
-      "period": "21st century",
-      "era": "Contemporary",
+      "title_en": "Goose and Reeds; Willows in the Moonlight",
+      "title_jp": "芦雁図・月下柳図",
+      "period": "right screen: 1774; left screen: 1793",
+      "era": "Edo period (1615–1868)",
       "origin": "Japan",
-      "medium": "Mixed media on canvas",
-      "description": "The Superflat movement, theorized by Takashi Murakami in 2000, argues that the flattened compositions of Edo-period painting — from Rinpa screens to ukiyo-e prints — are the true ancestors of contemporary manga and anime aesthetics. This conceptual bridge between traditional and pop Japanese art has reshaped the global art market, creating a new category where heritage and subculture merge. Contemporary artists working in this mode deliberately collapse the hierarchy between 'fine art' and 'commercial art.'",
-      "significance": "Superflat is the most commercially successful Japanese art movement of the 21st century. It demonstrates how deep knowledge of art history can generate entirely new creative frameworks — precisely the kind of connection that EDITION seeks to illuminate.",
+      "medium": "Pair of six-panel folding screens; ink, color and gold on paper",
+      "dimensions": "Each: 153.9 × 354.4 cm",
+      "description": "A pair of six-panel screens by Maruyama Ōkyo (1733–1795), the revolutionary painter who introduced Western perspective and direct observation from nature into Japanese painting. The right screen depicts a goose descending through reeds with startling naturalistic precision; the left screen captures willows bathed in moonlight with atmospheric subtlety. Created nearly twenty years apart (1774 and 1793), together they span Ōkyo's mature career and demonstrate his evolving mastery of light, atmosphere, and natural form.",
+      "significance": "Maruyama Ōkyo founded the Maruyama school, which championed shasei (painting from life) over copying classical models — a philosophical break as significant in Japanese art as Impressionism was in Europe. These screens, from the Mary Griggs Burke Collection, exemplify the union of decorative grandeur with observational truth that made Ōkyo's work revolutionary. His influence extends directly to modern Japanese painting (nihon-ga).",
       "image": "https://images.metmuseum.org/CRDImages/as/web-large/DP704980.jpg",
       "image_alt": "Goose and Reeds; Willows in the Moonlight by Maruyama Ōkyo, The Metropolitan Museum of Art",
       "source": "The Metropolitan Museum of Art",
