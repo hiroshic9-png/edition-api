@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-05-14T13:35:48.723810Z",
-  "total_pairs": 265,
+  "generated_at": "2026-05-14T13:44:01.812568Z",
+  "total_pairs": 264,
   "pairs": [
     {
       "id": "fqa-asset-met-27789",
@@ -2450,7 +2450,7 @@
         "Consult with Urasenke or Omotesenke architectural records"
       ],
       "sources": [
-        "Nakamura Masao, Tea Room Architecture",
+        "Nakamura Masao, Sukiya Kenchiku Shusei, Shogakukan, 1983 / Chashitsu o Yomu, Tankosha, 2002",
         "Urasenke Foundation architectural surveys"
       ],
       "verified_by": "source_verified",
@@ -2953,7 +2953,7 @@
       ],
       "confidence_notes": "Himotoshi wear is difficult to forge convincingly and is one of the most reliable authentication indicators",
       "sources": [
-        "Bushell, Netsuke Familiar and Unfamiliar",
+        "Bushell, Raymond, Netsuke Familiar and Unfamiliar, Weatherhill, 1975 (ISBN 978-0834801158)",
         "International Netsuke Society Journal"
       ],
       "verified_by": "source_verified",
@@ -3027,8 +3027,7 @@
       ],
       "confidence_notes": "Thread analysis under magnification is one of the most reliable textile dating methods",
       "sources": [
-        "Kyoto National Museum textile conservation",
-        "Nishimura, Japanese Embroidery History"
+        "Kyoto National Museum textile conservation"
       ],
       "verified_by": "source_verified",
       "type": "authentic_vs_fake",
@@ -3064,7 +3063,6 @@
       ],
       "confidence_notes": "XRF can definitively identify shakudo by gold content. Patina depth and character provide supplementary evidence",
       "sources": [
-        "Ogawa, Japanese Metalwork Techniques",
         "NBTHK tosogu authentication studies"
       ],
       "verified_by": "source_verified",
@@ -3830,7 +3828,7 @@
       "question": "What functional features distinguish genuine netsuke from decorative carvings (okimono)?",
       "answer": "Genuine netsuke — functional toggle objects worn at the obi — have specific physical requirements that distinguish them from purely decorative okimono: Himotoshi — two cord holes (or a natural channel) for the silk cord, typically with one hole larger than the other to accommodate the knot. The holes show wear from decades of cord friction. Compact form — netsuke must be comfortable against the body and not snag on clothing. Projecting elements are minimized or incorporated into the design. Balanced weight — the piece must hang properly when suspended by the cord. Weight distribution is deliberately designed. Smooth contact surface — the side resting against the obi should be relatively flat and smooth. Size — typically 3-5cm, rarely exceeding 7cm. Decorative okimono lack functional himotoshi (or have non-functional decorative holes), may have fragile projecting elements, and are often too large or heavy for wear. Many genuine netsuke have been converted from small okimono by drilling himotoshi — drill marks versus naturally carved channels indicate this modification.",
       "evidence": [
-        "Bushell, Netsuke Familiar and Unfamiliar",
+        "Bushell, Raymond, Netsuke Familiar and Unfamiliar, Weatherhill, 1975 (ISBN 978-0834801158)",
         "International Netsuke Society identification guides"
       ],
       "related_assets": [],
@@ -3894,7 +3892,6 @@
       "question": "How are Japanese sword fittings (tosogu) alloys analyzed for authentication?",
       "answer": "Japanese sword fittings employ distinctive alloys whose composition is diagnostic for authentication: Shakudo — copper with 3-7% gold, patinated to deep blue-black. XRF reveals gold content; genuine shakudo from specific schools shows characteristic gold percentages. Shibuichi — copper with 15-50% silver, patinated to shades of gray. Silver content varies by school — Yokoya school typically uses higher silver content than Goto. Sentoku — copper-zinc-tin alloy resembling brass, used for certain fitting types. Suaka — pure or nearly pure copper, used for specific decorative effects. Shinchu — Japanese brass (copper-zinc), distinguished from European brass by zinc content. Iron (tetsu) — used for tsuba primarily, with specific carbon content ranges by period. Authentication through metallurgical analysis identifies: anachronistic alloy compositions (e.g., modern brass passed as shakudo); incorrect gold percentage for claimed school; and modern trace elements (aluminum, titanium) absent in traditional alloys. Non-destructive XRF can determine alloy composition without sampling, though surface patination may affect readings and should be measured at abraded spots when possible.",
       "evidence": [
-        "Ogawa, Japanese Metalwork Techniques",
         "NBTHK metallurgical analysis reports"
       ],
       "related_assets": [],
@@ -4084,7 +4081,7 @@
       "question": "What are the key features of sukiya-zukuri (tea house architecture) and how are they authenticated?",
       "answer": "Sukiya-zukuri evolved from tea ceremony aesthetics, emphasizing rustic simplicity and natural materials. Key authenticating features: Tokonoma (alcove) — dimensions follow strict proportional rules codified by tea masters. Width, depth, and floor height indicate the tradition (Urasenke vs Omotesenke vs Mushanokoji). Nijiriguchi (crawling entrance) — small entrance (typically 63×66cm) requiring guests to bow when entering. Size and position follow specific school conventions. Materials — deliberate use of imperfect natural materials: bark-on posts (maru-bō), rough plaster walls (juraku-kabe), and bamboo elements. The quality of material selection — choosing the 'right' imperfection — distinguishes master work from imitation. Ceiling types — combination ceilings using different materials and heights create hierarchy within the small space. Specific patterns (sarashiki-tenjō, etc.) are period indicators. Authentication examines: whether proportions match codified standards; whether materials show genuine age and selection aesthetics; whether joinery techniques are consistent with claimed period; and whether the overall design coherently follows a specific tea tradition's conventions.",
       "evidence": [
-        "Nakamura Masao, Tea Room Architecture",
+        "Nakamura Masao, Sukiya Kenchiku Shusei, Shogakukan, 1983 / Chashitsu o Yomu, Tankosha, 2002",
         "Urasenke Foundation architectural standards"
       ],
       "related_assets": [],
@@ -4168,7 +4165,6 @@
       "question": "How does metallographic analysis distinguish tamahagane from modern steel in Japanese swords?",
       "answer": "Metallographic analysis of polished and etched cross-sections reveals the steel's internal structure. Tamahagane (traditional smelted steel) shows: heterogeneous carbon distribution (0.1-1.3% C) creating visible layers from the folding process; slag inclusions (non-metallic particles) elongated along the forging direction — these are inevitable in traditional smelting and serve as authenticity markers; ferrite-pearlite banding from differential carbon zones created during folding; and phosphorus-rich zones visible as bright areas in Nital-etched sections. Modern steel, by contrast, shows: uniform carbon distribution; absence of or minimal slag inclusions; uniform grain structure without folding artifacts; and controlled alloy elements (chromium, vanadium) not present in traditional Japanese steel. The number of visible folding layers provides evidence of the forging process — typically 10-15 folds (creating 1024-32768 layers). Excessive folding beyond 15-16 times actually degrades the steel by over-refining the grain. This metallographic evidence is considered one of the most reliable authentication methods, though it requires a microscopic sample.",
       "evidence": [
-        "Yaso Kazu, Metallurgy of Japanese Swords",
         "NBTHK scientific analysis reports"
       ],
       "related_assets": [],
@@ -4316,8 +4312,7 @@
       "question": "How do mordant analysis and dye identification authenticate Japanese textile traditions?",
       "answer": "Mordant and dye analysis provides both material identification and geographic/temporal provenance. Traditional Japanese dyeing uses specific mordant-dye combinations: aluminum mordants (from alum — myoban) with plant dyes create characteristic color fastness patterns. Iron mordants (from ferrous acetate — haguro) produce the distinctive dark purplish-black of Japanese iron-mordanted dyes. Tin mordants brighten colors but were used later in the tradition. Analytical methods include: HPLC (High Performance Liquid Chromatography) separating dye molecules by molecular weight — distinguishing natural indigo (indigotin + indirubin) from synthetic (indigotin only); mass spectrometry identifying specific plant-derived compounds unique to Japanese dye sources (e.g., specific flavonoids from Japanese murasaki root for purple); and SEM-EDS identifying mordant metal particles embedded in fibers. Period indicators: pre-Meiji textiles use exclusively natural dyes; early Meiji (1868-1890) shows a transition period with both natural and early synthetic dyes; and post-1890 synthetic dyes become increasingly dominant. The detection of synthetic dyes in a textile claiming pre-Meiji origin is definitive evidence of later date or modern production.",
       "evidence": [
-        "Kyoto Institute of Technology dye chemistry lab",
-        "Sasaki, Natural Dyes of Japan"
+        "Kyoto Institute of Technology dye chemistry lab"
       ],
       "related_assets": [],
       "tags": [
@@ -4338,7 +4333,7 @@
       "answer": "Dendrochronology — dating wood by matching annual growth ring patterns to established regional chronologies — authenticates sword mountings by dating the wooden components: scabbard (saya), handle core (tsuka), and storage chest (katana-dansu). Japanese dendrochronology benefits from well-established chronologies for hinoki (Japanese cypress), sugi (Japanese cedar), and other native species extending back thousands of years. For koshirae authentication: saya wood dating provides a terminus post quem for the mounting — the wood cannot have been worked before the tree was felled; handle core wood dates verify consistency with claimed mounting period; and storage chest dating can establish collection history. Critical limitations: wood may be significantly older than the mounting if recycled timber was used; some scabbards use tropical hardwoods (magnolia — honoki) whose growth rings are less reliable for dating due to inconsistent growing seasons; and the outer lacquer layers prevent non-destructive access to the wood surface. CT scanning can sometimes reveal ring patterns through lacquer without sampling. When dendrochronology confirms a mounting's period consistency with its blade, the combined evidence substantially strengthens attribution.",
       "evidence": [
         "Nara National Research Institute for Cultural Properties dendrochronology lab",
-        "Mitsutani, Japanese Dendrochronology Database"
+        "Mitsutani Takumi, Dendrochronology in Japan, Nara National Research Institute for Cultural Properties (nabunken.go.jp)"
       ],
       "related_assets": [],
       "tags": [
@@ -4421,7 +4416,6 @@
       "question": "How does the Japanese concept of 'patina' (sabi/fūgō) differ across material categories?",
       "answer": "Japanese aesthetic tradition values patina — the surface changes that occur through aging and use — as a positive quality rather than deterioration. This concept manifests differently across materials: Iron (tetsu) — tsuba and other iron fittings develop iron oxide patina ranging from reddish-brown to deep black. Each stage has aesthetic terminology: akasabi (red rust, undesirable), kurosabi (black patina, desirable), and the ultimate tetsusabi (iron patina, deep black with blue-violet undertones). Copper alloys — shakudo develops a deep blue-black through rokusho patination; shibuichi develops gray-silver tones. Each alloy's patina is deliberately cultivated and aesthetically valued. Bronze — temple bells and Buddhist implements develop verdigris (rokusho-sabi) that is traditionally preserved. Lacquer — aged urushi develops depth and warmth, with the lacquer becoming more translucent over centuries, allowing the underlying ground to subtly influence the surface color. Wood — exposure creates silvery-gray weathering (fūkasabi) valued in architectural and bonsai contexts. Understanding these patina aesthetics is crucial for authentication because inappropriate cleaning or re-patination destroys historical evidence and reduces value significantly.",
       "evidence": [
-        "Ogawa, Japanese Metalwork Techniques",
         "Kyoto craft conservation literature"
       ],
       "related_assets": [],
@@ -4442,7 +4436,7 @@
       "question": "What are the five main components of traditional sword mountings (koshirae)?",
       "answer": "Traditional Japanese sword mountings consist of: Tsuba — the hand guard, positioned between handle and blade. Made of iron, shakudo, or other metals with decorative designs. Functions as both protective and aesthetic element. Fuchi-kashira — the pair of metal fittings at the handle's top (fuchi) and bottom (kashira). These are made as matched sets by the same metalworker. Menuki — small ornamental metal pieces placed under the handle wrapping on each side. Originally functional grip aids, they evolved into miniature sculptures. Tsuka-ito — the handle wrapping, traditionally silk or leather cord in specific patterns (hineri-maki, katate-maki). The wrapping technique affects both aesthetics and function. Saya — the scabbard, traditionally made of honoki (magnolia) wood lacquered in various styles. May include kurikata (cord attachment), kojiri (end cap), and other metal fittings. These components are assessed both individually and as an ensemble. A well-preserved matching set of period mountings (tomo-goshirae) significantly enhances a sword's value.",
       "evidence": [
-        "Ogasawara, Japanese Sword Mountings",
+        "Ogasawara Nobuo, Japanese Swords, Hoikusha, ISBN 4-586-54022-2",
         "NBTHK educational materials"
       ],
       "related_assets": [],
@@ -4526,8 +4520,7 @@
       "question": "What are the major categories of Japanese metalwork and their authentication considerations?",
       "answer": "Japanese metalwork spans several major categories: Sword fittings (tosogu) — tsuba, fuchi-kashira, menuki, kozuka, kogai. The most collected category, with extensive reference literature and established authentication systems. Alloy analysis and school attribution are primary authentication tools. Cast bronze (seidō) — temple bells, Buddhist implements, censers, vases. Authentication focuses on casting technique, alloy composition, and patina. Meiji-era bronze okimono (display pieces) form a significant market segment. Iron kettles (tetsubin) — tea ceremony kettles from Nambu (Iwate) and Kyoto traditions. Authentication involves iron quality, casting technique, surface texture, and maker marks. Precious metal work — gold and silver objects for shrine/temple use and personal adornment. Gold purity testing and period-appropriate techniques are key. Cloisonné (shippo) — enamel on metal, reaching its peak in Meiji era. Authentication involves enamel quality, wire gauge, and maker marks. Armor fittings (katchū) — helmet bowls, face guards, and decorative elements. Require specialized knowledge of martial equipment evolution. Each category has its own community of collectors, dealers, and experts, with varying levels of authentication infrastructure.",
       "evidence": [
-        "Ogawa, Japanese Metalwork Techniques",
-        "Harris, Japanese Imperial Craftsmen"
+        "Harris, Victor, Japanese Imperial Craftsmen: Meiji Art from the Khalili Collection, British Museum Press, 1994 (ISBN 978-0714114637)"
       ],
       "related_assets": [],
       "tags": [
@@ -4694,7 +4687,7 @@
       "confidence_notes": "'Satsuma' became a generic export term. True Satsuma (from Kagoshima) is rare; most market pieces are Kyoto or Osaka imitations",
       "sources": [
         "Victoria and Albert Museum Satsuma guide",
-        "Earle, The Satsuma Homage"
+        "Earle, Joe, Splendors of Imperial Japan (Khalili Collection), 2002"
       ],
       "verified_by": "source_verified",
       "created_at": "2026-05-14T11:21:57.321026Z"
@@ -5263,7 +5256,6 @@
       "question": "What are the main categories of Japanese dyeing traditions?",
       "answer": "Japanese textile dyeing encompasses several major traditions: Indigo dyeing (ai-zome) — Japan's most ubiquitous dye tradition. Fermentation vat dyeing produces the characteristic deep blues. Multiple dippings create darker shades. Regional variations include Awa ai (Tokushima, the finest), Bingo ai, and Kaga ai. Safflower dyeing (beni-zome) — produces reds and pinks. Extremely labor-intensive — requires washing out yellow component to isolate red. Safflower-dyed silks were luxuries reserved for the upper class. Purple dyeing (murasaki-zome) — from the root of Lithospermum erythrorhizon (murasaki plant). The most prestigious color in the imperial court. Natural murasaki has characteristic warm undertone distinguishing it from synthetic purple. Persimmon tannin (kakishibu) — produces brown tones and waterproofs fabric. Used for workwear and paper. Tea dyeing (cha-zome) — brown tones from tea. Common for everyday fabrics. Each tradition has specific chemical markers detectable through HPLC analysis, enabling reliable identification of natural vs. synthetic dyes and correct tradition attribution.",
       "evidence": [
-        "Sasaki, Natural Dyes of Japan",
         "Kyoto Textile Research Institute dye guides"
       ],
       "related_assets": [],
@@ -5305,7 +5297,7 @@
       "question": "How does iconometric analysis authenticate Buddhist sculptures?",
       "answer": "Iconometry — the systematic measurement of proportional relationships in Buddhist figures — provides authentication evidence because Buddhist sculpture follows codified proportional systems documented in medieval manuals: Zuzōshō (Iconographic Compendium, 12th century) and Besson Zakki record specific face-to-body ratios, hand-to-arm proportions, and seated/standing height relationships for each deity type. Period-specific canons: Nara period follows Tang Chinese proportional systems with naturalistic human proportions; Heian early period shows elongation and heaviness; Heian late period (Jocho style) establishes the 'Japanese' canon with larger head and gentler proportions; and Kamakura period returns to more naturalistic proportions with greater anatomical accuracy. 3D scanning enables precise measurement comparison against these documented canons. A sculpture claiming Kamakura Kei school origin but following Heian proportional conventions would indicate either misdating or deliberate archaism that requires explanation. Workshop-specific variants exist within period canons, providing finer attribution evidence when sufficient comparative data exists.",
       "evidence": [
-        "Nishikawa, Butsuzo no Mikata",
+        "Nishikawa Kyotaro, Butsuzo no Mikata (仏像の見方), Geijutsu Shincho feature / general guide",
         "Nara National Museum iconometric studies"
       ],
       "related_assets": [],
@@ -5807,27 +5799,6 @@
       "verified_by": "ai_generated"
     },
     {
-      "id": "fqa-metalwork-015",
-      "type": "forensic_qa",
-      "category": "metalwork",
-      "difficulty": "intermediate",
-      "question": "What is mokume-gane and how does it authenticate metalwork origin?",
-      "answer": "Mokume-gane (wood-grain metal) is a Japanese metalworking technique creating wood-grain-like patterns by laminating, forging, and manipulating layers of contrasting metal alloys. Developed in 17th century Akita by Denbei Shoami for sword fittings. The process: layers of different alloys (copper, shakudo, shibuichi, silver, gold) are fused through diffusion bonding at high temperature; the laminated billet is forged, carved, and twisted to distort layers; polishing and patination reveal the contrasting metal layers as organic patterns. Authentication: genuine mokume-gane shows true metallurgical bonding between layers (no gaps or adhesive); each layer maintains its distinct alloy identity detectable by XRF at layer boundaries; the pattern is three-dimensional — visible in cross-section, not just on the surface; and modern mokume-gane techniques produce distinguishable patterns from period examples. The technique requires advanced metallurgical skill, making it a strong quality indicator.",
-      "evidence": [
-        "Ogawa, Japanese Metalwork Techniques",
-        "Aimé, Mokume Gane in the Art of Japan"
-      ],
-      "related_assets": [],
-      "tags": [
-        "mokume-gane",
-        "lamination",
-        "alloy",
-        "technique"
-      ],
-      "created_at": "2026-05-14T11:32:38.486454Z",
-      "verified_by": "ai_generated"
-    },
-    {
       "id": "fqa-sculpture-018",
       "type": "forensic_qa",
       "category": "sculpture",
@@ -5836,7 +5807,7 @@
       "answer": "Uchiguri is the technique of hollowing the interior of a wooden sculpture from the back to prevent cracking as the wood dries and shrinks. Its authentication significance: single-block (ichiboku) sculptures without uchiguri are prone to deep splitting — their presence or absence indicates either very early date (before the technique became standard) or deliberate choice; the hollowing pattern reveals the sculptor's understanding of wood behavior — experienced carvers hollow unevenly, removing more from thick sections; tool marks on the interior surface are diagnostic of period and skill level; the uchiguri opening is typically sealed with a separate wood panel — the fit and aging of this panel provide additional dating evidence. The technique became standard practice by the late Heian period. A sculpture claiming Kamakura date without uchiguri (unless very small) would be unusual. The interior cavity also serves practical purposes — reducing weight for large sculptures and providing space for nōnyū (dedicatory deposits).",
       "evidence": [
         "Nara National Museum conservation studies",
-        "Nishikawa, Japanese Buddhist Sculpture Techniques"
+        "Nishikawa Kyotaro & Sano Emily, The Great Age of Japanese Buddhist Sculpture AD 600-1300, 1982"
       ],
       "related_assets": [],
       "tags": [
@@ -6005,7 +5976,7 @@
       ],
       "confidence_notes": "Mounting components are frequently replaced during a blade's life. Period-matched complete koshirae are rare and valuable",
       "sources": [
-        "Ogasawara, Japanese Sword Mountings"
+        "Ogasawara Nobuo, Japanese Swords, Hoikusha, ISBN 4-586-54022-2"
       ],
       "verified_by": "source_verified",
       "created_at": "2026-05-14T11:32:38.486454Z"
@@ -6150,7 +6121,7 @@
       ],
       "confidence_notes": "Meiji metalwork ranges from imperial exhibition masterpieces to mass-produced export ware. Quality assessment is critical for accurate valuation",
       "sources": [
-        "Harris, Japanese Imperial Craftsmen"
+        "Harris, Victor, Japanese Imperial Craftsmen: Meiji Art from the Khalili Collection, British Museum Press, 1994 (ISBN 978-0714114637)"
       ],
       "verified_by": "source_verified",
       "created_at": "2026-05-14T11:32:38.486454Z"
