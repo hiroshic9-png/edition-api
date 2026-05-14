@@ -1,0 +1,115 @@
+{
+  "version": "1.0.0",
+  "created_at": "2026-05-14T14:45:48.581860+00:00",
+  "known_patterns": [
+    {
+      "id": "AIC_IMAGE_ROTATION",
+      "description": "AIC periodically rotates image_ids for artworks",
+      "detection": "image_id in our URL doesn't match current API image_id",
+      "action": "Update to current API image_id value",
+      "discovered": "2026-05-14T00:00:00Z",
+      "occurrences": 10,
+      "last_seen": "2026-05-14T00:00:00Z",
+      "source_example": null
+    },
+    {
+      "id": "MET_HTML_IN_MEDIUM",
+      "description": "Met API returns HTML tags in medium field (e.g. <i>Tsuba</i>)",
+      "detection": "HTML tags in API medium/title fields",
+      "action": "Strip HTML tags during normalization",
+      "discovered": "2026-05-14T00:00:00Z",
+      "occurrences": 3,
+      "last_seen": "2026-05-14T00:00:00Z",
+      "source_example": null
+    },
+    {
+      "id": "MET_OBJECT_REMOVAL",
+      "description": "Met Museum removes objects from API (returns 404)",
+      "detection": "API returns 404 for previously valid object ID",
+      "action": "REJECT - object cannot be verified",
+      "discovered": "2026-05-14T00:00:00Z",
+      "occurrences": 1,
+      "last_seen": "2026-05-14T00:00:00Z",
+      "source_example": null
+    },
+    {
+      "id": "PRICE_ZERO_MARKET_NOTE",
+      "description": "Price comparable with sale_price=0 is a market note, not real data",
+      "detection": "sale_price == 0 in price_comparable",
+      "action": "REJECT - price data must be real auction results only",
+      "discovered": "2026-05-14T00:00:00Z",
+      "occurrences": 1,
+      "last_seen": "2026-05-14T00:00:00Z",
+      "source_example": null
+    },
+    {
+      "id": "ESTIMATED_RANGE_NOT_SALE",
+      "description": "Estimated price ranges are not actual auction results",
+      "detection": "auction_house field contains 'estimated' or 'range'",
+      "action": "REJECT - only actual verified sale results accepted",
+      "discovered": "2026-05-14T00:00:00Z",
+      "occurrences": 1,
+      "last_seen": "2026-05-14T00:00:00Z",
+      "source_example": null
+    },
+    {
+      "id": "CREDIT_LINE_AS_DESCRIPTION",
+      "description": "Asset description is just a copy of the Met creditLine",
+      "detection": "description matches creditLine pattern (e.g. 'Gift of...')",
+      "action": "REWRITE - description must be original EDITION content",
+      "discovered": "2026-05-14T00:00:00Z",
+      "occurrences": 6,
+      "last_seen": "2026-05-14T00:00:00Z",
+      "source_example": null
+    },
+    {
+      "id": "MET_UNICODE_DASH",
+      "description": "Met API uses different dash characters (en-dash vs em-dash vs hyphen)",
+      "detection": "Unicode character mismatch in comparison",
+      "action": "Normalize dashes during comparison",
+      "discovered": "2026-05-14T00:00:00Z",
+      "occurrences": 5,
+      "last_seen": "2026-05-14T00:00:00Z",
+      "source_example": null
+    },
+    {
+      "id": "AIC_CLOUDFLARE_403",
+      "description": "AIC IIIF images return 403 for bot requests due to Cloudflare",
+      "detection": "403 error on artic.edu/iiif image URLs",
+      "action": "Known false positive - images work in browsers",
+      "discovered": "2026-05-14T00:00:00Z",
+      "occurrences": 17,
+      "last_seen": "2026-05-14T00:00:00Z",
+      "source_example": null
+    }
+  ],
+  "metrics": {
+    "total_verifications": 480,
+    "total_rejections": 4,
+    "total_corrections": 62,
+    "false_positive_rate": 0.0
+  },
+  "lessons_learned": [
+    {
+      "lesson": "Never trust API data without verification. Even trusted institutions have data quality issues.",
+      "category": "philosophy",
+      "recorded_at": "2026-05-14T00:00:00Z"
+    },
+    {
+      "lesson": "Image IDs can change without notice. Always verify against current API.",
+      "category": "technical",
+      "recorded_at": "2026-05-14T00:00:00Z"
+    },
+    {
+      "lesson": "Price data must come from actual auction results, never estimates or market notes.",
+      "category": "data_quality",
+      "recorded_at": "2026-05-14T00:00:00Z"
+    },
+    {
+      "lesson": "Descriptions copied from API creditLines are not acceptable. All text must be original.",
+      "category": "originality",
+      "recorded_at": "2026-05-14T00:00:00Z"
+    }
+  ],
+  "last_updated": "2026-05-14T14:56:09.067443+00:00"
+}

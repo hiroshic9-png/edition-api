@@ -1,0 +1,71 @@
+name: EDITION Integrity Audit
+
+on:
+  # 週次: 毎週日曜 UTC 0:00 (JST 9:00)
+  schedule:
+    - cron: '0 0 * * 0'
+  
+  # データ変更時に自動実行
+  push:
+    paths:
+      - 'data/assets.json'
+      - 'data/training_pairs.json'
+      - 'data/categories.json'
+  
+  # 手動実行
+  workflow_dispatch:
+
+jobs:
+  integrity-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      # Initialize knowledge base if needed
+      - name: Initialize Knowledge Base
+        working-directory: scripts/integrity
+        run: python learning_loop.py --init
+      
+      # CHECKPOINT ALPHA — Source Authentication
+      - name: Checkpoint Alpha - Source Authentication
+        working-directory: scripts/integrity
+        run: python checkpoint_alpha.py
+      
+      # CHECKPOINT BRAVO — API Cross-Reference
+      - name: Checkpoint Bravo - API Verification
+        working-directory: scripts/integrity
+        run: python checkpoint_bravo.py
+      
+      # CHECKPOINT CHARLIE — Originality Check
+      - name: Checkpoint Charlie - Originality Guard
+        working-directory: scripts/integrity
+        run: python checkpoint_charlie.py
+        continue-on-error: true  # REWRITE warnings don't block deploy
+      
+      # Legacy quality gates (backward compatibility)
+      - name: Quality Gate
+        run: python scripts/quality_gate.py
+      
+      - name: Data Integrity Validator
+        run: python scripts/validate_data_integrity.py
+      
+      # Continuous Audit (weekly only)
+      - name: Continuous Audit
+        if: github.event_name == 'schedule'
+        working-directory: scripts/integrity
+        run: python continuous_audit.py
+      
+      # Archive audit results
+      - name: Archive Audit Results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-results-${{ github.run_number }}
+          path: data/audit_log/
+          retention-days: 90

@@ -1,0 +1,602 @@
+[
+  {
+    "asset_id": "met-27789",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:39.765767+00:00",
+    "originality_score": 74,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-24978",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:40.384998+00:00",
+    "originality_score": 90,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-24975",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:41.022212+00:00",
+    "originality_score": 86,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-24948",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:42.164958+00:00",
+    "originality_score": 92,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-24617",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:42.771486+00:00",
+    "originality_score": 81,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-49282",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:43.313003+00:00",
+    "originality_score": 80,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-63180",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:43.949654+00:00",
+    "originality_score": 80,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-53002",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:44.493688+00:00",
+    "originality_score": 75,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-39799",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:45.633557+00:00",
+    "originality_score": 62,
+    "issues": [],
+    "rewrite_required": true,
+    "verdict": "REWRITE",
+    "note": null
+  },
+  {
+    "asset_id": "met-37256",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:46.260473+00:00",
+    "originality_score": 89,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-44866",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:46.974186+00:00",
+    "originality_score": 73,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-50688",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:47.625839+00:00",
+    "originality_score": 86,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-25649",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:48.226900+00:00",
+    "originality_score": 80,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-34952",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:49.288723+00:00",
+    "originality_score": 70,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-53176",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:49.969225+00:00",
+    "originality_score": 76,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-53167",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:50.523498+00:00",
+    "originality_score": 89,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-59166",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:51.047817+00:00",
+    "originality_score": 81,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-63933",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:51.580844+00:00",
+    "originality_score": 80,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-671043",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:52.625505+00:00",
+    "originality_score": 81,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-671018",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:53.256489+00:00",
+    "originality_score": 82,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-57224",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:53.792940+00:00",
+    "originality_score": 76,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-23935",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:54.638174+00:00",
+    "originality_score": 84,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-53238",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:55.203589+00:00",
+    "originality_score": 75,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-45401",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:56.405170+00:00",
+    "originality_score": 70,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-44604",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:56.943924+00:00",
+    "originality_score": 75,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-61851",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:57.495964+00:00",
+    "originality_score": 88,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-45052",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:58.112469+00:00",
+    "originality_score": 78,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-37270",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:58.729635+00:00",
+    "originality_score": 88,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-37277",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:51:59.792358+00:00",
+    "originality_score": 93,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-59054",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:00.449610+00:00",
+    "originality_score": 87,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-59052",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:00.977980+00:00",
+    "originality_score": 71,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-58927",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:01.520430+00:00",
+    "originality_score": 73,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-58588",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:02.046524+00:00",
+    "originality_score": 87,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-39664",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:03.191036+00:00",
+    "originality_score": 79,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-45258",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:03.747850+00:00",
+    "originality_score": 77,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-53456",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:04.307918+00:00",
+    "originality_score": 78,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-55117",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:04.922484+00:00",
+    "originality_score": 77,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-53986",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:05.970217+00:00",
+    "originality_score": 72,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-44858",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:06.575803+00:00",
+    "originality_score": 79,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "met-671024",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:07.123923+00:00",
+    "originality_score": 70,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "artic-111380",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:08.076805+00:00",
+    "originality_score": 74,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "artic-7500",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:08.982659+00:00",
+    "originality_score": 91,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "artic-8085",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:09.762249+00:00",
+    "originality_score": 90,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "artic-117634",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:10.547242+00:00",
+    "originality_score": 80,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "artic-21720",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:11.336037+00:00",
+    "originality_score": 85,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "artic-151047",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:12.260745+00:00",
+    "originality_score": 88,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "artic-88275",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:13.042816+00:00",
+    "originality_score": 89,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "artic-48619",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:13.837408+00:00",
+    "originality_score": 89,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "artic-38550",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:14.720270+00:00",
+    "originality_score": 87,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "va-O229715",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:15.024650+00:00",
+    "originality_score": 80,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": "No source texts available for comparison"
+  },
+  {
+    "asset_id": "artic-127644",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:15.934444+00:00",
+    "originality_score": 82,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "artic-11272",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:16.820310+00:00",
+    "originality_score": 81,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "va-O39087",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:17.124656+00:00",
+    "originality_score": 80,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": "No source texts available for comparison"
+  },
+  {
+    "asset_id": "va-O193278",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:17.429301+00:00",
+    "originality_score": 80,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": "No source texts available for comparison"
+  },
+  {
+    "asset_id": "artic-57703",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:18.263110+00:00",
+    "originality_score": 87,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "artic-10922",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:19.077020+00:00",
+    "originality_score": 77,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "artic-48617",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:19.953714+00:00",
+    "originality_score": 85,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "artic-27592",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:20.774478+00:00",
+    "originality_score": 75,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "artic-9512",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:21.732046+00:00",
+    "originality_score": 86,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  },
+  {
+    "asset_id": "artic-796",
+    "checkpoint": "CHARLIE",
+    "timestamp": "2026-05-14T14:52:22.641057+00:00",
+    "originality_score": 78,
+    "issues": [],
+    "rewrite_required": false,
+    "verdict": "PASS",
+    "note": null
+  }
+]
