@@ -1,0 +1,296 @@
+{
+  "total_pairs": 264,
+  "critical": 1,
+  "warnings": 25,
+  "checks": 22,
+  "issues": [
+    {
+      "id": "fqa-asset-met-671018",
+      "severity": "CHECK",
+      "issue": "Contains book/author references that need verification",
+      "detail": "['author: Tsukioka Settei']"
+    },
+    {
+      "id": "fqa-asset-met-23935",
+      "severity": "CHECK",
+      "issue": "Contains book/author references that need verification",
+      "detail": "['author: Gassan Sadakazu']"
+    },
+    {
+      "id": "fqa-asset-met-45052",
+      "severity": "CHECK",
+      "issue": "Contains book/author references that need verification",
+      "detail": "['author: Torii Kiyomasu']"
+    },
+    {
+      "id": "fqa-asset-met-37270",
+      "severity": "CHECK",
+      "issue": "Contains book/author references that need verification",
+      "detail": "['author: Kitagawa Utamaro']"
+    },
+    {
+      "id": "fqa-asset-met-58927",
+      "severity": "CHECK",
+      "issue": "Contains book/author references that need verification",
+      "detail": "['author: Koma Yasutada']"
+    },
+    {
+      "id": "fqa-asset-met-45258",
+      "severity": "CHECK",
+      "issue": "Contains book/author references that need verification",
+      "detail": "['author: Tosa Mitsunobu']"
+    },
+    {
+      "id": "fqa-asset-met-55117",
+      "severity": "CHECK",
+      "issue": "Contains book/author references that need verification",
+      "detail": "['author: Sunayama Gosei']"
+    },
+    {
+      "id": "fqa-asset-met-53986",
+      "severity": "CHECK",
+      "issue": "Contains book/author references that need verification",
+      "detail": "['author: Keisai Eisen']"
+    },
+    {
+      "id": "fqa-asset-artic-117634",
+      "severity": "CHECK",
+      "issue": "Contains book/author references that need verification",
+      "detail": "['author: Fujiwara Teruhiro']"
+    },
+    {
+      "id": "fqa-asset-artic-21720",
+      "severity": "CHECK",
+      "issue": "Contains book/author references that need verification",
+      "detail": "['author: Katsushika Hokusai']"
+    },
+    {
+      "id": "fqa-asset-artic-151047",
+      "severity": "CHECK",
+      "issue": "Contains book/author references that need verification",
+      "detail": "['author: Miyagawa Ch']"
+    },
+    {
+      "id": "fqa-asset-artic-48619",
+      "severity": "CHECK",
+      "issue": "Contains book/author references that need verification",
+      "detail": "['author: Somada Mitsumine']"
+    },
+    {
+      "id": "fqa-asset-artic-127644",
+      "severity": "CHECK",
+      "issue": "Contains book/author references that need verification",
+      "detail": "['author: Tosa Mitsuoki']"
+    },
+    {
+      "id": "fqa-asset-artic-57703",
+      "severity": "CHECK",
+      "issue": "Contains book/author references that need verification",
+      "detail": "['author: Niwa Tokei']"
+    },
+    {
+      "id": "fqa-asset-artic-10922",
+      "severity": "CHECK",
+      "issue": "Contains book/author references that need verification",
+      "detail": "['author: Utagawa Hiroshige']"
+    },
+    {
+      "id": "fqa-asset-artic-48617",
+      "severity": "CHECK",
+      "issue": "Contains book/author references that need verification",
+      "detail": "['author: Koma Ky']"
+    },
+    {
+      "id": "fqa-ceramics-015",
+      "severity": "WARNING",
+      "issue": "Contains specific numerical claims but not source_verified",
+      "detail": "claims: ['percentage: 20%']"
+    },
+    {
+      "id": "fqa-ceramics-015",
+      "severity": "CHECK",
+      "issue": "Contains temperature claims needing verification",
+      "detail": "temperatures: ['500']"
+    },
+    {
+      "id": "fqa-metalwork-011",
+      "severity": "WARNING",
+      "issue": "Contains specific numerical claims but not source_verified",
+      "detail": "claims: ['percentage: 7%', 'percentage: 50%']"
+    },
+    {
+      "id": "fqa-architecture-011",
+      "severity": "CHECK",
+      "issue": "Contains book/author references that need verification",
+      "detail": "['author: Tang Chinese']"
+    },
+    {
+      "id": "fqa-cross-009",
+      "severity": "WARNING",
+      "issue": "Contains specific numerical claims but not source_verified",
+      "detail": "claims: ['percentage: 1.3%']"
+    },
+    {
+      "id": "fqa-market-001",
+      "severity": "WARNING",
+      "issue": "Contains specific numerical claims but not source_verified",
+      "detail": "claims: ['price: $2,000,', 'price: $500,000']"
+    },
+    {
+      "id": "fqa-market-002",
+      "severity": "CHECK",
+      "issue": "Contains book/author references that need verification",
+      "detail": "['author: Matsudaira Fumai']"
+    },
+    {
+      "id": "fqa-market-004",
+      "severity": "WARNING",
+      "issue": "Contains specific numerical claims but not source_verified",
+      "detail": "claims: ['percentage: 50%']"
+    },
+    {
+      "id": "fqa-sculpture-016",
+      "severity": "CHECK",
+      "issue": "Contains book/author references that need verification",
+      "detail": "['author: Korean Baekje']"
+    },
+    {
+      "id": "fqa-cross-019",
+      "severity": "WARNING",
+      "issue": "Contains specific numerical claims but not source_verified",
+      "detail": "claims: ['percentage: 20%']"
+    },
+    {
+      "id": "fqa-swords-023",
+      "severity": "WARNING",
+      "issue": "Contains specific numerical claims but not source_verified",
+      "detail": "claims: ['price: $100,000', 'price: $5,000.']"
+    },
+    {
+      "id": "fqa-ceramics-022",
+      "severity": "WARNING",
+      "issue": "Contains specific numerical claims but not source_verified",
+      "detail": "claims: ['percentage: 50%']"
+    },
+    {
+      "id": "fqa-painting-015",
+      "severity": "CHECK",
+      "issue": "Contains book/author references that need verification",
+      "detail": "['author: Kano Masanobu', 'author: Tosa Mitsunobu']"
+    },
+    {
+      "id": "fqa-contemporary-015",
+      "severity": "WARNING",
+      "issue": "Contains specific numerical claims but not source_verified",
+      "detail": "claims: ['percentage: 25%']"
+    },
+    {
+      "id": "fqa-contemporary-016",
+      "severity": "CHECK",
+      "issue": "Contains book/author references that need verification",
+      "detail": "['author: Takashi Murakami', 'author: Kaikai Kiki Co']"
+    },
+    {
+      "id": "fqa-netsuke-016",
+      "severity": "WARNING",
+      "issue": "Contains specific numerical claims but not source_verified",
+      "detail": "claims: ['percentage: 200%']"
+    },
+    {
+      "id": "pc-ukiyoe-hokusai-wave-v2",
+      "severity": "WARNING",
+      "issue": "Comparable #2 has non-standard date format",
+      "detail": "date: 2025-11"
+    },
+    {
+      "id": "pc-ukiyoe-hokusai-wave-v2",
+      "severity": "WARNING",
+      "issue": "Comparable #3 has non-standard date format",
+      "detail": "date: 2023-03"
+    },
+    {
+      "id": "pc-ukiyoe-utamaro-v2",
+      "severity": "WARNING",
+      "issue": "Comparable #1 has non-standard date format",
+      "detail": "date: 2025-11"
+    },
+    {
+      "id": "pc-ukiyoe-hokusai-set-v2",
+      "severity": "WARNING",
+      "issue": "Comparable #1 has non-standard date format",
+      "detail": "date: 2024-03"
+    },
+    {
+      "id": "pc-painting-hokusai-scroll-2024",
+      "severity": "WARNING",
+      "issue": "Comparable #2 has non-standard date format",
+      "detail": "date: 2025-09"
+    },
+    {
+      "id": "pc-painting-hokusai-natsu-2025",
+      "severity": "WARNING",
+      "issue": "Comparable #1 has non-standard date format",
+      "detail": "date: 2025-11"
+    },
+    {
+      "id": "pc-swords-daisho-bonhams-2025",
+      "severity": "WARNING",
+      "issue": "Comparable #1 has non-standard date format",
+      "detail": "date: 2025"
+    },
+    {
+      "id": "pc-metalwork-bonhams-2023-2024",
+      "severity": "WARNING",
+      "issue": "Comparable #1 has non-standard date format",
+      "detail": "date: 2023-12"
+    },
+    {
+      "id": "pc-metalwork-bonhams-2023-2024",
+      "severity": "WARNING",
+      "issue": "Comparable #2 has non-standard date format",
+      "detail": "date: 2024"
+    },
+    {
+      "id": "pc-lacquerware-inro-zeshin-record",
+      "severity": "WARNING",
+      "issue": "Comparable #1 has non-standard date format",
+      "detail": "date: 2012"
+    },
+    {
+      "id": "pc-sculpture-unkei-record",
+      "severity": "WARNING",
+      "issue": "Comparable #1 has non-standard date format",
+      "detail": "date: 2008-03"
+    },
+    {
+      "id": "pc-bonsai-kobayashi-whitepine",
+      "severity": "WARNING",
+      "issue": "Comparable #1 has non-standard date format",
+      "detail": "date: 2011"
+    },
+    {
+      "id": "pc-textiles-market-overview",
+      "severity": "CRITICAL",
+      "issue": "Comparable #1 has invalid price",
+      "detail": "price: 0"
+    },
+    {
+      "id": "pc-textiles-market-overview",
+      "severity": "WARNING",
+      "issue": "Comparable #1 has non-standard date format",
+      "detail": "date: 2024"
+    },
+    {
+      "id": "pc-architecture-screens-market",
+      "severity": "WARNING",
+      "issue": "Comparable #1 has non-standard date format",
+      "detail": "date: 2023-2024"
+    },
+    {
+      "id": "pc-architecture-screens-market",
+      "severity": "WARNING",
+      "issue": "Comparable #2 has non-standard date format",
+      "detail": "date: 2023-2024"
+    }
+  ]
+}

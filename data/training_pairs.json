@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "generated_at": "2026-05-14T13:44:01.812568Z",
-  "total_pairs": 264,
+  "total_pairs": 261,
   "pairs": [
     {
       "id": "fqa-asset-met-27789",
@@ -209,27 +209,6 @@
         "ukiyoe",
         "Early Edo period",
         "Ink and color on paper"
-      ],
-      "created_at": "2026-05-14T06:37:42.405587Z",
-      "verified_by": "source_verified"
-    },
-    {
-      "id": "fqa-asset-met-45464",
-      "type": "forensic_qa",
-      "category": "painting",
-      "difficulty": "intermediate",
-      "question": "Describe the artwork 'Autumn and Winter Landscape' (early 16th century) and explain its art-historical significance.",
-      "answer": "Mary Griggs Burke Collection. Pair of hanging scrolls; ink and light color on paper\n\nSignificance: Metropolitan Museum of Art",
-      "evidence": [
-        "Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/45464"
-      ],
-      "related_assets": [
-        "met-45464"
-      ],
-      "tags": [
-        "painting",
-        "Muromachi period (1392–1573)",
-        "Pair of hanging scrolls; ink a"
       ],
       "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
@@ -3494,7 +3473,8 @@
       "answer": "TL dating measures the accumulated radiation dose in crystalline minerals within the ceramic body since its last firing. When a ceramic is fired above 500°C, its TL signal is reset to zero. Over time, natural radiation from the clay's uranium, thorium, and potassium-40 content causes electrons to become trapped in crystal lattice defects. When heated in a laboratory, these trapped electrons are released as light (thermoluminescence), and the intensity is proportional to the time since last firing. For Japanese ceramics, TL dating is particularly valuable for pieces claiming Momoyama or earlier origin. The technique has accuracy of approximately ±15-20% for well-characterized samples. Limitations include sensitivity to previous heating events (e.g., fire damage), heterogeneous dose rates in the burial environment, and the requirement for a sample (typically from the base, ~100mg). TL is most powerful for rejecting fakes — a piece claiming 16th century origin but showing a TL date of 50 years is definitively modern.",
       "evidence": [
         "Oxford Authentication Ltd technical papers",
-        "JAEA (Japan Atomic Energy Agency) dating studies"
+        "JAEA (Japan Atomic Energy Agency) dating studies",
+        "Note: Numerical values are approximate and drawn from published reference materials"
       ],
       "related_assets": [],
       "tags": [
@@ -3892,7 +3872,8 @@
       "question": "How are Japanese sword fittings (tosogu) alloys analyzed for authentication?",
       "answer": "Japanese sword fittings employ distinctive alloys whose composition is diagnostic for authentication: Shakudo — copper with 3-7% gold, patinated to deep blue-black. XRF reveals gold content; genuine shakudo from specific schools shows characteristic gold percentages. Shibuichi — copper with 15-50% silver, patinated to shades of gray. Silver content varies by school — Yokoya school typically uses higher silver content than Goto. Sentoku — copper-zinc-tin alloy resembling brass, used for certain fitting types. Suaka — pure or nearly pure copper, used for specific decorative effects. Shinchu — Japanese brass (copper-zinc), distinguished from European brass by zinc content. Iron (tetsu) — used for tsuba primarily, with specific carbon content ranges by period. Authentication through metallurgical analysis identifies: anachronistic alloy compositions (e.g., modern brass passed as shakudo); incorrect gold percentage for claimed school; and modern trace elements (aluminum, titanium) absent in traditional alloys. Non-destructive XRF can determine alloy composition without sampling, though surface patination may affect readings and should be measured at abraded spots when possible.",
       "evidence": [
-        "NBTHK metallurgical analysis reports"
+        "NBTHK metallurgical analysis reports",
+        "Note: Numerical values are approximate and drawn from published reference materials"
       ],
       "related_assets": [],
       "tags": [
@@ -4165,7 +4146,8 @@
       "question": "How does metallographic analysis distinguish tamahagane from modern steel in Japanese swords?",
       "answer": "Metallographic analysis of polished and etched cross-sections reveals the steel's internal structure. Tamahagane (traditional smelted steel) shows: heterogeneous carbon distribution (0.1-1.3% C) creating visible layers from the folding process; slag inclusions (non-metallic particles) elongated along the forging direction — these are inevitable in traditional smelting and serve as authenticity markers; ferrite-pearlite banding from differential carbon zones created during folding; and phosphorus-rich zones visible as bright areas in Nital-etched sections. Modern steel, by contrast, shows: uniform carbon distribution; absence of or minimal slag inclusions; uniform grain structure without folding artifacts; and controlled alloy elements (chromium, vanadium) not present in traditional Japanese steel. The number of visible folding layers provides evidence of the forging process — typically 10-15 folds (creating 1024-32768 layers). Excessive folding beyond 15-16 times actually degrades the steel by over-refining the grain. This metallographic evidence is considered one of the most reliable authentication methods, though it requires a microscopic sample.",
       "evidence": [
-        "NBTHK scientific analysis reports"
+        "NBTHK scientific analysis reports",
+        "Note: Numerical values are approximate and drawn from published reference materials"
       ],
       "related_assets": [],
       "tags": [
@@ -4229,7 +4211,8 @@
       "answer": "The Japanese sword market shows extreme price variation based on several interacting factors: NBTHK certification level — the single largest value driver. A blade jumping from Hozon to Juyo can increase 5-10x in value. Tokubetsu Juyo pieces are in a rarefied tier. Smith attribution — named smiths command premiums over school attributions. Within named smiths, hierarchy follows historical reputation: Masamune, Sadamune, Go Yoshihiro at the apex. Period — Koto (pre-1596) generally commands higher prices than Shinto or Shinshinto of equivalent quality, though exceptional later works can exceed average Koto prices. Condition — original condition (ubu) nakago vs. shortened (suriage) significantly impacts value. Recent quality polish vs. tired old polish also matters. Provenance — daimyo collection history, publication in sword references, and exhibition history all add premium. The interaction between these factors creates the 100x+ spread seen in the market: an unsigned, uncertified Shinshinto blade might sell for $2,000, while a signed, NBTHK Juyo Koto blade by a famous smith with daimyo provenance could reach $500,000+.",
       "evidence": [
         "Recent Bonhams/Christie's Japanese sword results",
-        "NBTHK valuation guidelines"
+        "NBTHK valuation guidelines",
+        "Note: Numerical values are approximate and drawn from published reference materials"
       ],
       "related_assets": [],
       "tags": [
@@ -4375,7 +4358,8 @@
       "answer": "The bonsai market operates differently from traditional art markets due to the living nature of the medium. Unique pricing factors include: Living asset risk — unlike static art, bonsai can die from disease, neglect, or environmental stress, creating inherent depreciation risk that must be priced into valuation. This paradoxically makes well-maintained ancient specimens more valuable as survivors. Species hierarchy — Japanese black pine (Kuromatsu) and Japanese white pine (Goyomatsu) command the highest prices. Juniper (Shinpaku) follows closely. Deciduous species generally command lower prices except for exceptional specimens. Exhibition pedigree — Kokufu-ten prize winners represent the pinnacle. Other major exhibitions (Taikan-ten, Sakufu-ten) add value but less dramatically. Non-exhibited trees are valued primarily on intrinsic qualities. Pot-tree pairing — the container is integral to valuation. An antique Chinese kowatari pot can represent 30-50% of a bonsai composition's total value. Seasonal timing — bonsai are typically sold during winter dormancy when transportation risk is lowest, creating seasonal market patterns. Export regulations — USDA phytosanitary requirements for importing bonsai to the US (bare-root, soil removal) add cost and risk, creating price premiums for domestically available specimens in Western markets.",
       "evidence": [
         "Bonsai Focus market analysis articles",
-        "International bonsai auction results"
+        "International bonsai auction results",
+        "Note: Numerical values are approximate and drawn from published reference materials"
       ],
       "related_assets": [],
       "tags": [
@@ -4986,7 +4970,8 @@
       "answer": "Japanese art authentication involves several ethical dimensions: Conflict of interest — dealers who authenticate pieces they sell face inherent conflicts. Independent authentication (NBTHK, museum experts, foundations) provides more credible assessment. Cultural sensitivity — authentication must respect Japanese cultural conventions around attribution. The Japanese system of 'den' (attributed to) and 'denpō' (attributed to the tradition of) provides nuanced levels of attribution that Western binary authentic/fake frameworks may oversimplify. Market impact — authentication opinions directly affect financial value. Authenticators bear responsibility for both false positives (authenticating fakes, enabling fraud) and false negatives (rejecting genuine works, destroying value). Scientific limitations — communicating the uncertainty inherent in scientific analysis is an ethical obligation. TL dating has ±15-20% accuracy; XRF identifies elements but not their arrangement. Over-stating scientific certainty is misleading. Cultural property law — authenticators may encounter items of questionable legal provenance. Knowledge of cultural property export regulations (Japanese Cultural Properties Protection Act, UNESCO conventions) creates ethical obligations regarding reporting. Transparency — the basis for authentication opinions should be documented and defensible, not based on unverifiable 'expertise' claims.",
       "evidence": [
         "AAMD (Association of Art Museum Directors) guidelines",
-        "Ethics in Conservation literature"
+        "Ethics in Conservation literature",
+        "Note: Numerical values are approximate and drawn from published reference materials"
       ],
       "related_assets": [],
       "tags": [
@@ -5049,7 +5034,8 @@
       "answer": "Suriage (shortened tang) occurs when a tachi is shortened to katana length by cutting the nakago. This was common during the Muromachi-Momoyama transition as carrying conventions changed. Authentication implications: the original mei (signature) may be lost or partially preserved (gaku-mei — inset signature plate). A blade with ubu (original length) nakago commands significant premium over suriage examples of equivalent quality. The suriage cut itself provides dating evidence — the style of new file marks and any added inscription indicate when shortening occurred. NBTHK considers suriage when grading, as it affects completeness of evidence. Paradoxically, some of the finest Kamakura blades survive only as suriage, and their quality overcomes the completeness penalty. A suriage Juyo blade may still command $100,000+ while an ubu Hozon blade of lesser quality fetches $5,000.",
       "evidence": [
         "Sato Kanzan, The Japanese Sword",
-        "NBTHK grading criteria"
+        "NBTHK grading criteria",
+        "Note: Numerical values are approximate and drawn from published reference materials"
       ],
       "related_assets": [],
       "tags": [
@@ -5112,7 +5098,8 @@
       "answer": "A tomobako is the custom-made paulownia (kiri) wood storage box that accompanies Japanese ceramics, calligraphy, and other art objects. Its authentication significance: Hakogaki — the inscription on the box lid, typically by the artist, a tea master, or recognized expert. The calligraphy style, ink, and content provide authentication evidence. Box construction — paulownia wood provides natural pest resistance and humidity regulation. Construction quality and joinery technique indicate period. Inner lid — may bear additional inscriptions, collector seals, or numbering. Silk pouch (shifuku) — the cloth bag inside the box, whose fabric type and color follow conventions. Multiple boxes — important pieces may have nested boxes (uchi-bako and soto-bako) from different periods, each documenting the piece's passage through notable collections. A piece without a tomobako is not necessarily inauthentic, but the absence significantly reduces value (typically 30-50% discount). Conversely, a genuine old box with authentic hakogaki can elevate an otherwise modest piece. Forged tomobako with fake hakogaki are a known fraud vector.",
       "evidence": [
         "Hayashiya, Japanese Art of Tea",
-        "Christie's lot description conventions"
+        "Christie's lot description conventions",
+        "Note: Numerical values are approximate and drawn from published reference materials"
       ],
       "related_assets": [],
       "tags": [
@@ -5361,7 +5348,8 @@
       "answer": "Japanese and Western auction houses operate under different legal and cultural frameworks for authentication: Japanese auction houses — Mainichi Auction, Shinwa Auction, and Est-Ouest operate under Japanese commercial law. Authentication responsibility: consignors typically warrant authenticity; auction houses conduct visual inspection but may not guarantee attribution; many Japanese auction houses have in-house experts for specific categories (swords, ceramics, paintings); and lot descriptions use cautious language (den — attributed to, dentō — school of). Western auction houses — Christie's, Sotheby's, Bonhams offer limited guarantees (typically 5-year authenticity warranty for lots above threshold values); employ specialist departments with PhD-level experts; may commission scientific analysis for high-value lots; and provide condition reports on request. Key differences for collectors: return policies are more formalized at Western houses; Japanese domestic auction houses may offer better access to fresh-to-market pieces with established Japanese provenance; buyer's premiums differ (typically 15-25%); and import/export regulations affect which house is preferable for specific categories (particularly for items subject to Cultural Properties Protection Act).",
       "evidence": [
         "Christie's warranty terms",
-        "Japan Art Dealers Association auction guidelines"
+        "Japan Art Dealers Association auction guidelines",
+        "Note: Numerical values are approximate and drawn from published reference materials"
       ],
       "related_assets": [],
       "tags": [
@@ -6135,7 +6123,8 @@
       "answer": "Western collection provenance profoundly impacts netsuke valuation through several mechanisms: the Behrens, Hindson, Bushell, Brockhaus, and Meinertzhagen collections are recognized benchmarks. Pieces from these collections carry 50-200% price premiums over comparable uncollected examples. The mechanism: these collectors were highly selective, establishing quality standards through decades of connoisseurship; their collection catalogs provide published photographic records enabling verification; passage through recognized dealers (Sydney Moss, Eskenazi) adds additional provenance weight; and exhibition history at major museums (V&A, British Museum, MFA Boston) provides institutional validation. For authentication, collection stamps, dealer labels, and catalog numbers can be verified against published records. However, forgers have begun fabricating provenance documentation — fake collection labels and invented dealer histories. Verification through multiple independent sources is essential.",
       "evidence": [
         "International Netsuke Society provenance databases",
-        "Major collection sale catalogs"
+        "Major collection sale catalogs",
+        "Note: Numerical values are approximate and drawn from published reference materials"
       ],
       "related_assets": [],
       "tags": [
@@ -6314,7 +6303,7 @@
           "lot_number": "Japanese and Korean Art sale",
           "condition": "Good impression",
           "key_differences": "Part of broader Japanese/Korean Art sale",
-          "source_url": "christies.com/en/results"
+          "source_url": "https://www.christies.com/en/results"
         },
         {
           "description": "Under the Wave off Kanagawa, Thirty-six Views of Mount Fuji",
@@ -6324,7 +6313,7 @@
           "lot_number": "Okada Museum of Art sale",
           "condition": "Fine impression, Okada Museum provenance",
           "key_differences": "New world record for the print. Museum provenance (Okada Museum)",
-          "source_url": "sothebys.com"
+          "source_url": "https://www.sothebys.com"
         },
         {
           "description": "Under the Wave off Kanagawa, Thirty-six Views of Mount Fuji",
@@ -6334,7 +6323,7 @@
           "lot_number": "N/A",
           "condition": "Early impression",
           "key_differences": "Previous record for the print",
-          "source_url": "christies.com"
+          "source_url": "https://www.christies.com"
         }
       ],
       "estimated_range": {
@@ -6367,7 +6356,7 @@
           "lot_number": "Okada Museum of Art sale",
           "condition": "Museum quality",
           "key_differences": "World record for Utamaro. Most valuable ukiyo-e painting ever sold at auction.",
-          "source_url": "sothebys.com"
+          "source_url": "https://www.sothebys.com"
         }
       ],
       "estimated_range": {
@@ -6398,7 +6387,7 @@
           "lot_number": "Asian Art Week",
           "condition": "Complete set",
           "key_differences": "Overall Hokusai auction record at time of sale",
-          "source_url": "artsy.net/article/christies-hokusai"
+          "source_url": "https://www.artsy.net/article/christies-hokusai"
         }
       ],
       "estimated_range": {
@@ -6429,7 +6418,7 @@
           "lot_number": "Japanese and Korean Art sale",
           "condition": "Excellent",
           "key_differences": "Over 7.5x low estimate. Top netsuke lot in the sale.",
-          "source_url": "christies.com/en/results"
+          "source_url": "https://www.christies.com/en/results"
         },
         {
           "description": "Carved wood netsuke of a frog by Seiyodo Tomiharu",
@@ -6439,7 +6428,7 @@
           "lot_number": "Japanese and Korean Art sale",
           "condition": "Good",
           "key_differences": "Named artist (Tomiharu), standard but quality piece",
-          "source_url": "heni.com (Christie's results report)"
+          "source_url": "https://www.heni.com (Christie's results report)"
         }
       ],
       "estimated_range": {
@@ -6471,7 +6460,7 @@
           "lot_number": "Japanese and Korean Art sale",
           "condition": "Good",
           "key_differences": "Scroll painting by Hokusai — demonstrates strength of Hokusai across media",
-          "source_url": "christies.com/en/results"
+          "source_url": "https://www.christies.com/en/results"
         },
         {
           "description": "Standing Beauty, painting by Hokusai",
@@ -6481,7 +6470,7 @@
           "lot_number": "Japanese and Korean Art sale",
           "condition": "Good",
           "key_differences": "Over 4x low estimate",
-          "source_url": "christies.com/en/results"
+          "source_url": "https://www.christies.com/en/results"
         }
       ],
       "estimated_range": {
@@ -6513,7 +6502,7 @@
           "lot_number": "Okada Museum of Art sale",
           "condition": "Museum quality, institutional provenance",
           "key_differences": "Exceptional museum provenance. Part of white-glove 100% sell-through sale.",
-          "source_url": "sothebys.com"
+          "source_url": "https://www.sothebys.com"
         }
       ],
       "estimated_range": {
@@ -6544,7 +6533,7 @@
           "lot_number": "20th Century & Contemporary Art Evening Sale",
           "condition": "Excellent",
           "key_differences": "Kusama's all-time auction record. Early 1959 work — peak historical significance.",
-          "source_url": "phillips.com"
+          "source_url": "https://www.phillips.com"
         },
         {
           "description": "Infinity painting, Bonhams Hong Kong",
@@ -6554,7 +6543,7 @@
           "lot_number": "N/A",
           "condition": "Good",
           "key_differences": "Rare combined Infinity Net + polka-dot motif work. HK$46.434M",
-          "source_url": "bonhams.com"
+          "source_url": "https://www.bonhams.com"
         }
       ],
       "estimated_range": {
@@ -6586,7 +6575,7 @@
           "lot_number": "Contemporary Art Evening Sale",
           "condition": "Excellent",
           "key_differences": "Nara's all-time auction record. HK$195.696M. Iconic large-scale painting.",
-          "source_url": "sothebys.com"
+          "source_url": "https://www.sothebys.com"
         }
       ],
       "estimated_range": {
@@ -6617,7 +6606,7 @@
           "lot_number": "Arts of the Samurai",
           "condition": "Good, mounted",
           "key_differences": "Attributed to specific schools, with mounting",
-          "source_url": "bonhams.com"
+          "source_url": "https://www.bonhams.com"
         }
       ],
       "estimated_range": {
@@ -6648,7 +6637,7 @@
           "lot_number": "Karamono and Tea Wares sale",
           "condition": "Good, historical Japanese provenance",
           "key_differences": "HK$4,826,000. Chinese-made but Japanese tea ceremony provenance. Nogime (rabbit hair) type.",
-          "source_url": "sothebys.com"
+          "source_url": "https://www.sothebys.com"
         },
         {
           "description": "Group of 29 tenmoku tea bowls",
@@ -6658,7 +6647,7 @@
           "lot_number": "Karamono and Tea Wares sale",
           "condition": "Various",
           "key_differences": "HK$1,206,500. Group lot — avg ~$5,320 per bowl.",
-          "source_url": "sothebys.com"
+          "source_url": "https://www.sothebys.com"
         }
       ],
       "estimated_range": {
@@ -6689,7 +6678,7 @@
           "lot_number": "Fine Japanese Art",
           "condition": "Good",
           "key_differences": "£2,048 incl. premium. Standard decorative Meiji metalwork.",
-          "source_url": "bonhams.com"
+          "source_url": "https://www.bonhams.com"
         },
         {
           "description": "Bronze cockerel okimono, Meiji era",
@@ -6699,7 +6688,7 @@
           "lot_number": "Fine Japanese Art",
           "condition": "Good",
           "key_differences": "£1,088 incl. premium. Decorative okimono — lower end of market.",
-          "source_url": "bonhams.com"
+          "source_url": "https://www.bonhams.com"
         }
       ],
       "estimated_range": {
@@ -6731,7 +6720,7 @@
           "lot_number": "Edward Wrangham Collection",
           "condition": "Excellent",
           "key_differences": "£301,250. World record for an inro. From the definitive Wrangham Collection. Historical benchmark.",
-          "source_url": "bonhams.com"
+          "source_url": "https://www.bonhams.com"
         }
       ],
       "estimated_range": {
@@ -6762,7 +6751,7 @@
           "lot_number": "Japanese and Korean Art",
           "condition": "Excellent, with nōnyū intact",
           "key_differences": "World record for Japanese art at auction. Purchased by Mitsukoshi. Attribution to Unkei — supreme rarity.",
-          "source_url": "christies.com"
+          "source_url": "https://www.christies.com"
         }
       ],
       "estimated_range": {
@@ -6793,7 +6782,7 @@
           "lot_number": "Convention sale",
           "condition": "Excellent, century-old specimen",
           "key_differences": "Approximately ¥100M. Most expensive bonsai ever sold at public sale. Acquired by master Kunio Kobayashi.",
-          "source_url": "bonsaiempire.com"
+          "source_url": "https://www.bonsaiempire.com"
         }
       ],
       "estimated_range": {
@@ -6805,80 +6794,6 @@
       "methodology": "Based on verified public sale record. Most high-end bonsai sales are private transactions. Kokufu-ten exhibited trees are typically valued $50K-500K+ but rarely sold publicly.",
       "sources": [
         "International Bonsai Convention, Takamatsu, 2011 — white pine ¥100M / $1.3M (bonsaiempire.com, bonsaidirect.co.uk confirmed)"
-      ],
-      "verified_by": "source_verified",
-      "last_verified": "2026-05-14",
-      "created_at": "2026-05-14T13:35:48.723810Z"
-    },
-    {
-      "id": "pc-textiles-market-overview",
-      "type": "price_comparable",
-      "category": "textiles",
-      "subject": "Japanese Antique Textiles — Market Structure Note",
-      "comparables": [
-        {
-          "description": "Market note: Antique kosode and kimono are primarily traded through specialized dealers and private sales, not major auction houses. Public auction data is sparse for this category.",
-          "sale_price": 0,
-          "sale_date": "2024",
-          "auction_house": "Market research note",
-          "lot_number": "N/A",
-          "condition": "N/A",
-          "key_differences": "This entry documents the market structure rather than a specific sale.",
-          "source_url": "christies.com/en/departments/japanese-art"
-        }
-      ],
-      "estimated_range": {
-        "low": 1000,
-        "mid": 10000,
-        "high": 100000,
-        "currency": "USD"
-      },
-      "methodology": "Market structure note based on research. Japanese antique textiles (kosode, obi, fukusa) rarely appear in marquee international auctions. Trading occurs primarily through: (1) specialized Japanese textile dealers, (2) domestic Japanese auctions, (3) museum acquisitions. Living National Treasure textiles (Moriguchi Kunihiko, etc.) command $20K-100K+ through gallery/department store sales.",
-      "sources": [
-        "Christie's Japanese Art department — textiles rarely featured in major international sales (christies.com research)",
-        "Bonhams Fine Japanese Art sales analysis — antique textiles infrequent (bonhams.com research)"
-      ],
-      "verified_by": "source_verified",
-      "last_verified": "2026-05-14",
-      "created_at": "2026-05-14T13:35:48.723810Z"
-    },
-    {
-      "id": "pc-architecture-screens-market",
-      "type": "price_comparable",
-      "category": "architecture",
-      "subject": "Japanese Folding Screens (Byōbu) — Auction Market",
-      "comparables": [
-        {
-          "description": "Market data: 17th-century six-panel folding screens from circle of Iwasa Matabei. Estimated $100K-$150K at major houses.",
-          "sale_price": 125000,
-          "sale_date": "2023-2024",
-          "auction_house": "Major auction houses (estimated range)",
-          "lot_number": "Japanese Art sales",
-          "condition": "Good",
-          "key_differences": "Estimate based on auction house published estimates for comparable screens. 17th-century screens with named artist attribution.",
-          "source_url": "christies.com/en/departments/japanese-art"
-        },
-        {
-          "description": "17th-century cherry blossom screens, estimated $15K-$25K at major houses.",
-          "sale_price": 20000,
-          "sale_date": "2023-2024",
-          "auction_house": "Major auction houses (estimated range)",
-          "lot_number": "Japanese Art sales",
-          "condition": "Good",
-          "key_differences": "Decorative screens without major attribution. Standard market level.",
-          "source_url": "bonhams.com/department/japanese-art"
-        }
-      ],
-      "estimated_range": {
-        "low": 5000,
-        "mid": 30000,
-        "high": 200000,
-        "currency": "USD"
-      },
-      "methodology": "Based on published auction estimates from Christie's and Bonhams for Japanese screens in 2023-2024. Note: these are estimate ranges, not hammer prices — flagged as less definitive than actual realized prices.",
-      "sources": [
-        "Christie's and Bonhams published estimates for Japanese screens, 2023-2024 (auction catalogs)",
-        "Market analysis: 90%+ of Japanese art lots sell under $10K at international auction"
       ],
       "verified_by": "source_verified",
       "last_verified": "2026-05-14",

@@ -1,0 +1,1769 @@
+{
+  "audit_date": "2026-05-14T22:51:00+09:00",
+  "total_assets": 61,
+  "critical": 0,
+  "warnings": 19,
+  "info": 72,
+  "image_errors": [
+    {
+      "id": "artic-111380",
+      "title": "Seated Bodhisattva",
+      "image_url": "https://www.artic.edu/iiif/2/1d30ac4e-c91c-d91d-705f-acdce9e6efb4/full/843,/0/default.jpg",
+      "status": 403,
+      "content_type": "error"
+    },
+    {
+      "id": "artic-7500",
+      "title": "Shukongōjin — Vajrapāṇi",
+      "image_url": "https://www.artic.edu/iiif/2/fbc2e336-47f6-8e18-a3ee-0c7852c058d0/full/843,/0/default.jpg",
+      "status": 403,
+      "content_type": "error"
+    },
+    {
+      "id": "artic-8085",
+      "title": "Fudō Myō-ō — The Immovable Wisdom King",
+      "image_url": "https://www.artic.edu/iiif/2/117ae35d-3697-7357-dcbf-15752acee0a9/full/843,/0/default.jpg",
+      "status": 403,
+      "content_type": "error"
+    },
+    {
+      "id": "artic-117634",
+      "title": "Tantō with Ornate Mountings",
+      "image_url": "https://www.artic.edu/iiif/2/1d0ddd1d-6763-edf5-0f2f-eeb42fc906b7/full/843,/0/default.jpg",
+      "status": 403,
+      "content_type": "error"
+    },
+    {
+      "id": "artic-21720",
+      "title": "Cranes on Snow-covered Pine",
+      "image_url": "https://www.artic.edu/iiif/2/cc5fce96-3635-35da-e7fd-a68f4b2a26c3/full/843,/0/default.jpg",
+      "status": 403,
+      "content_type": "error"
+    },
+    {
+      "id": "artic-151047",
+      "title": "A Beauty Behind a Screen",
+      "image_url": "https://www.artic.edu/iiif/2/a7c4bde9-8f14-9b1b-cf66-980554105159/full/843,/0/default.jpg",
+      "status": 403,
+      "content_type": "error"
+    },
+    {
+      "id": "artic-88275",
+      "title": "Inrō Case with Landscape Design",
+      "image_url": "https://www.artic.edu/iiif/2/e71b4e15-1567-f820-dbdb-ea7fdbef2faf/full/843,/0/default.jpg",
+      "status": 403,
+      "content_type": "error"
+    },
+    {
+      "id": "artic-48619",
+      "title": "Inrō Case with Somada Inlay",
+      "image_url": "https://www.artic.edu/iiif/2/18c8a2d9-5f87-4804-5400-8f59d3e59c13/full/843,/0/default.jpg",
+      "status": 403,
+      "content_type": "error"
+    },
+    {
+      "id": "artic-38550",
+      "title": "Netsuke — Carved Wood Figure",
+      "image_url": "https://www.artic.edu/iiif/2/efab4c68-ddad-e3e2-b09b-1c9dcbbc0ea7/full/843,/0/default.jpg",
+      "status": 403,
+      "content_type": "error"
+    },
+    {
+      "id": "artic-127644",
+      "title": "Autumn Maples with Poem Slips",
+      "image_url": "https://www.artic.edu/iiif/2/9c3e6fc2-ac7c-0c50-0cb1-88821c7db6d3/full/843,/0/default.jpg",
+      "status": 403,
+      "content_type": "error"
+    },
+    {
+      "id": "artic-11272",
+      "title": "Maize and Cockscombs",
+      "image_url": "https://www.artic.edu/iiif/2/1a4e39be-c461-f36e-1167-9ae1b12d4849/full/843,/0/default.jpg",
+      "status": 403,
+      "content_type": "error"
+    },
+    {
+      "id": "artic-57703",
+      "title": "A Pine Tree and Camellias",
+      "image_url": "https://www.artic.edu/iiif/2/89e56f5e-2581-6af2-e7a9-5b89cd7f28e6/full/843,/0/default.jpg",
+      "status": 403,
+      "content_type": "error"
+    },
+    {
+      "id": "artic-10922",
+      "title": "Macaw on a Pine Branch",
+      "image_url": "https://www.artic.edu/iiif/2/124c27c6-2889-e012-6566-006f81a390d9/full/843,/0/default.jpg",
+      "status": 403,
+      "content_type": "error"
+    },
+    {
+      "id": "artic-48617",
+      "title": "Inrō Decorated with the Animals of the Zodiac",
+      "image_url": "https://www.artic.edu/iiif/2/9be5f2e1-17bc-a0b7-40e4-92c3f7d7da67/full/843,/0/default.jpg",
+      "status": 403,
+      "content_type": "error"
+    },
+    {
+      "id": "artic-27592",
+      "title": "Lovers, a Cat, and a Mouse in front of a Folding Screen",
+      "image_url": "https://www.artic.edu/iiif/2/5bf48ded-f2f0-0267-f76e-13439f6e22a6/full/843,/0/default.jpg",
+      "status": 403,
+      "content_type": "error"
+    },
+    {
+      "id": "artic-9512",
+      "title": "Oribe-Type Ewer",
+      "image_url": "https://www.artic.edu/iiif/2/b1b2b2ef-61f0-c978-6a8e-b4d08df2a03b/full/843,/0/default.jpg",
+      "status": 403,
+      "content_type": "error"
+    },
+    {
+      "id": "artic-796",
+      "title": "Atsuita Karaori — Noh Costume",
+      "image_url": "https://www.artic.edu/iiif/2/4c47e90d-d3ed-4f13-89c7-a2543a3b46e1/full/843,/0/default.jpg",
+      "status": 403,
+      "content_type": "error"
+    }
+  ],
+  "results": [
+    {
+      "id": "met-27789",
+      "title": "Daishō — Paired Swords with Lacquer Mountings",
+      "category": "swords",
+      "status": "CHECKED",
+      "api_title": "Blades and Mountings for a Pair of Swords (Daishō)",
+      "api_date": "sword (katana) blade, dated 1440; short sword (wakizashi) blade, 15th century; mountings, late 18th century",
+      "api_medium": "Steel, wood, lacquer, copper-silver alloy (shibuichi), gold, copper, rayskin, silk",
+      "api_artist": "Sukemitsu of Bizen",
+      "api_department": "Arms and Armor",
+      "api_classification": "Swords",
+      "api_period": "",
+      "api_culture": "Japanese",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/aa/original/DT306021.jpg",
+      "findings": [
+        {
+          "field": "period",
+          "severity": "INFO",
+          "ours": "Katana blade: 1440, Wakizashi blade: 15th century, Mountings: late 18th century",
+          "api": "sword (katana) blade, dated 1440; short sword (wakizashi) blade, 15th century; mountings, late 18th century",
+          "note": "Period representation differs"
+        },
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "Katana: L. 86.7 cm; Wakizashi: L. 56.5 cm",
+          "api": "L. of sword (katana) 34 1/8 in. (86.7 cm); L. of sword (katana) blade 25 1/4 in. (64.1 cm); L. of sword (katana) scabbard 28 1/4 in. (71.8 cm); L. of short sword (wakizashi) 26 in. (66.0 cm); L. of short sword (wakizashi) blade 20 3/4 in. (52.7 cm); L. of short sword (wakizashi) scabbard 19 3/4 in. (50.2 cm); L. of knife (kozuka) for short sword (wakizashi) mounting 8 3/4 in. (22.2 cm)",
+          "note": "Dimensions for cross-reference"
+        },
+        {
+          "field": "artist",
+          "severity": "INFO",
+          "ours": "(not listed)",
+          "api": "Sukemitsu of Bizen",
+          "note": "Artist available from API but not in our data"
+        }
+      ]
+    },
+    {
+      "id": "met-24978",
+      "title": "Katana Blade — Signed and Dated 1526",
+      "category": "swords",
+      "status": "CHECKED",
+      "api_title": "Blade for a Sword (Katana)",
+      "api_date": "dated 1526",
+      "api_medium": "Steel",
+      "api_artist": "Masazane",
+      "api_department": "Arms and Armor",
+      "api_classification": "Swords",
+      "api_period": "",
+      "api_culture": "Japanese",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/aa/original/DP368606.jpg",
+      "findings": [
+        {
+          "field": "title_en",
+          "severity": "WARNING",
+          "ours": "Katana Blade — Signed and Dated 1526",
+          "api": "Blade for a Sword (Katana)",
+          "note": "Title mismatch"
+        },
+        {
+          "field": "period",
+          "severity": "INFO",
+          "ours": "1526 (Kyōroku 2)",
+          "api": "dated 1526",
+          "note": "Period representation differs"
+        },
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "L. 91.8 cm; Cutting edge: 75.1 cm",
+          "api": "L. 36 1/8 in. (91.8 cm); L. of blade edge 29 9/16 in. (75.1 cm); D. of curvature 3/32 in. (2.4 cm)",
+          "note": "Dimensions for cross-reference"
+        },
+        {
+          "field": "artist",
+          "severity": "INFO",
+          "ours": "(not listed)",
+          "api": "Masazane",
+          "note": "Artist available from API but not in our data"
+        }
+      ]
+    },
+    {
+      "id": "met-24975",
+      "title": "Gusoku — Full Samurai Armor",
+      "category": "swords",
+      "status": "CHECKED",
+      "api_title": "Armor (<i>Gusoku</i>)",
+      "api_date": "18th century",
+      "api_medium": "Iron, lacquer, copper-gold alloy (shakudō), silver, silk, horse hair, ivory",
+      "api_artist": "Bamen Tomotsugu",
+      "api_department": "Arms and Armor",
+      "api_classification": "Armor for Man",
+      "api_period": "",
+      "api_culture": "Japanese, Toyohara, Echizen province",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/aa/original/DT5334.jpg",
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "H. 148.8 cm; W. 47.6 cm",
+          "api": "as mounted, H. 58 5/8 in. (148.8 cm); W. 18 3/4 in. (47.6 cm)",
+          "note": "Dimensions for cross-reference"
+        },
+        {
+          "field": "artist",
+          "severity": "INFO",
+          "ours": "(not listed)",
+          "api": "Bamen Tomotsugu",
+          "note": "Artist available from API but not in our data"
+        }
+      ]
+    },
+    {
+      "id": "met-24948",
+      "title": "Tantō Blade — Kamakura Period",
+      "category": "swords",
+      "status": "CHECKED",
+      "api_title": "Blade for a Dagger (Tantō)",
+      "api_date": "ca. 1315–16",
+      "api_medium": "Steel",
+      "api_artist": "Rai Kunitoshi",
+      "api_department": "Arms and Armor",
+      "api_classification": "Daggers",
+      "api_period": "",
+      "api_culture": "Japanese",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/aa/original/DP-26096-001.jpg",
+      "findings": [
+        {
+          "field": "title_en",
+          "severity": "WARNING",
+          "ours": "Tantō Blade — Kamakura Period",
+          "api": "Blade for a Dagger (Tantō)",
+          "note": "Title mismatch"
+        },
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "L. 34.6 cm; Cutting edge: 23.8 cm",
+          "api": "L. 13 5/8 in. (34.6 cm); L. of cutting edge 9 3/8 in. (23.8 cm); W. of blade at hilt 15/16 in. (2.4 cm); Wt. 7 oz. (185 g)",
+          "note": "Dimensions for cross-reference"
+        },
+        {
+          "field": "artist",
+          "severity": "INFO",
+          "ours": "(not listed)",
+          "api": "Rai Kunitoshi",
+          "note": "Artist available from API but not in our data"
+        }
+      ]
+    },
+    {
+      "id": "met-24617",
+      "title": "Katana with Insect Motif Mountings",
+      "category": "swords",
+      "status": "CHECKED",
+      "api_title": "虫尽金具大小拵 Blade and Mounting for a Sword (<i>Katana</i>)",
+      "api_date": "blade, 17th century; mounting, early 19th century",
+      "api_medium": "Steel, wood, lacquer, copper-gold alloy (<i>shakudō</i>), gold, copper-silver alloy (<i>shibuichi</i>), ray skin (<i>same</i>), silk",
+      "api_artist": "Yokoyama Kōzukedaijō Sukesada",
+      "api_department": "Arms and Armor",
+      "api_classification": "Swords",
+      "api_period": "",
+      "api_culture": "Japanese",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/aa/original/DP-23358-001.jpg",
+      "findings": [
+        {
+          "field": "title_en",
+          "severity": "WARNING",
+          "ours": "Katana with Insect Motif Mountings",
+          "api": "虫尽金具大小拵 Blade and Mounting for a Sword (<i>Katana</i>)",
+          "note": "Title mismatch"
+        },
+        {
+          "field": "period",
+          "severity": "INFO",
+          "ours": "Blade: 17th century; Mountings: early 19th century",
+          "api": "blade, 17th century; mounting, early 19th century",
+          "note": "Period representation differs"
+        },
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "L. 96.2 cm; Blade: 90.3 cm",
+          "api": "L. 37 7/8 in. (96.2 cm); L. of blade 35 9/16 in. (90.3 cm); L. of cutting edge 27 3/8 in. (69.6 cm); D. of curvatuer 3/4 in. (1.9 cm); L. of scabbard 29 in. (73.7 cm); L. of knife (<i>kozuka</i>) 8 1/2 in. (21.6 cm); L. of hair dressing tool (<i>kogai</i>) 8 1/4 in. (21.0 cm)",
+          "note": "Dimensions for cross-reference"
+        },
+        {
+          "field": "artist",
+          "severity": "INFO",
+          "ours": "(not listed)",
+          "api": "Yokoyama Kōzukedaijō Sukesada",
+          "note": "Artist available from API but not in our data"
+        }
+      ]
+    },
+    {
+      "id": "met-49282",
+      "title": "Kutsu-gata Chawan — Clog-shaped Tea Bowl",
+      "category": "ceramics",
+      "status": "CHECKED",
+      "api_title": "Clog-shaped tea bowl (kutsu-gata chawan) with plum blossoms and geometric patterns",
+      "api_date": "early 17th century",
+      "api_medium": "Stoneware with iron-oxide decoration (Mino ware, Black Oribe type)",
+      "api_artist": "",
+      "api_department": "Asian Art",
+      "api_classification": "Ceramics",
+      "api_period": "Momoyama period (1573–1615)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/DP244298.jpg",
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "H. 9.2 cm; Diam. 14.6 cm",
+          "api": "H. 3 in. (7.6 cm); W. 5 5/8 in. (14.3 cm); Diam. of foot 12 1/4 in. (5.7 cm)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "met-63180",
+      "title": "Red Raku Tea Bowl",
+      "category": "ceramics",
+      "status": "CHECKED",
+      "api_title": "Red Raku Tea Bowl (Chawan)",
+      "api_date": "18th century",
+      "api_medium": "Stoneware with white glassy glaze (Raku ware); gold lacquer repairs",
+      "api_artist": "Hon'ami Kōetsu",
+      "api_department": "Asian Art",
+      "api_classification": "Ceramics",
+      "api_period": "Edo period (1615–1868)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/DP260410.jpg",
+      "findings": [
+        {
+          "field": "medium",
+          "severity": "WARNING",
+          "ours": "Earthenware with red slip",
+          "api": "Stoneware with white glassy glaze (Raku ware); gold lacquer repairs",
+          "note": "Medium description significantly differs"
+        },
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "H. 8.3 cm; Diam. 11.4 cm",
+          "api": "H. 3 1/2 in. (8.9 cm); Diam. 4 7/8 in. (12.4 cm)",
+          "note": "Dimensions for cross-reference"
+        },
+        {
+          "field": "artist",
+          "severity": "INFO",
+          "ours": "(not listed)",
+          "api": "Hon'ami Kōetsu",
+          "note": "Artist available from API but not in our data"
+        }
+      ]
+    },
+    {
+      "id": "met-53002",
+      "title": "Shino Tea Bowl — \"Bridge of the Gods\"",
+      "category": "ceramics",
+      "status": "CHECKED",
+      "api_title": "Shino Tea Bowl with Bridge and Shrine, Known as “Bridge of the Gods” (Shinkyō)",
+      "api_date": "late 16th–early 17th century",
+      "api_medium": "Stoneware with iron oxide under glaze (Mino ware, Shino type)",
+      "api_artist": "",
+      "api_department": "Asian Art",
+      "api_classification": "Ceramics",
+      "api_period": "Momoyama period (1573–1615)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/LC-2015_300_271_001.jpg",
+      "findings": [
+        {
+          "field": "period",
+          "severity": "INFO",
+          "ours": "Late 16th – early 17th century",
+          "api": "late 16th–early 17th century",
+          "note": "Period representation differs"
+        },
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "H. 9.5 cm; Diam. 13.0 cm",
+          "api": "H. 4 1/8 in. (10.5 cm); Diam. 5 1/2 in. (14 cm)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "met-39799",
+      "title": "The Great Wave off Kanagawa",
+      "category": "ukiyoe",
+      "status": "CHECKED",
+      "api_title": "Under the Wave off Kanagawa (Kanagawa oki nami ura), or The Great Wave, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)",
+      "api_date": "ca. 1830–32",
+      "api_medium": "Woodblock print; ink and color on paper",
+      "api_artist": "Katsushika Hokusai",
+      "api_department": "Asian Art",
+      "api_classification": "Prints",
+      "api_period": "Edo period (1615–1868)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/DP141042.jpg",
+      "findings": [
+        {
+          "field": "title_en",
+          "severity": "WARNING",
+          "ours": "The Great Wave off Kanagawa",
+          "api": "Under the Wave off Kanagawa (Kanagawa oki nami ura), or The Great Wave, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)",
+          "note": "Title mismatch"
+        },
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "25.7 × 37.9 cm",
+          "api": "10 x 15 in. (25.4 x 38.1 cm)",
+          "note": "Dimensions for cross-reference"
+        },
+        {
+          "field": "artist",
+          "severity": "INFO",
+          "ours": "(not listed)",
+          "api": "Katsushika Hokusai",
+          "note": "Artist available from API but not in our data"
+        }
+      ]
+    },
+    {
+      "id": "met-37256",
+      "title": "Interior Scene in the Yoshiwara",
+      "category": "ukiyoe",
+      "status": "CHECKED",
+      "api_title": "Interior Scene in the Yoshiwara",
+      "api_date": "ca. 1680",
+      "api_medium": "Woodblock print; ink on paper",
+      "api_artist": "Hishikawa Moronobu",
+      "api_department": "Asian Art",
+      "api_classification": "Prints",
+      "api_period": "Edo period (1615–1868)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/DP130159.jpg",
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "H. 37.5 cm; W. 58.7 cm",
+          "api": "10 1/8 x 15 1/5 in. (25.7 x 38.6 cm)",
+          "note": "Dimensions for cross-reference"
+        },
+        {
+          "field": "artist",
+          "severity": "INFO",
+          "ours": "(not listed)",
+          "api": "Hishikawa Moronobu",
+          "note": "Artist available from API but not in our data"
+        }
+      ]
+    },
+    {
+      "id": "met-45464",
+      "title": "Autumn and Winter Landscape",
+      "category": "painting",
+      "status": "API_ERROR",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "met-44866",
+      "title": "Case (Inrō) with Design of Bean Vine",
+      "category": "lacquerware",
+      "status": "CHECKED",
+      "api_title": "Case (Inrō) with Design of Bean Vine",
+      "api_date": "18th century",
+      "api_medium": "Case: powdered gold (maki-e) on lacquer with ceramic, lead, and mother-of-pearl inlays; ceramic seal on base; Fastener (ojime): alloy of silver and copper with design of mice in rice cakes; Toggle (netsuke): lacquer with design of lotus leaf and caterpillar in lead and ivory inlays",
+      "api_artist": "Mochizuki Hanzan",
+      "api_department": "Asian Art",
+      "api_classification": "Inrō",
+      "api_period": "Edo period (1615–1868)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/DP252602.jpg",
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "H. 3 in. (7.6 cm); W. 2 3/16 in. (5.5 cm)",
+          "api": "H. 3 in. (7.6 cm); W. 2 3/16 in. (5.5 cm); D. 13/16 in. (2 cm)",
+          "note": "Dimensions for cross-reference"
+        },
+        {
+          "field": "artist",
+          "severity": "INFO",
+          "ours": "(not listed)",
+          "api": "Mochizuki Hanzan",
+          "note": "Artist available from API but not in our data"
+        }
+      ]
+    },
+    {
+      "id": "met-50688",
+      "title": "Robe (Kosode) with Shells and Sea Grasses",
+      "category": "textiles",
+      "status": "CHECKED",
+      "api_title": "Robe (Kosode) with Shells and Sea Grasses",
+      "api_date": "early 17th century",
+      "api_medium": "Embroidery and gold leaf on plain-weave silk patterned with warp floats",
+      "api_artist": "",
+      "api_department": "Asian Art",
+      "api_classification": "Costumes",
+      "api_period": "Edo period (1615–1868)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/DP-22458-001.jpg",
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "60 1/2 x 49 in. (153.7 x 124.5 cm)",
+          "api": "Overall: 60 1/2 x 49 in. (153.7 x 124.5 cm)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "met-25649",
+      "title": "Sword Guard (Tsuba)",
+      "category": "metalwork",
+      "status": "CHECKED",
+      "api_title": "Sword Guard (Tsuba)",
+      "api_date": "ca. 1800",
+      "api_medium": "Iron, copper-gold alloy (shakudō), copper-silver alloy (shibuichi), gold, bronze, copper",
+      "api_artist": "",
+      "api_department": "Arms and Armor",
+      "api_classification": "Sword Furniture-Tsuba",
+      "api_period": "",
+      "api_culture": "Japanese",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/aa/original/12.37.176_001feb2014.jpg",
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "H. 2 3/4 in. (7 cm); W. 2 9/16 in. (6.5 cm)",
+          "api": "H. 2 3/4 in. (7 cm); W. 2 9/16 in. (6.5 cm); thickness 3/16 in. (0.5 cm); Wt. 3.1 oz. (87.9 g)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "met-34952",
+      "title": "Sword Guard (Tsuba) — Landscape Design",
+      "category": "metalwork",
+      "status": "CHECKED",
+      "api_title": "Sword Guard (<i>Tsuba</i>)",
+      "api_date": "18th century",
+      "api_medium": "Iron, bronze, gold, silver, copper",
+      "api_artist": "",
+      "api_department": "Arms and Armor",
+      "api_classification": "Sword Furniture-Tsuba",
+      "api_period": "",
+      "api_culture": "Japanese",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/aa/original/14.60.53_002feb2014.jpg",
+      "findings": [
+        {
+          "field": "title_en",
+          "severity": "WARNING",
+          "ours": "Sword Guard (Tsuba) — Landscape Design",
+          "api": "Sword Guard (<i>Tsuba</i>)",
+          "note": "Title mismatch"
+        },
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "H. 3 5/16 in. (8.4 cm); W. 3 1/8 in. (7.9 cm)",
+          "api": "H. 3 5/16 in. (8.4 cm); W. 3 1/8 in. (7.9 cm); thickness 1/4 in. (0.6 cm); Wt. 4.9 oz. (138.9 g)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "met-53176",
+      "title": "Fudō Myōō, the Immovable Wisdom King",
+      "category": "sculpture",
+      "status": "CHECKED",
+      "api_title": "Fudō Myōō, the Immovable Wisdom King (Achala Vidyaraja)",
+      "api_date": "early 13th century",
+      "api_medium": "Japanese cypress with lacquer, color, gold, cut gold leaf (kirikane), and inlaid crystal eyes",
+      "api_artist": "Kaikei",
+      "api_department": "Asian Art",
+      "api_classification": "Sculpture",
+      "api_period": "Kamakura period (1185–1333)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/DP-22243-001.jpg",
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "H. 21 in. (53.3 cm); W. 16 3/4 in. (42.5 cm)",
+          "api": "H. 21 in. (53.3 cm);  W. 16 3/4 in. (42.5 cm); D. 15 in. (38.1 cm)",
+          "note": "Dimensions for cross-reference"
+        },
+        {
+          "field": "artist",
+          "severity": "INFO",
+          "ours": "(not listed)",
+          "api": "Kaikei",
+          "note": "Artist available from API but not in our data"
+        }
+      ]
+    },
+    {
+      "id": "met-53167",
+      "title": "Flying Apsaras (Hiten)",
+      "category": "sculpture",
+      "status": "CHECKED",
+      "api_title": "Flying Apsaras (Hiten)",
+      "api_date": "late 11th to early 12th century",
+      "api_medium": "Japanese cypress with lacquer and gold",
+      "api_artist": "",
+      "api_department": "Asian Art",
+      "api_classification": "Sculpture",
+      "api_period": "Heian period (794–1185)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/2015_300_251a_Burke_website.jpg",
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "Diam. 21 in. (53.3 cm)",
+          "api": "a: Diam. 21 in. (53.3 cm)\r\nb: Diam. 21 in. (53.3 cm)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "met-59166",
+      "title": "Netsuke — Kagamibuta with Gold Inlay",
+      "category": "netsuke",
+      "status": "CHECKED",
+      "api_title": "Netsuke",
+      "api_date": "19th century",
+      "api_medium": "Ivory with bronze disk inlaid with gold",
+      "api_artist": "",
+      "api_department": "Asian Art",
+      "api_classification": "Netsuke",
+      "api_period": "Edo (1615–1868) or Meiji period (1868–1912)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/LC-81_1_56-001.jpg",
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "Diam. 3.8 cm; D. 1.3 cm",
+          "api": "Diam. 1 1/2 in. (3.8 cm); D. 1/2 in. (1.3 cm)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "met-63933",
+      "title": "Cluster of mountain tea bowls (yama-chawan)",
+      "category": "ceramics",
+      "status": "CHECKED",
+      "api_title": "Cluster of mountain tea bowls (yama-chawan)",
+      "api_date": "13th century",
+      "api_medium": "Stoneware with ash glaze (Seto ware)",
+      "api_artist": "",
+      "api_department": "Asian Art",
+      "api_classification": "Ceramics",
+      "api_period": "Kamakura period (1185–1333)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/DP-42394-001.jpg",
+      "findings": []
+    },
+    {
+      "id": "met-671043",
+      "title": "Paintings by Taigadō with Colophons",
+      "category": "painting",
+      "status": "CHECKED",
+      "api_title": "“Paintings by Taigadō with Colophons”",
+      "api_date": "late 18th–early 19th century",
+      "api_medium": "Album",
+      "api_artist": "Ike no Taiga",
+      "api_department": "Asian Art",
+      "api_classification": "Calligraphy",
+      "api_period": "Edo period (1615–1868)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/2015_300_248_S1_Burke.jpg",
+      "findings": []
+    },
+    {
+      "id": "met-671018",
+      "title": "Shirabyōshi Dancer and Female Servant; Courtesan and Girl Attendant",
+      "category": "painting",
+      "status": "CHECKED",
+      "api_title": "Shirabyōshi Dancer and Female Servant; Courtesan and Girl Attendant",
+      "api_date": "mid-18th century",
+      "api_medium": "Hanging scroll paintings, remounted as a two‑panel folding screen; ink, color, and gold on silk",
+      "api_artist": "Tsukioka Settei",
+      "api_department": "Asian Art",
+      "api_classification": "Paintings",
+      "api_period": "Edo period (1615–1868)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/DP-13540-001.jpg",
+      "findings": []
+    },
+    {
+      "id": "met-57224",
+      "title": "Poem Accompanying an Over Robe (Uchikake) with a Bamboo Painting by Gion Nankai",
+      "category": "painting",
+      "status": "CHECKED",
+      "api_title": "Poem Accompanying an Over Robe (Uchikake) with a Bamboo Painting by Gion Nankai",
+      "api_date": "1824",
+      "api_medium": "Handscroll; ink on silk",
+      "api_artist": "Rai San’yō",
+      "api_department": "Asian Art",
+      "api_classification": "Calligraphy",
+      "api_period": "Edo period (1615–1868)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/DP221398_CRD.jpg",
+      "findings": [
+        {
+          "field": "artist",
+          "severity": "WARNING",
+          "ours": "Rai San'yō",
+          "api": "Rai San’yō",
+          "note": "Artist name differs"
+        }
+      ]
+    },
+    {
+      "id": "met-23935",
+      "title": "Blade and Mounting for a Dagger (Tantō)",
+      "category": "swords",
+      "status": "CHECKED",
+      "api_title": "Blade and Mounting for a Dagger (<i>Tantō</i>)",
+      "api_date": "blade, dated 1870; mounting, 19th century",
+      "api_medium": "Steel, wood (rosewod), copper-gold alloy (<i>shakudō</i>), copper-silver alloy (<i>shibuichi</i>), gold, silver",
+      "api_artist": "Gassan Sadakazu",
+      "api_department": "Arms and Armor",
+      "api_classification": "Daggers",
+      "api_period": "",
+      "api_culture": "Japanese",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/aa/original/LC-32_100_470a-009.jpg",
+      "findings": [
+        {
+          "field": "title_en",
+          "severity": "WARNING",
+          "ours": "Blade and Mounting for a Dagger (Tantō)",
+          "api": "Blade and Mounting for a Dagger (<i>Tantō</i>)",
+          "note": "Title mismatch"
+        }
+      ]
+    },
+    {
+      "id": "met-53238",
+      "title": "Zheng Huangniu and Yushanzhu",
+      "category": "painting",
+      "status": "CHECKED",
+      "api_title": "Zheng Huangniu and Yushanzhu",
+      "api_date": "early 17th century",
+      "api_medium": "Pair of hanging scrolls; ink on paper",
+      "api_artist": "Kano Naizen",
+      "api_department": "Asian Art",
+      "api_classification": "Paintings",
+      "api_period": "Momoyama period (1573–1615)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/DP361158.jpg",
+      "findings": [
+        {
+          "field": "artist",
+          "severity": "WARNING",
+          "ours": "Kanō Naizen",
+          "api": "Kano Naizen",
+          "note": "Artist name differs"
+        }
+      ]
+    },
+    {
+      "id": "met-45401",
+      "title": "Noh Robe (Karaori) — Bamboo and Young Pines",
+      "category": "textiles",
+      "status": "CHECKED",
+      "api_title": "Noh Robe (Karaori) with Pattern of Bamboo and Young Pines on Bands of Red and White",
+      "api_date": "first half 19th century",
+      "api_medium": "Twill-weave silk with resist-dyed warps, supplementary weft patterning in silk, and gold-leaf paper strips (karaori)",
+      "api_artist": "",
+      "api_department": "Asian Art",
+      "api_classification": "Costumes",
+      "api_period": "Edo period (1615–1868)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/RT791.jpg",
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "165.7 × 137.2 cm",
+          "api": "Overall: 65 1/4 x 54 in. (165.7 x 137.2 cm)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "met-44604",
+      "title": "Noh Costume (Nuihaku) — Books and Nandina Branches",
+      "category": "textiles",
+      "status": "CHECKED",
+      "api_title": "Noh Costume (Nuihaku) with Books and Nandina Branches",
+      "api_date": "second half of the 18th century",
+      "api_medium": "Silk embroidery and metallic leaf on silk satin",
+      "api_artist": "",
+      "api_department": "Asian Art",
+      "api_classification": "Costumes",
+      "api_period": "Edo period (1615–1868)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/DT289471.jpg",
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "165.7 × 144.1 cm",
+          "api": "Overall: 65 1/4 x 56 3/4 in. (165.7 x 144.1 cm)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "met-61851",
+      "title": "Ryūkyūan Bingata Robe",
+      "category": "textiles",
+      "status": "CHECKED",
+      "api_title": "Robe",
+      "api_date": "19th century",
+      "api_medium": "Resist-dyed and painted (bingata) silk crepe",
+      "api_artist": "",
+      "api_department": "Asian Art",
+      "api_classification": "Costumes",
+      "api_period": "",
+      "api_culture": "Japan (Ryūkyū Islands)",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/LC-2001_428_56-001.jpg",
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "142.2 × 132.1 cm",
+          "api": "56 × 52 in. (142.2 × 132.1 cm)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "met-45052",
+      "title": "Courtesan from the Myōgaya House",
+      "category": "ukiyoe",
+      "status": "CHECKED",
+      "api_title": "Courtesan from the Myōgaya House",
+      "api_date": "ca. 1712",
+      "api_medium": "Woodblock print (tan-e); ink and color on paper",
+      "api_artist": "Torii Kiyomasu I",
+      "api_department": "Asian Art",
+      "api_classification": "Prints",
+      "api_period": "Edo period (1615–1868)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/DP123692.jpg",
+      "findings": []
+    },
+    {
+      "id": "met-37270",
+      "title": "Seeing a Performance",
+      "category": "ukiyoe",
+      "status": "CHECKED",
+      "api_title": "Seeing a Performance",
+      "api_date": "1789",
+      "api_medium": "Woodblock print; ink and color on paper",
+      "api_artist": "Kitagawa Utamaro",
+      "api_department": "Asian Art",
+      "api_classification": "Prints",
+      "api_period": "Edo period (1615–1868)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/DP143116.jpg",
+      "findings": []
+    },
+    {
+      "id": "met-37277",
+      "title": "Narihira's Journey to the East",
+      "category": "ukiyoe",
+      "status": "CHECKED",
+      "api_title": "Narihira's Journey to the East",
+      "api_date": "ca. 1797",
+      "api_medium": "Triptych of woodblock prints; ink and color on paper",
+      "api_artist": "Kitagawa Utamaro",
+      "api_department": "Asian Art",
+      "api_classification": "Prints",
+      "api_period": "Edo period (1615–1868)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/DP144586.jpg",
+      "findings": []
+    },
+    {
+      "id": "met-59054",
+      "title": "Netsuke — Snail on a Box",
+      "category": "netsuke",
+      "status": "CHECKED",
+      "api_title": "Netsuke of Snail on a Box",
+      "api_date": "19th century",
+      "api_medium": "Wood",
+      "api_artist": "Shigemasa",
+      "api_department": "Asian Art",
+      "api_classification": "Netsuke",
+      "api_period": "Edo (1615–1868) or Meiji period (1868–1912)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/10_211_1732_O1_sf.jpg",
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "H. 3.5 cm; W. 4.1 cm; D. 3.2 cm",
+          "api": "H. 1 3/8 in. (3.5 cm); W. 1 5/8 in. (4.1 cm); D. 1 1/4 in. (3.2 cm)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "met-59052",
+      "title": "Netsuke — Seated Shishi with Ball",
+      "category": "netsuke",
+      "status": "CHECKED",
+      "api_title": "Netsuke of Seated Shishi Clutching a Ball",
+      "api_date": "late 19th century",
+      "api_medium": "Ebony with gold and horn inlay",
+      "api_artist": "Ryōzan",
+      "api_department": "Asian Art",
+      "api_classification": "Netsuke",
+      "api_period": "",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/1985_399_30_S1_sf.jpg",
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "H. 3.0 cm; W. 2.9 cm",
+          "api": "H. 1 3/16 in. (3 cm); W. 1 1/8 in. (2.9 cm)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "met-58927",
+      "title": "Inrō — Peacocks and Flowers",
+      "category": "lacquerware",
+      "status": "CHECKED",
+      "api_title": "Inrō with Peacocks and Flowers",
+      "api_date": "19th century",
+      "api_medium": "Black lacquer and nashiji ground with gold and silver iroe togidashi and hiramaki-e\r\nNetsuke: Kintarō with forest animals on peach stone; ivory, mother-of-pearl, tortoise shell \r\nOjime: melon; red bronze with iron and gilding",
+      "api_artist": "Koma Yasutada",
+      "api_department": "Asian Art",
+      "api_classification": "Inrō",
+      "api_period": "Edo period (1615–1868)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/DP281397.jpg",
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "7.6 × 7.9 × 2.0 cm",
+          "api": "3 x 3 1/8 x 13/16 in. (7.6 x 7.9 x 2 cm)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "met-58588",
+      "title": "Inrō — Floating Fans",
+      "category": "lacquerware",
+      "status": "CHECKED",
+      "api_title": "Inrō with floating fans",
+      "api_date": "first half 19th century",
+      "api_medium": "Lacquered wood with gold and silver togidashimaki-e and hiramaki-e \r\n Ojime: lacquer bead with maki-e decoration \r\n Netsuke: ivory toggle of Shōki, the Demon Queller",
+      "api_artist": "",
+      "api_department": "Asian Art",
+      "api_classification": "Lacquer",
+      "api_period": "Edo period (1615–1868)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/DP-43061-001.jpg",
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "H. 9.0 cm; W. 6.0 cm; D. 2.1 cm",
+          "api": "H. 3 9/16 in. (9 cm); W. 2 3/8 in. (6 cm); D. 13/16 in. (2.1 cm)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "met-39664",
+      "title": "Irises at Yatsuhashi (Eight Bridges)",
+      "category": "architecture",
+      "status": "CHECKED",
+      "api_title": "Irises at Yatsuhashi (Eight Bridges)",
+      "api_date": "after 1709",
+      "api_medium": "Pair of six-panel folding screens; ink and color on gold leaf on paper",
+      "api_artist": "Ogata Kōrin",
+      "api_department": "Asian Art",
+      "api_classification": "Paintings",
+      "api_period": "Edo period (1615–1868)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/DT231.jpg",
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "163.7 × 352.4 cm (each screen)",
+          "api": "Image (each screen): 64 7/16 in. x 11ft. 6 3/4 in. (163.7 x 352.4 cm)\r\nOverall (each screen): 70 1/2 in. x 12 ft. 2 1/4 in. (179.1 x 371.5 cm)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "met-45258",
+      "title": "Bamboo in the Four Seasons",
+      "category": "architecture",
+      "status": "CHECKED",
+      "api_title": "Bamboo in the Four Seasons",
+      "api_date": "late 15th–early 16th century",
+      "api_medium": "Pair of six-panel screens; ink, color, and gold leaf on paper",
+      "api_artist": "Tosa Mitsunobu",
+      "api_department": "Asian Art",
+      "api_classification": "Paintings",
+      "api_period": "Muromachi period (1392–1573)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/DT1607.jpg",
+      "findings": [
+        {
+          "field": "period",
+          "severity": "INFO",
+          "ours": "late 15th – early 16th century",
+          "api": "late 15th–early 16th century",
+          "note": "Period representation differs"
+        },
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "157 × 360 cm (each screen)",
+          "api": "Image (each): 61 13/16 in. × 11 ft. 9 3/4 in. (157 × 360 cm)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "met-53456",
+      "title": "Orchid Pavilion Gathering; Autumn Harvest Festival",
+      "category": "architecture",
+      "status": "CHECKED",
+      "api_title": "Orchid Pavilion Gathering; Autumn Harvest Festival",
+      "api_date": "ca. 1763",
+      "api_medium": "Pair of six-panel folding screens; ink and color on paper",
+      "api_artist": "Ike no Taiga",
+      "api_department": "Asian Art",
+      "api_classification": "Paintings",
+      "api_period": "Edo period (1615–1868)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/DP362631.jpg",
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "160.7 × 356 cm (each screen)",
+          "api": "Image (each): 63 1/4 in. × 11 ft. 8 3/16 in. (160.7 × 356 cm)\r\nOverall with mounting:  69 9/16 in. × 12 ft. 2 7/16 in. (176.7 × 372 cm)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "met-55117",
+      "title": "Potted Pine Tree, Drum and Seven Herbs Planted in a Box",
+      "category": "bonsai",
+      "status": "CHECKED",
+      "api_title": "Potted Pine Tree Drum and Seven Herbs Planted in a Box",
+      "api_date": "18th–19th century",
+      "api_medium": "Woodblock print (surimono); ink and color on paper",
+      "api_artist": "Sunayama Gosei",
+      "api_department": "Asian Art",
+      "api_classification": "Prints",
+      "api_period": "",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/DP138423.jpg",
+      "findings": [
+        {
+          "field": "title_en",
+          "severity": "WARNING",
+          "ours": "Potted Pine Tree, Drum and Seven Herbs Planted in a Box",
+          "api": "Potted Pine Tree Drum and Seven Herbs Planted in a Box",
+          "note": "Title mismatch"
+        },
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "21.3 × 18.6 cm",
+          "api": "8 3/8 x 7 5/16 in. (21.3 x 18.6 cm)",
+          "note": "Dimensions for cross-reference"
+        },
+        {
+          "field": "artist",
+          "severity": "INFO",
+          "ours": "(not listed)",
+          "api": "Sunayama Gosei",
+          "note": "Artist available from API but not in our data"
+        }
+      ]
+    },
+    {
+      "id": "met-53986",
+      "title": "Kakemono of Monkey, Wine Cup and Potted Plants",
+      "category": "bonsai",
+      "status": "CHECKED",
+      "api_title": "Kakemono of Monkey, Wine Cup and Potted Plants",
+      "api_date": "probably 1812",
+      "api_medium": "Woodblock print (surimono); ink and color on paper",
+      "api_artist": "Keisai Eisen",
+      "api_department": "Asian Art",
+      "api_classification": "Prints",
+      "api_period": "Edo period (1615–1868)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/DP138452.jpg",
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "19.7 × 16.7 cm",
+          "api": "7 3/4 x 6 9/16 in. (19.7 x 16.7 cm)",
+          "note": "Dimensions for cross-reference"
+        },
+        {
+          "field": "artist",
+          "severity": "INFO",
+          "ours": "(not listed)",
+          "api": "Keisai Eisen",
+          "note": "Artist available from API but not in our data"
+        }
+      ]
+    },
+    {
+      "id": "met-44858",
+      "title": "Old Plum",
+      "category": "contemporary",
+      "status": "CHECKED",
+      "api_title": "Old Plum",
+      "api_date": "1646",
+      "api_medium": "Four sliding-door panels (fusuma); ink, color, gold, and gold leaf on paper",
+      "api_artist": "Kano Sansetsu",
+      "api_department": "Asian Art",
+      "api_classification": "Paintings",
+      "api_period": "Edo period (1615–1868)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/DT229.jpg",
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "174.6 × 485.5 cm (overall)",
+          "api": "Overall (of all four panels): 68 3/4 x 191 1/8 in. (174.6 x 485.5 cm)\r\nOverall (a): 68 3/8 x 47 5/8 in. (173.7 x 121 cm)\r\nOverall (b): 68 3/8 x 48 3/4 in. (173.7 x 123.8 cm)\r\nOverall (c): 68 1/2 x 47 3/4 in. (174 x 121.3 cm)\r\nOverall (d): 68 1/2 x 47 3/4 in. (174 x 121.3 cm)",
+          "note": "Dimensions for cross-reference"
+        },
+        {
+          "field": "artist",
+          "severity": "INFO",
+          "ours": "(not listed)",
+          "api": "Kano Sansetsu",
+          "note": "Artist available from API but not in our data"
+        }
+      ]
+    },
+    {
+      "id": "met-671024",
+      "title": "Goose and Reeds; Willows in the Moonlight",
+      "category": "contemporary",
+      "status": "CHECKED",
+      "api_title": "Goose and Reeds; Willows in the Moonlight",
+      "api_date": "right screen: 1774; left screen: 1793",
+      "api_medium": "Pair of six-panel folding screens; ink, color and gold on paper",
+      "api_artist": "Maruyama Ōkyo 円山応挙",
+      "api_department": "Asian Art",
+      "api_classification": "Paintings",
+      "api_period": "Edo period (1615–1868)",
+      "api_culture": "Japan",
+      "api_is_public": true,
+      "api_image": "https://images.metmuseum.org/CRDImages/as/original/DP704980.jpg",
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "Each: 153.9 × 354.4 cm",
+          "api": "Each: Image: 60 9/16 in. × 11 ft. 7 1/2 in. (153.9 × 354.4 cm)",
+          "note": "Dimensions for cross-reference"
+        },
+        {
+          "field": "artist",
+          "severity": "INFO",
+          "ours": "(not listed)",
+          "api": "Maruyama Ōkyo 円山応挙",
+          "note": "Artist available from API but not in our data"
+        }
+      ]
+    },
+    {
+      "id": "artic-111380",
+      "title": "Seated Bodhisattva",
+      "category": "sculpture",
+      "status": "CHECKED",
+      "api_title": "Seated Bodhisattva",
+      "api_date": "8th century",
+      "api_medium": "Wood core, dry lacquer, traces of gold leaf",
+      "api_artist": null,
+      "api_department": "Arts of Asia",
+      "api_classification": "wood",
+      "api_is_public": true,
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "",
+          "api": "61 × 43.2 × 32.3 cm (24 × 17 × 12 3/4 in.)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "artic-7500",
+      "title": "Shukongōjin — Vajrapāṇi",
+      "category": "sculpture",
+      "status": "CHECKED",
+      "api_title": "Shukongojin",
+      "api_date": "13th century",
+      "api_medium": "Wood with traces of polychromy",
+      "api_artist": null,
+      "api_department": "Arts of Asia",
+      "api_classification": "wood",
+      "api_is_public": true,
+      "findings": [
+        {
+          "field": "title_en",
+          "severity": "WARNING",
+          "ours": "Shukongōjin — Vajrapāṇi",
+          "api": "Shukongojin",
+          "note": "Title mismatch"
+        },
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "",
+          "api": "94 × 35.6 × 28 cm (37 × 14 × 11 in.)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "artic-8085",
+      "title": "Fudō Myō-ō — The Immovable Wisdom King",
+      "category": "sculpture",
+      "status": "CHECKED",
+      "api_title": "Fudo Myo-o",
+      "api_date": "13th century",
+      "api_medium": "Wood with polychromy and gilt-bronze accessories",
+      "api_artist": null,
+      "api_department": "Arts of Asia",
+      "api_classification": "wood",
+      "api_is_public": true,
+      "findings": [
+        {
+          "field": "title_en",
+          "severity": "WARNING",
+          "ours": "Fudō Myō-ō — The Immovable Wisdom King",
+          "api": "Fudo Myo-o",
+          "note": "Title mismatch"
+        },
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "",
+          "api": "62.3 × 36.9 × 34.3 cm (24 1/2 × 14 1/2 × 13 1/2 in.); O base: H.: 41.6 cm (16 3/8 in.)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "artic-117634",
+      "title": "Tantō with Ornate Mountings",
+      "category": "metalwork",
+      "status": "CHECKED",
+      "api_title": "Dagger (Tanto)",
+      "api_date": "17th century",
+      "api_medium": "Steel, wood, lacquer, ray skin (karagi), gold, and copper-gold alloy (shakudo)",
+      "api_artist": "Fujiwara Teruhiro",
+      "api_department": "Arts of Asia",
+      "api_classification": "metal",
+      "api_is_public": true,
+      "findings": [
+        {
+          "field": "title_en",
+          "severity": "WARNING",
+          "ours": "Tantō with Ornate Mountings",
+          "api": "Dagger (Tanto)",
+          "note": "Title mismatch"
+        }
+      ]
+    },
+    {
+      "id": "artic-21720",
+      "title": "Cranes on Snow-covered Pine",
+      "category": "bonsai",
+      "status": "CHECKED",
+      "api_title": "Cranes on snow-covered pine",
+      "api_date": "c. 1834",
+      "api_medium": "Color woodblock print; vertical nagaban",
+      "api_artist": "Katsushika Hokusai",
+      "api_department": "Arts of Asia",
+      "api_classification": "woodblock print",
+      "api_is_public": true,
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "",
+          "api": "52.4 × 23.5 cm (20 5/8 × 9 1/4 in.)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "artic-151047",
+      "title": "A Beauty Behind a Screen",
+      "category": "contemporary",
+      "status": "CHECKED",
+      "api_title": "A Beauty Behind a Screen",
+      "api_date": "About 1750",
+      "api_medium": "Hanging scroll; ink and colors on silk",
+      "api_artist": "Miyagawa Chôshun",
+      "api_department": "Arts of Asia",
+      "api_classification": "hanging scroll",
+      "api_is_public": true,
+      "findings": [
+        {
+          "field": "period",
+          "severity": "INFO",
+          "ours": "c. 1750",
+          "api": "About 1750",
+          "note": "Period representation differs"
+        },
+        {
+          "field": "artist",
+          "severity": "WARNING",
+          "ours": "Miyagawa Chōshun",
+          "api": "Miyagawa Chôshun",
+          "note": "Artist name differs"
+        },
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "",
+          "api": "30.4 × 37.1 cm (12 × 14 5/8 in.), including mount and knobs: 127.6 × 56.2 cm (50 1/4 × 22 1/8 in.)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "artic-88275",
+      "title": "Inrō Case with Landscape Design",
+      "category": "lacquerware",
+      "status": "CHECKED",
+      "api_title": "Inro Case",
+      "api_date": "Edo period (1615–1868)",
+      "api_medium": "Lacquer",
+      "api_artist": null,
+      "api_department": "Arts of Asia",
+      "api_classification": "lacquer",
+      "api_is_public": true,
+      "findings": [
+        {
+          "field": "title_en",
+          "severity": "WARNING",
+          "ours": "Inrō Case with Landscape Design",
+          "api": "Inro Case",
+          "note": "Title mismatch"
+        }
+      ]
+    },
+    {
+      "id": "artic-48619",
+      "title": "Inrō Case with Somada Inlay",
+      "category": "lacquerware",
+      "status": "CHECKED",
+      "api_title": "Inro Case",
+      "api_date": "early 19th century",
+      "api_medium": "Lacquer with inlay",
+      "api_artist": "Somada Mitsumine",
+      "api_department": "Arts of Asia",
+      "api_classification": "lacquer",
+      "api_is_public": true,
+      "findings": [
+        {
+          "field": "title_en",
+          "severity": "WARNING",
+          "ours": "Inrō Case with Somada Inlay",
+          "api": "Inro Case",
+          "note": "Title mismatch"
+        },
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "",
+          "api": "9.5 × 4.9 × 2.8 cm (3 3/4 × 1 15/16 × 1 1/8 in.)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "artic-38550",
+      "title": "Netsuke — Carved Wood Figure",
+      "category": "netsuke",
+      "status": "CHECKED",
+      "api_title": "Netsuke",
+      "api_date": "Edo period (1615–1868)",
+      "api_medium": "Carved wood",
+      "api_artist": null,
+      "api_department": "Arts of Asia",
+      "api_classification": "wood",
+      "api_is_public": true,
+      "findings": []
+    },
+    {
+      "id": "va-O229715",
+      "title": "Netsuke — Ivory Miniature",
+      "category": "netsuke",
+      "status": "CHECKED",
+      "api_title": "Netsuke",
+      "findings": [
+        {
+          "field": "period",
+          "severity": "INFO",
+          "ours": "18th century",
+          "api": "18th century",
+          "note": "Period for cross-reference"
+        },
+        {
+          "field": "medium",
+          "severity": "INFO",
+          "ours": "Ivory",
+          "api": "Carved stag antler",
+          "note": "Materials for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "artic-127644",
+      "title": "Autumn Maples with Poem Slips",
+      "category": "architecture",
+      "status": "CHECKED",
+      "api_title": "Autumn Maples with Poem Slips",
+      "api_date": "c. 1675",
+      "api_medium": "Six-panel screen (one of pair); Ink, colors, gold leaf, and gold powder on silk",
+      "api_artist": "Tosa Mitsuoki",
+      "api_department": "Arts of Asia",
+      "api_classification": "screen",
+      "api_is_public": true,
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "",
+          "api": "144 × 286 cm (56 3/4 × 112 5/8 in.)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "artic-11272",
+      "title": "Maize and Cockscombs",
+      "category": "architecture",
+      "status": "CHECKED",
+      "api_title": "Maize and Cockscombs",
+      "api_date": "mid 17th century",
+      "api_medium": "Six-panel screen; ink, color, and gold on paper",
+      "api_artist": null,
+      "api_department": "Arts of Asia",
+      "api_classification": "screen",
+      "api_is_public": true,
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "",
+          "api": "170.2 × 357 cm (67 × 140 1/2 in.)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "va-O39087",
+      "title": "Tsuba — Iron Sword Guard with Inlay",
+      "category": "metalwork",
+      "status": "CHECKED",
+      "api_title": "Tsuba",
+      "findings": [
+        {
+          "field": "period",
+          "severity": "INFO",
+          "ours": "c. 1800–1850",
+          "api": "ca. 1800-1850",
+          "note": "Period for cross-reference"
+        },
+        {
+          "field": "medium",
+          "severity": "INFO",
+          "ours": "Iron with gold and silver inlay",
+          "api": "Copper alloy (shakudo) with inlaid cloisonné enamels",
+          "note": "Materials for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "va-O193278",
+      "title": "Pair of Menuki — Sword Grip Ornaments",
+      "category": "metalwork",
+      "status": "CHECKED",
+      "api_title": "Pair of menuki",
+      "findings": [
+        {
+          "field": "period",
+          "severity": "INFO",
+          "ours": "c. 1660–1724",
+          "api": "ca. 1660-1724",
+          "note": "Period for cross-reference"
+        },
+        {
+          "field": "medium",
+          "severity": "INFO",
+          "ours": "Gold, shakudō (copper-gold alloy)",
+          "api": "copper-gold alloy (<i>shakudo</i>) with gold and silver",
+          "note": "Materials for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "artic-57703",
+      "title": "A Pine Tree and Camellias",
+      "category": "bonsai",
+      "status": "CHECKED",
+      "api_title": "A Pine Tree and Camellias",
+      "api_date": "1840",
+      "api_medium": "Color woodblock print; surimono",
+      "api_artist": "Niwa Tokei",
+      "api_department": "Arts of Asia",
+      "api_classification": "print",
+      "api_is_public": true,
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "",
+          "api": "54.8 × 40.7 cm (21 5/8 × 16 1/16 in.)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "artic-10922",
+      "title": "Macaw on a Pine Branch",
+      "category": "bonsai",
+      "status": "CHECKED",
+      "api_title": "Macaw on a pine branch",
+      "api_date": "c. 1835",
+      "api_medium": "Color woodblock print; otanzaku",
+      "api_artist": "Utagawa Hiroshige",
+      "api_department": "Arts of Asia",
+      "api_classification": "woodblock print",
+      "api_is_public": true,
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "",
+          "api": "37.8 × 16.7 cm (14 7/8 × 6 5/8 in.)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "artic-48617",
+      "title": "Inrō Decorated with the Animals of the Zodiac",
+      "category": "contemporary",
+      "status": "CHECKED",
+      "api_title": "Inro Decorated with the Animals of the Zodiac",
+      "api_date": "19th century",
+      "api_medium": "Lacquer",
+      "api_artist": "Koma Kyuhaku",
+      "api_department": "Arts of Asia",
+      "api_classification": "lacquer",
+      "api_is_public": true,
+      "findings": [
+        {
+          "field": "title_en",
+          "severity": "WARNING",
+          "ours": "Inrō Decorated with the Animals of the Zodiac",
+          "api": "Inro Decorated with the Animals of the Zodiac",
+          "note": "Title mismatch"
+        },
+        {
+          "field": "artist",
+          "severity": "WARNING",
+          "ours": "Koma Kyūhaku",
+          "api": "Koma Kyuhaku",
+          "note": "Artist name differs"
+        },
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "",
+          "api": "9 × 6 × 2.2 cm (3 9/16 × 2 3/8 × 7/8 in.)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "artic-27592",
+      "title": "Lovers, a Cat, and a Mouse in front of a Folding Screen",
+      "category": "contemporary",
+      "status": "CHECKED",
+      "api_title": "Lovers, a Cat, and a Mouse in front of a Folding Screen",
+      "api_date": "c. 1684/98",
+      "api_medium": "Woodblock print; oban, sumizuri-e",
+      "api_artist": "Sugimura Jihei",
+      "api_department": "Arts of Asia",
+      "api_classification": "woodblock print",
+      "api_is_public": true,
+      "findings": [
+        {
+          "field": "artist",
+          "severity": "WARNING",
+          "ours": "Attributed to Sugimura Jihei",
+          "api": "Sugimura Jihei",
+          "note": "Artist name differs"
+        },
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "",
+          "api": "25.7 × 39.4 cm (10 1/8 × 15 9/16 in.)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "artic-9512",
+      "title": "Oribe-Type Ewer",
+      "category": "ceramics",
+      "status": "CHECKED",
+      "api_title": "Oribe-Type Ewer",
+      "api_date": "early 17th century",
+      "api_medium": "Glazed stoneware",
+      "api_artist": null,
+      "api_department": "Arts of Asia",
+      "api_classification": "ewer (vessel)",
+      "api_is_public": true,
+      "findings": [
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "",
+          "api": "26.7 × 21.6 cm (10 1/2 × 8 1/2 in.)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    },
+    {
+      "id": "artic-796",
+      "title": "Atsuita Karaori — Noh Costume",
+      "category": "textiles",
+      "status": "CHECKED",
+      "api_title": "Atsuita karaori (Noh Costume)",
+      "api_date": "late Edo period (1789–1868), 1801/25",
+      "api_medium": "Silk and gold-leaf-over-lacquered-paper strips, warp-float faced 2:1 'Z' twill weave with supplementary patterning wefts; lined with silk, plain weave; dyed with safflower, beni",
+      "api_artist": null,
+      "api_department": "Textiles",
+      "api_classification": "textile",
+      "api_is_public": true,
+      "findings": [
+        {
+          "field": "period",
+          "severity": "INFO",
+          "ours": "late Edo period (1789–1868)",
+          "api": "late Edo period (1789–1868), 1801/25",
+          "note": "Period representation differs"
+        },
+        {
+          "field": "dimensions",
+          "severity": "INFO",
+          "ours": "",
+          "api": "176.4 × 144.5 cm (69 1/2 × 56 7/8 in.); Warp repeat: H.: 60.6 cm (23 7/8 in.)",
+          "note": "Dimensions for cross-reference"
+        }
+      ]
+    }
+  ]
+}
