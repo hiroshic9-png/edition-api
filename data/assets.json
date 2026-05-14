@@ -1040,6 +1040,40 @@
       "source": "Art Institute of Chicago",
       "source_url": "https://www.artic.edu/artworks/27592",
       "license": "CC0"
+    },
+    {
+      "id": "artic-9512",
+      "category": "ceramics",
+      "title_en": "Oribe-Type Ewer",
+      "title_jp": "織部水注",
+      "period": "early 17th century",
+      "era": "Momoyama–Early Edo period",
+      "origin": "Mino Province (present-day Gifu Prefecture), Japan",
+      "medium": "Glazed stoneware",
+      "description": "An Oribe-type ewer (mizusashi or water vessel) with the boldly asymmetric form and distinctive green copper glaze that defines this quintessentially Japanese ceramic style. Named after tea master Furuta Oribe (1544–1615), Oribe ware deliberately rejected the symmetry and restraint of Chinese ceramic ideals in favor of distortion, spontaneity, and visual drama. The partial application of green glaze over iron-painted geometric motifs — leaving portions of the clay body exposed — embodies the wabi-sabi aesthetic of finding beauty in imperfection.",
+      "significance": "Oribe ware represents a revolutionary moment in Japanese ceramics: the deliberate assertion of a distinctly Japanese aesthetic identity independent of Chinese models. Furuta Oribe's tea ceremony philosophy demanded vessels that provoked surprise and delight through unconventional forms. Authentication of early Oribe requires analysis of clay body (Mino region clays have distinctive characteristics), glaze chemistry (the copper green is kiln-atmosphere dependent), and the degree of intentional distortion — later copies tend to exaggerate asymmetry beyond period norms.",
+      "image": "https://www.artic.edu/iiif/2/b1b2b2ef-61f0-c978-6a8e-b4d08df2a03b/full/843,/0/default.jpg",
+      "image_alt": "Oribe-Type Ewer, early 17th century, Mino Province, Art Institute of Chicago",
+      "source": "Art Institute of Chicago",
+      "source_url": "https://www.artic.edu/artworks/9512",
+      "license": "CC0"
+    },
+    {
+      "id": "artic-796",
+      "category": "textiles",
+      "title_en": "Atsuita Karaori — Noh Costume",
+      "title_jp": "厚板唐織 能衣装",
+      "period": "late Edo period (1789–1868)",
+      "era": "Edo period (1615–1868)",
+      "origin": "Japan (likely Nishijin, Kyoto)",
+      "medium": "Silk and gold-leaf-over-lacquered-paper strips, warp-float weave",
+      "description": "An atsuita karaori (thick-woven Chinese-style weave) Noh costume of extraordinary complexity. The fabric combines silk threads with kinran — strips of gold leaf applied over lacquered paper, then cut into narrow ribbons and woven into the textile. The resulting surface shimmers with dimensional gold against the silk ground, creating the visual weight and presence essential for Noh theater, where costumes must read from the back of a large stage under flickering torchlight. The pattern of interlocking botanical motifs follows codified conventions that indicate the character type (usually a noblewoman or celestial being) the robe was designed to portray.",
+      "significance": "Noh costumes represent the summit of Japanese textile art. The atsuita weave is among the most technically demanding textile structures ever devised — requiring coordination of multiple warp and weft systems on specialized looms. Nishijin (Kyoto) weavers who produce these textiles are the inheritors of a tradition that has supplied the imperial court and major Noh schools for centuries. Authentication involves analysis of weave structure, gold-leaf application method, and comparison with documented costumes in the collections of major Noh families.",
+      "image": "https://www.artic.edu/iiif/2/4c47e90d-d3ed-4f13-89c7-a2543a3b46e1/full/843,/0/default.jpg",
+      "image_alt": "Atsuita Karaori Noh Costume, late Edo period, Art Institute of Chicago",
+      "source": "Art Institute of Chicago",
+      "source_url": "https://www.artic.edu/artworks/796",
+      "license": "CC0"
     }
   ]
 }

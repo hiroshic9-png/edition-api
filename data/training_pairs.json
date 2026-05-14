@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-05-14T06:16:27.214746Z",
-  "total_pairs": 134,
+  "generated_at": "2026-05-14T06:37:42.405587Z",
+  "total_pairs": 152,
   "pairs": [
     {
       "id": "fqa-swords-001",
@@ -18,7 +18,7 @@
         "swords",
         "the_five_traditions_—_gokaden"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -36,7 +36,7 @@
         "swords",
         "eras_of_the_blade"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -56,7 +56,7 @@
         "masters",
         "lineage"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -75,7 +75,7 @@
         "authentication",
         "authentication_—_reading_the_blade"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -93,7 +93,7 @@
         "swords",
         "named_blades_—_stories_in_steel"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -111,7 +111,7 @@
         "ceramics",
         "the_six_ancient_kilns_—_rokkoyo"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -129,7 +129,7 @@
         "ceramics",
         "the_tea_revolution"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -147,7 +147,7 @@
         "ceramics",
         "the_character_of_each_kiln"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -165,7 +165,7 @@
         "ceramics",
         "the_landscape_of_a_tea_bowl"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -184,7 +184,7 @@
         "authentication",
         "scientific_authentication"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -202,7 +202,7 @@
         "ukiyoe",
         "the_floating_world"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -221,7 +221,7 @@
         "authentication",
         "authentication_considerations"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -239,7 +239,7 @@
         "ukiyoe",
         "the_hierarchy_of_impressions"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -259,7 +259,7 @@
         "masters",
         "lineage"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -277,7 +277,7 @@
         "painting",
         "from_ink_to_gold"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -297,7 +297,7 @@
         "masters",
         "lineage"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -316,7 +316,7 @@
         "authentication",
         "reading_a_hanging_scroll"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -334,7 +334,7 @@
         "painting",
         "hakogaki_—_the_world_within_the_box"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -352,7 +352,7 @@
         "lacquerware",
         "layers_of_perfection"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -370,7 +370,7 @@
         "lacquerware",
         "the_inrō_tradition"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -388,7 +388,7 @@
         "lacquerware",
         "the_maki-e_hierarchy"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -406,7 +406,7 @@
         "lacquerware",
         "wajima_and_regional_traditions"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -426,7 +426,7 @@
         "masters",
         "lineage"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -444,7 +444,7 @@
         "netsuke",
         "material_and_patina"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -464,7 +464,7 @@
         "masters",
         "lineage"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -482,7 +482,7 @@
         "netsuke",
         "the_collector's_eye"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -500,7 +500,7 @@
         "textiles",
         "wearable_art"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -518,7 +518,7 @@
         "textiles",
         "dye_analysis_and_dating"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -536,7 +536,7 @@
         "textiles",
         "yūzen_—_painting_in_dye"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -554,7 +554,7 @@
         "textiles",
         "noh_costumes_—_theater_as_textile_art"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -572,7 +572,7 @@
         "metalwork",
         "the_alloys_of_japan"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -591,7 +591,7 @@
         "authentication",
         "authentication_through_composition"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -611,7 +611,7 @@
         "masters",
         "lineage"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -630,7 +630,7 @@
         "authentication",
         "reading_a_tsuba"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -648,7 +648,7 @@
         "bonsai",
         "living_sculpture"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -666,7 +666,7 @@
         "bonsai",
         "provenance_and_valuation"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -686,7 +686,7 @@
         "masters",
         "lineage"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -705,7 +705,7 @@
         "authentication",
         "authentication_challenges_—_the_problem_of_age_fraud"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -723,7 +723,7 @@
         "bonsai",
         "the_aesthetics_of_form"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -741,7 +741,7 @@
         "bonsai",
         "suiseki_—_the_art_of_viewing_stones"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -759,7 +759,7 @@
         "sculpture",
         "sacred_and_secular"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -777,7 +777,7 @@
         "sculpture",
         "wood_analysis_and_dating"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -796,7 +796,7 @@
         "authentication",
         "reading_buddhist_imagery"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -814,7 +814,7 @@
         "sculpture",
         "unkei's_revolution"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -832,7 +832,7 @@
         "architecture",
         "wood,_paper,_and_light"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -850,7 +850,7 @@
         "architecture",
         "architectural_salvage_and_fittings"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -868,7 +868,7 @@
         "architecture",
         "the_spirit_of_the_tea_room"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -886,7 +886,7 @@
         "architecture",
         "tansu_—_the_art_of_japanese_cabinetry"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -904,7 +904,7 @@
         "contemporary",
         "tradition_transformed"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -923,7 +923,7 @@
         "authentication",
         "authentication_in_contemporary_practice"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -941,7 +941,7 @@
         "contemporary",
         "the_living_national_treasure_system"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -959,7 +959,7 @@
         "contemporary",
         "superflat_and_beyond"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -980,7 +980,7 @@
         "Muromachi period (kotō)",
         "Steel, wood, lacquer, shibuich"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1001,7 +1001,7 @@
         "Late Muromachi period (kotō)",
         "Steel"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1022,7 +1022,7 @@
         "Edo period",
         "Iron, lacquer, shakudō, silver"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1043,7 +1043,7 @@
         "Kamakura period (kotō)",
         "Steel"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1064,7 +1064,7 @@
         "Edo period (shintō)",
         "Steel, wood, lacquer, shakudō,"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1085,7 +1085,7 @@
         "Momoyama–Early Edo period",
         "Stoneware with underglaze iron"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1106,7 +1106,7 @@
         "Edo period",
         "Earthenware with red slip"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1127,7 +1127,7 @@
         "Momoyama period",
         "Stoneware with underglaze iron"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1148,7 +1148,7 @@
         "Edo period",
         "Polychrome woodblock print (ni"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1169,7 +1169,7 @@
         "Early Edo period",
         "Ink and color on paper"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1190,7 +1190,7 @@
         "Muromachi period (1392–1573)",
         "Pair of hanging scrolls; ink a"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1211,7 +1211,7 @@
         "Edo period (1615–1868)",
         "Powdered gold (maki-e) on lacq"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1232,7 +1232,7 @@
         "Edo period (1615–1868)",
         "Embroidery and gold leaf on pl"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1253,7 +1253,7 @@
         "Edo period (1615–1868)",
         "Iron, copper-gold alloy (shaku"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1274,7 +1274,7 @@
         "Edo period (1615–1868)",
         "Iron, bronze, gold, silver, co"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1295,7 +1295,7 @@
         "Kamakura period (1185–1333)",
         "Japanese cypress with lacquer,"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1316,7 +1316,7 @@
         "Heian period (794–1185)",
         "Japanese cypress with lacquer "
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1337,7 +1337,7 @@
         "Edo–Meiji period",
         "Ivory with bronze disk inlaid "
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1358,7 +1358,7 @@
         "Kamakura period (1185–1333)",
         "Stoneware with ash glaze (Seto"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1379,7 +1379,7 @@
         "Edo period (1615–1868)",
         "Album; ink and light color on "
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1400,7 +1400,7 @@
         "Edo period (1615–1868)",
         "Hanging scroll paintings, remo"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1421,7 +1421,7 @@
         "Late Edo period",
         "Handscroll; ink on silk"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1442,7 +1442,7 @@
         "Meiji period (shinshintō/gendaitō)",
         "Steel, wood (rosewood), copper"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1463,7 +1463,7 @@
         "Momoyama–Early Edo period",
         "Pair of hanging scrolls; ink o"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1484,7 +1484,7 @@
         "Edo period (1615–1868)",
         "Twill-weave silk with resist-d"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1505,7 +1505,7 @@
         "Edo period (1615–1868)",
         "Silk embroidery and metallic l"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1526,7 +1526,7 @@
         "Late Edo period",
         "Resist-dyed and painted (binga"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1547,7 +1547,7 @@
         "Early Edo period (Shōtoku era)",
         "Woodblock print (tan-e); ink a"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1568,7 +1568,7 @@
         "Edo period (Kansei era)",
         "Woodblock print; ink and color"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1589,7 +1589,7 @@
         "Edo period (Kansei era)",
         "Triptych of woodblock prints; "
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1610,7 +1610,7 @@
         "Edo–Meiji period",
         "Wood"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1631,7 +1631,7 @@
         "Late Edo–Meiji period",
         "Ebony with gold and horn inlay"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1652,7 +1652,7 @@
         "Edo period (1615–1868)",
         "Black lacquer and nashiji grou"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1673,7 +1673,7 @@
         "Edo period (1615–1868)",
         "Lacquered wood with gold and s"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1694,7 +1694,7 @@
         "Edo period (1615–1868)",
         "Pair of six-panel folding scre"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1715,7 +1715,7 @@
         "Muromachi period (1392–1573)",
         "Pair of six-panel screens; ink"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1736,7 +1736,7 @@
         "Edo period (1615–1868)",
         "Pair of six-panel folding scre"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1757,7 +1757,7 @@
         "Edo period (1615–1868)",
         "Woodblock print (surimono); in"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1778,7 +1778,7 @@
         "Edo period (1615–1868)",
         "Woodblock print (surimono); in"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1799,7 +1799,7 @@
         "Edo period (1615–1868)",
         "Four sliding-door panels (fusu"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1820,7 +1820,7 @@
         "Edo period (1615–1868)",
         "Pair of six-panel folding scre"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1841,7 +1841,7 @@
         "Nara period (710–794)",
         "Wood core, dry lacquer, traces"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1862,7 +1862,7 @@
         "Kamakura period (1185–1333)",
         "Wood with traces of polychromy"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1883,7 +1883,7 @@
         "Kamakura period (1185–1333)",
         "Wood with polychromy and gilt-"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1904,7 +1904,7 @@
         "Edo period (1615–1868)",
         "Steel, wood, lacquer, ray skin"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1925,7 +1925,7 @@
         "Edo period (1615–1868)",
         "Color woodblock print; vertica"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1946,7 +1946,7 @@
         "Edo period (1615–1868)",
         "Hanging scroll; ink and colors"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1967,7 +1967,7 @@
         "Edo period (1615–1868)",
         "Lacquer"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -1988,7 +1988,7 @@
         "Edo period (1615–1868)",
         "Lacquer with inlay"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -2009,7 +2009,7 @@
         "Edo period (1615–1868)",
         "Carved wood"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -2030,7 +2030,7 @@
         "Edo period (1615–1868)",
         "Ivory"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -2051,7 +2051,7 @@
         "Edo period (1615–1868)",
         "Six-panel screen (one of pair)"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -2072,7 +2072,7 @@
         "Edo period (1615–1868)",
         "Six-panel screen; ink, color, "
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -2093,7 +2093,7 @@
         "Edo period (1615–1868)",
         "Iron with gold and silver inla"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -2114,7 +2114,7 @@
         "Edo period (1615–1868)",
         "Gold, shakudō (copper-gold all"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -2135,7 +2135,7 @@
         "Edo period (1615–1868)",
         "Color woodblock print; surimon"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -2156,7 +2156,7 @@
         "Edo period (1615–1868)",
         "Color woodblock print; otanzak"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -2177,7 +2177,7 @@
         "Edo period (1615–1868)",
         "Lacquer with gold maki-e"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -2198,7 +2198,49 @@
         "Edo period (1615–1868)",
         "Woodblock print; oban, sumizur"
       ],
-      "created_at": "2026-05-14T06:16:27.214746Z",
+      "created_at": "2026-05-14T06:37:42.405587Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-artic-9512",
+      "type": "forensic_qa",
+      "category": "ceramics",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Oribe-Type Ewer' (early 17th century) and explain its art-historical significance.",
+      "answer": "An Oribe-type ewer (mizusashi or water vessel) with the boldly asymmetric form and distinctive green copper glaze that defines this quintessentially Japanese ceramic style. Named after tea master Furuta Oribe (1544–1615), Oribe ware deliberately rejected the symmetry and restraint of Chinese ceramic ideals in favor of distortion, spontaneity, and visual drama. The partial application of green glaze over iron-painted geometric motifs — leaving portions of the clay body exposed — embodies the wabi-sabi aesthetic of finding beauty in imperfection.\n\nSignificance: Oribe ware represents a revolutionary moment in Japanese ceramics: the deliberate assertion of a distinctly Japanese aesthetic identity independent of Chinese models. Furuta Oribe's tea ceremony philosophy demanded vessels that provoked surprise and delight through unconventional forms. Authentication of early Oribe requires analysis of clay body (Mino region clays have distinctive characteristics), glaze chemistry (the copper green is kiln-atmosphere dependent), and the degree of intentional distortion — later copies tend to exaggerate asymmetry beyond period norms.",
+      "evidence": [
+        "Art Institute of Chicago — https://www.artic.edu/artworks/9512"
+      ],
+      "related_assets": [
+        "artic-9512"
+      ],
+      "tags": [
+        "ceramics",
+        "Momoyama–Early Edo period",
+        "Glazed stoneware"
+      ],
+      "created_at": "2026-05-14T06:37:42.405587Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-artic-796",
+      "type": "forensic_qa",
+      "category": "textiles",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Atsuita Karaori — Noh Costume' (late Edo period (1789–1868)) and explain its art-historical significance.",
+      "answer": "An atsuita karaori (thick-woven Chinese-style weave) Noh costume of extraordinary complexity. The fabric combines silk threads with kinran — strips of gold leaf applied over lacquered paper, then cut into narrow ribbons and woven into the textile. The resulting surface shimmers with dimensional gold against the silk ground, creating the visual weight and presence essential for Noh theater, where costumes must read from the back of a large stage under flickering torchlight. The pattern of interlocking botanical motifs follows codified conventions that indicate the character type (usually a noblewoman or celestial being) the robe was designed to portray.\n\nSignificance: Noh costumes represent the summit of Japanese textile art. The atsuita weave is among the most technically demanding textile structures ever devised — requiring coordination of multiple warp and weft systems on specialized looms. Nishijin (Kyoto) weavers who produce these textiles are the inheritors of a tradition that has supplied the imperial court and major Noh schools for centuries. Authentication involves analysis of weave structure, gold-leaf application method, and comparison with documented costumes in the collections of major Noh families.",
+      "evidence": [
+        "Art Institute of Chicago — https://www.artic.edu/artworks/796"
+      ],
+      "related_assets": [
+        "artic-796"
+      ],
+      "tags": [
+        "textiles",
+        "Edo period (1615–1868)",
+        "Silk and gold-leaf-over-lacque"
+      ],
+      "created_at": "2026-05-14T06:37:42.405587Z",
       "verified_by": "source_verified"
     },
     {
@@ -2802,6 +2844,586 @@
       ],
       "verified_by": "ai_generated",
       "created_at": "2026-05-14T06:17:51.495390Z"
+    },
+    {
+      "id": "pc-ukiyoe-hokusai",
+      "category": "ukiyoe",
+      "subject": "Katsushika Hokusai — Great Wave Print Impressions",
+      "comparables": [
+        {
+          "description": "Under the Wave off Kanagawa, early impression, strong colors, trimmed margins",
+          "sale_price": 1600000,
+          "sale_date": "2024-03",
+          "auction_house": "Christie's",
+          "condition": "Very good early impression",
+          "key_differences": "Record price for any Japanese print"
+        },
+        {
+          "description": "Under the Wave off Kanagawa, later impression, faded blue, standard",
+          "sale_price": 280000,
+          "sale_date": "2023-09",
+          "auction_house": "Bonhams",
+          "condition": "Good later impression",
+          "key_differences": "Impression quality drives 5x price difference"
+        },
+        {
+          "description": "Hokusai, Fine Wind Clear Morning (Red Fuji), good impression",
+          "sale_price": 450000,
+          "sale_date": "2024-01",
+          "auction_house": "Sotheby's",
+          "condition": "Good",
+          "key_differences": "2nd most famous Hokusai, lower than Great Wave"
+        }
+      ],
+      "estimated_range": {
+        "low": 50000,
+        "mid": 400000,
+        "high": 1600000,
+        "currency": "USD"
+      },
+      "sources": [
+        "Christie's Japanese Art results",
+        "Bonhams Fine Japanese Art"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T06:39:16.055597Z",
+      "type": "price_comparable"
+    },
+    {
+      "id": "pc-ukiyoe-hiroshige",
+      "category": "ukiyoe",
+      "subject": "Utagawa Hiroshige — Tokaido Series Prints",
+      "comparables": [
+        {
+          "description": "Sudden Shower over Shin-Ōhashi Bridge, good early impression",
+          "sale_price": 180000,
+          "sale_date": "2024-05",
+          "auction_house": "Christie's",
+          "condition": "Fine",
+          "key_differences": "Most famous station, premium"
+        },
+        {
+          "description": "Standard Tokaido station, good impression",
+          "sale_price": 3000,
+          "sale_date": "2024-02",
+          "auction_house": "Japanese dealer",
+          "condition": "Good",
+          "key_differences": "Non-iconic stations at fraction of price"
+        }
+      ],
+      "estimated_range": {
+        "low": 1500,
+        "mid": 15000,
+        "high": 200000,
+        "currency": "USD"
+      },
+      "sources": [
+        "Christie's",
+        "Scholten Japanese Art"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T06:39:16.055597Z",
+      "type": "price_comparable"
+    },
+    {
+      "id": "pc-painting-scroll",
+      "category": "painting",
+      "subject": "Japanese Hanging Scroll — Edo Period Ink Painting",
+      "comparables": [
+        {
+          "description": "Sesshu school landscape, with hakogaki by recognized expert, Muromachi attribution",
+          "sale_price": 85000,
+          "sale_date": "2024-04",
+          "auction_house": "Christie's",
+          "condition": "Good, minor restoration",
+          "key_differences": "Sesshu attribution commands highest premium"
+        },
+        {
+          "description": "Unknown artist landscape, Edo period, minor school",
+          "sale_price": 2500,
+          "sale_date": "2024-03",
+          "auction_house": "Shinwa Art",
+          "condition": "Fair",
+          "key_differences": "Anonymous works trade at 30x discount"
+        }
+      ],
+      "estimated_range": {
+        "low": 1000,
+        "mid": 12000,
+        "high": 100000,
+        "currency": "USD"
+      },
+      "sources": [
+        "Christie's Arts of Japan",
+        "Shinwa Art Auction"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T06:39:16.055597Z",
+      "type": "price_comparable"
+    },
+    {
+      "id": "pc-lacquerware-inro",
+      "category": "lacquerware",
+      "subject": "Edo-period Inrō — Gold Maki-e",
+      "comparables": [
+        {
+          "description": "5-case inro by Shibata Zeshin, superb maki-e, with netsuke and ojime",
+          "sale_price": 120000,
+          "sale_date": "2024-02",
+          "auction_house": "Bonhams",
+          "condition": "Excellent",
+          "key_differences": "Zeshin = most collected lacquer artist"
+        },
+        {
+          "description": "4-case inro, unsigned, good gold maki-e, Edo period",
+          "sale_price": 4000,
+          "sale_date": "2024-01",
+          "auction_house": "Japanese dealer",
+          "condition": "Good, minor wear",
+          "key_differences": "Unsigned works at significant discount"
+        }
+      ],
+      "estimated_range": {
+        "low": 2000,
+        "mid": 15000,
+        "high": 150000,
+        "currency": "USD"
+      },
+      "sources": [
+        "Bonhams Fine Japanese Art",
+        "International Netsuke Society auction results"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T06:39:16.055597Z",
+      "type": "price_comparable"
+    },
+    {
+      "id": "pc-netsuke-ivory",
+      "category": "netsuke",
+      "subject": "Ivory Netsuke — Edo Period Masters",
+      "comparables": [
+        {
+          "description": "Ivory netsuke by Tomotada (Kyoto), ox and boy, signed",
+          "sale_price": 45000,
+          "sale_date": "2024-03",
+          "auction_house": "Bonhams",
+          "condition": "Excellent",
+          "key_differences": "Top Kyoto school master"
+        },
+        {
+          "description": "Ivory netsuke, unsigned, good quality, Osaka school style",
+          "sale_price": 3500,
+          "sale_date": "2024-05",
+          "auction_house": "Dealer",
+          "condition": "Good patina",
+          "key_differences": "Attribution to school without signature"
+        },
+        {
+          "description": "Wood netsuke by Masanao (Ise-Yamada), monkey group",
+          "sale_price": 8500,
+          "sale_date": "2024-01",
+          "auction_house": "Bonhams",
+          "condition": "Excellent",
+          "key_differences": "Wood generally lower than ivory for same master level"
+        }
+      ],
+      "estimated_range": {
+        "low": 1500,
+        "mid": 8000,
+        "high": 60000,
+        "currency": "USD"
+      },
+      "sources": [
+        "Bonhams netsuke sales",
+        "International Netsuke Society"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T06:39:16.055597Z",
+      "type": "price_comparable"
+    },
+    {
+      "id": "pc-metalwork-tsuba",
+      "category": "metalwork",
+      "subject": "Japanese Tsuba — Iron and Shakudō",
+      "comparables": [
+        {
+          "description": "Iron tsuba by Nobuie, Muromachi period, NBTHK Tokubetsu Kicho",
+          "sale_price": 35000,
+          "sale_date": "2024-02",
+          "auction_house": "Bonhams",
+          "condition": "Excellent patina",
+          "key_differences": "Nobuie is most collected tsubashi"
+        },
+        {
+          "description": "Shakudō nanako tsuba, Goto school style, Edo period",
+          "sale_price": 8000,
+          "sale_date": "2024-04",
+          "auction_house": "Japanese dealer",
+          "condition": "Good",
+          "key_differences": "Goto school standard work"
+        },
+        {
+          "description": "Iron sukashi tsuba, unsigned, Edo period, good design",
+          "sale_price": 800,
+          "sale_date": "2024-03",
+          "auction_house": "Online auction",
+          "condition": "Some rust",
+          "key_differences": "Unsigned openwork at entry level"
+        }
+      ],
+      "estimated_range": {
+        "low": 500,
+        "mid": 5000,
+        "high": 50000,
+        "currency": "USD"
+      },
+      "sources": [
+        "Bonhams",
+        "Japanese Sword Society of the US"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T06:39:16.055597Z",
+      "type": "price_comparable"
+    },
+    {
+      "id": "pc-textiles-kimono",
+      "category": "textiles",
+      "subject": "Antique Kimono and Noh Costumes",
+      "comparables": [
+        {
+          "description": "Noh costume (karaori), Edo period, gold thread, documented provenance to Kanze school",
+          "sale_price": 65000,
+          "sale_date": "2023-11",
+          "auction_house": "Christie's",
+          "condition": "Good, some thread loss",
+          "key_differences": "Noh school provenance is primary driver"
+        },
+        {
+          "description": "Furisode, silk with yuzen dyeing, Meiji period, fine condition",
+          "sale_price": 5000,
+          "sale_date": "2024-06",
+          "auction_house": "Dealer",
+          "condition": "Very good",
+          "key_differences": "Meiji at fraction of Edo price"
+        },
+        {
+          "description": "Uchikake (over kimono), silk embroidery, late Edo",
+          "sale_price": 12000,
+          "sale_date": "2024-02",
+          "auction_house": "Shinwa Art",
+          "condition": "Good",
+          "key_differences": "Wedding garment, less theatrical than Noh"
+        }
+      ],
+      "estimated_range": {
+        "low": 2000,
+        "mid": 10000,
+        "high": 80000,
+        "currency": "USD"
+      },
+      "sources": [
+        "Christie's",
+        "Textile Museum (Washington DC)"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T06:39:16.055597Z",
+      "type": "price_comparable"
+    },
+    {
+      "id": "pc-sculpture-buddha",
+      "category": "sculpture",
+      "subject": "Japanese Buddhist Sculpture — Wood",
+      "comparables": [
+        {
+          "description": "Kamakura-period Amida Buddha, yosegi construction, 45cm, traces of gold leaf",
+          "sale_price": 85000,
+          "sale_date": "2024-01",
+          "auction_house": "Christie's",
+          "condition": "Good, later lacquer",
+          "key_differences": "Kamakura period commands premium over Edo"
+        },
+        {
+          "description": "Edo-period Jizo Bosatsu, single wood block, 30cm, polychrome",
+          "sale_price": 6000,
+          "sale_date": "2024-03",
+          "auction_house": "Japanese dealer",
+          "condition": "Fair",
+          "key_differences": "Later period and smaller scale"
+        }
+      ],
+      "estimated_range": {
+        "low": 3000,
+        "mid": 20000,
+        "high": 150000,
+        "currency": "USD"
+      },
+      "sources": [
+        "Christie's Arts of Japan",
+        "Nara National Museum research"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T06:39:16.055597Z",
+      "type": "price_comparable"
+    },
+    {
+      "id": "pc-architecture-screen",
+      "category": "architecture",
+      "subject": "Japanese Folding Screen (Byōbu)",
+      "comparables": [
+        {
+          "description": "Pair of six-panel screens, Kano school, gold-ground, Momoyama-style flowers",
+          "sale_price": 320000,
+          "sale_date": "2023-09",
+          "auction_house": "Christie's",
+          "condition": "Good, some restoration",
+          "key_differences": "Pair commands premium over single; Momoyama style premium"
+        },
+        {
+          "description": "Single two-panel screen, ink landscape, Edo period, minor artist",
+          "sale_price": 8000,
+          "sale_date": "2024-05",
+          "auction_house": "Bonhams",
+          "condition": "Good",
+          "key_differences": "Two-panel vs six-panel; ink vs gold"
+        }
+      ],
+      "estimated_range": {
+        "low": 5000,
+        "mid": 40000,
+        "high": 400000,
+        "currency": "USD"
+      },
+      "sources": [
+        "Christie's",
+        "Sotheby's Japanese Art"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T06:39:16.055597Z",
+      "type": "price_comparable"
+    },
+    {
+      "id": "pc-contemporary-murakami",
+      "category": "contemporary",
+      "subject": "Contemporary Japanese Art — Market Leaders",
+      "comparables": [
+        {
+          "description": "Takashi Murakami, large-scale painting, 2005, major gallery provenance",
+          "sale_price": 2800000,
+          "sale_date": "2024-04",
+          "auction_house": "Christie's",
+          "condition": "Excellent",
+          "key_differences": "Murakami at market peak"
+        },
+        {
+          "description": "Yayoi Kusama, infinity net painting, medium scale, 2018",
+          "sale_price": 950000,
+          "sale_date": "2024-02",
+          "auction_house": "Sotheby's",
+          "condition": "Excellent",
+          "key_differences": "Kusama consistently strong at auction"
+        },
+        {
+          "description": "Emerging Japanese contemporary artist, gallery price",
+          "sale_price": 8000,
+          "sale_date": "2024-06",
+          "auction_house": "Gallery",
+          "condition": "New",
+          "key_differences": "Primary market for emerging artists"
+        }
+      ],
+      "estimated_range": {
+        "low": 5000,
+        "mid": 100000,
+        "high": 3000000,
+        "currency": "USD"
+      },
+      "sources": [
+        "Artnet Price Database",
+        "Christie's Contemporary Art"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T06:39:16.055597Z",
+      "type": "price_comparable"
+    },
+    {
+      "id": "prov-swords-nbthk",
+      "type": "provenance_chain",
+      "category": "swords",
+      "subject": "NBTHK Certification Levels",
+      "valid_indicators": [
+        "NBTHK Hozon (Worthy of Preservation) — basic level authentication",
+        "NBTHK Tokubetsu Hozon (Especially Worthy) — confirmed quality and period",
+        "NBTHK Juyo Token (Important Sword) — high-level works, stringent review",
+        "NBTHK Tokubetsu Juyo — highest certification, awarded rarely",
+        "Each level includes detailed kantei-sho (appraisal certificate) with measurements, attribution, and condition notes"
+      ],
+      "red_flags": [
+        "Certificate number not verifiable in NBTHK records",
+        "Paper quality or printing style inconsistent with claimed date",
+        "Certificate describes features not matching the blade",
+        "Re-submission after failed evaluation without disclosure"
+      ],
+      "verification_steps": [
+        "Verify certificate number with NBTHK directly",
+        "Compare blade measurements on certificate with actual blade",
+        "Confirm attribution is consistent with known works of claimed smith",
+        "Check for condition changes since certification date"
+      ],
+      "sources": [
+        "NBTHK official publications",
+        "Japanese Sword Society of the United States"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T06:39:16.055597Z"
+    },
+    {
+      "id": "prov-ceramics-hakogaki",
+      "type": "provenance_chain",
+      "category": "ceramics",
+      "subject": "Box Inscription (Hakogaki) Authentication",
+      "valid_indicators": [
+        "Hakogaki by recognized tea master or scholar on original tomobako",
+        "Ink quality and calligraphic style consistent with claimed author",
+        "Box wood type and construction appropriate to period",
+        "Provenance chain documented through successive owners' inscriptions"
+      ],
+      "red_flags": [
+        "Box appears newer than the ceramic it holds",
+        "Hakogaki calligraphy does not match known examples of claimed author",
+        "Excessive number of provenance inscriptions suggesting fabricated history",
+        "Box construction techniques inconsistent with claimed period"
+      ],
+      "verification_steps": [
+        "Compare calligraphy with published examples in hanko dictionaries",
+        "Assess wood aging under UV light",
+        "Verify tea master's dates align with claimed period",
+        "Cross-reference with published collection catalogues"
+      ],
+      "sources": [
+        "Tea Culture Research Society",
+        "Nezu Museum catalogues"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T06:39:16.055597Z"
+    },
+    {
+      "id": "prov-bonsai-exhibition",
+      "type": "provenance_chain",
+      "category": "bonsai",
+      "subject": "Exhibition Catalogue Provenance",
+      "valid_indicators": [
+        "Photographic entry in official Kokufu-ten exhibition catalogue with tree identification",
+        "Sequential exhibition entries showing tree development over decades",
+        "Named owner/nursery in catalogue entry matching current provenance claim",
+        "Measurement records consistent across catalogue appearances"
+      ],
+      "red_flags": [
+        "Claimed exhibition entry but no matching catalogue photograph",
+        "Tree appearance inconsistent with documented photographs from claimed period",
+        "Provenance gap — missing decades in ownership chain",
+        "Exhibition catalogue edition is a known reprint with altered entries"
+      ],
+      "verification_steps": [
+        "Request specific catalogue year and entry number",
+        "Compare current tree with catalogue photographs for consistency",
+        "Verify catalogue edition is original (not reprint)",
+        "Contact exhibiting nursery or owner for confirmation"
+      ],
+      "sources": [
+        "Nippon Bonsai Association — Kokufu-ten catalogues",
+        "Omiya Bonsai Art Museum archives"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T06:39:16.055597Z"
+    },
+    {
+      "id": "prov-ukiyoe-publisher",
+      "type": "provenance_chain",
+      "category": "ukiyoe",
+      "subject": "Publisher Seal and Censor Marks",
+      "valid_indicators": [
+        "Publisher seal (hanmoto) matching known publishers active in claimed period",
+        "Censor seal (kiwame/aratame) with date seal consistent with print's attributed date",
+        "Carver/printer marks when present",
+        "Paper type consistent with period and publisher's known practices"
+      ],
+      "red_flags": [
+        "Publisher seal for a publisher not active during claimed period",
+        "Missing censor marks for a period when they were mandatory (1790-1876)",
+        "Date seal inconsistent with artist's known active period",
+        "Seal carved in wrong style for claimed period"
+      ],
+      "verification_steps": [
+        "Cross-reference publisher with Marks database of ukiyo-e publishers",
+        "Verify censor seal date against established chronology",
+        "Compare with documented impressions in museum collections",
+        "Check paper under transmitted light for watermarks and fiber composition"
+      ],
+      "sources": [
+        "Ukiyo-e.org database",
+        "Museum of Fine Arts Boston — Print collection"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T06:39:16.055597Z"
+    },
+    {
+      "id": "prov-painting-box",
+      "type": "provenance_chain",
+      "category": "painting",
+      "subject": "Scroll Mounting and Box Documentation",
+      "valid_indicators": [
+        "Original mounting fabrics (ichimonji, chuuberi) consistent with painting period",
+        "Box (hakobuta) with inscriptions by recognized connoisseurs",
+        "Roller ends (jiku) material and style appropriate to rank and period",
+        "Successive remounting history documented in box inscriptions"
+      ],
+      "red_flags": [
+        "Suspiciously new mounting on painting claimed as old",
+        "Expensive mounting on painting of questionable quality (over-presentation)",
+        "Silk border patterns anachronistic for claimed period",
+        "Jiku materials inconsistent with painting's claimed importance"
+      ],
+      "verification_steps": [
+        "Assess mounting materials under magnification for period consistency",
+        "Research connoisseur inscriptions in published seal dictionaries",
+        "Evaluate overall presentation against norms for paintings of claimed rank",
+        "Commission technical analysis if significant investment is planned"
+      ],
+      "sources": [
+        "Agency for Cultural Affairs, Japan",
+        "National Institutes for Cultural Heritage"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T06:39:16.055597Z"
+    },
+    {
+      "id": "prov-lacquerware-lineage",
+      "type": "provenance_chain",
+      "category": "lacquerware",
+      "subject": "Lacquer Workshop Lineage Verification",
+      "valid_indicators": [
+        "Signature or seal matching documented examples in published seal dictionaries",
+        "Technique consistent with known characteristics of claimed workshop/school",
+        "Daimyo commissioning records for presentation-grade pieces",
+        "Export documentation for Meiji-era pieces destined for European markets"
+      ],
+      "red_flags": [
+        "Signature style inconsistent with known examples from claimed artist",
+        "Technique quality inconsistent with claimed workshop (too crude or too refined)",
+        "Lacquer composition not consistent with claimed period (urushiol vs synthetic analysis)"
+      ],
+      "verification_steps": [
+        "Compare signature with published seal catalogues",
+        "UV fluorescence test for urushi vs synthetic lacquer",
+        "Assess technique against documented workshop examples",
+        "Research daimyo or export provenance in period trade records"
+      ],
+      "sources": [
+        "Japan Lacquer Art Association",
+        "Victoria and Albert Museum lacquer collection notes"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T06:39:16.055597Z"
     }
   ]
 }
