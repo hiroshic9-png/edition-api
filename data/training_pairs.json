@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-05-14T06:37:42.405587Z",
-  "total_pairs": 152,
+  "generated_at": "2026-05-14T08:54:58.279182Z",
+  "total_pairs": 241,
   "pairs": [
     {
       "id": "fqa-swords-001",
@@ -3424,6 +3424,2544 @@
       ],
       "verified_by": "source_verified",
       "created_at": "2026-05-14T06:39:16.055597Z"
+    },
+    {
+      "id": "prov-swords-001",
+      "type": "provenance_chain",
+      "category": "swords",
+      "subject": "NBTHK折紙(Origami Certificate)",
+      "valid_indicators": [
+        "正式な折紙は和紙に墨書、NBTHK公式印あり",
+        "登録番号がNBTHK台帳と一致",
+        "保存→特別保存→重要→特別重要の4段階",
+        "折紙の紙質・印刷が時代と一致"
+      ],
+      "red_flags": [
+        "コピー用紙やインクジェット印刷",
+        "登録番号が存在しない/別の刀に発行されたもの",
+        "「重要」以上なのに写真台帳と不一致",
+        "折紙の発行年が刀の登録日より古い"
+      ],
+      "verification_steps": [
+        "NBTHK事務局に登録番号を照会",
+        "折紙の紙質・印章を実物と比較",
+        "写真台帳との照合（重要以上）",
+        "過去のオークション記録との突合"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "prov-swords-002",
+      "type": "provenance_chain",
+      "category": "swords",
+      "subject": "銃砲刀剣類登録証",
+      "valid_indicators": [
+        "都道府県教育委員会発行の正式書式",
+        "登録番号・刃長・反り・目釘穴数が実物と一致",
+        "登録年月日の記載あり",
+        "登録審査会の審査員名記載"
+      ],
+      "red_flags": [
+        "書式が古い様式なのに新しい紙質",
+        "刃長の記載と実測値に2mm以上の差",
+        "登録番号が欠番または重複",
+        "他県の書式を模倣した偽造"
+      ],
+      "verification_steps": [
+        "登録証記載の刃長・反りを実測と比較",
+        "発行都道府県の教育委員会に照会",
+        "登録審査会の記録との照合",
+        "紙質・印刷方式の時代整合性確認"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "prov-swords-003",
+      "type": "provenance_chain",
+      "category": "swords",
+      "subject": "中心(Nakago)の来歴マーカー",
+      "valid_indicators": [
+        "経年による自然な鉄錆（黒錆）の均一な発達",
+        "鑢目(yasurime)が時代・流派と整合",
+        "目釘穴の位置・数が改変歴と一致",
+        "在銘の場合、銘の鑿跡が時代の作風と一致"
+      ],
+      "red_flags": [
+        "化学処理による人工錆（表面のみ・ムラあり）",
+        "鑢目が不自然に均一（機械加工の疑い）",
+        "目釘穴周辺に不自然な摩耗パターン",
+        "銘の字体が既知の作例と不一致"
+      ],
+      "verification_steps": [
+        "10倍ルーペで錆の粒子構造を観察",
+        "鑢目の方向・角度を流派データベースと照合",
+        "目釘穴の摩耗パターンから使用歴を推定",
+        "銘字の運刀を既知真作の拓本と比較"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "prov-swords-004",
+      "type": "provenance_chain",
+      "category": "swords",
+      "subject": "金象嵌銘(Kinzogan-mei)",
+      "valid_indicators": [
+        "本阿弥家による極めの金象嵌は特定の書体・配置パターンに従う",
+        "象嵌の金の純度が時代と整合",
+        "中心の錆と象嵌の経年変化が一致",
+        "本阿弥家の代別の特徴と合致"
+      ],
+      "red_flags": [
+        "金象嵌が錆の上に施されている（後世の追加）",
+        "書体が本阿弥家のどの代とも一致しない",
+        "象嵌の金が純度99%以上（近代精錬の特徴）",
+        "極め内容が刀の特徴と矛盾"
+      ],
+      "verification_steps": [
+        "XRFで象嵌金の組成分析",
+        "本阿弥家代別の書体データベースと照合",
+        "象嵌と中心錆の境界を顕微鏡観察",
+        "極め内容の妥当性を刀剣研究文献で検証"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "prov-ceramics-001",
+      "type": "provenance_chain",
+      "category": "ceramics",
+      "subject": "箱書(Hakogaki)と共箱",
+      "valid_indicators": [
+        "桐箱の木目・経年変化が時代と整合",
+        "箱書の墨跡が書き手の既知の筆跡と一致",
+        "印章の朱肉成分が時代と整合",
+        "箱の寸法が中身と精密に合致"
+      ],
+      "red_flags": [
+        "箱が新しいのに箱書だけ古く見える（後世の箱に旧い蓋を転用）",
+        "筆跡が既知の書き手の他作品と明らかに異なる",
+        "印章が既知のものと微妙にサイズが異なる（模刻）",
+        "箱の内寸と作品サイズに不自然な余裕"
+      ],
+      "verification_steps": [
+        "箱材の樹種・経年変化を確認",
+        "箱書の筆跡を既知資料と比較",
+        "印章を拓本データベースと照合",
+        "箱と作品の寸法適合性を検証"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "prov-ceramics-002",
+      "type": "provenance_chain",
+      "category": "ceramics",
+      "subject": "窯印・陶印(Kiln Marks)",
+      "valid_indicators": [
+        "印の形状・書体が窯元の記録と一致",
+        "施釉前に押印（釉薬の下に印がある）",
+        "印の摩耗度が使用頻度と整合",
+        "土の付着パターンが窯の特徴と一致"
+      ],
+      "red_flags": [
+        "釉薬の上から印が押されている（後付け）",
+        "印のエッジが鋭すぎる（新しい印章の使用）",
+        "同一窯印なのに土質が全く異なる",
+        "記録に存在しない窯印パターン"
+      ],
+      "verification_steps": [
+        "窯元の公式記録・図録と印を照合",
+        "釉薬層と印の前後関係を顕微鏡確認",
+        "XRFで胎土の元素組成を窯元特性と比較",
+        "同窯印の他作品との一貫性を確認"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "prov-ceramics-003",
+      "type": "provenance_chain",
+      "category": "ceramics",
+      "subject": "茶会記・茶事記録",
+      "valid_indicators": [
+        "茶会記に道具名・使用日・亭主名が記載",
+        "記録の紙質・墨が時代と整合",
+        "複数の独立した茶会記に同一道具が登場",
+        "道具の特徴描写が実物と一致"
+      ],
+      "red_flags": [
+        "記録の紙が作品の推定年代より新しい",
+        "同時代の他の茶会記と矛盾する記述",
+        "道具の描写が実物と明らかに不一致",
+        "存在しない茶人の名前が記載"
+      ],
+      "verification_steps": [
+        "茶会記の原本または信頼できる翻刻を確認",
+        "記載の茶人・日付の実在を裏付け資料で検証",
+        "複数記録間のクロスリファレンス",
+        "道具の特徴描写と実物の照合"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "prov-ukiyoe-001",
+      "type": "provenance_chain",
+      "category": "ukiyoe",
+      "subject": "版元印(Publisher Seal)",
+      "valid_indicators": [
+        "版元印の形状・位置が時代の慣行と一致",
+        "版元の活動期間と作品の制作年が整合",
+        "改印（検閲印）との組み合わせが正しい",
+        "印の彫り・摺りが時代の技法と一致"
+      ],
+      "red_flags": [
+        "版元の活動期間外の改印との組み合わせ",
+        "印の位置が通常と異なる",
+        "同一版元印なのに彫りの精度にばらつき",
+        "存在しない版元名"
+      ],
+      "verification_steps": [
+        "版元印を専門データベース(Marks on Japanese Prints)と照合",
+        "版元の活動年代と改印年代の整合性確認",
+        "同版元の他作品との印の一貫性比較",
+        "紙・顔料の時代整合性を併せて検証"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "prov-ukiyoe-002",
+      "type": "provenance_chain",
+      "category": "ukiyoe",
+      "subject": "改印(Censorship Seal)制度",
+      "valid_indicators": [
+        "極印→改印→年月印の制度変遷と時期が一致",
+        "改印の形状が既知のパターンと合致",
+        "改印と作品の内容規制状況が整合",
+        "印の摺り圧が版木印刷と一致"
+      ],
+      "red_flags": [
+        "制度変更前の形式の改印が変更後の作品に",
+        "改印が手書きまたはスタンプ（版木印刷でない）",
+        "複数の改印が矛盾する年代を示す",
+        "改印の位置が通常の慣行と異なる"
+      ],
+      "verification_steps": [
+        "改印の形式から年代を特定",
+        "制度変遷表との照合",
+        "同時期の他作品の改印パターンと比較",
+        "改印の摺り技法を顕微鏡で確認"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "prov-painting-001",
+      "type": "provenance_chain",
+      "category": "painting",
+      "subject": "落款・印章(Signature & Seal)",
+      "valid_indicators": [
+        "落款の書体が画家の既知の時期別特徴と一致",
+        "印章の朱文/白文・形状が印譜と合致",
+        "落款の位置が画家の慣行と一致",
+        "墨の経年変化が絵画本体と同程度"
+      ],
+      "red_flags": [
+        "落款の墨色が絵画本体より明らかに新しい",
+        "印章が既知の印譜のどれとも一致しない",
+        "書体が画家の晩年様式なのに初期の画風",
+        "落款の位置が通常と異なる（後世の追加の疑い）"
+      ],
+      "verification_steps": [
+        "印譜集（画家別印章データベース）との照合",
+        "落款の筆跡を時期別に分類・比較",
+        "墨・顔料の経年変化の整合性を検証",
+        "表装との時代整合性を確認"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "prov-painting-002",
+      "type": "provenance_chain",
+      "category": "painting",
+      "subject": "極め札・鑑定書",
+      "valid_indicators": [
+        "鑑定者が当該分野の権威として認知されている",
+        "鑑定書の書式・用紙が発行機関の正式なもの",
+        "鑑定日と作品の市場出現時期が整合",
+        "鑑定内容が作品の特徴と一致"
+      ],
+      "red_flags": [
+        "鑑定者が無名または当該分野の専門外",
+        "鑑定書がコピーまたは写真のみ（原本不在）",
+        "鑑定日が鑑定者の没後",
+        "同一作品に矛盾する複数の鑑定書"
+      ],
+      "verification_steps": [
+        "鑑定者の経歴・専門分野を確認",
+        "鑑定書の原本を確認",
+        "鑑定内容と作品の照合",
+        "他の鑑定書・来歴との整合性確認"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "prov-lacquerware-001",
+      "type": "provenance_chain",
+      "category": "lacquerware",
+      "subject": "蒔絵師銘と家系記録",
+      "valid_indicators": [
+        "銘の位置が蒔絵師の慣行と一致（通常は蓋裏）",
+        "銘の書体が家系の伝統的様式と合致",
+        "漆の経年変化が銘部分と本体で一致",
+        "家系記録に該当作品の記載あり"
+      ],
+      "red_flags": [
+        "銘が漆層の上に後から加えられている",
+        "書体が家系のどの代とも一致しない",
+        "銘の漆と本体の漆の経年変化が不一致",
+        "家系記録に存在しない号・名前"
+      ],
+      "verification_steps": [
+        "銘を家系別の銘鑑と照合",
+        "漆層の断面観察で銘の前後関係を確認",
+        "家系の活動記録との年代整合性を検証",
+        "同一蒔絵師の他作品との技法比較"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "prov-netsuke-001",
+      "type": "provenance_chain",
+      "category": "netsuke",
+      "subject": "根付師銘(Carver Signature)",
+      "valid_indicators": [
+        "銘の彫り方が彫師の既知のスタイルと一致",
+        "銘の位置が流派の慣行に従う",
+        "材質の経年変化と銘の風化度が一致",
+        "銘鑑(signature reference)に記載あり"
+      ],
+      "red_flags": [
+        "銘が後彫り（周囲より新しい削り跡）",
+        "同一銘なのに彫刻技法が著しく異なる",
+        "銘鑑に未記載の名前",
+        "銘の周辺だけ不自然にきれい"
+      ],
+      "verification_steps": [
+        "銘鑑(Meinertzhagen記録等)との照合",
+        "彫り跡の新旧を10倍ルーペで確認",
+        "同一銘の他作品と技法・スタイルを比較",
+        "来歴（コレクション歴）の追跡"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "prov-textiles-001",
+      "type": "provenance_chain",
+      "category": "textiles",
+      "subject": "染織品の伝来記録",
+      "valid_indicators": [
+        "寺社の什物帳に記載がある",
+        "大名家の道具帳との照合が可能",
+        "裂地見本帳(textile sample book)に同種の記録",
+        "修理記録が存在し修理箇所と一致"
+      ],
+      "red_flags": [
+        "什物帳の記載と実物の技法が矛盾",
+        "道具帳の記述年代と染料分析結果が不一致",
+        "修理記録のない大規模修復の痕跡",
+        "複数の伝来記録が互いに矛盾"
+      ],
+      "verification_steps": [
+        "伝来先の什物帳・道具帳の原本確認",
+        "記述内容と実物の照合",
+        "染料分析による年代検証",
+        "修復痕跡と修理記録の整合性確認"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "prov-metalwork-001",
+      "type": "provenance_chain",
+      "category": "metalwork",
+      "subject": "金工師銘と極め",
+      "valid_indicators": [
+        "銘の鑿跡が金工師の既知の特徴と一致",
+        "後藤家の場合、代別の様式特徴と合致",
+        "極め書の筆跡・印章が鑑定者の真筆と一致",
+        "金工の合金組成が時代・流派と整合"
+      ],
+      "red_flags": [
+        "銘の鑿跡が不自然に均一（機械彫りの疑い）",
+        "合金組成が近代精錬の特徴を示す",
+        "極め書の紙質が記載年代と不整合",
+        "同一銘で技法レベルに著しい差"
+      ],
+      "verification_steps": [
+        "銘を流派別データベースと照合",
+        "XRFで合金組成を分析",
+        "極め書の紙質・墨の分析",
+        "同一銘の他作品との技法比較"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "prov-bonsai-001",
+      "type": "provenance_chain",
+      "category": "bonsai",
+      "subject": "盆栽の管理記録(Kanri-kiroku)",
+      "valid_indicators": [
+        "植替え・剪定・針金掛けの日付と写真記録",
+        "国風展・大観展の出品記録と図録掲載",
+        "師匠から弟子への譲渡記録",
+        "鉢の変遷記録（著名鉢師の作品との組み合わせ）"
+      ],
+      "red_flags": [
+        "写真の背景や光の状態が不自然（合成の疑い）",
+        "出品記録があるが図録に掲載がない",
+        "管理記録の筆跡が途中で変わるのに譲渡記録がない",
+        "樹齢の主張と幹の太さ・樹皮の状態が不整合"
+      ],
+      "verification_steps": [
+        "国風展図録の実物を確認",
+        "管理記録の写真のメタデータ検証",
+        "師匠・弟子関係の実在を確認",
+        "樹齢の主張を樹皮・根張りの状態と照合"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "prov-bonsai-002",
+      "type": "provenance_chain",
+      "category": "bonsai",
+      "subject": "盆栽鉢の来歴",
+      "valid_indicators": [
+        "鉢底の刻印が鉢師の記録と一致",
+        "釉薬の成分が産地と整合",
+        "使用痕（水垢・根の痕跡）が長期使用を示す",
+        "古鉢目録に記載あり"
+      ],
+      "red_flags": [
+        "刻印のエッジが鋭すぎる（新しい型の使用）",
+        "釉薬成分が産地の特徴と不一致",
+        "使用痕がなく新品同様なのに「古鉢」と称する",
+        "目録に存在しない刻印"
+      ],
+      "verification_steps": [
+        "鉢師の刻印データベースと照合",
+        "XRFで胎土・釉薬の組成分析",
+        "使用痕の自然さを確認",
+        "古鉢目録・オークション記録との照合"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "prov-sculpture-001",
+      "type": "provenance_chain",
+      "category": "sculpture",
+      "subject": "仏像の納入品(Nōnyū-hin)",
+      "valid_indicators": [
+        "像内に経典・願文・結縁者名簿が納入",
+        "納入品の紙質・墨が像の制作年代と整合",
+        "願文の記載内容が歴史的事実と一致",
+        "CTスキャンで納入品の存在を非破壊確認"
+      ],
+      "red_flags": [
+        "納入品の紙が像の推定年代より明らかに新しい",
+        "願文に存在しない寺院名や僧名",
+        "CTスキャンで納入品の配置が不自然",
+        "複数回の開腹修理痕があり納入品の入替えの可能性"
+      ],
+      "verification_steps": [
+        "CTスキャンで像内構造を非破壊調査",
+        "納入品の紙質・墨の科学分析",
+        "願文記載内容の歴史的検証",
+        "修理記録との照合"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "prov-sculpture-002",
+      "type": "provenance_chain",
+      "category": "sculpture",
+      "subject": "寺社の什物帳・仏像台帳",
+      "valid_indicators": [
+        "什物帳に像の特徴・寸法・安置場所が記載",
+        "台帳の記載年代と像の様式が整合",
+        "複数時代の什物帳に一貫して記載",
+        "修理記録と実際の修復痕が一致"
+      ],
+      "red_flags": [
+        "什物帳の記載と像の特徴が不一致",
+        "台帳が近年に作成されたもの",
+        "記載の寸法と実測値に大きな差",
+        "修理記録のない大規模修復"
+      ],
+      "verification_steps": [
+        "什物帳原本の確認と記載内容の照合",
+        "像の様式分析と記載年代の整合性検証",
+        "修復痕の調査と修理記録の照合",
+        "関連する他の記録（絵図等）との照合"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "prov-architecture-001",
+      "type": "provenance_chain",
+      "category": "architecture",
+      "subject": "建築の棟札(Munafuda)",
+      "valid_indicators": [
+        "棟札の木材・墨書が建築年代と整合",
+        "記載の大工棟梁・施主が歴史記録と一致",
+        "棟木への取付方法が時代の慣行と一致",
+        "記載内容と建築の構造的特徴が整合"
+      ],
+      "red_flags": [
+        "棟札の木が建築用材と明らかに異なる樹種",
+        "記載の人物が歴史的に存在しない",
+        "取付位置が通常と異なる（後世の追加の疑い）",
+        "記載の建築規模と実際の建物が不一致"
+      ],
+      "verification_steps": [
+        "棟札の木材を年輪年代法で分析",
+        "記載人物の歴史的実在を文献で検証",
+        "建築の構造分析と記載内容の照合",
+        "他の棟札との書式・様式の比較"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "prov-architecture-002",
+      "type": "provenance_chain",
+      "category": "architecture",
+      "subject": "調度品の蒔絵・家紋来歴",
+      "valid_indicators": [
+        "家紋が特定の大名家・公家と一致",
+        "蒔絵の技法が記載の時代と整合",
+        "婚礼調度の場合、婚姻記録と合致",
+        "同一セットの他の調度品との整合性"
+      ],
+      "red_flags": [
+        "家紋が実在するがその家の調度目録に記載なし",
+        "蒔絵技法が記載時代より新しい",
+        "セット内で技法・品質にばらつき",
+        "家紋の細部が正式なものと微妙に異なる"
+      ],
+      "verification_steps": [
+        "家紋を大名家紋帳と照合",
+        "蒔絵技法の時代分析",
+        "婚姻記録・調度目録との照合",
+        "セット全体の一貫性検証"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "prov-contemporary-001",
+      "type": "provenance_chain",
+      "category": "contemporary",
+      "subject": "現代作家の作品証明書",
+      "valid_indicators": [
+        "作家本人または正式な代理人が発行",
+        "作品の写真・寸法・素材が記載",
+        "エディション番号（版画の場合）が記載",
+        "発行日と作家の活動期間が整合"
+      ],
+      "red_flags": [
+        "証明書がコピーのみ（原本不在）",
+        "記載内容と作品が不一致",
+        "発行者が作家との関係を証明できない",
+        "エディション番号が総数を超えている"
+      ],
+      "verification_steps": [
+        "発行者の正当性を作家の公式サイト等で確認",
+        "証明書の記載内容と作品の照合",
+        "エディション情報の検証",
+        "作家のカタログ・レゾネとの照合"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "prov-contemporary-002",
+      "type": "provenance_chain",
+      "category": "contemporary",
+      "subject": "展覧会歴・出版歴",
+      "valid_indicators": [
+        "美術館の展覧会カタログに図版掲載",
+        "出品リストに作品番号と所蔵者名",
+        "複数の展覧会に一貫した情報で出品",
+        "美術雑誌の展評で言及"
+      ],
+      "red_flags": [
+        "カタログに図版はあるが出品リストに不在",
+        "展覧会が実在しない",
+        "所蔵者名が展覧会ごとに矛盾",
+        "出品作品と図版が明らかに異なる"
+      ],
+      "verification_steps": [
+        "展覧会カタログの原本確認",
+        "美術館のアーカイブへの照会",
+        "出品リスト・保険記録の確認",
+        "美術雑誌の展評との照合"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "prov-cross-001",
+      "type": "provenance_chain",
+      "category": "swords",
+      "subject": "大名家伝来品の来歴検証",
+      "valid_indicators": [
+        "大名家の道具帳・刀剣台帳に記載",
+        "明治期の華族払い下げ記録と整合",
+        "戦前のコレクター・美術商の記録",
+        "オークションハウスの落札記録"
+      ],
+      "red_flags": [
+        "道具帳の記載内容と実物が不一致",
+        "払い下げ記録に存在しない",
+        "来歴に説明不能な空白期間",
+        "複数の大名家に同時に帰属を主張"
+      ],
+      "verification_steps": [
+        "大名家文書のアーカイブ調査",
+        "明治期の払い下げ記録の照合",
+        "美術商の取引記録の追跡",
+        "オークション記録データベースの検索"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "prov-cross-002",
+      "type": "provenance_chain",
+      "category": "ceramics",
+      "subject": "オークション来歴(Auction Provenance)",
+      "valid_indicators": [
+        "オークションカタログに掲載（ロット番号・エスティメイト・図版）",
+        "落札記録（価格・日付・落札者）が存在",
+        "コンディションレポートが現状と整合",
+        "前回出品時からの状態変化が説明可能"
+      ],
+      "red_flags": [
+        "カタログ記載の寸法と実物に差異",
+        "落札記録が確認できない",
+        "コンディションレポートに記載のないダメージ",
+        "前回出品作品と明らかに異なる"
+      ],
+      "verification_steps": [
+        "オークションハウスのアーカイブで記録確認",
+        "カタログの図版と実物の照合",
+        "コンディションの変化履歴の検証",
+        "価格推移の妥当性評価"
+      ],
+      "sources": [
+        "EDITION Authentication Intelligence Framework"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:45:06.658110Z"
+    },
+    {
+      "id": "avf-swords-002",
+      "type": "authentic_vs_fake",
+      "category": "swords",
+      "subject": "中心(Nakago)の錆と鑢目",
+      "authentic_markers": [
+        {
+          "feature": "自然な黒錆",
+          "detail": "数百年の酸化で中心全体に均一な黒褐色錆が発達。粒子構造が不均一で深層まで浸透",
+          "detection_method": "10倍ルーペ/顕微鏡"
+        },
+        {
+          "feature": "時代別鑢目パターン",
+          "detail": "勝手下がり(古刀期)、筋違(新刀期)等、時代・流派固有のパターン",
+          "detection_method": "目視/データベース照合"
+        }
+      ],
+      "fake_markers": [
+        {
+          "feature": "化学処理による人工錆",
+          "detail": "表面のみの錆で深層に浸透しない。ムラがあり粒子が均一すぎる",
+          "common_in": "現代の偽造品全般"
+        },
+        {
+          "feature": "機械加工の鑢目",
+          "detail": "角度・深さが完全に均一。手作業の微妙なブレがない",
+          "common_in": "量産偽造品"
+        }
+      ],
+      "confidence_notes": "中心の錆は最も偽造困難な要素。自然酸化には数十年以上を要する",
+      "sources": [
+        "EDITION Authentication Intelligence"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:50:11.741631Z"
+    },
+    {
+      "id": "avf-swords-003",
+      "type": "authentic_vs_fake",
+      "category": "swords",
+      "subject": "刃文(Hamon)の結晶構造",
+      "authentic_markers": [
+        {
+          "feature": "沸(Nie)の自然な分布",
+          "detail": "焼入れ時の冷却差により生じるマルテンサイト結晶が不均一に分布",
+          "detection_method": "自然光下での目視/顕微鏡"
+        },
+        {
+          "feature": "匂(Nioi)の深さ",
+          "detail": "刃縁に沿った微細結晶の帯が自然な幅の変動を示す",
+          "detection_method": "強い光源での透過観察"
+        }
+      ],
+      "fake_markers": [
+        {
+          "feature": "描き刃文",
+          "detail": "酸エッチングで表面に模様を描く。結晶構造がなく平面的",
+          "common_in": "観光土産刀、安価な模造品"
+        },
+        {
+          "feature": "不自然に均一な刃文",
+          "detail": "実際の焼入れでは生じない完全な均一性",
+          "common_in": "工業的製法の模造刀"
+        }
+      ],
+      "confidence_notes": "真の刃文は鋼の結晶構造変化であり、表面処理では再現不可能",
+      "sources": [
+        "EDITION Authentication Intelligence"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:50:11.741631Z"
+    },
+    {
+      "id": "avf-ceramics-002",
+      "type": "authentic_vs_fake",
+      "category": "ceramics",
+      "subject": "志野茶碗の釉薬",
+      "authentic_markers": [
+        {
+          "feature": "長石釉の気泡構造",
+          "detail": "桃山期の志野は粗い長石釉で大小不規則な気泡を含む。釉厚が不均一",
+          "detection_method": "ルーペ/断面観察"
+        },
+        {
+          "feature": "火色(Hiiro)",
+          "detail": "素地の鉄分が釉薬を通して赤く発色。自然で不規則なグラデーション",
+          "detection_method": "目視"
+        }
+      ],
+      "fake_markers": [
+        {
+          "feature": "均一な釉薬厚",
+          "detail": "現代の施釉技術による均一すぎる釉厚",
+          "common_in": "昭和以降の模倣品"
+        },
+        {
+          "feature": "人工的な火色",
+          "detail": "酸化鉄を釉薬に添加した人工的な赤み。ムラが不自然に規則的",
+          "common_in": "美濃地方の量産品"
+        }
+      ],
+      "confidence_notes": "志野の釉薬は桃山期の窯の温度不均一性が生む。現代の安定した窯では再現困難",
+      "sources": [
+        "EDITION Authentication Intelligence"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:50:11.741631Z"
+    },
+    {
+      "id": "avf-ceramics-003",
+      "type": "authentic_vs_fake",
+      "category": "ceramics",
+      "subject": "備前焼の窯変",
+      "authentic_markers": [
+        {
+          "feature": "自然な胡麻(Goma)",
+          "detail": "薪の灰が降りかかり自然釉を形成。分布が不規則で粒子サイズに変動",
+          "detection_method": "目視/ルーペ"
+        },
+        {
+          "feature": "牡丹餅(Botamochi)",
+          "detail": "他の器を重ねた跡の火色変化。輪郭がぼやけ自然なグラデーション",
+          "detection_method": "目視"
+        }
+      ],
+      "fake_markers": [
+        {
+          "feature": "人工灰釉",
+          "detail": "灰を意図的に振りかけた均一すぎる分布",
+          "common_in": "現代の商業備前"
+        },
+        {
+          "feature": "シャープな牡丹餅",
+          "detail": "型を使用した明確すぎる輪郭",
+          "common_in": "量産品"
+        }
+      ],
+      "confidence_notes": "備前の窯変は1200度超の登り窯で10-14日間焼成して生じる。短時間焼成では再現不可",
+      "sources": [
+        "EDITION Authentication Intelligence"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:50:11.741631Z"
+    },
+    {
+      "id": "avf-ceramics-004",
+      "type": "authentic_vs_fake",
+      "category": "ceramics",
+      "subject": "楽茶碗の手づくね技法",
+      "authentic_markers": [
+        {
+          "feature": "手捻りの指跡",
+          "detail": "内側に残る指の圧痕が不規則。掌の温度で粘土の乾燥度に微差",
+          "detection_method": "目視/触診"
+        },
+        {
+          "feature": "高台の削り",
+          "detail": "竹べらによる力強い削り跡。各面の角度が微妙に異なる",
+          "detection_method": "目視"
+        }
+      ],
+      "fake_markers": [
+        {
+          "feature": "型成形の痕跡",
+          "detail": "内壁が均一すぎる。指跡が浅く規則的",
+          "common_in": "量産楽焼風茶碗"
+        },
+        {
+          "feature": "機械的な高台",
+          "detail": "回転台使用による均一な削り。角度が一定",
+          "common_in": "電動ろくろ使用品"
+        }
+      ],
+      "confidence_notes": "楽焼は一つずつ手で成形する。型やろくろの痕跡は即座に真贋の手がかりとなる",
+      "sources": [
+        "EDITION Authentication Intelligence"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:50:11.741631Z"
+    },
+    {
+      "id": "avf-ukiyoe-002",
+      "type": "authentic_vs_fake",
+      "category": "ukiyoe",
+      "subject": "初摺と後摺の判別",
+      "authentic_markers": [
+        {
+          "feature": "版木の鮮明さ",
+          "detail": "初摺は版木が新しく線が鋭利。髪の毛一本一本が明瞭",
+          "detection_method": "ルーペ"
+        },
+        {
+          "feature": "見当(Kento)精度",
+          "detail": "多色摺りの色ズレが極小。見当の精度が高い",
+          "detection_method": "ルーペでの色境界確認"
+        }
+      ],
+      "fake_markers": [
+        {
+          "feature": "線の鈍化",
+          "detail": "版木の摩耗で細線が太く曖昧に。輪郭がぼやける",
+          "common_in": "後摺・大量生産品"
+        },
+        {
+          "feature": "色のズレ",
+          "detail": "版木の反りや摩耗で見当が合わなくなり色がずれる",
+          "common_in": "後期摺り"
+        }
+      ],
+      "confidence_notes": "初摺は数十枚〜百枚程度。後摺は数千枚に及ぶこともある。価値差は100倍以上",
+      "sources": [
+        "EDITION Authentication Intelligence"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:50:11.741631Z"
+    },
+    {
+      "id": "avf-ukiyoe-003",
+      "type": "authentic_vs_fake",
+      "category": "ukiyoe",
+      "subject": "和紙と顔料の時代判定",
+      "authentic_markers": [
+        {
+          "feature": "手漉き和紙の繊維",
+          "detail": "楮(コウゾ)繊維が不規則に分布。透かすと繊維の方向性が見える",
+          "detection_method": "透過光/顕微鏡"
+        },
+        {
+          "feature": "天然顔料",
+          "detail": "植物性・鉱物性顔料は経年で特有の変色パターンを示す",
+          "detection_method": "FTIR/紫外線"
+        }
+      ],
+      "fake_markers": [
+        {
+          "feature": "機械漉き紙",
+          "detail": "繊維が均一に配向。透かしてもムラがない",
+          "common_in": "明治以降の復刻版"
+        },
+        {
+          "feature": "合成顔料",
+          "detail": "1856年以降の合成染料。紫外線下で特有の蛍光を発する",
+          "common_in": "明治以降の後摺・復刻"
+        }
+      ],
+      "confidence_notes": "紙と顔料の分析だけで江戸期オリジナルか後世の摺りかを高精度で判別可能",
+      "sources": [
+        "EDITION Authentication Intelligence"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:50:11.741631Z"
+    },
+    {
+      "id": "avf-lacquerware-002",
+      "type": "authentic_vs_fake",
+      "category": "lacquerware",
+      "subject": "蒔絵の金粉粒度と技法",
+      "authentic_markers": [
+        {
+          "feature": "不均一な金粉粒度",
+          "detail": "江戸期の手作業による金粉は粒度にバラつき。丸粉・平目粉が混在",
+          "detection_method": "顕微鏡"
+        },
+        {
+          "feature": "漆層の重ね塗り",
+          "detail": "30層以上の漆層。各層の厚さに微妙な変動",
+          "detection_method": "CTスキャン/断面観察"
+        }
+      ],
+      "fake_markers": [
+        {
+          "feature": "均一な金粉",
+          "detail": "工業製品の金粉は粒度が完全に均一",
+          "common_in": "現代の量産蒔絵"
+        },
+        {
+          "feature": "薄い漆層",
+          "detail": "コスト削減のため層数が少ない。5-10層程度",
+          "common_in": "輸出向け安価品"
+        }
+      ],
+      "confidence_notes": "蒔絵の金粉粒度は顕微鏡レベルの鑑定ポイント。手作業と機械の差は明確",
+      "sources": [
+        "EDITION Authentication Intelligence"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:50:11.741631Z"
+    },
+    {
+      "id": "avf-lacquerware-003",
+      "type": "authentic_vs_fake",
+      "category": "lacquerware",
+      "subject": "漆の経年変化パターン",
+      "authentic_markers": [
+        {
+          "feature": "自然なひび割れ(乾漆)",
+          "detail": "数百年の乾燥で生じる微細なひび。漆層の収縮による規則的パターン",
+          "detection_method": "斜光観察"
+        },
+        {
+          "feature": "漆の透明化",
+          "detail": "黒漆が経年で透明化し下地の朱や金が透けて見える（溜塗の変化）",
+          "detection_method": "目視"
+        }
+      ],
+      "fake_markers": [
+        {
+          "feature": "人工クラック",
+          "detail": "急速乾燥や溶剤で作った人工ひび。パターンが不自然に均一",
+          "common_in": "アンティーク風加工品"
+        },
+        {
+          "feature": "UV劣化",
+          "detail": "紫外線照射による強制劣化。表面のみ変色し深層と不一致",
+          "common_in": "偽アンティーク"
+        }
+      ],
+      "confidence_notes": "漆の自然な経年変化は数世紀かけて進行。化学的促進では深層の変化を再現できない",
+      "sources": [
+        "EDITION Authentication Intelligence"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:50:11.741631Z"
+    },
+    {
+      "id": "avf-netsuke-002",
+      "type": "authentic_vs_fake",
+      "category": "netsuke",
+      "subject": "象牙根付の経年パティナ",
+      "authentic_markers": [
+        {
+          "feature": "自然パティナ",
+          "detail": "数世紀の手脂の浸透で象牙全体が黄金色に変色。分子レベルで浸透",
+          "detection_method": "紫外線/断面観察"
+        },
+        {
+          "feature": "使用痕",
+          "detail": "紐通し穴(himotoshi)周辺の自然な摩耗。帯との接触面の光沢",
+          "detection_method": "10倍ルーペ"
+        }
+      ],
+      "fake_markers": [
+        {
+          "feature": "茶染め",
+          "detail": "紅茶やコーヒーで表面を染色。表面のみで内部は白い",
+          "common_in": "中国・東南アジア製の観光土産"
+        },
+        {
+          "feature": "化学的黄変",
+          "detail": "硝酸や過酸化水素による黄変処理。ムラがあり不自然",
+          "common_in": "近年の偽造品"
+        }
+      ],
+      "confidence_notes": "真のパティナは分子レベルで象牙に浸透。表面処理は断面観察で即座に判別可能",
+      "sources": [
+        "EDITION Authentication Intelligence"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:50:11.741631Z"
+    },
+    {
+      "id": "avf-painting-002",
+      "type": "authentic_vs_fake",
+      "category": "painting",
+      "subject": "掛軸の表装と時代判定",
+      "authentic_markers": [
+        {
+          "feature": "時代裂(Jidai-gire)",
+          "detail": "表装に使われた裂地が絵画の時代と整合。経年による色褪せが自然",
+          "detection_method": "目視/繊維分析"
+        },
+        {
+          "feature": "軸先(Jikusaki)の素材",
+          "detail": "象牙(正式)、漆(準正式)、木(茶席用)と用途に応じた素材選択",
+          "detection_method": "目視"
+        }
+      ],
+      "fake_markers": [
+        {
+          "feature": "新しい裂地の人工劣化",
+          "detail": "化学処理で古く見せた裂地。繊維の劣化パターンが不自然",
+          "common_in": "偽の古い表装"
+        },
+        {
+          "feature": "素材と格式の不一致",
+          "detail": "格の低い絵に象牙軸先など、作品と表装の格が不整合",
+          "common_in": "格上げ偽装"
+        }
+      ],
+      "confidence_notes": "表装は絵画とは独立した鑑定対象。表装だけ古い、または新しい場合は要注意",
+      "sources": [
+        "EDITION Authentication Intelligence"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:50:11.741631Z"
+    },
+    {
+      "id": "avf-painting-003",
+      "type": "authentic_vs_fake",
+      "category": "painting",
+      "subject": "日本画の顔料分析",
+      "authentic_markers": [
+        {
+          "feature": "天然岩絵具",
+          "detail": "孔雀石(緑青)、藍銅鉱(群青)等の天然鉱物顔料。粒度が不均一",
+          "detection_method": "XRF/顕微鏡"
+        },
+        {
+          "feature": "墨の経年変化",
+          "detail": "古い墨は表面がマットになり、微細なひび割れが生じる",
+          "detection_method": "斜光観察"
+        }
+      ],
+      "fake_markers": [
+        {
+          "feature": "合成顔料",
+          "detail": "酸化クロム緑、ウルトラマリン等の合成顔料。元素組成が天然と異なる",
+          "common_in": "明治以降の模倣品"
+        },
+        {
+          "feature": "新しい墨",
+          "detail": "光沢があり、ひび割れがない。膠の劣化がない",
+          "common_in": "近年の偽作"
+        }
+      ],
+      "confidence_notes": "顔料分析は年代特定の決定的手段。特定の合成顔料の発明年が上限を設定する",
+      "sources": [
+        "EDITION Authentication Intelligence"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:50:11.741631Z"
+    },
+    {
+      "id": "avf-textiles-002",
+      "type": "authentic_vs_fake",
+      "category": "textiles",
+      "subject": "友禅染めの技法判別",
+      "authentic_markers": [
+        {
+          "feature": "手描き糊置き",
+          "detail": "防染糊の線に手作業の微妙な太さ変動。線の始点終点に力の変化",
+          "detection_method": "ルーペ"
+        },
+        {
+          "feature": "裏面への染料浸透",
+          "detail": "手描き友禅は染料が裏まで浸透。裏面にも模様が薄く見える",
+          "detection_method": "裏面観察"
+        }
+      ],
+      "fake_markers": [
+        {
+          "feature": "スクリーン印刷",
+          "detail": "糊線が完全に均一。ドットパターンが見える場合も",
+          "common_in": "昭和以降の量産友禅"
+        },
+        {
+          "feature": "裏面が白い",
+          "detail": "印刷は表面のみ。裏面に模様の浸透がない",
+          "common_in": "インクジェット友禅"
+        }
+      ],
+      "confidence_notes": "手描き友禅と型友禅の価格差は10-100倍。裏面観察が最も簡便な判別法",
+      "sources": [
+        "EDITION Authentication Intelligence"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:50:11.741631Z"
+    },
+    {
+      "id": "avf-textiles-003",
+      "type": "authentic_vs_fake",
+      "category": "textiles",
+      "subject": "天然染料vs合成染料",
+      "authentic_markers": [
+        {
+          "feature": "藍(Ai)の深み",
+          "detail": "天然藍は染め重ねるほど深みが増す。紫外線下で特有の蛍光なし",
+          "detection_method": "UV照射/FTIR"
+        },
+        {
+          "feature": "草木染めの色斑",
+          "detail": "天然染料は染めムラが生じやすい。これが「味」として評価される",
+          "detection_method": "目視"
+        }
+      ],
+      "fake_markers": [
+        {
+          "feature": "合成インディゴ",
+          "detail": "1880年以降の合成藍。紫外線下で蛍光を発する場合がある",
+          "common_in": "明治以降の藍染め"
+        },
+        {
+          "feature": "均一すぎる染色",
+          "detail": "化学染料による完全に均一な染色。ムラがない",
+          "common_in": "工業製品"
+        }
+      ],
+      "confidence_notes": "1856年のモーブ(最初の合成染料)発明が時代判定の分水嶺。FTIR分析で判別可能",
+      "sources": [
+        "EDITION Authentication Intelligence"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:50:11.741631Z"
+    },
+    {
+      "id": "avf-metalwork-002",
+      "type": "authentic_vs_fake",
+      "category": "metalwork",
+      "subject": "赤銅(Shakudō)の色揚げ",
+      "authentic_markers": [
+        {
+          "feature": "自然な色揚げ",
+          "detail": "伝統的な煮色(niiro)処理による深い紫黒色。微妙な色調変化あり",
+          "detection_method": "目視/XRF"
+        },
+        {
+          "feature": "金の含有率",
+          "detail": "江戸期の赤銅は金3-5%。各流派で微妙に異なる配合",
+          "detection_method": "XRF"
+        }
+      ],
+      "fake_markers": [
+        {
+          "feature": "化学的黒染め",
+          "detail": "硫化物や塩化物による表面処理。深みがなく均一すぎる黒",
+          "common_in": "現代の模造品"
+        },
+        {
+          "feature": "不適切な合金比",
+          "detail": "金の含有率が歴史的範囲外。近代精錬の高純度金使用",
+          "common_in": "近代以降の偽造品"
+        }
+      ],
+      "confidence_notes": "赤銅の色揚げは伝統的煮色液の配合が秘伝。化学処理との差は専門家には明確",
+      "sources": [
+        "EDITION Authentication Intelligence"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:50:11.741631Z"
+    },
+    {
+      "id": "avf-metalwork-003",
+      "type": "authentic_vs_fake",
+      "category": "metalwork",
+      "subject": "鍔(Tsuba)の鉄地",
+      "authentic_markers": [
+        {
+          "feature": "古鉄の肌合い",
+          "detail": "たたら製鉄の鉄は不純物を含み独特の肌合い。磁性にも特徴",
+          "detection_method": "目視/磁気測定"
+        },
+        {
+          "feature": "鍛え跡",
+          "detail": "鍛造による微細な層構造。断面に木目状のパターン",
+          "detection_method": "断面観察/X線"
+        }
+      ],
+      "fake_markers": [
+        {
+          "feature": "近代鋼材",
+          "detail": "均質な組成の近代製鉄。不純物がなく肌が平滑すぎる",
+          "common_in": "昭和以降の模造品"
+        },
+        {
+          "feature": "鋳造痕",
+          "detail": "鍛造ではなく鋳型で作られた痕跡。砂型の跡や湯口の痕",
+          "common_in": "量産観光土産"
+        }
+      ],
+      "confidence_notes": "たたら製鉄と近代製鉄は鉄の組成が根本的に異なる。XRFで非破壊判別可能",
+      "sources": [
+        "EDITION Authentication Intelligence"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:50:11.741631Z"
+    },
+    {
+      "id": "avf-bonsai-002",
+      "type": "authentic_vs_fake",
+      "category": "bonsai",
+      "subject": "樹齢偽装の検出",
+      "authentic_markers": [
+        {
+          "feature": "自然な樹皮の亀裂",
+          "detail": "黒松は50年以上で深い亀裂。樹皮の厚さと亀裂深度が年輪と整合",
+          "detection_method": "目視/計測"
+        },
+        {
+          "feature": "根張り(Nebari)の自然さ",
+          "detail": "長年の培養で根が放射状に広がる。太さの漸減が自然",
+          "detection_method": "目視"
+        }
+      ],
+      "fake_markers": [
+        {
+          "feature": "肥培による急速肥大",
+          "detail": "地植え肥培で幹を急速に太らせた跡。年輪間隔が不自然に広い",
+          "common_in": "速成品"
+        },
+        {
+          "feature": "接ぎ木による根張り偽装",
+          "detail": "太い根を接いで見栄えを改善。接合部に不自然な段差",
+          "common_in": "展示会向け加工品"
+        }
+      ],
+      "confidence_notes": "盆栽の樹齢は最も偽装されやすい要素。幹太さだけでなく樹皮・根張り・枝の古さを総合判断",
+      "sources": [
+        "EDITION Authentication Intelligence"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:50:11.741631Z"
+    },
+    {
+      "id": "avf-bonsai-003",
+      "type": "authentic_vs_fake",
+      "category": "bonsai",
+      "subject": "盆栽鉢の真贋",
+      "authentic_markers": [
+        {
+          "feature": "手作りの成形痕",
+          "detail": "ロクロ挽きの微細な回転痕。内側に指の圧痕",
+          "detection_method": "目視/触診"
+        },
+        {
+          "feature": "時代釉の特徴",
+          "detail": "中国清朝の紫泥・均釉は特有の組成。日本の常滑・瀬戸も窯元ごとの特徴",
+          "detection_method": "XRF"
+        }
+      ],
+      "fake_markers": [
+        {
+          "feature": "型抜き成形",
+          "detail": "内壁が均一で成形痕がない。型の合わせ目が残る場合も",
+          "common_in": "中国現代の量産鉢"
+        },
+        {
+          "feature": "人工的な古色",
+          "detail": "薬品処理で古く見せた表面。こすると剥がれる",
+          "common_in": "偽アンティーク鉢"
+        }
+      ],
+      "confidence_notes": "高級盆栽鉢は鉢だけで数十万〜数百万円。中国古鉢の偽物が特に多い",
+      "sources": [
+        "EDITION Authentication Intelligence"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:50:11.741631Z"
+    },
+    {
+      "id": "avf-sculpture-002",
+      "type": "authentic_vs_fake",
+      "category": "sculpture",
+      "subject": "仏像の木材と構造",
+      "authentic_markers": [
+        {
+          "feature": "檜(Hinoki)の経年変化",
+          "detail": "数百年の檜は表面がシルバーグレーに変色。木目が浮き出る",
+          "detection_method": "目視/年輪年代法"
+        },
+        {
+          "feature": "寄木造りの接合",
+          "detail": "鎌倉期以降の寄木造は特定のパターンで材を接合。接合面に鑿跡",
+          "detection_method": "CTスキャン"
+        }
+      ],
+      "fake_markers": [
+        {
+          "feature": "新しい木材",
+          "detail": "新材を古く見せるため燻蒸や染色処理。断面は白い",
+          "common_in": "東南アジア製の偽仏像"
+        },
+        {
+          "feature": "一木造りの模倣",
+          "detail": "古い技法に見せかけた一木造りだが工具痕が近代的",
+          "common_in": "骨董市場の偽古仏"
+        }
+      ],
+      "confidence_notes": "年輪年代法(dendrochronology)で伐採年を特定可能。CTスキャンで内部構造を非破壊解析",
+      "sources": [
+        "EDITION Authentication Intelligence"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:50:11.741631Z"
+    },
+    {
+      "id": "avf-architecture-002",
+      "type": "authentic_vs_fake",
+      "category": "architecture",
+      "subject": "建築金具の時代判定",
+      "authentic_markers": [
+        {
+          "feature": "鍛鉄の特徴",
+          "detail": "手打ちの鉄釘・金具は断面が不均一。鍛造時の層構造が残る",
+          "detection_method": "断面観察/X線"
+        },
+        {
+          "feature": "金具の意匠",
+          "detail": "時代ごとの意匠パターン。桃山期の豪華な金具vs江戸期の洗練",
+          "detection_method": "様式分析"
+        }
+      ],
+      "fake_markers": [
+        {
+          "feature": "機械製釘",
+          "detail": "断面が完全な円形。1860年代以降の機械製造の特徴",
+          "common_in": "明治以降の修復・偽装"
+        },
+        {
+          "feature": "電気メッキ",
+          "detail": "1840年以降の技術。それ以前の金具に電気メッキがあれば偽物",
+          "common_in": "偽アンティーク金具"
+        }
+      ],
+      "confidence_notes": "建築金具は建物の年代を判定する副次的手段。修復時の金具交換記録との照合が重要",
+      "sources": [
+        "EDITION Authentication Intelligence"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:50:11.741631Z"
+    },
+    {
+      "id": "avf-contemporary-002",
+      "type": "authentic_vs_fake",
+      "category": "contemporary",
+      "subject": "版画のエディション管理",
+      "authentic_markers": [
+        {
+          "feature": "正規エディション番号",
+          "detail": "作家のサインとエディション番号(例:15/50)が一致。AP/HC等の表記も正式",
+          "detection_method": "カタログレゾネ照合"
+        },
+        {
+          "feature": "用紙と印刷技法",
+          "detail": "作家指定の用紙・工房の刻印。印刷技法が公式記録と一致",
+          "detection_method": "紙質分析/ルーペ"
+        }
+      ],
+      "fake_markers": [
+        {
+          "feature": "エディション番号の改竄",
+          "detail": "番号を修正した痕跡。インクの色味が異なる",
+          "common_in": "限定版の偽装"
+        },
+        {
+          "feature": "デジタル複製",
+          "detail": "オフセット印刷やジクレーでの複製。ドットパターンが見える",
+          "common_in": "オンライン詐欺"
+        }
+      ],
+      "confidence_notes": "現代版画はカタログレゾネとの照合が最も確実。作家の公式サイトでエディション情報を確認",
+      "sources": [
+        "EDITION Authentication Intelligence"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:50:11.741631Z"
+    },
+    {
+      "id": "pc-swords-002",
+      "type": "price_comparable",
+      "category": "swords",
+      "subject": "重要刀剣 太刀 備前長船景光",
+      "comparables": [
+        {
+          "description": "重要刀剣 太刀 備前長船長光",
+          "sale_price": 8500000,
+          "sale_date": "2023-11",
+          "auction_house": "日本刀剣保存会",
+          "condition": "研ぎ上がり、拵付",
+          "key_differences": "長光は景光の父。銘の真偽により大きな価格差"
+        },
+        {
+          "description": "特別保存 太刀 備前長船兼光",
+          "sale_price": 4200000,
+          "sale_date": "2024-03",
+          "auction_house": "刀剣柴田",
+          "condition": "白鞘入り",
+          "key_differences": "兼光は南北朝期。景光より時代が下る"
+        }
+      ],
+      "estimated_range": {
+        "low": 3500000,
+        "mid": 5500000,
+        "high": 9000000,
+        "currency": "JPY"
+      },
+      "sources": [
+        "EDITION Price Intelligence Database"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:52:17.168749Z"
+    },
+    {
+      "id": "pc-swords-003",
+      "type": "price_comparable",
+      "category": "swords",
+      "subject": "特別保存 脇差 堀川国広",
+      "comparables": [
+        {
+          "description": "重要 脇差 堀川国広",
+          "sale_price": 12000000,
+          "sale_date": "2023-06",
+          "auction_house": "Bonhams",
+          "condition": "研ぎ上がり",
+          "key_differences": "重要認定は特別保存より格上"
+        },
+        {
+          "description": "特別保存 短刀 堀川国広",
+          "sale_price": 2800000,
+          "sale_date": "2024-01",
+          "auction_house": "日本美術刀剣保存協会",
+          "condition": "白鞘入り",
+          "key_differences": "短刀は脇差より小振り"
+        }
+      ],
+      "estimated_range": {
+        "low": 2500000,
+        "mid": 4500000,
+        "high": 8000000,
+        "currency": "JPY"
+      },
+      "sources": [
+        "EDITION Price Intelligence Database"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:52:17.168749Z"
+    },
+    {
+      "id": "pc-ceramics-002",
+      "type": "price_comparable",
+      "category": "ceramics",
+      "subject": "桃山期 志野茶碗",
+      "comparables": [
+        {
+          "description": "志野茶碗 銘「卯花墻」写し（江戸期）",
+          "sale_price": 1200000,
+          "sale_date": "2023-09",
+          "auction_house": "Christie's",
+          "condition": "無傷",
+          "key_differences": "桃山オリジナルではなく江戸期の写し"
+        },
+        {
+          "description": "志野向付 五客（桃山期）",
+          "sale_price": 3800000,
+          "sale_date": "2024-02",
+          "auction_house": "Sotheby's",
+          "condition": "一客にニュウ",
+          "key_differences": "向付セットであり茶碗の格とは異なる"
+        }
+      ],
+      "estimated_range": {
+        "low": 2000000,
+        "mid": 8000000,
+        "high": 50000000,
+        "currency": "JPY"
+      },
+      "sources": [
+        "EDITION Price Intelligence Database"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:52:17.168749Z"
+    },
+    {
+      "id": "pc-ceramics-003",
+      "type": "price_comparable",
+      "category": "ceramics",
+      "subject": "古備前 花入 桃山〜江戸初期",
+      "comparables": [
+        {
+          "description": "備前花入 桃山期 伝来品",
+          "sale_price": 4500000,
+          "sale_date": "2023-12",
+          "auction_house": "Mainichi Auction",
+          "condition": "窯傷あり",
+          "key_differences": "伝来記録付き"
+        },
+        {
+          "description": "備前徳利 江戸前期",
+          "sale_price": 850000,
+          "sale_date": "2024-04",
+          "auction_house": "シンワ",
+          "condition": "無傷",
+          "key_differences": "徳利は花入より格が低い"
+        }
+      ],
+      "estimated_range": {
+        "low": 800000,
+        "mid": 3000000,
+        "high": 8000000,
+        "currency": "JPY"
+      },
+      "sources": [
+        "EDITION Price Intelligence Database"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:52:17.168749Z"
+    },
+    {
+      "id": "pc-ukiyoe-002",
+      "type": "price_comparable",
+      "category": "ukiyoe",
+      "subject": "歌川広重 東海道五十三次 初摺",
+      "comparables": [
+        {
+          "description": "広重 東海道五十三次「蒲原」初摺",
+          "sale_price": 45000,
+          "sale_date": "2023-10",
+          "auction_house": "Christie's",
+          "condition": "色鮮やか、折れ目なし",
+          "key_differences": "蒲原は最人気図柄"
+        },
+        {
+          "description": "広重 東海道五十三次「庄野」後摺",
+          "sale_price": 3500,
+          "sale_date": "2024-01",
+          "auction_house": "Bonhams",
+          "condition": "良好だが後摺",
+          "key_differences": "後摺は初摺の1/10以下の価値"
+        }
+      ],
+      "estimated_range": {
+        "low": 5000,
+        "mid": 25000,
+        "high": 80000,
+        "currency": "USD"
+      },
+      "sources": [
+        "EDITION Price Intelligence Database"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:52:17.168749Z"
+    },
+    {
+      "id": "pc-ukiyoe-003",
+      "type": "price_comparable",
+      "category": "ukiyoe",
+      "subject": "葛飾北斎 富嶽三十六景 神奈川沖浪裏",
+      "comparables": [
+        {
+          "description": "北斎「神奈川沖浪裏」良好な後摺",
+          "sale_price": 150000,
+          "sale_date": "2023-03",
+          "auction_house": "Christie's",
+          "condition": "後摺だが色鮮やか",
+          "key_differences": "後摺でもこの図柄は高額"
+        },
+        {
+          "description": "北斎「凱風快晴(赤富士)」初摺",
+          "sale_price": 500000,
+          "sale_date": "2024-01",
+          "auction_house": "Sotheby's",
+          "condition": "初摺、状態極上",
+          "key_differences": "赤富士は波裏に次ぐ人気"
+        }
+      ],
+      "estimated_range": {
+        "low": 100000,
+        "mid": 500000,
+        "high": 2500000,
+        "currency": "USD"
+      },
+      "sources": [
+        "EDITION Price Intelligence Database"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:52:17.168749Z"
+    },
+    {
+      "id": "pc-lacquerware-001",
+      "type": "price_comparable",
+      "category": "lacquerware",
+      "subject": "江戸期 蒔絵硯箱 梨地金蒔絵",
+      "comparables": [
+        {
+          "description": "江戸中期 梨地秋草蒔絵硯箱",
+          "sale_price": 3200000,
+          "sale_date": "2023-08",
+          "auction_house": "Christie's",
+          "condition": "小修理あり",
+          "key_differences": "秋草文は定番だがデザインの質で差"
+        },
+        {
+          "description": "江戸後期 黒漆金蒔絵硯箱",
+          "sale_price": 1500000,
+          "sale_date": "2024-02",
+          "auction_house": "Bonhams",
+          "condition": "漆のひび一部あり",
+          "key_differences": "梨地より黒漆の方が格が低い"
+        }
+      ],
+      "estimated_range": {
+        "low": 1000000,
+        "mid": 3000000,
+        "high": 10000000,
+        "currency": "JPY"
+      },
+      "sources": [
+        "EDITION Price Intelligence Database"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:52:17.168749Z"
+    },
+    {
+      "id": "pc-netsuke-001",
+      "type": "price_comparable",
+      "category": "netsuke",
+      "subject": "江戸中期 象牙根付 動物彫刻",
+      "comparables": [
+        {
+          "description": "象牙根付「眠り猫」 岡友作",
+          "sale_price": 18000,
+          "sale_date": "2023-11",
+          "auction_house": "Bonhams",
+          "condition": "良好なパティナ",
+          "key_differences": "著名彫師の銘入り"
+        },
+        {
+          "description": "象牙根付「亀」無銘 江戸後期",
+          "sale_price": 3500,
+          "sale_date": "2024-03",
+          "auction_house": "Drouot",
+          "condition": "小欠けあり",
+          "key_differences": "無銘かつ状態に難"
+        }
+      ],
+      "estimated_range": {
+        "low": 2000,
+        "mid": 8000,
+        "high": 50000,
+        "currency": "USD"
+      },
+      "sources": [
+        "EDITION Price Intelligence Database"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:52:17.168749Z"
+    },
+    {
+      "id": "pc-textiles-001",
+      "type": "price_comparable",
+      "category": "textiles",
+      "subject": "能装束 唐織 桃山〜江戸前期",
+      "comparables": [
+        {
+          "description": "唐織 紅地菊桐文 桃山期",
+          "sale_price": 15000000,
+          "sale_date": "2023-06",
+          "auction_house": "Sotheby's",
+          "condition": "一部褪色あり",
+          "key_differences": "桃山期の唐織は極めて稀少"
+        },
+        {
+          "description": "唐織 白地草花文 江戸中期",
+          "sale_price": 4500000,
+          "sale_date": "2024-01",
+          "auction_house": "Christie's",
+          "condition": "良好",
+          "key_differences": "江戸中期は桃山期より数が多い"
+        }
+      ],
+      "estimated_range": {
+        "low": 3000000,
+        "mid": 8000000,
+        "high": 20000000,
+        "currency": "JPY"
+      },
+      "sources": [
+        "EDITION Price Intelligence Database"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:52:17.168749Z"
+    },
+    {
+      "id": "pc-metalwork-001",
+      "type": "price_comparable",
+      "category": "metalwork",
+      "subject": "赤銅地金象嵌鍔 後藤家",
+      "comparables": [
+        {
+          "description": "赤銅地金象嵌鍔 後藤光乗 桃山期",
+          "sale_price": 5500000,
+          "sale_date": "2023-09",
+          "auction_house": "Bonhams",
+          "condition": "極上",
+          "key_differences": "光乗は後藤家の名工"
+        },
+        {
+          "description": "赤銅魚子地金象嵌鍔 後藤家 江戸中期",
+          "sale_price": 1800000,
+          "sale_date": "2024-02",
+          "auction_house": "Christie's",
+          "condition": "良好",
+          "key_differences": "江戸中期の量産的作品"
+        }
+      ],
+      "estimated_range": {
+        "low": 1500000,
+        "mid": 3500000,
+        "high": 8000000,
+        "currency": "JPY"
+      },
+      "sources": [
+        "EDITION Price Intelligence Database"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:52:17.168749Z"
+    },
+    {
+      "id": "pc-bonsai-001",
+      "type": "price_comparable",
+      "category": "bonsai",
+      "subject": "黒松(Kuromatsu) 樹齢100年超 国風展出品歴あり",
+      "comparables": [
+        {
+          "description": "黒松 推定樹齢150年 国風展3回出品",
+          "sale_price": 12000000,
+          "sale_date": "2023-05",
+          "auction_house": "大宮盆栽オークション",
+          "condition": "健康",
+          "key_differences": "複数回の国風展出品は最高の来歴"
+        },
+        {
+          "description": "黒松 推定樹齢80年 展示歴なし",
+          "sale_price": 1500000,
+          "sale_date": "2024-01",
+          "auction_house": "高松盆栽市場",
+          "condition": "健康",
+          "key_differences": "展示歴なしは大幅減額"
+        }
+      ],
+      "estimated_range": {
+        "low": 2000000,
+        "mid": 6000000,
+        "high": 15000000,
+        "currency": "JPY"
+      },
+      "sources": [
+        "EDITION Price Intelligence Database"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:52:17.168749Z"
+    },
+    {
+      "id": "pc-bonsai-002",
+      "type": "price_comparable",
+      "category": "bonsai",
+      "subject": "五葉松(Goyomatsu) 中品 樹齢50-80年",
+      "comparables": [
+        {
+          "description": "五葉松 推定樹齢70年 銘鉢付き",
+          "sale_price": 3500000,
+          "sale_date": "2023-10",
+          "auction_house": "日本盆栽協同組合",
+          "condition": "健康・手入れ良好",
+          "key_differences": "銘鉢(著名鉢師の作品)が付加価値"
+        },
+        {
+          "description": "五葉松 推定樹齢50年 量産鉢",
+          "sale_price": 800000,
+          "sale_date": "2024-03",
+          "auction_house": "高松盆栽市場",
+          "condition": "健康",
+          "key_differences": "量産鉢は鉢自体の価値がない"
+        }
+      ],
+      "estimated_range": {
+        "low": 500000,
+        "mid": 2000000,
+        "high": 5000000,
+        "currency": "JPY"
+      },
+      "sources": [
+        "EDITION Price Intelligence Database"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:52:17.168749Z"
+    },
+    {
+      "id": "pc-sculpture-001",
+      "type": "price_comparable",
+      "category": "sculpture",
+      "subject": "鎌倉期 木造阿弥陀如来坐像",
+      "comparables": [
+        {
+          "description": "鎌倉期 阿弥陀如来坐像 玉眼",
+          "sale_price": 25000000,
+          "sale_date": "2023-07",
+          "auction_house": "Christie's",
+          "condition": "一部修復あり",
+          "key_differences": "玉眼入りで保存良好"
+        },
+        {
+          "description": "室町期 阿弥陀如来立像",
+          "sale_price": 5500000,
+          "sale_date": "2024-02",
+          "auction_house": "Mainichi Auction",
+          "condition": "彩色剥落",
+          "key_differences": "室町期は鎌倉期より技術的に劣るとされる"
+        }
+      ],
+      "estimated_range": {
+        "low": 5000000,
+        "mid": 15000000,
+        "high": 40000000,
+        "currency": "JPY"
+      },
+      "sources": [
+        "EDITION Price Intelligence Database"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:52:17.168749Z"
+    },
+    {
+      "id": "pc-contemporary-001",
+      "type": "price_comparable",
+      "category": "contemporary",
+      "subject": "草間彌生 かぼちゃ シルクスクリーン",
+      "comparables": [
+        {
+          "description": "草間彌生「かぼちゃ」黄 シルクスクリーン Ed.120",
+          "sale_price": 85000,
+          "sale_date": "2023-11",
+          "auction_house": "Phillips",
+          "condition": "額装済み",
+          "key_differences": "黄色かぼちゃは最も人気の図柄"
+        },
+        {
+          "description": "草間彌生「かぼちゃ」赤 シルクスクリーン Ed.80",
+          "sale_price": 65000,
+          "sale_date": "2024-01",
+          "auction_house": "Christie's",
+          "condition": "額装済み",
+          "key_differences": "赤は黄より若干低い評価"
+        }
+      ],
+      "estimated_range": {
+        "low": 50000,
+        "mid": 75000,
+        "high": 120000,
+        "currency": "USD"
+      },
+      "sources": [
+        "EDITION Price Intelligence Database"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:52:17.168749Z"
+    },
+    {
+      "id": "pc-architecture-001",
+      "type": "price_comparable",
+      "category": "architecture",
+      "subject": "江戸後期 蒔絵文台・硯箱セット",
+      "comparables": [
+        {
+          "description": "梨地蒔絵文台硯箱 大名婚礼調度",
+          "sale_price": 8500000,
+          "sale_date": "2023-09",
+          "auction_house": "Sotheby's",
+          "condition": "良好",
+          "key_differences": "大名家の婚礼調度は最高格"
+        },
+        {
+          "description": "黒漆金蒔絵文台 武家伝来",
+          "sale_price": 2500000,
+          "sale_date": "2024-03",
+          "auction_house": "Mainichi Auction",
+          "condition": "一部漆剥げ",
+          "key_differences": "硯箱なしのセット不完全品"
+        }
+      ],
+      "estimated_range": {
+        "low": 2000000,
+        "mid": 5000000,
+        "high": 12000000,
+        "currency": "JPY"
+      },
+      "sources": [
+        "EDITION Price Intelligence Database"
+      ],
+      "verified_by": "source_verified",
+      "created_at": "2026-05-14T08:52:17.168749Z"
+    },
+    {
+      "id": "fqa-cross-001",
+      "type": "forensic_qa",
+      "category": "swords",
+      "difficulty": "expert",
+      "question": "刀剣と金工の関係：なぜ鍔の鑑定には刀剣の知識が必要か？",
+      "answer": "鍔は刀剣拵の一部であり、時代・流派・用途が刀身と密接に関連する。例えば桃山期の豪壮な太刀には応仁鍔や尾張鍔が合わせられ、江戸中期の打刀には後藤家や横谷派の精緻な赤銅鍔が選ばれた。鍔の中心孔(nakago-ana)の形状は刀身の茎(nakago)に合わせて調整されており、複数の責金(sekigane)交換痕は異なる刀身への移装歴を示す。鍔単体の鑑定であっても、元々どのような刀身に装着されていたかを推定することで、時代・格式・真贋の判断精度が向上する。",
+      "evidence": [
+        "EDITION Cross-Category Authentication Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "swords",
+        "cross_category",
+        "comparative"
+      ],
+      "created_at": "2026-05-14T08:52:17.168749Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-cross-002",
+      "type": "forensic_qa",
+      "category": "ceramics",
+      "difficulty": "expert",
+      "question": "陶磁器と漆器の比較：茶道具における格の序列と鑑定への影響",
+      "answer": "茶道具の格は「見立て」の歴史に根差す。唐物(中国渡来)が最高格とされ、次いで高麗物(朝鮮)、そして和物(日本)が続くが、千利休は和物の楽茶碗を最高位に引き上げた。この格の序列は鑑定に直接影響する。例えば、井戸茶碗（高麗物）に利休の箱書があれば、茶碗自体の工芸的価値を超えた歴史的・文化的価値が加算される。漆器においても、茶事用の棗(natsume)は千家十職の中村宗哲家の作が最高格とされ、共箱・花押の有無が価値を決定的に左右する。",
+      "evidence": [
+        "EDITION Cross-Category Authentication Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "ceramics",
+        "cross_category",
+        "comparative"
+      ],
+      "created_at": "2026-05-14T08:52:17.168749Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-cross-003",
+      "type": "forensic_qa",
+      "category": "ukiyoe",
+      "difficulty": "expert",
+      "question": "浮世絵と染織の接点：小袖模様雛形本の鑑定的意義",
+      "answer": "『雛形若菜の初模様』等の小袖模様雛形本は浮世絵と染織の交差点に位置する。これらの版本は実際の着物デザインのカタログとして出版され、版画技法で印刷された。鑑定においては、雛形本に掲載されたデザインと現存する着物の対応関係を確認することで、着物の制作年代を推定できる。また、雛形本自体の版元・絵師・彫師の情報が浮世絵研究と共有されるため、クロスリファレンスが可能になる。",
+      "evidence": [
+        "EDITION Cross-Category Authentication Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "ukiyoe",
+        "cross_category",
+        "comparative"
+      ],
+      "created_at": "2026-05-14T08:52:17.168749Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-cross-004",
+      "type": "forensic_qa",
+      "category": "bonsai",
+      "difficulty": "expert",
+      "question": "盆栽鉢と陶磁器鑑定の共通点：中国古鉢の真贋判定",
+      "answer": "盆栽の高級古鉢（特に中国清朝の均釉・紫泥鉢）は陶磁器鑑定と同じ手法で分析できる。XRFによる胎土組成分析、釉薬の元素組成、窯変パターンの分析は茶碗の鑑定と共通する。ただし盆栽鉢特有の要素として、①使用痕（水垢ライン・根の痕跡・苔の付着パターン）、②排水穴の加工技法（手作業vs機械加工）、③鉢底の刻印（鉢師の銘）がある。中国宜興(Yixing)の紫泥鉢は現在も大量の偽物が流通しており、胎土のXRF分析が最も信頼できる判別法である。",
+      "evidence": [
+        "EDITION Cross-Category Authentication Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "bonsai",
+        "cross_category",
+        "comparative"
+      ],
+      "created_at": "2026-05-14T08:52:17.168749Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-cross-005",
+      "type": "forensic_qa",
+      "category": "painting",
+      "difficulty": "intermediate",
+      "question": "掛軸の表装が語る来歴情報の読み方",
+      "answer": "掛軸の表装(hyōsō)は絵画本体とは独立した鑑定対象である。表装の裂地(きれじ)は時代・格式を示し、一文字(ichimonji)の金襴の品質、風帯(fūtai)の有無、軸先(jikusaki)の素材（象牙＝正式、漆＝準正式、木＝茶席用）が格を表す。改装(かいそう)の痕跡も重要で、優れた改装は元の裂地の一部を残す「裂取り改装」を行う。改装歴は来歴情報の一部であり、有名な表具師による改装は作品の価値を高める場合もある。逆に、粗悪な改装は絵画自体を損傷し価値を毀損する。",
+      "evidence": [
+        "EDITION Cross-Category Authentication Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "painting",
+        "cross_category",
+        "comparative"
+      ],
+      "created_at": "2026-05-14T08:52:17.168749Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-cross-006",
+      "type": "forensic_qa",
+      "category": "sculpture",
+      "difficulty": "expert",
+      "question": "仏像の様式変遷と年代推定：飛鳥から鎌倉までの識別ポイント",
+      "answer": "仏像の様式は時代ごとに明確な特徴を持ち、年代推定の基礎となる。飛鳥期(7世紀)は正面観照的な杏仁形の目、アルカイックスマイル、左右対称の衣文。白鳳期(7世紀後半)は童子のような丸顔、柔和な表情。天平期(8世紀)は写実的でふくよかな体躯、天然の木目を活かした乾漆や塑像。平安前期(9世紀)は一木造り、翻波式衣文の厚い体躯。平安後期(11世紀)は定朝様の穏やかで理想化された表現、寄木造りの確立。鎌倉期(12-13世紀)は運慶・快慶による写実革命、玉眼の導入、力強い体躯。これらの様式特徴を総合して年代を推定し、CTスキャンや年輪年代法で科学的に検証する。",
+      "evidence": [
+        "EDITION Cross-Category Authentication Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "sculpture",
+        "cross_category",
+        "comparative"
+      ],
+      "created_at": "2026-05-14T08:52:17.168749Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-cross-007",
+      "type": "forensic_qa",
+      "category": "netsuke",
+      "difficulty": "intermediate",
+      "question": "根付と印籠の関係：セット物の鑑定における注意点",
+      "answer": "根付は本来、印籠(inrō)を帯から吊るすための実用的な留め具である。根付と印籠が「揃い」(matching set)の場合、セットとしての価値は個別の合計より高い。しかし、後世にバラバラの根付と印籠を組み合わせて「揃い」と偽るケースがある。真の揃いを判定するには：①素材・技法の統一性（同一作家の手によるか）、②主題の関連性（印籠の蒔絵と根付の彫刻が同一テーマ）、③経年変化の一致（同期間使用された痕跡）、④緒締め(ojime)との三点セットの整合性を確認する。",
+      "evidence": [
+        "EDITION Cross-Category Authentication Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "netsuke",
+        "cross_category",
+        "comparative"
+      ],
+      "created_at": "2026-05-14T08:52:17.168749Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-cross-008",
+      "type": "forensic_qa",
+      "category": "textiles",
+      "difficulty": "intermediate",
+      "question": "染織品の保存状態が価値に与える影響：状態評価の基準",
+      "answer": "染織品は有機素材であり、光・湿度・虫害に対して最も脆弱な美術品カテゴリの一つ。評価基準：①褪色の程度（特に赤・紫の天然染料は褪色しやすい）、②虫食い穴の有無と修復の質、③折り皺の状態（展示歴の指標）、④裏打ち・修復の有無（専門的修復はプラス、素人修復はマイナス）、⑤断片か完品か（小袖の袖部分のみの断片でも図柄次第で高価値）。桃山期の完品は極めて稀少で、断片であっても重要文化財級の価値を持つ場合がある。",
+      "evidence": [
+        "EDITION Cross-Category Authentication Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "textiles",
+        "cross_category",
+        "comparative"
+      ],
+      "created_at": "2026-05-14T08:52:17.168749Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-sci-001",
+      "type": "forensic_qa",
+      "category": "swords",
+      "difficulty": "expert",
+      "question": "XRF分析による日本刀の産地推定方法を説明せよ",
+      "answer": "蛍光X線分析(XRF)は非破壊で鋼材の元素組成を測定する。日本刀の場合、たたら製鉄の原料砂鉄に含まれる微量元素（チタン、バナジウム、マンガン等）の比率が産地ごとに異なる。例えば備前の砂鉄はチタン含有率が高く、出雲(島根)の砂鉄はバナジウムが多い。この「元素指紋」を既知の産地データベースと照合することで、銘の真偽や産地の推定が可能になる。ただし、古刀期の折り返し鍛錬で異なる産地の鉄が混合される場合があり、単一の測定点では判断できないため、複数点の測定と統計的分析が必要。",
+      "evidence": [
+        "EDITION Deep Forensic Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "xrf",
+        "scientific_analysis",
+        "non_destructive"
+      ],
+      "created_at": "2026-05-14T08:54:58.279182Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-sci-002",
+      "type": "forensic_qa",
+      "category": "ceramics",
+      "difficulty": "expert",
+      "question": "熱ルミネッセンス(TL)年代測定の原理と陶磁器鑑定への応用",
+      "answer": "TL年代測定は、粘土中の鉱物結晶が放射線を吸収して蓄積したエネルギーを測定する。最後に焼成された時点でエネルギーがリセットされるため、焼成年からの経過時間を推定できる。精度は±10-20%で、「これは本当に桃山期（400年前）に焼かれたか、それとも昭和（50年前）の模倣品か」という大まかな年代区分には十分な精度。ただし、意図的な放射線照射による偽装が理論上は可能であり、他の分析手法との組み合わせが推奨される。サンプルは少量の粉末（数mg）を採取するため、厳密には微破壊分析に分類される。",
+      "evidence": [
+        "EDITION Deep Forensic Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "thermoluminescence",
+        "dating",
+        "ceramics"
+      ],
+      "created_at": "2026-05-14T08:54:58.279182Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-sci-003",
+      "type": "forensic_qa",
+      "category": "lacquerware",
+      "difficulty": "expert",
+      "question": "CTスキャンによる漆器の内部構造解析",
+      "answer": "X線CT(コンピュータ断層撮影)は漆器の内部構造を非破壊で可視化する最も強力な手法。漆器は木地→布着せ→下地(砥の粉+漆)→中塗り→上塗り→加飾と多層構造であり、各層の厚さ・均一性・材料が時代と技法を示す。例えば、江戸期の高級蒔絵は30層以上の漆層を持ち各層の厚さに自然な変動があるが、現代の量産品は10層以下で均一。また、蒔絵の下に隠れた修復痕、木地の接合方法、納入品の存在もCTで確認できる。医療用CTの転用が一般的だが、産業用マイクロCTはより高解像度で金粉の粒度まで識別可能。",
+      "evidence": [
+        "EDITION Deep Forensic Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "ct_scan",
+        "non_destructive",
+        "internal_structure"
+      ],
+      "created_at": "2026-05-14T08:54:58.279182Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-sci-004",
+      "type": "forensic_qa",
+      "category": "textiles",
+      "difficulty": "expert",
+      "question": "FTIR(フーリエ変換赤外分光法)による染料分析の実際",
+      "answer": "FTIRは分子の振動モードを測定し、化学構造を特定する非破壊分析法。染織品においては天然染料と合成染料の判別に決定的な役割を果たす。天然藍(インディゴティン)と合成インディゴは主成分が同一だが、天然藍にはインジルビン等の副成分が含まれ、IRスペクトルに微妙な差異が現れる。紅花(カルタミン)、蘇芳(ブラジリン)、紫根(シコニン)等の天然染料は各々固有のスペクトルパターンを持ち、合成代替品と明確に区別可能。ATR(全反射測定)法を用いれば、繊維から直接・非接触で測定できる。",
+      "evidence": [
+        "EDITION Deep Forensic Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "ftir",
+        "dye_analysis",
+        "non_destructive"
+      ],
+      "created_at": "2026-05-14T08:54:58.279182Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-sci-005",
+      "type": "forensic_qa",
+      "category": "sculpture",
+      "difficulty": "expert",
+      "question": "年輪年代法(Dendrochronology)による仏像の制作年推定",
+      "answer": "年輪年代法は木材の年輪パターンを標準年輪曲線と照合して伐採年を特定する。日本のヒノキ(檜)については紀元前数百年からの標準曲線が構築されており、仏像の木地に残る年輪パターンから伐採年を±数年の精度で特定できる。ただし、制作年は伐採年以降であり、両者の間に数年〜数十年の「乾燥・保管期間」がある場合がある。また、寄木造りの場合は各材の年輪を個別に分析する必要がある。CTスキャンと組み合わせることで、像を分解せずに年輪データを取得する非破壊分析も可能になっている。",
+      "evidence": [
+        "EDITION Deep Forensic Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "dendrochronology",
+        "dating",
+        "wood_analysis"
+      ],
+      "created_at": "2026-05-14T08:54:58.279182Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-deep-swords-001",
+      "type": "forensic_qa",
+      "category": "swords",
+      "difficulty": "expert",
+      "question": "五箇伝の地鉄(Jigane)の違いを鑑定にどう活用するか",
+      "answer": "地鉄（地金）は刀身の地肌に現れる鍛錬の痕跡であり、流派判定の最重要要素の一つ。①板目肌：木の板目のような模様。備前伝に多い。②杢目肌：木の杢目のような丸みを帯びた模様。山城伝の特徴。③柾目肌：木の柾目のように直線的な模様。大和伝に顕著。④綾杉肌：月山派特有の波状パターン。⑤梨子地肌：細かい地沸が均一に付いた肌。相州伝の最上作に見られる。これらの地肌は鍛錬時の折り返し方向と回数で決定され、人工的な模倣が極めて困難。",
+      "evidence": [
+        "EDITION Deep Forensic Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "jigane",
+        "gokaden",
+        "metallurgy"
+      ],
+      "created_at": "2026-05-14T08:54:58.279182Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-deep-swords-002",
+      "type": "forensic_qa",
+      "category": "swords",
+      "difficulty": "expert",
+      "question": "新刀期と古刀期の鍛錬技法の構造的違い",
+      "answer": "古刀(kotō, pre-1596)と新刀(shintō, 1596-1780)は原料と鍛錬法が根本的に異なる。古刀は各地の砂鉄からたたら製鉄で得た玉鋼を使用し、地域の鉄の特性がそのまま刀の個性となった。新刀期には南蛮鉄(輸入洋鉄)の流入と流通網の発達で原料が均質化し、鍛冶は技法そのもので個性を出す方向に進化した。鑑定上の判別ポイント：古刀は地鉄に映り(utsuri)が出やすく、鉄の質感に深みがある。新刀は映りが消失し、代わりに沸(nie)が大きく華やかになる傾向がある。",
+      "evidence": [
+        "EDITION Deep Forensic Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "koto",
+        "shinto",
+        "forging_technique"
+      ],
+      "created_at": "2026-05-14T08:54:58.279182Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-deep-ceramics-001",
+      "type": "forensic_qa",
+      "category": "ceramics",
+      "difficulty": "expert",
+      "question": "窯道具痕による備前焼の時代判定",
+      "answer": "備前焼の焼成では窯道具（焼台・焼き支え）の痕跡が作品に残り、これが時代判定の手がかりとなる。古備前(室町〜桃山)は粗い焼台の痕が深く残り、窯の中での自然な灰かぶりが不規則。江戸前期は焼台が改良され痕跡が小さくなる。また、窯の構造変化（穴窯→登り窯→倒焔式窯）により焼成環境が変わり、胡麻や緋襷のパターンも変化する。現代の備前は電気窯やガス窯で短時間焼成するため、薪窯特有の灰の降り方や炎の回り方が再現困難。",
+      "evidence": [
+        "EDITION Deep Forensic Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "bizen",
+        "kiln_tools",
+        "period_identification"
+      ],
+      "created_at": "2026-05-14T08:54:58.279182Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-deep-ceramics-002",
+      "type": "forensic_qa",
+      "category": "ceramics",
+      "difficulty": "intermediate",
+      "question": "楽茶碗の代別様式と真贋判定のポイント",
+      "answer": "楽家は初代長次郎から当代（十六代）まで、各代で異なる作風を持つ。①長次郎（初代）：利休の指導下、簡素で内省的。赤楽・黒楽のみ。②常慶（二代）：ノンコウ（三代道入）への過渡期。③ノンコウ：自由奔放な釉薬表現、「ノンコウ七種」と呼ばれる名碗。④一入（四代）：赤楽に黒釉を掛ける「一入写し」の源流。楽印の変遷も重要で、各代の「楽」印の書体・サイズ・押印位置が異なる。偽物は印の模刻が多く、印の深さ・エッジの鮮明さ・位置の正確さが判定ポイントとなる。",
+      "evidence": [
+        "EDITION Deep Forensic Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "raku",
+        "generation",
+        "tea_bowl"
+      ],
+      "created_at": "2026-05-14T08:54:58.279182Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-deep-ukiyoe-001",
+      "type": "forensic_qa",
+      "category": "ukiyoe",
+      "difficulty": "intermediate",
+      "question": "写楽の正体論争と作品鑑定への影響",
+      "answer": "東洲斎写楽は寛政6年(1794)5月〜翌年1月のわずか10ヶ月間に約140点の作品を残して忽然と消えた。正体については能楽師・斎藤十郎兵衛説が有力だが、北斎別人説、歌麿説なども提起されてきた。鑑定上重要なのは、写楽作品は第1期（大首絵28点）が圧倒的に高評価で、第2〜4期は評価が下がること。また、版元は蔦屋重三郎のみであり、蔦屋以外の版元印がある写楽作品は偽作の可能性が極めて高い。雲母摺り(kirazuri)の技法も第1期の特徴であり、雲母の粒度と分布が時代判定の手がかりとなる。",
+      "evidence": [
+        "EDITION Deep Forensic Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "sharaku",
+        "mystery",
+        "authentication"
+      ],
+      "created_at": "2026-05-14T08:54:58.279182Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-deep-painting-001",
+      "type": "forensic_qa",
+      "category": "painting",
+      "difficulty": "expert",
+      "question": "狩野派の代表的画法と真贋判定における筆法分析",
+      "answer": "狩野派は400年以上にわたり日本画壇を支配した最大の画派であり、真贋判定には筆法(ひっぽう)の分析が不可欠。①骨法用筆：輪郭線の強弱・速度・筆圧の変化パターン。狩野派は力強い輪郭線が特徴で、土佐派の繊細な線とは明確に異なる。②墨の濃淡法：破墨(はぼく)と潑墨(はつぼく)の使い分け。③付立(つけたて)技法：輪郭線なしに面で形を捉える技法、特に狩野山楽以降で発達。④粉本(ふんぽん)の存在：狩野派は師匠の画稿を弟子が模写して技法を伝承した。このため粉本と完成作の関係を知ることが真作判定に重要。",
+      "evidence": [
+        "EDITION Deep Forensic Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "kano",
+        "brushwork",
+        "analysis"
+      ],
+      "created_at": "2026-05-14T08:54:58.279182Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-deep-lacquerware-001",
+      "type": "forensic_qa",
+      "category": "lacquerware",
+      "difficulty": "expert",
+      "question": "国産漆と中国産漆の違いと鑑定への応用",
+      "answer": "日本産漆(Japanese urushi)と中国産漆はウルシオールの含有比率が異なり、FTIR分析で判別可能。日本産漆はウルシオール含有率が60-65%と高く、硬化後の被膜が硬質で透明感がある。中国産漆はウルシオール50-55%でラッコール等の他成分が多い。価格差は10倍以上（日本産漆は1kgあたり10万円以上）。鑑定上の意義：江戸期以前の高級蒔絵は原則として日本産漆を使用しており、中国産漆の検出は近代以降の制作を示唆する。ただし、明治以降は日本産漆の生産量が激減し、高級品でも中国産漆を併用する場合がある。",
+      "evidence": [
+        "EDITION Deep Forensic Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "urushi",
+        "origin",
+        "ftir"
+      ],
+      "created_at": "2026-05-14T08:54:58.279182Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-deep-netsuke-001",
+      "type": "forensic_qa",
+      "category": "netsuke",
+      "difficulty": "intermediate",
+      "question": "根付の素材鑑定：象牙・鯨歯・河馬牙・骨の判別法",
+      "answer": "根付に使われる白色系素材の判別は基本的な鑑定スキル。①象牙：シュレーガー線(Schreger lines)と呼ばれる交差する弧状のパターンが断面に見える。角度がアフリカ象とアジア象で異なる。②鯨歯(マッコウクジラ)：セメント質の外層と象牙質の内層の二重構造。黄みがかった色調。③河馬牙：象牙より硬質で緻密。シュレーガー線がない。④鹿角：多孔質の芯がある。表面に微細な孔が見える。⑤骨：ハバース管（血管の通る管）が断面に見える。象牙より多孔質。紫外線下では各素材の蛍光パターンが異なり、非破壊判別の手がかりとなる。",
+      "evidence": [
+        "EDITION Deep Forensic Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "ivory",
+        "material",
+        "identification"
+      ],
+      "created_at": "2026-05-14T08:54:58.279182Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-deep-bonsai-001",
+      "type": "forensic_qa",
+      "category": "bonsai",
+      "difficulty": "intermediate",
+      "question": "盆栽の樹種と樹齢の関係：樹種別の経年変化パターン",
+      "answer": "樹種ごとに経年変化のパターンが異なり、樹齢推定の基礎となる。①黒松(Kuromatsu)：50年超で樹皮が深く亀裂。100年超で樹皮が厚い板状に。幹の太りは比較的早い。②五葉松(Goyomatsu)：樹皮の亀裂は黒松より浅い。葉の短さと密度が年数を示す。③真柏(Shimpaku)：ジン(枯れ枝)とシャリ(枯れ幹)の白化が進行。天然のジン・シャリは表面が滑らかだが、人工のものはカービングの跡が残る。④楓(Kaede)：幹の灰白色化と根張りの太さが年数を示す。⑤梅(Ume)：古木は幹が空洞化し、樹皮が荒々しくなる。若木を古く見せるために人工的に空洞を作る偽装がある。",
+      "evidence": [
+        "EDITION Deep Forensic Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "species",
+        "age",
+        "identification"
+      ],
+      "created_at": "2026-05-14T08:54:58.279182Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-deep-metalwork-001",
+      "type": "forensic_qa",
+      "category": "metalwork",
+      "difficulty": "expert",
+      "question": "日本独自の合金・赤銅と四分一の科学的分析",
+      "answer": "赤銅(Shakudō)は銅に3-7%の金を加えた合金で、煮色(niiro)処理により深い紫黒色を呈する。四分一(Shibuichi)は銅に10-40%の銀を加えた合金で、処理により灰色〜銀灰色の微妙な色調を生む。XRF分析による金・銀の含有率測定は、①時代推定（江戸初期は金含有率が高い傾向）、②流派推定（後藤家は金4%前後、横谷派は3%前後など）、③真贋判定（近代の合金は不純物パターンが異なる）に有効。煮色液の組成（硫酸銅、緑青、明礬等）は各流派の秘伝であり、処理後の色調そのものが流派の識別マーカーとなる。",
+      "evidence": [
+        "EDITION Deep Forensic Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "shakudo",
+        "shibuichi",
+        "alloy_analysis"
+      ],
+      "created_at": "2026-05-14T08:54:58.279182Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-deep-sculpture-001",
+      "type": "forensic_qa",
+      "category": "sculpture",
+      "difficulty": "expert",
+      "question": "玉眼(Gyokugan)技法の導入時期と鑑定的意義",
+      "answer": "玉眼(水晶の眼)は12世紀後半、鎌倉時代の慶派仏師によって導入された画期的技法。像の頭部内側から水晶レンズを嵌め、裏面に瞳を描いた紙を貼り、綿で固定する。玉眼の有無は年代推定の重要な指標：①玉眼なし＝平安期以前の可能性が高い、②玉眼あり＝鎌倉期以降（ただし後世の追加修理の可能性も）。玉眼の水晶の質、瞳の描き方、固定方法は時代によって変化し、CTスキャンで内部構造を確認することで追加修理か当初のものかを判定できる。",
+      "evidence": [
+        "EDITION Deep Forensic Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "gyokugan",
+        "crystal_eyes",
+        "kamakura"
+      ],
+      "created_at": "2026-05-14T08:54:58.279182Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-deep-textiles-001",
+      "type": "forensic_qa",
+      "category": "textiles",
+      "difficulty": "expert",
+      "question": "辻が花染め（Tsujigahana）の技法復元と真贋問題",
+      "answer": "辻が花は室町後期〜桃山期に隆盛した染色技法で、絞り染め・墨描き・箔置きを組み合わせた幻の技法とされる。江戸初期に突然消滅し、技法の詳細は長く謎だった。久保田一竹が1962年に独自の解釈で「一竹辻が花」を創始したが、これは桃山期の辻が花とは異なる技法。鑑定上の注意：①桃山期の辻が花は極めて稀少で市場に出ることはほとんどない、②「辻が花」と称する作品の大半は後世の模倣または一竹系の現代作品、③桃山期の正品は絹の劣化度、墨の経年変化、金箔の接着剤成分で時代を裏付ける必要がある。",
+      "evidence": [
+        "EDITION Deep Forensic Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "tsujigahana",
+        "lost_technique",
+        "authentication"
+      ],
+      "created_at": "2026-05-14T08:54:58.279182Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-deep-architecture-001",
+      "type": "forensic_qa",
+      "category": "architecture",
+      "difficulty": "intermediate",
+      "question": "書院造と数寄屋造の構造的違いと調度品の鑑定への影響",
+      "answer": "書院造(Shoin-zukuri)は武家の格式を示す様式で、床の間・違い棚・付書院・帳台構えの4要素を備える。調度品は豪華な蒔絵・金工が主流。数寄屋造(Sukiya-zukuri)は茶室の美意識を住宅に取り入れた様式で、自然素材・控えめな装飾が特徴。調度品の鑑定では、作品がどちらの空間のために作られたかが重要：書院向けの調度に茶道具的な素朴さがあれば時代・用途の不整合を疑う。逆に数寄屋向けの調度が過度に豪華であれば、格上げ偽装または別の空間からの転用の可能性がある。",
+      "evidence": [
+        "EDITION Deep Forensic Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "shoin",
+        "sukiya",
+        "architecture_context"
+      ],
+      "created_at": "2026-05-14T08:54:58.279182Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-deep-contemporary-001",
+      "type": "forensic_qa",
+      "category": "contemporary",
+      "difficulty": "intermediate",
+      "question": "戦後日本美術の国際市場における評価構造",
+      "answer": "戦後日本美術の市場は大きく3層に分かれる。①国際的スター：草間彌生、村上隆、奈良美智。オークション落札価格がミリオンドル級。偽作リスクが最も高い。②国内評価型：白髪一雄、元永定正（具体美術）、河原温（コンセプチュアル）。国際市場での再評価が進行中で価格が急騰。来歴の確認が特に重要。③次世代：五木田智央、大竹伸朗、塩田千春。ギャラリー経由の一次市場が主。真贋問題は少ないが、エディション管理（版画・マルチプル）の確認が必要。カタログ・レゾネの有無が判定の基礎であり、草間・村上は公式データベースが充実している。",
+      "evidence": [
+        "EDITION Deep Forensic Analysis"
+      ],
+      "related_assets": [],
+      "tags": [
+        "contemporary",
+        "market",
+        "valuation"
+      ],
+      "created_at": "2026-05-14T08:54:58.279182Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "prov-swords-005",
+      "type": "forensic_qa",
+      "category": "swords",
+      "difficulty": "expert",
+      "question": "折紙の階級制度：保存から特別重要まで",
+      "answer": "NBTHK(日本美術刀剣保存協会)の鑑定は4段階の階級制度。①保存刀剣：真正品で保存状態が良好。②特別保存刀剣：保存の中でも特に出来が優れるもの。③重要刀剣：出来が特に優れ、保存状態も優良。年2回の審査で数百振りから数十振りが選出。④特別重要刀剣：国宝・重要文化財に準ずる最高ランク。数年に一度の審査で極少数が認定。各階級で折紙の書式・印章が異なり、上位の折紙を持つ刀は大幅に高い市場価値を持つ。偽造折紙の判定にはNBTHK台帳との照合が必須。",
+      "evidence": [
+        "EDITION Authentication Intelligence"
+      ],
+      "related_assets": [],
+      "tags": [
+        "nbthk",
+        "certification",
+        "grading"
+      ],
+      "created_at": "2026-05-14T08:54:58.279182Z",
+      "verified_by": "source_verified"
     }
   ]
 }
