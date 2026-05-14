@@ -1,0 +1,126 @@
+{
+  "$schema": "EDITION KANTEISHI Training Data Schema v1.0",
+  "version": "1.0.0",
+  "description": "教師データのフォーマット定義。KANTEISHIの認証精度を決定する最重要資産。",
+  
+  "pair_types": {
+    "forensic_qa": {
+      "description": "鑑定の問い-正解ペア。特定の作品に対する鑑定質問と、専門家レベルの回答",
+      "schema": {
+        "id": "string — 一意のペアID (e.g., 'fqa-swords-001')",
+        "category": "string — 12カテゴリのいずれか",
+        "difficulty": "string — 'basic' | 'intermediate' | 'expert'",
+        "question": "string — 鑑定に関する質問",
+        "answer": "string — 専門家レベルの正確な回答",
+        "evidence": ["string — 回答の根拠となるソース（論文、図録、博物館データ等）"],
+        "related_assets": ["string — 関連するassets.jsonのID"],
+        "tags": ["string — 検索用タグ"],
+        "created_at": "ISO8601 datetime",
+        "verified_by": "string — 'ai_generated' | 'expert_reviewed' | 'source_verified'"
+      }
+    },
+    "authentic_vs_fake": {
+      "description": "真贋判定ペア。本物と偽物の特徴の対比",
+      "schema": {
+        "id": "string — 一意のペアID (e.g., 'avf-ceramics-001')",
+        "category": "string",
+        "subject": "string — 対象物の種類 (e.g., '志野茶碗', '刀剣の中心')",
+        "authentic_markers": [{
+          "feature": "string — 本物の特徴",
+          "detail": "string — 詳細な説明",
+          "detection_method": "string — 検出方法 (目視/XRF/FTIR/TL等)"
+        }],
+        "fake_markers": [{
+          "feature": "string — 偽物の特徴",
+          "detail": "string — 詳細な説明",
+          "common_in": "string — この偽造手法が多い時代・地域"
+        }],
+        "confidence_notes": "string — 判定の確信度に影響する要因",
+        "sources": ["string"],
+        "verified_by": "string"
+      }
+    },
+    "provenance_chain": {
+      "description": "来歴検証ペア。正しい来歴記録と偽造来歴の見分け方",
+      "schema": {
+        "id": "string",
+        "category": "string",
+        "subject": "string — 来歴のタイプ (e.g., '箱書', '極め', 'NBTHK折紙')",
+        "valid_indicators": ["string — 正当な来歴の指標"],
+        "red_flags": ["string — 偽造来歴の警告サイン"],
+        "verification_steps": ["string — 来歴を検証する手順"],
+        "sources": ["string"],
+        "verified_by": "string"
+      }
+    },
+    "price_comparable": {
+      "description": "価格比較ペア。類似品の成約価格データから適正価格を推定する根拠",
+      "schema": {
+        "id": "string",
+        "category": "string",
+        "subject": "string — 対象の種類・時代・特徴",
+        "comparables": [{
+          "description": "string — 類似品の説明",
+          "sale_price": "number — 成約価格 (USD)",
+          "sale_date": "string — 成約日",
+          "auction_house": "string — オークションハウス",
+          "condition": "string — 状態",
+          "key_differences": "string — 対象との相違点"
+        }],
+        "estimated_range": {
+          "low": "number",
+          "mid": "number", 
+          "high": "number",
+          "currency": "string"
+        },
+        "sources": ["string"],
+        "verified_by": "string"
+      }
+    }
+  },
+
+  "quality_tiers": {
+    "tier_1_gold": {
+      "description": "専門家が検証済み。出版物・学術論文の裏付けあり",
+      "requirements": ["verified_by = 'expert_reviewed'", "sources に査読済み論文 or 公認機関の出版物を含む", "2名以上の独立レビュー"],
+      "usage": "ファインチューニングの最優先データ"
+    },
+    "tier_2_silver": {
+      "description": "信頼できるソースから自動生成。美術館のCC0データに基づく",
+      "requirements": ["verified_by = 'source_verified'", "sources に美術館公式データを含む"],
+      "usage": "ファインチューニングの補助データ"
+    },
+    "tier_3_bronze": {
+      "description": "AI生成。人間のレビュー待ち",
+      "requirements": ["verified_by = 'ai_generated'"],
+      "usage": "レビュー後にtier_1/2に昇格。未レビューのまま学習に使用しない"
+    }
+  },
+
+  "generation_pipeline": {
+    "step_1": "美術館CC0データ（Met/Chicago/V&A）からforensic_qaペアを自動生成",
+    "step_2": "既存のKANTEISHI認証フレームワーク（12カテゴリ）からauthentic_vs_fakeペアを構造化",
+    "step_3": "オークション結果データからprice_comparableペアを生成",
+    "step_4": "tier_3として保存 → オーナーまたは専門家がレビュー → tier昇格",
+    "step_5": "十分なtier_1/tier_2データが蓄積されたらファインチューニング実行"
+  },
+
+  "target_volumes": {
+    "phase_2c_mvp": {
+      "forensic_qa": 500,
+      "authentic_vs_fake": 120,
+      "provenance_chain": 60,
+      "price_comparable": 200,
+      "total": 880,
+      "timeline": "4-6 weeks"
+    },
+    "production_ready": {
+      "forensic_qa": 5000,
+      "authentic_vs_fake": 1200,
+      "provenance_chain": 600,
+      "price_comparable": 2000,
+      "total": 8800,
+      "timeline": "6-12 months"
+    }
+  }
+}

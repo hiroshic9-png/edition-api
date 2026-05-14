@@ -1,0 +1,1989 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-05-14T04:17:37.980892Z",
+  "total_pairs": 102,
+  "pairs": [
+    {
+      "id": "fqa-swords-001",
+      "type": "forensic_qa",
+      "category": "swords",
+      "difficulty": "basic",
+      "question": "Explain the significance of the five traditions — gokaden in the context of swords & armor.",
+      "answer": "The classical schools of Japanese swordmaking are organized into five great traditions, each producing blades with distinctive characteristics born from their regional materials, climate, and patronage.\n\nYamato-den (Nara) — Forged for warrior monks, these blades emphasize function over form, with masame-hada grain and suguha temper lines.\n\nYamashiro-den (Kyoto) — Refined under aristocratic influence, known for elegant suguha and ko-midare temper patterns.\n\nBizen-den (Okayama) — The largest school, famous for the gorgeous chōji (clove) temper pattern.\n\nSōshū-den (Kamakura) — Born of warfare, producing aggressive nie-based temper patterns with wild activity in the steel.\n\nMino-den (Gifu) — Practical blades for the age of warring states, with pointed togari-ba temper lines.",
+      "evidence": [
+        "EDITION Category Article: Swords & Armor — The Five Traditions — Gokaden"
+      ],
+      "related_assets": [],
+      "tags": [
+        "swords",
+        "the_five_traditions_—_gokaden"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-swords-002",
+      "type": "forensic_qa",
+      "category": "swords",
+      "difficulty": "basic",
+      "question": "Explain the significance of eras of the blade in the context of swords & armor.",
+      "answer": "Japanese swords are classified by their era of production, each reflecting the political and cultural conditions of its time.\n\nKotō (古刀, pre-1596) — Old swords. The classical period, encompassing the Gokaden traditions.\n\nShintō (新刀, 1596-1780) — New swords. Peace under the Tokugawa brought new materials and techniques.\n\nShinshintō (新々刀, 1781-1876) — Revival swords. A conscious return to kotō methods.\n\nGendaitō (現代刀, 1876-) — Modern swords, produced after the Meiji restoration.",
+      "evidence": [
+        "EDITION Category Article: Swords & Armor — Eras of the Blade"
+      ],
+      "related_assets": [],
+      "tags": [
+        "swords",
+        "eras_of_the_blade"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-swords-003",
+      "type": "forensic_qa",
+      "category": "swords",
+      "difficulty": "expert",
+      "question": "Describe the major schools and master practitioners in the field of swords & armor, focusing on: Master Smiths of Each Tradition",
+      "answer": "Each of the Gokaden produced legendary smiths whose works define the pinnacle of the art.\n\nBizen-den: Tomonari, Masatsune, and the Ichimonji school created blades with the iconic chōji-midare — a clove-flower temper pattern of breathtaking complexity. Osafune Nagamitsu and his son Kagemitsu refined the chōji into a more controlled, elegant form.\n\nSōshū-den: Masamune (active ca. 1288–1328) is arguably the most famous swordsmith in history. His nie-deki works display wild, energetic patterns with ji-nie (crystalline formations in the surface steel) that have never been surpassed. His student Sadamune and later follower Go Yoshihiro complete the trinity of Sōshū masters.\n\nYamashiro-den: The Awataguchi school, particularly Tōshirō Yoshimitsu, produced tantō of legendary sharpness. The Rai school's Kunimitsu and Kunitoshi created tachi of supreme elegance.\n\nMino-den: Kanesada (Nosada) and Kanemoto (Magoroku) forged practical battle swords for the Sengoku period. Their togari-ba (pointed) temper patterns prioritized cutting ability.",
+      "evidence": [
+        "EDITION Category Article: Swords & Armor — Master Smiths of Each Tradition"
+      ],
+      "related_assets": [],
+      "tags": [
+        "swords",
+        "schools",
+        "masters",
+        "lineage"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-swords-004",
+      "type": "forensic_qa",
+      "category": "swords",
+      "difficulty": "intermediate",
+      "question": "What are the key authentication considerations for swords & armor? Specifically regarding: Authentication — Reading the Blade",
+      "answer": "Authenticating a Japanese sword requires reading multiple layers of evidence simultaneously.\n\nThe nakago (tang) is the primary document. Its shape, file marks (yasurime), and patina provide dating evidence. A genuine centuries-old nakago develops a characteristic iron-oxide patina that progresses from reddish-brown to deep black over time. Forged patinas, applied chemically, lack the granular depth visible under magnification.\n\nThe hamon (temper line) is the blade's visual signature. Each school and era produced characteristic patterns — from the disciplined suguha of Yamato-den to the flamboyant ōchōji of Bizen. Modern metallographic analysis can verify the crystalline structure (nie vs. nioi) that creates these patterns.\n\nThe mei (signature) on the tang is both the most obvious and most frequently forged element. NBTHK (Nihon Bijutsu Tōken Hozon Kyōkai) papers — Hozon, Tokubetsu Hozon, Jūyō, and Tokubetsu Jūyō — represent progressive levels of authentication by Japan's leading authority.",
+      "evidence": [
+        "EDITION Category Article: Swords & Armor — Authentication — Reading the Blade"
+      ],
+      "related_assets": [],
+      "tags": [
+        "swords",
+        "authentication",
+        "authentication_—_reading_the_blade"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-swords-005",
+      "type": "forensic_qa",
+      "category": "swords",
+      "difficulty": "basic",
+      "question": "Explain the significance of named blades — stories in steel in the context of swords & armor.",
+      "answer": "The greatest Japanese swords carry individual names (gōmei) and histories that elevate them beyond craft into cultural treasure.\n\nDōjigiri Yasutsuna — one of the Tenka Goken (Five Swords Under Heaven), attributed to Ōhara Yasutsuna of Hōki province. Legend holds it was used by Minamoto no Yorimitsu to slay the demon Shuten-dōji on Mount Ōe.\n\nMikazuki Munechika — 'Crescent Moon,' forged by Sanjō Munechika of Yamashiro. The crescent-shaped uchinoke patterns along the temper line give it its poetic name. It is a National Treasure held by the Tokyo National Museum.\n\nHonjō Masamune — the most famous work by the legendary Masamune, designated a symbol of the Tokugawa shōgunate. Its disappearance in 1946, when it was reportedly surrendered to American occupation forces, remains one of the great mysteries of Japanese art history.",
+      "evidence": [
+        "EDITION Category Article: Swords & Armor — Named Blades — Stories in Steel"
+      ],
+      "related_assets": [],
+      "tags": [
+        "swords",
+        "named_blades_—_stories_in_steel"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-ceramics-001",
+      "type": "forensic_qa",
+      "category": "ceramics",
+      "difficulty": "basic",
+      "question": "Explain the significance of the six ancient kilns — rokkoyo in the context of ceramics & tea.",
+      "answer": "Long before the tea ceremony transformed Japanese ceramics, six kiln sites had been producing utilitarian stonewares for centuries: Seto, Tokoname, Bizen, Shigaraki, Tamba, and Echizen. These rokkoyo represent the deep roots of Japanese ceramic tradition.",
+      "evidence": [
+        "EDITION Category Article: Ceramics & Tea — The Six Ancient Kilns — Rokkoyo"
+      ],
+      "related_assets": [],
+      "tags": [
+        "ceramics",
+        "the_six_ancient_kilns_—_rokkoyo"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-ceramics-002",
+      "type": "forensic_qa",
+      "category": "ceramics",
+      "difficulty": "basic",
+      "question": "Explain the significance of the tea revolution in the context of ceramics & tea.",
+      "answer": "Sen no Rikyū's radical aesthetic — finding transcendence in a simple tea bowl — created an entirely new category of art. Chōjirō, working under Rikyū's guidance, produced the first Raku tea bowls: hand-shaped, deliberately irregular, and fired at low temperatures. The Raku family continues this tradition today, now in its 16th generation.",
+      "evidence": [
+        "EDITION Category Article: Ceramics & Tea — The Tea Revolution"
+      ],
+      "related_assets": [],
+      "tags": [
+        "ceramics",
+        "the_tea_revolution"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-ceramics-003",
+      "type": "forensic_qa",
+      "category": "ceramics",
+      "difficulty": "basic",
+      "question": "Explain the significance of the character of each kiln in the context of ceramics & tea.",
+      "answer": "Each of the six ancient kilns — and the many that followed — developed a distinctive personality born from local clay, firing methods, and patronage.\n\nSeto (Aichi) — The only kiln to produce glazed wares before the Momoyama period. Kiseto (yellow Seto), Setoguro (black Seto), and Shino wares emerged here under the influence of tea culture.\n\nBizen (Okayama) — Fired unglazed for up to two weeks in wood-burning anagama kilns. The characteristic hidasuki (fire-cord) and goma (sesame-seed ash) markings are created entirely by flame, ash, and chance.\n\nShigaraki (Shiga) — Renowned for its warm, sandy texture and natural ash glaze (biidoro). The coarse clay, embedded with feldspar inclusions, creates a surface prized by tea masters.\n\nKaratsu (Saga) — Influenced by Korean potters brought during the Imjin War (1592-1598). E-garatsu (painted Karatsu) features bold, spontaneous iron-oxide brushwork.",
+      "evidence": [
+        "EDITION Category Article: Ceramics & Tea — The Character of Each Kiln"
+      ],
+      "related_assets": [],
+      "tags": [
+        "ceramics",
+        "the_character_of_each_kiln"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-ceramics-004",
+      "type": "forensic_qa",
+      "category": "ceramics",
+      "difficulty": "basic",
+      "question": "Explain the significance of the landscape of a tea bowl in the context of ceramics & tea.",
+      "answer": "In chanoyu (tea ceremony), a single tea bowl is the most important object. Tea masters speak of a bowl's keshiki (景色, 'scenery') — the landscapes found in its glaze, form, and surface.\n\nThe foot ring (kōdai) reveals the potter's skill and intention. The lip (kuchizukuri) determines how the tea meets the drinker's mouth. The interior pool where matcha sits, the balance in the hand, the way light plays across the glaze — all are criteria of judgment.\n\nKintsugi — the art of repairing broken ceramics with gold-lacquered seams — can increase a bowl's value rather than diminish it. The philosophy that breakage and repair are part of an object's history, not something to disguise, is uniquely Japanese. A tea bowl with distinguished kintsugi repairs carries the accumulated stories of centuries of use.",
+      "evidence": [
+        "EDITION Category Article: Ceramics & Tea — The Landscape of a Tea Bowl"
+      ],
+      "related_assets": [],
+      "tags": [
+        "ceramics",
+        "the_landscape_of_a_tea_bowl"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-ceramics-005",
+      "type": "forensic_qa",
+      "category": "ceramics",
+      "difficulty": "intermediate",
+      "question": "What are the key authentication considerations for ceramics & tea? Specifically regarding: Scientific Authentication",
+      "answer": "Ceramic authentication employs a powerful combination of scientific methods.\n\nThermoluminescence (TL) dating measures the radiation dose accumulated since the clay was last fired, establishing age independently of style. XRF analysis identifies the elemental composition of clay and glaze — each kiln region has a characteristic chemical fingerprint.\n\nPetrographic thin-section analysis reveals the mineral inclusions in the clay body, linking a piece to specific geological deposits. For example, Bizen wares contain distinctive iron-rich particles from the Imbe region's alluvial clay. Modern reproductions using commercially processed clay lack these natural inclusions.",
+      "evidence": [
+        "EDITION Category Article: Ceramics & Tea — Scientific Authentication"
+      ],
+      "related_assets": [],
+      "tags": [
+        "ceramics",
+        "authentication",
+        "scientific_authentication"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-ukiyoe-001",
+      "type": "forensic_qa",
+      "category": "ukiyoe",
+      "difficulty": "basic",
+      "question": "Explain the significance of the floating world in the context of ukiyo-e & prints.",
+      "answer": "Ukiyo-e — literally \"pictures of the floating world\" — emerged in 17th-century Edo (modern Tokyo) as an art form intimately connected to the pleasure quarters and kabuki theaters. What began as paintings for wealthy patrons transformed into woodblock prints accessible to a broad urban audience.\n\nThe process itself is a collaboration between three masters: the eshi (designer), the horishi (carver), and the surishi (printer). A single print might require dozens of separate color blocks, each aligned with microscopic precision. The best prints — known as shozuri (first editions) — display a depth of color and sharpness that later impressions cannot replicate.",
+      "evidence": [
+        "EDITION Category Article: Ukiyo-e & Prints — The Floating World"
+      ],
+      "related_assets": [],
+      "tags": [
+        "ukiyoe",
+        "the_floating_world"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-ukiyoe-002",
+      "type": "forensic_qa",
+      "category": "ukiyoe",
+      "difficulty": "intermediate",
+      "question": "What are the key authentication considerations for ukiyo-e & prints? Specifically regarding: Authentication Considerations",
+      "answer": "Ukiyo-e authentication demands attention to multiple layers: the quality of the washi (handmade paper), the vibrancy of mineral and vegetable pigments, and the crispness of the carved line. Later impressions from worn blocks show characteristic softening of detail.\n\nModern forgeries often fail at the paper level — genuine Edo-period washi contains fibers from specific plants (kōzo, mitsumata, gampi) in proportions that vary by region and era. AI-assisted fiber analysis can identify anachronistic paper compositions with high accuracy.",
+      "evidence": [
+        "EDITION Category Article: Ukiyo-e & Prints — Authentication Considerations"
+      ],
+      "related_assets": [],
+      "tags": [
+        "ukiyoe",
+        "authentication",
+        "authentication_considerations"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-ukiyoe-003",
+      "type": "forensic_qa",
+      "category": "ukiyoe",
+      "difficulty": "basic",
+      "question": "Explain the significance of the hierarchy of impressions in the context of ukiyo-e & prints.",
+      "answer": "Not all prints from the same design are equal. The distinction between impressions is fundamental to valuation.\n\nShozuri (初摺, first edition) — The earliest impressions, printed under the artist's supervision with fresh, sharp blocks and the finest pigments. These command the highest prices.\n\nAtozuri (後摺, later edition) — Subsequent printings from the same blocks. As woodblocks wear, fine lines soften and details blur. Publishers sometimes altered colors or added text to later editions.\n\nFukkoku (復刻, reproduction) — Recarved copies made from new blocks, sometimes decades or centuries later. These are not forgeries if properly identified, but are worth a fraction of original impressions.\n\nThe difference between a first impression and a later one can mean a hundredfold difference in market value. Color registration precision, line sharpness, and the specific pigments used are key diagnostic markers.",
+      "evidence": [
+        "EDITION Category Article: Ukiyo-e & Prints — The Hierarchy of Impressions"
+      ],
+      "related_assets": [],
+      "tags": [
+        "ukiyoe",
+        "the_hierarchy_of_impressions"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-ukiyoe-004",
+      "type": "forensic_qa",
+      "category": "ukiyoe",
+      "difficulty": "expert",
+      "question": "Describe the major schools and master practitioners in the field of ukiyo-e & prints, focusing on: Masters of the Floating World",
+      "answer": "The great ukiyo-e artists each brought a revolutionary vision to the medium.\n\nKitagawa Utamaro (1753–1806) — Transformed the bijin-ga (beautiful women) genre with unprecedented psychological depth. His ōkubi-e (large-head portraits) revealed individual character rather than idealized types.\n\nTōshūsai Sharaku (active 1794–1795) — The most enigmatic figure in ukiyo-e. In just ten months, he produced approximately 140 actor portraits of startling intensity, then vanished completely. His true identity remains debated.\n\nKatsushika Hokusai (1760–1849) — His 'Thirty-six Views of Mount Fuji,' particularly 'The Great Wave off Kanagawa,' became the most recognized Japanese artwork in history. His restless experimentation across seven decades of work encompasses virtually every subject.\n\nUtagawa Hiroshige (1797–1858) — His atmospheric landscapes, particularly 'The Fifty-three Stations of the Tōkaidō,' captured weather, light, and seasonal mood with a poetic sensitivity that directly influenced the French Impressionists.",
+      "evidence": [
+        "EDITION Category Article: Ukiyo-e & Prints — Masters of the Floating World"
+      ],
+      "related_assets": [],
+      "tags": [
+        "ukiyoe",
+        "schools",
+        "masters",
+        "lineage"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-painting-001",
+      "type": "forensic_qa",
+      "category": "painting",
+      "difficulty": "basic",
+      "question": "Explain the significance of from ink to gold in the context of painting & calligraphy.",
+      "answer": "Japanese painting encompasses an extraordinary range — from the monochrome ink landscapes (suiboku-ga) of Zen masters like Sesshū Tōyō to the lavish gold-leaf screens of the Kanō school, and the naturalistic beauty of the Rinpa tradition founded by Hon'ami Kōetsu and Tawaraya Sōtatsu.\n\nThe formats are themselves an art: hanging scrolls (kakemono) designed for seasonal rotation in the tokonoma alcove, hand scrolls (emakimono) that unfold narrative scenes horizontally, and massive folding screens (byōbu) that define architectural space.",
+      "evidence": [
+        "EDITION Category Article: Painting & Calligraphy — From Ink to Gold"
+      ],
+      "related_assets": [],
+      "tags": [
+        "painting",
+        "from_ink_to_gold"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-painting-002",
+      "type": "forensic_qa",
+      "category": "painting",
+      "difficulty": "expert",
+      "question": "Describe the major schools and master practitioners in the field of painting & calligraphy, focusing on: Schools and Lineages",
+      "answer": "Understanding Japanese painting requires knowledge of its school system (ryūha). The Kanō school dominated official painting for over 400 years, serving shōguns and daimyō. The Tosa school preserved the yamato-e tradition of native Japanese subjects. The Rimpa school broke from both, creating bold decorative works that merged painting with craft.\n\nEach school transmitted specific techniques through master-apprentice relationships, and their stylistic DNA — brushwork rhythm, compositional formulas, palette preferences — forms the basis for authentication analysis.",
+      "evidence": [
+        "EDITION Category Article: Painting & Calligraphy — Schools and Lineages"
+      ],
+      "related_assets": [],
+      "tags": [
+        "painting",
+        "schools",
+        "masters",
+        "lineage"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-painting-003",
+      "type": "forensic_qa",
+      "category": "painting",
+      "difficulty": "intermediate",
+      "question": "What are the key authentication considerations for painting & calligraphy? Specifically regarding: Reading a Hanging Scroll",
+      "answer": "A kakemono (hanging scroll) is a complete work of art — painting, calligraphy, mounting, and storage box form an integrated whole.\n\nThe mounting (hyōsō) itself communicates period, status, and intended context. Formal mountings (shin) use rich brocade and wide borders; semi-formal (gyō) blend elegance with restraint; and informal (sō) use simple fabrics suited to tea ceremony display. The ichimonji strips — narrow bands of gold brocade framing the painting — indicate the mounting's quality tier.\n\nThe jikusaki (roller ends) at the bottom are diagnostic markers: ivory for formal works, lacquer for semi-formal, plain wood for tea ceremony scrolls. The material, shape, and patina of the jikusaki can help date a mounting independently of the painting.",
+      "evidence": [
+        "EDITION Category Article: Painting & Calligraphy — Reading a Hanging Scroll"
+      ],
+      "related_assets": [],
+      "tags": [
+        "painting",
+        "authentication",
+        "reading_a_hanging_scroll"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-painting-004",
+      "type": "forensic_qa",
+      "category": "painting",
+      "difficulty": "basic",
+      "question": "Explain the significance of hakogaki — the world within the box in the context of painting & calligraphy.",
+      "answer": "The storage box (tomobako) of a Japanese painting carries inscriptions (hakogaki) that constitute a parallel provenance document. A hakogaki by the artist himself (jiga-jisan) dramatically increases a work's value and authenticity.\n\nSuccessive owners, tea masters, and connoisseurs may add their own inscriptions to the box lid, creating a layered history of appreciation. The calligraphic style, ink quality, and seal impressions on these inscriptions are themselves subject to authentication analysis.\n\nThe box construction — paulownia (kiri) wood, fit without nails, with specific joint types — follows conventions that evolved over centuries. A mismatched box (the painting and box from different periods) is not unusual but requires explanation.",
+      "evidence": [
+        "EDITION Category Article: Painting & Calligraphy — Hakogaki — The World Within the Box"
+      ],
+      "related_assets": [],
+      "tags": [
+        "painting",
+        "hakogaki_—_the_world_within_the_box"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-lacquerware-001",
+      "type": "forensic_qa",
+      "category": "lacquerware",
+      "difficulty": "basic",
+      "question": "Explain the significance of layers of perfection in the context of lacquerware & maki-e.",
+      "answer": "Japanese lacquer (urushi) is among the most labor-intensive art forms ever developed. A single piece may require thirty or more individual coats, each applied, dried in controlled humidity, and polished before the next. The finest maki-e (sprinkled picture) works incorporate gold and silver powder in multiple particle sizes, creating depth effects that appear to glow from within.\n\nThe art reached its apex during the Edo period, when inrō (medicine containers), suzuribako (writing boxes), and jubako (tiered food boxes) became canvases for extraordinary decorative expression.",
+      "evidence": [
+        "EDITION Category Article: Lacquerware & Maki-e — Layers of Perfection"
+      ],
+      "related_assets": [],
+      "tags": [
+        "lacquerware",
+        "layers_of_perfection"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-lacquerware-002",
+      "type": "forensic_qa",
+      "category": "lacquerware",
+      "difficulty": "basic",
+      "question": "Explain the significance of the inrō tradition in the context of lacquerware & maki-e.",
+      "answer": "Inrō — the nested medicine cases suspended from the obi sash — represent perhaps the most concentrated form of Japanese decorative art. Masters like Ogawa Haritsu (Ritsuō) and the Kajikawa family created pieces where every surface, including the interior, displays consummate skill.\n\nAuthentication of lacquerware is uniquely challenging: the techniques for creating artificial aging (nureba aging) have been refined over centuries. CT scanning reveals the layer structure — genuine Edo-period pieces show characteristic variations in lacquer thickness that machine-applied modern copies lack.",
+      "evidence": [
+        "EDITION Category Article: Lacquerware & Maki-e — The Inrō Tradition"
+      ],
+      "related_assets": [],
+      "tags": [
+        "lacquerware",
+        "the_inrō_tradition"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-lacquerware-003",
+      "type": "forensic_qa",
+      "category": "lacquerware",
+      "difficulty": "basic",
+      "question": "Explain the significance of the maki-e hierarchy in the context of lacquerware & maki-e.",
+      "answer": "Maki-e ('sprinkled picture') encompasses a hierarchy of techniques, each more demanding than the last.\n\nHiramaki-e (flat maki-e) — Gold or silver powder sprinkled onto wet lacquer, then sealed with transparent lacquer and polished flat. The foundation technique.\n\nTogidashi maki-e (burnished-out maki-e) — The design is buried under layers of lacquer, then carefully polished back until the metal powder emerges flush with the surface, creating an effect of extraordinary subtlety.\n\nTakamaki-e (raised maki-e) — The design is built up in relief using lacquer mixed with charcoal powder or clay, then decorated with metal powders. This creates a three-dimensional effect.\n\nShishiai-togidashi (combined techniques) — The pinnacle: raised, flat, and burnished techniques combined in a single work, creating landscapes with genuine depth and atmosphere. Only the most accomplished artists attempt this.",
+      "evidence": [
+        "EDITION Category Article: Lacquerware & Maki-e — The Maki-e Hierarchy"
+      ],
+      "related_assets": [],
+      "tags": [
+        "lacquerware",
+        "the_maki-e_hierarchy"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-lacquerware-004",
+      "type": "forensic_qa",
+      "category": "lacquerware",
+      "difficulty": "basic",
+      "question": "Explain the significance of wajima and regional traditions in the context of lacquerware & maki-e.",
+      "answer": "Japan's lacquer traditions are geographically diverse, each region contributing distinctive methods and aesthetics.\n\nWajima-nuri (Ishikawa) — Considered the finest everyday lacquerware, using a ground (ji) reinforced with powdered diatomaceous earth (jinoko) that creates exceptional durability. Genuine Wajima ware can be identified by its distinctive ground layer under microscopic examination.\n\nTsugaru-nuri (Aomori) — Known for its unique marbled patterns created by layering and polishing multiple colors of lacquer.\n\nKamakura-bori (Kanagawa) — Carved wooden forms coated in layers of red and black lacquer, creating a sculptural approach to the medium.\n\nThe urushi tree itself is becoming scarce in Japan. Domestic lacquer (Japanese urushi) commands premium prices over Chinese imports, and its chemical composition — detectable through FTIR analysis — serves as a quality and origin marker.",
+      "evidence": [
+        "EDITION Category Article: Lacquerware & Maki-e — Wajima and Regional Traditions"
+      ],
+      "related_assets": [],
+      "tags": [
+        "lacquerware",
+        "wajima_and_regional_traditions"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-netsuke-001",
+      "type": "forensic_qa",
+      "category": "netsuke",
+      "difficulty": "expert",
+      "question": "Describe the major schools and master practitioners in the field of netsuke & miniatures, focusing on: Miniature Masterworks",
+      "answer": "Netsuke — the toggles used to suspend sagemono (hanging objects) from the obi sash — are among the most intimately scaled works in all of art history. Rarely exceeding two inches, the finest examples display a command of form, surface, and narrative that rivals any sculptural tradition.\n\nThe major schools — Osaka, Kyoto, Edo, and Nagoya — each developed distinctive approaches. Osaka netsuke favor realism and dramatic expression; Kyoto works tend toward elegance and literary allusion; Edo pieces often display humor and contemporary social commentary.",
+      "evidence": [
+        "EDITION Category Article: Netsuke & Miniatures — Miniature Masterworks"
+      ],
+      "related_assets": [],
+      "tags": [
+        "netsuke",
+        "schools",
+        "masters",
+        "lineage"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-netsuke-002",
+      "type": "forensic_qa",
+      "category": "netsuke",
+      "difficulty": "basic",
+      "question": "Explain the significance of material and patina in the context of netsuke & miniatures.",
+      "answer": "The most prized netsuke material is hippopotamus ivory (now legally restricted), followed by elephant ivory, boxwood (tsuge), and deer antler. The patina — the warm golden-brown surface acquired through decades of handling — is a critical authentication marker.\n\nGenuine patina penetrates the material at a molecular level. Modern artificial aging (tea staining, chemical treatment) remains on the surface and is detectable under UV light and magnification. AI-assisted surface texture analysis can distinguish natural wear patterns from simulated ones with increasing precision.",
+      "evidence": [
+        "EDITION Category Article: Netsuke & Miniatures — Material and Patina"
+      ],
+      "related_assets": [],
+      "tags": [
+        "netsuke",
+        "material_and_patina"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-netsuke-003",
+      "type": "forensic_qa",
+      "category": "netsuke",
+      "difficulty": "expert",
+      "question": "Describe the major schools and master practitioners in the field of netsuke & miniatures, focusing on: Four Regional Schools",
+      "answer": "The geography of netsuke production shaped four distinct artistic personalities.\n\nOsaka — The birthplace of netsuke as fine art. Masters like Garaku and Sōkaku developed a bold, realistic style emphasizing dramatic subjects — tigers, dragons, and theatrical figures rendered with powerful modeling.\n\nKyoto — Refined and literary. Kyoto carvers favored elegant subjects drawn from classical literature and poetry. Okatomo's reclining deer and Tomotada's recumbent oxen exemplify the school's serene grace.\n\nEdo (Tokyo) — Urban, witty, contemporary. Edo netsuke often depicted everyday life with humor — fishmongers, street performers, and supernatural creatures from popular folklore. The style is dynamic and anecdotal.\n\nNagoya — A bridge between Osaka's drama and Kyoto's restraint. Suzuki Masanao and the Ittan school developed a distinctive naturalism, particularly in plant and animal subjects.",
+      "evidence": [
+        "EDITION Category Article: Netsuke & Miniatures — Four Regional Schools"
+      ],
+      "related_assets": [],
+      "tags": [
+        "netsuke",
+        "schools",
+        "masters",
+        "lineage"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-netsuke-004",
+      "type": "forensic_qa",
+      "category": "netsuke",
+      "difficulty": "basic",
+      "question": "Explain the significance of the collector's eye in the context of netsuke & miniatures.",
+      "answer": "Netsuke collecting has a distinguished global history. The Edmund de Waal memoir 'The Hare with Amber Eyes' brought international attention to the Ephrussi family collection, while the Virginia Atchley and Bushell collections set scholarly standards.\n\nKey evaluation criteria include: the himotoshi (cord holes) — their placement and wear patterns confirm genuine use; the signature (mei) — not all netsuke are signed, and unsigned works by recognized masters can command higher prices than signed works by lesser carvers; and subject matter — rare or unusual subjects generally command premiums over common themes.\n\nThe market distinction between Edo-period originals, Meiji-period works (often made for export), and modern reproductions is critical. CITES regulations on ivory trade have added a legal dimension that significantly affects provenance requirements and international marketability.",
+      "evidence": [
+        "EDITION Category Article: Netsuke & Miniatures — The Collector's Eye"
+      ],
+      "related_assets": [],
+      "tags": [
+        "netsuke",
+        "the_collector's_eye"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-textiles-001",
+      "type": "forensic_qa",
+      "category": "textiles",
+      "difficulty": "basic",
+      "question": "Explain the significance of wearable art in the context of textiles & kimono.",
+      "answer": "Japanese textiles — from the formal kosode of the Momoyama period to the exuberant yūzen-dyed kimono of Edo — represent a tradition where clothing transcended function to become the primary medium of personal artistic expression.\n\nThe techniques are staggering in variety: shibori (tie-dyeing), yūzen (paste-resist dyeing), surihaku (gold leaf application), nui-haku (embroidery with gold leaf), and tsujigahana (a lost technique combining shibori, drawing, and gold leaf). A single garment might combine multiple techniques requiring months of specialized labor.",
+      "evidence": [
+        "EDITION Category Article: Textiles & Kimono — Wearable Art"
+      ],
+      "related_assets": [],
+      "tags": [
+        "textiles",
+        "wearable_art"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-textiles-002",
+      "type": "forensic_qa",
+      "category": "textiles",
+      "difficulty": "basic",
+      "question": "Explain the significance of dye analysis and dating in the context of textiles & kimono.",
+      "answer": "Textile authentication relies heavily on dye analysis. Before the Meiji era (1868), all dyes were natural: indigo (ai) from polygonum, red from safflower (benibana) or madder (akane), purple from gromwell (murasaki). The introduction of synthetic aniline dyes after 1856 provides a critical dating marker.\n\nFTIR spectroscopy can distinguish natural from synthetic dyes non-destructively. Thread count analysis, weave structure, and the specific characteristics of silk fiber (from different silkworm varieties) provide additional authentication data points.",
+      "evidence": [
+        "EDITION Category Article: Textiles & Kimono — Dye Analysis and Dating"
+      ],
+      "related_assets": [],
+      "tags": [
+        "textiles",
+        "dye_analysis_and_dating"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-textiles-003",
+      "type": "forensic_qa",
+      "category": "textiles",
+      "difficulty": "basic",
+      "question": "Explain the significance of yūzen — painting in dye in the context of textiles & kimono.",
+      "answer": "Yūzen dyeing, perfected by the Kyoto fan painter Miyazaki Yūzensai in the late 17th century, revolutionized kimono decoration. The technique uses rice-paste resist lines to separate colors, enabling pictorial designs of extraordinary complexity and precision on fabric.\n\nKyo-yūzen (Kyoto) favors elegant, classical motifs — seasonal flowers, landscapes, and literary scenes rendered in subtle, harmonious colors. Kaga-yūzen (Kanazawa) is bolder, using a distinctive five-color palette with characteristic 'worm-eaten leaf' (mushikui) details that demonstrate the dyer's virtuosity.\n\nAuthentic hand-painted yūzen can be distinguished from modern screen-printed imitations by examining the reverse side of the fabric: hand-applied dyes penetrate to the back with slight irregularities, while industrial printing leaves a flat, uniform reverse.",
+      "evidence": [
+        "EDITION Category Article: Textiles & Kimono — Yūzen — Painting in Dye"
+      ],
+      "related_assets": [],
+      "tags": [
+        "textiles",
+        "yūzen_—_painting_in_dye"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-textiles-004",
+      "type": "forensic_qa",
+      "category": "textiles",
+      "difficulty": "basic",
+      "question": "Explain the significance of noh costumes — theater as textile art in the context of textiles & kimono.",
+      "answer": "Noh costumes (nōshōzoku) represent the pinnacle of Japanese textile achievement. Woven with flat gold thread (kinran), silk brocade (nishiki), and supplementary weft patterns of breathtaking complexity, a single karaori robe might require six months of continuous weaving.\n\nThe karaori ('Chinese weave') uses supplementary weft floats to create raised, tactile patterns that catch stage light. The atsuita is a heavier garment with bold geometric or nature designs. The surihaku uses gold and silver leaf pressed onto the fabric in delicate patterns.\n\nMuseum-quality noh costumes from the Momoyama and early Edo periods are among the rarest and most valuable Japanese textiles. Provenance linking a costume to a specific daimyō household or temple dramatically increases value and authentication confidence.",
+      "evidence": [
+        "EDITION Category Article: Textiles & Kimono — Noh Costumes — Theater as Textile Art"
+      ],
+      "related_assets": [],
+      "tags": [
+        "textiles",
+        "noh_costumes_—_theater_as_textile_art"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-metalwork-001",
+      "type": "forensic_qa",
+      "category": "metalwork",
+      "difficulty": "basic",
+      "question": "Explain the significance of the alloys of japan in the context of metalwork & ornaments.",
+      "answer": "Japanese metalwork developed alloys unknown in the West: shakudō (copper-gold, producing a deep blue-black patina), shibuichi (copper-silver, yielding subtle grey tones), and sentoku (a yellow copper alloy). The mastery of these materials, combined with techniques like nunome-zōgan (textile-pattern inlay) and takabori (high-relief carving), created works of extraordinary refinement.\n\nThe tsuba — the sword guard — became the primary canvas for metalwork artistry. Schools like the Gotō, Yokoya, and Nara lineages developed distinctive styles that connoisseurs can identify at a glance.",
+      "evidence": [
+        "EDITION Category Article: Metalwork & Ornaments — The Alloys of Japan"
+      ],
+      "related_assets": [],
+      "tags": [
+        "metalwork",
+        "the_alloys_of_japan"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-metalwork-002",
+      "type": "forensic_qa",
+      "category": "metalwork",
+      "difficulty": "intermediate",
+      "question": "What are the key authentication considerations for metalwork & ornaments? Specifically regarding: Authentication Through Composition",
+      "answer": "XRF analysis is particularly powerful for metalwork authentication. The precise ratios of copper, gold, silver, and trace elements in shakudō and shibuichi varied by school, period, and individual maker. Modern reproductions often use commercially available alloys with compositions that differ subtly but detectably from historical formulations.\n\nThe patina itself — the controlled chemical coloring of the metal surface — follows specific recipes (niiro-shi) passed down within metalworking families. AI pattern recognition can distinguish naturally developed patina from modern chemical treatments.",
+      "evidence": [
+        "EDITION Category Article: Metalwork & Ornaments — Authentication Through Composition"
+      ],
+      "related_assets": [],
+      "tags": [
+        "metalwork",
+        "authentication",
+        "authentication_through_composition"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-metalwork-003",
+      "type": "forensic_qa",
+      "category": "metalwork",
+      "difficulty": "expert",
+      "question": "Describe the major schools and master practitioners in the field of metalwork & ornaments, focusing on: The Great Lineages",
+      "answer": "Japanese metalwork evolved through dynasties of artisans whose techniques were closely guarded secrets.\n\nThe Gotō family dominated sword fitting production for fifteen generations (ca. 1440–1868), serving as official metalworkers to the Ashikaga and Tokugawa shōguns. Their distinctive style — bold shakudō relief with precise gold inlay — set the standard for menuki, kozuka, and kōgai fittings.\n\nYokoya Sōmin (1670–1733) broke from the Gotō tradition, developing a more painterly, pictorial approach that treated the tsuba as a canvas for landscapes and narrative scenes. His school pioneered katakiribori — a chisel technique that created ink-wash-like effects in metal.\n\nThe Nara school (Nara Toshinaga and successors) specialized in high-relief carving with dramatic three-dimensional effects, while the Akasaka school produced elegant openwork (sukashi) designs of architectural clarity.",
+      "evidence": [
+        "EDITION Category Article: Metalwork & Ornaments — The Great Lineages"
+      ],
+      "related_assets": [],
+      "tags": [
+        "metalwork",
+        "schools",
+        "masters",
+        "lineage"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-metalwork-004",
+      "type": "forensic_qa",
+      "category": "metalwork",
+      "difficulty": "intermediate",
+      "question": "What are the key authentication considerations for metalwork & ornaments? Specifically regarding: Reading a Tsuba",
+      "answer": "A tsuba is a complete aesthetic statement compressed into a disk rarely exceeding 8 centimeters.\n\nThe shape (marugata for round, mokko for lobed, nadekaku for rounded square) signals period and function. The surface treatment — from rough iron forging (tetsu-ji) to mirror-polished shakudō — establishes the tonal palette. The design vocabulary draws from nature (flowers, birds, waves), literature (scenes from The Tale of Genji), religion (Buddhist symbols), and military heraldry (mon crests).\n\nThe nakago-ana (central aperture for the blade) and its fitted copper collar (sekigane) reveal use history. Multiple sekigane replacements indicate a tsuba that was mounted on successive blades over centuries — a mark of sustained appreciation that enhances provenance.",
+      "evidence": [
+        "EDITION Category Article: Metalwork & Ornaments — Reading a Tsuba"
+      ],
+      "related_assets": [],
+      "tags": [
+        "metalwork",
+        "authentication",
+        "reading_a_tsuba"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-bonsai-001",
+      "type": "forensic_qa",
+      "category": "bonsai",
+      "difficulty": "basic",
+      "question": "Explain the significance of living sculpture in the context of bonsai & suiseki.",
+      "answer": "Bonsai is unique among Japanese art forms — it is a living artwork whose creation spans generations. The finest specimens, known as meiboku (named trees), have documented histories stretching back centuries. A single Japanese black pine (kuromatsu) displayed at the National Bonsai Museum in Ōmiya has been in continuous cultivation since 1610.\n\nThe art encompasses not just trees but viewing stones (suiseki), accent plants (kusamono), and display alcoves (tokonoma). A properly composed bonsai display tells a story of seasons, landscape, and the profound Japanese aesthetic of finding infinity within constraint.",
+      "evidence": [
+        "EDITION Category Article: Bonsai & Suiseki — Living Sculpture"
+      ],
+      "related_assets": [],
+      "tags": [
+        "bonsai",
+        "living_sculpture"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-bonsai-002",
+      "type": "forensic_qa",
+      "category": "bonsai",
+      "difficulty": "basic",
+      "question": "Explain the significance of provenance and valuation in the context of bonsai & suiseki.",
+      "answer": "Bonsai authentication centers on provenance — the chain of ownership and care. Unlike static art objects, a bonsai can be damaged or transformed by a single season of poor care. The most valuable trees come with meticulous records (kanri-kiroku) documenting decades of styling, repotting, and exhibition history.\n\nAntique containers (kobachi) are themselves collectible art objects. Pots from the Chinese Yixing kilns of the Qing dynasty, or Japanese masterworks by Hattori Ikkō and other noted potters, can be worth as much as the trees they hold. XRF analysis of clay composition can authenticate claimed origins.",
+      "evidence": [
+        "EDITION Category Article: Bonsai & Suiseki — Provenance and Valuation"
+      ],
+      "related_assets": [],
+      "tags": [
+        "bonsai",
+        "provenance_and_valuation"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-bonsai-003",
+      "type": "forensic_qa",
+      "category": "bonsai",
+      "difficulty": "basic",
+      "question": "Explain the significance of the aesthetics of form in the context of bonsai & suiseki.",
+      "answer": "Bonsai styles codify the relationship between a tree and the forces that shaped it.\n\nChokkan (直幹, formal upright) — A single vertical trunk with symmetrical branch placement. The purest expression of strength and stability.\n\nShakan (斜幹, slanting) — The trunk leans as if shaped by prevailing winds. A dynamic equilibrium between gravity and growth.\n\nKengai (懸崖, cascade) — The trunk falls below the pot rim, evoking a tree clinging to a cliff face. The most dramatic of traditional styles.\n\nBunjin (文人, literati) — A sparse, calligraphic form inspired by Chinese scholar-painting. Minimal branches and an undulating trunk create maximum expression with minimal material.\n\nEach style has strict proportional rules. The first branch should emerge at roughly one-third of the trunk height. The trunk diameter at its base should be approximately one-sixth of the tree's total height. Mastery lies in making these mathematical relationships feel natural and inevitable.",
+      "evidence": [
+        "EDITION Category Article: Bonsai & Suiseki — The Aesthetics of Form"
+      ],
+      "related_assets": [],
+      "tags": [
+        "bonsai",
+        "the_aesthetics_of_form"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-bonsai-004",
+      "type": "forensic_qa",
+      "category": "bonsai",
+      "difficulty": "basic",
+      "question": "Explain the significance of suiseki — the art of viewing stones in the context of bonsai & suiseki.",
+      "answer": "Suiseki (水石, 'water stone') — the appreciation of naturally shaped stones that suggest landscapes, animals, or abstract forms — is bonsai's contemplative companion.\n\nThe finest suiseki are stones that evoke distant mountains (yamagata-ishi), thatched huts (yagata-ishi), or islands in the sea (shimagata-ishi) without any human modification. The stone must appear entirely natural — any evidence of carving or artificial shaping destroys its value.\n\nDisplay follows strict conventions: a suiseki is placed on a hand-carved wooden base (daiza) shaped precisely to follow the stone's contours, or in a shallow tray (suiban) with fine sand or water. The best daiza are carved from dense tropical hardwoods and represent significant craft achievements in their own right.",
+      "evidence": [
+        "EDITION Category Article: Bonsai & Suiseki — Suiseki — The Art of Viewing Stones"
+      ],
+      "related_assets": [],
+      "tags": [
+        "bonsai",
+        "suiseki_—_the_art_of_viewing_stones"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-sculpture-001",
+      "type": "forensic_qa",
+      "category": "sculpture",
+      "difficulty": "basic",
+      "question": "Explain the significance of sacred and secular in the context of sculpture & buddhist art.",
+      "answer": "Japanese sculpture is dominated by Buddhist imagery — from the serene gilt-bronze Buddhas of the Asuka period to the dramatic realism of Kamakura-era guardian figures (niō). The great master Unkei and his school achieved a psychological intensity in wooden sculpture that has few parallels anywhere in the world.\n\nThe primary medium is Japanese cypress (hinoki), joined using the yosegi-zukuri (joined woodblock) technique that allowed larger, lighter, and more detailed figures than earlier single-block (ichiboku-zukuri) methods. Crystal eyes (gyokugan) set from inside the hollow head added startling lifelike quality.",
+      "evidence": [
+        "EDITION Category Article: Sculpture & Buddhist Art — Sacred and Secular"
+      ],
+      "related_assets": [],
+      "tags": [
+        "sculpture",
+        "sacred_and_secular"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-sculpture-002",
+      "type": "forensic_qa",
+      "category": "sculpture",
+      "difficulty": "basic",
+      "question": "Explain the significance of wood analysis and dating in the context of sculpture & buddhist art.",
+      "answer": "Sculpture authentication combines art-historical knowledge with wood science. Dendrochronology (tree-ring dating) can establish when the timber was felled. CT scanning reveals the internal joint structure — the specific joinery methods used are diagnostic of period and school.\n\nThe lacquer and gold leaf (kirikane) applied to Buddhist sculptures provide additional authentication data. Layer structure, adhesive composition, and application technique all evolved over time, creating a datable fingerprint that AI-assisted image analysis can help decode.",
+      "evidence": [
+        "EDITION Category Article: Sculpture & Buddhist Art — Wood Analysis and Dating"
+      ],
+      "related_assets": [],
+      "tags": [
+        "sculpture",
+        "wood_analysis_and_dating"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-sculpture-003",
+      "type": "forensic_qa",
+      "category": "sculpture",
+      "difficulty": "intermediate",
+      "question": "What are the key authentication considerations for sculpture & buddhist art? Specifically regarding: Reading Buddhist Imagery",
+      "answer": "Understanding Buddhist sculpture requires knowledge of its iconographic hierarchy.\n\nNyorai (如来, Tathāgata) — Buddhas who have achieved complete enlightenment. Depicted in simple monastic robes with specific hand gestures (mudra): the earth-touching gesture (bhumisparsha) confirms Shakyamuni's enlightenment; the meditation gesture (dhyana) signals Amida Buddha.\n\nBosatsu (菩薩, Bodhisattva) — Enlightened beings who remain in the world to help others. Adorned with jewels and crowns, they represent compassion. Kannon (Avalokitesvara) appears in thirty-three forms, each with specific attributes.\n\nMyōō (明王, Wisdom Kings) — Wrathful protectors of the dharma. Multi-armed, with fierce expressions and flaming aureoles. Fudō Myōō (Acala) is the most commonly depicted, wielding a sword to cut through delusion.\n\nTen (天, Devas) — Guardian deities, including the Four Heavenly Kings (Shitennō) who protect the cardinal directions. Their armor and dynamic poses reflect military imagery.",
+      "evidence": [
+        "EDITION Category Article: Sculpture & Buddhist Art — Reading Buddhist Imagery"
+      ],
+      "related_assets": [],
+      "tags": [
+        "sculpture",
+        "authentication",
+        "reading_buddhist_imagery"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-sculpture-004",
+      "type": "forensic_qa",
+      "category": "sculpture",
+      "difficulty": "basic",
+      "question": "Explain the significance of unkei's revolution in the context of sculpture & buddhist art.",
+      "answer": "The sculptor Unkei (ca. 1150–1223) and the Kei school he led transformed Japanese sculpture from idealized serenity to psychological realism.\n\nHis paired Nio guardians at Tōdai-ji (1203) — each standing over 8 meters tall — were completed in just 72 days by a workshop of master carvers using the yosegi-zukuri technique. The figures display an anatomical accuracy and emotional intensity unprecedented in Japanese art.\n\nUnkei's portrait sculptures of the monk Muchaku and the patriarch Seshin at Kōfuku-ji achieve an individualized realism that would not be seen in European sculpture for another two centuries. The crystal eyes, set from inside the hollow head, create an uncanny sense of living presence.\n\nThe Kei school's innovations — realistic musculature, dynamic poses, internalized emotion — established the standard for all subsequent Japanese Buddhist sculpture. Attribution to Unkei, his sons (Tankei, Kōben), or their circle dramatically affects a sculpture's scholarly and market significance.",
+      "evidence": [
+        "EDITION Category Article: Sculpture & Buddhist Art — Unkei's Revolution"
+      ],
+      "related_assets": [],
+      "tags": [
+        "sculpture",
+        "unkei's_revolution"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-architecture-001",
+      "type": "forensic_qa",
+      "category": "architecture",
+      "difficulty": "basic",
+      "question": "Explain the significance of wood, paper, and light in the context of architecture & furnishing.",
+      "answer": "Japanese architecture represents one of the world's great building traditions — a system where structure, space, and nature interpenetrate. The shoin-zukuri style of the Muromachi period established elements that define Japanese interiors to this day: the tokonoma alcove, the chigaidana staggered shelves, and the shōji translucent screens that transform walls into membranes of diffused light.\n\nThe tea room (chashitsu) took this even further — Sen no Rikyū's ideal of the humble grass hut (sōan) created spaces of extraordinary intentionality where every element, from the roji garden path to the nijiriguchi crawl-through entrance, was designed to transform consciousness.",
+      "evidence": [
+        "EDITION Category Article: Architecture & Furnishing — Wood, Paper, and Light"
+      ],
+      "related_assets": [],
+      "tags": [
+        "architecture",
+        "wood,_paper,_and_light"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-architecture-002",
+      "type": "forensic_qa",
+      "category": "architecture",
+      "difficulty": "basic",
+      "question": "Explain the significance of architectural salvage and fittings in the context of architecture & furnishing.",
+      "answer": "The collectible market for Japanese architectural elements centers on ranma (transom carvings), fusuma (sliding panel paintings), temple fittings (kanagu), and structural timber from dismantled buildings. Authentication requires knowledge of joinery techniques — Japanese carpentry uses no nails or screws, relying instead on complex interlocking joints (tsugite and shiguchi) that evolved over centuries.\n\nDendrochronology can date the timber, while tool mark analysis reveals the specific planes (kanna) and chisels (nomi) used — their marks are as diagnostic of period as brushstrokes in painting.",
+      "evidence": [
+        "EDITION Category Article: Architecture & Furnishing — Architectural Salvage and Fittings"
+      ],
+      "related_assets": [],
+      "tags": [
+        "architecture",
+        "architectural_salvage_and_fittings"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-architecture-003",
+      "type": "forensic_qa",
+      "category": "architecture",
+      "difficulty": "basic",
+      "question": "Explain the significance of the spirit of the tea room in the context of architecture & furnishing.",
+      "answer": "The chashitsu (茶室, tea room) is Japanese architecture distilled to its philosophical essence.\n\nSen no Rikyū's ideal tea room measured just two tatami mats (approximately 3.3 square meters). The nijiriguchi — a crawl-through entrance only 66 centimeters square — required all guests, regardless of rank, to humble themselves upon entering. This architectural device physically enacted the tea ceremony's principle of equality.\n\nEvery element is intentional: the tokobashira (alcove pillar), often a naturally curved or bark-covered timber, represents nature's presence within the built space. The windows are placed not for view but for the quality of light they cast on specific surfaces at specific times of day. The roji (dewy path) garden leading to the tea room functions as a psychological passage from the everyday world to the aesthetic realm.\n\nAuthentic Rikyū-period tea room elements — particularly the timber, clay walls, and handmade iron fittings — are exceptionally rare and are treated as important cultural properties.",
+      "evidence": [
+        "EDITION Category Article: Architecture & Furnishing — The Spirit of the Tea Room"
+      ],
+      "related_assets": [],
+      "tags": [
+        "architecture",
+        "the_spirit_of_the_tea_room"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-architecture-004",
+      "type": "forensic_qa",
+      "category": "architecture",
+      "difficulty": "basic",
+      "question": "Explain the significance of tansu — the art of japanese cabinetry in the context of architecture & furnishing.",
+      "answer": "Japanese tansu (箪笥, chests) represent a unique furniture tradition that combines carpentry, metalwork, and lacquer in functional art.\n\nMerchant chests (chōba-dansu) feature heavy iron hardware and fireproof construction. Clothing chests (isho-dansu) display elegant proportions and refined metalwork. Staircase chests (kaidan-dansu) demonstrate the Japanese genius for combining function with form.\n\nRegional styles are distinctive: Sendai tansu feature bold keyaki (zelkova) grain with intricate iron hardware; Sakai tansu use paulownia with delicate copper fittings; Yonezawa tansu are known for thick lacquer finishes.\n\nAuthentication considers wood species, joinery methods, hardware style, and patina. Genuine Edo-period tansu display hand-planed surfaces with characteristic tool marks, hand-forged iron fittings with natural rust patina, and wood that has developed a deep, warm tone through centuries of domestic use.",
+      "evidence": [
+        "EDITION Category Article: Architecture & Furnishing — Tansu — The Art of Japanese Cabinetry"
+      ],
+      "related_assets": [],
+      "tags": [
+        "architecture",
+        "tansu_—_the_art_of_japanese_cabinetry"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-contemporary-001",
+      "type": "forensic_qa",
+      "category": "contemporary",
+      "difficulty": "basic",
+      "question": "Explain the significance of tradition transformed in the context of contemporary art.",
+      "answer": "Contemporary Japanese art occupies a unique position — simultaneously rooted in centuries of aesthetic tradition and radically engaged with global contemporary discourse. From the Gutai group's pioneering performance art of the 1950s to Takashi Murakami's 'Superflat' theory merging Edo-period flatness with anime aesthetics, Japanese artists have consistently redefined the boundaries of contemporary practice.\n\nThe Living National Treasure (Ningen Kokuhō) system formally recognizes masters of traditional crafts, creating a unique bridge between heritage and living practice. Artists like ceramic master Tokuda Yasokichi III or lacquer artist Murose Kazumi are both preservers and innovators.",
+      "evidence": [
+        "EDITION Category Article: Contemporary Art — Tradition Transformed"
+      ],
+      "related_assets": [],
+      "tags": [
+        "contemporary",
+        "tradition_transformed"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-contemporary-002",
+      "type": "forensic_qa",
+      "category": "contemporary",
+      "difficulty": "intermediate",
+      "question": "What are the key authentication considerations for contemporary art? Specifically regarding: Authentication in Contemporary Practice",
+      "answer": "Contemporary art authentication involves different challenges — edition management, certificate of authenticity verification, gallery provenance chains, and increasingly, protection against unauthorized reproductions using AI image generation.\n\nFor Living National Treasure works, the certification system itself provides a layer of authentication. Exhibition history at the Japan Traditional Art Crafts Exhibition (Nihon Dentō Kōgei-ten) and major gallery representation create verifiable provenance chains that EDITION tracks and analyzes.",
+      "evidence": [
+        "EDITION Category Article: Contemporary Art — Authentication in Contemporary Practice"
+      ],
+      "related_assets": [],
+      "tags": [
+        "contemporary",
+        "authentication",
+        "authentication_in_contemporary_practice"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-contemporary-003",
+      "type": "forensic_qa",
+      "category": "contemporary",
+      "difficulty": "basic",
+      "question": "Explain the significance of the living national treasure system in the context of contemporary art.",
+      "answer": "Japan's Ningen Kokuhō (人間国宝, Living National Treasure) designation — formally 'Holder of Important Intangible Cultural Property' — is among the most rigorous artistic recognition systems in the world.\n\nDesignated artists receive an annual stipend to support their practice and training of successors. The system covers categories from ceramics and metalwork to textile dyeing and lacquer. As of 2024, approximately 110 individuals hold the designation across all categories.\n\nFor collectors, Living National Treasure status provides an extraordinary authentication advantage: the artist's body of work is extensively documented, exhibition histories are comprehensive, and the certification process itself verifies mastery. Works created after designation typically command significant premiums.\n\nThe intersection of traditional craft mastery and contemporary artistic vision makes these artists uniquely compelling. Ceramic master Tokuda Yasokichi III transforms the traditional Kutani palette into contemporary abstraction; textile artist Fukuda Kiju creates obi that are simultaneously functional garments and gallery-quality art.",
+      "evidence": [
+        "EDITION Category Article: Contemporary Art — The Living National Treasure System"
+      ],
+      "related_assets": [],
+      "tags": [
+        "contemporary",
+        "the_living_national_treasure_system"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-contemporary-004",
+      "type": "forensic_qa",
+      "category": "contemporary",
+      "difficulty": "basic",
+      "question": "Explain the significance of superflat and beyond in the context of contemporary art.",
+      "answer": "Takashi Murakami's Superflat theory — articulated in his 2000 manifesto — argued that the flatness of traditional Japanese art (from Rinpa screens to ukiyo-e prints) connects directly to the flatness of contemporary anime and manga. This intellectual framework elevated Japanese pop culture aesthetics to art-world discourse.\n\nThe Superflat movement's market impact has been enormous. Murakami's works have sold for over $15 million at auction. Yoshitomo Nara's seemingly naive paintings of defiant children command millions. Yayoi Kusama's infinity rooms have become the most Instagrammed art in the world.\n\nFor authentication, the contemporary Japanese market presents unique challenges: edition prints, merchandise collaborations, and the blurred boundary between commercial and fine art production require careful catalogue raisonné verification. AI-generated counterfeits of popular contemporary artists are an emerging threat that EDITION's visual analysis tools are specifically designed to detect.",
+      "evidence": [
+        "EDITION Category Article: Contemporary Art — Superflat and Beyond"
+      ],
+      "related_assets": [],
+      "tags": [
+        "contemporary",
+        "superflat_and_beyond"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-27789",
+      "type": "forensic_qa",
+      "category": "swords",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Daishō — Paired Swords with Lacquer Mountings' (Katana blade: 1440, Wakizashi blade: 15th century, Mountings: late 18th century) and explain its art-historical significance.",
+      "answer": "A magnificent paired set of long and short swords — the katana and wakizashi that together form a daishō, the defining badge of the samurai class. The blades date to the golden age of Japanese swordmaking during the Muromachi period, while the elaborate lacquer mountings were crafted centuries later during the Edo period, reflecting the enduring reverence for fine blades.\n\nSignificance: The daishō symbolized the samurai's dual nature: the long sword (katana) for combat, the short sword (wakizashi) for close quarters and ritual. Wearing both was a privilege restricted to the samurai class by Tokugawa law.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/27789"
+      ],
+      "related_assets": [
+        "met-27789"
+      ],
+      "tags": [
+        "swords",
+        "Muromachi period (kotō)",
+        "Steel, wood, lacquer, shibuich"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-24978",
+      "type": "forensic_qa",
+      "category": "swords",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Katana Blade — Signed and Dated 1526' (1526 (Kyōroku 2)) and explain its art-historical significance.",
+      "answer": "A signed and dated katana blade from the turbulent late Muromachi period — an era of constant warfare that demanded functional excellence. The blade's inscription places it precisely in 1526, making it a rare example of precisely dateable kotō craftsmanship. The graceful curvature and robust construction speak to a blade designed for real combat.\n\nSignificance: Signed and dated blades are exceptionally valuable for scholarship and authentication. This blade provides a fixed reference point for understanding regional forging techniques of the early 16th century.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/24978"
+      ],
+      "related_assets": [
+        "met-24978"
+      ],
+      "tags": [
+        "swords",
+        "Late Muromachi period (kotō)",
+        "Steel"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-24975",
+      "type": "forensic_qa",
+      "category": "swords",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Gusoku — Full Samurai Armor' (18th century) and explain its art-historical significance.",
+      "answer": "A complete suit of Edo-period samurai armor in remarkable condition. By the 18th century, armor had become largely ceremonial — a symbol of lineage and martial spirit rather than battlefield necessity. Yet the craftsmanship remains extraordinary: each plate lacquered, each cord precisely tied in the traditional patterns passed down through schools of armoring.\n\nSignificance: Edo-period gusoku represent the culmination of Japanese armoring technique, combining centuries of martial engineering with the decorative arts sensibility of a peaceful era.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/24975"
+      ],
+      "related_assets": [
+        "met-24975"
+      ],
+      "tags": [
+        "swords",
+        "Edo period",
+        "Iron, lacquer, shakudō, silver"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-24948",
+      "type": "forensic_qa",
+      "category": "swords",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Tantō Blade — Kamakura Period' (ca. 1315–16) and explain its art-historical significance.",
+      "answer": "A tantō (dagger) blade from the height of the Kamakura period — widely considered the golden age of Japanese swordmaking. The Mongol invasions of 1274 and 1281 had driven smiths to develop stronger, more resilient blades. This tantō exemplifies the Kamakura aesthetic: broad, sturdy, and purposeful, with a subtle hamon (temper line) that reveals the smith's mastery of differential hardening.\n\nSignificance: Kamakura-period blades are among the most prized in all of Japanese sword collecting. The tantō form was essential for close combat and ritual, and this example's 700-year-old provenance places it among the finest surviving examples.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/24948"
+      ],
+      "related_assets": [
+        "met-24948"
+      ],
+      "tags": [
+        "swords",
+        "Kamakura period (kotō)",
+        "Steel"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-24617",
+      "type": "forensic_qa",
+      "category": "swords",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Katana with Insect Motif Mountings' (Blade: 17th century; Mountings: early 19th century) and explain its art-historical significance.",
+      "answer": "An extraordinary katana where the beauty of the mountings rivals the blade itself. The fittings are decorated with an elaborate insect motif in shakudō (a blue-black copper-gold alloy unique to Japan), with cicadas, butterflies, and dragonflies rendered in exquisite detail. The blade, from the shintō (new sword) era, combines Edo-period refinement with martial function.\n\nSignificance: The 'insect gathering' motif demonstrates the Edo-period practice of elevating sword mountings to high art. These fittings were created by specialized metalworkers (kinko) whose skills were distinct from the swordsmiths who forged the blades.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/24617"
+      ],
+      "related_assets": [
+        "met-24617"
+      ],
+      "tags": [
+        "swords",
+        "Edo period (shintō)",
+        "Steel, wood, lacquer, shakudō,"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-49282",
+      "type": "forensic_qa",
+      "category": "ceramics",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Kutsu-gata Chawan — Clog-shaped Tea Bowl' (Early 17th century) and explain its art-historical significance.",
+      "answer": "A dramatically deformed tea bowl in the kutsu-gata (clog shape) — its intentional asymmetry embodies the wabi aesthetic of the tea ceremony. The vessel bears a design of plum blossoms and geometric patterns, executed in iron pigment under a Shino-type glaze. This deliberate irregularity would have been prized by tea masters as an expression of the beauty found in imperfection.\n\nSignificance: Kutsu-gata bowls represent one of the most radical aesthetic propositions in ceramic history: the deliberate rejection of symmetry and perfection as desirable qualities. This idea, unique to Japanese tea culture, has profoundly influenced modern art and design worldwide.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/49282"
+      ],
+      "related_assets": [
+        "met-49282"
+      ],
+      "tags": [
+        "ceramics",
+        "Momoyama–Early Edo period",
+        "Stoneware with underglaze iron"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-63180",
+      "type": "forensic_qa",
+      "category": "ceramics",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Red Raku Tea Bowl' (18th century) and explain its art-historical significance.",
+      "answer": "A red Raku tea bowl continuing the tradition established by Chōjirō under Sen no Rikyū's guidance in the 16th century. Raku bowls are hand-shaped (never thrown on a wheel), fired individually at low temperatures, and pulled from the kiln while still glowing — a process that yields each bowl's unique character. The warm red tone and soft, tactile surface invite the hands as much as the eyes.\n\nSignificance: The Raku family has maintained an unbroken lineage of tea bowl production for over 450 years, now in its 16th generation. Each generation's bowls reflect their individual artistic vision while honoring the founding principles of simplicity and directness.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/63180"
+      ],
+      "related_assets": [
+        "met-63180"
+      ],
+      "tags": [
+        "ceramics",
+        "Edo period",
+        "Earthenware with red slip"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-53002",
+      "type": "forensic_qa",
+      "category": "ceramics",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Shino Tea Bowl — \"Bridge of the Gods\"' (Late 16th – early 17th century) and explain its art-historical significance.",
+      "answer": "A Shino-ware tea bowl bearing the poetic name 'Bridge of the Gods' (Kaminohashi), a reference to the sacred bridge at Nikkō's Tōshōgū shrine. The thick, milky-white Shino glaze — achieved through a feldspathic glaze over iron-oxide brushwork — creates a warm, inviting surface. The bridge motif, rendered in bold, spontaneous strokes, exemplifies the Momoyama aesthetic of vigor and directness.\n\nSignificance: Named tea bowls (meibutsu) occupy the highest echelon of Japanese ceramic culture. The act of naming bestows individual identity, transforming a functional vessel into a unique cultural artifact with its own biography.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/53002"
+      ],
+      "related_assets": [
+        "met-53002"
+      ],
+      "tags": [
+        "ceramics",
+        "Momoyama period",
+        "Stoneware with underglaze iron"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-39799",
+      "type": "forensic_qa",
+      "category": "ukiyoe",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'The Great Wave off Kanagawa' (ca. 1830–32) and explain its art-historical significance.",
+      "answer": "Perhaps the most recognized work of art in the world — Hokusai's towering wave about to crash over fishing boats with Mount Fuji serene in the distance. Created when Hokusai was approximately 70 years old, the print is the first in his series 'Thirty-six Views of Mount Fuji.' The composition is a masterclass in tension: the chaotic, clawing wave against the perfect stillness of the sacred mountain.\n\nSignificance: The Great Wave catalyzed the Japonisme movement in Europe, directly influencing Impressionism, Art Nouveau, and the course of Western art. It remains the most reproduced image in Japanese art history, though the original prints — of which perhaps 100 high-quality impressions survive — command prices exceeding $1 million at auction.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/39799"
+      ],
+      "related_assets": [
+        "met-39799"
+      ],
+      "tags": [
+        "ukiyoe",
+        "Edo period",
+        "Polychrome woodblock print (ni"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-37256",
+      "type": "forensic_qa",
+      "category": "ukiyoe",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Interior Scene in the Yoshiwara' (ca. 1680) and explain its art-historical significance.",
+      "answer": "An early depiction of life within the Yoshiwara pleasure quarter — the licensed entertainment district that was the primary subject of ukiyo-e art. This painting predates the mass-produced woodblock prints that would later define the genre, offering a rare glimpse into the formative years of 'floating world' imagery. The scene captures courtesans, attendants, and patrons in an atmosphere of refined leisure.\n\nSignificance: Works from this early period document the transition from hand-painted ukiyo-e to the woodblock print medium. They reveal how the 'floating world' aesthetic — celebrating urban pleasure and beauty — emerged as a distinct artistic movement in the decades following the establishment of the Tokugawa shogunate.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/37256"
+      ],
+      "related_assets": [
+        "met-37256"
+      ],
+      "tags": [
+        "ukiyoe",
+        "Early Edo period",
+        "Ink and color on paper"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-45464",
+      "type": "forensic_qa",
+      "category": "painting",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Autumn and Winter Landscape' (early 16th century) and explain its art-historical significance.",
+      "answer": "Mary Griggs Burke Collection. Pair of hanging scrolls; ink and light color on paper\n\nSignificance: Metropolitan Museum of Art",
+      "evidence": [
+        "Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/45464"
+      ],
+      "related_assets": [
+        "met-45464"
+      ],
+      "tags": [
+        "painting",
+        "Muromachi period (1392–1573)",
+        "Pair of hanging scrolls; ink a"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-44866",
+      "type": "forensic_qa",
+      "category": "lacquerware",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Case (Inrō) with Design of Bean Vine' (18th century) and explain its art-historical significance.",
+      "answer": "The Howard Mansfield Collection. Powdered gold (maki-e) on lacquer with ceramic, lead, and mother-of-pearl inlays\n\nSignificance: Metropolitan Museum of Art, Accession: 36.100.188",
+      "evidence": [
+        "Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/44866"
+      ],
+      "related_assets": [
+        "met-44866"
+      ],
+      "tags": [
+        "lacquerware",
+        "Edo period (1615–1868)",
+        "Powdered gold (maki-e) on lacq"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-50688",
+      "type": "forensic_qa",
+      "category": "textiles",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Robe (Kosode) with Shells and Sea Grasses' (early 17th century) and explain its art-historical significance.",
+      "answer": "Gift of Mr. and Mrs. Paul T. Nomura. Embroidery and gold leaf on plain-weave silk\n\nSignificance: Metropolitan Museum of Art, Accession: 1992.253",
+      "evidence": [
+        "Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/50688"
+      ],
+      "related_assets": [
+        "met-50688"
+      ],
+      "tags": [
+        "textiles",
+        "Edo period (1615–1868)",
+        "Embroidery and gold leaf on pl"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-25649",
+      "type": "forensic_qa",
+      "category": "metalwork",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Sword Guard (Tsuba)' (ca. 1800) and explain its art-historical significance.",
+      "answer": "Rogers Fund, 1912. Iron, shakudō, shibuichi, gold, bronze, copper\n\nSignificance: Metropolitan Museum of Art, Accession: 12.37.176",
+      "evidence": [
+        "Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/25649"
+      ],
+      "related_assets": [
+        "met-25649"
+      ],
+      "tags": [
+        "metalwork",
+        "Edo period (1615–1868)",
+        "Iron, copper-gold alloy (shaku"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-34952",
+      "type": "forensic_qa",
+      "category": "metalwork",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Sword Guard (Tsuba) — Landscape Design' (18th century) and explain its art-historical significance.",
+      "answer": "Gift of Mrs. Adrian H. Joline, 1914. Iron, bronze, gold, silver, copper\n\nSignificance: Metropolitan Museum of Art, Accession: 14.60.53",
+      "evidence": [
+        "Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/34952"
+      ],
+      "related_assets": [
+        "met-34952"
+      ],
+      "tags": [
+        "metalwork",
+        "Edo period (1615–1868)",
+        "Iron, bronze, gold, silver, co"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-53176",
+      "type": "forensic_qa",
+      "category": "sculpture",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Fudō Myōō, the Immovable Wisdom King' (early 13th century) and explain its art-historical significance.",
+      "answer": "Mary Griggs Burke Collection, Gift of the Mary and Jackson Burke Foundation, 2015\n\nSignificance: Metropolitan Museum of Art, Accession: 2015.300.252a, b",
+      "evidence": [
+        "Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/53176"
+      ],
+      "related_assets": [
+        "met-53176"
+      ],
+      "tags": [
+        "sculpture",
+        "Kamakura period (1185–1333)",
+        "Japanese cypress with lacquer,"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-53167",
+      "type": "forensic_qa",
+      "category": "sculpture",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Flying Apsaras (Hiten)' (late 11th to early 12th century) and explain its art-historical significance.",
+      "answer": "Mary Griggs Burke Collection. Japanese cypress with lacquer and gold\n\nSignificance: Metropolitan Museum of Art, Accession: 2015.300.251a, b",
+      "evidence": [
+        "Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/53167"
+      ],
+      "related_assets": [
+        "met-53167"
+      ],
+      "tags": [
+        "sculpture",
+        "Heian period (794–1185)",
+        "Japanese cypress with lacquer "
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-59166",
+      "type": "forensic_qa",
+      "category": "netsuke",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Netsuke — Kagamibuta with Gold Inlay' (19th century) and explain its art-historical significance.",
+      "answer": "A kagamibuta-style netsuke — a shallow ivory bowl fitted with a bronze disk lid inlaid with gold. The kagamibuta ('mirror-lid') form is one of the most elegant netsuke types, combining the carver's skill in ivory with the metalworker's art of inlay. The gold design on the bronze disk creates a striking contrast against the warm patina of the ivory bowl.\n\nSignificance: Kagamibuta netsuke represent a collaboration between ivory carvers and metalworkers, making them particularly interesting from an authentication perspective — two distinct craft traditions must be evaluated in a single object.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/59166"
+      ],
+      "related_assets": [
+        "met-59166"
+      ],
+      "tags": [
+        "netsuke",
+        "Edo–Meiji period",
+        "Ivory with bronze disk inlaid "
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-63933",
+      "type": "forensic_qa",
+      "category": "ceramics",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Cluster of mountain tea bowls (yama-chawan)' (13th century) and explain its art-historical significance.",
+      "answer": "A cluster of yama-chawan — 'mountain tea bowls' — fused together during firing. These utilitarian Seto ware bowls were mass-produced in medieval kilns and represent the everyday ceramic tradition that predated the tea ceremony's aesthetic revolution. Their accidental fusion during firing preserves a moment in the kiln's life, revealing stacking methods and firing temperatures.\n\nSignificance: Yama-chawan provide critical archaeological evidence for understanding medieval Japanese kiln technology. Their unpretentious simplicity contrasts sharply with the later tea ceremony wares, illustrating the vast aesthetic range of Japanese ceramics.",
+      "evidence": [
+        "Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/63933"
+      ],
+      "related_assets": [
+        "met-63933"
+      ],
+      "tags": [
+        "ceramics",
+        "Kamakura period (1185–1333)",
+        "Stoneware with ash glaze (Seto"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-671043",
+      "type": "forensic_qa",
+      "category": "painting",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Paintings by Taigadō with Colophons' (late 18th–early 19th century) and explain its art-historical significance.",
+      "answer": "An album of paintings by Ike no Taiga (1723–1776), one of the foremost masters of the Nanga (literati painting) school. Taiga blended Chinese Southern School painting traditions with a distinctly Japanese lyricism, creating landscapes and figure studies of extraordinary freedom and spontaneity. The accompanying colophons by later scholars attest to the work's provenance and artistic significance.\n\nSignificance: Ike no Taiga is regarded as one of the twin pillars of Japanese literati painting alongside Yosa Buson. His works command exceptional prices at auction and are extensively documented in Japanese art scholarship. Albums like this provide rare insight into his working methods and range.",
+      "evidence": [
+        "Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/671043"
+      ],
+      "related_assets": [
+        "met-671043"
+      ],
+      "tags": [
+        "painting",
+        "Edo period (1615–1868)",
+        "Album; ink and light color on "
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-671018",
+      "type": "forensic_qa",
+      "category": "painting",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Shirabyōshi Dancer and Female Servant; Courtesan and Girl Attendant' (mid-18th century) and explain its art-historical significance.",
+      "answer": "A pair of bijin-ga (beautiful women paintings) by Tsukioka Settei, depicting a shirabyōshi dancer with her servant and a courtesan with her young attendant (kamuro). The Osaka-based Settei was renowned for his elegant depictions of women, combining the decorative sensibility of the Kanō school with the intimacy of genre painting. The remounting as a folding screen suggests these works were treasured display pieces.\n\nSignificance: Tsukioka Settei was a pivotal figure in Osaka painting, bridging the Kanō academic tradition and the emerging ukiyo-e aesthetic. His grandson Tsukioka Yoshitoshi would become the last great master of ukiyo-e. These works exemplify the sophisticated culture of Osaka's merchant class.",
+      "evidence": [
+        "Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/671018"
+      ],
+      "related_assets": [
+        "met-671018"
+      ],
+      "tags": [
+        "painting",
+        "Edo period (1615–1868)",
+        "Hanging scroll paintings, remo"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-57224",
+      "type": "forensic_qa",
+      "category": "painting",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Poem Accompanying an Over Robe (Uchikake) with a Bamboo Painting by Gion Nankai' (1824) and explain its art-historical significance.",
+      "answer": "A calligraphic handscroll by the celebrated Confucian scholar and historian Rai San'yō (1780–1832), composed as a poetic response to a painted over-robe decorated with bamboo by the earlier literati artist Gion Nankai. This work represents the literati ideal of interconnected arts — painting, poetry, and calligraphy forming a unified aesthetic experience.\n\nSignificance: Rai San'yō was among the most influential intellectuals of late Edo Japan. His historical writings helped shape the ideology that would drive the Meiji Restoration. This scroll demonstrates the interpenetration of visual art and literary culture that defines the bunjin (literati) tradition.",
+      "evidence": [
+        "Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/57224"
+      ],
+      "related_assets": [
+        "met-57224"
+      ],
+      "tags": [
+        "painting",
+        "Late Edo period",
+        "Handscroll; ink on silk"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-23935",
+      "type": "forensic_qa",
+      "category": "swords",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Blade and Mounting for a Dagger (Tantō)' (blade, dated 1870; mounting, 19th century) and explain its art-historical significance.",
+      "answer": "A tantō (dagger) by Gassan Sadakazu (1836–1918), the founder of the modern Gassan lineage. Sadakazu revived the ancient ayasugi-hada (wave-pattern grain) forging technique originally developed by the medieval Gassan smiths of Dewa province. The blade dates to 1870, just before the Meiji government's sword-abolishment edict of 1876. The luxurious mounting in rosewood with shakudō and gold fittings reflects the highest level of Meiji-era craftsmanship.\n\nSignificance: Gassan Sadakazu was designated a Teishitsu Gigeiin (Imperial Household Artist) — the Meiji-era equivalent of a Living National Treasure. His revival of the ayasugi-hada technique saved a medieval forging tradition from extinction. This tantō represents the transition from shinshintō to gendaitō production.",
+      "evidence": [
+        "Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/23935"
+      ],
+      "related_assets": [
+        "met-23935"
+      ],
+      "tags": [
+        "swords",
+        "Meiji period (shinshintō/gendaitō)",
+        "Steel, wood (rosewood), copper"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-53238",
+      "type": "forensic_qa",
+      "category": "painting",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Zheng Huangniu and Yushanzhu' (early 17th century) and explain its art-historical significance.",
+      "answer": "A pair of hanging scrolls by Kanō Naizen, depicting Chinese literary figures in bold ink brushwork characteristic of the Kanō school. The compositions demonstrate the school's mastery of Chinese subject matter reinterpreted through Japanese sensibility.\n\nSignificance: Kanō Naizen was a prominent painter of the Momoyama era, known for his dynamic compositions and confident brushwork. These scrolls exemplify the Kanō school's role as the dominant force in Japanese official painting.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/53238"
+      ],
+      "related_assets": [
+        "met-53238"
+      ],
+      "tags": [
+        "painting",
+        "Momoyama–Early Edo period",
+        "Pair of hanging scrolls; ink o"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-45401",
+      "type": "forensic_qa",
+      "category": "textiles",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Noh Robe (Karaori) — Bamboo and Young Pines' (first half 19th century) and explain its art-historical significance.",
+      "answer": "A karaori — the most luxurious type of Noh costume, reserved for female roles. The name literally means 'Chinese weave,' reflecting the technique's continental origins. This example features alternating bands of red and white ground with patterns of bamboo and young pine, symbols of resilience and new beginnings. The gold-leaf paper strips woven into the fabric create a shimmering effect under stage lighting.\n\nSignificance: Karaori are among the most technically demanding textiles ever produced. Each costume represents months of specialized weaving, with some examples containing over twenty colors of silk thread supplemented by gold and silver leaf. These garments are themselves works of art, often valued independently of the performances they adorned.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/45401"
+      ],
+      "related_assets": [
+        "met-45401"
+      ],
+      "tags": [
+        "textiles",
+        "Edo period (1615–1868)",
+        "Twill-weave silk with resist-d"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-44604",
+      "type": "forensic_qa",
+      "category": "textiles",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Noh Costume (Nuihaku) — Books and Nandina Branches' (second half of the 18th century) and explain its art-historical significance.",
+      "answer": "A nuihaku costume combining two of the most refined textile techniques: nui (embroidery) and haku (metallic leaf application). The design of scattered books and nandina branches carries layered literary allusions — books symbolize learning and cultivation, while nandina (nanten) is a wordplay on 'overcoming hardship' (nan wo tenzuru). The silk satin ground provides a luminous backdrop for the intricate metallic patterns.\n\nSignificance: Nuihaku costumes represent the intersection of painting, embroidery, and metalwork on fabric. The combination of silk thread embroidery with gold and silver leaf creates textural contrasts that would be impossible in any single medium. These costumes are among the most prized objects in Japanese textile art.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/44604"
+      ],
+      "related_assets": [
+        "met-44604"
+      ],
+      "tags": [
+        "textiles",
+        "Edo period (1615–1868)",
+        "Silk embroidery and metallic l"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-61851",
+      "type": "forensic_qa",
+      "category": "textiles",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Ryūkyūan Bingata Robe' (19th century) and explain its art-historical significance.",
+      "answer": "A vibrant bingata robe from the Ryūkyū Kingdom — the brilliant textile tradition of Okinawa that synthesized influences from China, Southeast Asia, and mainland Japan into something utterly original. Bingata employs stencil-resist dyeing with hand-painted details, producing the vivid, saturated colors and bold patterns that distinguish this tradition from all others in East Asia.\n\nSignificance: Bingata textiles represent one of the most distinctive regional textile traditions in Japan. The Ryūkyū Kingdom's position as a maritime trading hub created a unique aesthetic that blended tropical exuberance with refined technique. Today, bingata is recognized as an Important Intangible Cultural Property of Japan.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/61851"
+      ],
+      "related_assets": [
+        "met-61851"
+      ],
+      "tags": [
+        "textiles",
+        "Late Edo period",
+        "Resist-dyed and painted (binga"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-45052",
+      "type": "forensic_qa",
+      "category": "ukiyoe",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Courtesan from the Myōgaya House' (ca. 1712) and explain its art-historical significance.",
+      "answer": "An early ukiyo-e print by Torii Kiyomasu I, one of the founders of the Torii school that dominated kabuki theater poster design. This tan-e (orange-printed picture) depicts a courtesan of the Myōgaya house in the Yoshiwara pleasure quarter. The bold, calligraphic outlines and hand-applied orange pigment are characteristic of pre-nishiki-e printing technology.\n\nSignificance: Tan-e represent a critical early stage in ukiyo-e development, before the invention of multi-color printing (nishiki-e) in the 1760s. The Torii school's dynamic, poster-like compositions established the visual vocabulary of kabuki-related prints that would flourish for the next century.",
+      "evidence": [
+        "Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/45052"
+      ],
+      "related_assets": [
+        "met-45052"
+      ],
+      "tags": [
+        "ukiyoe",
+        "Early Edo period (Shōtoku era)",
+        "Woodblock print (tan-e); ink a"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-37270",
+      "type": "forensic_qa",
+      "category": "ukiyoe",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Seeing a Performance' (1789) and explain its art-historical significance.",
+      "answer": "A genre scene by Kitagawa Utamaro showing women attending a theatrical performance. Utamaro's genius lay in capturing the subtle psychology of his subjects — here, the varying degrees of attention, distraction, and social interaction among the viewers create a nuanced social portrait. The print demonstrates his mastery of the nishiki-e full-color technique.\n\nSignificance: Utamaro transformed the bijin-ga genre from idealized portraiture to genuine psychological study. His works were among the first ukiyo-e to reach Europe, profoundly influencing Impressionist and Art Nouveau artists. This print dates to his early mature period, before the iconic ōkubi-e (large-head portraits) that would make him famous.",
+      "evidence": [
+        "Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/37270"
+      ],
+      "related_assets": [
+        "met-37270"
+      ],
+      "tags": [
+        "ukiyoe",
+        "Edo period (Kansei era)",
+        "Woodblock print; ink and color"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-37277",
+      "type": "forensic_qa",
+      "category": "ukiyoe",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Narihira's Journey to the East' (ca. 1797) and explain its art-historical significance.",
+      "answer": "A triptych by Utamaro illustrating the famous episode from the Tales of Ise (Ise Monogatari) in which the Heian-period poet Ariwara no Narihira journeys eastward from the capital. Utamaro transposes the classical literary scene into the Edo-period present, dressing the travelers in contemporary clothing — a characteristic ukiyo-e device called mitate-e (parody picture) that creates layered meanings for educated viewers.\n\nSignificance: Mitate-e — the playful re-staging of classical literary and historical scenes in contemporary settings — is one of ukiyo-e's most sophisticated devices. This triptych demonstrates Utamaro's range beyond the bijin-ga genre, engaging with Japan's deepest literary traditions while maintaining the visual appeal of his contemporary subjects.",
+      "evidence": [
+        "Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/37277"
+      ],
+      "related_assets": [
+        "met-37277"
+      ],
+      "tags": [
+        "ukiyoe",
+        "Edo period (Kansei era)",
+        "Triptych of woodblock prints; "
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-59054",
+      "type": "forensic_qa",
+      "category": "netsuke",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Netsuke — Snail on a Box' (19th century) and explain its art-historical significance.",
+      "answer": "A carved wood netsuke depicting a snail perched atop a small box — a subject that embodies the netsuke carver's delight in transforming everyday observations into miniature art. The spiral shell is rendered with naturalistic precision, while the box beneath provides a stable, compact form ideal for the toggle's practical function. Signed by Shigemasa.\n\nSignificance: Animal subjects were among the most popular themes in netsuke carving, and snails — with their perfect spiral geometry — presented an irresistible challenge to the miniaturist. The inclusion of the box creates a visual pun on containment and concealment.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/59054"
+      ],
+      "related_assets": [
+        "met-59054"
+      ],
+      "tags": [
+        "netsuke",
+        "Edo–Meiji period",
+        "Wood"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-59052",
+      "type": "forensic_qa",
+      "category": "netsuke",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Netsuke — Seated Shishi with Ball' (late 19th century) and explain its art-historical significance.",
+      "answer": "A seated shishi (lion-dog) clutching a brocade ball, carved in dense ebony and enriched with gold and horn inlay. The guardian beast's mane is rendered in tight, rhythmic curls, while its muscular body coils with contained energy. The inlaid eyes give the creature an alert, almost sentient presence.\n\nSignificance: Shishi are among the most symbolically charged subjects in netsuke carving — guardians against evil, they appear throughout Japanese art as protectors of sacred spaces. The use of ebony with precious inlays indicates this was made for a discriminating collector.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/59052"
+      ],
+      "related_assets": [
+        "met-59052"
+      ],
+      "tags": [
+        "netsuke",
+        "Late Edo–Meiji period",
+        "Ebony with gold and horn inlay"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-58927",
+      "type": "forensic_qa",
+      "category": "lacquerware",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Inrō — Peacocks and Flowers' (19th century) and explain its art-historical significance.",
+      "answer": "An exquisite inrō by Koma Yasutada, one of the most celebrated lacquer artists of the Edo period. Peacocks and flowers are rendered in multiple maki-e techniques — togidashi (polished-out), hiramaki-e (flat), and iroe (colored) — creating extraordinary depth and luminosity against a nashiji ground that glows like scattered gold dust. The accompanying netsuke of Kintarō carved on a peach stone demonstrates equally astonishing miniature craftsmanship.\n\nSignificance: The Koma family was one of the great dynasties of Edo-period lacquer art, serving the Tokugawa shōguns. Yasutada's works are prized for their technical virtuosity and refined composition, combining multiple maki-e techniques in a single piece.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/58927"
+      ],
+      "related_assets": [
+        "met-58927"
+      ],
+      "tags": [
+        "lacquerware",
+        "Edo period (1615–1868)",
+        "Black lacquer and nashiji grou"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-58588",
+      "type": "forensic_qa",
+      "category": "lacquerware",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Inrō — Floating Fans' (first half 19th century) and explain its art-historical significance.",
+      "answer": "Scattered fans — some open, some folded — drift across the surface of this inrō like leaves on water, rendered in togidashimaki-e (polished-out sprinkled design) that creates an almost photographic smoothness. The fan motif is quintessentially Japanese: an everyday object elevated to a symbol of elegance, transience, and the aesthetic pleasure of arrangement.\n\nSignificance: The 'scattered fan' (senmen-chirashi) is one of the most beloved decorative motifs in Japanese art, appearing across lacquerware, ceramics, textiles, and painting. On this inrō, the motif serves both as decoration and as a meditation on the art of composition itself.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/58588"
+      ],
+      "related_assets": [
+        "met-58588"
+      ],
+      "tags": [
+        "lacquerware",
+        "Edo period (1615–1868)",
+        "Lacquered wood with gold and s"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-39664",
+      "type": "forensic_qa",
+      "category": "architecture",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Irises at Yatsuhashi (Eight Bridges)' (after 1709) and explain its art-historical significance.",
+      "answer": "Ogata Kōrin's monumental interpretation of irises at Yatsuhashi — the famous eight-plank bridge from the Tales of Ise — is one of the supreme achievements of Japanese decorative art. The bold blue irises and green leaves are painted directly on a brilliant gold-leaf ground with no preliminary drawing, each brushstroke placed with absolute conviction. The bridge itself is implied but invisible, leaving the viewer to navigate the composition as a traveler would cross the marshland.\n\nSignificance: This pair of screens is among the most important works in the Metropolitan Museum's Asian art collection. Kōrin's radical simplification — reducing a narrative landscape to just irises and gold — anticipated abstract art by two centuries. The screens exemplify the byōbu tradition where folding screens function as both architectural element and painting.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/39664"
+      ],
+      "related_assets": [
+        "met-39664"
+      ],
+      "tags": [
+        "architecture",
+        "Edo period (1615–1868)",
+        "Pair of six-panel folding scre"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-45258",
+      "type": "forensic_qa",
+      "category": "architecture",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Bamboo in the Four Seasons' (late 15th – early 16th century) and explain its art-historical significance.",
+      "answer": "A pair of monumental screens by Tosa Mitsunobu depicting bamboo across the four seasons — from spring shoots to winter's snow-laden stalks. The Tosa school specialized in yamato-e (native Japanese painting), and these screens demonstrate their mastery of naturalistic observation combined with decorative gold-leaf techniques. Each panel captures a different moment in bamboo's annual cycle, creating a continuous panorama of time passing.\n\nSignificance: Tosa Mitsunobu was the leading painter of the yamato-e tradition in the Muromachi period. These screens represent the intersection of painting and architecture — designed to define and transform interior space, they function as both art objects and architectural elements in the shoin-zukuri room.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/45258"
+      ],
+      "related_assets": [
+        "met-45258"
+      ],
+      "tags": [
+        "architecture",
+        "Muromachi period (1392–1573)",
+        "Pair of six-panel screens; ink"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-53456",
+      "type": "forensic_qa",
+      "category": "architecture",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Orchid Pavilion Gathering; Autumn Harvest Festival' (ca. 1763) and explain its art-historical significance.",
+      "answer": "Ike no Taiga — one of the towering figures of Japanese literati (bunjin-ga) painting — transforms two classical subjects into immersive architectural environments. The Orchid Pavilion scene depicts the legendary gathering of Chinese scholars, while the Autumn Harvest Festival captures Japanese seasonal celebration. Both screens demonstrate Taiga's distinctive fusion of Chinese and Japanese painting traditions.\n\nSignificance: Folding screens (byōbu) literally mean 'wind walls' — they are architecture as much as art. Taiga's screens exemplify the Japanese principle that interior space should be composed, not merely decorated. The screens would have been displayed seasonally in a formal reception room, transforming the character of the space itself.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/53456"
+      ],
+      "related_assets": [
+        "met-53456"
+      ],
+      "tags": [
+        "architecture",
+        "Edo period (1615–1868)",
+        "Pair of six-panel folding scre"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-55117",
+      "type": "forensic_qa",
+      "category": "bonsai",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Potted Pine Tree, Drum and Seven Herbs Planted in a Box' (18th–19th century) and explain its art-historical significance.",
+      "answer": "A surimono by Sunayama Gosei depicting a potted pine tree alongside a drum and a box planted with the seven herbs of spring (nanakusa). Surimono were privately commissioned prints of exceptional quality, produced in limited editions for poetry circles and special occasions. The potted pine (hachi-ue no matsu) is a New Year's motif symbolizing longevity and constancy — its careful training in a container reflects the bonsai aesthetic of nature refined through human patience.\n\nSignificance: This print captures the deep cultural connection between potted trees and Japanese seasonal celebration. The potted pine is both a decorative element and a philosophical statement — nature contained, shaped, and revered. The surimono format, with its superior paper and metallic pigments, elevates a seasonal greeting into fine art.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/55117"
+      ],
+      "related_assets": [
+        "met-55117"
+      ],
+      "tags": [
+        "bonsai",
+        "Edo period (1615–1868)",
+        "Woodblock print (surimono); in"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-53986",
+      "type": "forensic_qa",
+      "category": "bonsai",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Kakemono of Monkey, Wine Cup and Potted Plants' (probably 1812) and explain its art-historical significance.",
+      "answer": "A surimono by Keisai Eisen depicting a hanging scroll painting of a monkey, accompanied by a wine cup and potted plants. The composition layers multiple levels of representation — a print depicting a painting depicting nature — in a characteristically Japanese play on illusion and reality. The potted plants reflect the Edo-period fascination with cultivating nature in miniature, the same impulse that elevated bonsai from simple horticulture to high art.\n\nSignificance: Keisai Eisen (1790–1848) was a versatile ukiyo-e artist known primarily for bijin-ga but equally accomplished in surimono. This print belongs to the H. O. Havemeyer Collection — one of the most distinguished collections of Japanese art ever assembled in America, bequeathed to the Metropolitan Museum in 1929.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/53986"
+      ],
+      "related_assets": [
+        "met-53986"
+      ],
+      "tags": [
+        "bonsai",
+        "Edo period (1615–1868)",
+        "Woodblock print (surimono); in"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-44858",
+      "type": "forensic_qa",
+      "category": "contemporary",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Old Plum' (1646) and explain its art-historical significance.",
+      "answer": "One of the most celebrated works in Japanese painting — Kano Sansetsu's monumental 'Old Plum' originally decorated the fusuma (sliding doors) of Tenshōin, a sub-temple of Myōshin-ji in Kyoto. The ancient plum tree erupts from the lower left in a massive, gnarled trunk that twists and branches across all four panels with explosive energy. Young blossoms burst from aged wood — a profound metaphor for renewal emerging from endurance. The gold-leaf ground transforms the wall surface into an infinite, radiant space.\n\nSignificance: Kano Sansetsu (1589–1651) inherited the Kyoto branch of the Kanō school and pushed its decorative vocabulary to surreal extremes. This work's dramatic tension between the organic, almost violent trunk and the delicate blossoms creates an effect that feels startlingly modern — a quality that has made it one of the Metropolitan Museum's most iconic Asian art holdings.",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/44858"
+      ],
+      "related_assets": [
+        "met-44858"
+      ],
+      "tags": [
+        "contemporary",
+        "Edo period (1615–1868)",
+        "Four sliding-door panels (fusu"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-met-671024",
+      "type": "forensic_qa",
+      "category": "contemporary",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Goose and Reeds; Willows in the Moonlight' (right screen: 1774; left screen: 1793) and explain its art-historical significance.",
+      "answer": "A pair of six-panel screens by Maruyama Ōkyo (1733–1795), the revolutionary painter who introduced Western perspective and direct observation from nature into Japanese painting. The right screen depicts a goose descending through reeds with startling naturalistic precision; the left screen captures willows bathed in moonlight with atmospheric subtlety. Created nearly twenty years apart (1774 and 1793), together they span Ōkyo's mature career and demonstrate his evolving mastery of light, atmosphere, and natural form.\n\nSignificance: Maruyama Ōkyo founded the Maruyama school, which championed shasei (painting from life) over copying classical models — a philosophical break as significant in Japanese art as Impressionism was in Europe. These screens, from the Mary Griggs Burke Collection, exemplify the union of decorative grandeur with observational truth that made Ōkyo's work revolutionary. His influence extends directly to modern Japanese painting (nihon-ga).",
+      "evidence": [
+        "The Metropolitan Museum of Art — https://www.metmuseum.org/art/collection/search/671024"
+      ],
+      "related_assets": [
+        "met-671024"
+      ],
+      "tags": [
+        "contemporary",
+        "Edo period (1615–1868)",
+        "Pair of six-panel folding scre"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-artic-111380",
+      "type": "forensic_qa",
+      "category": "sculpture",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Seated Bodhisattva' (8th century) and explain its art-historical significance.",
+      "answer": "A seated bodhisattva from the Nara period, constructed using the dry lacquer (kanshitsu) technique — layers of hemp cloth soaked in lacquer over a wood core. This technically demanding method, imported from Tang-dynasty China, produced sculptures of remarkable lightness and refined detail. The traces of gold leaf on the surface indicate this figure once gleamed with sacred radiance in a temple interior. The serene expression and balanced proportions exemplify the cosmopolitan Buddhist art that flourished under Emperor Shōmu's patronage.\n\nSignificance: Nara-period dry lacquer sculptures are among the rarest surviving examples of early Japanese Buddhist art. The kanshitsu technique was largely abandoned after the Nara period in favor of wood carving, making extant examples exceptionally valuable for understanding the technical transmission from continental Asia.",
+      "evidence": [
+        "Art Institute of Chicago — https://www.artic.edu/artworks/111380"
+      ],
+      "related_assets": [
+        "artic-111380"
+      ],
+      "tags": [
+        "sculpture",
+        "Nara period (710–794)",
+        "Wood core, dry lacquer, traces"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-artic-7500",
+      "type": "forensic_qa",
+      "category": "sculpture",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Shukongōjin — Vajrapāṇi' (13th century) and explain its art-historical significance.",
+      "answer": "A Kamakura-period guardian figure (Shukongōjin/Vajrapāṇi) carved in wood with vestiges of original polychrome decoration. The dynamic pose — weight shifted forward, arm raised as if wielding a vajra thunderbolt — exemplifies the Kei school's revolutionary approach to Buddhist sculpture. The naturalistic musculature and fierce expression reflect the period's emphasis on visceral spiritual power, a departure from the serene idealism of earlier Heian-period figures.\n\nSignificance: Kamakura-period guardian sculptures represent the zenith of Japanese wood carving. The Kei school, led by Unkei and his sons, introduced an unprecedented realism that would define Japanese sculptural aesthetics for centuries. Crystal inlaid eyes (gyokugan) and dynamic compositions were their hallmarks.",
+      "evidence": [
+        "Art Institute of Chicago — https://www.artic.edu/artworks/7500"
+      ],
+      "related_assets": [
+        "artic-7500"
+      ],
+      "tags": [
+        "sculpture",
+        "Kamakura period (1185–1333)",
+        "Wood with traces of polychromy"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-artic-8085",
+      "type": "forensic_qa",
+      "category": "sculpture",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Fudō Myō-ō — The Immovable Wisdom King' (13th century) and explain its art-historical significance.",
+      "answer": "Fudō Myō-ō (Acala), the most important of the Five Wisdom Kings in Esoteric Buddhism, rendered in polychromed wood with gilt-bronze sword and noose accessories. His wrathful expression — bared fangs, bulging eyes, furrowed brow — is precisely codified in iconographic texts: the left eye looks downward, the right upward, and one fang points up while the other points down. He sits upon a rock pedestal (banjakuza), surrounded by flames (kōhaien) that consume worldly delusion.\n\nSignificance: Fudō Myō-ō images are the single most common subject in Japanese Esoteric Buddhist sculpture. This Kamakura-period example preserves its original polychrome and metalwork accessories — a rare level of completeness that makes it invaluable for understanding how these figures appeared in their original ritual context.",
+      "evidence": [
+        "Art Institute of Chicago — https://www.artic.edu/artworks/8085"
+      ],
+      "related_assets": [
+        "artic-8085"
+      ],
+      "tags": [
+        "sculpture",
+        "Kamakura period (1185–1333)",
+        "Wood with polychromy and gilt-"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-artic-117634",
+      "type": "forensic_qa",
+      "category": "metalwork",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Tantō with Ornate Mountings' (17th century) and explain its art-historical significance.",
+      "answer": "A tantō (dagger) by Fujiwara Teruhiro in elaborate Edo-period mountings. The handle is wrapped in ray skin (samegawa) — the shagreen grip that provides both aesthetic texture and functional purchase. The fittings feature shakudō (copper-gold alloy) and gold, demonstrating the sophisticated metalworking that elevated sword furniture to independent art form. The lacquer scabbard (saya) adds another layer of craft mastery to this composite work.\n\nSignificance: Edo-period tantō mountings represent the convergence of multiple Japanese craft traditions — swordsmithing, metalwork, lacquer, and textile wrapping — in a single object. Authentication requires expertise in each of these distinct disciplines, making them particularly challenging and rewarding objects for connoisseurship.",
+      "evidence": [
+        "Art Institute of Chicago — https://www.artic.edu/artworks/117634"
+      ],
+      "related_assets": [
+        "artic-117634"
+      ],
+      "tags": [
+        "metalwork",
+        "Edo period (1615–1868)",
+        "Steel, wood, lacquer, ray skin"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-artic-21720",
+      "type": "forensic_qa",
+      "category": "bonsai",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'Cranes on Snow-covered Pine' (c. 1834) and explain its art-historical significance.",
+      "answer": "A vertical nagaban print by Katsushika Hokusai depicting cranes perched on the snow-laden branches of an ancient pine. The pine tree (matsu) — symbol of longevity, constancy, and endurance — is the single most important tree in Japanese aesthetic culture, from bonsai cultivation to garden design to poetic metaphor. Hokusai captures the tree's dual nature: gnarled, powerful branches bearing the weight of snow while cranes — themselves symbols of immortality — rest in serene composure.\n\nSignificance: Hokusai's nature prints demonstrate the deep observational tradition that connects Japanese painting to the bonsai aesthetic. The trained eye that appreciates a centuries-old pine bonsai — reading character in bark texture, balance in branch placement, narrative in trunk movement — is the same eye that reads Hokusai's compositions.",
+      "evidence": [
+        "Art Institute of Chicago — https://www.artic.edu/artworks/21720"
+      ],
+      "related_assets": [
+        "artic-21720"
+      ],
+      "tags": [
+        "bonsai",
+        "Edo period (1615–1868)",
+        "Color woodblock print; vertica"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "fqa-asset-artic-151047",
+      "type": "forensic_qa",
+      "category": "contemporary",
+      "difficulty": "intermediate",
+      "question": "Describe the artwork 'A Beauty Behind a Screen' (c. 1750) and explain its art-historical significance.",
+      "answer": "A bijin-ga (beautiful woman painting) by Miyagawa Chōshun, depicting an elegant woman partially concealed behind a folding screen. Chōshun was unique among Edo-period artists — he worked exclusively in painting, never producing woodblock prints, which made his original works exceptionally rare even in his own time. The interplay between the visible and concealed, the painted figure and the painted screen-within-the-painting, creates a sophisticated meditation on representation and desire.\n\nSignificance: Miyagawa Chōshun (1683–1753) founded the Miyagawa school, one of the few ukiyo-e lineages that remained exclusively painters rather than print designers. His works represent the 'high art' end of floating-world imagery — created for wealthy patrons rather than mass audiences. This artistic tension between elite and popular culture is precisely the dynamic that contemporary Japanese artists like Murakami revisit in their Superflat theory.",
+      "evidence": [
+        "Art Institute of Chicago — https://www.artic.edu/artworks/151047"
+      ],
+      "related_assets": [
+        "artic-151047"
+      ],
+      "tags": [
+        "contemporary",
+        "Edo period (1615–1868)",
+        "Hanging scroll; ink and colors"
+      ],
+      "created_at": "2026-05-14T04:17:37.980892Z",
+      "verified_by": "source_verified"
+    },
+    {
+      "id": "avf-swords-001",
+      "type": "authentic_vs_fake",
+      "category": "swords",
+      "subject": "Swords & Armor — Authentication Framework",
+      "authentic_markers": [],
+      "fake_markers": [],
+      "raw_knowledge": "Authenticating a Japanese sword requires reading multiple layers of evidence simultaneously.\n\nThe nakago (tang) is the primary document. Its shape, file marks (yasurime), and patina provide dating evidence. A genuine centuries-old nakago develops a characteristic iron-oxide patina that progresses from reddish-brown to deep black over time. Forged patinas, applied chemically, lack the granular depth visible under magnification.\n\nThe hamon (temper line) is the blade's visual signature. Each school and era produced characteristic patterns — from the disciplined suguha of Yamato-den to the flamboyant ōchōji of Bizen. Modern metallographic analysis can verify the crystalline structure (nie vs. nioi) that creates these patterns.\n\nThe mei (signature) on the tang is both the most obvious and most frequently forged element. NBTHK (Nihon Bijutsu Tōken Hozon Kyōkai) papers — Hozon, Tokubetsu Hozon, Jūyō, and Tokubetsu Jūyō — represent progressive levels of authentication by Japan's leading authority.",
+      "confidence_notes": "Extracted from EDITION curated authentication framework. Needs expert decomposition into structured markers.",
+      "sources": [
+        "EDITION Category Article: Swords & Armor — Authentication — Reading the Blade"
+      ],
+      "verified_by": "ai_generated",
+      "_needs_decomposition": true
+    },
+    {
+      "id": "avf-ceramics-001",
+      "type": "authentic_vs_fake",
+      "category": "ceramics",
+      "subject": "Ceramics & Tea — Authentication Framework",
+      "authentic_markers": [],
+      "fake_markers": [],
+      "raw_knowledge": "Ceramic authentication employs a powerful combination of scientific methods.\n\nThermoluminescence (TL) dating measures the radiation dose accumulated since the clay was last fired, establishing age independently of style. XRF analysis identifies the elemental composition of clay and glaze — each kiln region has a characteristic chemical fingerprint.\n\nPetrographic thin-section analysis reveals the mineral inclusions in the clay body, linking a piece to specific geological deposits. For example, Bizen wares contain distinctive iron-rich particles from the Imbe region's alluvial clay. Modern reproductions using commercially processed clay lack these natural inclusions.",
+      "confidence_notes": "Extracted from EDITION curated authentication framework. Needs expert decomposition into structured markers.",
+      "sources": [
+        "EDITION Category Article: Ceramics & Tea — Scientific Authentication"
+      ],
+      "verified_by": "ai_generated",
+      "_needs_decomposition": true
+    },
+    {
+      "id": "avf-ukiyoe-001",
+      "type": "authentic_vs_fake",
+      "category": "ukiyoe",
+      "subject": "Ukiyo-e & Prints — Authentication Framework",
+      "authentic_markers": [],
+      "fake_markers": [],
+      "raw_knowledge": "Ukiyo-e authentication demands attention to multiple layers: the quality of the washi (handmade paper), the vibrancy of mineral and vegetable pigments, and the crispness of the carved line. Later impressions from worn blocks show characteristic softening of detail.\n\nModern forgeries often fail at the paper level — genuine Edo-period washi contains fibers from specific plants (kōzo, mitsumata, gampi) in proportions that vary by region and era. AI-assisted fiber analysis can identify anachronistic paper compositions with high accuracy.",
+      "confidence_notes": "Extracted from EDITION curated authentication framework. Needs expert decomposition into structured markers.",
+      "sources": [
+        "EDITION Category Article: Ukiyo-e & Prints — Authentication Considerations"
+      ],
+      "verified_by": "ai_generated",
+      "_needs_decomposition": true
+    },
+    {
+      "id": "avf-metalwork-001",
+      "type": "authentic_vs_fake",
+      "category": "metalwork",
+      "subject": "Metalwork & Ornaments — Authentication Framework",
+      "authentic_markers": [],
+      "fake_markers": [],
+      "raw_knowledge": "XRF analysis is particularly powerful for metalwork authentication. The precise ratios of copper, gold, silver, and trace elements in shakudō and shibuichi varied by school, period, and individual maker. Modern reproductions often use commercially available alloys with compositions that differ subtly but detectably from historical formulations.\n\nThe patina itself — the controlled chemical coloring of the metal surface — follows specific recipes (niiro-shi) passed down within metalworking families. AI pattern recognition can distinguish naturally developed patina from modern chemical treatments.",
+      "confidence_notes": "Extracted from EDITION curated authentication framework. Needs expert decomposition into structured markers.",
+      "sources": [
+        "EDITION Category Article: Metalwork & Ornaments — Authentication Through Composition"
+      ],
+      "verified_by": "ai_generated",
+      "_needs_decomposition": true
+    },
+    {
+      "id": "avf-contemporary-001",
+      "type": "authentic_vs_fake",
+      "category": "contemporary",
+      "subject": "Contemporary Art — Authentication Framework",
+      "authentic_markers": [],
+      "fake_markers": [],
+      "raw_knowledge": "Contemporary art authentication involves different challenges — edition management, certificate of authenticity verification, gallery provenance chains, and increasingly, protection against unauthorized reproductions using AI image generation.\n\nFor Living National Treasure works, the certification system itself provides a layer of authentication. Exhibition history at the Japan Traditional Art Crafts Exhibition (Nihon Dentō Kōgei-ten) and major gallery representation create verifiable provenance chains that EDITION tracks and analyzes.",
+      "confidence_notes": "Extracted from EDITION curated authentication framework. Needs expert decomposition into structured markers.",
+      "sources": [
+        "EDITION Category Article: Contemporary Art — Authentication in Contemporary Practice"
+      ],
+      "verified_by": "ai_generated",
+      "_needs_decomposition": true
+    }
+  ]
+}
