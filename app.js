@@ -8,6 +8,7 @@
 
   let categoriesData = [];
   let assetsData = [];
+  let _marketData = null;
   const app = document.getElementById('app');
 
   /* ── i18n System ── */
@@ -66,6 +67,15 @@
       assetsData = data.assets;
     } catch (e) {
       console.error('Failed to load assets:', e);
+    }
+  }
+
+  async function loadMarketData() {
+    try {
+      const resp = await fetch('./data/market_intelligence.json');
+      _marketData = await resp.json();
+    } catch (e) {
+      console.warn('Market data not available:', e);
     }
   }
 
@@ -297,20 +307,20 @@
             </div>
             <div class="reveal reveal--delay-1" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
               <div class="auth-promo__metric">
-                <span class="auth-promo__metric-value">12</span>
+                <span class="auth-promo__metric-value">${_marketData ? Number(_marketData.stats.total_records).toLocaleString() : '23,121'}</span>
                 <span class="auth-promo__metric-label">${t('home.market_records')}</span>
               </div>
               <div class="auth-promo__metric">
-                <span class="auth-promo__metric-value">5</span>
+                <span class="auth-promo__metric-value">${_marketData ? _marketData.stats.auction_houses : '3'}</span>
                 <span class="auth-promo__metric-label">${t('home.market_houses')}</span>
               </div>
               <div class="auth-promo__metric">
-                <span class="auth-promo__metric-value">$1.6M</span>
+                <span class="auth-promo__metric-value">${_marketData ? '¥' + (Number(_marketData.stats.total_market_value) / 1e8).toFixed(0) + '億' : '¥463億'}</span>
                 <span class="auth-promo__metric-label">${t('home.market_value')}</span>
               </div>
               <div class="auth-promo__metric">
-                <span class="auth-promo__metric-value">3</span>
-                <span class="auth-promo__metric-label">${t('home.market_currencies')}</span>
+                <span class="auth-promo__metric-value">${_marketData ? Number(_marketData.stats.total_artists).toLocaleString() : '3,509'}</span>
+                <span class="auth-promo__metric-label">${_locale === 'ja' ? '作家' : 'Artists'}</span>
               </div>
             </div>
           </div>
@@ -1201,7 +1211,7 @@
 
   /* ── Init ── */
   async function init() {
-    await Promise.all([loadCategories(), loadAssets(), loadI18n(_locale)]);
+    await Promise.all([loadCategories(), loadAssets(), loadI18n(_locale), loadMarketData()]);
     initTheme();
     initHeaderScroll();
     initAssetPanel();
