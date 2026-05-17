@@ -10,6 +10,44 @@
   let assetsData = [];
   const app = document.getElementById('app');
 
+  /* ── i18n System ── */
+  let _locale = localStorage.getItem('edition-lang') || 'en';
+  let _strings = {};
+  let _i18nLoaded = false;
+
+  async function loadI18n(lang) {
+    try {
+      const resp = await fetch(`./i18n/${lang}.json`);
+      _strings = await resp.json();
+      _locale = lang;
+      _i18nLoaded = true;
+      localStorage.setItem('edition-lang', lang);
+      document.documentElement.lang = lang;
+    } catch (e) {
+      console.error(`Failed to load i18n/${lang}.json:`, e);
+      if (lang !== 'en') await loadI18n('en'); // fallback
+    }
+  }
+
+  function t(key) {
+    const parts = key.split('.');
+    let val = _strings;
+    for (const p of parts) {
+      if (val && typeof val === 'object' && p in val) val = val[p];
+      else return key; // fallback: return key itself
+    }
+    return typeof val === 'string' ? val : key;
+  }
+
+  function toggleLang() {
+    const next = _locale === 'en' ? 'ja' : 'en';
+    loadI18n(next).then(() => {
+      const route = getRoute();
+      renderPage(route);
+      setTimeout(initRevealAnimations, 100);
+    });
+  }
+
   /* ── Data ── */
   async function loadCategories() {
     try {
@@ -103,24 +141,23 @@
                loading="eager" />
         </div>
         <div class="hero__content">
-          <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1.5rem;">EDITION</p>
-          <h1 class="hero__title reveal reveal--delay-1">The Art of<br>Japan, Curated</h1>
+          <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1.5rem;">${t('hero.label')}</p>
+          <h1 class="hero__title reveal reveal--delay-1">${t('hero.title_line1')}<br>${t('hero.title_line2')}</h1>
           <p class="hero__subtitle reveal reveal--delay-2">
-            Twelve centuries of mastery — swords, ceramics, ukiyo-e, and beyond.
-            Intelligence for collectors, connoisseurs, and the endlessly curious.
+            ${t('hero.subtitle')}
           </p>
           <div class="hero__scroll-hint reveal reveal--delay-3">
             <span class="hero__scroll-line"></span>
-            <span>Explore</span>
+            <span>${t('hero.scroll')}</span>
           </div>
         </div>
       </section>
 
       <section class="section section--large">
         <div class="container" style="text-align:center; margin-bottom: var(--space-lg);">
-          <p class="text-label reveal" style="margin-bottom: 1rem;">Collection</p>
+          <p class="text-label reveal" style="margin-bottom: 1rem;">${t('home.collection_label')}</p>
           <h2 class="reveal reveal--delay-1" style="font-family: var(--font-serif); font-weight: 300;">
-            Twelve Worlds to Discover
+            ${t('home.collection_title')}
           </h2>
         </div>
         <div class="categories-grid">
@@ -128,7 +165,7 @@
         </div>
         <div style="text-align: center; margin-top: var(--space-lg);">
           <a href="/discover" data-link class="editorial__link reveal">
-            View All Categories
+            ${t('home.view_all')}
             <span class="editorial__link-arrow">→</span>
           </a>
         </div>
@@ -146,7 +183,7 @@
                    loading="lazy" />
             </div>
             <div class="editorial__text">
-              <p class="editorial__eyebrow">Featured</p>
+              <p class="editorial__eyebrow">${t('home.featured')}</p>
               <h2 class="editorial__heading">${editorial1.title_en}</h2>
               <p class="editorial__body">${editorial1.article.intro}</p>
               <a href="/discover/${editorial1.slug}" data-link class="editorial__link">
@@ -169,7 +206,7 @@
                    loading="lazy" />
             </div>
             <div class="editorial__text">
-              <p class="editorial__eyebrow">Featured</p>
+              <p class="editorial__eyebrow">${t('home.featured')}</p>
               <h2 class="editorial__heading">${editorial2.title_en}</h2>
               <p class="editorial__body">${editorial2.article.intro}</p>
               <a href="/discover/${editorial2.slug}" data-link class="editorial__link">
@@ -187,16 +224,12 @@
       <section class="section section--large">
         <div class="container">
           <div class="mission reveal">
-            <p class="text-label" style="color: var(--gold); margin-bottom: 1.5rem;">Our Mission</p>
+            <p class="text-label" style="color: var(--gold); margin-bottom: 1.5rem;">${t('home.mission_label')}</p>
             <h2 class="mission__heading">
-              To illuminate the depth, beauty, and enduring value of Japanese cultural heritage
-              — through rigorous curation, data-driven intelligence, and unwavering respect for tradition.
+              ${t('home.mission_heading')}
             </h2>
             <p class="mission__body">
-              EDITION bridges the world of Japanese art and the global collector.
-              We combine deep cultural knowledge with pattern recognition technology
-              to provide authentication support, fair-value analysis, and market intelligence
-              across twelve categories of Japanese cultural assets.
+              ${t('home.mission_body')}
             </p>
           </div>
         </div>
@@ -208,33 +241,30 @@
         <div class="container">
           <div class="auth-promo reveal">
             <div class="auth-promo__text">
-              <p class="text-label" style="color: var(--gold); margin-bottom: 1rem;">Authentication Intelligence</p>
+              <p class="text-label" style="color: var(--gold); margin-bottom: 1rem;">${t('home.auth_label')}</p>
               <h2 style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 1.5rem;">
-                Trust, Verified
+                ${t('home.auth_title')}
               </h2>
               <p style="color: var(--text-secondary); line-height: 1.9; margin-bottom: 1.5rem;">
-                EDITION employs a four-layer authentication framework combining traditional
-                connoisseurship with AI-driven pattern recognition. Our proprietary system
-                analyzes brushstrokes, hamon patterns, glaze compositions, and provenance
-                chains to support expert authentication decisions.
+                ${t('home.auth_desc')}
               </p>
               <a href="/authenticate" data-link class="editorial__link">
-                Explore Our Methodology
+                ${t('home.auth_explore')}
                 <span class="editorial__link-arrow">\u2192</span>
               </a>
             </div>
             <div class="auth-promo__metrics reveal reveal--delay-1">
               <div class="auth-promo__metric">
                 <span class="auth-promo__metric-value">4</span>
-                <span class="auth-promo__metric-label">Verification Layers</span>
+                <span class="auth-promo__metric-label">${t('home.auth_layers')}</span>
               </div>
               <div class="auth-promo__metric">
                 <span class="auth-promo__metric-value">12</span>
-                <span class="auth-promo__metric-label">Asset Categories</span>
+                <span class="auth-promo__metric-label">${t('home.auth_categories')}</span>
               </div>
               <div class="auth-promo__metric">
                 <span class="auth-promo__metric-value">24/7</span>
-                <span class="auth-promo__metric-label">AI Learning Active</span>
+                <span class="auth-promo__metric-label">${t('home.auth_learning')}</span>
               </div>
             </div>
           </div>
@@ -246,13 +276,12 @@
         <div class="container" style="max-width: 1000px;">
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
             <div class="reveal">
-              <p class="text-label" style="color: var(--gold); margin-bottom: 1rem;">Market Intelligence</p>
+              <p class="text-label" style="color: var(--gold); margin-bottom: 1rem;">${t('home.market_label')}</p>
               <h2 style="font-family: var(--font-serif); font-weight: 300; font-size: 1.8rem; margin-bottom: 1.5rem;">
-                Price Intelligence
+                ${t('home.market_title')}
               </h2>
               <p style="color: var(--text-secondary); line-height: 1.9; margin-bottom: 1.5rem;">
-                The world's first comprehensive price database for Japanese art and antiques.
-                Track auction results across 8 categories, from swords to contemporary art.
+                ${t('home.market_desc')}
               </p>
               <a href="/prices" data-link style="
                 display: inline-block;
@@ -264,24 +293,24 @@
                 font-size: 0.8rem;
                 text-decoration: none;
                 transition: all 0.3s ease;
-              ">Explore Market Data →</a>
+              ">${t('home.market_cta')}</a>
             </div>
             <div class="reveal reveal--delay-1" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
               <div class="auth-promo__metric">
                 <span class="auth-promo__metric-value">12</span>
-                <span class="auth-promo__metric-label">Auction Records</span>
+                <span class="auth-promo__metric-label">${t('home.market_records')}</span>
               </div>
               <div class="auth-promo__metric">
                 <span class="auth-promo__metric-value">5</span>
-                <span class="auth-promo__metric-label">Auction Houses</span>
+                <span class="auth-promo__metric-label">${t('home.market_houses')}</span>
               </div>
               <div class="auth-promo__metric">
                 <span class="auth-promo__metric-value">$1.6M</span>
-                <span class="auth-promo__metric-label">Tracked Value</span>
+                <span class="auth-promo__metric-label">${t('home.market_value')}</span>
               </div>
               <div class="auth-promo__metric">
                 <span class="auth-promo__metric-value">3</span>
-                <span class="auth-promo__metric-label">Currencies</span>
+                <span class="auth-promo__metric-label">${t('home.market_currencies')}</span>
               </div>
             </div>
           </div>
@@ -302,7 +331,7 @@
         <div class="category-card__content">
           <h3 class="category-card__title">${cat.title_en}</h3>
           <p class="category-card__subtitle">${cat.title_jp}</p>
-          <p class="category-card__count">Explore →</p>
+          <p class="category-card__count">${t('home.explore')} →</p>
         </div>
       </a>
     `;
@@ -314,14 +343,14 @@
       ${renderHeader()}
 
       <div class="page-header">
-        <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1rem;">Collection</p>
-        <h1 class="page-header__title reveal reveal--delay-1">Discover</h1>
+        <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1rem;">${t('discover.label')}</p>
+        <h1 class="page-header__title reveal reveal--delay-1">${t('discover.title')}</h1>
         <p class="page-header__desc reveal reveal--delay-2">
-          Twelve categories spanning over a millennium of Japanese artistic mastery.
+          ${t('discover.desc')}
         </p>
         <div class="discover-search reveal reveal--delay-3">
           <input type="text" id="category-search" class="discover-search__input"
-                 placeholder="Search categories\u2026" autocomplete="off" />
+                 placeholder="${t('discover.search_placeholder')}" autocomplete="off" />
         </div>
       </div>
 
@@ -376,21 +405,21 @@
         priceSection = `
           <section class="section" style="max-width: var(--max-w); margin: 0 auto; padding: var(--space-lg) var(--gutter);">
             <div style="text-align: center; margin-bottom: var(--space-md);">
-              <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1rem;">Market Intelligence</p>
-              <h2 class="reveal reveal--delay-1" style="font-family: var(--font-serif); font-weight: 300;">Market Snapshot</h2>
+              <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1rem;">${t('category.market_label')}</p>
+              <h2 class="reveal reveal--delay-1" style="font-family: var(--font-serif); font-weight: 300;">${t('category.market_title')}</h2>
             </div>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1.5rem; max-width: 700px; margin: 0 auto 2rem;">
               <div class="auth-promo__metric reveal">
                 <span class="auth-promo__metric-value">${catSummary.total_lots}</span>
-                <span class="auth-promo__metric-label">Records</span>
+                <span class="auth-promo__metric-label">${t('category.records')}</span>
               </div>
               <div class="auth-promo__metric reveal">
                 <span class="auth-promo__metric-value">${fmtUSD(catSummary.avg_usd)}</span>
-                <span class="auth-promo__metric-label">Avg Price</span>
+                <span class="auth-promo__metric-label">${t('category.avg_price')}</span>
               </div>
               <div class="auth-promo__metric reveal">
                 <span class="auth-promo__metric-value">${fmtUSD(catSummary.max_usd)}</span>
-                <span class="auth-promo__metric-label">Highest</span>
+                <span class="auth-promo__metric-label">${t('category.highest')}</span>
               </div>
             </div>
             <div style="display: grid; gap: 0.75rem; max-width: 700px; margin: 0 auto;">
@@ -415,7 +444,7 @@
               `).join('')}
             </div>
             <div style="text-align: center; margin-top: 1.5rem;">
-              <a href="/prices" data-link style="color: var(--gold); font-size: 0.85rem; text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase;">View Full Market Data →</a>
+              <a href="/prices" data-link style="color: var(--gold); font-size: 0.85rem; text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase;">${t('category.view_full')}</a>
             </div>
           </section>
         `;
@@ -430,7 +459,7 @@
           <img src="${cat.hero_image}" alt="${cat.image_alt}" loading="eager" />
         </div>
         <div class="cat-hero__content">
-          <p class="cat-hero__eyebrow reveal">EDITION Collection</p>
+          <p class="cat-hero__eyebrow reveal">${t('category.eyebrow')}</p>
           <h1 class="cat-hero__title reveal reveal--delay-1">${cat.title_en}</h1>
           <p class="cat-hero__subtitle reveal reveal--delay-2">${cat.title_jp}</p>
         </div>
@@ -454,8 +483,8 @@
       ${catAssets.length > 0 ? `
       <section class="section" style="max-width: var(--max-w); margin: 0 auto; padding: var(--space-lg) var(--gutter);">
         <div style="text-align: center; margin-bottom: var(--space-lg);">
-          <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1rem;">Curated Selection</p>
-          <h2 class="reveal reveal--delay-1" style="font-family: var(--font-serif); font-weight: 300;">Notable Works</h2>
+          <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1rem;">${t('category.curated_label')}</p>
+          <h2 class="reveal reveal--delay-1" style="font-family: var(--font-serif); font-weight: 300;">${t('category.curated_title')}</h2>
         </div>
         <div class="asset-grid">
           ${catAssets.map((asset, i) => `
@@ -474,7 +503,7 @@
       ` : ''}
 
       <section class="related" style="max-width: var(--max-w); margin: 0 auto; padding: var(--space-lg) var(--gutter);">
-        <p class="text-label reveal" style="text-align: center; margin-bottom: var(--space-md);">Continue Exploring</p>
+        <p class="text-label reveal" style="text-align: center; margin-bottom: var(--space-md);">${t('category.continue')}</p>
         <div class="related__grid">
           ${related.map(r => `
             <a href="/discover/${r.slug}" data-link class="related__card reveal">
@@ -531,13 +560,12 @@
 
       <!-- Hero -->
       <section class="section" style="padding: 8rem 2rem 3rem; text-align: center;">
-        <p class="text-label" style="color: var(--gold); margin-bottom: 1rem;">Phase 2 — Market Intelligence</p>
+        <p class="text-label" style="color: var(--gold); margin-bottom: 1rem;">${t('prices.phase_label')}</p>
         <h1 style="font-family: var(--font-serif); font-weight: 300; font-size: clamp(2rem, 4vw, 3.2rem); margin-bottom: 1.5rem;">
-          Price Intelligence
+          ${t('prices.title')}
         </h1>
         <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto; line-height: 1.8;">
-          Curated auction results and market data across Japanese cultural asset categories.
-          Building the world's first comprehensive price database for Japanese art and antiques.
+          ${t('prices.desc')}
         </p>
       </section>
 
@@ -546,19 +574,19 @@
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto;">
           <div class="auth-promo__metric reveal" style="padding: 1.5rem;">
             <span class="auth-promo__metric-value">${stats.total_records}</span>
-            <span class="auth-promo__metric-label">Auction Records</span>
+            <span class="auth-promo__metric-label">${t('prices.records')}</span>
           </div>
           <div class="auth-promo__metric reveal" style="padding: 1.5rem;">
             <span class="auth-promo__metric-value">${stats.categories_covered}</span>
-            <span class="auth-promo__metric-label">Categories</span>
+            <span class="auth-promo__metric-label">${t('prices.categories_covered')}</span>
           </div>
           <div class="auth-promo__metric reveal" style="padding: 1.5rem;">
             <span class="auth-promo__metric-value">${stats.auction_houses}</span>
-            <span class="auth-promo__metric-label">Auction Houses</span>
+            <span class="auth-promo__metric-label">${t('prices.houses')}</span>
           </div>
           <div class="auth-promo__metric reveal" style="padding: 1.5rem;">
             <span class="auth-promo__metric-value" style="font-size: clamp(1.2rem, 2.5vw, 1.8rem);">${formatUSD(stats.total_market_value)}</span>
-            <span class="auth-promo__metric-label">Total Tracked Value</span>
+            <span class="auth-promo__metric-label">${t('prices.total_value')}</span>
           </div>
         </div>
       </section>
@@ -566,8 +594,8 @@
       <!-- Category Price Overview -->
       <section class="section" style="padding: 3rem 2rem;">
         <div style="max-width: 1000px; margin: 0 auto;">
-          <p class="text-label" style="color: var(--gold); margin-bottom: 1rem;">Category Analysis</p>
-          <h2 style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 2rem;">Market by Category</h2>
+          <p class="text-label" style="color: var(--gold); margin-bottom: 1rem;">${t('prices.analysis_label')}</p>
+          <h2 style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 2rem;">${t('prices.analysis_title')}</h2>
           
           <div style="display: grid; gap: 1rem;">
             ${categories.map(cat => `
@@ -586,19 +614,19 @@
                     ${categoryNames[cat.asset_category] || cat.asset_category}
                   </h3>
                   <span style="color: var(--text-secondary); font-size: 0.85rem;">
-                    ${cat.total_lots} lot${cat.total_lots > 1 ? 's' : ''} tracked
+                    ${cat.total_lots} ${cat.total_lots > 1 ? t('prices.lots_tracked') : t('prices.lot_tracked')}
                   </span>
                 </div>
                 <div style="text-align: right;">
-                  <div style="font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.08em;">Avg</div>
+                  <div style="font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.08em;">${t('prices.avg')}</div>
                   <div style="font-family: var(--font-serif); color: var(--gold); font-size: 1.1rem;">${formatUSD(cat.avg_usd)}</div>
                 </div>
                 <div style="text-align: right;">
-                  <div style="font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.08em;">High</div>
+                  <div style="font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.08em;">${t('prices.high')}</div>
                   <div style="font-family: var(--font-serif); font-size: 1.1rem;">${formatUSD(cat.max_usd)}</div>
                 </div>
                 <div style="text-align: right;">
-                  <div style="font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.08em;">Period</div>
+                  <div style="font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.08em;">${t('prices.period')}</div>
                   <div style="font-size: 0.85rem; color: var(--text-secondary);">${cat.earliest?.slice(0,7) || '—'} → ${cat.latest?.slice(0,7) || '—'}</div>
                 </div>
               </div>
@@ -610,8 +638,8 @@
       <!-- Notable Sales -->
       <section class="section" style="padding: 3rem 2rem; background: var(--surface);">
         <div style="max-width: 1000px; margin: 0 auto;">
-          <p class="text-label" style="color: var(--gold); margin-bottom: 1rem;">Highlights</p>
-          <h2 style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 2rem;">Notable Sales</h2>
+          <p class="text-label" style="color: var(--gold); margin-bottom: 1rem;">${t('prices.highlights_label')}</p>
+          <h2 style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 2rem;">${t('prices.highlights_title')}</h2>
           
           <div style="display: grid; gap: 1.5rem;">
             ${highlights.map((h, i) => `
@@ -645,7 +673,7 @@
                     ${h.certification ? `<p style="font-size: 0.8rem; color: var(--gold); margin-top: 0.3rem;">🏆 ${h.certification}</p>` : ''}
                   </div>
                   <div style="text-align: right;">
-                    <div style="font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.08em;">Hammer</div>
+                    <div style="font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.08em;">${t('prices.hammer')}</div>
                     <div style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--gold);">
                       ${formatCurrency(h.hammer_price, h.currency)}
                     </div>
@@ -665,9 +693,9 @@
       <!-- Results by Category -->
       <section class="section" style="padding: 3rem 2rem;">
         <div style="max-width: 1100px; margin: 0 auto;">
-          <p class="text-label" style="color: var(--gold); margin-bottom: 1rem;">Database</p>
-          <h2 style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 0.5rem;">Auction Records</h2>
-          <p style="color: var(--text-secondary); margin-bottom: 2.5rem; font-size: 0.9rem;">${stats.total_records} results across ${stats.categories_covered} categories</p>
+          <p class="text-label" style="color: var(--gold); margin-bottom: 1rem;">${t('prices.database_label')}</p>
+          <h2 style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 0.5rem;">${t('prices.database_title')}</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 2.5rem; font-size: 0.9rem;">${stats.total_records} ${t('prices.results_across')} ${stats.categories_covered} ${t('prices.categories_suffix')}</p>
           
           ${Object.keys(categoryNames).map(catKey => {
             const catResults = results.filter(r => r.asset_category === catKey);
@@ -692,11 +720,11 @@
                   <table style="width: 100%; border-collapse: collapse;">
                     <thead>
                       <tr style="border-bottom: 1px solid var(--border);">
-                        <th style="text-align: left; padding: 0.8rem 1.2rem; font-weight: 500; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.08em; color: var(--text-secondary);">Item</th>
-                        <th style="text-align: left; padding: 0.8rem 1rem; font-weight: 500; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.08em; color: var(--text-secondary);">House</th>
-                        <th style="text-align: left; padding: 0.8rem 1rem; font-weight: 500; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.08em; color: var(--text-secondary);">Date</th>
-                        <th style="text-align: right; padding: 0.8rem 1rem; font-weight: 500; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.08em; color: var(--text-secondary);">Hammer</th>
-                        <th style="text-align: right; padding: 0.8rem 1.2rem; font-weight: 500; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.08em; color: var(--text-secondary);">USD</th>
+                        <th style="text-align: left; padding: 0.8rem 1.2rem; font-weight: 500; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.08em; color: var(--text-secondary);">${t('prices.item')}</th>
+                        <th style="text-align: left; padding: 0.8rem 1rem; font-weight: 500; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.08em; color: var(--text-secondary);">${t('prices.house')}</th>
+                        <th style="text-align: left; padding: 0.8rem 1rem; font-weight: 500; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.08em; color: var(--text-secondary);">${t('prices.date')}</th>
+                        <th style="text-align: right; padding: 0.8rem 1rem; font-weight: 500; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.08em; color: var(--text-secondary);">${t('prices.hammer')}</th>
+                        <th style="text-align: right; padding: 0.8rem 1.2rem; font-weight: 500; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.08em; color: var(--text-secondary);">${t('prices.usd')}</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -720,8 +748,8 @@
           }).join('')}
           
           <p style="text-align: center; color: var(--text-secondary); font-size: 0.8rem; margin-top: 2rem;">
-            Data sourced from public auction records. Prices shown are hammer prices before buyer's premium unless noted.
-            <br>Last updated: ${priceData.meta.generated_at?.slice(0,10) || '—'}
+            ${t('prices.data_note')}
+            <br>${t('prices.last_updated')}: ${priceData.meta.generated_at?.slice(0,10) || '—'}
           </p>
         </div>
       </section>
@@ -731,17 +759,17 @@
   }
 
   function renderAuthenticate() {
+
     app.innerHTML = `
       ${renderHeader()}
 
       <div class="auth-page">
         <section class="auth-hero">
           <div class="auth-hero__content">
-            <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1.5rem; letter-spacing: 0.25em;">Authentication Intelligence</p>
-            <h1 class="auth-hero__title reveal reveal--delay-1">The Science<br>of Certainty</h1>
+            <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1.5rem; letter-spacing: 0.25em;">${t('authenticate.label')}</p>
+            <h1 class="auth-hero__title reveal reveal--delay-1">${t('authenticate.title_line1')}<br>${t('authenticate.title_line2')}</h1>
             <p class="auth-hero__desc reveal reveal--delay-2">
-              Four layers of verification — from the connoisseur's trained eye to AI-driven pattern recognition.
-              EDITION builds trust through rigorous, transparent methodology.
+              ${t('authenticate.desc')}
             </p>
           </div>
         </section>
@@ -750,30 +778,27 @@
           <div class="container">
             <div class="auth-philosophy__grid">
               <div class="auth-philosophy__text reveal">
-                <p class="text-label" style="color: var(--gold); margin-bottom: 1rem;">Our Approach</p>
-                <h2 style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 1.5rem;">Human Expertise,<br>Augmented by Technology</h2>
+                <p class="text-label" style="color: var(--gold); margin-bottom: 1rem;">${t('authenticate.approach_label')}</p>
+                <h2 style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 1.5rem;">${t('authenticate.approach_title_line1')}<br>${t('authenticate.approach_title_line2')}</h2>
                 <p style="color: var(--text-secondary); line-height: 1.9; margin-bottom: 1.5rem;">
-                  In the tradition of the world's leading scientific research departments and provenance methodologies,
-                  EDITION employs a multi-layered authentication framework. AI is never the sole arbiter —
-                  it is a powerful lens that reveals what the human eye alone cannot see.
+                  ${t('authenticate.approach_desc1')}
                 </p>
                 <p style="color: var(--text-secondary); line-height: 1.9;">
-                  Every assessment is transparent. Every methodology is documented.
-                  Every conclusion is defensible.
+                  ${t('authenticate.approach_desc2')}
                 </p>
               </div>
               <div class="auth-philosophy__visual reveal reveal--delay-1">
                 <div class="auth-stat">
                   <span class="auth-stat__number">4</span>
-                  <span class="auth-stat__label">Verification Layers</span>
+                  <span class="auth-stat__label">${t('authenticate.layers')}</span>
                 </div>
                 <div class="auth-stat">
                   <span class="auth-stat__number">12</span>
-                  <span class="auth-stat__label">Asset Categories</span>
+                  <span class="auth-stat__label">${t('authenticate.categories')}</span>
                 </div>
                 <div class="auth-stat">
                   <span class="auth-stat__number">7+</span>
-                  <span class="auth-stat__label">Scientific Methods</span>
+                  <span class="auth-stat__label">${t('authenticate.methods')}</span>
                 </div>
               </div>
             </div>
@@ -785,9 +810,9 @@
         <section class="auth-layers">
           <div class="container">
             <div style="text-align: center; margin-bottom: var(--space-xl);">
-              <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1rem;">Framework</p>
+              <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1rem;">${t('authenticate.framework_label')}</p>
               <h2 class="reveal reveal--delay-1" style="font-family: var(--font-serif); font-weight: 300;">
-                Four-Layer Authentication Architecture
+                ${t('authenticate.framework_title')}
               </h2>
             </div>
 
@@ -798,12 +823,10 @@
                   <span class="auth-layer__line"></span>
                 </div>
                 <div class="auth-layer__content">
-                  <h3 class="auth-layer__title">Market Intelligence</h3>
-                  <p class="auth-layer__subtitle">Anomaly Detection & Pattern Analysis</p>
+                  <h3 class="auth-layer__title">${t('authenticate.layer4_title')}</h3>
+                  <p class="auth-layer__subtitle">${t('authenticate.layer4_subtitle')}</p>
                   <p class="auth-layer__desc">
-                    Statistical analysis of listing patterns across global auction houses.
-                    Detection of duplicate listings, price anomalies, and provenance gaps
-                    that may indicate fraudulent activity.
+                    ${t('authenticate.layer4_desc')}
                   </p>
                   <div class="auth-layer__tags">
                     <span>Price Anomaly Detection</span>
@@ -819,12 +842,10 @@
                   <span class="auth-layer__line"></span>
                 </div>
                 <div class="auth-layer__content">
-                  <h3 class="auth-layer__title">AI Forensics</h3>
-                  <p class="auth-layer__subtitle">Pattern Recognition & Deep Analysis</p>
+                  <h3 class="auth-layer__title">${t('authenticate.layer3_title')}</h3>
+                  <p class="auth-layer__subtitle">${t('authenticate.layer3_subtitle')}</p>
                   <p class="auth-layer__desc">
-                    Convolutional neural networks trained on authenticated works analyze
-                    stylistic fingerprints invisible to the human eye — brushstroke patterns,
-                    hamon classifications in swords, glaze composition signatures in ceramics.
+                    ${t('authenticate.layer3_desc')}
                   </p>
                   <div class="auth-layer__tags">
                     <span>CNN Brushstroke Analysis</span>
@@ -841,12 +862,10 @@
                   <span class="auth-layer__line"></span>
                 </div>
                 <div class="auth-layer__content">
-                  <h3 class="auth-layer__title">Scientific Verification</h3>
-                  <p class="auth-layer__subtitle">Material & Compositional Analysis</p>
+                  <h3 class="auth-layer__title">${t('authenticate.layer2_title')}</h3>
+                  <p class="auth-layer__subtitle">${t('authenticate.layer2_subtitle')}</p>
                   <p class="auth-layer__desc">
-                    Following the standards established by the world's leading auction house laboratories,
-                    we employ non-destructive scientific testing to verify material authenticity.
-                    Period-inconsistent materials are identified with certainty.
+                    ${t('authenticate.layer2_desc')}
                   </p>
                   <div class="auth-layer__methods">
                     <div class="auth-method">
@@ -875,13 +894,10 @@
                   <span class="auth-layer__line"></span>
                 </div>
                 <div class="auth-layer__content">
-                  <h3 class="auth-layer__title">Connoisseurship & Provenance</h3>
-                  <p class="auth-layer__subtitle">Expert Evaluation & Historical Documentation</p>
+                  <h3 class="auth-layer__title">${t('authenticate.layer1_title')}</h3>
+                  <p class="auth-layer__subtitle">${t('authenticate.layer1_subtitle')}</p>
                   <p class="auth-layer__desc">
-                    The foundation of all authentication. Trained specialists evaluate works
-                    through direct examination — assessing form, technique, patina, and the
-                    subtle markers that distinguish a master's hand. Provenance is traced through
-                    historical records, exhibition catalogues, and institutional archives.
+                    ${t('authenticate.layer1_desc')}
                   </p>
                   <div class="auth-layer__tags">
                     <span>NBTHK Certification</span>
@@ -900,45 +916,41 @@
         <section class="auth-threats">
           <div class="container">
             <div style="text-align: center; margin-bottom: var(--space-xl);">
-              <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1rem;">Defense</p>
+              <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1rem;">${t('authenticate.defense_label')}</p>
               <h2 class="reveal reveal--delay-1" style="font-family: var(--font-serif); font-weight: 300;">
-                Evolving Threat Landscape
+                ${t('authenticate.defense_title')}
               </h2>
               <p class="reveal reveal--delay-2" style="color: var(--text-secondary); max-width: 640px; margin: 1.5rem auto 0; line-height: 1.8;">
-                As generative AI enables increasingly sophisticated forgeries,
-                EDITION maintains continuous intelligence on emerging threats.
+                ${t('authenticate.defense_desc')}
               </p>
             </div>
 
             <div class="auth-threats__grid">
               <div class="auth-threat-card reveal">
-                <div class="auth-threat-card__level">Critical</div>
-                <h3 class="auth-threat-card__title">Provenance Fabrication</h3>
+                <div class="auth-threat-card__level">${t('authenticate.threat1_level')}</div>
+                <h3 class="auth-threat-card__title">${t('authenticate.threat1_title')}</h3>
                 <p class="auth-threat-card__desc">
-                  LLM-generated sales records, certificates, and ownership histories
-                  that bypass traditional document verification.
+                  ${t('authenticate.threat1_desc')}
                 </p>
-                <p class="auth-threat-card__defense">Defense: Blockchain-anchored provenance chain + document metadata forensics</p>
+                <p class="auth-threat-card__defense">${t('authenticate.threat1_defense')}</p>
               </div>
 
               <div class="auth-threat-card reveal reveal--delay-1">
-                <div class="auth-threat-card__level">High</div>
-                <h3 class="auth-threat-card__title">AI Style Mimicry</h3>
+                <div class="auth-threat-card__level">${t('authenticate.threat2_level')}</div>
+                <h3 class="auth-threat-card__title">${t('authenticate.threat2_title')}</h3>
                 <p class="auth-threat-card__desc">
-                  GANs and diffusion models trained to replicate specific artistic styles,
-                  guiding physical reproduction of paintings and prints.
+                  ${t('authenticate.threat2_desc')}
                 </p>
-                <p class="auth-threat-card__defense">Defense: Multi-modal analysis — frequency domain + material verification</p>
+                <p class="auth-threat-card__defense">${t('authenticate.threat2_defense')}</p>
               </div>
 
               <div class="auth-threat-card reveal reveal--delay-2">
-                <div class="auth-threat-card__level">Emerging</div>
-                <h3 class="auth-threat-card__title">Precision Replication</h3>
+                <div class="auth-threat-card__level">${t('authenticate.threat3_level')}</div>
+                <h3 class="auth-threat-card__title">${t('authenticate.threat3_title')}</h3>
                 <p class="auth-threat-card__desc">
-                  CT-scan data combined with AI-optimized CNC/robotics
-                  to produce structurally accurate physical reproductions.
+                  ${t('authenticate.threat3_desc')}
                 </p>
-                <p class="auth-threat-card__defense">Defense: Molecular-level patina analysis + nanoscale aging verification</p>
+                <p class="auth-threat-card__defense">${t('authenticate.threat3_defense')}</p>
               </div>
             </div>
           </div>
@@ -946,13 +958,12 @@
 
         <section class="auth-cta">
           <div class="container" style="text-align: center;">
-            <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1rem;">Coming Soon</p>
+            <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1rem;">${t('authenticate.cta_label')}</p>
             <h2 class="reveal reveal--delay-1" style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 1.5rem;">
-              EDITION Certified
+              ${t('authenticate.cta_title')}
             </h2>
             <p class="reveal reveal--delay-2" style="color: var(--text-secondary); max-width: 560px; margin: 0 auto; line-height: 1.8;">
-              A new standard in Japanese cultural asset authentication.
-              Transparent methodology. Immutable records. Absolute confidence.
+              ${t('authenticate.cta_desc')}
             </p>
           </div>
         </section>
@@ -966,13 +977,16 @@
   function renderHeader() {
     const theme = document.documentElement.getAttribute('data-theme') || 'light';
     const icon = theme === 'dark' ? '○' : '●';
+    const langLabel = _locale === 'en' ? 'JP' : 'EN';
     return `
       <header class="header" id="site-header">
         <a href="/" data-link class="header__logo">Edition</a>
         <nav class="header__nav">
-          <a href="/discover" data-link class="header__link">Collection</a>
-          <a href="/authenticate" data-link class="header__link">Authenticate</a>
-          <a href="/prices" data-link class="header__link">Prices</a>
+          <a href="/discover" data-link class="header__link">${t('nav.collection')}</a>
+          <a href="/authenticate" data-link class="header__link">${t('nav.authenticate')}</a>
+          <a href="/prices" data-link class="header__link">${t('nav.prices')}</a>
+          <button class="header__lang-toggle" id="lang-toggle" aria-label="Toggle language"
+            style="background:none;border:1px solid var(--border);color:var(--text-secondary);padding:0.25rem 0.6rem;border-radius:4px;font-size:0.7rem;letter-spacing:0.1em;cursor:pointer;transition:all 0.3s ease;font-family:var(--font-sans);">${langLabel}</button>
           <button class="header__theme-toggle" id="theme-toggle" aria-label="Toggle theme">
             <span style="font-size: 14px;">${icon}</span>
           </button>
@@ -987,13 +1001,13 @@
         <div class="footer__inner">
           <span class="footer__brand">Edition</span>
           <div class="footer__links">
-            <a href="/discover" data-link class="footer__link">Collection</a>
-            <a href="/authenticate" data-link class="footer__link">Authenticate</a>
-            <a href="/prices" data-link class="footer__link">Prices</a>
+            <a href="/discover" data-link class="footer__link">${t('nav.collection')}</a>
+            <a href="/authenticate" data-link class="footer__link">${t('nav.authenticate')}</a>
+            <a href="/prices" data-link class="footer__link">${t('nav.prices')}</a>
           </div>
         </div>
         <p class="footer__copy">
-          © ${new Date().getFullYear()} EDITION — Japanese Cultural Assets Intelligence
+          © ${new Date().getFullYear()} EDITION — ${t('footer.copy')}
         </p>
       </footer>
     `;
@@ -1059,6 +1073,9 @@
         const btn = document.getElementById('theme-toggle');
         if (btn) btn.querySelector('span').textContent = next === 'dark' ? '○' : '●';
       }
+      if (e.target.closest('#lang-toggle')) {
+        toggleLang();
+      }
     });
   }
 
@@ -1094,16 +1111,16 @@
           <h2 class="panel__title">${asset.title_en}</h2>
           <p class="panel__title-jp">${asset.title_jp}</p>
           <div class="panel__meta">
-            <div class="panel__meta-row"><span>Period</span><span>${asset.period}</span></div>
-            <div class="panel__meta-row"><span>Medium</span><span>${asset.medium}</span></div>
-            <div class="panel__meta-row"><span>Dimensions</span><span>${asset.dimensions}</span></div>
-            <div class="panel__meta-row"><span>Origin</span><span>${asset.origin}</span></div>
+            <div class="panel__meta-row"><span>${t('panel.period')}</span><span>${asset.period}</span></div>
+            <div class="panel__meta-row"><span>${t('panel.medium')}</span><span>${asset.medium}</span></div>
+            <div class="panel__meta-row"><span>${t('panel.dimensions')}</span><span>${asset.dimensions}</span></div>
+            <div class="panel__meta-row"><span>${t('panel.origin')}</span><span>${asset.origin}</span></div>
           </div>
           <p class="panel__desc">${asset.description}</p>
           <p class="panel__sig">${asset.significance}</p>
           <div class="panel__source">
             <a href="${asset.source_url}" target="_blank" rel="noopener">
-              View at ${asset.source} →
+              ${t('panel.view_at')} ${asset.source} →
             </a>
           </div>
         </div>
@@ -1125,7 +1142,7 @@
 
   /* ── Init ── */
   async function init() {
-    await Promise.all([loadCategories(), loadAssets()]);
+    await Promise.all([loadCategories(), loadAssets(), loadI18n(_locale)]);
     initTheme();
     initHeaderScroll();
     initAssetPanel();
