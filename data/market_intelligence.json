@@ -1,0 +1,239 @@
+{
+  "meta": {
+    "generated_at": "2026-05-18T07:29:35.098129",
+    "source": "KANTEISHI API /market/stats",
+    "model_version": "0.5"
+  },
+  "stats": {
+    "total_records": 23121,
+    "total_artists": 3509,
+    "categories_covered": 8,
+    "auction_houses": 3,
+    "total_market_value": 46380115692,
+    "r2_ensemble": 0.853,
+    "median_error_pct": 29.5,
+    "sbi_lots": 17123,
+    "shinwa_lots": 5998
+  },
+  "top_artists_by_volume": [
+    {
+      "artist": "村上　隆",
+      "lot_count": 1524,
+      "avg_price_jpy": 687264,
+      "median_price_jpy": 368000,
+      "multi_house": false
+    },
+    {
+      "artist": "草間　彌生",
+      "lot_count": 1064,
+      "avg_price_jpy": 8743555,
+      "median_price_jpy": 2990000,
+      "multi_house": false
+    },
+    {
+      "artist": "カウズ",
+      "lot_count": 739,
+      "avg_price_jpy": 1642080,
+      "median_price_jpy": 460000,
+      "multi_house": false
+    },
+    {
+      "artist": "北大路 魯山人",
+      "lot_count": 436,
+      "avg_price_jpy": 1447522,
+      "median_price_jpy": 680000,
+      "multi_house": false
+    },
+    {
+      "artist": "奈良　美智",
+      "lot_count": 404,
+      "avg_price_jpy": 5833161,
+      "median_price_jpy": 2645000,
+      "multi_house": false
+    },
+    {
+      "artist": "李　禹煥",
+      "lot_count": 295,
+      "avg_price_jpy": 3002221,
+      "median_price_jpy": 770500,
+      "multi_house": false
+    },
+    {
+      "artist": "ミスター・ドゥードゥル",
+      "lot_count": 260,
+      "avg_price_jpy": 1931314,
+      "median_price_jpy": 1000500,
+      "multi_house": false
+    },
+    {
+      "artist": "ロッカク　アヤコ",
+      "lot_count": 219,
+      "avg_price_jpy": 11293210,
+      "median_price_jpy": 4830000,
+      "multi_house": false
+    },
+    {
+      "artist": "名和　晃平",
+      "lot_count": 218,
+      "avg_price_jpy": 1681452,
+      "median_price_jpy": 954500,
+      "multi_house": false
+    },
+    {
+      "artist": "アンディ・ウォーホル",
+      "lot_count": 217,
+      "avg_price_jpy": 6367305,
+      "median_price_jpy": 2875000,
+      "multi_house": true
+    },
+    {
+      "artist": "元永　定正",
+      "lot_count": 193,
+      "avg_price_jpy": 1962775,
+      "median_price_jpy": 862500,
+      "multi_house": false
+    },
+    {
+      "artist": "KYNE",
+      "lot_count": 181,
+      "avg_price_jpy": 4503458,
+      "median_price_jpy": 2185000,
+      "multi_house": true
+    },
+    {
+      "artist": "山田　正亮",
+      "lot_count": 180,
+      "avg_price_jpy": 1201462,
+      "median_price_jpy": 805000,
+      "multi_house": false
+    },
+    {
+      "artist": "マイセン",
+      "lot_count": 154,
+      "avg_price_jpy": 182824,
+      "median_price_jpy": 75000,
+      "multi_house": false
+    },
+    {
+      "artist": "花井　祐介",
+      "lot_count": 144,
+      "avg_price_jpy": 1954520,
+      "median_price_jpy": 885500,
+      "multi_house": false
+    },
+    {
+      "artist": "R.ラリック",
+      "lot_count": 143,
+      "avg_price_jpy": 150416,
+      "median_price_jpy": 80000,
+      "multi_house": false
+    },
+    {
+      "artist": "バンクシー",
+      "lot_count": 123,
+      "avg_price_jpy": 5500926,
+      "median_price_jpy": 3220000,
+      "multi_house": false
+    },
+    {
+      "artist": "バックサイドワークス",
+      "lot_count": 121,
+      "avg_price_jpy": 1892747,
+      "median_price_jpy": 1184500,
+      "multi_house": false
+    },
+    {
+      "artist": "杉本　博司",
+      "lot_count": 119,
+      "avg_price_jpy": 1333710,
+      "median_price_jpy": 609500,
+      "multi_house": false
+    },
+    {
+      "artist": "ダミアン・ハースト",
+      "lot_count": 119,
+      "avg_price_jpy": 2083964,
+      "median_price_jpy": 977500,
+      "multi_house": false
+    }
+  ],
+  "top_artists_by_value": [
+    {
+      "artist": "藤田　嗣治",
+      "lot_count": 13,
+      "avg_price_jpy": 41381423,
+      "median_price_jpy": 839500
+    },
+    {
+      "artist": "エゴン・シーレ",
+      "lot_count": 5,
+      "avg_price_jpy": 18523800,
+      "median_price_jpy": 149500
+    },
+    {
+      "artist": "草間 彌生",
+      "lot_count": 21,
+      "avg_price_jpy": 16576964,
+      "median_price_jpy": 4800000
+    },
+    {
+      "artist": "イヴ・クライン",
+      "lot_count": 6,
+      "avg_price_jpy": 12688333,
+      "median_price_jpy": 16100000
+    },
+    {
+      "artist": "マルク・シャガール",
+      "lot_count": 17,
+      "avg_price_jpy": 11662394,
+      "median_price_jpy": 620000
+    },
+    {
+      "artist": "ロッカク　アヤコ",
+      "lot_count": 219,
+      "avg_price_jpy": 11293210,
+      "median_price_jpy": 4830000
+    },
+    {
+      "artist": "加山 又造",
+      "lot_count": 37,
+      "avg_price_jpy": 11062585,
+      "median_price_jpy": 340000
+    },
+    {
+      "artist": "モーリス・ユトリロ",
+      "lot_count": 10,
+      "avg_price_jpy": 9823830,
+      "median_price_jpy": 9786000
+    },
+    {
+      "artist": "東山 魁夷",
+      "lot_count": 40,
+      "avg_price_jpy": 9107187,
+      "median_price_jpy": 700000
+    },
+    {
+      "artist": "草間　彌生",
+      "lot_count": 1064,
+      "avg_price_jpy": 8743555,
+      "median_price_jpy": 2990000
+    }
+  ],
+  "auction_houses": [
+    {
+      "name": "SBI Art Auction",
+      "lots": 17123,
+      "status": "active"
+    },
+    {
+      "name": "Shinwa Auction",
+      "lots": 5998,
+      "status": "active"
+    },
+    {
+      "name": "Mainichi Auction",
+      "lots": 120,
+      "status": "active"
+    }
+  ]
+}

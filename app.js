@@ -523,16 +523,26 @@
   /* ── Authenticate Page ── */
   /* ── Price Intelligence Page ── */
   async function renderPrices() {
-    let priceData;
+    let priceData, marketData;
     try {
-      const res = await fetch('/data/price_intelligence.json');
-      priceData = await res.json();
+      const [priceRes, marketRes] = await Promise.all([
+        fetch('/data/price_intelligence.json'),
+        fetch('/data/market_intelligence.json').catch(() => null)
+      ]);
+      priceData = await priceRes.json();
+      if (marketRes && marketRes.ok) marketData = await marketRes.json();
     } catch (e) {
       app.innerHTML = `${renderHeader()}<div style="padding: 6rem 2rem; text-align: center;"><p>Price data loading...</p></div>${renderFooter()}`;
       return;
     }
 
-    const { stats, categories, highlights, results } = priceData;
+    // Merge: use market data for overview stats if available, fall back to price_intelligence
+    const stats = marketData ? marketData.stats : priceData.stats;
+    const { categories, highlights, results } = priceData;
+    const topVolume = marketData ? marketData.top_artists_by_volume : [];
+    const topValue = marketData ? marketData.top_artists_by_value : [];
+    const houses = marketData ? marketData.auction_houses : [];
+
 
     const categoryNames = {
       swords: 'Swords & Armor', ceramics: 'Ceramics & Tea', ukiyoe: 'Ukiyo-e & Prints',
@@ -553,6 +563,19 @@
     function formatUSD(amount) {
       if (!amount) return '—';
       return '$' + Number(amount).toLocaleString();
+    }
+
+    function formatJPY(amount) {
+      if (!amount) return '—';
+      const n = Number(amount);
+      if (n >= 1e8) return '¥' + (n / 1e8).toFixed(1) + '億';
+      if (n >= 1e4) return '¥' + (n / 1e4).toFixed(0) + '万';
+      return '¥' + n.toLocaleString();
+    }
+
+    function formatJPYFull(amount) {
+      if (!amount) return '—';
+      return '¥' + Number(amount).toLocaleString();
     }
 
     app.innerHTML = `
@@ -585,7 +608,7 @@
             <span class="auth-promo__metric-label">${t('prices.houses')}</span>
           </div>
           <div class="auth-promo__metric reveal" style="padding: 1.5rem;">
-            <span class="auth-promo__metric-value" style="font-size: clamp(1.2rem, 2.5vw, 1.8rem);">${formatUSD(stats.total_market_value)}</span>
+            <span class="auth-promo__metric-value" style="font-size: clamp(1.2rem, 2.5vw, 1.8rem);">${stats.total_market_value > 1e6 ? formatJPY(stats.total_market_value) : formatUSD(stats.total_market_value)}</span>
             <span class="auth-promo__metric-label">${t('prices.total_value')}</span>
           </div>
         </div>
@@ -689,6 +712,42 @@
           </div>
         </div>
       </section>
+
+      ${topVolume.length > 0 ? `
+      <!-- Top Artists -->
+      <section class="section" style="padding: 3rem 2rem;">
+        <div style="max-width: 1000px; margin: 0 auto;">
+          <p class="text-label" style="color: var(--gold); margin-bottom: 1rem;">${_locale === 'ja' ? 'アーティスト分析' : 'Artist Intelligence'}</p>
+          <h2 style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 2rem;">${_locale === 'ja' ? '取引量上位作家' : 'Top Artists by Volume'}</h2>
+          <div style="display: grid; gap: 0.5rem;">
+            ${topVolume.slice(0, 10).map((a, i) => `
+              <div class="reveal" style="
+                display: grid; grid-template-columns: 2rem 1fr auto auto;
+                gap: 1.5rem; align-items: center;
+                padding: 1rem 1.5rem;
+                background: var(--surface);
+                border: 1px solid var(--border);
+                border-radius: 8px;
+              ">
+                <span style="font-family: var(--font-serif); color: var(--gold); font-size: 1.1rem; text-align: center;">${i + 1}</span>
+                <div>
+                  <div style="font-weight: 500; font-size: 0.95rem;">${a.artist}</div>
+                  <div style="font-size: 0.75rem; color: var(--text-secondary);">${a.lot_count} ${_locale === 'ja' ? '件' : 'lots'}</div>
+                </div>
+                <div style="text-align: right;">
+                  <div style="font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.08em;">${_locale === 'ja' ? '平均' : 'Avg'}</div>
+                  <div style="font-family: var(--font-serif); color: var(--gold);">${formatJPYFull(a.avg_price_jpy)}</div>
+                </div>
+                <div style="text-align: right;">
+                  <div style="font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.08em;">${_locale === 'ja' ? '中央値' : 'Median'}</div>
+                  <div style="font-family: var(--font-serif);">${formatJPYFull(a.median_price_jpy)}</div>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      </section>
+      ` : ''}
 
       <!-- Results by Category -->
       <section class="section" style="padding: 3rem 2rem;">
