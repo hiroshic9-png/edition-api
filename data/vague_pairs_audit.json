@@ -1,0 +1,1058 @@
+[
+  {
+    "id": "avf-swords-tang",
+    "type": "authentic_vs_fake",
+    "category": "swords",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-bonsai-age",
+    "type": "authentic_vs_fake",
+    "category": "bonsai",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-swords-nbthk",
+    "type": "provenance_chain",
+    "category": "swords",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-ceramics-hakogaki",
+    "type": "provenance_chain",
+    "category": "ceramics",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-bonsai-exhibition",
+    "type": "provenance_chain",
+    "category": "bonsai",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-ukiyoe-publisher",
+    "type": "provenance_chain",
+    "category": "ukiyoe",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-painting-box",
+    "type": "provenance_chain",
+    "category": "painting",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-lacquerware-lineage",
+    "type": "provenance_chain",
+    "category": "lacquerware",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-swords-007",
+    "type": "provenance_chain",
+    "category": "swords",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-swords-008",
+    "type": "provenance_chain",
+    "category": "swords",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-ceramics-006",
+    "type": "provenance_chain",
+    "category": "ceramics",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-ceramics-007",
+    "type": "provenance_chain",
+    "category": "ceramics",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-ceramics-008",
+    "type": "provenance_chain",
+    "category": "ceramics",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-ukiyoe-004",
+    "type": "provenance_chain",
+    "category": "ukiyoe",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-ukiyoe-005",
+    "type": "provenance_chain",
+    "category": "ukiyoe",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-ukiyoe-006",
+    "type": "provenance_chain",
+    "category": "ukiyoe",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-painting-004",
+    "type": "provenance_chain",
+    "category": "painting",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-painting-005",
+    "type": "provenance_chain",
+    "category": "painting",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-painting-006",
+    "type": "provenance_chain",
+    "category": "painting",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-lacquerware-003",
+    "type": "provenance_chain",
+    "category": "lacquerware",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-lacquerware-004",
+    "type": "provenance_chain",
+    "category": "lacquerware",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-lacquerware-005",
+    "type": "provenance_chain",
+    "category": "lacquerware",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-netsuke-002",
+    "type": "provenance_chain",
+    "category": "netsuke",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-netsuke-003",
+    "type": "provenance_chain",
+    "category": "netsuke",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-netsuke-004",
+    "type": "provenance_chain",
+    "category": "netsuke",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-textiles-002",
+    "type": "provenance_chain",
+    "category": "textiles",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-textiles-003",
+    "type": "provenance_chain",
+    "category": "textiles",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-textiles-004",
+    "type": "provenance_chain",
+    "category": "textiles",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-metalwork-002",
+    "type": "provenance_chain",
+    "category": "metalwork",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-metalwork-003",
+    "type": "provenance_chain",
+    "category": "metalwork",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-metalwork-004",
+    "type": "provenance_chain",
+    "category": "metalwork",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-sculpture-003",
+    "type": "provenance_chain",
+    "category": "sculpture",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-sculpture-004",
+    "type": "provenance_chain",
+    "category": "sculpture",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-sculpture-005",
+    "type": "provenance_chain",
+    "category": "sculpture",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-bonsai-004",
+    "type": "provenance_chain",
+    "category": "bonsai",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-bonsai-005",
+    "type": "provenance_chain",
+    "category": "bonsai",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-architecture-003",
+    "type": "provenance_chain",
+    "category": "architecture",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-architecture-004",
+    "type": "provenance_chain",
+    "category": "architecture",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-contemporary-003",
+    "type": "provenance_chain",
+    "category": "contemporary",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-contemporary-004",
+    "type": "provenance_chain",
+    "category": "contemporary",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-swords-006",
+    "type": "authentic_vs_fake",
+    "category": "swords",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-swords-007",
+    "type": "authentic_vs_fake",
+    "category": "swords",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-ceramics-007",
+    "type": "authentic_vs_fake",
+    "category": "ceramics",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-ceramics-008",
+    "type": "authentic_vs_fake",
+    "category": "ceramics",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-ukiyoe-005",
+    "type": "authentic_vs_fake",
+    "category": "ukiyoe",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-ukiyoe-006",
+    "type": "authentic_vs_fake",
+    "category": "ukiyoe",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-painting-004",
+    "type": "authentic_vs_fake",
+    "category": "painting",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-painting-005",
+    "type": "authentic_vs_fake",
+    "category": "painting",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-lacquerware-004",
+    "type": "authentic_vs_fake",
+    "category": "lacquerware",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-lacquerware-005",
+    "type": "authentic_vs_fake",
+    "category": "lacquerware",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-netsuke-005",
+    "type": "authentic_vs_fake",
+    "category": "netsuke",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-netsuke-006",
+    "type": "authentic_vs_fake",
+    "category": "netsuke",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-textiles-004",
+    "type": "authentic_vs_fake",
+    "category": "textiles",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-textiles-005",
+    "type": "authentic_vs_fake",
+    "category": "textiles",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-metalwork-005",
+    "type": "authentic_vs_fake",
+    "category": "metalwork",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-metalwork-006",
+    "type": "authentic_vs_fake",
+    "category": "metalwork",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-sculpture-003",
+    "type": "authentic_vs_fake",
+    "category": "sculpture",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-sculpture-004",
+    "type": "authentic_vs_fake",
+    "category": "sculpture",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-bonsai-005",
+    "type": "authentic_vs_fake",
+    "category": "bonsai",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-bonsai-006",
+    "type": "authentic_vs_fake",
+    "category": "bonsai",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-architecture-003",
+    "type": "authentic_vs_fake",
+    "category": "architecture",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-architecture-004",
+    "type": "authentic_vs_fake",
+    "category": "architecture",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-contemporary-005",
+    "type": "authentic_vs_fake",
+    "category": "contemporary",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-contemporary-006",
+    "type": "authentic_vs_fake",
+    "category": "contemporary",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "fqa-ceramics-015",
+    "type": "forensic_qa",
+    "category": "ceramics",
+    "question": "How does thermoluminescence (TL) dating work for Japanese ceramics authentication?",
+    "evidence": [
+      "Oxford Authentication Ltd technical papers",
+      "JAEA (Japan Atomic Energy Agency) dating studies",
+      "Note: Numerical values are approximate and drawn from published reference materials"
+    ]
+  },
+  {
+    "id": "fqa-ceramics-017",
+    "type": "forensic_qa",
+    "category": "ceramics",
+    "question": "What is kintsugi and how does it affect authentication and value?",
+    "evidence": [
+      "Kyoto kintsugi workshops",
+      "Flickwerk: The Aesthetics of Mended Japanese Ceramics"
+    ]
+  },
+  {
+    "id": "fqa-ukiyoe-012",
+    "type": "forensic_qa",
+    "category": "ukiyoe",
+    "question": "Explain the forensic significance of bokashi (color gradation) in print authentication.",
+    "evidence": [
+      "Salter, Japanese Woodblock Printing"
+    ]
+  },
+  {
+    "id": "fqa-ukiyoe-013",
+    "type": "forensic_qa",
+    "category": "ukiyoe",
+    "question": "How do censor seals (kiwame-in, aratame-in) help date ukiyo-e prints?",
+    "evidence": [
+      "Marks, Publishers of Japanese Woodblock Prints"
+    ]
+  },
+  {
+    "id": "fqa-ukiyoe-014",
+    "type": "forensic_qa",
+    "category": "ukiyoe",
+    "question": "What are the key indicators for identifying Meiji-era photomechanical reproductions of Edo prints?",
+    "evidence": [
+      "Brown, Block Printing and Book Illustration in Japan",
+      "Merritt, Woodblock Print Reproductions"
+    ]
+  },
+  {
+    "id": "fqa-ukiyoe-015",
+    "type": "forensic_qa",
+    "category": "ukiyoe",
+    "question": "How does paper worm damage (mushikui) provide authentication evidence?",
+    "evidence": [
+      "Paper conservation literature",
+      "International Ukiyo-e Society authentication seminars"
+    ]
+  },
+  {
+    "id": "fqa-netsuke-012",
+    "type": "forensic_qa",
+    "category": "netsuke",
+    "question": "How do patina development patterns authenticate ivory netsuke?",
+    "evidence": [
+      "US Fish & Wildlife ivory identification manual",
+      "International Netsuke Society authentication standards"
+    ]
+  },
+  {
+    "id": "fqa-netsuke-013",
+    "type": "forensic_qa",
+    "category": "netsuke",
+    "question": "What are the key schools and regional styles in netsuke carving?",
+    "evidence": [
+      "Davey, Netsuke: A Comprehensive Study",
+      "Kinsey, Contemporary Netsuke"
+    ]
+  },
+  {
+    "id": "fqa-metalwork-012",
+    "type": "forensic_qa",
+    "category": "metalwork",
+    "question": "What is the significance of nunome-zogan (cloth-texture inlay) technique in dating?",
+    "evidence": [
+      "Sasano, Early Japanese Sword Guards",
+      "Haynes, Index of Japanese Sword Fittings"
+    ]
+  },
+  {
+    "id": "fqa-bonsai-014",
+    "type": "forensic_qa",
+    "category": "bonsai",
+    "question": "How is tree age verified in bonsai assessment and why is it critical for valuation?",
+    "evidence": [
+      "Nippon Bonsai Association age assessment guidelines",
+      "International Bonsai magazine technical articles"
+    ]
+  },
+  {
+    "id": "fqa-bonsai-015",
+    "type": "forensic_qa",
+    "category": "bonsai",
+    "question": "What is the significance of the five classical bonsai styles and how do they inform assessment?",
+    "evidence": [
+      "Nippon Bonsai Association educational materials",
+      "Naka, Bonsai Technique"
+    ]
+  },
+  {
+    "id": "fqa-bonsai-016",
+    "type": "forensic_qa",
+    "category": "bonsai",
+    "question": "How does nebari (root flare) quality affect bonsai authentication and value?",
+    "evidence": [
+      "Bonsai Focus nebari development articles",
+      "Kokufu-ten judging criteria"
+    ]
+  },
+  {
+    "id": "fqa-architecture-012",
+    "type": "forensic_qa",
+    "category": "architecture",
+    "question": "What are the key features of sukiya-zukuri (tea house architecture) and how are they authenticated?",
+    "evidence": [
+      "Nakamura Masao, Sukiya Kenchiku Shusei, Shogakukan, 1983 / Chashitsu o Yomu, Tankosha, 2002",
+      "Urasenke Foundation architectural standards"
+    ]
+  },
+  {
+    "id": "fqa-contemporary-012",
+    "type": "forensic_qa",
+    "category": "contemporary",
+    "question": "What is the role of artist foundations in contemporary Japanese art authentication?",
+    "evidence": [
+      "Various artist foundation websites",
+      "Art Basel authentication panel proceedings"
+    ]
+  },
+  {
+    "id": "fqa-cross-010",
+    "type": "forensic_qa",
+    "category": "ceramics",
+    "question": "How does neutron activation analysis (NAA) help trace Japanese ceramic provenance to specific kilns?",
+    "evidence": [
+      "Neff, Neutron Activation Analysis of Japanese Ceramics",
+      "Smithsonian Archaeometry laboratory"
+    ]
+  },
+  {
+    "id": "fqa-market-003",
+    "type": "forensic_qa",
+    "category": "contemporary",
+    "question": "How has the globalization of the contemporary art market affected Japanese art authentication?",
+    "evidence": [
+      "Art Basel/UBS Art Market Report",
+      "Japan Art Dealers Association guidelines"
+    ]
+  },
+  {
+    "id": "fqa-cross-015",
+    "type": "forensic_qa",
+    "category": "ceramics",
+    "question": "How does petrographic analysis reveal ceramic production origin?",
+    "evidence": [
+      "Rice, Pottery Analysis: A Sourcebook",
+      "Kyoto University archaeological ceramics lab"
+    ]
+  },
+  {
+    "id": "fqa-cross-017",
+    "type": "forensic_qa",
+    "category": "metalwork",
+    "question": "How does the Japanese concept of 'patina' (sabi/fūgō) differ across material categories?",
+    "evidence": [
+      "Kyoto craft conservation literature"
+    ]
+  },
+  {
+    "id": "fqa-ceramics-019",
+    "type": "forensic_qa",
+    "category": "ceramics",
+    "question": "What are the main Japanese ceramic production regions and their characteristic wares?",
+    "evidence": [
+      "Jenyns, Japanese Pottery",
+      "Cort, Shigaraki, Potters' Valley"
+    ]
+  },
+  {
+    "id": "fqa-textiles-015",
+    "type": "forensic_qa",
+    "category": "textiles",
+    "question": "What is the hierarchy of Japanese kimono formality and how does it affect textile valuation?",
+    "evidence": [
+      "Dalby, Kimono: Fashioning Culture",
+      "Kyoto textile industry guides"
+    ]
+  },
+  {
+    "id": "fqa-bonsai-017",
+    "type": "forensic_qa",
+    "category": "bonsai",
+    "question": "What are the essential elements assessed in bonsai evaluation?",
+    "evidence": [
+      "Nippon Bonsai Association evaluation criteria",
+      "Kokufu-ten judging standards"
+    ]
+  },
+  {
+    "id": "fqa-architecture-013",
+    "type": "forensic_qa",
+    "category": "architecture",
+    "question": "What are the key structural systems in traditional Japanese architecture?",
+    "evidence": [
+      "Nishi & Hozumi, What Is Japanese Architecture?",
+      "Agency for Cultural Affairs architectural heritage guides"
+    ]
+  },
+  {
+    "id": "fqa-contemporary-014",
+    "type": "forensic_qa",
+    "category": "contemporary",
+    "question": "Who are the key figures in post-war Japanese art movements?",
+    "evidence": [
+      "Munroe, Japanese Art After 1945",
+      "Chong, Tokyo 1955-1970: A New Avant-Garde, MoMA, 2012"
+    ]
+  },
+  {
+    "id": "avf-swords-008",
+    "type": "authentic_vs_fake",
+    "category": "swords",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-ceramics-009",
+    "type": "authentic_vs_fake",
+    "category": "ceramics",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-ukiyoe-007",
+    "type": "authentic_vs_fake",
+    "category": "ukiyoe",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-painting-006",
+    "type": "authentic_vs_fake",
+    "category": "painting",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-bonsai-007",
+    "type": "authentic_vs_fake",
+    "category": "bonsai",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-sculpture-005",
+    "type": "authentic_vs_fake",
+    "category": "sculpture",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-contemporary-007",
+    "type": "authentic_vs_fake",
+    "category": "contemporary",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-architecture-005",
+    "type": "authentic_vs_fake",
+    "category": "architecture",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "fqa-swords-022",
+    "type": "forensic_qa",
+    "category": "swords",
+    "question": "How does PIXE (Particle-Induced X-ray Emission) analysis advance sword authentication beyond conventional XRF?",
+    "evidence": [
+      "JAEA (Japan Atomic Energy Agency) PIXE studies",
+      "Kyoto University accelerator-based analyses"
+    ]
+  },
+  {
+    "id": "fqa-ceramics-020",
+    "type": "forensic_qa",
+    "category": "ceramics",
+    "question": "How does magnetic susceptibility measurement authenticate iron-rich Japanese stoneware?",
+    "evidence": [
+      "Kyoto University archaeometry lab",
+      "Japanese Archaeological Association ceramic analysis protocols"
+    ]
+  },
+  {
+    "id": "fqa-cross-021",
+    "type": "forensic_qa",
+    "category": "ukiyoe",
+    "question": "How has AI technology been applied to Japanese art authentication?",
+    "evidence": [
+      "Art Recognition AG research papers",
+      "RIKEN computational art analysis studies"
+    ]
+  },
+  {
+    "id": "fqa-ukiyoe-016",
+    "type": "forensic_qa",
+    "category": "ukiyoe",
+    "question": "What are the major format types of ukiyo-e prints?",
+    "evidence": [
+      "Newland, The Hotei Encyclopedia of Japanese Woodblock Prints",
+      "Marks, Publishers of Japanese Woodblock Prints"
+    ]
+  },
+  {
+    "id": "fqa-ukiyoe-017",
+    "type": "forensic_qa",
+    "category": "ukiyoe",
+    "question": "What is karazuri (blind printing) and why is it an authentication marker?",
+    "evidence": [
+      "Salter, Japanese Woodblock Printing"
+    ]
+  },
+  {
+    "id": "fqa-painting-015",
+    "type": "forensic_qa",
+    "category": "painting",
+    "question": "What are the key differences between Kano and Tosa school painting traditions?",
+    "evidence": [
+      "Tsuji Nobuo, History of Japanese Art",
+      "Murase, Bridge of Dreams"
+    ]
+  },
+  {
+    "id": "fqa-painting-016",
+    "type": "forensic_qa",
+    "category": "painting",
+    "question": "What are the main formats of Japanese painting and their contexts?",
+    "evidence": [
+      "Murase, Bridge of Dreams"
+    ]
+  },
+  {
+    "id": "fqa-lacquerware-016",
+    "type": "forensic_qa",
+    "category": "lacquerware",
+    "question": "What is urushi and how does the lacquering process work?",
+    "evidence": [
+      "Webb, Lacquer: Technology and Conservation",
+      "Kyoto lacquer craft tradition documentation"
+    ]
+  },
+  {
+    "id": "fqa-netsuke-015",
+    "type": "forensic_qa",
+    "category": "netsuke",
+    "question": "What materials are used in netsuke carving and how do they affect value?",
+    "evidence": [
+      "Davey, Netsuke: A Comprehensive Study",
+      "International Netsuke Society material guides"
+    ]
+  },
+  {
+    "id": "fqa-bonsai-018",
+    "type": "forensic_qa",
+    "category": "bonsai",
+    "question": "How does soil analysis contribute to bonsai provenance authentication?",
+    "evidence": [
+      "Japanese Bonsai Soil Research Association",
+      "International Bonsai soil analysis studies"
+    ]
+  },
+  {
+    "id": "prov-swords-009",
+    "type": "provenance_chain",
+    "category": "swords",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-ceramics-009",
+    "type": "provenance_chain",
+    "category": "ceramics",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-ukiyoe-007",
+    "type": "provenance_chain",
+    "category": "ukiyoe",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-painting-007",
+    "type": "provenance_chain",
+    "category": "painting",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-lacquerware-006",
+    "type": "provenance_chain",
+    "category": "lacquerware",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-netsuke-005",
+    "type": "provenance_chain",
+    "category": "netsuke",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-textiles-005",
+    "type": "provenance_chain",
+    "category": "textiles",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-metalwork-005",
+    "type": "provenance_chain",
+    "category": "metalwork",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-sculpture-006",
+    "type": "provenance_chain",
+    "category": "sculpture",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-bonsai-006",
+    "type": "provenance_chain",
+    "category": "bonsai",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "fqa-swords-025",
+    "type": "forensic_qa",
+    "category": "swords",
+    "question": "How do habaki (blade collar) construction and fit indicate quality?",
+    "evidence": [
+      "Kapp & Yoshihara, The Craft of the Japanese Sword"
+    ]
+  },
+  {
+    "id": "fqa-ceramics-023",
+    "type": "forensic_qa",
+    "category": "ceramics",
+    "question": "How do crawling glaze defects (kairagi) become desirable in tea ceramics?",
+    "evidence": [
+      "Hayashiya, Japanese Art of Tea",
+      "Hagi ware technical studies"
+    ]
+  },
+  {
+    "id": "fqa-ukiyoe-018",
+    "type": "forensic_qa",
+    "category": "ukiyoe",
+    "question": "How does the kento (registration mark) system work in woodblock printing?",
+    "evidence": [
+      "Salter, Japanese Woodblock Printing",
+      "Statler, Japanese Prints"
+    ]
+  },
+  {
+    "id": "fqa-textiles-017",
+    "type": "forensic_qa",
+    "category": "textiles",
+    "question": "What is kasuri (ikat) and how does it indicate regional origin?",
+    "evidence": [
+      "Dusenbury, Textiles of Japan",
+      "Various kasuri tradition preservation associations"
+    ]
+  },
+  {
+    "id": "fqa-bonsai-019",
+    "type": "forensic_qa",
+    "category": "bonsai",
+    "question": "What is jin and shari technique and how does it indicate age?",
+    "evidence": [
+      "International Bonsai jin/shari technique guides",
+      "Nippon Bonsai Association standards"
+    ]
+  },
+  {
+    "id": "fqa-contemporary-016",
+    "type": "forensic_qa",
+    "category": "contemporary",
+    "question": "What is Superflat and how does it relate to authentication?",
+    "evidence": [
+      "Murakami, Superflat catalog",
+      "Kaikai Kiki production documentation"
+    ]
+  },
+  {
+    "id": "fqa-cross-023",
+    "type": "forensic_qa",
+    "category": "ceramics",
+    "question": "How does microstructure analysis distinguish hand-throwing from mold-forming?",
+    "evidence": [
+      "Rice, Prudence M., Pottery Analysis: A Sourcebook, U of Chicago Press, 2nd ed 2015",
+      "Kyoto University archaeological ceramics technical studies"
+    ]
+  },
+  {
+    "id": "avf-swords-009",
+    "type": "authentic_vs_fake",
+    "category": "swords",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-ceramics-010",
+    "type": "authentic_vs_fake",
+    "category": "ceramics",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-painting-007",
+    "type": "authentic_vs_fake",
+    "category": "painting",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-textiles-006",
+    "type": "authentic_vs_fake",
+    "category": "textiles",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "avf-metalwork-007",
+    "type": "authentic_vs_fake",
+    "category": "metalwork",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "fqa-netsuke-016",
+    "type": "forensic_qa",
+    "category": "netsuke",
+    "question": "How does provenance from major Western collections affect netsuke valuation?",
+    "evidence": [
+      "International Netsuke Society provenance databases",
+      "Major collection sale catalogs",
+      "Note: Numerical values are approximate and drawn from published reference materials"
+    ]
+  },
+  {
+    "id": "fqa-architecture-016",
+    "type": "forensic_qa",
+    "category": "architecture",
+    "question": "How does washi (traditional paper) analysis authenticate architectural elements?",
+    "evidence": [
+      "Washi papermaking tradition documentation",
+      "Japanese Paper Conservation Society"
+    ]
+  },
+  {
+    "id": "fqa-contemporary-017",
+    "type": "forensic_qa",
+    "category": "contemporary",
+    "question": "How does the Japanese art market structure differ from Western markets?",
+    "evidence": [
+      "Art Basel/UBS Japan market analysis",
+      "Japan Art Dealers Association structure"
+    ]
+  },
+  {
+    "id": "prov-contemporary-005",
+    "type": "provenance_chain",
+    "category": "contemporary",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-architecture-005",
+    "type": "provenance_chain",
+    "category": "architecture",
+    "question": "",
+    "evidence": null
+  },
+  {
+    "id": "prov-bonsai-007",
+    "type": "provenance_chain",
+    "category": "bonsai",
+    "question": "",
+    "evidence": null
+  }
+]

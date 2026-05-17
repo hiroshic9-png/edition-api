@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-05-18T07:29:35.098129",
-    "source": "KANTEISHI API /market/stats",
+    "generated_at": "2026-05-17T23:19:02Z",
+    "source": "KANTEISHI API /market/stats (live sync)",
     "model_version": "0.5"
   },
   "stats": {
@@ -223,17 +223,17 @@
     {
       "name": "SBI Art Auction",
       "lots": 17123,
-      "status": "active"
+      "source": "sbi"
     },
     {
       "name": "Shinwa Auction",
       "lots": 5998,
-      "status": "active"
+      "source": "shinwa"
     },
     {
       "name": "Mainichi Auction",
-      "lots": 120,
-      "status": "active"
+      "lots": 0,
+      "source": "mainichi"
     }
   ]
 }

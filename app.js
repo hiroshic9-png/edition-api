@@ -320,7 +320,7 @@
               </div>
               <div class="auth-promo__metric">
                 <span class="auth-promo__metric-value">${_marketData ? Number(_marketData.stats.total_artists).toLocaleString() : '3,509'}</span>
-                <span class="auth-promo__metric-label">${_locale === 'ja' ? '作家' : 'Artists'}</span>
+                <span class="auth-promo__metric-label">${t('home.market_artists')}</span>
               </div>
             </div>
           </div>
@@ -727,8 +727,8 @@
       <!-- Top Artists -->
       <section class="section" style="padding: 3rem 2rem;">
         <div style="max-width: 1000px; margin: 0 auto;">
-          <p class="text-label" style="color: var(--gold); margin-bottom: 1rem;">${_locale === 'ja' ? 'アーティスト分析' : 'Artist Intelligence'}</p>
-          <h2 style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 2rem;">${_locale === 'ja' ? '取引量上位作家' : 'Top Artists by Volume'}</h2>
+          <p class="text-label" style="color: var(--gold); margin-bottom: 1rem;">${t('prices.artist_label')}</p>
+          <h2 style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 2rem;">${t('prices.artist_title')}</h2>
           <div style="display: grid; gap: 0.5rem;">
             ${topVolume.slice(0, 10).map((a, i) => `
               <div class="reveal" style="
@@ -742,14 +742,14 @@
                 <span style="font-family: var(--font-serif); color: var(--gold); font-size: 1.1rem; text-align: center;">${i + 1}</span>
                 <div>
                   <div style="font-weight: 500; font-size: 0.95rem;">${a.artist}</div>
-                  <div style="font-size: 0.75rem; color: var(--text-secondary);">${a.lot_count} ${_locale === 'ja' ? '件' : 'lots'}</div>
+                  <div style="font-size: 0.75rem; color: var(--text-secondary);">${a.lot_count} ${t('prices.artist_lots')}</div>
                 </div>
                 <div style="text-align: right;">
-                  <div style="font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.08em;">${_locale === 'ja' ? '平均' : 'Avg'}</div>
+                  <div style="font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.08em;">${t('prices.artist_avg')}</div>
                   <div style="font-family: var(--font-serif); color: var(--gold);">${formatJPYFull(a.avg_price_jpy)}</div>
                 </div>
                 <div style="text-align: right;">
-                  <div style="font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.08em;">${_locale === 'ja' ? '中央値' : 'Median'}</div>
+                  <div style="font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.08em;">${t('prices.artist_median')}</div>
                   <div style="font-family: var(--font-serif);">${formatJPYFull(a.median_price_jpy)}</div>
                 </div>
               </div>

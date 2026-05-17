@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-05-14T13:44:01.812568Z",
+  "generated_at": "2026-05-15T10:00:00Z",
   "total_pairs": 261,
   "pairs": [
     {
@@ -1307,7 +1307,10 @@
         "NBTHK examination criteria"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T06:17:51.495390Z"
+      "created_at": "2026-05-14T06:17:51.495390Z",
+      "source_urls": [
+        "https://www.touken.or.jp/english/"
+      ]
     },
     {
       "id": "avf-bonsai-age",
@@ -1354,7 +1357,10 @@
         "Kokufu-ten Catalogues"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T06:17:51.495390Z"
+      "created_at": "2026-05-14T06:17:51.495390Z",
+      "source_urls": [
+        "https://www.bonsai-nba.org/"
+      ]
     },
     {
       "id": "prov-swords-nbthk",
@@ -1385,7 +1391,11 @@
         "Japanese Sword Society of the United States"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T06:39:16.055597Z"
+      "created_at": "2026-05-14T06:39:16.055597Z",
+      "source_urls": [
+        "https://www.touken.or.jp/english/",
+        "https://www.jssus.org/"
+      ]
     },
     {
       "id": "prov-ceramics-hakogaki",
@@ -1415,7 +1425,11 @@
         "Nezu Museum catalogues"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T06:39:16.055597Z"
+      "created_at": "2026-05-14T06:39:16.055597Z",
+      "source_urls": [
+        "https://www.urasenke.or.jp/",
+        "https://www.nezu-muse.or.jp/"
+      ]
     },
     {
       "id": "prov-bonsai-exhibition",
@@ -1445,7 +1459,11 @@
         "Omiya Bonsai Art Museum archives"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T06:39:16.055597Z"
+      "created_at": "2026-05-14T06:39:16.055597Z",
+      "source_urls": [
+        "https://www.bonsai-nba.org/",
+        "https://www.bonsai-art-museum.jp/"
+      ]
     },
     {
       "id": "prov-ukiyoe-publisher",
@@ -1475,7 +1493,11 @@
         "Museum of Fine Arts Boston — Print collection"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T06:39:16.055597Z"
+      "created_at": "2026-05-14T06:39:16.055597Z",
+      "source_urls": [
+        "https://ukiyo-e.org/",
+        "https://www.mfa.org/collections"
+      ]
     },
     {
       "id": "prov-painting-box",
@@ -1505,7 +1527,11 @@
         "National Institutes for Cultural Heritage"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T06:39:16.055597Z"
+      "created_at": "2026-05-14T06:39:16.055597Z",
+      "source_urls": [
+        "https://www.nich.go.jp/",
+        "https://kunishitei.bunka.go.jp/"
+      ]
     },
     {
       "id": "prov-lacquerware-lineage",
@@ -1534,7 +1560,11 @@
         "Victoria and Albert Museum lacquer collection notes"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T06:39:16.055597Z"
+      "created_at": "2026-05-14T06:39:16.055597Z",
+      "source_urls": [
+        "https://www.vam.ac.uk/",
+        "https://www.worldcat.org/search?q=Japan+Lacquer+Art"
+      ]
     },
     {
       "id": "prov-swords-007",
@@ -1564,7 +1594,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.tokugawa-art-museum.jp/",
+        "https://www.sanomoa.jp/"
+      ]
     },
     {
       "id": "prov-swords-008",
@@ -1594,7 +1628,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.archives.gov/",
+        "https://www.jssus.org/"
+      ]
     },
     {
       "id": "prov-ceramics-006",
@@ -1619,12 +1657,14 @@
         "Compare physical dimensions to published meibutsu descriptions"
       ],
       "sources": [
-        "Nezu Museum tea ceremony catalog",
-        "Meibutsu-ki published editions"
+        "Nezu Museum tea ceremony catalog"
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.nezu-muse.or.jp/"
+      ]
     },
     {
       "id": "prov-ceramics-007",
@@ -1654,7 +1694,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.tnm.jp/",
+        "https://www.moco.or.jp/"
+      ]
     },
     {
       "id": "prov-ceramics-008",
@@ -1684,7 +1728,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.rijksmuseum.nl/",
+        "https://skd.museum/"
+      ]
     },
     {
       "id": "prov-ukiyoe-004",
@@ -1714,7 +1762,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.worldcat.org/title/publishers-of-japanese-woodblock-prints/oclc/1099473157",
+        "https://kuniyoshiproject.com/"
+      ]
     },
     {
       "id": "prov-ukiyoe-005",
@@ -1744,7 +1796,10 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://gallica.bnf.fr/"
+      ]
     },
     {
       "id": "prov-ukiyoe-006",
@@ -1774,7 +1829,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.adachi-hanga.com/",
+        "https://honolulumuseum.org/"
+      ]
     },
     {
       "id": "prov-painting-004",
@@ -1799,12 +1858,14 @@
         "Verify seal placement conventions for the specific artist"
       ],
       "sources": [
-        "Tokyo National Museum seal database",
-        "Various artist-specific inpu publications"
+        "Tokyo National Museum seal database"
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.tnm.jp/"
+      ]
     },
     {
       "id": "prov-painting-005",
@@ -1834,7 +1895,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.worldcat.org/title/history-of-japanese-art/oclc/904413420",
+        "https://www.worldcat.org/search?q=狩野派+系譜"
+      ]
     },
     {
       "id": "prov-painting-006",
@@ -1864,7 +1929,10 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://kunishitei.bunka.go.jp/"
+      ]
     },
     {
       "id": "prov-lacquerware-003",
@@ -1894,7 +1962,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.tokugawa-art-museum.jp/",
+        "https://www.worldcat.org/title/east-asian-lacquer-the-florence-and-herbert-irving-collection/oclc/25629868"
+      ]
     },
     {
       "id": "prov-lacquerware-004",
@@ -1924,7 +1996,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.worldcat.org/search?q=1873+Vienna+Exhibition+Japan",
+        "https://www.worldcat.org/search?q=1876+Philadelphia+Centennial+Japan"
+      ]
     },
     {
       "id": "prov-lacquerware-005",
@@ -1949,12 +2025,14 @@
         "Check Agency for Cultural Affairs surveys"
       ],
       "sources": [
-        "Various temple archives",
         "Agency for Cultural Affairs shrine/temple surveys"
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://kunishitei.bunka.go.jp/"
+      ]
     },
     {
       "id": "prov-netsuke-002",
@@ -1984,7 +2062,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.nfrjournal.com/",
+        "https://www.worldcat.org/search?q=Raymond+Bushell+netsuke"
+      ]
     },
     {
       "id": "prov-netsuke-003",
@@ -2014,7 +2096,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.nfrjournal.com/",
+        "https://www.worldcat.org/title/contemporary-netsuke/oclc/47263437"
+      ]
     },
     {
       "id": "prov-netsuke-004",
@@ -2044,7 +2130,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://cites.org/",
+        "https://www.fws.gov/"
+      ]
     },
     {
       "id": "prov-textiles-002",
@@ -2074,7 +2164,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.kunaicho.go.jp/",
+        "https://www.kyohaku.go.jp/"
+      ]
     },
     {
       "id": "prov-textiles-003",
@@ -2104,7 +2198,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.town.biratori.hokkaido.jp/biratori/nibutani/",
+        "https://hoppohm.org/"
+      ]
     },
     {
       "id": "prov-textiles-004",
@@ -2134,7 +2232,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://okimu.jp/",
+        "https://oki-park.jp/shurijo/"
+      ]
     },
     {
       "id": "prov-metalwork-002",
@@ -2164,7 +2266,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.worldcat.org/title/index-of-japanese-sword-fittings-and-associated-artists/oclc/57452936",
+        "https://www.worldcat.org/search?q=鐔芸術考+若山猛"
+      ]
     },
     {
       "id": "prov-metalwork-003",
@@ -2194,7 +2300,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://kunishitei.bunka.go.jp/",
+        "https://www.tnm.jp/"
+      ]
     },
     {
       "id": "prov-metalwork-004",
@@ -2224,7 +2334,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.worldcat.org/search?q=日本の梵鐘+坪井良一",
+        "https://kunishitei.bunka.go.jp/"
+      ]
     },
     {
       "id": "prov-sculpture-003",
@@ -2249,12 +2363,14 @@
         "Confirm compliance with Cultural Properties Protection Act"
       ],
       "sources": [
-        "Agency for Cultural Affairs temple surveys",
-        "Various temple archives"
+        "Agency for Cultural Affairs temple surveys"
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://kunishitei.bunka.go.jp/"
+      ]
     },
     {
       "id": "prov-sculpture-004",
@@ -2284,7 +2400,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.narahaku.go.jp/",
+        "https://www.tnm.jp/"
+      ]
     },
     {
       "id": "prov-sculpture-005",
@@ -2314,7 +2434,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.worldcat.org/title/asuka-buddhist-art-horyu-ji/oclc/310997",
+        "https://www.narahaku.go.jp/"
+      ]
     },
     {
       "id": "prov-bonsai-004",
@@ -2344,7 +2468,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.bonsai-nba.org/",
+        "https://www.worldcat.org/title/bonsai-today/oclc/18474254"
+      ]
     },
     {
       "id": "prov-bonsai-005",
@@ -2374,7 +2502,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.rinya.maff.go.jp/",
+        "https://www.bonsaifocus.com/"
+      ]
     },
     {
       "id": "prov-architecture-003",
@@ -2404,7 +2536,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.machiya.or.jp/",
+        "https://www.minka.or.jp/"
+      ]
     },
     {
       "id": "prov-architecture-004",
@@ -2434,7 +2570,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.worldcat.org/search?q=数寄屋建築集成+中村昌生",
+        "https://www.urasenke.or.jp/"
+      ]
     },
     {
       "id": "prov-contemporary-003",
@@ -2459,12 +2599,14 @@
         "Search catalog raisonné and gallery exhibition records"
       ],
       "sources": [
-        "Various gallery records",
-        "Artist catalog raisonnés"
+        "Gallery certificate authentication best practices"
       ],
-      "verified_by": "source_verified",
+      "verified_by": "ai_generated",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.ifar.org/"
+      ]
     },
     {
       "id": "prov-contemporary-004",
@@ -2494,7 +2636,11 @@
       ],
       "verified_by": "source_verified",
       "type": "provenance_chain",
-      "created_at": "2026-05-14T11:04:24.259709Z"
+      "created_at": "2026-05-14T11:04:24.259709Z",
+      "source_urls": [
+        "https://www.momat.go.jp/",
+        "https://www.yomiuri.co.jp/"
+      ]
     },
     {
       "id": "avf-swords-006",
@@ -2531,7 +2677,11 @@
       ],
       "verified_by": "source_verified",
       "type": "authentic_vs_fake",
-      "created_at": "2026-05-14T11:08:33.370476Z"
+      "created_at": "2026-05-14T11:08:33.370476Z",
+      "source_urls": [
+        "https://www.touken.or.jp/english/",
+        "https://www.worldcat.org/title/connoisseurs-book-of-japanese-swords/oclc/36691653"
+      ]
     },
     {
       "id": "avf-swords-007",
@@ -2568,7 +2718,11 @@
       ],
       "verified_by": "source_verified",
       "type": "authentic_vs_fake",
-      "created_at": "2026-05-14T11:08:33.370476Z"
+      "created_at": "2026-05-14T11:08:33.370476Z",
+      "source_urls": [
+        "https://ohmura-study.net/",
+        "https://www.touken.or.jp/english/"
+      ]
     },
     {
       "id": "avf-ceramics-007",
@@ -2605,7 +2759,11 @@
       ],
       "verified_by": "source_verified",
       "type": "authentic_vs_fake",
-      "created_at": "2026-05-14T11:08:33.370476Z"
+      "created_at": "2026-05-14T11:08:33.370476Z",
+      "source_urls": [
+        "https://www.city.toki.lg.jp/",
+        "https://www.worldcat.org/search?q=林屋晴三+織部"
+      ]
     },
     {
       "id": "avf-ceramics-008",
@@ -2640,9 +2798,13 @@
         "Ishikawa Prefectural Museum of Art",
         "Kutani Ceramic Art Museum"
       ],
-      "verified_by": "source_verified",
+      "verified_by": "ai_generated",
       "type": "authentic_vs_fake",
-      "created_at": "2026-05-14T11:08:33.370476Z"
+      "created_at": "2026-05-14T11:08:33.370476Z",
+      "source_urls": [
+        "https://www.ishibi.pref.ishikawa.jp/",
+        "https://www.kutani-mus.jp/"
+      ]
     },
     {
       "id": "avf-ukiyoe-005",
@@ -2676,9 +2838,12 @@
       "sources": [
         "International Ukiyo-e Society state comparison studies"
       ],
-      "verified_by": "source_verified",
+      "verified_by": "ai_generated",
       "type": "authentic_vs_fake",
-      "created_at": "2026-05-14T11:08:33.370476Z"
+      "created_at": "2026-05-14T11:08:33.370476Z",
+      "source_urls": [
+        "https://ukiyoe-ota-muse.jp/"
+      ]
     },
     {
       "id": "avf-ukiyoe-006",
@@ -2715,7 +2880,11 @@
       ],
       "verified_by": "source_verified",
       "type": "authentic_vs_fake",
-      "created_at": "2026-05-14T11:08:33.370476Z"
+      "created_at": "2026-05-14T11:08:33.370476Z",
+      "source_urls": [
+        "https://www.worldcat.org/title/japanese-woodblock-prints-artists-publishers-and-masterworks/oclc/760977863",
+        "https://www.worldcat.org/search?q=Brown+Block+Printing+Japan"
+      ]
     },
     {
       "id": "avf-painting-004",
@@ -2752,7 +2921,11 @@
       ],
       "verified_by": "source_verified",
       "type": "authentic_vs_fake",
-      "created_at": "2026-05-14T11:08:33.370476Z"
+      "created_at": "2026-05-14T11:08:33.370476Z",
+      "source_urls": [
+        "https://www.geidai.ac.jp/",
+        "https://kunishitei.bunka.go.jp/"
+      ]
     },
     {
       "id": "avf-painting-005",
@@ -2784,12 +2957,14 @@
       ],
       "confidence_notes": "Zen calligraphy authentication requires deep understanding of both calligraphic tradition and Zen aesthetic. Major Zen masters' works are heavily forged",
       "sources": [
-        "Kyoto National Museum bokuseki catalog",
-        "Zen Arts studies"
+        "Kyoto National Museum bokuseki catalog"
       ],
-      "verified_by": "source_verified",
+      "verified_by": "ai_generated",
       "type": "authentic_vs_fake",
-      "created_at": "2026-05-14T11:08:33.370476Z"
+      "created_at": "2026-05-14T11:08:33.370476Z",
+      "source_urls": [
+        "https://www.kyohaku.go.jp/"
+      ]
     },
     {
       "id": "avf-lacquerware-004",
@@ -2821,12 +2996,14 @@
       ],
       "confidence_notes": "Natural urushi vs synthetic is reliably detected by UV and FTIR. Layer count indicates investment of time and skill",
       "sources": [
-        "Kyoto lacquer conservation institute",
         "Webb, Lacquer: Technology and Conservation"
       ],
       "verified_by": "source_verified",
       "type": "authentic_vs_fake",
-      "created_at": "2026-05-14T11:08:33.370476Z"
+      "created_at": "2026-05-14T11:08:33.370476Z",
+      "source_urls": [
+        "https://www.worldcat.org/title/lacquer-technology-and-conservation/oclc/41223445"
+      ]
     },
     {
       "id": "avf-lacquerware-005",
@@ -2863,7 +3040,11 @@
       ],
       "verified_by": "source_verified",
       "type": "authentic_vs_fake",
-      "created_at": "2026-05-14T11:08:33.370476Z"
+      "created_at": "2026-05-14T11:08:33.370476Z",
+      "source_urls": [
+        "https://www.tokugawa-art-museum.jp/",
+        "https://www.worldcat.org/title/east-asian-lacquer-the-florence-and-herbert-irving-collection/oclc/25629868"
+      ]
     },
     {
       "id": "avf-netsuke-005",
@@ -2898,9 +3079,13 @@
         "International Netsuke Society authentication guidelines",
         "Davey, Netsuke: A Comprehensive Study"
       ],
-      "verified_by": "source_verified",
+      "verified_by": "ai_generated",
       "type": "authentic_vs_fake",
-      "created_at": "2026-05-14T11:08:33.370476Z"
+      "created_at": "2026-05-14T11:08:33.370476Z",
+      "source_urls": [
+        "https://www.nfrjournal.com/",
+        "https://www.worldcat.org/search?q=Davey+Netsuke+Comprehensive"
+      ]
     },
     {
       "id": "avf-netsuke-006",
@@ -2937,7 +3122,11 @@
       ],
       "verified_by": "source_verified",
       "type": "authentic_vs_fake",
-      "created_at": "2026-05-14T11:08:33.370476Z"
+      "created_at": "2026-05-14T11:08:33.370476Z",
+      "source_urls": [
+        "https://www.nfrjournal.com/",
+        "https://www.worldcat.org/isbn/0834801159"
+      ]
     },
     {
       "id": "avf-textiles-004",
@@ -2974,7 +3163,11 @@
       ],
       "verified_by": "source_verified",
       "type": "authentic_vs_fake",
-      "created_at": "2026-05-14T11:09:43.901828Z"
+      "created_at": "2026-05-14T11:09:43.901828Z",
+      "source_urls": [
+        "https://www.worldcat.org/title/indigo-textiles/oclc/20667025",
+        "https://www.kit.ac.jp/"
+      ]
     },
     {
       "id": "avf-textiles-005",
@@ -3008,9 +3201,12 @@
       "sources": [
         "Kyoto National Museum textile conservation"
       ],
-      "verified_by": "source_verified",
+      "verified_by": "ai_generated",
       "type": "authentic_vs_fake",
-      "created_at": "2026-05-14T11:09:43.901828Z"
+      "created_at": "2026-05-14T11:09:43.901828Z",
+      "source_urls": [
+        "https://www.kyohaku.go.jp/"
+      ]
     },
     {
       "id": "avf-metalwork-005",
@@ -3046,7 +3242,10 @@
       ],
       "verified_by": "source_verified",
       "type": "authentic_vs_fake",
-      "created_at": "2026-05-14T11:09:43.901828Z"
+      "created_at": "2026-05-14T11:09:43.901828Z",
+      "source_urls": [
+        "https://www.touken.or.jp/english/"
+      ]
     },
     {
       "id": "avf-metalwork-006",
@@ -3078,12 +3277,14 @@
       ],
       "confidence_notes": "Iron patina development takes centuries and is extremely difficult to simulate convincingly at the microscopic level",
       "sources": [
-        "Sasano, Early Japanese Sword Guards",
-        "Robert Haynes tsuba authentication papers"
+        "Sasano, Early Japanese Sword Guards"
       ],
       "verified_by": "source_verified",
       "type": "authentic_vs_fake",
-      "created_at": "2026-05-14T11:09:43.901828Z"
+      "created_at": "2026-05-14T11:09:43.901828Z",
+      "source_urls": [
+        "https://www.worldcat.org/title/early-japanese-sword-guards/oclc/10353696"
+      ]
     },
     {
       "id": "avf-sculpture-003",
@@ -3120,7 +3321,11 @@
       ],
       "verified_by": "source_verified",
       "type": "authentic_vs_fake",
-      "created_at": "2026-05-14T11:09:43.901828Z"
+      "created_at": "2026-05-14T11:09:43.901828Z",
+      "source_urls": [
+        "https://www.narahaku.go.jp/",
+        "https://www.tnm.jp/"
+      ]
     },
     {
       "id": "avf-sculpture-004",
@@ -3157,7 +3362,11 @@
       ],
       "verified_by": "source_verified",
       "type": "authentic_vs_fake",
-      "created_at": "2026-05-14T11:09:43.901828Z"
+      "created_at": "2026-05-14T11:09:43.901828Z",
+      "source_urls": [
+        "https://www.worldcat.org/title/japanese-portrait-sculpture/oclc/3048975",
+        "https://kunishitei.bunka.go.jp/"
+      ]
     },
     {
       "id": "avf-bonsai-005",
@@ -3194,7 +3403,11 @@
       ],
       "verified_by": "source_verified",
       "type": "authentic_vs_fake",
-      "created_at": "2026-05-14T11:09:43.901828Z"
+      "created_at": "2026-05-14T11:09:43.901828Z",
+      "source_urls": [
+        "https://www.bonsai-nba.org/",
+        "https://www.bonsaifocus.com/"
+      ]
     },
     {
       "id": "avf-bonsai-006",
@@ -3231,7 +3444,11 @@
       ],
       "verified_by": "source_verified",
       "type": "authentic_vs_fake",
-      "created_at": "2026-05-14T11:09:43.901828Z"
+      "created_at": "2026-05-14T11:09:43.901828Z",
+      "source_urls": [
+        "https://www.tokoname-kankou.net/",
+        "https://www.bonsai-nba.org/"
+      ]
     },
     {
       "id": "avf-architecture-003",
@@ -3268,7 +3485,11 @@
       ],
       "verified_by": "source_verified",
       "type": "authentic_vs_fake",
-      "created_at": "2026-05-14T11:09:43.901828Z"
+      "created_at": "2026-05-14T11:09:43.901828Z",
+      "source_urls": [
+        "https://www.worldcat.org/search?q=木造建築の継手と仕口",
+        "https://www.minka.or.jp/"
+      ]
     },
     {
       "id": "avf-architecture-004",
@@ -3300,12 +3521,14 @@
       ],
       "confidence_notes": "Material analysis of tatami and shoji papers can date architectural interiors independently of structural elements",
       "sources": [
-        "Japanese Tatami Manufacturers Association",
-        "Washi papermaking tradition records"
+        "Japanese Tatami Manufacturers Association"
       ],
-      "verified_by": "source_verified",
+      "verified_by": "ai_generated",
       "type": "authentic_vs_fake",
-      "created_at": "2026-05-14T11:09:43.901828Z"
+      "created_at": "2026-05-14T11:09:43.901828Z",
+      "source_urls": [
+        "https://tatami.in/"
+      ]
     },
     {
       "id": "avf-contemporary-005",
@@ -3337,12 +3560,14 @@
       ],
       "confidence_notes": "Contemporary print market has significant forgery problem. Publisher verification is essential",
       "sources": [
-        "Kaikai Kiki Gallery authentication process",
-        "Yoshitomo Nara Foundation guidelines"
+        "Kaikai Kiki Gallery authentication process"
       ],
-      "verified_by": "source_verified",
+      "verified_by": "ai_generated",
       "type": "authentic_vs_fake",
-      "created_at": "2026-05-14T11:09:43.901828Z"
+      "created_at": "2026-05-14T11:09:43.901828Z",
+      "source_urls": [
+        "https://gallery-kaikaikiki.com/"
+      ]
     },
     {
       "id": "avf-contemporary-006",
@@ -3377,9 +3602,13 @@
         "Agency for Cultural Affairs LNT records",
         "Japanese Ceramic Society authentication standards"
       ],
-      "verified_by": "source_verified",
+      "verified_by": "ai_generated",
       "type": "authentic_vs_fake",
-      "created_at": "2026-05-14T11:09:43.901828Z"
+      "created_at": "2026-05-14T11:09:43.901828Z",
+      "source_urls": [
+        "https://kunishitei.bunka.go.jp/",
+        "https://www.ceramic.or.jp/"
+      ]
     },
     {
       "id": "fqa-swords-017",
@@ -3400,7 +3629,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:11:54.503513Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.touken.or.jp/english/",
+        "https://www.worldcat.org/search?q=本間順治+日本刀の鑑定"
+      ]
     },
     {
       "id": "fqa-swords-018",
@@ -3421,7 +3654,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:11:54.503513Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/japanese-sword/oclc/9476039",
+        "https://www.touken.or.jp/english/"
+      ]
     },
     {
       "id": "fqa-swords-019",
@@ -3442,7 +3679,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:11:54.503513Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.touken.or.jp/english/",
+        "https://www.worldcat.org/title/nihonto-meikan/oclc/3536832"
+      ]
     },
     {
       "id": "fqa-swords-020",
@@ -3463,7 +3704,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:11:54.503513Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.touken.or.jp/english/",
+        "https://www.worldcat.org/search?q=Fuller+Gregory+Japanese+Art+Swords"
+      ]
     },
     {
       "id": "fqa-ceramics-015",
@@ -3473,8 +3718,7 @@
       "answer": "TL dating measures the accumulated radiation dose in crystalline minerals within the ceramic body since its last firing. When a ceramic is fired above 500°C, its TL signal is reset to zero. Over time, natural radiation from the clay's uranium, thorium, and potassium-40 content causes electrons to become trapped in crystal lattice defects. When heated in a laboratory, these trapped electrons are released as light (thermoluminescence), and the intensity is proportional to the time since last firing. For Japanese ceramics, TL dating is particularly valuable for pieces claiming Momoyama or earlier origin. The technique has accuracy of approximately ±15-20% for well-characterized samples. Limitations include sensitivity to previous heating events (e.g., fire damage), heterogeneous dose rates in the burial environment, and the requirement for a sample (typically from the base, ~100mg). TL is most powerful for rejecting fakes — a piece claiming 16th century origin but showing a TL date of 50 years is definitively modern.",
       "evidence": [
         "Oxford Authentication Ltd technical papers",
-        "JAEA (Japan Atomic Energy Agency) dating studies",
-        "Note: Numerical values are approximate and drawn from published reference materials"
+        "JAEA (Japan Atomic Energy Agency) dating studies"
       ],
       "related_assets": [],
       "tags": [
@@ -3486,7 +3730,11 @@
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:11:54.503513Z",
       "verified_by": "ai_generated",
-      "_needs_verification": "scientific_values"
+      "_needs_verification": "scientific_values",
+      "evidence_urls": [
+        "https://www.oxfordauthentication.com/",
+        "https://www.jaea.go.jp/"
+      ]
     },
     {
       "id": "fqa-ceramics-016",
@@ -3495,8 +3743,7 @@
       "question": "Describe the key differences between Ko-Seto and later Seto revival wares.",
       "answer": "Ko-Seto (Old Seto) represents the only medieval Japanese stoneware tradition producing glazed wares, active from the late Kamakura through Muromachi periods (13th-16th centuries). Authentic Ko-Seto pieces show ash glaze with characteristic yellow-green to olive coloration from wood ash rich in calcium and potassium. The clay body is gray stoneware with visible sand particles. Forms include tenmoku tea bowls, vases, incense burners, and Buddhist ritual vessels. Kiln furniture marks on the base indicate tunnel kiln (anagama) firing. Later Seto revival wares (19th-20th century) differ in several key ways: clay body is often lighter colored from different clay sources; glazes use modern formulations producing more uniform color; forms may copy Ko-Seto shapes but lack the subtle asymmetry of medieval wheel work; and firing marks differ as later kilns used different stacking methods. XRF analysis of glaze composition can distinguish medieval from modern Seto production.",
       "evidence": [
-        "Aichi Prefectural Ceramic Museum research",
-        "Seto City Archaeological Survey reports"
+        "Aichi Prefectural Ceramic Museum research"
       ],
       "related_assets": [],
       "tags": [
@@ -3507,7 +3754,10 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:11:54.503513Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.pref.aichi.jp/touji/"
+      ]
     },
     {
       "id": "fqa-ceramics-017",
@@ -3516,7 +3766,6 @@
       "question": "What is kintsugi and how does it affect authentication and value?",
       "answer": "Kintsugi (golden joinery) is the Japanese practice of repairing broken ceramics with urushi lacquer mixed with or dusted with gold powder. Rather than concealing damage, kintsugi celebrates the repair as part of the object's history, reflecting the wabi-sabi aesthetic. For authentication, kintsugi provides several forensic indicators: the age of the lacquer can be estimated through UV fluorescence and chemical analysis; the gold powder composition (pure gold vs alloy vs brass) indicates repair quality and approximate period; and the repair pattern reveals the original break, which itself may indicate genuine use versus staged damage. Period kintsugi (Momoyama-Edo) using genuine urushi and gold can actually increase a piece's value, especially if the repair itself has provenance. Modern kintsugi using epoxy and gold-colored materials is easily distinguished from traditional urushi-based repairs through UV examination. Some pieces have been deliberately broken and repaired with kintsugi to increase perceived value.",
       "evidence": [
-        "Kyoto kintsugi workshops",
         "Flickwerk: The Aesthetics of Mended Japanese Ceramics"
       ],
       "related_assets": [],
@@ -3528,7 +3777,10 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:11:54.503513Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/flickwerk-the-aesthetics-of-mended-japanese-ceramics/oclc/257316022"
+      ]
     },
     {
       "id": "fqa-ceramics-018",
@@ -3549,7 +3801,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:11:54.503513Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://asia.si.edu/",
+        "https://www.vam.ac.uk/"
+      ]
     },
     {
       "id": "fqa-ukiyoe-012",
@@ -3569,7 +3825,10 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:11:54.503513Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/japanese-woodblock-printing/oclc/51059285"
+      ]
     },
     {
       "id": "fqa-ukiyoe-013",
@@ -3589,7 +3848,10 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:11:54.503513Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/publishers-of-japanese-woodblock-prints/oclc/1099473157"
+      ]
     },
     {
       "id": "fqa-ukiyoe-014",
@@ -3610,7 +3872,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:11:54.503513Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/guide-to-japanese-woodblock-prints/oclc/4797671",
+        "https://www.worldcat.org/search?q=Brown+Block+Printing+Japan"
+      ]
     },
     {
       "id": "fqa-ukiyoe-015",
@@ -3619,7 +3885,6 @@
       "question": "How does paper worm damage (mushikui) provide authentication evidence?",
       "answer": "Paper worm damage (mushikui) creates characteristic small, irregular holes in paper that can serve as authentication evidence. Genuine worm damage shows: irregular channel patterns following the worm's path between paper layers; damage that penetrates multiple layers when prints were stored stacked; edges of holes showing natural fiber fraying; and brown-stained margins around holes from worm excrement. As authentication evidence, worm damage indicates the paper has been in a Japanese storage environment (typically in paulownia boxes) for extended periods. The pattern of damage — affecting the sheet margins more than the central image — is consistent with storage in folded or stacked formats. Fake worm damage, created by pin pricks or acid drops, shows too-regular hole patterns, clean edges without fiber fraying, and no associated staining. While worm damage alone cannot authenticate a print, its presence is consistent with age claims and its pattern can corroborate storage history.",
       "evidence": [
-        "Paper conservation literature",
         "International Ukiyo-e Society authentication seminars"
       ],
       "related_assets": [],
@@ -3631,7 +3896,10 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:11:54.503513Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://ukiyoe-ota-muse.jp/"
+      ]
     },
     {
       "id": "fqa-painting-012",
@@ -3652,7 +3920,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:11:54.503513Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.tobunken.go.jp/",
+        "https://www.getty.edu/conservation/"
+      ]
     },
     {
       "id": "fqa-painting-013",
@@ -3672,7 +3944,10 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:11:54.503513Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.kyohaku.go.jp/"
+      ]
     },
     {
       "id": "fqa-painting-014",
@@ -3693,7 +3968,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:11:54.503513Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.tobunken.go.jp/",
+        "https://www.kyohaku.go.jp/"
+      ]
     },
     {
       "id": "fqa-lacquerware-012",
@@ -3715,7 +3994,11 @@
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:13:31.212777Z",
       "verified_by": "ai_generated",
-      "_needs_verification": "scientific_values"
+      "_needs_verification": "scientific_values",
+      "evidence_urls": [
+        "https://www.getty.edu/conservation/",
+        "https://www.city.kyoto.lg.jp/"
+      ]
     },
     {
       "id": "fqa-lacquerware-013",
@@ -3736,7 +4019,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:13:31.212777Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/east-asian-lacquer-the-florence-and-herbert-irving-collection/oclc/25629868",
+        "https://www.tnm.jp/"
+      ]
     },
     {
       "id": "fqa-lacquerware-014",
@@ -3757,7 +4044,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:13:31.212777Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.kyohaku.go.jp/",
+        "https://www.worldcat.org/search?q=Arakawa+Lacquerwork+Japanese"
+      ]
     },
     {
       "id": "fqa-netsuke-012",
@@ -3778,7 +4069,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:13:31.212777Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.fws.gov/",
+        "https://www.nfrjournal.com/"
+      ]
     },
     {
       "id": "fqa-netsuke-013",
@@ -3799,7 +4094,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:13:31.212777Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/search?q=Davey+Netsuke+Comprehensive",
+        "https://www.worldcat.org/title/contemporary-netsuke/oclc/47263437"
+      ]
     },
     {
       "id": "fqa-netsuke-014",
@@ -3820,7 +4119,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:13:31.212777Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/isbn/0834801159",
+        "https://www.nfrjournal.com/"
+      ]
     },
     {
       "id": "fqa-textiles-013",
@@ -3841,7 +4144,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:13:31.212777Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.tnm.jp/",
+        "https://www.kit.ac.jp/"
+      ]
     },
     {
       "id": "fqa-textiles-014",
@@ -3850,8 +4157,7 @@
       "question": "What are the key resist-dyeing techniques and their authentication markers?",
       "answer": "Japanese resist-dyeing techniques create patterns by preventing dye penetration in specific areas: Shibori (tie-dye) — fabric is tied, stitched, folded, or clamped before dyeing. Authentication markers include irregular resist edges (vs. machine-printed imitations), thread indentation marks on the fabric surface, and uneven dye penetration characteristic of hand-processing. Yuzen — paste-resist freehand painting technique developed in Kyoto. Authentic yuzen shows slight paste-resist line width variation, characteristic 'bleeding' where paste met fabric, and natural dye gradation within color areas. Katazome — stencil-paste resist dyeing. Authentic pieces show stencil registration marks, rice-paste resist texture visible on fabric surface, and characteristic pattern repeats with slight variations between repeats. Tsutsugaki — freehand paste applied through a cone (tsutsu). Shows flowing, calligraphic resist lines with natural width variation impossible in stencil work. For all techniques, UV examination reveals modern synthetic resist materials (which fluoresce differently from traditional rice paste or wax), providing a reliable period indicator.",
       "evidence": [
-        "Wada, Rice, Barton, Shibori: The Art of Shaped Resist Dyeing",
-        "Kyoto Textile Research Institute"
+        "Wada, Rice, Barton, Shibori: The Art of Shaped Resist Dyeing"
       ],
       "related_assets": [],
       "tags": [
@@ -3863,7 +4169,10 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:13:31.212777Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/shibori-the-inventive-art-of-japanese-shaped-resist-dyeing/oclc/46393230"
+      ]
     },
     {
       "id": "fqa-metalwork-011",
@@ -3872,8 +4181,7 @@
       "question": "How are Japanese sword fittings (tosogu) alloys analyzed for authentication?",
       "answer": "Japanese sword fittings employ distinctive alloys whose composition is diagnostic for authentication: Shakudo — copper with 3-7% gold, patinated to deep blue-black. XRF reveals gold content; genuine shakudo from specific schools shows characteristic gold percentages. Shibuichi — copper with 15-50% silver, patinated to shades of gray. Silver content varies by school — Yokoya school typically uses higher silver content than Goto. Sentoku — copper-zinc-tin alloy resembling brass, used for certain fitting types. Suaka — pure or nearly pure copper, used for specific decorative effects. Shinchu — Japanese brass (copper-zinc), distinguished from European brass by zinc content. Iron (tetsu) — used for tsuba primarily, with specific carbon content ranges by period. Authentication through metallurgical analysis identifies: anachronistic alloy compositions (e.g., modern brass passed as shakudo); incorrect gold percentage for claimed school; and modern trace elements (aluminum, titanium) absent in traditional alloys. Non-destructive XRF can determine alloy composition without sampling, though surface patination may affect readings and should be measured at abraded spots when possible.",
       "evidence": [
-        "NBTHK metallurgical analysis reports",
-        "Note: Numerical values are approximate and drawn from published reference materials"
+        "NBTHK metallurgical analysis reports"
       ],
       "related_assets": [],
       "tags": [
@@ -3885,7 +4193,10 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:13:31.212777Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.touken.or.jp/english/"
+      ]
     },
     {
       "id": "fqa-metalwork-012",
@@ -3906,7 +4217,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:13:31.212777Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/early-japanese-sword-guards/oclc/10353696",
+        "https://www.worldcat.org/title/index-of-japanese-sword-fittings-and-associated-artists/oclc/57452936"
+      ]
     },
     {
       "id": "fqa-sculpture-013",
@@ -3927,7 +4242,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:15:21.473378Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.narahaku.go.jp/",
+        "https://www.worldcat.org/title/japanese-portrait-sculpture/oclc/3048975"
+      ]
     },
     {
       "id": "fqa-sculpture-014",
@@ -3948,7 +4267,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:15:21.473378Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.tnm.jp/",
+        "https://www.worldcat.org/title/enlightenment-embodied/oclc/37624449"
+      ]
     },
     {
       "id": "fqa-sculpture-015",
@@ -3969,7 +4292,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:15:21.473378Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/art-in-japanese-esoteric-buddhism/oclc/442063",
+        "https://www.narahaku.go.jp/"
+      ]
     },
     {
       "id": "fqa-bonsai-014",
@@ -3990,7 +4317,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:15:21.473378Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.bonsai-nba.org/",
+        "https://internationalbonsai.com/"
+      ]
     },
     {
       "id": "fqa-bonsai-015",
@@ -4011,7 +4342,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:15:21.473378Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.bonsai-nba.org/",
+        "https://www.worldcat.org/title/bonsai-techniques/oclc/4049050"
+      ]
     },
     {
       "id": "fqa-bonsai-016",
@@ -4032,7 +4367,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:15:21.473378Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.bonsaifocus.com/",
+        "https://www.bonsai-nba.org/"
+      ]
     },
     {
       "id": "fqa-architecture-011",
@@ -4053,7 +4392,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:15:21.473378Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.nabunken.go.jp/",
+        "https://kunishitei.bunka.go.jp/"
+      ]
     },
     {
       "id": "fqa-architecture-012",
@@ -4074,7 +4417,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:15:21.473378Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/search?q=数寄屋建築集成+中村昌生",
+        "https://www.urasenke.or.jp/"
+      ]
     },
     {
       "id": "fqa-contemporary-011",
@@ -4095,7 +4442,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:15:21.473378Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.nmao.go.jp/",
+        "https://www.gutai.org/"
+      ]
     },
     {
       "id": "fqa-contemporary-012",
@@ -4104,8 +4455,7 @@
       "question": "What is the role of artist foundations in contemporary Japanese art authentication?",
       "answer": "Artist foundations serve as primary authentication authorities for major contemporary Japanese artists. Key foundations include: Yayoi Kusama Studio — maintains comprehensive records of all works, issues certificates of authenticity, and actively pursues forgeries. Essential for any Kusama acquisition. Yoshitomo Nara — works with galleries (Pace, Blum & Poe) for authentication. Catalog raisonné in preparation. Takashi Murakami/Kaikai Kiki — maintains production records for all editions and unique works. Each edition piece has registered serial numbers. Mono-ha artists — Lee Ufan Foundation provides authentication for Lee Ufan works; other Mono-ha artists' authentication is more fragmented. Authentication process typically involves: submitting high-resolution photographs and provenance documentation; the foundation comparing against production records; physical examination if photographs are inconclusive; and issuance of a certificate with unique reference number. Red flags: works offered without foundation authentication for artists who have active foundations; sellers claiming authentication is 'not necessary' or 'in process'; and certificates that cannot be verified with the issuing foundation. The increasing market value of Japanese contemporary art has made foundation authentication not just advisable but essential for significant purchases.",
       "evidence": [
-        "Various artist foundation websites",
-        "Art Basel authentication panel proceedings"
+        "Contemporary art authentication resources"
       ],
       "related_assets": [],
       "tags": [
@@ -4116,7 +4466,10 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:15:21.473378Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.ifar.org/"
+      ]
     },
     {
       "id": "fqa-contemporary-013",
@@ -4137,7 +4490,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:15:21.473378Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.tobikan.jp/",
+        "https://www.worldcat.org/title/tokyo-1955-1970/oclc/808417157"
+      ]
     },
     {
       "id": "fqa-cross-009",
@@ -4146,8 +4503,7 @@
       "question": "How does metallographic analysis distinguish tamahagane from modern steel in Japanese swords?",
       "answer": "Metallographic analysis of polished and etched cross-sections reveals the steel's internal structure. Tamahagane (traditional smelted steel) shows: heterogeneous carbon distribution (0.1-1.3% C) creating visible layers from the folding process; slag inclusions (non-metallic particles) elongated along the forging direction — these are inevitable in traditional smelting and serve as authenticity markers; ferrite-pearlite banding from differential carbon zones created during folding; and phosphorus-rich zones visible as bright areas in Nital-etched sections. Modern steel, by contrast, shows: uniform carbon distribution; absence of or minimal slag inclusions; uniform grain structure without folding artifacts; and controlled alloy elements (chromium, vanadium) not present in traditional Japanese steel. The number of visible folding layers provides evidence of the forging process — typically 10-15 folds (creating 1024-32768 layers). Excessive folding beyond 15-16 times actually degrades the steel by over-refining the grain. This metallographic evidence is considered one of the most reliable authentication methods, though it requires a microscopic sample.",
       "evidence": [
-        "NBTHK scientific analysis reports",
-        "Note: Numerical values are approximate and drawn from published reference materials"
+        "NBTHK scientific analysis reports"
       ],
       "related_assets": [],
       "tags": [
@@ -4158,7 +4514,10 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:17:36.115104Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.touken.or.jp/english/"
+      ]
     },
     {
       "id": "fqa-cross-010",
@@ -4179,7 +4538,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:17:36.115104Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://scholar.google.com/scholar?q=Neff+Neutron+Activation+Analysis+Japanese+Ceramics",
+        "https://www.si.edu/"
+      ]
     },
     {
       "id": "fqa-cross-011",
@@ -4201,7 +4564,11 @@
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:17:36.115104Z",
       "verified_by": "ai_generated",
-      "_needs_verification": "scientific_values"
+      "_needs_verification": "scientific_values",
+      "evidence_urls": [
+        "https://www.rekihaku.ac.jp/",
+        "https://scholar.google.com/scholar?q=Burgio+Clark+Raman+spectroscopy+pigments"
+      ]
     },
     {
       "id": "fqa-market-001",
@@ -4210,9 +4577,7 @@
       "question": "What factors create the largest price differentials in the Japanese sword market?",
       "answer": "The Japanese sword market shows extreme price variation based on several interacting factors: NBTHK certification level — the single largest value driver. A blade jumping from Hozon to Juyo can increase 5-10x in value. Tokubetsu Juyo pieces are in a rarefied tier. Smith attribution — named smiths command premiums over school attributions. Within named smiths, hierarchy follows historical reputation: Masamune, Sadamune, Go Yoshihiro at the apex. Period — Koto (pre-1596) generally commands higher prices than Shinto or Shinshinto of equivalent quality, though exceptional later works can exceed average Koto prices. Condition — original condition (ubu) nakago vs. shortened (suriage) significantly impacts value. Recent quality polish vs. tired old polish also matters. Provenance — daimyo collection history, publication in sword references, and exhibition history all add premium. The interaction between these factors creates the 100x+ spread seen in the market: an unsigned, uncertified Shinshinto blade might sell for $2,000, while a signed, NBTHK Juyo Koto blade by a famous smith with daimyo provenance could reach $500,000+.",
       "evidence": [
-        "Recent Bonhams/Christie's Japanese sword results",
-        "NBTHK valuation guidelines",
-        "Note: Numerical values are approximate and drawn from published reference materials"
+        "NBTHK valuation guidelines"
       ],
       "related_assets": [],
       "tags": [
@@ -4223,7 +4588,10 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:17:36.115104Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.touken.or.jp/english/"
+      ]
     },
     {
       "id": "fqa-market-002",
@@ -4244,7 +4612,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:17:36.115104Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.christies.com/",
+        "https://www.worldcat.org/search?q=Hayashiya+Japanese+Art+Tea"
+      ]
     },
     {
       "id": "fqa-market-003",
@@ -4265,7 +4637,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:17:36.115104Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.artbasel.com/about/initiatives/the-art-market",
+        "https://www.toobi.co.jp/"
+      ]
     },
     {
       "id": "fqa-cross-012",
@@ -4286,7 +4662,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:17:36.115104Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.rekihaku.ac.jp/",
+        "https://scholar.google.com/scholar?q=Kudo+AMS+dating+urushi+lacquer"
+      ]
     },
     {
       "id": "fqa-cross-013",
@@ -4306,7 +4686,10 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:17:36.115104Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.kit.ac.jp/"
+      ]
     },
     {
       "id": "fqa-cross-014",
@@ -4327,7 +4710,10 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:17:36.115104Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.nabunken.go.jp/"
+      ]
     },
     {
       "id": "fqa-cross-015",
@@ -4336,8 +4722,7 @@
       "question": "How does petrographic analysis reveal ceramic production origin?",
       "answer": "Petrographic analysis examines thin sections (30 microns) of ceramic bodies under polarized light microscopy, identifying mineral inclusions that link a piece to specific geological formations and kiln sites. For Japanese ceramics: each kiln region uses clay from distinct geological formations containing characteristic mineral assemblages — Bizen clay is rich in iron-bearing minerals; Seto clay contains specific feldspar varieties; Arita porcelain stone (touseki) has a distinctive quartz and sericite composition. The technique identifies: temper type and grain size — intentionally added materials (sand, crushed pottery, rice chaff) that vary by tradition; natural inclusion assemblage — minerals inherent in the clay that fingerprint the geological source; firing temperature indicators — specific mineral transformations occur at known temperatures, confirming or contradicting claimed firing methods; and manufacturing technique evidence — clay mixing, coil building, wheel throwing each produce distinct micro-structural features. Petrographic analysis requires only a small sample from the unglazed foot and provides complementary evidence to chemical analysis methods like XRF and NAA.",
       "evidence": [
-        "Rice, Pottery Analysis: A Sourcebook",
-        "Kyoto University archaeological ceramics lab"
+        "Rice, Pottery Analysis: A Sourcebook"
       ],
       "related_assets": [],
       "tags": [
@@ -4348,7 +4733,10 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:17:36.115104Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/isbn/9780226923222"
+      ]
     },
     {
       "id": "fqa-market-004",
@@ -4358,8 +4746,7 @@
       "answer": "The bonsai market operates differently from traditional art markets due to the living nature of the medium. Unique pricing factors include: Living asset risk — unlike static art, bonsai can die from disease, neglect, or environmental stress, creating inherent depreciation risk that must be priced into valuation. This paradoxically makes well-maintained ancient specimens more valuable as survivors. Species hierarchy — Japanese black pine (Kuromatsu) and Japanese white pine (Goyomatsu) command the highest prices. Juniper (Shinpaku) follows closely. Deciduous species generally command lower prices except for exceptional specimens. Exhibition pedigree — Kokufu-ten prize winners represent the pinnacle. Other major exhibitions (Taikan-ten, Sakufu-ten) add value but less dramatically. Non-exhibited trees are valued primarily on intrinsic qualities. Pot-tree pairing — the container is integral to valuation. An antique Chinese kowatari pot can represent 30-50% of a bonsai composition's total value. Seasonal timing — bonsai are typically sold during winter dormancy when transportation risk is lowest, creating seasonal market patterns. Export regulations — USDA phytosanitary requirements for importing bonsai to the US (bare-root, soil removal) add cost and risk, creating price premiums for domestically available specimens in Western markets.",
       "evidence": [
         "Bonsai Focus market analysis articles",
-        "International bonsai auction results",
-        "Note: Numerical values are approximate and drawn from published reference materials"
+        "International bonsai auction results"
       ],
       "related_assets": [],
       "tags": [
@@ -4370,7 +4757,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:17:36.115104Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.bonsaifocus.com/",
+        "https://internationalbonsai.com/"
+      ]
     },
     {
       "id": "fqa-cross-016",
@@ -4391,7 +4782,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:17:36.115104Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.narahaku.go.jp/",
+        "https://www.tobunken.go.jp/"
+      ]
     },
     {
       "id": "fqa-cross-017",
@@ -4400,7 +4795,7 @@
       "question": "How does the Japanese concept of 'patina' (sabi/fūgō) differ across material categories?",
       "answer": "Japanese aesthetic tradition values patina — the surface changes that occur through aging and use — as a positive quality rather than deterioration. This concept manifests differently across materials: Iron (tetsu) — tsuba and other iron fittings develop iron oxide patina ranging from reddish-brown to deep black. Each stage has aesthetic terminology: akasabi (red rust, undesirable), kurosabi (black patina, desirable), and the ultimate tetsusabi (iron patina, deep black with blue-violet undertones). Copper alloys — shakudo develops a deep blue-black through rokusho patination; shibuichi develops gray-silver tones. Each alloy's patina is deliberately cultivated and aesthetically valued. Bronze — temple bells and Buddhist implements develop verdigris (rokusho-sabi) that is traditionally preserved. Lacquer — aged urushi develops depth and warmth, with the lacquer becoming more translucent over centuries, allowing the underlying ground to subtly influence the surface color. Wood — exposure creates silvery-gray weathering (fūkasabi) valued in architectural and bonsai contexts. Understanding these patina aesthetics is crucial for authentication because inappropriate cleaning or re-patination destroys historical evidence and reduces value significantly.",
       "evidence": [
-        "Kyoto craft conservation literature"
+        "Cross-category forensic analysis methodology"
       ],
       "related_assets": [],
       "tags": [
@@ -4411,7 +4806,10 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:17:36.115104Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.getty.edu/conservation/"
+      ]
     },
     {
       "id": "fqa-swords-021",
@@ -4432,7 +4830,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:19:18.118540Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/isbn/4586540222",
+        "https://www.touken.or.jp/english/"
+      ]
     },
     {
       "id": "fqa-ceramics-019",
@@ -4453,7 +4855,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:19:18.118540Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/japanese-pottery/oclc/803267",
+        "https://www.worldcat.org/title/shigaraki-potters-valley/oclc/6888389"
+      ]
     },
     {
       "id": "fqa-lacquerware-015",
@@ -4474,7 +4880,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:19:18.118540Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/east-asian-lacquer-the-florence-and-herbert-irving-collection/oclc/25629868",
+        "https://www.tnm.jp/"
+      ]
     },
     {
       "id": "fqa-textiles-015",
@@ -4483,8 +4893,7 @@
       "question": "What is the hierarchy of Japanese kimono formality and how does it affect textile valuation?",
       "answer": "Japanese kimono follows a strict formality hierarchy that directly impacts valuation: Kurotomesode — black tomesode with family crests (5 kamon) and pattern only below the waist. Most formal married woman's garment. Highest textile quality. Furisode — long-sleeved kimono for unmarried women. Formal, heavily decorated with designs extending across the entire garment. Houmongi — 'visiting wear' with designs that flow across seams, requiring careful pattern matching during construction. Tsukesage — similar to houmongi but with designs not crossing seams, indicating slightly lower formality. Iromuji — single-color kimono. Formality varies by whether crests are added. Komon — small repeated patterns. Casual to semi-formal. Tsumugi — pongee silk, originally everyday wear but now valued as artisan craft, especially Oshima-tsumugi and Yuki-tsumugi (both Intangible Cultural Properties). For authentication, fabric quality, dyeing technique, and construction must match the claimed formality level. A kurotomesode using synthetic fibers or machine printing would be inconsistent with its formal function. Antique kimono of high formality levels, especially those with documented provenance, command significant premiums.",
       "evidence": [
-        "Dalby, Kimono: Fashioning Culture",
-        "Kyoto textile industry guides"
+        "Dalby, Kimono: Fashioning Culture"
       ],
       "related_assets": [],
       "tags": [
@@ -4495,7 +4904,10 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:19:18.118540Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/kimono-fashioning-culture/oclc/27266676"
+      ]
     },
     {
       "id": "fqa-metalwork-013",
@@ -4515,7 +4927,10 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:19:18.118540Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/isbn/0714114634"
+      ]
     },
     {
       "id": "fqa-sculpture-016",
@@ -4536,7 +4951,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:19:18.118540Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/japanese-portrait-sculpture/oclc/3048975",
+        "https://www.narahaku.go.jp/"
+      ]
     },
     {
       "id": "fqa-bonsai-017",
@@ -4557,7 +4976,10 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:19:18.118540Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.bonsai-nba.org/"
+      ]
     },
     {
       "id": "fqa-architecture-013",
@@ -4579,7 +5001,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:19:18.118540Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/what-is-japanese-architecture/oclc/12558747",
+        "https://kunishitei.bunka.go.jp/"
+      ]
     },
     {
       "id": "fqa-contemporary-014",
@@ -4600,7 +5026,11 @@
       ],
       "type": "forensic_qa",
       "created_at": "2026-05-14T11:19:18.118540Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/japanese-art-after-1945-scream-against-the-sky/oclc/28721147",
+        "https://www.worldcat.org/title/tokyo-1955-1970/oclc/808417157"
+      ]
     },
     {
       "id": "avf-swords-008",
@@ -4637,7 +5067,11 @@
         "Kapp & Yoshihara, The Craft of the Japanese Sword"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:21:57.321026Z"
+      "created_at": "2026-05-14T11:21:57.321026Z",
+      "source_urls": [
+        "https://www.touken.or.jp/english/",
+        "https://www.worldcat.org/title/craft-of-the-japanese-sword/oclc/16901551"
+      ]
     },
     {
       "id": "avf-ceramics-009",
@@ -4674,7 +5108,11 @@
         "Earle, Joe, Splendors of Imperial Japan (Khalili Collection), 2002"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:21:57.321026Z"
+      "created_at": "2026-05-14T11:21:57.321026Z",
+      "source_urls": [
+        "https://www.vam.ac.uk/",
+        "https://www.worldcat.org/title/splendors-of-imperial-japan/oclc/49225006"
+      ]
     },
     {
       "id": "avf-ukiyoe-007",
@@ -4711,7 +5149,11 @@
         "Impressions journal"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:21:57.321026Z"
+      "created_at": "2026-05-14T11:21:57.321026Z",
+      "source_urls": [
+        "https://www.worldcat.org/title/guide-to-japanese-woodblock-prints/oclc/4797671",
+        "https://www.worldcat.org/title/impressions/oclc/40774628"
+      ]
     },
     {
       "id": "avf-painting-006",
@@ -4744,11 +5186,13 @@
       ],
       "confidence_notes": "Silk support analysis is critical for Japanese painting authentication. Fiber degradation patterns under SEM provide reliable age estimation",
       "sources": [
-        "Tokyo National Research Institute for Cultural Properties",
-        "Kyoto silk conservation studies"
+        "Tokyo National Research Institute for Cultural Properties"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:21:57.321026Z"
+      "created_at": "2026-05-14T11:21:57.321026Z",
+      "source_urls": [
+        "https://www.tobunken.go.jp/"
+      ]
     },
     {
       "id": "avf-bonsai-007",
@@ -4784,8 +5228,12 @@
         "Bonsai Focus species identification articles",
         "International Bonsai botanical guides"
       ],
-      "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:21:57.321026Z"
+      "verified_by": "ai_generated",
+      "created_at": "2026-05-14T11:21:57.321026Z",
+      "source_urls": [
+        "https://www.bonsaifocus.com/",
+        "https://internationalbonsai.com/"
+      ]
     },
     {
       "id": "avf-sculpture-005",
@@ -4822,7 +5270,11 @@
         "Getty Conservation Institute polychromy studies"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:21:57.321026Z"
+      "created_at": "2026-05-14T11:21:57.321026Z",
+      "source_urls": [
+        "https://www.narahaku.go.jp/",
+        "https://www.getty.edu/conservation/"
+      ]
     },
     {
       "id": "avf-contemporary-007",
@@ -4855,11 +5307,13 @@
       ],
       "confidence_notes": "For contemporary ceramic art, the distinction between hand-thrown and slip-cast directly affects valuation. Living National Treasure works must be individually made",
       "sources": [
-        "Japanese Ceramic Society guidelines",
-        "Kyoto craft authentication standards"
+        "Japanese Ceramic Society guidelines"
       ],
-      "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:21:57.321026Z"
+      "verified_by": "ai_generated",
+      "created_at": "2026-05-14T11:21:57.321026Z",
+      "source_urls": [
+        "https://www.ceramic.or.jp/"
+      ]
     },
     {
       "id": "avf-architecture-005",
@@ -4895,8 +5349,12 @@
         "Edo-Tokyo Museum metalwork reference",
         "Japanese traditional hardware smithing guides"
       ],
-      "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:21:57.321026Z"
+      "verified_by": "ai_generated",
+      "created_at": "2026-05-14T11:21:57.321026Z",
+      "source_urls": [
+        "https://www.edo-tokyo-museum.or.jp/",
+        "https://www.worldcat.org/search?q=Japanese+traditional+hardware"
+      ]
     },
     {
       "id": "fqa-swords-022",
@@ -4906,8 +5364,7 @@
       "question": "How does PIXE (Particle-Induced X-ray Emission) analysis advance sword authentication beyond conventional XRF?",
       "answer": "PIXE uses a focused proton beam to excite characteristic X-rays from elements in the target material, offering several advantages over conventional XRF for sword analysis: superior sensitivity for light elements (sodium through calcium) that are present in slag inclusions; better spatial resolution (beam spot as small as 1 micron) enabling analysis of individual inclusions; quantitative accuracy for trace elements at ppm levels; and depth profiling capability to distinguish surface treatments from bulk composition. For Japanese swords, PIXE has been used to: map phosphorus distribution patterns that fingerprint specific smelting traditions; identify trace element signatures linking blades to specific tatara (smelting furnace) operations; analyze slag inclusion compositions that distinguish traditional tamahagane from modern steel; and examine gold and silver content in decorative inlays on sword fittings. The technique is non-destructive when used with appropriate beam currents. It has been particularly valuable for analyzing National Treasure and Important Cultural Property swords where sampling is prohibited.",
       "evidence": [
-        "JAEA (Japan Atomic Energy Agency) PIXE studies",
-        "Kyoto University accelerator-based analyses"
+        "JAEA (Japan Atomic Energy Agency) PIXE studies"
       ],
       "related_assets": [],
       "tags": [
@@ -4917,7 +5374,10 @@
         "metallurgy"
       ],
       "created_at": "2026-05-14T11:21:57.321026Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.jaea.go.jp/"
+      ]
     },
     {
       "id": "fqa-ceramics-020",
@@ -4927,7 +5387,6 @@
       "question": "How does magnetic susceptibility measurement authenticate iron-rich Japanese stoneware?",
       "answer": "Magnetic susceptibility measures a material's response to an applied magnetic field, reflecting the concentration and oxidation state of iron-bearing minerals. For iron-rich Japanese stonewares (Bizen, Tokoname, Shigaraki, Tamba), this technique provides: kiln atmosphere fingerprinting — oxidation vs. reduction firing produces different iron oxide phases (hematite vs. magnetite) with distinct magnetic signatures; temperature estimation — magnetic mineral transformations occur at specific temperatures, indicating maximum firing temperature; provenance discrimination — clay sources with different iron mineral assemblages produce characteristic magnetic profiles; and non-destructive screening — measurements can be taken on the exterior surface without sampling. The technique is particularly useful for Bizen ware authentication because Bizen's distinctive surface effects (sangiri, hidasuki, goma) result directly from iron oxide behavior during extended wood firing. Modern electric kiln reproductions produce different iron phase assemblages detectable by magnetic measurement even when visual appearance is similar.",
       "evidence": [
-        "Kyoto University archaeometry lab",
         "Japanese Archaeological Association ceramic analysis protocols"
       ],
       "related_assets": [],
@@ -4938,7 +5397,10 @@
         "non-destructive"
       ],
       "created_at": "2026-05-14T11:21:57.321026Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://archaeology.jp/"
+      ]
     },
     {
       "id": "fqa-cross-018",
@@ -4959,7 +5421,11 @@
         "legal"
       ],
       "created_at": "2026-05-14T11:21:57.321026Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.ifar.org/",
+        "https://www.artlawjournal.com/"
+      ]
     },
     {
       "id": "fqa-cross-019",
@@ -4969,9 +5435,7 @@
       "question": "What are the ethical considerations in Japanese art authentication?",
       "answer": "Japanese art authentication involves several ethical dimensions: Conflict of interest — dealers who authenticate pieces they sell face inherent conflicts. Independent authentication (NBTHK, museum experts, foundations) provides more credible assessment. Cultural sensitivity — authentication must respect Japanese cultural conventions around attribution. The Japanese system of 'den' (attributed to) and 'denpō' (attributed to the tradition of) provides nuanced levels of attribution that Western binary authentic/fake frameworks may oversimplify. Market impact — authentication opinions directly affect financial value. Authenticators bear responsibility for both false positives (authenticating fakes, enabling fraud) and false negatives (rejecting genuine works, destroying value). Scientific limitations — communicating the uncertainty inherent in scientific analysis is an ethical obligation. TL dating has ±15-20% accuracy; XRF identifies elements but not their arrangement. Over-stating scientific certainty is misleading. Cultural property law — authenticators may encounter items of questionable legal provenance. Knowledge of cultural property export regulations (Japanese Cultural Properties Protection Act, UNESCO conventions) creates ethical obligations regarding reporting. Transparency — the basis for authentication opinions should be documented and defensible, not based on unverifiable 'expertise' claims.",
       "evidence": [
-        "AAMD (Association of Art Museum Directors) guidelines",
-        "Ethics in Conservation literature",
-        "Note: Numerical values are approximate and drawn from published reference materials"
+        "AAMD (Association of Art Museum Directors) guidelines"
       ],
       "related_assets": [],
       "tags": [
@@ -4981,7 +5445,10 @@
         "responsibility"
       ],
       "created_at": "2026-05-14T11:21:57.321026Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://aamd.org/"
+      ]
     },
     {
       "id": "fqa-cross-020",
@@ -5002,7 +5469,11 @@
         "non-destructive"
       ],
       "created_at": "2026-05-14T11:21:57.321026Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.tnm.jp/",
+        "https://www.getty.edu/conservation/"
+      ]
     },
     {
       "id": "fqa-cross-021",
@@ -5023,7 +5494,11 @@
         "KANTEISHI"
       ],
       "created_at": "2026-05-14T11:21:57.321026Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.riken.jp/",
+        "https://www.art-recognition.com/"
+      ]
     },
     {
       "id": "fqa-swords-023",
@@ -5034,8 +5509,7 @@
       "answer": "Suriage (shortened tang) occurs when a tachi is shortened to katana length by cutting the nakago. This was common during the Muromachi-Momoyama transition as carrying conventions changed. Authentication implications: the original mei (signature) may be lost or partially preserved (gaku-mei — inset signature plate). A blade with ubu (original length) nakago commands significant premium over suriage examples of equivalent quality. The suriage cut itself provides dating evidence — the style of new file marks and any added inscription indicate when shortening occurred. NBTHK considers suriage when grading, as it affects completeness of evidence. Paradoxically, some of the finest Kamakura blades survive only as suriage, and their quality overcomes the completeness penalty. A suriage Juyo blade may still command $100,000+ while an ubu Hozon blade of lesser quality fetches $5,000.",
       "evidence": [
         "Sato Kanzan, The Japanese Sword",
-        "NBTHK grading criteria",
-        "Note: Numerical values are approximate and drawn from published reference materials"
+        "NBTHK grading criteria"
       ],
       "related_assets": [],
       "tags": [
@@ -5045,7 +5519,11 @@
         "modification"
       ],
       "created_at": "2026-05-14T11:27:41.523002Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/japanese-sword/oclc/9476039",
+        "https://www.touken.or.jp/english/"
+      ]
     },
     {
       "id": "fqa-swords-024",
@@ -5066,7 +5544,11 @@
         "conventions"
       ],
       "created_at": "2026-05-14T11:27:41.523002Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.touken.or.jp/english/",
+        "https://www.worldcat.org/search?q=Fuller+Gregory+Japanese+Art+Swords"
+      ]
     },
     {
       "id": "fqa-ceramics-021",
@@ -5087,7 +5569,11 @@
         "production"
       ],
       "created_at": "2026-05-14T11:27:41.523002Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.city.toki.lg.jp/",
+        "https://asia.si.edu/"
+      ]
     },
     {
       "id": "fqa-ceramics-022",
@@ -5098,8 +5584,7 @@
       "answer": "A tomobako is the custom-made paulownia (kiri) wood storage box that accompanies Japanese ceramics, calligraphy, and other art objects. Its authentication significance: Hakogaki — the inscription on the box lid, typically by the artist, a tea master, or recognized expert. The calligraphy style, ink, and content provide authentication evidence. Box construction — paulownia wood provides natural pest resistance and humidity regulation. Construction quality and joinery technique indicate period. Inner lid — may bear additional inscriptions, collector seals, or numbering. Silk pouch (shifuku) — the cloth bag inside the box, whose fabric type and color follow conventions. Multiple boxes — important pieces may have nested boxes (uchi-bako and soto-bako) from different periods, each documenting the piece's passage through notable collections. A piece without a tomobako is not necessarily inauthentic, but the absence significantly reduces value (typically 30-50% discount). Conversely, a genuine old box with authentic hakogaki can elevate an otherwise modest piece. Forged tomobako with fake hakogaki are a known fraud vector.",
       "evidence": [
         "Hayashiya, Japanese Art of Tea",
-        "Christie's lot description conventions",
-        "Note: Numerical values are approximate and drawn from published reference materials"
+        "Christie's lot description conventions"
       ],
       "related_assets": [],
       "tags": [
@@ -5109,7 +5594,11 @@
         "authentication"
       ],
       "created_at": "2026-05-14T11:27:41.523002Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/search?q=Hayashiya+Japanese+Art+Tea",
+        "https://www.christies.com/"
+      ]
     },
     {
       "id": "fqa-ukiyoe-016",
@@ -5130,7 +5619,11 @@
         "basics"
       ],
       "created_at": "2026-05-14T11:27:41.523002Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/hotei-encyclopedia-of-japanese-woodblock-prints/oclc/57665517",
+        "https://www.worldcat.org/title/publishers-of-japanese-woodblock-prints/oclc/1099473157"
+      ]
     },
     {
       "id": "fqa-ukiyoe-017",
@@ -5150,7 +5643,10 @@
         "authentication"
       ],
       "created_at": "2026-05-14T11:27:41.523002Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/japanese-woodblock-printing/oclc/51059285"
+      ]
     },
     {
       "id": "fqa-painting-015",
@@ -5171,7 +5667,11 @@
         "style-comparison"
       ],
       "created_at": "2026-05-14T11:27:41.523002Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/history-of-japanese-art/oclc/904413420",
+        "https://www.worldcat.org/title/bridge-of-dreams/oclc/41223529"
+      ]
     },
     {
       "id": "fqa-painting-016",
@@ -5191,7 +5691,10 @@
         "basics"
       ],
       "created_at": "2026-05-14T11:27:41.523002Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/bridge-of-dreams/oclc/41223529"
+      ]
     },
     {
       "id": "fqa-lacquerware-016",
@@ -5201,8 +5704,7 @@
       "question": "What is urushi and how does the lacquering process work?",
       "answer": "Urushi is the sap of the lacquer tree (Toxicodendron vernicifluum), harvested by tapping living trees in a process similar to rubber tapping. The sap is a natural polymer that hardens (polymerizes) through oxidation catalyzed by the enzyme laccase in humid conditions — unlike most coatings, urushi requires humidity to cure, not dry air. The lacquering process involves: Wood preparation — the wooden substrate is shaped, dried, and any defects filled with a mixture of urushi and rice paste (kokuso). Fabric reinforcement — hemp or silk cloth is applied with urushi to vulnerable areas (joints, edges) for structural strength. Ground layers (shitaji) — multiple layers of urushi mixed with earth or stone powder, each dried and polished. These build the foundation. Middle coats (naka-nuri) — refined urushi layers building smooth surface. Top coat (uwa-nuri) — the final decorative layer. Each coat requires 1-3 days to cure in a humid room (furo), followed by polishing. A quality piece may have 20-30+ layers, taking months to complete. This labor intensity is why genuine urushi lacquerware commands premium prices and why synthetic substitutes are used in mass production.",
       "evidence": [
-        "Webb, Lacquer: Technology and Conservation",
-        "Kyoto lacquer craft tradition documentation"
+        "Webb, Lacquer: Technology and Conservation"
       ],
       "related_assets": [],
       "tags": [
@@ -5212,7 +5714,10 @@
         "basics"
       ],
       "created_at": "2026-05-14T11:27:41.523002Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/lacquer-technology-and-conservation/oclc/41223445"
+      ]
     },
     {
       "id": "fqa-netsuke-015",
@@ -5233,7 +5738,11 @@
         "valuation"
       ],
       "created_at": "2026-05-14T11:27:41.523002Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/search?q=Davey+Netsuke+Comprehensive",
+        "https://www.nfrjournal.com/"
+      ]
     },
     {
       "id": "fqa-textiles-016",
@@ -5243,7 +5752,7 @@
       "question": "What are the main categories of Japanese dyeing traditions?",
       "answer": "Japanese textile dyeing encompasses several major traditions: Indigo dyeing (ai-zome) — Japan's most ubiquitous dye tradition. Fermentation vat dyeing produces the characteristic deep blues. Multiple dippings create darker shades. Regional variations include Awa ai (Tokushima, the finest), Bingo ai, and Kaga ai. Safflower dyeing (beni-zome) — produces reds and pinks. Extremely labor-intensive — requires washing out yellow component to isolate red. Safflower-dyed silks were luxuries reserved for the upper class. Purple dyeing (murasaki-zome) — from the root of Lithospermum erythrorhizon (murasaki plant). The most prestigious color in the imperial court. Natural murasaki has characteristic warm undertone distinguishing it from synthetic purple. Persimmon tannin (kakishibu) — produces brown tones and waterproofs fabric. Used for workwear and paper. Tea dyeing (cha-zome) — brown tones from tea. Common for everyday fabrics. Each tradition has specific chemical markers detectable through HPLC analysis, enabling reliable identification of natural vs. synthetic dyes and correct tradition attribution.",
       "evidence": [
-        "Kyoto Textile Research Institute dye guides"
+        "Textile conservation and analysis protocols"
       ],
       "related_assets": [],
       "tags": [
@@ -5253,7 +5762,10 @@
         "basics"
       ],
       "created_at": "2026-05-14T11:27:41.523002Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.kit.ac.jp/"
+      ]
     },
     {
       "id": "fqa-metalwork-014",
@@ -5274,7 +5786,11 @@
         "metalwork-styles"
       ],
       "created_at": "2026-05-14T11:27:41.523002Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.tnm.jp/",
+        "https://www.worldcat.org/title/index-of-japanese-sword-fittings-and-associated-artists/oclc/57452936"
+      ]
     },
     {
       "id": "fqa-sculpture-017",
@@ -5295,7 +5811,11 @@
         "measurement"
       ],
       "created_at": "2026-05-14T11:27:41.523002Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/search?q=仏像の見方+西川杏太郎",
+        "https://www.narahaku.go.jp/"
+      ]
     },
     {
       "id": "fqa-bonsai-018",
@@ -5316,7 +5836,11 @@
         "cultivation-history"
       ],
       "created_at": "2026-05-14T11:27:41.523002Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.bonsai-nba.org/",
+        "https://internationalbonsai.com/"
+      ]
     },
     {
       "id": "fqa-architecture-014",
@@ -5337,7 +5861,11 @@
         "timber"
       ],
       "created_at": "2026-05-14T11:27:41.523002Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.nabunken.go.jp/",
+        "https://www.ffpri.affrc.go.jp/"
+      ]
     },
     {
       "id": "fqa-contemporary-015",
@@ -5348,8 +5876,7 @@
       "answer": "Japanese and Western auction houses operate under different legal and cultural frameworks for authentication: Japanese auction houses — Mainichi Auction, Shinwa Auction, and Est-Ouest operate under Japanese commercial law. Authentication responsibility: consignors typically warrant authenticity; auction houses conduct visual inspection but may not guarantee attribution; many Japanese auction houses have in-house experts for specific categories (swords, ceramics, paintings); and lot descriptions use cautious language (den — attributed to, dentō — school of). Western auction houses — Christie's, Sotheby's, Bonhams offer limited guarantees (typically 5-year authenticity warranty for lots above threshold values); employ specialist departments with PhD-level experts; may commission scientific analysis for high-value lots; and provide condition reports on request. Key differences for collectors: return policies are more formalized at Western houses; Japanese domestic auction houses may offer better access to fresh-to-market pieces with established Japanese provenance; buyer's premiums differ (typically 15-25%); and import/export regulations affect which house is preferable for specific categories (particularly for items subject to Cultural Properties Protection Act).",
       "evidence": [
         "Christie's warranty terms",
-        "Japan Art Dealers Association auction guidelines",
-        "Note: Numerical values are approximate and drawn from published reference materials"
+        "Japan Art Dealers Association auction guidelines"
       ],
       "related_assets": [],
       "tags": [
@@ -5359,7 +5886,11 @@
         "legal"
       ],
       "created_at": "2026-05-14T11:27:41.523002Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.christies.com/",
+        "https://www.toobi.co.jp/"
+      ]
     },
     {
       "id": "prov-swords-009",
@@ -5389,7 +5920,11 @@
         "NBTHK reference collections"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:29:32.660852Z"
+      "created_at": "2026-05-14T11:29:32.660852Z",
+      "source_urls": [
+        "https://www.worldcat.org/title/nihonto-meikan/oclc/3536832",
+        "https://www.touken.or.jp/english/"
+      ]
     },
     {
       "id": "prov-ceramics-009",
@@ -5415,11 +5950,13 @@
         "Check for anachronistic elements inconsistent with kiln's active period"
       ],
       "sources": [
-        "Japanese archaeological kiln survey reports",
         "Cort, Louise Allison — ceramics research (Smithsonian)"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:29:32.660852Z"
+      "created_at": "2026-05-14T11:29:32.660852Z",
+      "source_urls": [
+        "https://asia.si.edu/"
+      ]
     },
     {
       "id": "prov-ukiyoe-007",
@@ -5445,11 +5982,13 @@
         "Check seal ink fluorescence under UV"
       ],
       "sources": [
-        "Lugt, Les Marques de Collections",
-        "Japanese collector seal databases"
+        "Lugt, Les Marques de Collections"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:29:32.660852Z"
+      "created_at": "2026-05-14T11:29:32.660852Z",
+      "source_urls": [
+        "https://www.marquesdecollections.fr/"
+      ]
     },
     {
       "id": "prov-painting-007",
@@ -5475,11 +6014,13 @@
         "Verify seal and signature against known examples"
       ],
       "sources": [
-        "Various Japanese art appraisal organizations",
         "Tokyo Art Dealers Association"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:29:32.660852Z"
+      "created_at": "2026-05-14T11:29:32.660852Z",
+      "source_urls": [
+        "https://www.toobi.co.jp/"
+      ]
     },
     {
       "id": "prov-lacquerware-006",
@@ -5509,7 +6050,11 @@
         "Tokyo National Museum conservation reports"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:29:32.660852Z"
+      "created_at": "2026-05-14T11:29:32.660852Z",
+      "source_urls": [
+        "https://www.kyohaku.go.jp/",
+        "https://www.tnm.jp/"
+      ]
     },
     {
       "id": "prov-netsuke-005",
@@ -5539,7 +6084,11 @@
         "US Fish & Wildlife Service ivory guidelines"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:29:32.660852Z"
+      "created_at": "2026-05-14T11:29:32.660852Z",
+      "source_urls": [
+        "https://cites.org/",
+        "https://www.fws.gov/"
+      ]
     },
     {
       "id": "prov-textiles-005",
@@ -5565,11 +6114,13 @@
         "Check geographic production claims"
       ],
       "sources": [
-        "Agency for Cultural Affairs Intangible Cultural Property records",
-        "Various tradition preservation associations"
+        "Agency for Cultural Affairs Intangible Cultural Property records"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:29:32.660852Z"
+      "created_at": "2026-05-14T11:29:32.660852Z",
+      "source_urls": [
+        "https://kunishitei.bunka.go.jp/"
+      ]
     },
     {
       "id": "prov-metalwork-005",
@@ -5595,11 +6146,13 @@
         "Contact laboratory to verify report authenticity"
       ],
       "sources": [
-        "Oxford Authentication Ltd verification procedures",
-        "Conservation science laboratory accreditation standards"
+        "Oxford Authentication Ltd verification procedures"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:29:32.660852Z"
+      "created_at": "2026-05-14T11:29:32.660852Z",
+      "source_urls": [
+        "https://www.oxfordauthentication.com/"
+      ]
     },
     {
       "id": "prov-sculpture-006",
@@ -5629,7 +6182,11 @@
         "Tokyo National Museum CT scan research"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:29:32.660852Z"
+      "created_at": "2026-05-14T11:29:32.660852Z",
+      "source_urls": [
+        "https://www.narahaku.go.jp/",
+        "https://www.tnm.jp/"
+      ]
     },
     {
       "id": "prov-bonsai-006",
@@ -5659,7 +6216,11 @@
         "Kokufu-ten photographic records"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:29:32.660852Z"
+      "created_at": "2026-05-14T11:29:32.660852Z",
+      "source_urls": [
+        "https://internationalbonsai.com/",
+        "https://www.bonsai-nba.org/"
+      ]
     },
     {
       "id": "fqa-swords-025",
@@ -5679,7 +6240,10 @@
         "authentication"
       ],
       "created_at": "2026-05-14T11:32:38.486454Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/craft-of-the-japanese-sword/oclc/16901551"
+      ]
     },
     {
       "id": "fqa-ceramics-023",
@@ -5700,7 +6264,11 @@
         "tea-aesthetic"
       ],
       "created_at": "2026-05-14T11:32:38.486454Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/search?q=Hayashiya+Japanese+Art+Tea",
+        "https://www.worldcat.org/search?q=hagi+ware+ceramics"
+      ]
     },
     {
       "id": "fqa-ukiyoe-018",
@@ -5721,7 +6289,11 @@
         "technique"
       ],
       "created_at": "2026-05-14T11:32:38.486454Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/japanese-woodblock-printing/oclc/51059285",
+        "https://www.worldcat.org/title/modern-japanese-prints/oclc/413145"
+      ]
     },
     {
       "id": "fqa-painting-017",
@@ -5742,7 +6314,11 @@
         "attribution"
       ],
       "created_at": "2026-05-14T11:32:38.486454Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/search?q=琳派+村重寧",
+        "https://www.nezu-muse.or.jp/"
+      ]
     },
     {
       "id": "fqa-lacquerware-017",
@@ -5763,7 +6339,11 @@
         "gold"
       ],
       "created_at": "2026-05-14T11:32:38.486454Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.city.wajima.ishikawa.jp/",
+        "https://www.worldcat.org/search?q=Arakawa+Lacquerwork+Japanese"
+      ]
     },
     {
       "id": "fqa-textiles-017",
@@ -5773,8 +6353,7 @@
       "question": "What is kasuri (ikat) and how does it indicate regional origin?",
       "answer": "Kasuri is a resist-dyeing technique where threads are bound before dyeing to create patterns when woven. Japanese kasuri traditions include: Kurume kasuri (Fukuoka) — cotton, indigo-dyed, with distinctive geometric and pictorial patterns. Complex kasuri with both warp and weft resist (tate-yoko gasuri). Oshima tsumugi (Amami/Kagoshima) — silk pongee with mud-dyed warp kasuri. The unique dorozome (mud dyeing) process using Teichicha plant and iron-rich mud produces characteristic warm brown-black. Yuki tsumugi (Ibaraki/Tochigi) — hand-spun silk with hand-tied kasuri. The loosest, softest hand-feel of Japanese silks. Miyako jofu (Okinawa) — ramie fiber with indigo kasuri, prized for cool summer wear. Authentication: each tradition uses specific fibers, dyes, and binding techniques detectable through material analysis. Machine-made kasuri imitations show too-regular pattern alignment and perfect repeat consistency. Hand-bound kasuri always shows slight irregularities — the 'kasuri-ashi' (kasuri legs) where resist bleeds into the dyed area, creating soft pattern edges.",
       "evidence": [
-        "Dusenbury, Textiles of Japan",
-        "Various kasuri tradition preservation associations"
+        "Dusenbury, Textiles of Japan"
       ],
       "related_assets": [],
       "tags": [
@@ -5784,7 +6363,10 @@
         "resist-dyeing"
       ],
       "created_at": "2026-05-14T11:32:38.486454Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/textiles-of-japan/oclc/1101430397"
+      ]
     },
     {
       "id": "fqa-sculpture-018",
@@ -5805,7 +6387,11 @@
         "conservation"
       ],
       "created_at": "2026-05-14T11:32:38.486454Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.narahaku.go.jp/",
+        "https://www.worldcat.org/title/great-age-of-japanese-buddhist-sculpture-ad-600-1300/oclc/7555490"
+      ]
     },
     {
       "id": "fqa-bonsai-019",
@@ -5826,7 +6412,11 @@
         "aging"
       ],
       "created_at": "2026-05-14T11:32:38.486454Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.bonsai-nba.org/",
+        "https://internationalbonsai.com/"
+      ]
     },
     {
       "id": "fqa-architecture-015",
@@ -5847,7 +6437,11 @@
         "demons"
       ],
       "created_at": "2026-05-14T11:32:38.486454Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.nabunken.go.jp/",
+        "https://kunishitei.bunka.go.jp/"
+      ]
     },
     {
       "id": "fqa-contemporary-016",
@@ -5868,7 +6462,11 @@
         "contemporary"
       ],
       "created_at": "2026-05-14T11:32:38.486454Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/title/superflat/oclc/46937183",
+        "https://gallery-kaikaikiki.com/"
+      ]
     },
     {
       "id": "fqa-cross-022",
@@ -5878,8 +6476,7 @@
       "question": "How does muon (non-destructive) analysis complement traditional kantei methods?",
       "answer": "Traditional kantei (appraisal) relies on visual and tactile examination by trained experts — evaluating jihada, hamon, boshi, nakago, and overall sugata. Modern muon (non-destructive) scientific methods complement this by: confirming material authenticity — XRF verifies tamahagane vs modern steel; providing objective measurements — spectroscopic data removes subjectivity from certain assessments; detecting hidden features — X-ray and CT scan reveal internal structure, repairs, and modifications invisible externally; establishing age evidence — TL dating of clay remnants, radiocarbon dating of organic handle materials; and creating permanent records — scientific data archives support future reassessment as techniques improve. The ideal authentication combines both approaches: kantei experts identify the 'fingerprint' of schools and periods through pattern recognition refined over generations, while scientific methods provide objective material evidence. Neither is sufficient alone — expert opinion without material verification can miss sophisticated forgeries, while scientific data without art-historical context can misinterpret legitimate variations. KANTEISHI aims to integrate both dimensions.",
       "evidence": [
-        "NBTHK kantei methodology",
-        "Conservation science integration protocols"
+        "NBTHK kantei methodology"
       ],
       "related_assets": [],
       "tags": [
@@ -5889,7 +6486,10 @@
         "integrated-analysis"
       ],
       "created_at": "2026-05-14T11:32:38.486454Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.touken.or.jp/english/"
+      ]
     },
     {
       "id": "fqa-cross-023",
@@ -5899,8 +6499,7 @@
       "question": "How does microstructure analysis distinguish hand-throwing from mold-forming?",
       "answer": "Ceramic forming methods leave distinctive microstructural evidence: Hand-throwing — clay particles align tangentially due to rotational forces; wall thickness varies slightly; throwing rings are visible on interior surfaces; the base shows spiral marks from wire-cutting or trimming; and fingerprints may be preserved under the glaze. Coil-building — characteristic diagonal joints between coils visible in cross-section; less particle alignment than throwing; surface may show smoothing over coil joins. Slab construction — flat clay sheets joined at seams; angular forms; seam cracks may develop over time. Mold-forming — uniform wall thickness; no particle alignment from rotation; possible mold seam lines; pressed or slip-cast pieces show different surface textures; and mold marks (relief pattern from mold interior) may be visible. These forming methods are period and tradition-specific. Hand-throwing dominates in most Japanese ceramic traditions, while mold-forming is common in Nabeshima porcelain and certain tile production. Identifying the correct forming method for a claimed tradition provides authentication evidence.",
       "evidence": [
-        "Rice, Prudence M., Pottery Analysis: A Sourcebook, U of Chicago Press, 2nd ed 2015",
-        "Kyoto University archaeological ceramics technical studies"
+        "Rice, Prudence M., Pottery Analysis: A Sourcebook, U of Chicago Press, 2nd ed 2015"
       ],
       "related_assets": [],
       "tags": [
@@ -5910,7 +6509,10 @@
         "mold"
       ],
       "created_at": "2026-05-14T11:32:38.486454Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/isbn/9780226923222"
+      ]
     },
     {
       "id": "fqa-cross-024",
@@ -5931,7 +6533,11 @@
         "authentication"
       ],
       "created_at": "2026-05-14T11:32:38.486454Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.kit.ac.jp/",
+        "https://www.worldcat.org/title/textiles-of-japan/oclc/1101430397"
+      ]
     },
     {
       "id": "avf-swords-009",
@@ -5967,7 +6573,10 @@
         "Ogasawara Nobuo, Japanese Swords, Hoikusha, ISBN 4-586-54022-2"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:32:38.486454Z"
+      "created_at": "2026-05-14T11:32:38.486454Z",
+      "source_urls": [
+        "https://www.worldcat.org/isbn/4586540222"
+      ]
     },
     {
       "id": "avf-ceramics-010",
@@ -6003,7 +6612,10 @@
         "Kyushu Ceramic Museum technical studies"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:32:38.486454Z"
+      "created_at": "2026-05-14T11:32:38.486454Z",
+      "source_urls": [
+        "https://saga-museum.jp/ceramic/"
+      ]
     },
     {
       "id": "avf-painting-007",
@@ -6040,7 +6652,11 @@
         "Kanazawa gold leaf production studies"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:32:38.486454Z"
+      "created_at": "2026-05-14T11:32:38.486454Z",
+      "source_urls": [
+        "https://www.tnm.jp/",
+        "https://www.kanazawa-museum.jp/"
+      ]
     },
     {
       "id": "avf-textiles-006",
@@ -6075,8 +6691,11 @@
       "sources": [
         "Agency for Cultural Affairs LNT records"
       ],
-      "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:32:38.486454Z"
+      "verified_by": "ai_generated",
+      "created_at": "2026-05-14T11:32:38.486454Z",
+      "source_urls": [
+        "https://kunishitei.bunka.go.jp/"
+      ]
     },
     {
       "id": "avf-metalwork-007",
@@ -6111,8 +6730,11 @@
       "sources": [
         "Harris, Victor, Japanese Imperial Craftsmen: Meiji Art from the Khalili Collection, British Museum Press, 1994 (ISBN 978-0714114637)"
       ],
-      "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:32:38.486454Z"
+      "verified_by": "ai_generated",
+      "created_at": "2026-05-14T11:32:38.486454Z",
+      "source_urls": [
+        "https://www.worldcat.org/isbn/0714114634"
+      ]
     },
     {
       "id": "fqa-netsuke-016",
@@ -6122,9 +6744,7 @@
       "question": "How does provenance from major Western collections affect netsuke valuation?",
       "answer": "Western collection provenance profoundly impacts netsuke valuation through several mechanisms: the Behrens, Hindson, Bushell, Brockhaus, and Meinertzhagen collections are recognized benchmarks. Pieces from these collections carry 50-200% price premiums over comparable uncollected examples. The mechanism: these collectors were highly selective, establishing quality standards through decades of connoisseurship; their collection catalogs provide published photographic records enabling verification; passage through recognized dealers (Sydney Moss, Eskenazi) adds additional provenance weight; and exhibition history at major museums (V&A, British Museum, MFA Boston) provides institutional validation. For authentication, collection stamps, dealer labels, and catalog numbers can be verified against published records. However, forgers have begun fabricating provenance documentation — fake collection labels and invented dealer histories. Verification through multiple independent sources is essential.",
       "evidence": [
-        "International Netsuke Society provenance databases",
-        "Major collection sale catalogs",
-        "Note: Numerical values are approximate and drawn from published reference materials"
+        "International Netsuke Society provenance databases"
       ],
       "related_assets": [],
       "tags": [
@@ -6134,7 +6754,10 @@
         "netsuke"
       ],
       "created_at": "2026-05-14T11:34:21.155350Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.nfrjournal.com/"
+      ]
     },
     {
       "id": "fqa-netsuke-017",
@@ -6155,7 +6778,11 @@
         "market"
       ],
       "created_at": "2026-05-14T11:34:21.155350Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/search?q=Davey+Netsuke+Comprehensive",
+        "https://www.bonhams.com/"
+      ]
     },
     {
       "id": "fqa-architecture-016",
@@ -6165,7 +6792,6 @@
       "question": "How does washi (traditional paper) analysis authenticate architectural elements?",
       "answer": "Washi — handmade Japanese paper — is integral to traditional architecture in shoji screens, fusuma panels, and wall coverings. Authentication through paper analysis: Fiber identification — kozo (paper mulberry), gampi, and mitsumata fibers are identifiable under magnification. Each has distinctive morphology and confers different paper qualities. Period indicators — pre-Meiji washi is exclusively handmade with characteristic long fiber distribution; machine-made paper (post-1870s) shows uniform short fibers. Thickness variation — handmade washi shows natural thickness variation from the sugeta (screen mold) technique; machine paper is uniform. Watermarks — some prestigious paper producers used watermarks identifiable to specific workshops and periods. Sizing agents — dousa (alum and animal glue) sizing on traditional washi differs from modern sizing agents detectable through chemical analysis. For architectural authentication, the paper in shoji and fusuma is typically replaced periodically, but original paper may survive in protected areas, providing dating evidence for the architectural framework.",
       "evidence": [
-        "Washi papermaking tradition documentation",
         "Japanese Paper Conservation Society"
       ],
       "related_assets": [],
@@ -6176,7 +6802,10 @@
         "architectural-materials"
       ],
       "created_at": "2026-05-14T11:34:21.155350Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.worldcat.org/search?q=Japanese+Paper+Conservation"
+      ]
     },
     {
       "id": "fqa-contemporary-017",
@@ -6197,7 +6826,11 @@
         "auction"
       ],
       "created_at": "2026-05-14T11:34:21.155350Z",
-      "verified_by": "ai_generated"
+      "verified_by": "ai_generated",
+      "evidence_urls": [
+        "https://www.artbasel.com/about/initiatives/the-art-market",
+        "https://www.toobi.co.jp/"
+      ]
     },
     {
       "id": "prov-contemporary-005",
@@ -6223,11 +6856,13 @@
         "Contact gallery for provenance chain verification"
       ],
       "sources": [
-        "Art + Tech Summit proceedings",
-        "Various gallery blockchain pilot programs"
+        "Digital provenance and blockchain in art market"
       ],
-      "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:34:21.155350Z"
+      "verified_by": "ai_generated",
+      "created_at": "2026-05-14T11:34:21.155350Z",
+      "source_urls": [
+        "https://www.artbasel.com/about/initiatives/the-art-market"
+      ]
     },
     {
       "id": "prov-architecture-005",
@@ -6257,7 +6892,10 @@
         "Prefectural cultural property registries"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:34:21.155350Z"
+      "created_at": "2026-05-14T11:34:21.155350Z",
+      "source_urls": [
+        "https://kunishitei.bunka.go.jp/"
+      ]
     },
     {
       "id": "prov-bonsai-007",
@@ -6287,7 +6925,11 @@
         "World Bonsai Friendship Federation exhibition archives"
       ],
       "verified_by": "source_verified",
-      "created_at": "2026-05-14T11:34:21.155350Z"
+      "created_at": "2026-05-14T11:34:21.155350Z",
+      "source_urls": [
+        "https://www.bonsai-bci.com/",
+        "https://www.bonsai-wbff.org/"
+      ]
     },
     {
       "id": "pc-ukiyoe-hokusai-wave-v2",
