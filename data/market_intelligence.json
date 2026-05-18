@@ -1,8 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-05-17T23:59:54Z",
-    "source": "KANTEISHI API /market/stats (live sync)",
-    "model_version": "0.5"
+    "generated_at": "2026-05-18T07:29:35.098129",
+    "source": "KANTEISHI API /market/stats",
+    "model_version": "0.5",
+    "daj_synced_at": "2026-05-18T12:54:00Z",
+    "daj_source": "NCAR Art Platform Japan (DAJ)",
+    "profile_version": "v4"
   },
   "stats": {
     "total_records": 23121,
@@ -13,7 +16,13 @@
     "r2_ensemble": 0.853,
     "median_error_pct": 29.5,
     "sbi_lots": 17123,
-    "shinwa_lots": 5998
+    "shinwa_lots": 5998,
+    "daj_matched_artists": 446,
+    "daj_total_artists": 5439,
+    "daj_match_rate": 25.5,
+    "profiles_with_birth_year": 560,
+    "profiles_with_viaf": 374,
+    "profiles_with_ulan": 256
   },
   "top_artists_by_volume": [
     {
@@ -223,17 +232,17 @@
     {
       "name": "SBI Art Auction",
       "lots": 17123,
-      "source": "sbi"
+      "status": "active"
     },
     {
       "name": "Shinwa Auction",
       "lots": 5998,
-      "source": "shinwa"
+      "status": "active"
     },
     {
       "name": "Mainichi Auction",
-      "lots": 0,
-      "source": "mainichi"
+      "lots": 120,
+      "status": "active"
     }
   ]
 }
