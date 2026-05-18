@@ -137,7 +137,20 @@
     "artist_title": "Top Artists by Volume",
     "artist_lots": "lots",
     "artist_avg": "Avg",
-    "artist_median": "Median"
+    "artist_median": "Median",
+    "artist_value_label": "High-Value Artists",
+    "artist_value_title": "Top Artists by Average Value",
+    "houses_label": "Data Sources",
+    "houses_title": "Auction Houses Tracked",
+    "houses_lots": "lots",
+    "model_label": "AI Pricing Engine",
+    "model_title": "Hedonic Pricing Model",
+    "model_version": "Model Version",
+    "model_r2": "Accuracy (R²)",
+    "model_error": "Median Error",
+    "model_lots": "Training Data",
+    "model_desc": "EDITION's proprietary hedonic pricing engine analyzes 22 features — artist biography, medium, dimensions, edition size, and historical auction performance — to estimate fair market value with institutional-grade precision.",
+    "synced_at": "Data synced"
   },
   "panel": {
     "period": "Period",

@@ -137,7 +137,20 @@
     "artist_title": "取引量上位作家",
     "artist_lots": "件",
     "artist_avg": "平均",
-    "artist_median": "中央値"
+    "artist_median": "中央値",
+    "artist_value_label": "高額作家",
+    "artist_value_title": "平均取引額上位作家",
+    "houses_label": "データソース",
+    "houses_title": "追跡オークションハウス",
+    "houses_lots": "件",
+    "model_label": "AI価格推定エンジン",
+    "model_title": "ヘドニック価格モデル",
+    "model_version": "モデルバージョン",
+    "model_r2": "精度 (R²)",
+    "model_error": "中央誤差",
+    "model_lots": "学習データ",
+    "model_desc": "EDITIONの独自ヘドニック価格エンジンは、作家略歴、技法、寸法、エディション数、過去のオークション実績など22の特徴量を分析し、機関投資家レベルの精度で適正市場価格を推定します。",
+    "synced_at": "データ同期"
   },
   "panel": {
     "period": "時代",

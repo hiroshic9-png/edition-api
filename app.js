@@ -724,7 +724,7 @@
       </section>
 
       ${topVolume.length > 0 ? `
-      <!-- Top Artists -->
+      <!-- Top Artists by Volume -->
       <section class="section" style="padding: 3rem 2rem;">
         <div style="max-width: 1000px; margin: 0 auto;">
           <p class="text-label" style="color: var(--gold); margin-bottom: 1rem;">${t('prices.artist_label')}</p>
@@ -758,6 +758,114 @@
         </div>
       </section>
       ` : ''}
+
+      ${topValue.length > 0 ? `
+      <!-- Top Artists by Value -->
+      <section class="section" style="padding: 3rem 2rem; background: var(--surface);">
+        <div style="max-width: 1000px; margin: 0 auto;">
+          <p class="text-label" style="color: var(--gold); margin-bottom: 1rem;">${t('prices.artist_value_label')}</p>
+          <h2 style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 2rem;">${t('prices.artist_value_title')}</h2>
+          <div style="display: grid; gap: 0.5rem;">
+            ${topValue.slice(0, 10).map((a, i) => `
+              <div class="reveal" style="
+                display: grid; grid-template-columns: 2rem 1fr auto auto;
+                gap: 1.5rem; align-items: center;
+                padding: 1rem 1.5rem;
+                background: var(--bg);
+                border: 1px solid var(--border);
+                border-radius: 8px;
+              ">
+                <span style="font-family: var(--font-serif); color: var(--gold); font-size: 1.1rem; text-align: center;">${i + 1}</span>
+                <div>
+                  <div style="font-weight: 500; font-size: 0.95rem;">${a.artist}</div>
+                  <div style="font-size: 0.75rem; color: var(--text-secondary);">${a.lot_count} ${t('prices.artist_lots')}</div>
+                </div>
+                <div style="text-align: right;">
+                  <div style="font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.08em;">${t('prices.artist_avg')}</div>
+                  <div style="font-family: var(--font-serif); color: var(--gold); font-size: 1.1rem;">${formatJPY(a.avg_price_jpy)}</div>
+                </div>
+                <div style="text-align: right;">
+                  <div style="font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.08em;">${t('prices.artist_median')}</div>
+                  <div style="font-family: var(--font-serif);">${formatJPY(a.median_price_jpy)}</div>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      </section>
+      ` : ''}
+
+      ${houses.length > 0 ? `
+      <!-- Auction Houses Breakdown -->
+      <section class="section" style="padding: 3rem 2rem;">
+        <div style="max-width: 1000px; margin: 0 auto;">
+          <p class="text-label" style="color: var(--gold); margin-bottom: 1rem;">${t('prices.houses_label')}</p>
+          <h2 style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 2rem;">${t('prices.houses_title')}</h2>
+          <div style="display: grid; gap: 1rem;">
+            ${houses.map(h => {
+              const pct = stats.total_records > 0 ? Math.round((h.lots / stats.total_records) * 100) : 0;
+              return `
+              <div class="reveal" style="
+                background: var(--surface);
+                border: 1px solid var(--border);
+                border-radius: 12px;
+                padding: 1.5rem 2rem;
+              ">
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.75rem;">
+                  <span style="font-family: var(--font-serif); font-size: 1.1rem; font-weight: 400;">${h.name}</span>
+                  <span style="font-family: var(--font-serif); color: var(--gold); font-size: 1rem;">${Number(h.lots).toLocaleString()} ${t('prices.houses_lots')}</span>
+                </div>
+                <div style="
+                  height: 6px;
+                  background: var(--border);
+                  border-radius: 3px;
+                  overflow: hidden;
+                ">
+                  <div style="
+                    height: 100%;
+                    width: ${pct}%;
+                    background: linear-gradient(90deg, var(--gold), var(--gold-light, #c9a84c));
+                    border-radius: 3px;
+                    transition: width 1s ease;
+                  "></div>
+                </div>
+                <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.4rem; text-align: right;">${pct}%</div>
+              </div>
+              `;
+            }).join('')}
+          </div>
+        </div>
+      </section>
+      ` : ''}
+
+      <!-- AI Pricing Engine -->
+      <section class="section" style="padding: 3rem 2rem; background: var(--surface);">
+        <div style="max-width: 1000px; margin: 0 auto;">
+          <p class="text-label" style="color: var(--gold); margin-bottom: 1rem;">${t('prices.model_label')}</p>
+          <h2 style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 1.5rem;">${t('prices.model_title')}</h2>
+          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 2rem; max-width: 700px;">
+            ${t('prices.model_desc')}
+          </p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; max-width: 800px;">
+            <div class="auth-promo__metric reveal" style="padding: 1.5rem;">
+              <span class="auth-promo__metric-value">v${stats.r2_ensemble ? marketData?.meta?.model_version || '0.5' : '0.5'}</span>
+              <span class="auth-promo__metric-label">${t('prices.model_version')}</span>
+            </div>
+            <div class="auth-promo__metric reveal" style="padding: 1.5rem;">
+              <span class="auth-promo__metric-value">${stats.r2_ensemble ? (stats.r2_ensemble * 100).toFixed(1) + '%' : '—'}</span>
+              <span class="auth-promo__metric-label">${t('prices.model_r2')}</span>
+            </div>
+            <div class="auth-promo__metric reveal" style="padding: 1.5rem;">
+              <span class="auth-promo__metric-value">${stats.median_error_pct ? stats.median_error_pct.toFixed(1) + '%' : '—'}</span>
+              <span class="auth-promo__metric-label">${t('prices.model_error')}</span>
+            </div>
+            <div class="auth-promo__metric reveal" style="padding: 1.5rem;">
+              <span class="auth-promo__metric-value">${Number(stats.total_records).toLocaleString()}</span>
+              <span class="auth-promo__metric-label">${t('prices.model_lots')}</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Results by Category -->
       <section class="section" style="padding: 3rem 2rem;">
@@ -818,7 +926,7 @@
           
           <p style="text-align: center; color: var(--text-secondary); font-size: 0.8rem; margin-top: 2rem;">
             ${t('prices.data_note')}
-            <br>${t('prices.last_updated')}: ${priceData.meta.generated_at?.slice(0,10) || '—'}
+            <br>${t('prices.synced_at')}: ${marketData?.meta?.generated_at?.slice(0,16)?.replace('T', ' ') || priceData.meta.generated_at?.slice(0,10) || '—'} UTC
           </p>
         </div>
       </section>

@@ -97,10 +97,25 @@ output = {
 print(f'  ✓ market_intelligence.json updated ({output["stats"]["total_records"]:,} lots)')
 PYEOF
 
-# 5. Summary
+# 5. Git commit + push (unless --no-push is set)
 echo ""
 echo "═══ Sync Complete ═══"
 echo "  Updated: market_intelligence.json"
 echo "  Timestamp: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
-echo ""
-echo "  To deploy: git add data/ && git commit -m 'sync: market data' && git push"
+
+if [[ "${1:-}" != "--no-push" ]]; then
+  echo ""
+  echo "▶ Committing and pushing to GitHub Pages..."
+  cd "$PROJECT_DIR"
+  git add data/market_intelligence.json
+  if git diff --cached --quiet; then
+    echo "  ✓ No changes to commit (data unchanged)"
+  else
+    git commit -m "sync: market data $(date -u '+%Y-%m-%d %H:%M')" --quiet
+    git push --quiet
+    echo "  ✓ Pushed to GitHub Pages (auto-deploy triggered)"
+  fi
+else
+  echo ""
+  echo "  To deploy: git add data/ && git commit -m 'sync: market data' && git push"
+fi
