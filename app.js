@@ -74,6 +74,21 @@
     try {
       const resp = await fetch('./data/market_intelligence.json');
       _marketData = await resp.json();
+      // Normalize: API returns {overview: ...} but templates expect {stats: ...}
+      if (_marketData && !_marketData.stats && _marketData.overview) {
+        _marketData.stats = {
+          total_records: _marketData.overview.total_lots,
+          auction_houses: 3,
+          total_market_value: _marketData.overview.total_tracked_value_jpy,
+          total_artists: _marketData.overview.total_artists,
+          r2_ensemble: _marketData.overview.r2_ensemble,
+          median_error_pct: _marketData.overview.median_error_pct,
+          sbi_lots: _marketData.overview.sbi_lots,
+          mainichi_lots: _marketData.overview.mainichi_lots,
+          shinwa_lots: _marketData.overview.shinwa_lots,
+          model_version: _marketData.overview.model_version,
+        };
+      }
     } catch (e) {
       console.warn('Market data not available:', e);
     }
@@ -327,6 +342,44 @@
                 <span class="auth-promo__metric-label">${t('home.market_artists')}</span>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Intelligence Reports Quick Links -->
+      <section class="section" style="padding: 3rem 2rem; background: var(--bg);">
+        <div class="container" style="max-width: 1000px;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+            <a href="/artists" class="reveal" style="
+              display: block; padding: 2rem; background: var(--surface);
+              border: 1px solid var(--border); border-radius: 12px;
+              text-decoration: none; color: inherit;
+              transition: all 0.3s ease;
+            " onmouseover="this.style.borderColor='var(--gold)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">
+              <p style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--gold); margin-bottom: 0.5rem;">Artist Database</p>
+              <h3 style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 0.5rem;">アーティスト一覧</h3>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">200名の市場データを検索・ソート。取引数、平均価格、最高額で比較。</p>
+            </a>
+            <a href="/market" class="reveal reveal--delay-1" style="
+              display: block; padding: 2rem; background: var(--surface);
+              border: 1px solid var(--border); border-radius: 12px;
+              text-decoration: none; color: inherit;
+              transition: all 0.3s ease;
+            " onmouseover="this.style.borderColor='var(--gold)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">
+              <p style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--gold); margin-bottom: 0.5rem;">Market Report</p>
+              <h3 style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 0.5rem;">市場レポート</h3>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">56,645件の包括的分析。価格帯分布、ハウス別比較、パワーロー構造。</p>
+            </a>
+            <a href="/categories" class="reveal reveal--delay-2" style="
+              display: block; padding: 2rem; background: var(--surface);
+              border: 1px solid var(--border); border-radius: 12px;
+              text-decoration: none; color: inherit;
+              transition: all 0.3s ease;
+            " onmouseover="this.style.borderColor='var(--gold)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">
+              <p style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--gold); margin-bottom: 0.5rem;">Category Analysis</p>
+              <h3 style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 0.5rem;">カテゴリ別分析</h3>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">13の技法別に市場動向を分析。油彩、アクリル、版画、日本画、陶芸。</p>
+            </a>
           </div>
         </div>
       </section>
@@ -1167,7 +1220,8 @@
         </button>
         <nav class="header__nav" id="header-nav">
           <a href="/discover" data-link class="header__link">${t('nav.collection')}</a>
-          <a href="/authenticate" data-link class="header__link">${t('nav.authenticate')}</a>
+          <a href="/artists" class="header__link">Artists</a>
+          <a href="/market" class="header__link">Market</a>
           <a href="/prices" data-link class="header__link">${t('nav.prices')}</a>
           <a href="/kanteishi" data-link class="header__link header__link--accent">${t('nav.kanteishi')}</a>
           <button class="header__lang-toggle" id="lang-toggle" aria-label="Toggle language"
@@ -1187,7 +1241,9 @@
           <span class="footer__brand">Edition</span>
           <div class="footer__links">
             <a href="/discover" data-link class="footer__link">${t('nav.collection')}</a>
-            <a href="/authenticate" data-link class="footer__link">${t('nav.authenticate')}</a>
+            <a href="/artists" class="footer__link">Artists</a>
+            <a href="/market" class="footer__link">Market Report</a>
+            <a href="/categories" class="footer__link">Categories</a>
             <a href="/prices" data-link class="footer__link">${t('nav.prices')}</a>
             <a href="/kanteishi" data-link class="footer__link">${t('nav.kanteishi')}</a>
           </div>
@@ -1378,7 +1434,7 @@
               <span class="kanteishi-stat__label">${t('kanteishi.engine_training')}</span>
             </div>
             <div class="kanteishi-stat reveal reveal--delay-3">
-              <span class="kanteishi-stat__value">15</span>
+              <span class="kanteishi-stat__value">17</span>
               <span class="kanteishi-stat__label">${t('kanteishi.engine_features')}</span>
             </div>
             <div class="kanteishi-stat reveal">
