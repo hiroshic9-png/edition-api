@@ -169,7 +169,8 @@
     function fmtPrice(p) {
       if (p >= 1e8) return '¥' + (p/1e8).toFixed(1) + '億';
       if (p >= 1e7) return '¥' + (p/1e4).toLocaleString() + '万';
-      if (p >= 1e6) return '¥' + (p/1e4).toFixed(0) + '万';
+      if (p >= 1e5) return '¥' + (p/1e4).toFixed(0) + '万';
+      if (p >= 1e4) return '¥' + (p/1e4).toFixed(1) + '万';
       return '¥' + p.toLocaleString();
     }
 

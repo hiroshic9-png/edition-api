@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="/style.css?v=08b">
+  <link rel="stylesheet" href="/style.css?v=09a">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
   
   <!-- Structured Data -->
@@ -168,6 +168,18 @@
       .artist-page .meta-key { min-width: auto; }
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "EDITION", "item": "https://edition.sh"},
+      {"@type": "ListItem", "position": 2, "name": "アーティスト一覧", "item": "https://edition.sh/artists"},
+      {"@type": "ListItem", "position": 3, "name": "多作家作品"}
+    ]
+  }
+  </script>
 </head>
 <body>
   <div class="artist-page">
@@ -220,7 +232,7 @@
     <p style="line-height: 1.8; color: var(--text-secondary, #555); margin-top: 1rem;">
       本データはEDITIONのKANTEISHI（鑑定士）インテリジェンスエンジンにより、
       SBI Art Auction・毎日オークション・シンワオークションの落札記録を横断的に分析したものです。
-      ヘドニック価格モデル v0.8（R²=0.898）による公正市場価格の推定にも活用されています。
+      ヘドニック価格モデル v0.9（R²=0.900）による公正市場価格の推定にも活用されています。
     </p>
     
     <h2 class="section-title">取扱オークションハウス</h2>
@@ -231,6 +243,11 @@
       </div>
     </div>
     
+    
+    <h2 class="section-title">関連アーティスト</h2>
+    <div style="display:grid;gap:0.5rem;margin-bottom:2rem;">
+      <a href="/artist/村上-隆/" style="display:block;padding:0.8rem 1rem;border:1px solid var(--border,rgba(255,255,255,0.08));border-radius:8px;text-decoration:none;color:inherit;transition:all 0.2s;" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='var(--border)'"><span style="font-family:var(--font-serif);color:#fff;">村上　隆</span><span style="float:right;color:var(--gold);font-family:var(--font-serif);">¥57万</span></a><a href="/artist/草間-彌生/" style="display:block;padding:0.8rem 1rem;border:1px solid var(--border,rgba(255,255,255,0.08));border-radius:8px;text-decoration:none;color:inherit;transition:all 0.2s;" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='var(--border)'"><span style="font-family:var(--font-serif);color:#fff;">草間　彌生</span><span style="float:right;color:var(--gold);font-family:var(--font-serif);">¥791万</span></a><a href="/artist/カウズ/" style="display:block;padding:0.8rem 1rem;border:1px solid var(--border,rgba(255,255,255,0.08));border-radius:8px;text-decoration:none;color:inherit;transition:all 0.2s;" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='var(--border)'"><span style="font-family:var(--font-serif);color:#fff;">カウズ</span><span style="float:right;color:var(--gold);font-family:var(--font-serif);">¥141万</span></a><a href="/artist/ガレ/" style="display:block;padding:0.8rem 1rem;border:1px solid var(--border,rgba(255,255,255,0.08));border-radius:8px;text-decoration:none;color:inherit;transition:all 0.2s;" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='var(--border)'"><span style="font-family:var(--font-serif);color:#fff;">ガレ</span><span style="float:right;color:var(--gold);font-family:var(--font-serif);">¥41万</span></a><a href="/artist/マイセン/" style="display:block;padding:0.8rem 1rem;border:1px solid var(--border,rgba(255,255,255,0.08));border-radius:8px;text-decoration:none;color:inherit;transition:all 0.2s;" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='var(--border)'"><span style="font-family:var(--font-serif);color:#fff;">マイセン</span><span style="float:right;color:var(--gold);font-family:var(--font-serif);">¥29万</span></a>
+    </div>
     <div class="cta">
       <p style="margin-bottom: 0.5rem; font-size: 0.9rem; color: rgba(255,255,255,0.4) !important;">KANTEISHI Intelligence Engine</p>
       <p style="font-family: var(--font-serif); font-size: 1.1rem;">
@@ -245,8 +262,10 @@
       <p>© 2026 EDITION — Japanese Cultural Assets Intelligence</p>
       <p style="margin-top: 0.3rem;">
         <a href="/">トップ</a> · 
-        <a href="/#artists">アーティスト一覧</a> · 
-        <a href="/#kanteishi">KANTEISHI</a>
+        <a href="/artists">アーティスト一覧</a> · 
+        <a href="/market">市場レポート</a> · 
+        <a href="/categories">カテゴリ分析</a> · 
+        <a href="/kanteishi">KANTEISHI</a>
       </p>
     </footer>
   </div>

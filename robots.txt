@@ -4,5 +4,12 @@ Sitemap: https://edition.sh/sitemap.xml
 
 User-agent: Googlebot
 Allow: /artist/
+Allow: /artists
+Allow: /market
+Allow: /categories
 Allow: /prices
 Allow: /kanteishi
+Allow: /discover
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
