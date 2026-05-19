@@ -3,721 +3,353 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EDITION — Intelligence Platform for Japan Operations</title>
-  <meta name="description" content="Structured intelligence for AI agents operating in Japan. Regulations, business protocols, calendar awareness, and organizational knowledge — all via REST API and MCP.">
+  <title>API Documentation — KANTEISHI Intelligence Engine | EDITION</title>
+  <meta name="description" content="KANTEISHI API documentation. 14 REST endpoints and 7 MCP tools for forensic-grade art market intelligence. Hedonic Pricing Engine v0.9 (R²=0.900).">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="KANTEISHI API Documentation | EDITION">
+  <meta property="og:description" content="REST API for Japanese art market intelligence. Price estimation, provenance search, and collection management.">
+  <meta property="og:url" content="https://edition.sh/docs">
+  <link rel="canonical" href="https://edition.sh/docs">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
   <style>
-    :root {
-      --bg: #0a0a0a;
-      --surface: #111111;
-      --surface-2: #1a1a1a;
-      --border: #222222;
-      --border-hover: #333333;
-      --text: #e8e8e8;
-      --text-secondary: #888888;
-      --text-muted: #555555;
-      --accent: #c8c8c8;
-      --accent-dim: rgba(200, 200, 200, 0.08);
-      --green: #4ade80;
-      --green-dim: rgba(74, 222, 128, 0.1);
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: 'Inter', -apple-system, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ── Header ── */
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 100;
-      padding: 16px 32px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: rgba(10, 10, 10, 0.85);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .logo {
-      font-size: 15px;
-      font-weight: 600;
-      letter-spacing: 3px;
-      color: var(--text);
-    }
-
-    .logo span {
-      color: var(--text-muted);
-      font-weight: 300;
-      letter-spacing: 1px;
-      margin-left: 8px;
-      font-size: 12px;
-    }
-
-    nav { display: flex; gap: 8px; }
-
-    nav a {
-      text-decoration: none;
-      color: var(--text-secondary);
-      font-size: 13px;
-      font-weight: 400;
-      padding: 6px 14px;
-      border-radius: 6px;
-      transition: all 0.2s;
-    }
-
-    nav a:hover {
-      color: var(--text);
-      background: var(--accent-dim);
-    }
-
-    nav a.primary {
-      background: var(--text);
-      color: var(--bg);
-      font-weight: 500;
-    }
-
-    nav a.primary:hover {
-      opacity: 0.9;
-    }
-
-    /* ── Hero ── */
-    .hero {
-      padding: 160px 32px 100px;
-      text-align: center;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 16px;
-      border-radius: 100px;
-      background: var(--green-dim);
-      border: 1px solid rgba(74, 222, 128, 0.2);
-      font-size: 12px;
-      color: var(--green);
-      font-weight: 500;
-      margin-bottom: 32px;
-    }
-
-    .hero-badge::before {
-      content: '';
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--green);
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.4; }
-    }
-
-    .hero h1 {
-      font-size: 56px;
-      font-weight: 700;
-      line-height: 1.1;
-      letter-spacing: -2px;
-      margin-bottom: 24px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      color: var(--text-secondary);
-      max-width: 560px;
-      margin: 0 auto 40px;
-      line-height: 1.7;
-    }
-
-    .hero-actions {
-      display: flex;
-      gap: 12px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-size: 14px;
-      font-weight: 500;
-      text-decoration: none;
-      transition: all 0.2s;
-      cursor: pointer;
-    }
-
-    .btn-primary {
-      background: var(--text);
-      color: var(--bg);
-    }
-
-    .btn-primary:hover { opacity: 0.9; transform: translateY(-1px); }
-
-    .btn-secondary {
-      background: var(--surface-2);
-      color: var(--text);
-      border: 1px solid var(--border);
-    }
-
-    .btn-secondary:hover { border-color: var(--border-hover); transform: translateY(-1px); }
-
-    /* ── Install block ── */
-    .install {
-      margin: 0 auto 80px;
-      max-width: 520px;
-      padding: 0 32px;
-    }
-
-    .install-block {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 16px 20px;
-      font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 13px;
-      color: var(--text-secondary);
-      position: relative;
-      cursor: pointer;
-      transition: border-color 0.2s;
-    }
-
-    .install-block:hover { border-color: var(--border-hover); }
-
-    .install-block code { color: var(--text); }
-    .install-block .dim { color: var(--text-muted); }
-
-    .install-block .copy-hint {
-      position: absolute;
-      right: 16px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 11px;
-      color: var(--text-muted);
-      font-family: 'Inter', sans-serif;
-    }
-
-    /* ── Stats ── */
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      max-width: 800px;
-      margin: 0 auto 100px;
-      padding: 0 32px;
-      gap: 1px;
-    }
-
-    .stat {
-      text-align: center;
-      padding: 32px 16px;
-    }
-
-    .stat-number {
-      font-size: 36px;
-      font-weight: 700;
-      letter-spacing: -1px;
-      margin-bottom: 4px;
-    }
-
-    .stat-label {
-      font-size: 13px;
-      color: var(--text-muted);
-      font-weight: 400;
-    }
-
-    /* ── Domains grid ── */
-    .section {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 0 32px 100px;
-    }
-
-    .section-title {
-      font-size: 13px;
-      font-weight: 500;
-      letter-spacing: 2px;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      margin-bottom: 40px;
-      text-align: center;
-    }
-
-    .domains {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-    }
-
-    .domain-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 24px;
-      transition: all 0.2s;
-    }
-
-    .domain-card:hover {
-      border-color: var(--border-hover);
-      transform: translateY(-2px);
-    }
-
-    .domain-card h3 {
-      font-size: 15px;
-      font-weight: 600;
-      margin-bottom: 6px;
-    }
-
-    .domain-card .domain-sub {
-      font-size: 12px;
-      color: var(--text-muted);
-      margin-bottom: 12px;
-    }
-
-    .domain-card p {
-      font-size: 13px;
-      color: var(--text-secondary);
-      line-height: 1.6;
-    }
-
-    /* ── Code example ── */
-    .code-section {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: 0 32px 100px;
-    }
-
-    .code-block {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .code-header {
-      padding: 12px 20px;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .code-header span {
-      font-size: 12px;
-      color: var(--text-muted);
-    }
-
-    .code-tabs {
-      display: flex;
-      gap: 4px;
-    }
-
-    .code-tab {
-      font-size: 12px;
-      padding: 4px 12px;
-      border-radius: 4px;
-      color: var(--text-muted);
-      cursor: pointer;
-      border: none;
-      background: none;
-      font-family: 'Inter', sans-serif;
-    }
-
-    .code-tab.active {
-      background: var(--surface-2);
-      color: var(--text);
-    }
-
-    .code-body {
-      padding: 20px;
-      font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 13px;
-      line-height: 1.7;
-      overflow-x: auto;
-    }
-
-    .code-body .kw { color: #88c8ff; }
-    .code-body .str { color: #a0d8a0; }
-    .code-body .cmt { color: #555; }
-    .code-body .fn { color: #c8c8c8; }
-    .code-body .num { color: #f0c060; }
-
-    /* ── Footer ── */
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 40px 32px;
-      text-align: center;
-    }
-
-    footer p {
-      font-size: 12px;
-      color: var(--text-muted);
-    }
-
-    footer a {
-      color: var(--text-secondary);
-      text-decoration: none;
-    }
-
-    footer a:hover { color: var(--text); }
-
-    /* ── Responsive ── */
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 36px; }
-      .stats { grid-template-columns: repeat(2, 1fr); }
-      .domains { grid-template-columns: 1fr; }
-      header { padding: 12px 16px; }
-      nav a { padding: 6px 10px; font-size: 12px; }
-    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    :root{--bg:#0C0C0C;--surface:rgba(255,255,255,0.03);--border:rgba(255,255,255,0.08);--text:#e0e0e0;--text-dim:rgba(255,255,255,0.4);--gold:#b8860b;--gold-dim:rgba(184,134,11,0.3);--green:#2ea043;--blue:#388bfd;--red:#f85149;--font-serif:'Cormorant Garamond',serif;--font-sans:'Inter','Noto Sans JP',sans-serif;--font-mono:'JetBrains Mono',monospace}
+    body{background:var(--bg);color:var(--text);font-family:var(--font-sans);line-height:1.7}
+    .page{max-width:900px;margin:0 auto;padding:6rem 2rem 4rem}
+    .back-link{display:inline-flex;align-items:center;gap:0.5rem;margin-bottom:2rem;font-size:0.85rem;color:var(--text-dim);text-decoration:none;transition:color 0.2s}
+    .back-link:hover{color:var(--gold)}
+    h1{font-family:var(--font-serif);font-weight:300;font-size:clamp(2rem,5vw,3rem);margin-bottom:0.3rem;color:#fff}
+    .subtitle{color:var(--text-dim);font-size:0.9rem;margin-bottom:1rem}
+    .badge{display:inline-block;padding:0.2rem 0.7rem;border:1px solid var(--gold-dim);border-radius:10px;font-size:0.65rem;color:var(--gold);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:2rem}
+    h2{font-family:var(--font-serif);font-weight:400;font-size:1.4rem;margin:3rem 0 1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border);color:#fff}
+    h3{font-size:1rem;margin:2rem 0 0.5rem;color:#fff}
+    p{color:rgba(255,255,255,0.55);margin-bottom:1rem;font-size:0.9rem}
+    .base-url{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1rem 1.5rem;margin:1rem 0 2rem;font-family:var(--font-mono);font-size:0.85rem;color:var(--gold)}
+    .endpoint{background:var(--surface);border:1px solid var(--border);border-radius:12px;margin:1rem 0;overflow:hidden;transition:border-color 0.3s}
+    .endpoint:hover{border-color:var(--gold-dim)}
+    .endpoint-header{display:flex;align-items:center;gap:1rem;padding:1rem 1.5rem;cursor:pointer}
+    .method{font-family:var(--font-mono);font-size:0.7rem;font-weight:500;padding:0.2rem 0.6rem;border-radius:4px;text-transform:uppercase;letter-spacing:0.05em;min-width:50px;text-align:center}
+    .method-get{background:rgba(56,139,253,0.15);color:var(--blue)}
+    .method-post{background:rgba(46,160,67,0.15);color:var(--green)}
+    .method-delete{background:rgba(248,81,73,0.15);color:var(--red)}
+    .endpoint-path{font-family:var(--font-mono);font-size:0.85rem;color:#fff}
+    .endpoint-desc{font-size:0.8rem;color:var(--text-dim);margin-left:auto}
+    .endpoint-body{padding:0 1.5rem 1.5rem;display:none}
+    .endpoint.open .endpoint-body{display:block}
+    .endpoint.open .endpoint-header{border-bottom:1px solid rgba(255,255,255,0.04)}
+    pre{background:rgba(0,0,0,0.4);border:1px solid var(--border);border-radius:8px;padding:1rem;overflow-x:auto;font-family:var(--font-mono);font-size:0.8rem;color:rgba(255,255,255,0.7);line-height:1.5;margin:0.5rem 0}
+    .param-table{width:100%;border-collapse:collapse;margin:1rem 0}
+    .param-table th{text-align:left;font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-dim);padding:0.5rem 0.5rem;border-bottom:1px solid var(--border);font-weight:400}
+    .param-table td{padding:0.5rem;border-bottom:1px solid rgba(255,255,255,0.04);font-size:0.8rem}
+    .param-table td:first-child{font-family:var(--font-mono);color:var(--gold);font-size:0.8rem}
+    .param-table td:nth-child(2){color:var(--blue);font-family:var(--font-mono);font-size:0.75rem}
+    .tag{display:inline-block;font-size:0.55rem;padding:0.1rem 0.4rem;border:1px solid var(--border);border-radius:6px;color:var(--text-dim);margin-right:0.3rem;text-transform:uppercase;letter-spacing:0.05em}
+    .section-intro{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
+    .stat-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1.2rem;text-align:center}
+    .stat-card .val{font-family:var(--font-serif);font-size:1.3rem;color:var(--gold)}
+    .stat-card .lbl{font-size:0.6rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-dim);margin-top:0.2rem}
+    footer{margin-top:4rem;padding-top:2rem;border-top:1px solid var(--border);font-size:0.75rem;color:var(--text-dim);text-align:center}
+    footer a{color:var(--text-dim);text-decoration:none}
+    footer a:hover{color:var(--gold)}
+    @media(max-width:600px){.page{padding:4rem 1.2rem 3rem}.endpoint-desc{display:none}.section-intro{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
+  <div class="page">
+    <a href="/" class="back-link">← EDITION</a>
+    <h1>API Documentation</h1>
+    <p class="subtitle">KANTEISHI Intelligence Engine — REST API Reference</p>
+    <span class="badge">v0.9 · R²=0.900 · 17 Features</span>
 
-  <header>
-    <div class="logo">EDITION <span>Intelligence Platform</span></div>
-    <nav>
-      <a href="https://api.edition.sh/docs" target="_blank">API Docs</a>
-      <a href="https://www.npmjs.com/package/edition-mcp-server" target="_blank">npm</a>
-      <a href="https://github.com/hiroshic9-png/edition-api" target="_blank">GitHub</a>
-      <a href="https://api.edition.sh/docs" class="primary" target="_blank">Try API →</a>
-    </nav>
-  </header>
+    <div class="base-url">
+      Base URL: <strong>https://api.edition.sh</strong>
+    </div>
 
-  <main>
-    <section class="hero">
-      <div class="hero-badge">Live — v0.7.0 Open Beta</div>
-      <h1>Japan intelligence<br>for AI agents</h1>
-      <p>20 knowledge domains, 100+ endpoints, 43 MCP tools — structured intelligence for autonomous agents operating in Japan.</p>
-      <div class="hero-actions">
-        <a href="https://api.edition.sh/docs" class="btn btn-primary" target="_blank">Explore API →</a>
-        <a href="https://github.com/hiroshic9-png/edition-api" class="btn btn-secondary" target="_blank">View Source</a>
+    <div class="section-intro">
+      <div class="stat-card"><div class="val">14</div><div class="lbl">REST Endpoints</div></div>
+      <div class="stat-card"><div class="val">7</div><div class="lbl">MCP Tools</div></div>
+      <div class="stat-card"><div class="val">&lt;200ms</div><div class="lbl">Avg Latency</div></div>
+      <div class="stat-card"><div class="val">49,968</div><div class="lbl">Training Records</div></div>
+    </div>
+
+    <h2>Price Estimation</h2>
+    <p>AI-powered hedonic pricing for Japanese art. Uses a 17-feature ensemble model (HistGradientBoosting + RandomForest) trained on 49,968 auction records.</p>
+
+    <div class="endpoint" onclick="this.classList.toggle('open')">
+      <div class="endpoint-header">
+        <span class="method method-post">POST</span>
+        <span class="endpoint-path">/estimate/price</span>
+        <span class="endpoint-desc">Estimate fair market value</span>
       </div>
-    </section>
-
-    <div class="install">
-      <div class="install-block" onclick="navigator.clipboard.writeText('npx edition-mcp-server')">
-        <span class="dim">$</span> <code>npx edition-mcp-server</code>
-        <span class="copy-hint">click to copy</span>
+      <div class="endpoint-body">
+        <p>Returns a hedonic price estimate with confidence range based on artist history, medium, size, and market context.</p>
+        <h3>Request Body</h3>
+        <table class="param-table">
+          <thead><tr><th>Parameter</th><th>Type</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td>artist</td><td>string</td><td>Artist name (Japanese or Roman)</td></tr>
+            <tr><td>medium</td><td>string</td><td>Medium classification (oil, acrylic, silkscreen, lithograph, etc.)</td></tr>
+            <tr><td>width_cm</td><td>number</td><td>Width in centimeters</td></tr>
+            <tr><td>height_cm</td><td>number</td><td>Height in centimeters</td></tr>
+            <tr><td>estimate_jpy</td><td>number</td><td>Auction house estimate (optional, improves accuracy)</td></tr>
+          </tbody>
+        </table>
+        <h3>Example</h3>
+        <pre>curl -X POST https://api.edition.sh/estimate/price \
+  -H "Content-Type: application/json" \
+  -d '{
+    "artist": "草間彌生",
+    "medium": "acrylic",
+    "width_cm": 50,
+    "height_cm": 50
+  }'</pre>
+        <h3>Response</h3>
+        <pre>{
+  "estimate_jpy": 1723782,
+  "range_low": 1342826,
+  "range_high": 2104737,
+  "confidence": "medium",
+  "model_version": "0.9",
+  "model_r2": 0.900
+}</pre>
       </div>
     </div>
 
-    <div class="stats">
-      <div class="stat">
-        <div class="stat-number">70+</div>
-        <div class="stat-label">API Endpoints</div>
+    <div class="endpoint" onclick="this.classList.toggle('open')">
+      <div class="endpoint-header">
+        <span class="method method-get">GET</span>
+        <span class="endpoint-path">/estimate/artist/{name}</span>
+        <span class="endpoint-desc">Artist price statistics</span>
       </div>
-      <div class="stat">
-        <div class="stat-number">43</div>
-        <div class="stat-label">MCP Tools</div>
-      </div>
-      <div class="stat">
-        <div class="stat-number">20</div>
-        <div class="stat-label">Knowledge Domains</div>
-      </div>
-      <div class="stat">
-        <div class="stat-number">97.8</div>
-        <div class="stat-label">Quality Score</div>
+      <div class="endpoint-body">
+        <p>Returns comprehensive market statistics for a specific artist, including lot count, average/median prices, and auction house distribution.</p>
+        <pre>curl https://api.edition.sh/estimate/artist/草間彌生</pre>
+        <pre>{
+  "artist": "草間　彌生",
+  "lot_count": 1319,
+  "avg_price": 7914157,
+  "median_price": 2760000,
+  "max_price": 247250000,
+  "n_houses": 3,
+  "houses": ["Mainichi", "SBI", "Shinwa"]
+}</pre>
       </div>
     </div>
 
-    <!-- 3-Layer Architecture -->
-    <section class="section">
-      <div class="section-title">Three-Layer Intelligence Architecture</div>
-      <div class="domains" style="grid-template-columns: repeat(3, 1fr);">
-        <div class="domain-card" style="border-left: 2px solid #4ade80;">
-          <h3>Layer 1 — Rules</h3>
-          <div class="domain-sub">公式ルール</div>
-          <p>Official regulations, procedures, and requirements. What any AI can find by searching the web.</p>
-        </div>
-        <div class="domain-card" style="border-left: 2px solid #f59e0b;">
-          <h3>Layer 2 — Context</h3>
-          <div class="domain-sub">暗黙知</div>
-          <p>Unwritten rules, cultural "why", and implicit expectations. Knowledge only insiders have.</p>
-        </div>
-        <div class="domain-card" style="border-left: 2px solid #c8c8c8;">
-          <h3>Layer 3 — Experience</h3>
-          <div class="domain-sub">体験価値</div>
-          <p>How to turn correct execution into relationship-building moments. The art of making an impression.</p>
-        </div>
+    <div class="endpoint" onclick="this.classList.toggle('open')">
+      <div class="endpoint-header">
+        <span class="method method-get">GET</span>
+        <span class="endpoint-path">/estimate/model</span>
+        <span class="endpoint-desc">Model metadata</span>
       </div>
-    </section>
+      <div class="endpoint-body"><p>Returns current model version, R², feature count, and training statistics.</p></div>
+    </div>
 
-    <section class="section">
-      <div class="section-title">Knowledge Domains</div>
-      <div class="domains">
-        <div class="domain-card">
-          <h3>📋 Regulation</h3>
-          <div class="domain-sub">/api/v1/regulation</div>
-          <p>Licensing requirements, governing bodies, procedures, and compliance for 10+ industries — from restaurants to fintech.</p>
-        </div>
-        <div class="domain-card">
-          <h3>🤝 Protocol</h3>
-          <div class="domain-sub">/api/v1/protocol</div>
-          <p>Nemawashi, ringi, horenso, meishi exchange, seating order, and gift-giving — the unwritten rules of Japanese business.</p>
-        </div>
-        <div class="domain-card">
-          <h3>📅 Calendar</h3>
-          <div class="domain-sub">/api/v1/calendar</div>
-          <p>Fiscal year cycles, public holidays, gift seasons, administrative deadlines, and seasonal business patterns.</p>
-        </div>
-        <div class="domain-card">
-          <h3>🗺️ Regional</h3>
-          <div class="domain-sub">/api/v1/regional</div>
-          <p>Regional business characteristics, local subsidies, prefectural regulations, and cultural differences across Japan.</p>
-        </div>
-        <div class="domain-card">
-          <h3>🏛️ Organization</h3>
-          <div class="domain-sub">/api/v1/organization</div>
-          <p>Keiretsu structures, corporate hierarchy, payment customs, contract practices, and industry associations.</p>
-        </div>
-        <div class="domain-card">
-          <h3>🌐 Foreign Entry</h3>
-          <div class="domain-sub">/api/v1/foreign-entry</div>
-          <p>Company incorporation, management visa, bank accounts, property search, and tax registration for foreign businesses.</p>
-        </div>
-        <div class="domain-card">
-          <h3>✈️ Travel</h3>
-          <div class="domain-sub">/api/v1/travel</div>
-          <p>Transportation (shinkansen, IC cards), accommodation (ryokan etiquette), dining manners, and practical visitor intelligence.</p>
-        </div>
-        <div class="domain-card">
-          <h3>🎭 Entertainment</h3>
-          <div class="domain-sub">/api/v1/entertainment</div>
-          <p>Oshi-katsu fan culture, anime pilgrimage, live event manners, ticket acquisition, and seasonal cultural events.</p>
-        </div>
-        <div class="domain-card">
-          <h3>🏠 Daily Life</h3>
-          <div class="domain-sub">/api/v1/daily-life</div>
-          <p>Postal system, garbage sorting rules, utilities (electricity, gas, water, NHK), and healthcare — essential knowledge for living in Japan.</p>
-        </div>
-        <div class="domain-card">
-          <h3>🗾 Language</h3>
-          <div class="domain-sub">/api/v1/language</div>
-          <p>Keigo honorific system, counter words, name/address structure, and business Japanese templates for phone, email, and meetings.</p>
-        </div>
-        <div class="domain-card">
-          <h3>🍣 Food Culture</h3>
-          <div class="domain-sub">/api/v1/food</div>
-          <p>Dining etiquette, cuisine classification, restaurant navigation (shokkenki, izakaya, sushi), and dietary restriction guides (halal, vegetarian).</p>
-        </div>
-        <div class="domain-card">
-          <h3>⚠️ Disaster & Safety</h3>
-          <div class="domain-sub">/api/v1/disaster</div>
-          <p>Earthquake shindo scale & EEW alerts, typhoon warning levels, emergency contacts (110/119), and disaster preparedness guides.</p>
-        </div>
-        <div class="domain-card">
-          <h3>🧠 Memory</h3>
-          <div class="domain-sub">/api/v1/memory</div>
-          <p>Three-layer persistent memory — episodes, structured facts, and context summaries with Japanese language understanding.</p>
-        </div>
-        <div class="domain-card">
-          <h3>🔍 Cross-Domain Search</h3>
-          <div class="domain-sub">/api/v1/search</div>
-          <p>Query all 20 knowledge domains at once. One request returns regulations, protocols, food culture, disaster safety, and more.</p>
-        </div>
-        <div class="domain-card">
-          <h3>💴 Tax System</h3>
-          <div class="domain-sub">/api/v1/tax</div>
-          <p>Income tax, consumption tax, corporate tax, withholding, furusato nozei, capital gains, and tax filing procedures.</p>
-        </div>
-        <div class="domain-card">
-          <h3>🛂 Visa & Immigration</h3>
-          <div class="domain-sub">/api/v1/visa</div>
-          <p>29 residence status categories, permanent residency, points-based system, management visa, and naturalization.</p>
-        </div>
-        <div class="domain-card">
-          <h3>🏦 Banking & Finance</h3>
-          <div class="domain-sub">/api/v1/banking</div>
-          <p>Bank account opening for foreigners, international wire transfers, mobile payments (PayPay, Suica), credit cards, and ATM usage.</p>
-        </div>
-        <div class="domain-card">
-          <h3>🏥 Healthcare</h3>
-          <div class="domain-sub">/api/v1/healthcare</div>
-          <p>Health insurance system (NHI, employee), high-cost medical benefit, hospital visits, prescriptions, maternity, mental health, and long-term care.</p>
-        </div>
-        <div class="domain-card">
-          <h3>🎓 Education</h3>
-          <div class="domain-sub">/api/v1/education</div>
-          <p>School system (6-3-3-4), university admission (EJU), MEXT/JASSO scholarships, Japanese language schools, JLPT, and student life.</p>
-        </div>
-        <div class="domain-card">
-          <h3>🏠 Real Estate & Housing</h3>
-          <div class="domain-sub">/api/v1/real-estate</div>
-          <p>Apartment renting (shikikin, reikin, initial costs), property purchase by foreigners, UR housing, housing support, and moving procedures.</p>
-        </div>
+    <h2>Market Intelligence</h2>
+    <p>Cross-house market statistics and analytics across SBI Art Auction, Mainichi Auction, and Shinwa Auction.</p>
+
+    <div class="endpoint" onclick="this.classList.toggle('open')">
+      <div class="endpoint-header">
+        <span class="method method-get">GET</span>
+        <span class="endpoint-path">/market/stats</span>
+        <span class="endpoint-desc">Market overview + top artists</span>
       </div>
-    </section>
+      <div class="endpoint-body">
+        <p>Returns full market overview including total lots, tracked value, and top artists by volume/value.</p>
+        <pre>curl https://api.edition.sh/market/stats</pre>
+      </div>
+    </div>
 
-    <section class="code-section">
-      <div class="section-title">Quick Start</div>
-      <div class="code-block">
-        <div class="code-header">
-          <div class="code-tabs">
-            <button class="code-tab active" onclick="switchTab(0)">curl</button>
-            <button class="code-tab" onclick="switchTab(1)">Python</button>
-            <button class="code-tab" onclick="switchTab(2)">MCP</button>
-          </div>
-          <span>api.edition.sh</span>
-        </div>
-        <div class="code-body" id="code-panel-0">
-<span class="cmt"># Cross-domain search — one query, all knowledge</span>
-curl <span class="str">https://api.edition.sh/api/v1/search</span> \
-  -H <span class="str">"Content-Type: application/json"</span> \
-  -d <span class="str">'{"query": "Opening a restaurant in Tokyo"}'</span>
+    <div class="endpoint" onclick="this.classList.toggle('open')">
+      <div class="endpoint-header">
+        <span class="method method-get">GET</span>
+        <span class="endpoint-path">/health</span>
+        <span class="endpoint-desc">Service health check</span>
+      </div>
+      <div class="endpoint-body"><pre>{"status": "ok", "node": "kanteishi-macmini-01"}</pre></div>
+    </div>
 
-<span class="cmt"># Response: matched across regulation, calendar,</span>
-<span class="cmt"># regional, travel, and foreign-entry domains</span>
-        </div>
-        <div class="code-body" id="code-panel-1" style="display:none">
-<span class="kw">import</span> requests
+    <h2>Authentication & Assessment</h2>
+    <p>Forensic-grade assessment endpoints for text-based and image-based authentication analysis.</p>
 
-resp = requests.<span class="fn">post</span>(
-    <span class="str">"https://api.edition.sh/api/v1/search"</span>,
-    json={<span class="str">"query"</span>: <span class="str">"推し活のチケット購入方法"</span>}
-)
-data = resp.<span class="fn">json</span>()
+    <div class="endpoint" onclick="this.classList.toggle('open')">
+      <div class="endpoint-header">
+        <span class="method method-post">POST</span>
+        <span class="endpoint-path">/assess/text</span>
+        <span class="endpoint-desc">Text-based authentication</span>
+      </div>
+      <div class="endpoint-body">
+        <table class="param-table">
+          <thead><tr><th>Parameter</th><th>Type</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td>text</td><td>string</td><td>Description of the item to assess</td></tr>
+            <tr><td>category</td><td>string</td><td>Optional: swords, ceramics, paintings, etc.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
-<span class="cmt"># 20 knowledge domains searched simultaneously</span>
-<span class="kw">for</span> domain, result <span class="kw">in</span> data[<span class="str">"results"</span>].items():
-    <span class="fn">print</span>(f<span class="str">"  {domain}: matched"</span>)
-        </div>
-        <div class="code-body" id="code-panel-2" style="display:none">
-<span class="cmt">// claude_desktop_config.json</span>
-{
-  <span class="str">"mcpServers"</span>: {
-    <span class="str">"edition"</span>: {
-      <span class="str">"command"</span>: <span class="str">"npx"</span>,
-      <span class="str">"args"</span>: [<span class="str">"edition-mcp-server"</span>]
+    <div class="endpoint" onclick="this.classList.toggle('open')">
+      <div class="endpoint-header">
+        <span class="method method-post">POST</span>
+        <span class="endpoint-path">/assess/image-upload</span>
+        <span class="endpoint-desc">Image-based authentication</span>
+      </div>
+      <div class="endpoint-body"><p>Upload an image for AI-powered visual analysis. Multipart form data with an `image` field.</p></div>
+    </div>
+
+    <h2>Provenance Search</h2>
+    <p>Cross-house provenance chain search across 49,968 auction records and the Neo4j knowledge graph.</p>
+
+    <div class="endpoint" onclick="this.classList.toggle('open')">
+      <div class="endpoint-header">
+        <span class="method method-post">POST</span>
+        <span class="endpoint-path">/provenance/search</span>
+        <span class="endpoint-desc">Search provenance chain</span>
+      </div>
+      <div class="endpoint-body">
+        <table class="param-table">
+          <thead><tr><th>Parameter</th><th>Type</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td>artist</td><td>string</td><td>Artist name</td></tr>
+            <tr><td>title</td><td>string</td><td>Optional: Work title for precise matching</td></tr>
+            <tr><td>limit</td><td>number</td><td>Max results (default: 20)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="endpoint" onclick="this.classList.toggle('open')">
+      <div class="endpoint-header">
+        <span class="method method-get">GET</span>
+        <span class="endpoint-path">/provenance/artist/{name}</span>
+        <span class="endpoint-desc">Artist timeline</span>
+      </div>
+      <div class="endpoint-body"><p>Returns chronological auction timeline for an artist across all houses.</p></div>
+    </div>
+
+    <h2>Knowledge Graph</h2>
+    <p>Neo4j-powered graph queries for cross-house analysis. 7,258 Artist nodes, 49,968 Lot nodes, 325,130 CROSS_HOUSE relationships.</p>
+
+    <div class="endpoint" onclick="this.classList.toggle('open')">
+      <div class="endpoint-header">
+        <span class="method method-get">GET</span>
+        <span class="endpoint-path">/graph/stats</span>
+        <span class="endpoint-desc">Graph database statistics</span>
+      </div>
+      <div class="endpoint-body"><p>Returns node/relationship counts and top artists by total auction value.</p></div>
+    </div>
+
+    <div class="endpoint" onclick="this.classList.toggle('open')">
+      <div class="endpoint-header">
+        <span class="method method-get">GET</span>
+        <span class="endpoint-path">/graph/artist/{name}</span>
+        <span class="endpoint-desc">Artist graph profile</span>
+      </div>
+      <div class="endpoint-body"><p>Returns graph-based artist profile including connected houses, lot count, and cross-house relationships.</p></div>
+    </div>
+
+    <h2>Collection Management</h2>
+    <p>Personal portfolio tracking with real-time hedonic valuation.</p>
+
+    <div class="endpoint" onclick="this.classList.toggle('open')">
+      <div class="endpoint-header">
+        <span class="method method-post">POST</span>
+        <span class="endpoint-path">/collection/create</span>
+        <span class="endpoint-desc">Create collection</span>
+      </div>
+      <div class="endpoint-body">
+        <table class="param-table">
+          <thead><tr><th>Parameter</th><th>Type</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td>name</td><td>string</td><td>Collection name</td></tr>
+            <tr><td>description</td><td>string</td><td>Optional description</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="endpoint" onclick="this.classList.toggle('open')">
+      <div class="endpoint-header">
+        <span class="method method-get">GET</span>
+        <span class="endpoint-path">/collection/list</span>
+        <span class="endpoint-desc">List collections</span>
+      </div>
+      <div class="endpoint-body"><p>Returns all collections with item counts.</p></div>
+    </div>
+
+    <div class="endpoint" onclick="this.classList.toggle('open')">
+      <div class="endpoint-header">
+        <span class="method method-post">POST</span>
+        <span class="endpoint-path">/collection/item/add</span>
+        <span class="endpoint-desc">Add item to collection</span>
+      </div>
+      <div class="endpoint-body">
+        <table class="param-table">
+          <thead><tr><th>Parameter</th><th>Type</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td>collection_id</td><td>string</td><td>Target collection ID</td></tr>
+            <tr><td>artist</td><td>string</td><td>Artist name</td></tr>
+            <tr><td>title</td><td>string</td><td>Work title</td></tr>
+            <tr><td>medium</td><td>string</td><td>Medium</td></tr>
+            <tr><td>purchase_price</td><td>number</td><td>Purchase price in JPY</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="endpoint" onclick="this.classList.toggle('open')">
+      <div class="endpoint-header">
+        <span class="method method-post">POST</span>
+        <span class="endpoint-path">/collection/{id}/valuate</span>
+        <span class="endpoint-desc">Portfolio valuation</span>
+      </div>
+      <div class="endpoint-body"><p>Runs hedonic pricing on all items in a collection and returns total estimated value vs. purchase price.</p></div>
+    </div>
+
+    <h2>MCP Integration</h2>
+    <p>KANTEISHI is available as an MCP (Model Context Protocol) server for AI agent integration via Claude Desktop and other MCP-compatible clients.</p>
+
+    <div class="base-url" style="margin-top:1rem">
+      <div style="font-size:0.7rem;color:var(--text-dim);margin-bottom:0.5rem">Claude Desktop Config</div>
+      <pre style="margin:0;background:none;border:none;padding:0;color:var(--gold)">{
+  "mcpServers": {
+    "kanteishi": {
+      "command": "python",
+      "args": ["kanteishi_mcp.py"]
     }
   }
-}
+}</pre>
+    </div>
 
-<span class="cmt">// Then ask Claude:</span>
-<span class="cmt">// "東京で飲食店を開業するには？"</span>
-<span class="cmt">// "What are the business card exchange rules?"</span>
-<span class="cmt">// "推し活のマナーを教えて"</span>
-        </div>
-      </div>
-    </section>
+    <p style="margin-top:1.5rem"><strong>Available MCP Tools:</strong></p>
+    <table class="param-table" style="margin-bottom:2rem">
+      <thead><tr><th>Tool</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr><td>estimate_price</td><td>Get hedonic price estimate for an artwork</td></tr>
+        <tr><td>artist_info</td><td>Retrieve artist market statistics</td></tr>
+        <tr><td>market_overview</td><td>Get market-wide statistics</td></tr>
+        <tr><td>provenance_search</td><td>Search auction history across houses</td></tr>
+        <tr><td>assess_text</td><td>Text-based authentication assessment</td></tr>
+        <tr><td>graph_artist</td><td>Knowledge graph artist profile</td></tr>
+        <tr><td>collection_valuate</td><td>Portfolio valuation</td></tr>
+      </tbody>
+    </table>
 
-    <!-- Trust Anchor -->
-    <section class="section">
-      <div class="section-title">Trust Anchor — Verified Intelligence</div>
-      <div class="domains" style="grid-template-columns: repeat(3, 1fr);">
-        <div class="domain-card" style="text-align: center;">
-          <div style="font-size: 28px; font-weight: 700; margin-bottom: 4px;">20</div>
-          <div style="font-size: 12px; color: var(--text-muted);">Knowledge Domains</div>
-          <p style="margin-top: 12px;">From business regulations to healthcare, education, real estate — full-spectrum Japan intelligence</p>
-        </div>
-        <div class="domain-card" style="text-align: center;">
-          <div style="font-size: 28px; font-weight: 700; margin-bottom: 4px;">97</div>
-          <div style="font-size: 12px; color: var(--text-muted);">Knowledge Entries</div>
-          <p style="margin-top: 12px;">Verified against official sources — government, legal, domain experts</p>
-        </div>
-        <div class="domain-card" style="text-align: center;">
-          <div style="font-size: 28px; font-weight: 700; margin-bottom: 4px;">97.8</div>
-          <div style="font-size: 12px; color: var(--text-muted);">Quality Score</div>
-          <p style="margin-top: 12px;">Automated quality gating with real-time telemetry and freshness tracking</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing -->
-    <section class="section">
-      <div class="section-title">Pricing</div>
-      <div class="domains" style="grid-template-columns: repeat(3, 1fr);">
-        <div class="domain-card" style="border-top: 2px solid var(--green);">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
-            <h3 style="margin: 0;">Free</h3>
-            <span style="font-size: 24px; font-weight: 700;">¥0</span>
-          </div>
-          <p style="margin-bottom: 16px; color: var(--text-muted); font-size: 12px;">Get started instantly</p>
-          <ul style="list-style: none; font-size: 13px; color: var(--text-secondary);">
-            <li style="padding: 6px 0; border-bottom: 1px solid var(--border);">✓ 100 requests/day</li>
-            <li style="padding: 6px 0; border-bottom: 1px solid var(--border);">✓ 8 core domains</li>
-            <li style="padding: 6px 0; border-bottom: 1px solid var(--border);">✓ 10 req/min rate limit</li>
-            <li style="padding: 6px 0; border-bottom: 1px solid var(--border);">✓ REST API + MCP</li>
-            <li style="padding: 6px 0;">✓ Cross-domain search</li>
-          </ul>
-          <a href="https://api.edition.sh/docs#/auth/auth_register_api_v1_auth_register_post" class="btn btn-secondary" style="width: 100%; justify-content: center; margin-top: 20px;" target="_blank">Get Free Key →</a>
-        </div>
-        <div class="domain-card" style="border-top: 2px solid var(--text); position: relative;">
-          <div style="position: absolute; top: -12px; right: 16px; background: var(--text); color: var(--bg); font-size: 10px; font-weight: 600; padding: 2px 10px; border-radius: 4px; letter-spacing: 1px;">RECOMMENDED</div>
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
-            <h3 style="margin: 0;">Pro</h3>
-            <div style="text-align: right;">
-              <span style="font-size: 24px; font-weight: 700;">¥2,980</span>
-              <span style="font-size: 12px; color: var(--text-muted);">/mo</span>
-            </div>
-          </div>
-          <p style="margin-bottom: 16px; color: var(--text-muted); font-size: 12px;">Full access for production use</p>
-          <ul style="list-style: none; font-size: 13px; color: var(--text-secondary);">
-            <li style="padding: 6px 0; border-bottom: 1px solid var(--border);">✓ 10,000 requests/day</li>
-            <li style="padding: 6px 0; border-bottom: 1px solid var(--border);">✓ <strong>All 20 domains</strong></li>
-            <li style="padding: 6px 0; border-bottom: 1px solid var(--border);">✓ 100 req/min rate limit</li>
-            <li style="padding: 6px 0; border-bottom: 1px solid var(--border);">✓ Quality metadata headers</li>
-            <li style="padding: 6px 0;">✓ Telemetry access</li>
-          </ul>
-          <a href="mailto:h.sato@c-9.co.jp?subject=EDITION Pro Plan" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 20px;">Contact for Pro →</a>
-        </div>
-        <div class="domain-card" style="border-top: 2px solid var(--text-muted);">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
-            <h3 style="margin: 0;">Enterprise</h3>
-            <span style="font-size: 18px; font-weight: 600; color: var(--text-muted);">Custom</span>
-          </div>
-          <p style="margin-bottom: 16px; color: var(--text-muted); font-size: 12px;">For mission-critical operations</p>
-          <ul style="list-style: none; font-size: 13px; color: var(--text-secondary);">
-            <li style="padding: 6px 0; border-bottom: 1px solid var(--border);">✓ Unlimited requests</li>
-            <li style="padding: 6px 0; border-bottom: 1px solid var(--border);">✓ All 20 domains</li>
-            <li style="padding: 6px 0; border-bottom: 1px solid var(--border);">✓ Custom rate limits</li>
-            <li style="padding: 6px 0; border-bottom: 1px solid var(--border);">✓ Dedicated support</li>
-            <li style="padding: 6px 0;">✓ SLA guarantee</li>
-          </ul>
-          <a href="mailto:h.sato@c-9.co.jp?subject=EDITION Enterprise" class="btn btn-secondary" style="width: 100%; justify-content: center; margin-top: 20px;">Contact Sales →</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <script>
-    function switchTab(idx) {
-      document.querySelectorAll('.code-tab').forEach((t, i) => {
-        t.classList.toggle('active', i === idx);
-      });
-      for (let i = 0; i < 3; i++) {
-        const panel = document.getElementById('code-panel-' + i);
-        if (panel) panel.style.display = i === idx ? 'block' : 'none';
-      }
-    }
-  </script>
-
-  <footer>
-    <p>
-      EDITION Intelligence Platform — Open Beta
-      &nbsp;·&nbsp;
-      <a href="https://api.edition.sh/docs">API</a>
-      &nbsp;·&nbsp;
-      <a href="https://www.npmjs.com/package/edition-mcp-server">npm</a>
-      &nbsp;·&nbsp;
-      <a href="https://github.com/hiroshic9-png/edition-api">GitHub</a>
-      &nbsp;·&nbsp;
-      <a href="https://github.com/hiroshic9-png/edition-api/blob/main/docs/terms.md">Terms</a>
-    </p>
-  </footer>
-
+    <footer>
+      <p>© 2026 EDITION — Japanese Cultural Assets Intelligence</p>
+      <p style="margin-top:0.3rem">
+        <a href="/">Top</a> ·
+        <a href="/artists">Artists</a> ·
+        <a href="/market">Market</a> ·
+        <a href="/categories">Categories</a> ·
+        <a href="/kanteishi">KANTEISHI</a>
+      </p>
+    </footer>
+  </div>
 </body>
 </html>
