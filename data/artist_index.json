@@ -4,7 +4,7 @@
     "slug": "村上-隆",
     "roman_name": "MURAKAMI Takashi",
     "lot_count": 2114,
-    "avg_price": 567835
+    "avg_price": 567834
   },
   {
     "name": "草間　彌生",
@@ -16,56 +16,56 @@
   {
     "name": "カウズ",
     "slug": "カウズ",
-    "roman_name": "",
+    "roman_name": "KAWS",
     "lot_count": 916,
-    "avg_price": 1406839
+    "avg_price": 1406838
   },
   {
     "name": "ガレ",
     "slug": "ガレ",
-    "roman_name": "",
+    "roman_name": "GALLE",
     "lot_count": 878,
-    "avg_price": 411476
+    "avg_price": 411475
   },
   {
     "name": "マイセン",
     "slug": "マイセン",
-    "roman_name": "",
+    "roman_name": "MEISSEN",
     "lot_count": 711,
-    "avg_price": 289764
+    "avg_price": 289763
   },
   {
     "name": "ドーム",
     "slug": "ドーム",
-    "roman_name": "",
+    "roman_name": "DAUM FRERES",
     "lot_count": 665,
     "avg_price": 481132
   },
   {
     "name": "北大路 魯山人",
     "slug": "北大路-魯山人",
-    "roman_name": "KITAŌJI Rosanjin",
+    "roman_name": "KITAOJI Rosanjin",
     "lot_count": 568,
-    "avg_price": 1311136
+    "avg_price": 1311135
   },
   {
     "name": "奈良　美智",
     "slug": "奈良-美智",
     "roman_name": "NARA Yoshitomo",
     "lot_count": 476,
-    "avg_price": 5235849
+    "avg_price": 5235848
   },
   {
     "name": "李　禹煥",
     "slug": "李-禹煥",
     "roman_name": "LEE Ufan",
     "lot_count": 383,
-    "avg_price": 2812086
+    "avg_price": 2812085
   },
   {
     "name": "ベルナール・ビュッフェ",
     "slug": "ベルナール・ビュッフェ",
-    "roman_name": "",
+    "roman_name": "Bernard BUFFET",
     "lot_count": 354,
     "avg_price": 1579853
   },
@@ -86,30 +86,30 @@
   {
     "name": "アンディ・ウォーホル",
     "slug": "アンディ・ウォーホル",
-    "roman_name": "",
+    "roman_name": "Andy WARHOL",
     "lot_count": 291,
-    "avg_price": 5695587
+    "avg_price": 5695586
   },
   {
     "name": "名和　晃平",
     "slug": "名和-晃平",
     "roman_name": "NAWA Kōhei",
     "lot_count": 284,
-    "avg_price": 1536884
+    "avg_price": 1536883
   },
   {
     "name": "棟方 志功",
     "slug": "棟方-志功",
-    "roman_name": "",
+    "roman_name": "MUNAKATA Shiko",
     "lot_count": 283,
-    "avg_price": 996505
+    "avg_price": 996504
   },
   {
     "name": "元永　定正",
     "slug": "元永-定正",
     "roman_name": "MOTONAGA Sadamasa",
     "lot_count": 272,
-    "avg_price": 1767730
+    "avg_price": 1767729
   },
   {
     "name": "ロッカク　アヤコ",
@@ -123,20 +123,1280 @@
     "slug": "山田-正亮",
     "roman_name": "YAMADA Masaaki",
     "lot_count": 234,
-    "avg_price": 1074479
-  },
-  {
-    "name": "東山 魁夷",
-    "slug": "東山-魁夷",
-    "roman_name": "",
-    "lot_count": 219,
-    "avg_price": 2376130
+    "avg_price": 1074478
   },
   {
     "name": "CHANEL",
     "slug": "CHANEL",
-    "roman_name": "",
+    "roman_name": "CHANEL",
     "lot_count": 219,
     "avg_price": 133866
+  },
+  {
+    "name": "東山 魁夷",
+    "slug": "東山-魁夷",
+    "roman_name": "HIGASHIYAMA Kaii",
+    "lot_count": 219,
+    "avg_price": 2376130
+  },
+  {
+    "name": "KYNE",
+    "slug": "KYNE",
+    "roman_name": "キネ）（KYNE",
+    "lot_count": 212,
+    "avg_price": 4059352
+  },
+  {
+    "name": "ラリック",
+    "slug": "ラリック",
+    "roman_name": "LALIQUE",
+    "lot_count": 195,
+    "avg_price": 293790
+  },
+  {
+    "name": "杉本　博司",
+    "slug": "杉本-博司",
+    "roman_name": "",
+    "lot_count": 177,
+    "avg_price": 1215491
+  },
+  {
+    "name": "パブロ・ピカソ",
+    "slug": "パブロ・ピカソ",
+    "roman_name": "Pablo PICASSO",
+    "lot_count": 177,
+    "avg_price": 1614092
+  },
+  {
+    "name": "花井　祐介",
+    "slug": "花井-祐介",
+    "roman_name": "",
+    "lot_count": 168,
+    "avg_price": 1788659
+  },
+  {
+    "name": "河井 寛次郎",
+    "slug": "河井-寛次郎",
+    "roman_name": "KAWAI Kanjiro",
+    "lot_count": 164,
+    "avg_price": 412865
+  },
+  {
+    "name": "関根　伸夫",
+    "slug": "関根-伸夫",
+    "roman_name": "",
+    "lot_count": 157,
+    "avg_price": 698228
+  },
+  {
+    "name": "奈良　美智　グッズ",
+    "slug": "奈良-美智-グッズ",
+    "roman_name": "",
+    "lot_count": 147,
+    "avg_price": 301151
+  },
+  {
+    "name": "ダニエル・アーシャム",
+    "slug": "ダニエル・アーシャム",
+    "roman_name": "Daniel ARSHAM",
+    "lot_count": 146,
+    "avg_price": 1943707
+  },
+  {
+    "name": "バンクシー",
+    "slug": "バンクシー",
+    "roman_name": "BANKSY",
+    "lot_count": 145,
+    "avg_price": 4787634
+  },
+  {
+    "name": "ダミアン・ハースト",
+    "slug": "ダミアン・ハースト",
+    "roman_name": "Damien HIRST",
+    "lot_count": 144,
+    "avg_price": 1819057
+  },
+  {
+    "name": "R.ラリック",
+    "slug": "R.ラリック",
+    "roman_name": "",
+    "lot_count": 143,
+    "avg_price": 150416
+  },
+  {
+    "name": "五木田　智央",
+    "slug": "五木田-智央",
+    "roman_name": "",
+    "lot_count": 139,
+    "avg_price": 2650197
+  },
+  {
+    "name": "小松　美羽",
+    "slug": "小松-美羽",
+    "roman_name": "",
+    "lot_count": 138,
+    "avg_price": 4047184
+  },
+  {
+    "name": "バックサイドワークス",
+    "slug": "バックサイドワークス",
+    "roman_name": "",
+    "lot_count": 138,
+    "avg_price": 1784166
+  },
+  {
+    "name": "白髪　一雄",
+    "slug": "白髪-一雄",
+    "roman_name": "",
+    "lot_count": 137,
+    "avg_price": 3520770
+  },
+  {
+    "name": "井田　幸昌",
+    "slug": "井田-幸昌",
+    "roman_name": "",
+    "lot_count": 133,
+    "avg_price": 3961546
+  },
+  {
+    "name": "ルイ・イカール",
+    "slug": "ルイ・イカール",
+    "roman_name": "Louis ICART",
+    "lot_count": 133,
+    "avg_price": 72786
+  },
+  {
+    "name": "今井　俊満",
+    "slug": "今井-俊満",
+    "roman_name": "",
+    "lot_count": 132,
+    "avg_price": 1308950
+  },
+  {
+    "name": "加藤　泉",
+    "slug": "加藤-泉",
+    "roman_name": "",
+    "lot_count": 132,
+    "avg_price": 1859674
+  },
+  {
+    "name": "千住 博",
+    "slug": "千住-博",
+    "roman_name": "SENJU Hiroshi",
+    "lot_count": 132,
+    "avg_price": 2306939
+  },
+  {
+    "name": "マルク・シャガール",
+    "slug": "マルク・シャガール",
+    "roman_name": "Marc CHAGALL",
+    "lot_count": 130,
+    "avg_price": 2352359
+  },
+  {
+    "name": "菅　木志雄",
+    "slug": "菅-木志雄",
+    "roman_name": "",
+    "lot_count": 130,
+    "avg_price": 608875
+  },
+  {
+    "name": "斎藤 清",
+    "slug": "斎藤-清",
+    "roman_name": "SAITO Kiyoshi",
+    "lot_count": 129,
+    "avg_price": 386698
+  },
+  {
+    "name": "作者不詳",
+    "slug": "作者不詳",
+    "roman_name": "UNKNOWN",
+    "lot_count": 129,
+    "avg_price": 140968
+  },
+  {
+    "name": "空山　基",
+    "slug": "空山-基",
+    "roman_name": "",
+    "lot_count": 126,
+    "avg_price": 860741
+  },
+  {
+    "name": "藤田 喬平",
+    "slug": "藤田-喬平",
+    "roman_name": "FUJITA Kyohei",
+    "lot_count": 125,
+    "avg_price": 247360
+  },
+  {
+    "name": "ジュリアン・オピー",
+    "slug": "ジュリアン・オピー",
+    "roman_name": "Julian OPIE",
+    "lot_count": 123,
+    "avg_price": 2245034
+  },
+  {
+    "name": "インベーダー",
+    "slug": "インベーダー",
+    "roman_name": "INVADER",
+    "lot_count": 123,
+    "avg_price": 1648869
+  },
+  {
+    "name": "LOUIS VUITTON",
+    "slug": "LOUIS-VUITTON",
+    "roman_name": "LOUIS VUITTON",
+    "lot_count": 123,
+    "avg_price": 158939
+  },
+  {
+    "name": "HERMÈS",
+    "slug": "HERMÈS",
+    "roman_name": "HERMÈS",
+    "lot_count": 122,
+    "avg_price": 508976
+  },
+  {
+    "name": "松山　智一",
+    "slug": "松山-智一",
+    "roman_name": "",
+    "lot_count": 121,
+    "avg_price": 3710882
+  },
+  {
+    "name": "松谷　武判",
+    "slug": "松谷-武判",
+    "roman_name": "",
+    "lot_count": 120,
+    "avg_price": 1642764
+  },
+  {
+    "name": "マサキ",
+    "slug": "マサキ",
+    "roman_name": "",
+    "lot_count": 119,
+    "avg_price": 2081838
+  },
+  {
+    "name": "ジョアン・ミロ",
+    "slug": "ジョアン・ミロ",
+    "roman_name": "Joan MIRO",
+    "lot_count": 117,
+    "avg_price": 965017
+  },
+  {
+    "name": "高松　次郎",
+    "slug": "高松-次郎",
+    "roman_name": "",
+    "lot_count": 113,
+    "avg_price": 2031725
+  },
+  {
+    "name": "山口　歴",
+    "slug": "山口-歴",
+    "roman_name": "",
+    "lot_count": 109,
+    "avg_price": 2460665
+  },
+  {
+    "name": "加守田 章二",
+    "slug": "加守田-章二",
+    "roman_name": "KAMODA Shoji",
+    "lot_count": 109,
+    "avg_price": 922018
+  },
+  {
+    "name": "平山 郁夫",
+    "slug": "平山-郁夫",
+    "roman_name": "HIRAYAMA Ikuo",
+    "lot_count": 108,
+    "avg_price": 1369609
+  },
+  {
+    "name": "LY",
+    "slug": "LY",
+    "roman_name": "リー）（LY",
+    "lot_count": 104,
+    "avg_price": 1560872
+  },
+  {
+    "name": "セーヴル スタイル",
+    "slug": "セーヴル-スタイル",
+    "roman_name": "SEVRES STYLE",
+    "lot_count": 104,
+    "avg_price": 161586
+  },
+  {
+    "name": "荒木　経惟",
+    "slug": "荒木-経惟",
+    "roman_name": "",
+    "lot_count": 102,
+    "avg_price": 620808
+  },
+  {
+    "name": "MIKIMOTO",
+    "slug": "MIKIMOTO",
+    "roman_name": "MIKIMOTO",
+    "lot_count": 99,
+    "avg_price": 315959
+  },
+  {
+    "name": "片岡 球子",
+    "slug": "片岡-球子",
+    "roman_name": "KATAOKA Tamako",
+    "lot_count": 99,
+    "avg_price": 590151
+  },
+  {
+    "name": "岡本　太郎",
+    "slug": "岡本-太郎",
+    "roman_name": "",
+    "lot_count": 98,
+    "avg_price": 786221
+  },
+  {
+    "name": "加山 又造",
+    "slug": "加山-又造",
+    "roman_name": "KAYAMA Matazo",
+    "lot_count": 98,
+    "avg_price": 5211435
+  },
+  {
+    "name": "ミューラー",
+    "slug": "ミューラー",
+    "roman_name": "MULLER",
+    "lot_count": 98,
+    "avg_price": 125679
+  },
+  {
+    "name": "ミスター",
+    "slug": "ミスター",
+    "roman_name": "",
+    "lot_count": 96,
+    "avg_price": 1702838
+  },
+  {
+    "name": "クリスト",
+    "slug": "クリスト",
+    "roman_name": "CHRISTO",
+    "lot_count": 96,
+    "avg_price": 652359
+  },
+  {
+    "name": "川瀬 巴水",
+    "slug": "川瀬-巴水",
+    "roman_name": "KAWASE Hasui",
+    "lot_count": 96,
+    "avg_price": 350989
+  },
+  {
+    "name": "桑田　卓郎",
+    "slug": "桑田-卓郎",
+    "roman_name": "",
+    "lot_count": 95,
+    "avg_price": 433742
+  },
+  {
+    "name": "絹谷 幸二",
+    "slug": "絹谷-幸二",
+    "roman_name": "KINUTANI Koji",
+    "lot_count": 95,
+    "avg_price": 908873
+  },
+  {
+    "name": "小畑　多丘",
+    "slug": "小畑-多丘",
+    "roman_name": "",
+    "lot_count": 93,
+    "avg_price": 486755
+  },
+  {
+    "name": "横尾　忠則",
+    "slug": "横尾-忠則",
+    "roman_name": "",
+    "lot_count": 90,
+    "avg_price": 919183
+  },
+  {
+    "name": "バカラ",
+    "slug": "バカラ",
+    "roman_name": "BACCARAT",
+    "lot_count": 88,
+    "avg_price": 205226
+  },
+  {
+    "name": "キース・ヘリング",
+    "slug": "キース・ヘリング",
+    "roman_name": "Keith HARING",
+    "lot_count": 87,
+    "avg_price": 5218258
+  },
+  {
+    "name": "山口　長男",
+    "slug": "山口-長男",
+    "roman_name": "",
+    "lot_count": 82,
+    "avg_price": 2172686
+  },
+  {
+    "name": "CARTIER",
+    "slug": "CARTIER",
+    "roman_name": "CARTIER",
+    "lot_count": 82,
+    "avg_price": 736219
+  },
+  {
+    "name": "梅原 龍三郎",
+    "slug": "梅原-龍三郎",
+    "roman_name": "UMEHARA Ryuzaburo",
+    "lot_count": 82,
+    "avg_price": 2835802
+  },
+  {
+    "name": "舟越　桂",
+    "slug": "舟越-桂",
+    "roman_name": "",
+    "lot_count": 81,
+    "avg_price": 431237
+  },
+  {
+    "name": "谷口　正造",
+    "slug": "谷口-正造",
+    "roman_name": "",
+    "lot_count": 81,
+    "avg_price": 1153265
+  },
+  {
+    "name": "窯不詳",
+    "slug": "窯不詳",
+    "roman_name": "UNKNOWN POTTERY",
+    "lot_count": 81,
+    "avg_price": 111666
+  },
+  {
+    "name": "マット・ゴンデック",
+    "slug": "マット・ゴンデック",
+    "roman_name": "",
+    "lot_count": 79,
+    "avg_price": 528272
+  },
+  {
+    "name": "篠田　桃紅",
+    "slug": "篠田-桃紅",
+    "roman_name": "",
+    "lot_count": 79,
+    "avg_price": 541212
+  },
+  {
+    "name": "サム・フランシス",
+    "slug": "サム・フランシス",
+    "roman_name": "Sam FRANCIS",
+    "lot_count": 78,
+    "avg_price": 1006096
+  },
+  {
+    "name": "森山　大道",
+    "slug": "森山-大道",
+    "roman_name": "",
+    "lot_count": 77,
+    "avg_price": 424503
+  },
+  {
+    "name": "塩田　千春",
+    "slug": "塩田-千春",
+    "roman_name": "",
+    "lot_count": 76,
+    "avg_price": 878042
+  },
+  {
+    "name": "東郷 青児",
+    "slug": "東郷-青児",
+    "roman_name": "TOGO Seiji",
+    "lot_count": 76,
+    "avg_price": 599738
+  },
+  {
+    "name": "十六代 永楽 即全",
+    "slug": "十六代-永楽-即全",
+    "roman_name": "EIRAKU Sokuzen XVI",
+    "lot_count": 76,
+    "avg_price": 107250
+  },
+  {
+    "name": "濱田 庄司◎",
+    "slug": "濱田-庄司◎",
+    "roman_name": "HAMADA Shoji",
+    "lot_count": 76,
+    "avg_price": 176276
+  },
+  {
+    "name": "三島　喜美代",
+    "slug": "三島-喜美代",
+    "roman_name": "",
+    "lot_count": 75,
+    "avg_price": 1022893
+  },
+  {
+    "name": "アルフォンス・ミュシャ",
+    "slug": "アルフォンス・ミュシャ",
+    "roman_name": "Alphonse MUCHA",
+    "lot_count": 75,
+    "avg_price": 296833
+  },
+  {
+    "name": "中島 千波",
+    "slug": "中島-千波",
+    "roman_name": "NAKAJIMA Chinami",
+    "lot_count": 74,
+    "avg_price": 331226
+  },
+  {
+    "name": "フランク・ステラ",
+    "slug": "フランク・ステラ",
+    "roman_name": "Frank STELLA",
+    "lot_count": 73,
+    "avg_price": 1270462
+  },
+  {
+    "name": "上前　智祐",
+    "slug": "上前-智祐",
+    "roman_name": "",
+    "lot_count": 73,
+    "avg_price": 714808
+  },
+  {
+    "name": "愛☆まどんな",
+    "slug": "愛☆まどんな",
+    "roman_name": "AI MADONNA",
+    "lot_count": 72,
+    "avg_price": 1075586
+  },
+  {
+    "name": "濱田 庄司",
+    "slug": "濱田-庄司",
+    "roman_name": "重要無形文化財）（HAMADA Shoji",
+    "lot_count": 72,
+    "avg_price": 162083
+  },
+  {
+    "name": "TIDE",
+    "slug": "TIDE",
+    "roman_name": "",
+    "lot_count": 71,
+    "avg_price": 2539394
+  },
+  {
+    "name": "長場　雄",
+    "slug": "長場-雄",
+    "roman_name": "",
+    "lot_count": 71,
+    "avg_price": 369373
+  },
+  {
+    "name": "吉原　治良",
+    "slug": "吉原-治良",
+    "roman_name": "",
+    "lot_count": 71,
+    "avg_price": 1123355
+  },
+  {
+    "name": "ROLEX",
+    "slug": "ROLEX",
+    "roman_name": "ROLEX",
+    "lot_count": 71,
+    "avg_price": 2561253
+  },
+  {
+    "name": "アドリアナ・オリバー",
+    "slug": "アドリアナ・オリバー",
+    "roman_name": "Adriana OLIVER",
+    "lot_count": 70,
+    "avg_price": 689528
+  },
+  {
+    "name": "オートモアイ",
+    "slug": "オートモアイ",
+    "roman_name": "AUTO MOAI",
+    "lot_count": 70,
+    "avg_price": 814814
+  },
+  {
+    "name": "山下 清",
+    "slug": "山下-清",
+    "roman_name": "YAMASHITA Kiyoshi",
+    "lot_count": 69,
+    "avg_price": 766047
+  },
+  {
+    "name": "難波田　龍起",
+    "slug": "難波田-龍起",
+    "roman_name": "",
+    "lot_count": 68,
+    "avg_price": 493080
+  },
+  {
+    "name": "熊谷 守一",
+    "slug": "熊谷-守一",
+    "roman_name": "KUMAGAI Morikazu",
+    "lot_count": 68,
+    "avg_price": 1496325
+  },
+  {
+    "name": "浅野　弥衛",
+    "slug": "浅野-弥衛",
+    "roman_name": "",
+    "lot_count": 66,
+    "avg_price": 859415
+  },
+  {
+    "name": "デイヴィッド・ホックニー",
+    "slug": "デイヴィッド・ホックニー",
+    "roman_name": "",
+    "lot_count": 66,
+    "avg_price": 1385496
+  },
+  {
+    "name": "荻須 高徳",
+    "slug": "荻須-高徳",
+    "roman_name": "OGISU Takanori",
+    "lot_count": 66,
+    "avg_price": 2473613
+  },
+  {
+    "name": "KPM ベルリン",
+    "slug": "KPM-ベルリン",
+    "roman_name": "K.P.M.",
+    "lot_count": 66,
+    "avg_price": 185151
+  },
+  {
+    "name": "三代 徳田 八十吉◎",
+    "slug": "三代-徳田-八十吉◎",
+    "roman_name": "TOKUDA Yasokichi III",
+    "lot_count": 65,
+    "avg_price": 256569
+  },
+  {
+    "name": "ゲルハルト・リヒター",
+    "slug": "ゲルハルト・リヒター",
+    "roman_name": "Gerhard RICHTER",
+    "lot_count": 64,
+    "avg_price": 2290278
+  },
+  {
+    "name": "中村　一美",
+    "slug": "中村-一美",
+    "roman_name": "",
+    "lot_count": 63,
+    "avg_price": 1229194
+  },
+  {
+    "name": "TIFFANY & CO.",
+    "slug": "TIFFANY-&-CO.",
+    "roman_name": "TIFFANY & CO.",
+    "lot_count": 63,
+    "avg_price": 397539
+  },
+  {
+    "name": "吉田 博",
+    "slug": "吉田-博",
+    "roman_name": "YOSHIDA Hiroshi",
+    "lot_count": 63,
+    "avg_price": 1050396
+  },
+  {
+    "name": "アレックス・カッツ",
+    "slug": "アレックス・カッツ",
+    "roman_name": "Alex KATZ",
+    "lot_count": 62,
+    "avg_price": 909564
+  },
+  {
+    "name": "オノサト・トシノブ",
+    "slug": "オノサト・トシノブ",
+    "roman_name": "",
+    "lot_count": 61,
+    "avg_price": 1366493
+  },
+  {
+    "name": "伊東 深水",
+    "slug": "伊東-深水",
+    "roman_name": "ITO Shinsui",
+    "lot_count": 61,
+    "avg_price": 965409
+  },
+  {
+    "name": "川合 玉堂",
+    "slug": "川合-玉堂",
+    "roman_name": "KAWAI Gyokudo",
+    "lot_count": 61,
+    "avg_price": 571663
+  },
+  {
+    "name": "さいあくなな",
+    "slug": "さいあくなな",
+    "roman_name": "SAIAKUNANA",
+    "lot_count": 60,
+    "avg_price": 502537
+  },
+  {
+    "name": "ジェフ・クーンズ",
+    "slug": "ジェフ・クーンズ",
+    "roman_name": "Jeff KOONS",
+    "lot_count": 60,
+    "avg_price": 800304
+  },
+  {
+    "name": "J. P. カシニョール",
+    "slug": "J.-P.-カシニョール",
+    "roman_name": "Jean-Pierre CASSIGNEUL",
+    "lot_count": 60,
+    "avg_price": 1946250
+  },
+  {
+    "name": "ハビア・カジェハ",
+    "slug": "ハビア・カジェハ",
+    "roman_name": "Javier CALLEJA",
+    "lot_count": 59,
+    "avg_price": 1103711
+  },
+  {
+    "name": "レオナール・フジタ",
+    "slug": "レオナール・フジタ",
+    "roman_name": "",
+    "lot_count": 59,
+    "avg_price": 6827271
+  },
+  {
+    "name": "田中　敦子",
+    "slug": "田中-敦子",
+    "roman_name": "",
+    "lot_count": 58,
+    "avg_price": 2266693
+  },
+  {
+    "name": "細川 護熙",
+    "slug": "細川-護熙",
+    "roman_name": "HOSOKAWA Morihiro",
+    "lot_count": 58,
+    "avg_price": 221482
+  },
+  {
+    "name": "鷲見　康夫",
+    "slug": "鷲見-康夫",
+    "roman_name": "",
+    "lot_count": 57,
+    "avg_price": 730372
+  },
+  {
+    "name": "アンドレ・ブラジリエ",
+    "slug": "アンドレ・ブラジリエ",
+    "roman_name": "Andre BRASILIER",
+    "lot_count": 57,
+    "avg_price": 990988
+  },
+  {
+    "name": "山形 博導",
+    "slug": "山形-博導",
+    "roman_name": "YAMAGATA Hiromichi",
+    "lot_count": 57,
+    "avg_price": 275175
+  },
+  {
+    "name": "児玉 幸雄",
+    "slug": "児玉-幸雄",
+    "roman_name": "KODAMA Yukio",
+    "lot_count": 57,
+    "avg_price": 423245
+  },
+  {
+    "name": "タカノ　綾",
+    "slug": "タカノ-綾",
+    "roman_name": "",
+    "lot_count": 56,
+    "avg_price": 639616
+  },
+  {
+    "name": "十四代 酒井田 柿右衛門◎",
+    "slug": "十四代-酒井田-柿右衛門◎",
+    "roman_name": "SAKAIDA Kakiemon XIV",
+    "lot_count": 56,
+    "avg_price": 346875
+  },
+  {
+    "name": "松井 康成◎",
+    "slug": "松井-康成◎",
+    "roman_name": "MATSUI Kosei",
+    "lot_count": 56,
+    "avg_price": 260089
+  },
+  {
+    "name": "加藤 唐九郎",
+    "slug": "加藤-唐九郎",
+    "roman_name": "KATO Tokuro",
+    "lot_count": 56,
+    "avg_price": 1182946
+  },
+  {
+    "name": "梅沢　和木",
+    "slug": "梅沢-和木",
+    "roman_name": "",
+    "lot_count": 55,
+    "avg_price": 999909
+  },
+  {
+    "name": "ハロシ",
+    "slug": "ハロシ",
+    "roman_name": "",
+    "lot_count": 55,
+    "avg_price": 1566613
+  },
+  {
+    "name": "加藤 卓男◎",
+    "slug": "加藤-卓男◎",
+    "roman_name": "KATO Takuo",
+    "lot_count": 54,
+    "avg_price": 101481
+  },
+  {
+    "name": "ヴィエナ スタイル",
+    "slug": "ヴィエナ-スタイル",
+    "roman_name": "VIENNA STYLE",
+    "lot_count": 53,
+    "avg_price": 151603
+  },
+  {
+    "name": "クレマン・セルヴォー",
+    "slug": "クレマン・セルヴォー",
+    "roman_name": "Clement SERVEAU",
+    "lot_count": 53,
+    "avg_price": 28320
+  },
+  {
+    "name": "会田　誠",
+    "slug": "会田-誠",
+    "roman_name": "",
+    "lot_count": 52,
+    "avg_price": 731216
+  },
+  {
+    "name": "ジャスパー・ジョーンズ",
+    "slug": "ジャスパー・ジョーンズ",
+    "roman_name": "Jasper JOHNS",
+    "lot_count": 52,
+    "avg_price": 1901932
+  },
+  {
+    "name": "ハンス・J・ウェグナー",
+    "slug": "ハンス・J・ウェグナー",
+    "roman_name": "Hans Jørgensen WEGNER",
+    "lot_count": 52,
+    "avg_price": 761394
+  },
+  {
+    "name": "浜口 陽三",
+    "slug": "浜口-陽三",
+    "roman_name": "HAMAGUCHI Yozo",
+    "lot_count": 52,
+    "avg_price": 309230
+  },
+  {
+    "name": "リヤドロ",
+    "slug": "リヤドロ",
+    "roman_name": "LLADRO",
+    "lot_count": 52,
+    "avg_price": 190501
+  },
+  {
+    "name": "川瀬 忍",
+    "slug": "川瀬-忍",
+    "roman_name": "KAWASE Shinobu",
+    "lot_count": 52,
+    "avg_price": 112519
+  },
+  {
+    "name": "土屋　仁応",
+    "slug": "土屋-仁応",
+    "roman_name": "",
+    "lot_count": 51,
+    "avg_price": 2656593
+  },
+  {
+    "name": "香月 泰男",
+    "slug": "香月-泰男",
+    "roman_name": "KAZUKI Yasuo",
+    "lot_count": 50,
+    "avg_price": 968300
+  },
+  {
+    "name": "村上　友晴",
+    "slug": "村上-友晴",
+    "roman_name": "",
+    "lot_count": 49,
+    "avg_price": 865372
+  },
+  {
+    "name": "多作家作品",
+    "slug": "多作家作品",
+    "roman_name": "VARIOUS ARTISTS",
+    "lot_count": 49,
+    "avg_price": 417653
+  },
+  {
+    "name": "歌川 広重",
+    "slug": "歌川-広重",
+    "roman_name": "UTAGAWA Hiroshige",
+    "lot_count": 49,
+    "avg_price": 457755
+  },
+  {
+    "name": "井上 萬二◎",
+    "slug": "井上-萬二◎",
+    "roman_name": "INOUE Manji",
+    "lot_count": 49,
+    "avg_price": 62612
+  },
+  {
+    "name": "平子　雄一",
+    "slug": "平子-雄一",
+    "roman_name": "",
+    "lot_count": 48,
+    "avg_price": 2508927
+  },
+  {
+    "name": "猪熊　弦一郎",
+    "slug": "猪熊-弦一郎",
+    "roman_name": "",
+    "lot_count": 48,
+    "avg_price": 1127105
+  },
+  {
+    "name": "菅井　汲",
+    "slug": "菅井-汲",
+    "roman_name": "",
+    "lot_count": 48,
+    "avg_price": 871229
+  },
+  {
+    "name": "BVLGARI",
+    "slug": "BVLGARI",
+    "roman_name": "BVLGARI",
+    "lot_count": 48,
+    "avg_price": 562507
+  },
+  {
+    "name": "藤井 勉",
+    "slug": "藤井-勉",
+    "roman_name": "FUJII Tsutomu",
+    "lot_count": 48,
+    "avg_price": 195000
+  },
+  {
+    "name": "ドルク",
+    "slug": "ドルク",
+    "roman_name": "DOLK",
+    "lot_count": 47,
+    "avg_price": 453356
+  },
+  {
+    "name": "小西　紀行",
+    "slug": "小西-紀行",
+    "roman_name": "",
+    "lot_count": 47,
+    "avg_price": 860787
+  },
+  {
+    "name": "堀尾　貞治",
+    "slug": "堀尾-貞治",
+    "roman_name": "",
+    "lot_count": 47,
+    "avg_price": 217643
+  },
+  {
+    "name": "細川　真希",
+    "slug": "細川-真希",
+    "roman_name": "",
+    "lot_count": 47,
+    "avg_price": 1469526
+  },
+  {
+    "name": "木村 圭吾",
+    "slug": "木村-圭吾",
+    "roman_name": "KIMURA Keigo",
+    "lot_count": 47,
+    "avg_price": 291170
+  },
+  {
+    "name": "友沢　こたお",
+    "slug": "友沢-こたお",
+    "roman_name": "",
+    "lot_count": 46,
+    "avg_price": 2900750
+  },
+  {
+    "name": "今井　麗",
+    "slug": "今井-麗",
+    "roman_name": "",
+    "lot_count": 46,
+    "avg_price": 5241554
+  },
+  {
+    "name": "TASAKI",
+    "slug": "TASAKI",
+    "roman_name": "TASAKI",
+    "lot_count": 46,
+    "avg_price": 239021
+  },
+  {
+    "name": "横山 大観",
+    "slug": "横山-大観",
+    "roman_name": "YOKOYAMA Taikan",
+    "lot_count": 46,
+    "avg_price": 3800595
+  },
+  {
+    "name": "中川 一政",
+    "slug": "中川-一政",
+    "roman_name": "NAKAGAWA Kazumasa",
+    "lot_count": 46,
+    "avg_price": 1276016
+  },
+  {
+    "name": "島岡 達三",
+    "slug": "島岡-達三",
+    "roman_name": "重要無形文化財）（SHIMAOKA Tatsuzo",
+    "lot_count": 46,
+    "avg_price": 70543
+  },
+  {
+    "name": "橋爪　悠也",
+    "slug": "橋爪-悠也",
+    "roman_name": "",
+    "lot_count": 45,
+    "avg_price": 438355
+  },
+  {
+    "name": "鴨居 玲",
+    "slug": "鴨居-玲",
+    "roman_name": "KAMOI Rei",
+    "lot_count": 45,
+    "avg_price": 4878555
+  },
+  {
+    "name": "岡部 嶺男",
+    "slug": "岡部-嶺男",
+    "roman_name": "OKABE Mineo",
+    "lot_count": 45,
+    "avg_price": 737000
+  },
+  {
+    "name": "ヘブル・ブラントリー",
+    "slug": "ヘブル・ブラントリー",
+    "roman_name": "Hebru BRANTLEY",
+    "lot_count": 44,
+    "avg_price": 1211551
+  },
+  {
+    "name": "フューチュラ 2000",
+    "slug": "フューチュラ-2000",
+    "roman_name": "",
+    "lot_count": 44,
+    "avg_price": 717096
+  },
+  {
+    "name": "原口　典之",
+    "slug": "原口-典之",
+    "roman_name": "",
+    "lot_count": 44,
+    "avg_price": 534215
+  },
+  {
+    "name": "後藤 純男",
+    "slug": "後藤-純男",
+    "roman_name": "GOTO Sumio",
+    "lot_count": 44,
+    "avg_price": 326477
+  },
+  {
+    "name": "マイセン　［2点セット］",
+    "slug": "マイセン-［2点セット］",
+    "roman_name": "MEISSEN (a set of 2)",
+    "lot_count": 44,
+    "avg_price": 137613
+  },
+  {
+    "name": "ポール・アイズピリ",
+    "slug": "ポール・アイズピリ",
+    "roman_name": "Paul AIZPIRI",
+    "lot_count": 44,
+    "avg_price": 1238068
+  },
+  {
+    "name": "堂本　尚郎",
+    "slug": "堂本-尚郎",
+    "roman_name": "",
+    "lot_count": 43,
+    "avg_price": 2442052
+  },
+  {
+    "name": "下田　ひかり",
+    "slug": "下田-ひかり",
+    "roman_name": "",
+    "lot_count": 43,
+    "avg_price": 1265534
+  },
+  {
+    "name": "ルーシー・リー",
+    "slug": "ルーシー・リー",
+    "roman_name": "Lucie RIE",
+    "lot_count": 43,
+    "avg_price": 1189372
+  },
+  {
+    "name": "靉嘔",
+    "slug": "靉嘔",
+    "roman_name": "AY-O",
+    "lot_count": 43,
+    "avg_price": 1255325
+  },
+  {
+    "name": "須田 剋太",
+    "slug": "須田-剋太",
+    "roman_name": "SUDA Kokuta",
+    "lot_count": 43,
+    "avg_price": 215232
+  },
+  {
+    "name": "クリスチャン・ラッセン",
+    "slug": "クリスチャン・ラッセン",
+    "roman_name": "Christian LASSEN",
+    "lot_count": 43,
+    "avg_price": 143162
+  },
+  {
+    "name": "有元 利夫",
+    "slug": "有元-利夫",
+    "roman_name": "ARIMOTO Toshio",
+    "lot_count": 43,
+    "avg_price": 819534
+  },
+  {
+    "name": "浮田 克躬",
+    "slug": "浮田-克躬",
+    "roman_name": "UKITA Katsumi",
+    "lot_count": 43,
+    "avg_price": 637020
+  },
+  {
+    "name": "セーヴル",
+    "slug": "セーヴル",
+    "roman_name": "SEVRES",
+    "lot_count": 43,
+    "avg_price": 361651
+  },
+  {
+    "name": "スティック",
+    "slug": "スティック",
+    "roman_name": "",
+    "lot_count": 42,
+    "avg_price": 1447904
+  },
+  {
+    "name": "田名網　敬一",
+    "slug": "田名網-敬一",
+    "roman_name": "",
+    "lot_count": 42,
+    "avg_price": 655345
+  },
+  {
+    "name": "サルバドール・ダリ",
+    "slug": "サルバドール・ダリ",
+    "roman_name": "Salvador DALI",
+    "lot_count": 42,
+    "avg_price": 413053
+  },
+  {
+    "name": "ロイ・リキテンシュタイン",
+    "slug": "ロイ・リキテンシュタイン",
+    "roman_name": "Roy LICHTENSTEIN",
+    "lot_count": 42,
+    "avg_price": 1483863
+  },
+  {
+    "name": "十三代 酒井田 柿右衛門",
+    "slug": "十三代-酒井田-柿右衛門",
+    "roman_name": "SAKAIDA Kakiemon XIII",
+    "lot_count": 42,
+    "avg_price": 212857
+  },
+  {
+    "name": "藤原 雄",
+    "slug": "藤原-雄",
+    "roman_name": "重要無形文化財）（FUJIWARA Yu",
+    "lot_count": 42,
+    "avg_price": 28571
+  },
+  {
+    "name": "水戸部　七絵",
+    "slug": "水戸部-七絵",
+    "roman_name": "",
+    "lot_count": 41,
+    "avg_price": 644841
+  },
+  {
+    "name": "辰野　登恵子",
+    "slug": "辰野-登恵子",
+    "roman_name": "",
+    "lot_count": 41,
+    "avg_price": 702060
+  },
+  {
+    "name": "バリー・マッギー",
+    "slug": "バリー・マッギー",
+    "roman_name": "Barry MCGEE",
+    "lot_count": 41,
+    "avg_price": 1317615
+  },
+  {
+    "name": "三岸 節子",
+    "slug": "三岸-節子",
+    "roman_name": "MIGISHI Setsuko",
+    "lot_count": 41,
+    "avg_price": 899770
+  },
+  {
+    "name": "福井 良之助",
+    "slug": "福井-良之助",
+    "roman_name": "FUKUI Ryonosuke",
+    "lot_count": 41,
+    "avg_price": 220913
+  },
+  {
+    "name": "トレンツ・リャド",
+    "slug": "トレンツ・リャド",
+    "roman_name": "Torrents LLADO",
+    "lot_count": 41,
+    "avg_price": 477804
+  },
+  {
+    "name": "アルジー・ルソー",
+    "slug": "アルジー・ルソー",
+    "roman_name": "Argy ROUSSEAU",
+    "lot_count": 41,
+    "avg_price": 526219
+  },
+  {
+    "name": "荒川 豊蔵",
+    "slug": "荒川-豊蔵",
+    "roman_name": "",
+    "lot_count": 41,
+    "avg_price": 432926
+  },
+  {
+    "name": "篠原　有司男",
+    "slug": "篠原-有司男",
+    "roman_name": "",
+    "lot_count": 40,
+    "avg_price": 960262
   }
 ]
