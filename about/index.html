@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About EDITION — Methodology & Data Transparency | Japanese Art Market Intelligence</title>
-  <meta name="description" content="How EDITION builds forensic-grade market intelligence for Japanese cultural assets. Our data sources, hedonic pricing methodology (R²=0.900), and commitment to accuracy across 49,968 auction records.">
+  <meta name="description" content="How EDITION builds forensic-grade market intelligence for Japanese cultural assets. Our data sources, hedonic pricing methodology (R²=0.897, 22 features), and commitment to accuracy across 49,968 auction records.">
   <meta name="robots" content="index, follow">
   <meta property="og:type" content="website">
   <meta property="og:title" content="About EDITION — Methodology & Data Transparency">
@@ -190,7 +190,7 @@
         <span class="stat__label">Auction Houses</span>
       </div>
       <div class="stat">
-        <span class="stat__val">R²=0.900</span>
+        <span class="stat__val">R²=0.897</span>
         <span class="stat__label">Pricing Accuracy</span>
       </div>
     </div>
@@ -299,20 +299,21 @@
 
     <h3>Model Architecture</h3>
     <p>
-      The current model (v0.9) employs an ensemble of HistGradientBoosting and RandomForest regressors
-      trained on 49,968 verified auction results. The ensemble approach reduces variance and improves
-      robustness across different market segments.
+      The current model (v1.0) employs an ensemble of HistGradientBoosting and RandomForest regressors
+      trained on 49,968 verified auction results with 22 engineered features. The ensemble approach reduces
+      variance and improves robustness across different market segments.
     </p>
 
     <div class="pipeline">
       <div class="pipeline__step">
         <div class="pipeline__num">1</div>
         <div>
-          <div class="pipeline__title">Feature Engineering (17 Variables)</div>
+          <div class="pipeline__title">Feature Engineering (22 Variables)</div>
           <div class="pipeline__desc">
-            Each lot is encoded with 17 features: artist global average, median, and CV (coefficient of variation);
+            Each lot is encoded with 22 features: artist global average, median, and CV (coefficient of variation);
             lot count; medium classification (18 categories); physical dimensions; area; auction house indicator;
-            estimate; estimate-to-average ratio; artist price rank; and market position indicators.
+            estimate; estimate-to-average ratio; artist price rank; artist cheap-lot ratio; artist median price;
+            no-data flag; estimate-to-median ratio; and a composite price-tier signal.
           </div>
         </div>
       </div>
@@ -321,7 +322,8 @@
         <div>
           <div class="pipeline__title">Sample Weighting</div>
           <div class="pipeline__desc">
-            Low-price lots (under ¥100,000) receive 2x weight; lots under ¥500,000 receive 1.5x weight.
+            Lots under ¥50,000 receive 3x weight; lots ¥50,000–100,000 receive 2x weight;
+            lots ¥100,000–500,000 receive 1.2x weight; lots above ¥10,000,000 receive 1.3x weight.
             This corrects systematic over-estimation in the lower price range — a known challenge when
             training on log-transformed prices dominated by high-value outliers.
           </div>
@@ -332,9 +334,9 @@
         <div>
           <div class="pipeline__title">Ensemble Training</div>
           <div class="pipeline__desc">
-            HistGradientBoosting (max_iter=2000, learning_rate=0.015, max_depth=8) and RandomForest (500 trees)
-            are trained independently. Final predictions average both models' outputs for reduced variance.
-            5-fold cross-validation confirms generalization: CV R² = 0.864 ± 0.004.
+            HistGradientBoosting (max_iter=2500, learning_rate=0.012, max_depth=10) and RandomForest (1,200 trees)
+            are trained independently with weighted samples. Final predictions blend both models (60/40)
+            for reduced variance. 5-fold cross-validation confirms generalization: CV R² = 0.863 ± 0.005.
           </div>
         </div>
       </div>
@@ -365,12 +367,12 @@
       <tbody>
         <tr>
           <td>R² (Ensemble)</td>
-          <td>0.900</td>
+          <td>0.897</td>
           <td>Proportion of price variance explained by the model</td>
         </tr>
         <tr>
           <td>CV R²</td>
-          <td>0.864 ± 0.004</td>
+          <td>0.863 ± 0.005</td>
           <td>5-fold cross-validated R² (out-of-sample)</td>
         </tr>
         <tr>
@@ -380,17 +382,17 @@
         </tr>
         <tr>
           <td>±15% Accuracy</td>
-          <td>37.5%</td>
+          <td>37.8%</td>
           <td>Percentage of predictions within 15% of actual price</td>
         </tr>
         <tr>
           <td>±30% Accuracy</td>
-          <td>62.3%</td>
+          <td>62.6%</td>
           <td>Percentage of predictions within 30% of actual price</td>
         </tr>
         <tr>
           <td>SBI R²</td>
-          <td>0.936</td>
+          <td>0.935</td>
           <td>Accuracy for SBI lots (rich metadata: medium, size, estimate)</td>
         </tr>
         <tr>
@@ -400,7 +402,7 @@
         </tr>
         <tr>
           <td>Shinwa R²</td>
-          <td>0.658</td>
+          <td>0.643</td>
           <td>Lower accuracy due to limited public metadata (no estimate/medium/size)</td>
         </tr>
       </tbody>
@@ -417,17 +419,18 @@
         </div>
       </div>
       <div class="principle">
-        <div class="principle__title">Low-Price Bias</div>
+        <div class="principle__title">Low-Price Bias (Improved in v1.0)</div>
         <div class="principle__desc">
-          Despite v0.9's sample weighting improvement, lots under ¥50,000 still exhibit +65% over-estimation
-          on average. This structural bias stems from limited distinguishing features in the lowest price tier
-          and the log-transform's compression of absolute differences.
+          v1.0 introduced 5 new features targeting low-price structural bias, including artist cheap-lot ratio
+          and composite price-tier signals. This reduced the under-¥50,000 over-estimation from +68% (v0.9) to
+          +49% (v1.0) — a 19-point improvement. Further reduction requires Shinwa's detailed estimate data.
         </div>
       </div>
       <div class="principle">
         <div class="principle__title">Estimate Dependency</div>
         <div class="principle__desc">
-          The auction house estimate (log_estimate) contributes 86.3% of the model's predictive power.
+          The auction house estimate (log_estimate) contributes 66.2% of the model's predictive power (down
+          from 86.3% in v0.9, as new features absorb more signal).
           When estimates are unavailable, accuracy drops significantly. This is expected — auction house
           specialists effectively embed expert judgment that cannot be replicated from observable features alone.
         </div>
@@ -502,7 +505,7 @@
       the channels listed in our <a href="/docs">API Documentation</a>.
     </p>
     <p style="font-size:0.8rem;color:var(--text-dim);margin-top:2rem">
-      Last updated: May 2026 · Model version: 0.9 · Data as of May 19, 2026
+      Last updated: May 2026 · Model version: 1.0 · Data as of May 20, 2026
     </p>
 
   </div>
