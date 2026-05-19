@@ -1370,7 +1370,7 @@
               <span class="kanteishi-stat__label">${t('kanteishi.engine_accuracy')}</span>
             </div>
             <div class="kanteishi-stat reveal reveal--delay-1">
-              <span class="kanteishi-stat__value">${s.median_error_pct ? s.median_error_pct.toFixed(1) + '%' : '23.0%'}</span>
+              <span class="kanteishi-stat__value">${s.median_error_pct ? s.median_error_pct.toFixed(1) + '%' : '22.1%'}</span>
               <span class="kanteishi-stat__label">${t('kanteishi.engine_error')}</span>
             </div>
             <div class="kanteishi-stat reveal reveal--delay-2">
