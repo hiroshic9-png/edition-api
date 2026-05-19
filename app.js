@@ -1247,6 +1247,7 @@
             <a href="/prices" data-link class="footer__link">${t('nav.prices')}</a>
             <a href="/kanteishi" data-link class="footer__link">${t('nav.kanteishi')}</a>
             <a href="/docs" class="footer__link">API Docs</a>
+            <a href="/about" class="footer__link">About</a>
           </div>
         </div>
         <p class="footer__copy">

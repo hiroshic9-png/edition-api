@@ -10,6 +10,8 @@ Allow: /categories
 Allow: /prices
 Allow: /kanteishi
 Allow: /discover
+Allow: /about
+Allow: /docs
 
 # Crawl-delay for polite crawling
 Crawl-delay: 1
