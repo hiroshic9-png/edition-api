@@ -1533,3 +1533,379 @@ details summary::after {
 details[open] summary::after {
   transform: rotate(90deg);
 }
+
+/* ═══════════════════════════════════════════════════════════
+   KANTEISHI Page
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── KANTEISHI Hero ── */
+.kanteishi-hero {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem var(--gutter) 4rem;
+  overflow: hidden;
+}
+
+.kanteishi-hero__bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 30% 50%, rgba(197,165,114,0.08) 0%, transparent 60%),
+              radial-gradient(ellipse at 70% 30%, rgba(197,165,114,0.04) 0%, transparent 50%),
+              var(--bg);
+}
+
+[data-theme="dark"] .kanteishi-hero__bg {
+  background: radial-gradient(ellipse at 30% 50%, rgba(212,184,130,0.06) 0%, transparent 60%),
+              radial-gradient(ellipse at 70% 30%, rgba(212,184,130,0.03) 0%, transparent 50%),
+              #0C0C0C;
+}
+
+.kanteishi-hero__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 800px;
+}
+
+.kanteishi-hero__title {
+  margin-bottom: 2rem;
+}
+
+.kanteishi-hero__title-main {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.kanteishi-hero__title-sub {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.kanteishi-hero__desc {
+  font-size: var(--fs-body);
+  color: var(--text-secondary);
+  line-height: 1.9;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.kanteishi-hero__pulse {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-caption);
+}
+
+.kanteishi-hero__pulse-dot {
+  width: 6px;
+  height: 6px;
+  background: #4ade80;
+  border-radius: 50%;
+  animation: pulseDot 2s ease-in-out infinite;
+}
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(74,222,128,0.4); }
+  50% { opacity: 0.8; box-shadow: 0 0 0 6px rgba(74,222,128,0); }
+}
+
+/* ── KANTEISHI Stat Cards ── */
+.kanteishi-stat {
+  padding: 2rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  text-align: center;
+  transition: border-color var(--duration) ease, transform var(--duration-fast) ease;
+}
+
+.kanteishi-stat:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.kanteishi-stat__value {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 300;
+  color: var(--gold);
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.kanteishi-stat__label {
+  font-family: var(--font-sans);
+  font-size: var(--fs-caption);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+/* ── Auction House Bars ── */
+.kanteishi-houses {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.kanteishi-house {
+  display: grid;
+  grid-template-columns: 180px 1fr auto;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  transition: border-color var(--duration) ease;
+}
+
+.kanteishi-house:hover {
+  border-color: var(--gold);
+}
+
+.kanteishi-house__name {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.kanteishi-house__bar {
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.kanteishi-house__bar > div {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light, #d4b882));
+  border-radius: 3px;
+  transition: width 1.5s var(--ease-out);
+}
+
+.kanteishi-house__count {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+/* ── Capability Cards ── */
+.kanteishi-capabilities {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.kanteishi-cap {
+  padding: 2.5rem 2rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  transition: all var(--duration) ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.kanteishi-cap::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--duration) ease;
+}
+
+.kanteishi-cap:hover::before {
+  transform: scaleX(1);
+}
+
+.kanteishi-cap:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.kanteishi-cap__icon {
+  font-size: 1.5rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.kanteishi-cap__title {
+  font-family: var(--font-serif);
+  font-size: var(--fs-h3);
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+}
+
+.kanteishi-cap__desc {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+/* ── Code Block ── */
+.kanteishi-code {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  overflow-x: auto;
+}
+
+[data-theme="dark"] .kanteishi-code {
+  background: #111111;
+}
+
+.kanteishi-code pre {
+  margin: 0;
+  font-family: 'SF Mono', 'Monaco', 'Cascadia Code', monospace;
+  font-size: 0.8rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+/* ── KANTEISHI Responsive ── */
+@media (max-width: 768px) {
+  .kanteishi-capabilities {
+    grid-template-columns: 1fr;
+  }
+  .kanteishi-house {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .kanteishi-house__bar {
+    order: 3;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   Mobile Navigation
+   ═══════════════════════════════════════════════════════════ */
+
+/* Accent link (KANTEISHI) */
+.header__link--accent {
+  color: var(--gold) !important;
+  font-weight: 500;
+}
+
+.header__link--accent::after {
+  background: var(--gold);
+}
+
+/* Mobile toggle */
+.mobile-nav-toggle {
+  display: none;
+  width: 32px;
+  height: 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  z-index: 1002;
+  position: relative;
+}
+
+.mobile-nav-toggle span {
+  display: block;
+  width: 18px;
+  height: 1.5px;
+  background: var(--text-primary);
+  transition: all var(--duration-fast) ease;
+  transform-origin: center;
+}
+
+.header--over-hero .mobile-nav-toggle span {
+  background: rgba(250,250,248,0.8);
+}
+
+.header--over-hero.header--scrolled .mobile-nav-toggle span {
+  background: var(--text-primary);
+}
+
+.mobile-nav-toggle--open span:nth-child(1) {
+  transform: rotate(45deg) translateY(5px);
+}
+
+.mobile-nav-toggle--open span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-nav-toggle--open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-5px);
+}
+
+@media (max-width: 640px) {
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  .header__nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: min(320px, 85vw);
+    background: var(--surface);
+    flex-direction: column;
+    padding: 5rem 2rem 2rem;
+    gap: 1.5rem;
+    transform: translateX(100%);
+    transition: transform var(--duration-fast) var(--ease-out);
+    box-shadow: -4px 0 24px rgba(0,0,0,0.1);
+    z-index: 1001;
+    border-left: 1px solid var(--border);
+  }
+
+  [data-theme="dark"] .header__nav {
+    box-shadow: -4px 0 24px rgba(0,0,0,0.4);
+  }
+
+  .header__nav--open {
+    transform: translateX(0);
+  }
+
+  .header__link {
+    display: block !important;
+    font-size: 0.9rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  /* Override hero color for mobile nav links */
+  .header--over-hero .header__nav .header__link,
+  .header--over-hero .header__nav .header__lang-toggle,
+  .header--over-hero .header__nav .header__theme-toggle {
+    color: var(--text-secondary) !important;
+  }
+
+  .header--over-hero .header__nav .header__link:hover {
+    color: var(--text-primary) !important;
+  }
+
+  .header--over-hero .header__nav .header__link--accent {
+    color: var(--gold) !important;
+  }
+}
+

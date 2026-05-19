@@ -6,7 +6,8 @@
   "nav": {
     "collection": "Collection",
     "authenticate": "Authenticate",
-    "prices": "Prices"
+    "prices": "Prices",
+    "kanteishi": "KANTEISHI"
   },
   "hero": {
     "label": "EDITION",
@@ -158,6 +159,46 @@
     "dimensions": "Dimensions",
     "origin": "Origin",
     "view_at": "View at"
+  },
+  "kanteishi": {
+    "hero_label": "AI-Powered Intelligence",
+    "hero_title_line1": "KANTEISHI",
+    "hero_title_line2": "Market Intelligence Engine",
+    "hero_desc": "Forensic-grade market analysis powered by 50,000+ verified auction records, cross-house artist intelligence, and proprietary hedonic pricing — built for professionals who demand accuracy.",
+    "engine_label": "Pricing Engine",
+    "engine_title": "Hedonic Pricing Model v0.7",
+    "engine_desc": "Our ensemble model analyzes 13 features including artist history, medium, dimensions, edition size, and cross-house performance data to deliver institutional-grade price estimates.",
+    "engine_accuracy": "Accuracy (R²)",
+    "engine_error": "Median Error",
+    "engine_training": "Training Records",
+    "engine_features": "Features",
+    "engine_houses": "Auction Houses",
+    "engine_artists": "Artists Tracked",
+    "data_label": "Data Sources",
+    "data_title": "Cross-House Intelligence",
+    "data_desc": "Comprehensive coverage across Japan's major auction houses. Each record is verified, enriched with metadata, and cross-referenced for maximum intelligence value.",
+    "data_multi": "Multi-House Artists",
+    "data_cross": "Cross-House Pairs",
+    "data_total_value": "Total Tracked Value",
+    "api_label": "Developer Access",
+    "api_title": "KANTEISHI API",
+    "api_desc": "Agent-native market intelligence. Every endpoint returns verified, forensic-grade data — ready for integration into your workflows, dashboards, and autonomous systems.",
+    "api_endpoints": "API Endpoints",
+    "api_mcp": "MCP Tools",
+    "api_latency": "Avg Latency",
+    "capability_label": "Capabilities",
+    "capability_title": "What KANTEISHI Does",
+    "cap1_title": "Price Estimation",
+    "cap1_desc": "Fair market value powered by hedonic regression across 50,000+ lots. Artist, medium, size, and house-specific calibration.",
+    "cap2_title": "Provenance Search",
+    "cap2_desc": "Cross-house appearance tracking for any artwork. Build complete auction history chains across SBI, Shinwa, and Mainichi.",
+    "cap3_title": "Artist Intelligence",
+    "cap3_desc": "7,500+ artist profiles with NCAR authority data, multi-house presence, price trajectories, and biographical intelligence.",
+    "cap4_title": "Cross-House Arbitrage",
+    "cap4_desc": "Identify pricing spreads between auction houses. 266,000+ cross-house pairs analyzed for market positioning intelligence.",
+    "cta_label": "Get Started",
+    "cta_title": "Ready to Explore",
+    "cta_desc": "KANTEISHI is live and processing real market data. Reach out to learn about API access, MCP integration, or custom intelligence reports."
   },
   "footer": {
     "copy": "Japanese Cultural Assets Intelligence"

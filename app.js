@@ -90,6 +90,7 @@
     if (path === '/discover') return { page: 'discover' };
     if (path === '/authenticate') return { page: 'authenticate' };
     if (path === '/prices') return { page: 'prices' };
+    if (path === '/kanteishi') return { page: 'kanteishi' };
     const match = path.match(/^\/discover\/(.+)$/);
     if (match) return { page: 'category', slug: match[1] };
     return { page: 'home' };
@@ -123,10 +124,13 @@
       case 'discover': renderDiscover(); break;
       case 'authenticate': renderAuthenticate(); break;
       case 'prices': renderPrices(); break;
+      case 'kanteishi': renderKanteishi(); break;
       case 'category': renderCategory(route.slug); break;
       default: renderHome();
     }
     updateActiveNav(route);
+    initMobileNav();
+    initParallax();
   }
 
   function updateActiveNav(route) {
@@ -1158,10 +1162,14 @@
     return `
       <header class="header" id="site-header">
         <a href="/" data-link class="header__logo">Edition</a>
-        <nav class="header__nav">
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="header__nav" id="header-nav">
           <a href="/discover" data-link class="header__link">${t('nav.collection')}</a>
           <a href="/authenticate" data-link class="header__link">${t('nav.authenticate')}</a>
           <a href="/prices" data-link class="header__link">${t('nav.prices')}</a>
+          <a href="/kanteishi" data-link class="header__link header__link--accent">${t('nav.kanteishi')}</a>
           <button class="header__lang-toggle" id="lang-toggle" aria-label="Toggle language"
             style="background:none;border:1px solid var(--border);color:var(--text-secondary);padding:0.25rem 0.6rem;border-radius:4px;font-size:0.7rem;letter-spacing:0.1em;cursor:pointer;transition:all 0.3s ease;font-family:var(--font-sans);">${langLabel}</button>
           <button class="header__theme-toggle" id="theme-toggle" aria-label="Toggle theme">
@@ -1181,6 +1189,7 @@
             <a href="/discover" data-link class="footer__link">${t('nav.collection')}</a>
             <a href="/authenticate" data-link class="footer__link">${t('nav.authenticate')}</a>
             <a href="/prices" data-link class="footer__link">${t('nav.prices')}</a>
+            <a href="/kanteishi" data-link class="footer__link">${t('nav.kanteishi')}</a>
           </div>
         </div>
         <p class="footer__copy">
@@ -1315,6 +1324,225 @@
       setTimeout(() => backdrop.remove(), 400);
       document.body.style.overflow = '';
     }
+  }
+
+  /* ── KANTEISHI Page ── */
+  function renderKanteishi() {
+    const s = _marketData?.stats || {};
+    const fmtNum = (n) => n ? Number(n).toLocaleString() : '—';
+    const fmtJPY = (n) => {
+      if (!n) return '—';
+      const v = Number(n);
+      if (v >= 1e12) return '¥' + (v / 1e12).toFixed(1) + '兆';
+      if (v >= 1e8) return '¥' + (v / 1e8).toFixed(0) + '億';
+      return '¥' + v.toLocaleString();
+    };
+
+    app.innerHTML = `
+      ${renderHeader()}
+
+      <!-- KANTEISHI Hero -->
+      <section class="kanteishi-hero">
+        <div class="kanteishi-hero__bg"></div>
+        <div class="kanteishi-hero__content">
+          <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1.5rem; letter-spacing: 0.3em;">${t('kanteishi.hero_label')}</p>
+          <h1 class="kanteishi-hero__title reveal reveal--delay-1">
+            <span class="kanteishi-hero__title-main">${t('kanteishi.hero_title_line1')}</span>
+            <span class="kanteishi-hero__title-sub">${t('kanteishi.hero_title_line2')}</span>
+          </h1>
+          <p class="kanteishi-hero__desc reveal reveal--delay-2">${t('kanteishi.hero_desc')}</p>
+          <div class="kanteishi-hero__pulse reveal reveal--delay-3">
+            <span class="kanteishi-hero__pulse-dot"></span>
+            <span class="kanteishi-hero__pulse-text">Live — Processing Market Data</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Engine Stats -->
+      <section class="section" style="padding: 5rem 2rem; background: var(--bg);">
+        <div style="max-width: 1000px; margin: 0 auto;">
+          <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1rem;">${t('kanteishi.engine_label')}</p>
+          <h2 class="reveal reveal--delay-1" style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 1rem;">${t('kanteishi.engine_title')}</h2>
+          <p class="reveal reveal--delay-2" style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 3rem; max-width: 700px;">${t('kanteishi.engine_desc')}</p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem;">
+            <div class="kanteishi-stat reveal">
+              <span class="kanteishi-stat__value">${s.r2_ensemble ? (s.r2_ensemble * 100).toFixed(1) + '%' : '88.7%'}</span>
+              <span class="kanteishi-stat__label">${t('kanteishi.engine_accuracy')}</span>
+            </div>
+            <div class="kanteishi-stat reveal reveal--delay-1">
+              <span class="kanteishi-stat__value">${s.median_error_pct ? s.median_error_pct.toFixed(1) + '%' : '25.0%'}</span>
+              <span class="kanteishi-stat__label">${t('kanteishi.engine_error')}</span>
+            </div>
+            <div class="kanteishi-stat reveal reveal--delay-2">
+              <span class="kanteishi-stat__value">${fmtNum(s.total_records || 49968)}</span>
+              <span class="kanteishi-stat__label">${t('kanteishi.engine_training')}</span>
+            </div>
+            <div class="kanteishi-stat reveal reveal--delay-3">
+              <span class="kanteishi-stat__value">13</span>
+              <span class="kanteishi-stat__label">${t('kanteishi.engine_features')}</span>
+            </div>
+            <div class="kanteishi-stat reveal">
+              <span class="kanteishi-stat__value">${s.auction_houses || 3}</span>
+              <span class="kanteishi-stat__label">${t('kanteishi.engine_houses')}</span>
+            </div>
+            <div class="kanteishi-stat reveal reveal--delay-1">
+              <span class="kanteishi-stat__value">${fmtNum(s.total_artists || 7582)}</span>
+              <span class="kanteishi-stat__label">${t('kanteishi.engine_artists')}</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider divider--gold"></div>
+
+      <!-- Cross-House Intelligence -->
+      <section class="section" style="padding: 5rem 2rem; background: var(--surface);">
+        <div style="max-width: 1000px; margin: 0 auto;">
+          <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1rem;">${t('kanteishi.data_label')}</p>
+          <h2 class="reveal reveal--delay-1" style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 1rem;">${t('kanteishi.data_title')}</h2>
+          <p class="reveal reveal--delay-2" style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 3rem; max-width: 700px;">${t('kanteishi.data_desc')}</p>
+          <div class="kanteishi-houses reveal">
+            <div class="kanteishi-house">
+              <div class="kanteishi-house__name">SBI Art Auction</div>
+              <div class="kanteishi-house__count">${fmtNum(s.sbi_lots || 21420)} lots</div>
+              <div class="kanteishi-house__bar"><div style="width: ${Math.round(((s.sbi_lots || 21420) / (s.total_records || 49968)) * 100)}%;"></div></div>
+            </div>
+            <div class="kanteishi-house">
+              <div class="kanteishi-house__name">Mainichi Auction</div>
+              <div class="kanteishi-house__count">${fmtNum(s.mainichi_lots || 22550)} lots</div>
+              <div class="kanteishi-house__bar"><div style="width: ${Math.round(((s.mainichi_lots || 22550) / (s.total_records || 49968)) * 100)}%;"></div></div>
+            </div>
+            <div class="kanteishi-house">
+              <div class="kanteishi-house__name">Shinwa Auction</div>
+              <div class="kanteishi-house__count">${fmtNum(s.shinwa_lots || 5998)} lots</div>
+              <div class="kanteishi-house__bar"><div style="width: ${Math.round(((s.shinwa_lots || 5998) / (s.total_records || 49968)) * 100)}%;"></div></div>
+            </div>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2.5rem;">
+            <div class="kanteishi-stat reveal">
+              <span class="kanteishi-stat__value">${fmtNum(s.multi_house_artists || 1455)}</span>
+              <span class="kanteishi-stat__label">${t('kanteishi.data_multi')}</span>
+            </div>
+            <div class="kanteishi-stat reveal reveal--delay-1">
+              <span class="kanteishi-stat__value">${fmtNum(s.cross_house_pairs || 266327)}</span>
+              <span class="kanteishi-stat__label">${t('kanteishi.data_cross')}</span>
+            </div>
+            <div class="kanteishi-stat reveal reveal--delay-2">
+              <span class="kanteishi-stat__value">${fmtJPY(s.total_market_value || 62269731142)}</span>
+              <span class="kanteishi-stat__label">${t('kanteishi.data_total_value')}</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Capabilities -->
+      <section class="section" style="padding: 5rem 2rem; background: var(--bg);">
+        <div style="max-width: 1000px; margin: 0 auto;">
+          <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1rem;">${t('kanteishi.capability_label')}</p>
+          <h2 class="reveal reveal--delay-1" style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 3rem;">${t('kanteishi.capability_title')}</h2>
+          <div class="kanteishi-capabilities">
+            <div class="kanteishi-cap reveal">
+              <div class="kanteishi-cap__icon">◎</div>
+              <h3 class="kanteishi-cap__title">${t('kanteishi.cap1_title')}</h3>
+              <p class="kanteishi-cap__desc">${t('kanteishi.cap1_desc')}</p>
+            </div>
+            <div class="kanteishi-cap reveal reveal--delay-1">
+              <div class="kanteishi-cap__icon">◉</div>
+              <h3 class="kanteishi-cap__title">${t('kanteishi.cap2_title')}</h3>
+              <p class="kanteishi-cap__desc">${t('kanteishi.cap2_desc')}</p>
+            </div>
+            <div class="kanteishi-cap reveal reveal--delay-2">
+              <div class="kanteishi-cap__icon">◈</div>
+              <h3 class="kanteishi-cap__title">${t('kanteishi.cap3_title')}</h3>
+              <p class="kanteishi-cap__desc">${t('kanteishi.cap3_desc')}</p>
+            </div>
+            <div class="kanteishi-cap reveal reveal--delay-3">
+              <div class="kanteishi-cap__icon">◇</div>
+              <h3 class="kanteishi-cap__title">${t('kanteishi.cap4_title')}</h3>
+              <p class="kanteishi-cap__desc">${t('kanteishi.cap4_desc')}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider divider--gold"></div>
+
+      <!-- API Access -->
+      <section class="section" style="padding: 5rem 2rem; background: var(--surface);">
+        <div style="max-width: 1000px; margin: 0 auto;">
+          <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1rem;">${t('kanteishi.api_label')}</p>
+          <h2 class="reveal reveal--delay-1" style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 1rem;">${t('kanteishi.api_title')}</h2>
+          <p class="reveal reveal--delay-2" style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 3rem; max-width: 700px;">${t('kanteishi.api_desc')}</p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; max-width: 600px;">
+            <div class="kanteishi-stat reveal">
+              <span class="kanteishi-stat__value">14</span>
+              <span class="kanteishi-stat__label">${t('kanteishi.api_endpoints')}</span>
+            </div>
+            <div class="kanteishi-stat reveal reveal--delay-1">
+              <span class="kanteishi-stat__value">7</span>
+              <span class="kanteishi-stat__label">${t('kanteishi.api_mcp')}</span>
+            </div>
+            <div class="kanteishi-stat reveal reveal--delay-2">
+              <span class="kanteishi-stat__value">&lt;200ms</span>
+              <span class="kanteishi-stat__label">${t('kanteishi.api_latency')}</span>
+            </div>
+          </div>
+          <div class="kanteishi-code reveal" style="margin-top: 2.5rem;">
+            <pre><code>curl -X POST https://api.edition.sh/estimate/price \
+  -H "Content-Type: application/json" \
+  -d '{"artist": "草間彌生", "medium": "acrylic", "width_cm": 100, "height_cm": 100}'</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section" style="padding: 6rem 2rem; text-align: center; background: var(--bg);">
+        <div style="max-width: 600px; margin: 0 auto;">
+          <p class="text-label reveal" style="color: var(--gold); margin-bottom: 1rem;">${t('kanteishi.cta_label')}</p>
+          <h2 class="reveal reveal--delay-1" style="font-family: var(--font-serif); font-weight: 300; margin-bottom: 1.5rem;">${t('kanteishi.cta_title')}</h2>
+          <p class="reveal reveal--delay-2" style="color: var(--text-secondary); line-height: 1.8;">${t('kanteishi.cta_desc')}</p>
+        </div>
+      </section>
+
+      ${renderFooter()}
+    `;
+  }
+
+  /* ── Mobile Navigation ── */
+  function initMobileNav() {
+    const toggle = document.getElementById('mobile-nav-toggle');
+    const nav = document.getElementById('header-nav');
+    if (!toggle || !nav) return;
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('header__nav--open');
+      toggle.classList.toggle('mobile-nav-toggle--open');
+    });
+    // Close nav on link click
+    nav.querySelectorAll('a[data-link]').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('header__nav--open');
+        toggle.classList.remove('mobile-nav-toggle--open');
+      });
+    });
+  }
+
+  /* ── Parallax Effect ── */
+  function initParallax() {
+    const heroImg = document.querySelector('.hero__bg img');
+    if (!heroImg) return;
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const scrolled = window.scrollY;
+          if (scrolled < window.innerHeight) {
+            heroImg.style.transform = `translateY(${scrolled * 0.3}px) scale(1.05)`;
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
   }
 
   /* ── Init ── */
