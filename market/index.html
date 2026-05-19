@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>市場レポート — 日本オークション市場分析 2024-2025 | EDITION</title>
+  <meta name="description" content="日本国内オークション市場の包括的分析レポート。56,645件の落札データ、総取引額653億円、7,258名のアーティスト。SBI Art Auction・毎日オークション・シンワオークション3社横断。">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="日本オークション市場レポート 2024-2025 | EDITION">
+  <meta property="og:description" content="56,645件の落札データを基にした包括的市場分析。総取引額653億円。">
+  <meta property="og:url" content="https://edition.sh/market">
+  <meta property="og:site_name" content="EDITION">
+  <link rel="canonical" href="https://edition.sh/market">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "日本オークション市場レポート 2024-2025",
+    "description": "56,645件の落札データを基にした包括的な日本オークション市場分析レポート",
+    "url": "https://edition.sh/market",
+    "publisher": { "@type": "Organization", "name": "EDITION" },
+    "datePublished": "2026-05-19",
+    "dateModified": "2026-05-19"
+  }
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #0C0C0C; --surface: rgba(255,255,255,0.03);
+      --border: rgba(255,255,255,0.08); --text: #e0e0e0;
+      --text-dim: rgba(255,255,255,0.4); --gold: #b8860b;
+      --gold-dim: rgba(184,134,11,0.4);
+      --font-serif: 'Cormorant Garamond', 'Noto Serif JP', serif;
+      --font-sans: 'Inter', 'Noto Sans JP', sans-serif;
+    }
+    body { background: var(--bg); color: var(--text); font-family: var(--font-sans); line-height: 1.7; }
+    .page { max-width: 900px; margin: 0 auto; padding: 6rem 2rem 4rem; }
+    .back-link {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      margin-bottom: 2rem; font-size: 0.85rem;
+      color: var(--text-dim); text-decoration: none; transition: color 0.2s;
+    }
+    .back-link:hover { color: var(--gold); }
+    h1 {
+      font-family: var(--font-serif); font-weight: 300;
+      font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 0.3rem; color: #fff;
+    }
+    .date { color: var(--text-dim); font-size: 0.8rem; margin-bottom: 2.5rem; }
+    h2 {
+      font-family: var(--font-serif); font-weight: 400; font-size: 1.4rem;
+      margin: 3rem 0 1rem; padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border); color: #fff;
+    }
+    p { color: rgba(255,255,255,0.55); margin-bottom: 1rem; font-size: 0.95rem; }
+    .hero-stats {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem; margin: 2rem 0 3rem;
+    }
+    .hero-stat {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px; padding: 1.5rem; text-align: center;
+      transition: border-color 0.3s;
+    }
+    .hero-stat:hover { border-color: var(--gold-dim); }
+    .hero-stat .value {
+      font-family: var(--font-serif); font-size: 1.6rem;
+      color: var(--gold); display: block; margin-bottom: 0.3rem;
+    }
+    .hero-stat .label {
+      font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--text-dim);
+    }
+
+    /* Tier Chart */
+    .tier-chart { margin: 1.5rem 0 2rem; }
+    .tier-row {
+      display: flex; align-items: center; gap: 1rem;
+      padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .tier-name { min-width: 100px; font-size: 0.8rem; color: var(--text-dim); }
+    .tier-bar-track {
+      flex: 1; height: 20px; background: rgba(255,255,255,0.03);
+      border-radius: 4px; overflow: hidden; position: relative;
+    }
+    .tier-bar-fill {
+      height: 100%; border-radius: 4px;
+      background: linear-gradient(90deg, rgba(184,134,11,0.3), rgba(184,134,11,0.6));
+      transition: width 1s ease;
+    }
+    .tier-bar-label {
+      position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+      font-size: 0.7rem; color: rgba(255,255,255,0.7);
+    }
+    .tier-count { min-width: 60px; text-align: right; font-size: 0.8rem; color: var(--text-dim); }
+    .tier-pct { min-width: 40px; text-align: right; font-size: 0.75rem; color: var(--gold); }
+
+    /* House Table */
+    .house-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+    .house-table th {
+      text-align: left; font-size: 0.65rem; text-transform: uppercase;
+      letter-spacing: 0.1em; color: var(--text-dim);
+      padding: 0.8rem 0.5rem; border-bottom: 1px solid var(--border);
+      font-weight: 400;
+    }
+    .house-table td {
+      padding: 1rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.04);
+      font-size: 0.9rem; color: rgba(255,255,255,0.7);
+    }
+    .house-table td:first-child { color: #fff; font-weight: 400; }
+    .house-table td.num { text-align: right; font-family: var(--font-serif); }
+    .house-table tr:hover td { color: #fff; }
+
+    /* Methodology */
+    .methodology {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px; padding: 2rem; margin-top: 3rem;
+    }
+    .methodology h3 {
+      font-family: var(--font-serif); font-size: 1.1rem; margin-bottom: 1rem; color: #fff;
+    }
+    .methodology p { font-size: 0.85rem; }
+    .methodology ul { list-style: none; margin: 1rem 0; }
+    .methodology li {
+      padding: 0.3rem 0; font-size: 0.85rem; color: rgba(255,255,255,0.5);
+    }
+    .methodology li::before {
+      content: '→ '; color: var(--gold);
+    }
+
+    footer {
+      margin-top: 4rem; padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.75rem; color: var(--text-dim); text-align: center;
+    }
+    footer a { color: var(--text-dim); text-decoration: none; }
+    footer a:hover { color: var(--gold); }
+    @media (max-width: 600px) {
+      .page { padding: 4rem 1.2rem 3rem; }
+      .hero-stats { grid-template-columns: repeat(2, 1fr); }
+      .tier-name { min-width: 70px; font-size: 0.7rem; }
+      .house-table { font-size: 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <a href="/" class="back-link">← EDITION</a>
+    <h1>日本オークション市場レポート</h1>
+    <p class="date">KANTEISHI Intelligence Engine · 2026年5月更新</p>
+
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="value">56,645</span>
+        <span class="label">総落札件数</span>
+      </div>
+      <div class="hero-stat">
+        <span class="value">¥653億</span>
+        <span class="label">総取引額</span>
+      </div>
+      <div class="hero-stat">
+        <span class="value">7,258</span>
+        <span class="label">アーティスト</span>
+      </div>
+      <div class="hero-stat">
+        <span class="value">¥22万</span>
+        <span class="label">中央値</span>
+      </div>
+      <div class="hero-stat">
+        <span class="value">3社</span>
+        <span class="label">オークションハウス</span>
+      </div>
+      <div class="hero-stat">
+        <span class="value">R²=0.900</span>
+        <span class="label">モデル精度</span>
+      </div>
+    </div>
+
+    <h2>エグゼクティブサマリー</h2>
+    <p>
+      本レポートは、EDITIONのKANTEISHI（鑑定士）インテリジェンスエンジンが蓄積した
+      国内主要3社のオークション落札データ56,645件を包括的に分析したものです。
+      総取引額は653億円に達し、取り扱いアーティスト数は7,258名に及びます。
+    </p>
+    <p>
+      市場全体の中央値は22万円で、取引の43.8%が10万円〜50万円の価格帯に集中しています。
+      一方、500万円を超えるプレミアムセグメントは件数ベースで4.2%ながら、
+      金額ベースでは全体の56.8%（370億円）を占めており、
+      少数の高額取引が市場の大部分を駆動する典型的なパワーロー分布を示しています。
+    </p>
+
+    <h2>価格帯別取引分布</h2>
+    <p>
+      落札価格の分布は、10万円〜50万円帯を中心とした右裾の長い分布を示します。
+      この価格帯はコレクション入門層にとってのエントリーポイントであり、
+      版画やシルクスクリーンといった複製技法の作品が多くを占めています。
+    </p>
+    <div class="tier-chart" id="tierChart"></div>
+
+    <h2>オークションハウス別分析</h2>
+    <p>
+      3社はそれぞれ異なる市場ポジションを持ちます。SBI Art Auctionは高価格帯に強く
+      平均落札額193万円と最も高い水準です。毎日オークションは件数ベースで最大（29,227件）で、
+      幅広い価格帯をカバーしています。シンワオークションは専門セール（現代美術、陶芸等）に
+      特化したアプローチを取っています。
+    </p>
+    <table class="house-table">
+      <thead>
+        <tr>
+          <th>ハウス</th>
+          <th class="num">取扱件数</th>
+          <th class="num">総取引額</th>
+          <th class="num">平均落札額</th>
+          <th class="num">中央値</th>
+        </tr>
+      </thead>
+      <tbody id="houseTable"></tbody>
+    </table>
+
+    <h2>技法別市場動向</h2>
+    <p>
+      アクリル作品が平均397万円と最も高い平均価格を記録しています。
+      これは村上隆、草間彌生、カウズといった現代アートのトップ作家がアクリルを主要技法として
+      使用していることに起因します。油彩（平均152万円）、シルクスクリーン（平均148万円）が
+      続き、伝統的な技法ほど安定した需要を維持しています。
+    </p>
+    <p>
+      日本画（平均66万円）は件数は少ないものの、掛軸や色紙を含む多様な形態で
+      取引されており、国内コレクター層に根強い人気があります。
+    </p>
+
+    <h2>市場構造の特徴</h2>
+    <p>
+      日本のオークション市場は以下の構造的特徴を持ちます：
+    </p>
+    <p>
+      <strong>パワーロー分布</strong>：上位4.2%の高額取引（500万円超）が総取引額の56.8%を占めます。
+      市場の価値は少数のプレミアム作品に集中しており、これはグローバルなアート市場と同様のパターンです。
+    </p>
+    <p>
+      <strong>クロスハウス取引</strong>：複数のオークションハウスで取引されるアーティストは
+      単一ハウスのみの作家と比較して、平均落札価格が2.3倍高く、市場流動性も高い傾向にあります。
+    </p>
+    <p>
+      <strong>中央値と平均の乖離</strong>：全体の平均落札額は115万円ですが、中央値は22万円と
+      大きく乖離しています。これは高額取引による平均の引き上げ効果を示しており、
+      市場の「典型的な取引」を理解するには中央値が適切な指標です。
+    </p>
+
+    <div class="methodology">
+      <h3>分析手法</h3>
+      <p>本レポートのデータは以下のソースに基づきます：</p>
+      <ul>
+        <li>SBI Art Auction: 21,420件の落札記録</li>
+        <li>毎日オークション: 29,227件の落札記録（63セール分のアーカイブ）</li>
+        <li>シンワオークション: 5,998件の落札記録</li>
+      </ul>
+      <p>
+        価格推定にはKANTEISHIヘドニック価格モデル v0.9（R²=0.900、17特徴量、
+        HistGradientBoostingRegressor + RandomForestのアンサンブル）を使用しています。
+        中央値誤差22.1%、±30%精度62.3%で、国内オークションデータに特化した
+        高精度な推定を実現しています。
+      </p>
+    </div>
+
+    <footer>
+      <p>© 2026 EDITION — Japanese Cultural Assets Intelligence</p>
+      <p style="margin-top: 0.3rem;">
+        <a href="/">トップ</a> ·
+        <a href="/artists">アーティスト一覧</a> ·
+        <a href="/categories">カテゴリ分析</a> ·
+        <a href="/#kanteishi">KANTEISHI</a>
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    function fmtPrice(p) {
+      if (p >= 1e8) return '¥' + (p/1e8).toFixed(1) + '億';
+      if (p >= 1e7) return '¥' + (p/1e4).toLocaleString() + '万';
+      if (p >= 1e4) return '¥' + (p/1e4).toFixed(0) + '万';
+      return '¥' + p.toLocaleString();
+    }
+    function fmtBillion(p) {
+      if (p >= 1e12) return '¥' + (p/1e12).toFixed(1) + '兆';
+      if (p >= 1e8) return '¥' + (p/1e8).toFixed(0) + '億';
+      return '¥' + (p/1e4).toFixed(0) + '万';
+    }
+
+    const tierNames = {
+      under_10k: '¥1万未満', '10k_50k': '¥1万〜5万', '50k_100k': '¥5万〜10万',
+      '100k_500k': '¥10万〜50万', '500k_1m': '¥50万〜100万',
+      '1m_5m': '¥100万〜500万', over_5m: '¥500万以上'
+    };
+
+    fetch('/data/market_analytics.json')
+      .then(r => r.json())
+      .then(data => {
+        // Tier chart
+        const maxCount = Math.max(...data.tiers.map(t => t.count));
+        const chart = document.getElementById('tierChart');
+        chart.innerHTML = data.tiers.map(t => {
+          const w = (t.count / maxCount * 100).toFixed(1);
+          return `<div class="tier-row">
+            <span class="tier-name">${tierNames[t.name] || t.name}</span>
+            <div class="tier-bar-track">
+              <div class="tier-bar-fill" style="width: ${w}%"></div>
+              <span class="tier-bar-label">${t.count.toLocaleString()}</span>
+            </div>
+            <span class="tier-pct">${t.pct}%</span>
+          </div>`;
+        }).join('');
+
+        // House table
+        const houseNames = { SBI: 'SBI Art Auction', Mainichi: '毎日オークション', Shinwa: 'シンワオークション' };
+        const tbody = document.getElementById('houseTable');
+        tbody.innerHTML = data.houses.map(h =>
+          `<tr>
+            <td>${houseNames[h.name] || h.name}</td>
+            <td class="num">${h.count.toLocaleString()}</td>
+            <td class="num">${fmtBillion(h.total_value)}</td>
+            <td class="num">${fmtPrice(h.avg_price)}</td>
+            <td class="num">${fmtPrice(h.median_price)}</td>
+          </tr>`
+        ).join('');
+      });
+  </script>
+</body>
+</html>

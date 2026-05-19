@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>カテゴリ別分析 — 技法・ジャンル別オークション市場動向 | EDITION</title>
+  <meta name="description" content="油彩、アクリル、版画、日本画、陶芸、彫刻など13の技法・カテゴリ別に日本のオークション市場を分析。56,645件の落札データに基づく包括的市場レポート。">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="カテゴリ別市場分析 | EDITION">
+  <meta property="og:description" content="技法・ジャンル別のオークション市場動向分析。13カテゴリの価格データ。">
+  <meta property="og:url" content="https://edition.sh/categories">
+  <meta property="og:site_name" content="EDITION">
+  <link rel="canonical" href="https://edition.sh/categories">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "技法・カテゴリ別 日本オークション市場分析",
+    "description": "油彩、アクリル、版画、日本画、陶芸、彫刻など13カテゴリの市場動向",
+    "url": "https://edition.sh/categories",
+    "publisher": { "@type": "Organization", "name": "EDITION" }
+  }
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #0C0C0C; --surface: rgba(255,255,255,0.03);
+      --border: rgba(255,255,255,0.08); --text: #e0e0e0;
+      --text-dim: rgba(255,255,255,0.4); --gold: #b8860b;
+      --gold-dim: rgba(184,134,11,0.4);
+      --font-serif: 'Cormorant Garamond', 'Noto Serif JP', serif;
+      --font-sans: 'Inter', 'Noto Sans JP', sans-serif;
+    }
+    body { background: var(--bg); color: var(--text); font-family: var(--font-sans); line-height: 1.7; }
+    .page { max-width: 1000px; margin: 0 auto; padding: 6rem 2rem 4rem; }
+    .back-link {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      margin-bottom: 2rem; font-size: 0.85rem;
+      color: var(--text-dim); text-decoration: none; transition: color 0.2s;
+    }
+    .back-link:hover { color: var(--gold); }
+    h1 {
+      font-family: var(--font-serif); font-weight: 300;
+      font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 0.3rem; color: #fff;
+    }
+    .subtitle { color: var(--text-dim); font-size: 0.9rem; margin-bottom: 2.5rem; }
+    h2 {
+      font-family: var(--font-serif); font-weight: 400; font-size: 1.4rem;
+      margin: 3rem 0 1rem; padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border); color: #fff;
+    }
+    p { color: rgba(255,255,255,0.55); margin-bottom: 1rem; font-size: 0.95rem; }
+
+    /* Category Cards */
+    .cat-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.2rem; margin: 2rem 0;
+    }
+    .cat-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px; padding: 1.8rem; position: relative;
+      transition: all 0.3s ease; overflow: hidden;
+    }
+    .cat-card:hover {
+      border-color: var(--gold-dim);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    }
+    .cat-card .badge {
+      position: absolute; top: 1rem; right: 1rem;
+      font-size: 0.6rem; padding: 0.2rem 0.6rem;
+      border: 1px solid var(--gold-dim); border-radius: 10px;
+      color: var(--gold); text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .cat-card .cat-name {
+      font-family: var(--font-serif); font-size: 1.3rem;
+      color: #fff; margin-bottom: 0.2rem;
+    }
+    .cat-card .cat-name-en {
+      font-size: 0.7rem; color: var(--text-dim);
+      font-family: var(--font-serif); letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+    }
+    .cat-card .stat-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem;
+    }
+    .cat-card .stat { display: flex; flex-direction: column; }
+    .cat-card .stat-val {
+      font-family: var(--font-serif); font-size: 1rem; color: var(--gold);
+    }
+    .cat-card .stat-lbl {
+      font-size: 0.55rem; color: var(--text-dim);
+      text-transform: uppercase; letter-spacing: 0.08em;
+    }
+    .cat-card .share-bar {
+      margin-top: 1rem; height: 3px; background: rgba(255,255,255,0.05);
+      border-radius: 2px; overflow: hidden;
+    }
+    .cat-card .share-fill {
+      height: 100%; background: var(--gold); border-radius: 2px;
+      transition: width 1s ease;
+    }
+
+    /* Comparison Table */
+    .comp-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+    .comp-table th {
+      text-align: left; font-size: 0.65rem; text-transform: uppercase;
+      letter-spacing: 0.1em; color: var(--text-dim);
+      padding: 0.8rem 0.5rem; border-bottom: 1px solid var(--border); font-weight: 400;
+    }
+    .comp-table th.num { text-align: right; }
+    .comp-table td {
+      padding: 0.8rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.04);
+      font-size: 0.85rem; color: rgba(255,255,255,0.6);
+    }
+    .comp-table td:first-child { color: #fff; }
+    .comp-table td.num { text-align: right; font-family: var(--font-serif); }
+    .comp-table tr:hover td { color: #fff; }
+
+    .insight-box {
+      background: var(--surface); border-left: 3px solid var(--gold);
+      padding: 1.5rem; margin: 2rem 0; border-radius: 0 8px 8px 0;
+    }
+    .insight-box .title {
+      font-family: var(--font-serif); color: var(--gold);
+      font-size: 0.85rem; margin-bottom: 0.5rem; text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    .insight-box p { font-size: 0.85rem; margin-bottom: 0.5rem; }
+    .insight-box p:last-child { margin-bottom: 0; }
+
+    footer {
+      margin-top: 4rem; padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.75rem; color: var(--text-dim); text-align: center;
+    }
+    footer a { color: var(--text-dim); text-decoration: none; }
+    footer a:hover { color: var(--gold); }
+    @media (max-width: 600px) {
+      .page { padding: 4rem 1.2rem 3rem; }
+      .cat-grid { grid-template-columns: 1fr; }
+      .comp-table { font-size: 0.75rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <a href="/" class="back-link">← EDITION</a>
+    <h1>カテゴリ別市場分析</h1>
+    <p class="subtitle">技法・ジャンル別に見る日本オークション市場の構造</p>
+
+    <h2>カテゴリ概覧</h2>
+    <p>
+      56,645件の落札データを技法・ジャンル別に分類し、各カテゴリの市場規模、
+      価格水準、流動性を分析しました。分類はKANTEISHIの自然言語処理エンジンにより、
+      出品説明文から技法を自動判別しています。
+    </p>
+    <div class="cat-grid" id="catGrid"></div>
+
+    <h2>カテゴリ別比較</h2>
+    <p>
+      価格水準にはカテゴリごとに明確な序列があります。アクリル作品は村上隆・草間彌生・KAWS等の
+      現代アート作家が牽引し、平均価格が突出しています。版画系（リトグラフ・木版・エッチング）は
+      エディション数が多いため件数は多いものの、平均価格はユニーク作品より低くなります。
+    </p>
+    <table class="comp-table">
+      <thead>
+        <tr>
+          <th>カテゴリ</th>
+          <th class="num">件数</th>
+          <th class="num">シェア</th>
+          <th class="num">平均価格</th>
+          <th class="num">中央値</th>
+        </tr>
+      </thead>
+      <tbody id="compTable"></tbody>
+    </table>
+
+    <div class="insight-box">
+      <div class="title">Market Insight</div>
+      <p>
+        <strong>ユニーク作品 vs. エディション作品</strong>：
+        油彩・アクリル・日本画などのユニーク作品は平均価格が高いのに対し、
+        シルクスクリーン・リトグラフ・エッチングなどのエディション作品は
+        入手しやすい価格帯に集中しています。
+      </p>
+      <p>
+        コレクターにとって、エディション作品は同一作家の作品に低リスクでアクセスする
+        戦略的エントリーポイントとなります。例えば、村上隆のシルクスクリーンは
+        油彩・アクリル作品の1/10以下の価格で入手可能です。
+      </p>
+    </div>
+
+    <h2>技法別の市場ポジション</h2>
+    <p>
+      <strong>プレミアム層（平均100万円超）</strong>：アクリル、シルクスクリーン、陶芸、油彩、
+      ミクストメディア。現代美術と伝統工芸の両極が高価格帯を形成しています。
+    </p>
+    <p>
+      <strong>ミドル層（平均50万〜100万円）</strong>：木版画、水墨、彫刻、水彩。
+      安定的な需要を持つ伝統的技法が中心です。
+    </p>
+    <p>
+      <strong>エントリー層（平均50万円未満）</strong>：リトグラフ、エッチング。
+      エディション数が多く、コレクション入門に適した価格帯です。
+    </p>
+
+    <footer>
+      <p>© 2026 EDITION — Japanese Cultural Assets Intelligence</p>
+      <p style="margin-top: 0.3rem;">
+        <a href="/">トップ</a> ·
+        <a href="/artists">アーティスト一覧</a> ·
+        <a href="/market">市場レポート</a> ·
+        <a href="/#kanteishi">KANTEISHI</a>
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    const catNames = {
+      oil: { ja: '油彩', en: 'Oil Painting' },
+      acrylic: { ja: 'アクリル', en: 'Acrylic' },
+      silkscreen: { ja: 'シルクスクリーン', en: 'Silkscreen / Serigraphy' },
+      lithograph: { ja: 'リトグラフ', en: 'Lithograph' },
+      nihonga: { ja: '日本画', en: 'Nihonga' },
+      ceramics: { ja: '陶芸', en: 'Ceramics' },
+      woodblock: { ja: '木版画', en: 'Woodblock Print' },
+      etching: { ja: 'エッチング', en: 'Etching / Intaglio' },
+      sculpture: { ja: '彫刻', en: 'Sculpture' },
+      watercolor: { ja: '水彩', en: 'Watercolor' },
+      mixed_media: { ja: 'ミクストメディア', en: 'Mixed Media' },
+      ink: { ja: '水墨画', en: 'Ink Wash Painting' },
+      photography: { ja: '写真', en: 'Photography' },
+      other: { ja: 'その他', en: 'Other / Unclassified' },
+    };
+
+    function fmtPrice(p) {
+      if (p >= 1e8) return '¥' + (p/1e8).toFixed(1) + '億';
+      if (p >= 1e7) return '¥' + (p/1e4).toLocaleString() + '万';
+      if (p >= 1e4) return '¥' + (p/1e4).toFixed(0) + '万';
+      return '¥' + p.toLocaleString();
+    }
+
+    function tierLabel(avg) {
+      if (avg >= 1000000) return 'Premium';
+      if (avg >= 500000) return 'Middle';
+      return 'Entry';
+    }
+
+    fetch('/data/market_analytics.json')
+      .then(r => r.json())
+      .then(data => {
+        const mediums = data.mediums.filter(m => m.medium !== 'other');
+        const maxCount = Math.max(...mediums.map(m => m.count));
+
+        // Category cards
+        const grid = document.getElementById('catGrid');
+        grid.innerHTML = mediums.map(m => {
+          const info = catNames[m.medium] || { ja: m.medium, en: '' };
+          const shareW = (m.count / maxCount * 100).toFixed(0);
+          return `<div class="cat-card">
+            <span class="badge">${tierLabel(m.avg_price)}</span>
+            <div class="cat-name">${info.ja}</div>
+            <div class="cat-name-en">${info.en}</div>
+            <div class="stat-grid">
+              <div class="stat"><span class="stat-val">${m.count.toLocaleString()}</span><span class="stat-lbl">取引件数</span></div>
+              <div class="stat"><span class="stat-val">${m.pct}%</span><span class="stat-lbl">シェア</span></div>
+              <div class="stat"><span class="stat-val">${fmtPrice(m.avg_price)}</span><span class="stat-lbl">平均価格</span></div>
+              <div class="stat"><span class="stat-val">${fmtPrice(m.median_price)}</span><span class="stat-lbl">中央値</span></div>
+            </div>
+            <div class="share-bar"><div class="share-fill" style="width:${shareW}%"></div></div>
+          </div>`;
+        }).join('');
+
+        // Comparison table
+        const tbody = document.getElementById('compTable');
+        tbody.innerHTML = mediums.sort((a,b) => b.avg_price - a.avg_price).map(m => {
+          const info = catNames[m.medium] || { ja: m.medium };
+          return `<tr>
+            <td>${info.ja}</td>
+            <td class="num">${m.count.toLocaleString()}</td>
+            <td class="num">${m.pct}%</td>
+            <td class="num">${fmtPrice(m.avg_price)}</td>
+            <td class="num">${fmtPrice(m.median_price)}</td>
+          </tr>`;
+        }).join('');
+      });
+  </script>
+</body>
+</html>

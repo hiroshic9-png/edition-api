@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アーティスト一覧 — オークション相場データベース | EDITION</title>
+  <meta name="description" content="日本の主要オークションハウス3社（SBI Art Auction・毎日オークション・シンワオークション）の落札データに基づくアーティスト別市場分析。7,258名、49,968件の取引実績。">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="アーティスト一覧 — オークション市場データ | EDITION">
+  <meta property="og:description" content="7,258名のアーティストの落札価格データベース。3社横断分析。">
+  <meta property="og:url" content="https://edition.sh/artists">
+  <meta property="og:site_name" content="EDITION">
+  <link rel="canonical" href="https://edition.sh/artists">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "アーティスト一覧 — EDITION",
+    "description": "日本のオークション市場で取引されるアーティストの市場データベース",
+    "url": "https://edition.sh/artists",
+    "numberOfItems": 200,
+    "provider": {
+      "@type": "Organization",
+      "name": "EDITION",
+      "url": "https://edition.sh"
+    }
+  }
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #0C0C0C; --surface: rgba(255,255,255,0.03);
+      --border: rgba(255,255,255,0.08); --text: #e0e0e0;
+      --text-dim: rgba(255,255,255,0.4); --gold: #b8860b;
+      --gold-dim: rgba(184,134,11,0.4);
+      --font-serif: 'Cormorant Garamond', 'Noto Serif JP', serif;
+      --font-sans: 'Inter', 'Noto Sans JP', sans-serif;
+    }
+    body { background: var(--bg); color: var(--text); font-family: var(--font-sans); }
+    .page { max-width: 1100px; margin: 0 auto; padding: 6rem 2rem 4rem; }
+    .back-link {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      margin-bottom: 2rem; font-size: 0.85rem;
+      color: var(--text-dim); text-decoration: none; transition: color 0.2s;
+    }
+    .back-link:hover { color: var(--gold); }
+    h1 {
+      font-family: var(--font-serif); font-weight: 300;
+      font-size: clamp(2rem, 4vw, 2.8rem); margin-bottom: 0.5rem; color: #fff;
+    }
+    .subtitle { color: var(--text-dim); font-size: 0.9rem; margin-bottom: 2.5rem; }
+
+    /* Search & Sort */
+    .controls {
+      display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; align-items: center;
+    }
+    .search-box {
+      flex: 1; min-width: 200px; padding: 0.8rem 1.2rem;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 8px; color: var(--text); font-size: 0.9rem;
+      font-family: var(--font-sans); outline: none; transition: border-color 0.2s;
+    }
+    .search-box:focus { border-color: var(--gold-dim); }
+    .search-box::placeholder { color: var(--text-dim); }
+    .sort-btn {
+      padding: 0.7rem 1.2rem; background: var(--surface);
+      border: 1px solid var(--border); border-radius: 8px;
+      color: var(--text-dim); font-size: 0.75rem; cursor: pointer;
+      text-transform: uppercase; letter-spacing: 0.08em;
+      font-family: var(--font-sans); transition: all 0.2s;
+    }
+    .sort-btn:hover, .sort-btn.active { border-color: var(--gold-dim); color: var(--gold); }
+    .result-count { color: var(--text-dim); font-size: 0.8rem; margin-bottom: 1rem; }
+
+    /* Artist Grid */
+    .artist-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1rem;
+    }
+    .artist-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px; padding: 1.5rem;
+      text-decoration: none; color: inherit; display: block;
+      transition: all 0.3s ease;
+    }
+    .artist-card:hover {
+      border-color: var(--gold-dim);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    }
+    .artist-card .name {
+      font-family: var(--font-serif); font-size: 1.2rem;
+      color: #fff; margin-bottom: 0.2rem;
+    }
+    .artist-card .roman {
+      font-size: 0.75rem; color: var(--text-dim);
+      font-family: var(--font-serif); letter-spacing: 0.05em;
+      margin-bottom: 0.8rem;
+    }
+    .artist-card .stats-row {
+      display: flex; gap: 1.5rem; flex-wrap: wrap;
+    }
+    .artist-card .stat-item { display: flex; flex-direction: column; }
+    .artist-card .stat-val {
+      font-size: 0.95rem; color: var(--gold);
+      font-family: var(--font-serif);
+    }
+    .artist-card .stat-lbl {
+      font-size: 0.6rem; color: var(--text-dim);
+      text-transform: uppercase; letter-spacing: 0.08em;
+    }
+    .artist-card .houses {
+      margin-top: 0.6rem; display: flex; gap: 0.4rem; flex-wrap: wrap;
+    }
+    .artist-card .house-tag {
+      font-size: 0.55rem; padding: 0.15rem 0.5rem;
+      border: 1px solid var(--border); border-radius: 10px;
+      color: var(--text-dim); text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    footer {
+      margin-top: 4rem; padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.75rem; color: var(--text-dim); text-align: center;
+    }
+    footer a { color: var(--text-dim); text-decoration: none; }
+    footer a:hover { color: var(--gold); }
+    @media (max-width: 600px) {
+      .page { padding: 4rem 1.2rem 3rem; }
+      .artist-grid { grid-template-columns: 1fr; }
+      .controls { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <a href="/" class="back-link">← EDITION</a>
+    <h1>アーティスト一覧</h1>
+    <p class="subtitle">国内3社のオークションハウスで取引実績のあるトップ200名の市場データ</p>
+
+    <div class="controls">
+      <input type="text" class="search-box" id="searchInput" placeholder="アーティスト名で検索…">
+      <button class="sort-btn active" data-sort="lots" id="sortLots">取引数順</button>
+      <button class="sort-btn" data-sort="avg" id="sortAvg">平均価格順</button>
+      <button class="sort-btn" data-sort="max" id="sortMax">最高額順</button>
+      <button class="sort-btn" data-sort="name" id="sortName">名前順</button>
+    </div>
+    <p class="result-count" id="resultCount"></p>
+    <div class="artist-grid" id="artistGrid"></div>
+
+    <footer>
+      <p>© 2026 EDITION — Japanese Cultural Assets Intelligence</p>
+      <p style="margin-top: 0.3rem;">
+        <a href="/">トップ</a> ·
+        <a href="/market">市場レポート</a> ·
+        <a href="/categories">カテゴリ分析</a> ·
+        <a href="/#kanteishi">KANTEISHI</a>
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    const houseNames = { SBI: 'SBI', Mainichi: '毎日', Shinwa: 'シンワ' };
+    function fmtPrice(p) {
+      if (p >= 1e8) return '¥' + (p/1e8).toFixed(1) + '億';
+      if (p >= 1e7) return '¥' + (p/1e4).toLocaleString() + '万';
+      if (p >= 1e6) return '¥' + (p/1e4).toFixed(0) + '万';
+      return '¥' + p.toLocaleString();
+    }
+
+    let artists = [];
+    let currentSort = 'lots';
+
+    function renderArtists(data) {
+      const grid = document.getElementById('artistGrid');
+      grid.innerHTML = data.map(a => {
+        const slug = a.name.replace(/　/g, '-').replace(/ /g, '-').replace(/-+/g, '-');
+        const roman = a.roman_name ? `<div class="roman">${a.roman_name}</div>` : '';
+        const houses = (a.houses || []).map(h =>
+          `<span class="house-tag">${houseNames[h] || h}</span>`
+        ).join('');
+        return `<a href="/artist/${encodeURIComponent(slug)}/" class="artist-card">
+          <div class="name">${a.name}</div>
+          ${roman}
+          <div class="stats-row">
+            <div class="stat-item"><span class="stat-val">${a.price_count.toLocaleString()}</span><span class="stat-lbl">取引</span></div>
+            <div class="stat-item"><span class="stat-val">${fmtPrice(a.avg_price)}</span><span class="stat-lbl">平均</span></div>
+            <div class="stat-item"><span class="stat-val">${fmtPrice(a.median_price)}</span><span class="stat-lbl">中央値</span></div>
+            <div class="stat-item"><span class="stat-val">${fmtPrice(a.max_price)}</span><span class="stat-lbl">最高額</span></div>
+          </div>
+          <div class="houses">${houses}</div>
+        </a>`;
+      }).join('');
+      document.getElementById('resultCount').textContent = `${data.length}名のアーティスト`;
+    }
+
+    function sortArtists(key) {
+      currentSort = key;
+      document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+      document.querySelector(`[data-sort="${key}"]`).classList.add('active');
+      let sorted = [...artists];
+      switch (key) {
+        case 'lots': sorted.sort((a,b) => b.price_count - a.price_count); break;
+        case 'avg': sorted.sort((a,b) => b.avg_price - a.avg_price); break;
+        case 'max': sorted.sort((a,b) => b.max_price - a.max_price); break;
+        case 'name': sorted.sort((a,b) => a.name.localeCompare(b.name, 'ja')); break;
+      }
+      const q = document.getElementById('searchInput').value.toLowerCase();
+      if (q) sorted = sorted.filter(a =>
+        a.name.toLowerCase().includes(q) ||
+        (a.roman_name || '').toLowerCase().includes(q)
+      );
+      renderArtists(sorted);
+    }
+
+    fetch('/data/artist_seo_data.json')
+      .then(r => r.json())
+      .then(data => { artists = data; sortArtists('lots'); })
+      .catch(() => {
+        document.getElementById('artistGrid').innerHTML =
+          '<p style="color:var(--text-dim);padding:2rem;">データの読み込みに失敗しました</p>';
+      });
+
+    document.getElementById('searchInput').addEventListener('input', () => sortArtists(currentSort));
+    document.querySelectorAll('.sort-btn').forEach(btn =>
+      btn.addEventListener('click', () => sortArtists(btn.dataset.sort))
+    );
+  </script>
+</body>
+</html>
