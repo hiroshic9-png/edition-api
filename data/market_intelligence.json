@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-05-19T11:15:00+09:00",
+    "generated_at": "2026-05-19T16:55:00+09:00",
     "source": "KANTEISHI API /market/stats + /graph/stats",
-    "model_version": "0.7",
+    "model_version": "0.8",
     "daj_synced_at": "2026-05-18T12:54:00Z",
     "daj_source": "NCAR Art Platform Japan (DAJ)",
     "profile_version": "v4"
@@ -13,8 +13,8 @@
     "categories_covered": 8,
     "auction_houses": 3,
     "total_market_value": 62269731142,
-    "r2_ensemble": 0.885,
-    "median_error_pct": 25.2,
+    "r2_ensemble": 0.898,
+    "median_error_pct": 23.0,
     "sbi_lots": 21420,
     "shinwa_lots": 5998,
     "mainichi_lots": 22550,

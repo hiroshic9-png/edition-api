@@ -1366,11 +1366,11 @@
           <p class="reveal reveal--delay-2" style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 3rem; max-width: 700px;">${t('kanteishi.engine_desc')}</p>
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem;">
             <div class="kanteishi-stat reveal">
-              <span class="kanteishi-stat__value">${s.r2_ensemble ? (s.r2_ensemble * 100).toFixed(1) + '%' : '88.5%'}</span>
+              <span class="kanteishi-stat__value">${s.r2_ensemble ? (s.r2_ensemble * 100).toFixed(1) + '%' : '89.8%'}</span>
               <span class="kanteishi-stat__label">${t('kanteishi.engine_accuracy')}</span>
             </div>
             <div class="kanteishi-stat reveal reveal--delay-1">
-              <span class="kanteishi-stat__value">${s.median_error_pct ? s.median_error_pct.toFixed(1) + '%' : '25.2%'}</span>
+              <span class="kanteishi-stat__value">${s.median_error_pct ? s.median_error_pct.toFixed(1) + '%' : '23.0%'}</span>
               <span class="kanteishi-stat__label">${t('kanteishi.engine_error')}</span>
             </div>
             <div class="kanteishi-stat reveal reveal--delay-2">
@@ -1378,7 +1378,7 @@
               <span class="kanteishi-stat__label">${t('kanteishi.engine_training')}</span>
             </div>
             <div class="kanteishi-stat reveal reveal--delay-3">
-              <span class="kanteishi-stat__value">13</span>
+              <span class="kanteishi-stat__value">15</span>
               <span class="kanteishi-stat__label">${t('kanteishi.engine_features')}</span>
             </div>
             <div class="kanteishi-stat reveal">
