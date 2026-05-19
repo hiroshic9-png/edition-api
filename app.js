@@ -307,7 +307,7 @@
             </div>
             <div class="reveal reveal--delay-1" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
               <div class="auth-promo__metric">
-                <span class="auth-promo__metric-value">${_marketData ? Number(_marketData.stats.total_records).toLocaleString() : '23,121'}</span>
+                <span class="auth-promo__metric-value">${_marketData ? Number(_marketData.stats.total_records).toLocaleString() : '49,968'}</span>
                 <span class="auth-promo__metric-label">${t('home.market_records')}</span>
               </div>
               <div class="auth-promo__metric">
@@ -315,11 +315,11 @@
                 <span class="auth-promo__metric-label">${t('home.market_houses')}</span>
               </div>
               <div class="auth-promo__metric">
-                <span class="auth-promo__metric-value">${_marketData ? '¥' + (Number(_marketData.stats.total_market_value) / 1e8).toFixed(0) + '億' : '¥463億'}</span>
+                <span class="auth-promo__metric-value">${_marketData ? '¥' + (Number(_marketData.stats.total_market_value) / 1e8).toFixed(0) + '億' : '¥622億'}</span>
                 <span class="auth-promo__metric-label">${t('home.market_value')}</span>
               </div>
               <div class="auth-promo__metric">
-                <span class="auth-promo__metric-value">${_marketData ? Number(_marketData.stats.total_artists).toLocaleString() : '3,509'}</span>
+                <span class="auth-promo__metric-value">${_marketData ? Number(_marketData.stats.total_artists).toLocaleString() : '7,582'}</span>
                 <span class="auth-promo__metric-label">${t('home.market_artists')}</span>
               </div>
             </div>
