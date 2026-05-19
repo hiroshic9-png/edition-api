@@ -135,6 +135,42 @@
     .insight-box p { font-size: 0.85rem; margin-bottom: 0.5rem; }
     .insight-box p:last-child { margin-bottom: 0; }
 
+    /* Article Cards */
+    .article-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.2rem; margin: 2rem 0;
+    }
+    .article-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px; overflow: hidden;
+      transition: all 0.3s ease; text-decoration: none; display: block;
+    }
+    .article-card:hover {
+      border-color: var(--gold-dim);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+    }
+    .article-card .card-img {
+      width: 100%; height: 160px; object-fit: cover;
+      filter: brightness(0.55); transition: filter 0.3s;
+    }
+    .article-card:hover .card-img { filter: brightness(0.75); }
+    .article-card .card-body { padding: 1.2rem 1.5rem; }
+    .article-card .card-title {
+      font-family: var(--font-serif); font-size: 1.1rem; color: #fff;
+      margin-bottom: 0.2rem;
+    }
+    .article-card .card-en {
+      font-size: 0.7rem; color: var(--text-dim);
+      font-family: var(--font-serif); letter-spacing: 0.04em;
+      margin-bottom: 0.6rem;
+    }
+    .article-card .card-desc {
+      font-size: 0.8rem; color: rgba(255,255,255,0.45);
+      line-height: 1.6; display: -webkit-box;
+      -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    }
+
     footer {
       margin-top: 4rem; padding-top: 2rem;
       border-top: 1px solid var(--border);
@@ -210,6 +246,13 @@
       <strong>エントリー層（平均50万円未満）</strong>：リトグラフ、エッチング。
       エディション数が多く、コレクション入門に適した価格帯です。
     </p>
+
+    <h2>Deep Dive — カテゴリ別鑑定ガイド</h2>
+    <p>
+      各カテゴリの歴史・技法・鑑定手法を深掘りした専門記事。
+      コレクターや鑑定の実務に役立つ知識を網羅しています。
+    </p>
+    <div class="article-grid" id="articleGrid"></div>
 
     <footer>
       <p>© 2026 EDITION — Japanese Cultural Assets Intelligence</p>
@@ -289,6 +332,27 @@
             <td class="num">${fmtPrice(m.avg_price)}</td>
             <td class="num">${fmtPrice(m.median_price)}</td>
           </tr>`;
+        }).join('');
+      });
+
+    // Article cards from categories.json
+    fetch('/data/categories.json')
+      .then(r => r.json())
+      .then(data => {
+        const cats = data.categories || [];
+        const grid = document.getElementById('articleGrid');
+        if (!grid || !cats.length) return;
+        grid.innerHTML = cats.map(c => {
+          const desc = (c.description || '').slice(0, 120);
+          const hero = c.hero_image || c.image || '';
+          return `<a href="/categories/${c.slug}" class="article-card">
+            <img class="card-img" src="${hero}" alt="${c.title_en}" loading="lazy">
+            <div class="card-body">
+              <div class="card-title">${c.title_jp}</div>
+              <div class="card-en">${c.title_en}</div>
+              <div class="card-desc">${desc}</div>
+            </div>
+          </a>`;
         }).join('');
       });
   </script>
