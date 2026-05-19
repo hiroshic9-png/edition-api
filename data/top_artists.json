@@ -1,0 +1,514 @@
+[
+  {
+    "name": "村上　隆",
+    "lot_count": 2114,
+    "avg_price": 567835,
+    "median_price": 299000,
+    "n_houses": 3,
+    "max_price": 143750000,
+    "total_value": 1200402450,
+    "houses": [
+      "SBI",
+      "Mainichi",
+      "Shinwa"
+    ],
+    "birth_year": 1962,
+    "death_year": null,
+    "is_deceased": false,
+    "movements": [
+      "pop_art",
+      "sculpture",
+      "contemporary"
+    ],
+    "wiki_lang_count": 35,
+    "roman_name": "MURAKAMI Takashi",
+    "birth_place": "",
+    "fields": [],
+    "daj_url": "https://artplatform.go.jp/artists/A1965",
+    "gender": "",
+    "cv": 0
+  },
+  {
+    "name": "草間　彌生",
+    "lot_count": 1319,
+    "avg_price": 7914157,
+    "median_price": 2760000,
+    "n_houses": 3,
+    "max_price": 247250000,
+    "total_value": 10438773500,
+    "houses": [
+      "SBI",
+      "Mainichi",
+      "Shinwa"
+    ],
+    "birth_year": 1929,
+    "death_year": null,
+    "is_deceased": false,
+    "movements": [
+      "pop_art",
+      "sculpture",
+      "contemporary"
+    ],
+    "wiki_lang_count": 46,
+    "roman_name": "KUSAMA Yayoi",
+    "birth_place": "長野県松本市",
+    "fields": [
+      "絵画",
+      "彫刻",
+      "版画",
+      "パフォーマンスアート",
+      "インスタレーション"
+    ],
+    "daj_url": "https://artplatform.go.jp/artists/A1325",
+    "gender": "female",
+    "authorities": {
+      "viaf": "22415110",
+      "ulan": "500122518",
+      "wikidata": "Q231121",
+      "ndl": "00140055"
+    },
+    "cv": 0
+  },
+  {
+    "name": "カウズ",
+    "lot_count": 916,
+    "avg_price": 1406839,
+    "median_price": 395500,
+    "n_houses": 2,
+    "max_price": 72450000,
+    "total_value": 1288664250,
+    "houses": [
+      "SBI",
+      "Mainichi"
+    ],
+    "birth_year": null,
+    "death_year": null,
+    "is_deceased": false,
+    "movements": [
+      "sculpture",
+      "contemporary"
+    ],
+    "wiki_lang_count": 10,
+    "cv": 0
+  },
+  {
+    "name": "ガレ",
+    "lot_count": 878,
+    "avg_price": 411476,
+    "median_price": 210000,
+    "n_houses": 2,
+    "max_price": 20000000,
+    "total_value": 361275900,
+    "houses": [
+      "Mainichi",
+      "Shinwa"
+    ],
+    "cv": 0
+  },
+  {
+    "name": "マイセン",
+    "lot_count": 711,
+    "avg_price": 289764,
+    "median_price": 130000,
+    "n_houses": 2,
+    "max_price": 6000000,
+    "total_value": 206022000,
+    "houses": [
+      "Mainichi",
+      "Shinwa"
+    ],
+    "cv": 0
+  },
+  {
+    "name": "ドーム",
+    "lot_count": 665,
+    "avg_price": 481132,
+    "median_price": 260000,
+    "n_houses": 2,
+    "max_price": 6300000,
+    "total_value": 319952800,
+    "houses": [
+      "Mainichi",
+      "Shinwa"
+    ],
+    "cv": 0
+  },
+  {
+    "name": "北大路 魯山人",
+    "lot_count": 568,
+    "avg_price": 1311136,
+    "median_price": 600000,
+    "n_houses": 3,
+    "max_price": 60000000,
+    "total_value": 744725000,
+    "houses": [
+      "SBI",
+      "Mainichi",
+      "Shinwa"
+    ],
+    "birth_year": 1883,
+    "death_year": 1959,
+    "is_deceased": true,
+    "movements": [
+      "nihonga",
+      "ceramics",
+      "calligraphy"
+    ],
+    "wiki_lang_count": 7,
+    "roman_name": "KITAŌJI Rosanjin",
+    "birth_place": "京都府愛宕郡上賀茂村（現・京都市北区上賀茂）",
+    "fields": [
+      "工芸"
+    ],
+    "daj_url": "https://artplatform.go.jp/artists/A1296",
+    "gender": "male",
+    "authorities": {
+      "viaf": "812412",
+      "ulan": "500123494",
+      "wikidata": "Q7367324",
+      "ndl": "00032451"
+    },
+    "cv": 0
+  },
+  {
+    "name": "奈良　美智",
+    "lot_count": 476,
+    "avg_price": 5235849,
+    "median_price": 2415000,
+    "n_houses": 2,
+    "max_price": 132250000,
+    "total_value": 2492264000,
+    "houses": [
+      "SBI",
+      "Mainichi"
+    ],
+    "birth_year": 1959,
+    "death_year": null,
+    "is_deceased": false,
+    "movements": [
+      "pop_art",
+      "yoga",
+      "sculpture",
+      "photography",
+      "contemporary"
+    ],
+    "wiki_lang_count": 19,
+    "roman_name": "NARA Yoshitomo",
+    "birth_place": "青森県弘前市",
+    "fields": [
+      "絵画",
+      "彫刻"
+    ],
+    "daj_url": "https://artplatform.go.jp/artists/A1732",
+    "gender": "male",
+    "authorities": {
+      "viaf": "116439660",
+      "ulan": "500033169",
+      "wikidata": "Q2015324",
+      "ndl": "00680363"
+    },
+    "cv": 0
+  },
+  {
+    "name": "李　禹煥",
+    "lot_count": 383,
+    "avg_price": 2812086,
+    "median_price": 690000,
+    "n_houses": 3,
+    "max_price": 48300000,
+    "total_value": 1077028750,
+    "houses": [
+      "SBI",
+      "Mainichi",
+      "Shinwa"
+    ],
+    "birth_year": 1936,
+    "death_year": null,
+    "is_deceased": false,
+    "movements": [
+      "abstract",
+      "sculpture",
+      "contemporary"
+    ],
+    "wiki_lang_count": 7,
+    "roman_name": "LEE Ufan",
+    "birth_place": "大韓民国慶尚南道",
+    "fields": [
+      "絵画",
+      "彫刻"
+    ],
+    "daj_url": "https://artplatform.go.jp/artists/A2080",
+    "gender": "male",
+    "authorities": {
+      "viaf": "20244189",
+      "ulan": "500061220",
+      "wikidata": "Q399775",
+      "ndl": "00173574"
+    },
+    "cv": 0
+  },
+  {
+    "name": "ベルナール・ビュッフェ",
+    "lot_count": 354,
+    "avg_price": 1579853,
+    "median_price": 130000,
+    "n_houses": 3,
+    "max_price": 54000000,
+    "total_value": 559268050,
+    "houses": [
+      "SBI",
+      "Mainichi",
+      "Shinwa"
+    ],
+    "birth_year": null,
+    "death_year": null,
+    "is_deceased": false,
+    "movements": [],
+    "wiki_lang_count": 27,
+    "cv": 0
+  },
+  {
+    "name": "藤田 嗣治",
+    "lot_count": 294,
+    "avg_price": 1311071,
+    "median_price": 440000,
+    "n_houses": 1,
+    "max_price": 506000000,
+    "total_value": 597022500,
+    "houses": [
+      "SBI"
+    ],
+    "birth_year": 1886,
+    "death_year": 1968,
+    "is_deceased": true,
+    "movements": [
+      "nihonga",
+      "yoga",
+      "sculpture"
+    ],
+    "wiki_lang_count": 23,
+    "roman_name": "FOUJITA Tsuguharu",
+    "birth_place": "東京府牛込区新小川町（現・東京都新宿区新小川町）",
+    "fields": [
+      "絵画"
+    ],
+    "daj_url": "https://artplatform.go.jp/artists/A1852",
+    "gender": "male",
+    "authorities": {
+      "viaf": "59097447",
+      "ulan": "500027059",
+      "wikidata": "Q261846",
+      "ndl": "00016470"
+    },
+    "cv": 0
+  },
+  {
+    "name": "ミスター・ドゥードゥル",
+    "lot_count": 291,
+    "avg_price": 1767759,
+    "median_price": 839500,
+    "n_houses": 1,
+    "max_price": 28750000,
+    "total_value": 514418000,
+    "houses": [
+      "SBI"
+    ],
+    "birth_year": null,
+    "death_year": null,
+    "is_deceased": false,
+    "movements": [],
+    "wiki_lang_count": 0,
+    "cv": 0
+  },
+  {
+    "name": "アンディ・ウォーホル",
+    "lot_count": 291,
+    "avg_price": 5695587,
+    "median_price": 2600000,
+    "n_houses": 3,
+    "max_price": 57500000,
+    "total_value": 1657415750,
+    "houses": [
+      "SBI",
+      "Mainichi",
+      "Shinwa"
+    ],
+    "birth_year": 1928,
+    "death_year": 1987,
+    "is_deceased": true,
+    "movements": [
+      "pop_art",
+      "printmaking",
+      "contemporary"
+    ],
+    "wiki_lang_count": 144,
+    "cv": 0
+  },
+  {
+    "name": "名和　晃平",
+    "lot_count": 284,
+    "avg_price": 1536884,
+    "median_price": 839500,
+    "n_houses": 3,
+    "max_price": 15525000,
+    "total_value": 436475000,
+    "houses": [
+      "SBI",
+      "Mainichi",
+      "Shinwa"
+    ],
+    "birth_year": 1975,
+    "death_year": null,
+    "is_deceased": false,
+    "movements": [
+      "sculpture",
+      "contemporary"
+    ],
+    "wiki_lang_count": 2,
+    "roman_name": "NAWA Kōhei",
+    "birth_place": "大阪府高槻市",
+    "fields": [
+      "絵画",
+      "彫刻"
+    ],
+    "daj_url": "https://artplatform.go.jp/artists/A1735",
+    "gender": "male",
+    "authorities": {
+      "viaf": "305371818",
+      "ulan": "500641493",
+      "wikidata": "Q11415317",
+      "ndl": "001160343"
+    },
+    "cv": 0
+  },
+  {
+    "name": "棟方 志功",
+    "lot_count": 283,
+    "avg_price": 996505,
+    "median_price": 500000,
+    "n_houses": 2,
+    "max_price": 18000000,
+    "total_value": 282010850,
+    "houses": [
+      "Mainichi",
+      "Shinwa"
+    ],
+    "cv": 0
+  },
+  {
+    "name": "元永　定正",
+    "lot_count": 272,
+    "avg_price": 1767730,
+    "median_price": 592250,
+    "n_houses": 3,
+    "max_price": 58000000,
+    "total_value": 480822500,
+    "houses": [
+      "SBI",
+      "Mainichi",
+      "Shinwa"
+    ],
+    "birth_year": 1922,
+    "death_year": 2011,
+    "is_deceased": true,
+    "movements": [
+      "printmaking"
+    ],
+    "wiki_lang_count": 3,
+    "roman_name": "MOTONAGA Sadamasa",
+    "birth_place": "三重県阿山郡上野町桑町（現・三重県伊賀市上野）",
+    "fields": [
+      "絵画"
+    ],
+    "daj_url": "https://artplatform.go.jp/artists/A1979",
+    "gender": "male",
+    "authorities": {
+      "viaf": "22473374",
+      "ulan": "500468253",
+      "wikidata": "Q965472",
+      "ndl": "00119721"
+    },
+    "cv": 0
+  },
+  {
+    "name": "ロッカク　アヤコ",
+    "lot_count": 263,
+    "avg_price": 9665208,
+    "median_price": 3680000,
+    "n_houses": 3,
+    "max_price": 184000000,
+    "total_value": 2541949750,
+    "houses": [
+      "SBI",
+      "Mainichi",
+      "Shinwa"
+    ],
+    "birth_year": null,
+    "death_year": null,
+    "is_deceased": false,
+    "movements": [
+      "contemporary"
+    ],
+    "wiki_lang_count": 0,
+    "cv": 0
+  },
+  {
+    "name": "山田　正亮",
+    "lot_count": 234,
+    "avg_price": 1074479,
+    "median_price": 609500,
+    "n_houses": 3,
+    "max_price": 9545000,
+    "total_value": 251428000,
+    "houses": [
+      "SBI",
+      "Mainichi",
+      "Shinwa"
+    ],
+    "birth_year": 1929,
+    "death_year": 2010,
+    "is_deceased": true,
+    "movements": [],
+    "wiki_lang_count": 0,
+    "roman_name": "YAMADA Masaaki",
+    "birth_place": "東京府荏原郡荏原町大字戸越",
+    "fields": [
+      "絵画"
+    ],
+    "daj_url": "https://artplatform.go.jp/artists/A2032",
+    "gender": "male",
+    "authorities": {
+      "viaf": "251311535",
+      "ndl": "00192471"
+    },
+    "cv": 0
+  },
+  {
+    "name": "東山 魁夷",
+    "lot_count": 219,
+    "avg_price": 2376130,
+    "median_price": 160000,
+    "n_houses": 2,
+    "max_price": 64000000,
+    "total_value": 520372500,
+    "houses": [
+      "Mainichi",
+      "Shinwa"
+    ],
+    "cv": 0
+  },
+  {
+    "name": "CHANEL",
+    "lot_count": 219,
+    "avg_price": 133866,
+    "median_price": 90000,
+    "n_houses": 2,
+    "max_price": 2300000,
+    "total_value": 29316725,
+    "houses": [
+      "Mainichi",
+      "Shinwa"
+    ],
+    "cv": 0
+  }
+]

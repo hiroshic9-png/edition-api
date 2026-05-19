@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://edition.sh</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://edition.sh/prices</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://edition.sh/authenticate</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://edition.sh/kanteishi</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://edition.sh/discover</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://edition.sh/artist/村上-隆</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://edition.sh/artist/草間-彌生</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://edition.sh/artist/カウズ</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://edition.sh/artist/ガレ</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://edition.sh/artist/マイセン</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://edition.sh/artist/ドーム</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://edition.sh/artist/北大路-魯山人</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://edition.sh/artist/奈良-美智</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://edition.sh/artist/李-禹煥</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://edition.sh/artist/ベルナール・ビュッフェ</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://edition.sh/artist/藤田-嗣治</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://edition.sh/artist/ミスター・ドゥードゥル</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://edition.sh/artist/アンディ・ウォーホル</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://edition.sh/artist/名和-晃平</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://edition.sh/artist/棟方-志功</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://edition.sh/artist/元永-定正</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://edition.sh/artist/ロッカク-アヤコ</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://edition.sh/artist/山田-正亮</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://edition.sh/artist/東山-魁夷</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://edition.sh/artist/CHANEL</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+</urlset>
