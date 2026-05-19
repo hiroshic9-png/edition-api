@@ -323,7 +323,7 @@
                 <span class="auth-promo__metric-label">${t('home.market_value')}</span>
               </div>
               <div class="auth-promo__metric">
-                <span class="auth-promo__metric-value">${_marketData ? Number(_marketData.stats.total_artists).toLocaleString() : '7,582'}</span>
+                <span class="auth-promo__metric-value">${_marketData ? Number(_marketData.stats.total_artists).toLocaleString() : '7,258'}</span>
                 <span class="auth-promo__metric-label">${t('home.market_artists')}</span>
               </div>
             </div>
@@ -1366,11 +1366,11 @@
           <p class="reveal reveal--delay-2" style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 3rem; max-width: 700px;">${t('kanteishi.engine_desc')}</p>
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem;">
             <div class="kanteishi-stat reveal">
-              <span class="kanteishi-stat__value">${s.r2_ensemble ? (s.r2_ensemble * 100).toFixed(1) + '%' : '88.7%'}</span>
+              <span class="kanteishi-stat__value">${s.r2_ensemble ? (s.r2_ensemble * 100).toFixed(1) + '%' : '88.5%'}</span>
               <span class="kanteishi-stat__label">${t('kanteishi.engine_accuracy')}</span>
             </div>
             <div class="kanteishi-stat reveal reveal--delay-1">
-              <span class="kanteishi-stat__value">${s.median_error_pct ? s.median_error_pct.toFixed(1) + '%' : '25.0%'}</span>
+              <span class="kanteishi-stat__value">${s.median_error_pct ? s.median_error_pct.toFixed(1) + '%' : '25.2%'}</span>
               <span class="kanteishi-stat__label">${t('kanteishi.engine_error')}</span>
             </div>
             <div class="kanteishi-stat reveal reveal--delay-2">
@@ -1386,7 +1386,7 @@
               <span class="kanteishi-stat__label">${t('kanteishi.engine_houses')}</span>
             </div>
             <div class="kanteishi-stat reveal reveal--delay-1">
-              <span class="kanteishi-stat__value">${fmtNum(s.total_artists || 7582)}</span>
+              <span class="kanteishi-stat__value">${fmtNum(s.total_artists || 7258)}</span>
               <span class="kanteishi-stat__label">${t('kanteishi.engine_artists')}</span>
             </div>
           </div>
