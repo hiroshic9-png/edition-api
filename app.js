@@ -1243,6 +1243,7 @@
             <a href="/discover" data-link class="footer__link">${t('nav.collection')}</a>
             <a href="/artists" class="footer__link">Artists</a>
             <a href="/market" class="footer__link">Market Report</a>
+            <a href="/market/top-sales" class="footer__link">Top Sales</a>
             <a href="/categories" class="footer__link">Categories</a>
             <a href="/prices" data-link class="footer__link">${t('nav.prices')}</a>
             <a href="/kanteishi" data-link class="footer__link">${t('nav.kanteishi')}</a>
@@ -1436,7 +1437,7 @@
               <span class="kanteishi-stat__label">${t('kanteishi.engine_training')}</span>
             </div>
             <div class="kanteishi-stat reveal reveal--delay-3">
-              <span class="kanteishi-stat__value">17</span>
+              <span class="kanteishi-stat__value">25</span>
               <span class="kanteishi-stat__label">${t('kanteishi.engine_features')}</span>
             </div>
             <div class="kanteishi-stat reveal">
