@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About EDITION — Methodology & Data Transparency | Japanese Art Market Intelligence</title>
-  <meta name="description" content="How EDITION builds forensic-grade market intelligence for Japanese cultural assets. Our data sources, hedonic pricing methodology (R²=0.897, 22 features), and commitment to accuracy across 49,968 auction records.">
+  <meta name="description" content="How EDITION builds forensic-grade market intelligence for Japanese cultural assets. Our data sources, hedonic pricing methodology (R²=0.889, 25 features, Isotonic Calibration), and commitment to accuracy across 49,968 auction records.">
   <meta name="robots" content="index, follow">
   <meta property="og:type" content="website">
   <meta property="og:title" content="About EDITION — Methodology & Data Transparency">
@@ -190,7 +190,7 @@
         <span class="stat__label">Auction Houses</span>
       </div>
       <div class="stat">
-        <span class="stat__val">R²=0.897</span>
+        <span class="stat__val">R²=0.889</span>
         <span class="stat__label">Pricing Accuracy</span>
       </div>
     </div>
@@ -299,21 +299,23 @@
 
     <h3>Model Architecture</h3>
     <p>
-      The current model (v1.0) employs an ensemble of HistGradientBoosting and RandomForest regressors
-      trained on 49,968 verified auction results with 22 engineered features. The ensemble approach reduces
-      variance and improves robustness across different market segments.
+      The current model (v1.1) employs an ensemble of HistGradientBoosting and RandomForest regressors
+      trained on 49,968 verified auction results with 25 engineered features, followed by Isotonic Regression
+      calibration fitted on out-of-fold predictions. The ensemble approach reduces
+      variance, while post-prediction calibration corrects systematic biases across price tiers.
     </p>
 
     <div class="pipeline">
       <div class="pipeline__step">
         <div class="pipeline__num">1</div>
         <div>
-          <div class="pipeline__title">Feature Engineering (22 Variables)</div>
+          <div class="pipeline__title">Feature Engineering (25 Variables)</div>
           <div class="pipeline__desc">
-            Each lot is encoded with 22 features: artist global average, median, and CV (coefficient of variation);
+            Each lot is encoded with 25 features: artist global average, median, P25 (25th percentile), and CV;
             lot count; medium classification (18 categories); physical dimensions; area; auction house indicator;
             estimate; estimate-to-average ratio; artist price rank; artist cheap-lot ratio; artist median price;
-            no-data flag; estimate-to-median ratio; and a composite price-tier signal.
+            no-data flag; estimate-to-median ratio; composite price-tier signal;
+            artist price-range ratio; and auction house × missing-estimate interaction.
           </div>
         </div>
       </div>
@@ -332,11 +334,12 @@
       <div class="pipeline__step">
         <div class="pipeline__num">3</div>
         <div>
-          <div class="pipeline__title">Ensemble Training</div>
+          <div class="pipeline__title">Ensemble Training + Calibration</div>
           <div class="pipeline__desc">
             HistGradientBoosting (max_iter=2500, learning_rate=0.012, max_depth=10) and RandomForest (1,200 trees)
-            are trained independently with weighted samples. Final predictions blend both models (60/40)
-            for reduced variance. 5-fold cross-validation confirms generalization: CV R² = 0.863 ± 0.005.
+            are trained independently with weighted samples. Out-of-fold predictions are used to optimize the blend
+            ratio (72% GBR / 28% RF) and fit an Isotonic Regression calibrator that corrects systematic biases,
+            particularly in the low-price range. OOF R² = 0.866.
           </div>
         </div>
       </div>
@@ -367,42 +370,42 @@
       <tbody>
         <tr>
           <td>R² (Ensemble)</td>
-          <td>0.897</td>
+          <td>0.889</td>
           <td>Proportion of price variance explained by the model</td>
         </tr>
         <tr>
           <td>CV R²</td>
-          <td>0.863 ± 0.005</td>
+          <td>0.866</td>
           <td>5-fold cross-validated R² (out-of-sample)</td>
         </tr>
         <tr>
           <td>Median Error</td>
-          <td>22.1%</td>
+          <td>23.7%</td>
           <td>Median absolute percentage error across all predictions</td>
         </tr>
         <tr>
           <td>±15% Accuracy</td>
-          <td>37.8%</td>
+          <td>35.9%</td>
           <td>Percentage of predictions within 15% of actual price</td>
         </tr>
         <tr>
           <td>±30% Accuracy</td>
-          <td>62.6%</td>
+          <td>59.1%</td>
           <td>Percentage of predictions within 30% of actual price</td>
         </tr>
         <tr>
           <td>SBI R²</td>
-          <td>0.935</td>
+          <td>0.924</td>
           <td>Accuracy for SBI lots (rich metadata: medium, size, estimate)</td>
         </tr>
         <tr>
           <td>Mainichi R²</td>
-          <td>0.917</td>
+          <td>0.907</td>
           <td>Accuracy for Mainichi lots</td>
         </tr>
         <tr>
           <td>Shinwa R²</td>
-          <td>0.643</td>
+          <td>0.638</td>
           <td>Lower accuracy due to limited public metadata (no estimate/medium/size)</td>
         </tr>
       </tbody>
@@ -419,20 +422,21 @@
         </div>
       </div>
       <div class="principle">
-        <div class="principle__title">Low-Price Bias (Improved in v1.0)</div>
+        <div class="principle__title">Low-Price Bias (Improved in v1.1)</div>
         <div class="principle__desc">
-          v1.0 introduced 5 new features targeting low-price structural bias, including artist cheap-lot ratio
-          and composite price-tier signals. This reduced the under-¥50,000 over-estimation from +68% (v0.9) to
-          +49% (v1.0) — a 19-point improvement. Further reduction requires Shinwa's detailed estimate data.
+          v1.1 introduced Isotonic Regression calibration and 3 additional features (artist P25, price-range ratio,
+          auction house × missing-estimate interaction). Out-of-fold validation shows the under-¥50,000
+          over-estimation dropped from +49% (v1.0) to +11% (v1.1 OOF) — a 38-point improvement.
+          Further in-sample bias reduction requires Shinwa's detailed estimate data.
         </div>
       </div>
       <div class="principle">
         <div class="principle__title">Estimate Dependency</div>
         <div class="principle__desc">
-          The auction house estimate (log_estimate) contributes 66.2% of the model's predictive power (down
-          from 86.3% in v0.9, as new features absorb more signal).
-          When estimates are unavailable, accuracy drops significantly. This is expected — auction house
-          specialists effectively embed expert judgment that cannot be replicated from observable features alone.
+          The auction house estimate (log_estimate) contributes 65.7% of the model's predictive power.
+          New v1.1 features — artist P25 (10.7%) and house×no_estimate interaction (8.2%) — now rank
+          2nd and 3rd in importance, significantly diversifying the model's information sources.
+          When estimates are unavailable, accuracy drops but less severely than in prior versions.
         </div>
       </div>
     </div>
