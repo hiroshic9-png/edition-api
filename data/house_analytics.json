@@ -448,5 +448,44 @@
         "lots": 48
       }
     ]
+  },
+  "EstOuest": {
+    "full_name": "Est-Ouest Auctions",
+    "slug": "est-ouest",
+    "lots": 2670,
+    "artists": 0,
+    "total_value": 2823434185,
+    "avg_price": 1057465,
+    "median_price": 149500,
+    "max_price": 257700000,
+    "tiers": {
+      "<5万": {
+        "count": 649,
+        "pct": 24.3
+      },
+      "5-10万": {
+        "count": 467,
+        "pct": 17.5
+      },
+      "10-50万": {
+        "count": 915,
+        "pct": 34.3
+      },
+      "50-100万": {
+        "count": 267,
+        "pct": 10.0
+      },
+      "100-500万": {
+        "count": 254,
+        "pct": 9.5
+      },
+      ">500万": {
+        "count": 118,
+        "pct": 4.4
+      }
+    },
+    "top_by_value": [],
+    "top_by_lots": [],
+    "note": "Artist/title data pending catalog acquisition"
   }
 }
