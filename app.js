@@ -1245,6 +1245,8 @@
             <a href="/market" class="footer__link">Market Report</a>
             <a href="/market/top-sales" class="footer__link">Top Sales</a>
             <a href="/categories" class="footer__link">Categories</a>
+            <a href="/categories/medium" class="footer__link">Mediums</a>
+            <a href="/guide" class="footer__link">Guide</a>
             <a href="/prices" data-link class="footer__link">${t('nav.prices')}</a>
             <a href="/kanteishi" data-link class="footer__link">${t('nav.kanteishi')}</a>
             <a href="/docs" class="footer__link">API Docs</a>
