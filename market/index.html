@@ -175,7 +175,7 @@
         <span class="label">オークションハウス</span>
       </div>
       <div class="hero-stat">
-        <span class="value">R²=0.889</span>
+        <span class="value">R²=0.900</span>
         <span class="label">モデル精度</span>
       </div>
     </div>
@@ -258,12 +258,13 @@
         <li>SBI Art Auction: 21,420件の落札記録</li>
         <li>毎日オークション: 29,227件の落札記録（63セール分のアーカイブ）</li>
         <li>シンワオークション: 5,998件の落札記録</li>
+        <li>Est-Ouest Auctions: 2,670件の落札記録（価格データ、15セール）</li>
       </ul>
       <p>
-        価格推定にはKANTEISHIヘドニック価格モデル v1.1（R²=0.889、25特徴量、
+        価格推定にはKANTEISHIヘドニック価格モデル v1.2 CLEAN（R²=0.900、25特徴量、
         HistGradientBoostingRegressor + RandomForestのアンサンブル + Isotonic Calibration）を使用しています。
-        中央値誤差23.7%、OOF R²=0.866で、国内オークションデータに特化した
-        高精度な推定を実現しています。
+        中央値誤差18.7%、OOF R²=0.868で、国内オークションデータに特化した
+        高精度な推定を実現しています。毎週日曜に自動再学習パイプラインが稼働します。
       </p>
       <p style="margin-top:1rem;">
         <a href="/market/top-sales" style="color:var(--gold);text-decoration:none;">→ Top Sales — 120の注目落札結果を見る</a>
