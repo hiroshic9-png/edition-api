@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>技法別分析 — Art Medium Analysis | EDITION</title>
+  <meta name="description" content="日本アートオークション市場の技法別分析。アクリル、シルクスクリーン、油彩、リトグラフなど主要8技法のデータ分析。落札額、出品数、主要アーティストを比較。">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="技法別分析 — Art Medium Analysis | EDITION">
+  <meta property="og:description" content="主要8技法の市場データ分析。アクリル、シルクスクリーン、油彩、リトグラフの価格動向とトップアーティスト。">
+  <meta property="og:url" content="https://edition.sh/categories/medium">
+  <meta property="og:site_name" content="EDITION">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="技法別分析 — Art Medium Analysis | EDITION">
+  <link rel="canonical" href="https://edition.sh/categories/medium">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&family=Noto+Serif+JP:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "技法別分析 — Art Medium Analysis",
+    "description": "日本アートオークション市場の技法別分析。主要8技法のデータ分析レポート。",
+    "url": "https://edition.sh/categories/medium",
+    "publisher": { "@type": "Organization", "name": "EDITION", "url": "https://edition.sh" },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "EDITION", "item": "https://edition.sh"},
+        {"@type": "ListItem", "position": 2, "name": "Categories", "item": "https://edition.sh/categories"},
+        {"@type": "ListItem", "position": 3, "name": "技法別分析", "item": "https://edition.sh/categories/medium"}
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    :root{
+      --bg:#0C0C0C;--surface:rgba(255,255,255,0.03);--surface-2:rgba(255,255,255,0.05);
+      --border:rgba(255,255,255,0.08);--border-gold:rgba(184,134,11,0.25);
+      --text:#e0e0e0;--text-dim:rgba(255,255,255,0.4);--text-sec:rgba(255,255,255,0.55);
+      --gold:#c8a864;--gold-dark:#b8860b;--gold-dim:rgba(200,168,100,0.3);--gold-glow:rgba(200,168,100,0.08);
+      --font-serif:'Cormorant Garamond','Noto Serif JP',serif;
+      --font-sans:'Inter','Noto Sans JP',sans-serif;
+    }
+    body{background:var(--bg);color:var(--text);font-family:var(--font-sans);line-height:1.8;-webkit-font-smoothing:antialiased}
+    a{color:var(--gold);text-decoration:none;transition:opacity 0.2s}
+    a:hover{opacity:0.8}
+
+    .header{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 2rem;display:flex;align-items:center;justify-content:space-between;background:rgba(12,12,12,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+    .header__logo{font-family:var(--font-serif);font-size:1.4rem;font-weight:300;color:#fff;text-decoration:none;letter-spacing:0.05em}
+    .header__nav{display:flex;gap:2rem;align-items:center}
+    .header__link{font-size:0.8rem;color:var(--text-dim);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.3s}
+    .header__link:hover{color:#fff;opacity:1}
+    .header__link--accent{color:var(--gold)}
+    .header__link--active{color:#fff}
+
+    .hero{margin-top:56px;padding:5rem 2rem 3rem;text-align:center;position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:800px;height:800px;background:radial-gradient(circle,rgba(200,168,100,0.04) 0%,rgba(200,168,100,0.02) 40%,transparent 70%);pointer-events:none}
+    .hero__label{display:inline-block;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.2em;color:var(--gold);margin-bottom:1rem;padding:0.4rem 1.2rem;border:1px solid var(--gold-dim);border-radius:20px}
+    .hero__title{font-family:var(--font-serif);font-weight:300;font-size:clamp(2.2rem,5.5vw,3.6rem);color:#fff;line-height:1.15;margin-bottom:0.8rem}
+    .hero__title em{font-style:italic;color:var(--gold)}
+    .hero__subtitle{color:var(--text-sec);font-size:clamp(0.9rem,2vw,1.05rem);max-width:640px;margin:0 auto;line-height:1.9}
+    .hero__line{width:60px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:2rem auto 0}
+
+    .breadcrumb-bar{max-width:1100px;margin:0 auto;padding:0 2rem}
+    .breadcrumb{display:flex;gap:0.5rem;font-size:0.8rem;color:var(--text-dim)}
+    .breadcrumb a{color:var(--text-dim);text-decoration:none}
+    .breadcrumb a:hover{color:var(--gold)}
+    .breadcrumb .sep{opacity:0.3}
+
+    .page{max-width:1100px;margin:0 auto;padding:0 2rem 4rem}
+
+    .section{margin-bottom:3.5rem}
+    .section__title{font-family:var(--font-serif);font-weight:400;font-size:1.4rem;margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border);color:#fff}
+    .section__subtitle{font-size:0.65rem;text-transform:uppercase;letter-spacing:0.15em;color:var(--text-dim);margin-bottom:1.5rem}
+    p{color:var(--text-sec);margin-bottom:1rem;font-size:0.95rem}
+    p strong{color:#fff;font-weight:500}
+
+    .overview-text{max-width:700px;margin:0 auto 2.5rem;text-align:center}
+
+    /* Medium Grid */
+    .medium-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.2rem;margin-top:1.5rem}
+    .medium-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.8rem;text-decoration:none;transition:all 0.35s cubic-bezier(0.25,0.46,0.45,0.94);display:block;position:relative;overflow:hidden}
+    .medium-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,168,100,0.0),transparent);transition:background 0.35s}
+    .medium-card:hover{transform:translateY(-3px);border-color:var(--border-gold);box-shadow:0 12px 40px rgba(0,0,0,0.4);opacity:1}
+    .medium-card:hover::before{background:linear-gradient(90deg,transparent,rgba(200,168,100,0.4),transparent)}
+    .medium-card__rank{position:absolute;top:1rem;right:1.2rem;font-family:var(--font-serif);font-size:1.8rem;color:rgba(255,255,255,0.06);font-weight:300}
+    .medium-card__name{font-size:1rem;color:#fff;margin-bottom:0.15rem;font-weight:400}
+    .medium-card__name-ja{font-size:0.78rem;color:var(--text-dim);margin-bottom:0.8rem;font-family:var(--font-sans)}
+    .medium-card__stats{display:flex;gap:1.2rem;margin-bottom:0.8rem;flex-wrap:wrap}
+    .medium-card__stat-item{display:flex;flex-direction:column}
+    .medium-card__stat-val{font-family:var(--font-serif);font-size:1.05rem;color:var(--gold);line-height:1.2}
+    .medium-card__stat-label{font-size:0.55rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-dim)}
+    .medium-card__artist{font-size:0.75rem;color:var(--text-sec)}
+    .medium-card__artist span{color:var(--gold)}
+    .medium-card__arrow{position:absolute;right:1.5rem;bottom:1.5rem;color:var(--text-dim);font-size:1.2rem;transition:all 0.3s}
+    .medium-card:hover .medium-card__arrow{color:var(--gold);transform:translateX(4px)}
+
+    /* Summary Stats */
+    .summary-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border-radius:12px;overflow:hidden;margin-bottom:3rem}
+    .summary-bar__item{background:var(--surface);padding:1.8rem 1rem;text-align:center;backdrop-filter:blur(10px)}
+    .summary-bar__val{font-family:var(--font-serif);font-size:clamp(1.2rem,2.5vw,1.6rem);color:var(--gold);display:block;line-height:1.2}
+    .summary-bar__label{font-size:0.6rem;text-transform:uppercase;letter-spacing:0.12em;color:var(--text-dim);margin-top:0.4rem;display:block}
+
+    .footer{margin-top:2rem;padding:3rem 2rem;border-top:1px solid var(--border);text-align:center}
+    .footer__links{display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;margin-bottom:1rem}
+    .footer__link{font-size:0.8rem;color:var(--text-dim);text-decoration:none;letter-spacing:0.05em}
+    .footer__link:hover{color:var(--gold)}
+    .footer__copy{font-size:0.75rem;color:var(--text-dim)}
+
+    .fade-in{opacity:0;transform:translateY(12px);animation:fadeInUp 0.6s ease forwards}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+
+    @media(max-width:768px){
+      .medium-grid{grid-template-columns:1fr}
+      .summary-bar{grid-template-columns:repeat(2,1fr)}
+      .hero{padding:3.5rem 1.3rem 2rem}
+      .page{padding:0 1.3rem 3rem}
+      .breadcrumb-bar{padding:0 1.3rem}
+    }
+    @media(max-width:480px){
+      .header__nav{gap:1rem}
+      .header__link{font-size:0.7rem}
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <a href="/" class="header__logo">Edition</a>
+    <nav class="header__nav">
+      <a href="/artists" class="header__link">Artists</a>
+      <a href="/market" class="header__link">Market</a>
+      <a href="/categories" class="header__link header__link--active">Categories</a>
+      <a href="/kanteishi" class="header__link header__link--accent">KANTEISHI</a>
+      <a href="/docs" class="header__link">API</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <span class="hero__label">Medium &amp; Technique Analysis</span>
+    <h1 class="hero__title">技法別分析<br><em>Art Medium Analysis</em></h1>
+    <p class="hero__subtitle">
+      日本アートオークション市場を技法・素材別に分析。<br>
+      アクリル、油彩、版画など主要8技法の価格動向、流通量、トップアーティストを比較。
+    </p>
+    <div class="hero__line"></div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-bar" style="margin-bottom:2rem">
+    <nav class="breadcrumb">
+      <a href="/">EDITION</a>
+      <span class="sep">›</span>
+      <a href="/categories">Categories</a>
+      <span class="sep">›</span>
+      <span>技法別分析</span>
+    </nav>
+  </div>
+
+  <div class="page">
+
+    <!-- Summary Stats -->
+    <div class="summary-bar fade-in">
+      <div class="summary-bar__item">
+        <span class="summary-bar__val">11,555</span>
+        <span class="summary-bar__label">総ロット数</span>
+      </div>
+      <div class="summary-bar__item">
+        <span class="summary-bar__val">8</span>
+        <span class="summary-bar__label">分析対象技法</span>
+      </div>
+      <div class="summary-bar__item">
+        <span class="summary-bar__val">¥293億</span>
+        <span class="summary-bar__label">総取引額</span>
+      </div>
+      <div class="summary-bar__item">
+        <span class="summary-bar__val">¥5億600万</span>
+        <span class="summary-bar__label">最高落札額</span>
+      </div>
+    </div>
+
+    <div class="overview-text fade-in" style="animation-delay:0.1s">
+      <p>
+        技法はアート作品の価値を大きく左右する要素です。アクリル画は現代アート市場の主力として平均¥423万と最も高い水準を記録。
+        一方、リトグラフやエッチングは¥70万台で、コレクターの入門媒体として機能しています。
+      </p>
+    </div>
+
+    <!-- Medium Grid -->
+    <section class="section fade-in" style="animation-delay:0.15s">
+      <h2 class="section__title">技法一覧</h2>
+      <p class="section__subtitle">8 Mediums ranked by lot count</p>
+
+      <div class="medium-grid">
+
+        <a href="/categories/medium/acrylic" class="medium-card">
+          <span class="medium-card__rank">01</span>
+          <div class="medium-card__name">Acrylic</div>
+          <div class="medium-card__name-ja">アクリル画</div>
+          <div class="medium-card__stats">
+            <div class="medium-card__stat-item">
+              <span class="medium-card__stat-val">4,038</span>
+              <span class="medium-card__stat-label">Lots</span>
+            </div>
+            <div class="medium-card__stat-item">
+              <span class="medium-card__stat-val">¥423万</span>
+              <span class="medium-card__stat-label">Avg Price</span>
+            </div>
+            <div class="medium-card__stat-item">
+              <span class="medium-card__stat-val">731</span>
+              <span class="medium-card__stat-label">Artists</span>
+            </div>
+          </div>
+          <div class="medium-card__artist">Top: <span>草間彌生</span>（¥55億）</div>
+          <span class="medium-card__arrow">→</span>
+        </a>
+
+        <a href="/categories/medium/silkscreen" class="medium-card">
+          <span class="medium-card__rank">02</span>
+          <div class="medium-card__name">Silkscreen</div>
+          <div class="medium-card__name-ja">シルクスクリーン</div>
+          <div class="medium-card__stats">
+            <div class="medium-card__stat-item">
+              <span class="medium-card__stat-val">2,953</span>
+              <span class="medium-card__stat-label">Lots</span>
+            </div>
+            <div class="medium-card__stat-item">
+              <span class="medium-card__stat-val">¥161万</span>
+              <span class="medium-card__stat-label">Avg Price</span>
+            </div>
+            <div class="medium-card__stat-item">
+              <span class="medium-card__stat-val">429</span>
+              <span class="medium-card__stat-label">Artists</span>
+            </div>
+          </div>
+          <div class="medium-card__artist">Top: <span>草間彌生</span>（¥16億）</div>
+          <span class="medium-card__arrow">→</span>
+        </a>
+
+        <a href="/categories/medium/oil" class="medium-card">
+          <span class="medium-card__rank">03</span>
+          <div class="medium-card__name">Oil Painting</div>
+          <div class="medium-card__name-ja">油彩画</div>
+          <div class="medium-card__stats">
+            <div class="medium-card__stat-item">
+              <span class="medium-card__stat-val">1,966</span>
+              <span class="medium-card__stat-label">Lots</span>
+            </div>
+            <div class="medium-card__stat-item">
+              <span class="medium-card__stat-val">¥211万</span>
+              <span class="medium-card__stat-label">Avg Price</span>
+            </div>
+            <div class="medium-card__stat-item">
+              <span class="medium-card__stat-val">509</span>
+              <span class="medium-card__stat-label">Artists</span>
+            </div>
+          </div>
+          <div class="medium-card__artist">Top: <span>井田幸昌</span>（¥4億）</div>
+          <span class="medium-card__arrow">→</span>
+        </a>
+
+        <a href="/categories/medium/lithograph" class="medium-card">
+          <span class="medium-card__rank">04</span>
+          <div class="medium-card__name">Lithograph</div>
+          <div class="medium-card__name-ja">リトグラフ</div>
+          <div class="medium-card__stats">
+            <div class="medium-card__stat-item">
+              <span class="medium-card__stat-val">961</span>
+              <span class="medium-card__stat-label">Lots</span>
+            </div>
+            <div class="medium-card__stat-item">
+              <span class="medium-card__stat-val">¥73万</span>
+              <span class="medium-card__stat-label">Avg Price</span>
+            </div>
+            <div class="medium-card__stat-item">
+              <span class="medium-card__stat-val">265</span>
+              <span class="medium-card__stat-label">Artists</span>
+            </div>
+          </div>
+          <div class="medium-card__artist">Top: <span>奈良美智</span>（¥8,050万）</div>
+          <span class="medium-card__arrow">→</span>
+        </a>
+
+        <a href="/categories/medium/mixed-media" class="medium-card">
+          <span class="medium-card__rank">05</span>
+          <div class="medium-card__name">Mixed Media</div>
+          <div class="medium-card__name-ja">ミクストメディア</div>
+          <div class="medium-card__stats">
+            <div class="medium-card__stat-item">
+              <span class="medium-card__stat-val">602</span>
+              <span class="medium-card__stat-label">Lots</span>
+            </div>
+            <div class="medium-card__stat-item">
+              <span class="medium-card__stat-val">¥159万</span>
+              <span class="medium-card__stat-label">Avg Price</span>
+            </div>
+            <div class="medium-card__stat-item">
+              <span class="medium-card__stat-val">194</span>
+              <span class="medium-card__stat-label">Artists</span>
+            </div>
+          </div>
+          <div class="medium-card__artist">Top: <span>名和晃平</span>（¥2億6,378万）</div>
+          <span class="medium-card__arrow">→</span>
+        </a>
+
+        <a href="/categories/medium/ceramics" class="medium-card">
+          <span class="medium-card__rank">06</span>
+          <div class="medium-card__name">Ceramics</div>
+          <div class="medium-card__name-ja">陶芸・セラミック</div>
+          <div class="medium-card__stats">
+            <div class="medium-card__stat-item">
+              <span class="medium-card__stat-val">419</span>
+              <span class="medium-card__stat-label">Lots</span>
+            </div>
+            <div class="medium-card__stat-item">
+              <span class="medium-card__stat-val">¥194万</span>
+              <span class="medium-card__stat-label">Avg Price</span>
+            </div>
+            <div class="medium-card__stat-item">
+              <span class="medium-card__stat-val">185</span>
+              <span class="medium-card__stat-label">Artists</span>
+            </div>
+          </div>
+          <div class="medium-card__artist">Top: <span>草間彌生</span>（¥2億3,539万）</div>
+          <span class="medium-card__arrow">→</span>
+        </a>
+
+        <a href="/categories/medium/etching" class="medium-card">
+          <span class="medium-card__rank">07</span>
+          <div class="medium-card__name">Etching</div>
+          <div class="medium-card__name-ja">エッチング</div>
+          <div class="medium-card__stats">
+            <div class="medium-card__stat-item">
+              <span class="medium-card__stat-val">342</span>
+              <span class="medium-card__stat-label">Lots</span>
+            </div>
+            <div class="medium-card__stat-item">
+              <span class="medium-card__stat-val">¥71万</span>
+              <span class="medium-card__stat-label">Avg Price</span>
+            </div>
+            <div class="medium-card__stat-item">
+              <span class="medium-card__stat-val">134</span>
+              <span class="medium-card__stat-label">Artists</span>
+            </div>
+          </div>
+          <div class="medium-card__artist">Top: <span>草間彌生</span>（¥1億538万）</div>
+          <span class="medium-card__arrow">→</span>
+        </a>
+
+        <a href="/categories/medium/woodblock" class="medium-card">
+          <span class="medium-card__rank">08</span>
+          <div class="medium-card__name">Woodblock Print</div>
+          <div class="medium-card__name-ja">木版画</div>
+          <div class="medium-card__stats">
+            <div class="medium-card__stat-item">
+              <span class="medium-card__stat-val">274</span>
+              <span class="medium-card__stat-label">Lots</span>
+            </div>
+            <div class="medium-card__stat-item">
+              <span class="medium-card__stat-val">¥161万</span>
+              <span class="medium-card__stat-label">Avg Price</span>
+            </div>
+            <div class="medium-card__stat-item">
+              <span class="medium-card__stat-val">64</span>
+              <span class="medium-card__stat-label">Artists</span>
+            </div>
+          </div>
+          <div class="medium-card__artist">Top: <span>李禹煥</span>（¥15億）</div>
+          <span class="medium-card__arrow">→</span>
+        </a>
+
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer__links">
+      <a href="/" class="footer__link">Home</a>
+      <a href="/artists" class="footer__link">Artists</a>
+      <a href="/market" class="footer__link">Market Report</a>
+      <a href="/market/top-sales" class="footer__link">Top Sales</a>
+      <a href="/categories" class="footer__link">Categories</a>
+      <a href="/kanteishi" class="footer__link">KANTEISHI</a>
+      <a href="/docs" class="footer__link">API Docs</a>
+    </div>
+    <p class="footer__copy">© 2026 EDITION — Japanese Cultural Assets Intelligence</p>
+  </footer>
+
+  <script>
+  (function() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = 'running';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => {
+      el.style.animationPlayState = 'paused';
+      observer.observe(el);
+    });
+  })();
+  </script>
+
+</body>
+</html>
