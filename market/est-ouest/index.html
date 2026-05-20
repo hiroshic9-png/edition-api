@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Est-Ouest Auctions — Market Analysis | EDITION</title>
+  <meta name="description" content="エスト・ウェスト オークションの包括的市場分析。15セール・2,670件の落札データ、総取引額¥28.2億。東京・香港の二拠点で展開する現代アート専門オークションハウス。">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Est-Ouest Auctions — Market Analysis | EDITION">
+  <meta property="og:description" content="東京・香港二拠点の国際オークションハウス。2,670件の落札データ分析。">
+  <meta property="og:url" content="https://edition.sh/market/est-ouest">
+  <meta property="og:site_name" content="EDITION">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Est-Ouest Auctions — Market Analysis | EDITION">
+  <link rel="canonical" href="https://edition.sh/market/est-ouest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&family=Noto+Serif+JP:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Est-Ouest Auctions — Market Analysis",
+    "description": "東京・香港二拠点で展開するエスト・ウェスト オークションの包括的市場分析レポート",
+    "url": "https://edition.sh/market/est-ouest",
+    "publisher": { "@type": "Organization", "name": "EDITION", "url": "https://edition.sh" },
+    "datePublished": "2026-05-20",
+    "dateModified": "2026-05-20",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "EDITION", "item": "https://edition.sh"},
+        {"@type": "ListItem", "position": 2, "name": "Market", "item": "https://edition.sh/market"},
+        {"@type": "ListItem", "position": 3, "name": "Est-Ouest Auctions", "item": "https://edition.sh/market/est-ouest"}
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    :root{
+      --bg:#0C0C0C;--surface:rgba(255,255,255,0.03);--surface-2:rgba(255,255,255,0.05);
+      --border:rgba(255,255,255,0.08);--border-gold:rgba(184,134,11,0.25);
+      --text:#e0e0e0;--text-dim:rgba(255,255,255,0.4);--text-sec:rgba(255,255,255,0.55);
+      --gold:#c8a864;--gold-dark:#b8860b;--gold-dim:rgba(200,168,100,0.3);--gold-glow:rgba(200,168,100,0.08);
+      --accent:#4a90a4;--accent-dim:rgba(74,144,164,0.15);--accent-soft:rgba(74,144,164,0.08);
+      --font-serif:'Cormorant Garamond','Noto Serif JP',serif;
+      --font-sans:'Inter','Noto Sans JP',sans-serif;
+    }
+    body{background:var(--bg);color:var(--text);font-family:var(--font-sans);line-height:1.8;-webkit-font-smoothing:antialiased}
+    a{color:var(--gold);text-decoration:none;transition:opacity 0.2s}
+    a:hover{opacity:0.8}
+
+    .header{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 2rem;display:flex;align-items:center;justify-content:space-between;background:rgba(12,12,12,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+    .header__logo{font-family:var(--font-serif);font-size:1.4rem;font-weight:300;color:#fff;text-decoration:none;letter-spacing:0.05em}
+    .header__nav{display:flex;gap:2rem;align-items:center}
+    .header__link{font-size:0.8rem;color:var(--text-dim);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.3s}
+    .header__link:hover{color:#fff;opacity:1}
+    .header__link--accent{color:var(--gold)}
+    .header__link--active{color:#fff}
+
+    .hero{margin-top:56px;padding:5rem 2rem 3rem;text-align:center;position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:800px;height:800px;background:radial-gradient(circle,rgba(74,144,164,0.03) 0%,rgba(200,168,100,0.02) 40%,transparent 70%);pointer-events:none}
+    .hero__label{display:inline-block;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.2em;color:var(--accent);margin-bottom:1rem;padding:0.4rem 1.2rem;border:1px solid var(--accent-dim);border-radius:20px}
+    .hero__title{font-family:var(--font-serif);font-weight:300;font-size:clamp(2.2rem,5.5vw,3.6rem);color:#fff;line-height:1.15;margin-bottom:0.8rem}
+    .hero__title em{font-style:italic;color:var(--gold)}
+    .hero__jp{font-family:'Noto Serif JP',serif;font-size:clamp(1rem,2.5vw,1.3rem);color:var(--text-dim);font-weight:300;margin-bottom:0.8rem;letter-spacing:0.2em}
+    .hero__subtitle{color:var(--text-sec);font-size:clamp(0.9rem,2vw,1.05rem);max-width:640px;margin:0 auto;line-height:1.9}
+    .hero__line{width:60px;height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent);margin:2rem auto 0}
+    .hero__badge{display:inline-flex;align-items:center;gap:0.5rem;margin-top:1.5rem;padding:0.5rem 1rem;background:var(--accent-soft);border:1px solid rgba(74,144,164,0.2);border-radius:8px;font-size:0.75rem;color:var(--accent)}
+    .hero__badge-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);animation:pulse 2.5s ease infinite}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+
+    .breadcrumb-bar{max-width:900px;margin:0 auto;padding:0 2rem}
+    .breadcrumb{display:flex;gap:0.5rem;font-size:0.8rem;color:var(--text-dim)}
+    .breadcrumb a{color:var(--text-dim);text-decoration:none}
+    .breadcrumb a:hover{color:var(--gold)}
+    .breadcrumb .sep{opacity:0.3}
+
+    .stats-bar{max-width:900px;margin:-0.5rem auto 2.5rem;padding:0 2rem}
+    .stats-bar__inner{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--border);border-radius:12px;overflow:hidden}
+    .stats-bar__item{background:var(--surface);padding:1.8rem 1rem;text-align:center;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transition:background 0.3s}
+    .stats-bar__item:hover{background:var(--surface-2)}
+    .stats-bar__val{font-family:var(--font-serif);font-size:clamp(1.2rem,2.5vw,1.6rem);color:var(--gold);display:block;line-height:1.2}
+    .stats-bar__label{font-size:0.6rem;text-transform:uppercase;letter-spacing:0.12em;color:var(--text-dim);margin-top:0.4rem;display:block}
+
+    .page{max-width:900px;margin:0 auto;padding:0 2rem 4rem}
+
+    .section{margin-bottom:3.5rem}
+    .section__title{font-family:var(--font-serif);font-weight:400;font-size:1.4rem;margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border);color:#fff}
+    .section__subtitle{font-size:0.65rem;text-transform:uppercase;letter-spacing:0.15em;color:var(--text-dim);margin-bottom:1.5rem}
+    p{color:var(--text-sec);margin-bottom:1rem;font-size:0.95rem}
+    p strong{color:#fff;font-weight:500}
+
+    .profile-card{background:linear-gradient(135deg,rgba(74,144,164,0.03),var(--surface));border:1px solid rgba(74,144,164,0.1);border-radius:12px;padding:2rem;margin-bottom:2rem;position:relative;overflow:hidden}
+    .profile-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(74,144,164,0.25),transparent)}
+    .profile-card p{font-size:0.92rem;line-height:1.9}
+
+    .specialty-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0 2rem}
+    .specialty-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.2rem;text-align:center;transition:all 0.3s}
+    .specialty-card:hover{border-color:rgba(74,144,164,0.2);background:var(--surface-2)}
+    .specialty-card__icon{font-size:1.8rem;margin-bottom:0.5rem;display:block}
+    .specialty-card__title{font-size:0.8rem;color:#fff;margin-bottom:0.2rem;font-weight:400}
+    .specialty-card__desc{font-size:0.7rem;color:var(--text-dim)}
+
+    .tier-chart{margin:1.5rem 0 2rem}
+    .tier-row{display:flex;align-items:center;gap:1rem;padding:0.6rem 0;border-bottom:1px solid rgba(255,255,255,0.04)}
+    .tier-name{min-width:100px;font-size:0.8rem;color:var(--text-dim)}
+    .tier-bar-track{flex:1;height:24px;background:rgba(255,255,255,0.03);border-radius:4px;overflow:hidden;position:relative}
+    .tier-bar-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,rgba(74,144,164,0.2),rgba(74,144,164,0.5));transition:width 1.2s cubic-bezier(0.25,0.46,0.45,0.94)}
+    .tier-bar-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.7rem;color:rgba(255,255,255,0.7)}
+    .tier-count{min-width:60px;text-align:right;font-size:0.8rem;color:var(--text-dim)}
+    .tier-pct{min-width:40px;text-align:right;font-size:0.75rem;color:var(--gold)}
+
+    .sale-timeline{margin:1.5rem 0 2rem}
+    .sale-item{display:flex;align-items:center;gap:1rem;padding:0.8rem 0;border-bottom:1px solid rgba(255,255,255,0.04);transition:background 0.2s}
+    .sale-item:hover{background:var(--surface)}
+    .sale-item__date{min-width:90px;font-size:0.8rem;color:var(--text-dim);font-family:var(--font-serif)}
+    .sale-item__name{flex:1;font-size:0.88rem;color:rgba(255,255,255,0.7)}
+    .sale-item__lots{min-width:60px;text-align:right;font-size:0.8rem;color:var(--text-dim)}
+    .sale-item__value{min-width:80px;text-align:right;font-size:0.85rem;color:var(--gold);font-family:var(--font-serif)}
+    .sale-item__location{display:inline-block;padding:0.15rem 0.5rem;border-radius:10px;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.1em}
+    .sale-item__location--tokyo{background:rgba(200,168,100,0.1);color:var(--gold);border:1px solid rgba(200,168,100,0.2)}
+    .sale-item__location--hk{background:rgba(74,144,164,0.1);color:var(--accent);border:1px solid rgba(74,144,164,0.2)}
+
+    .callout{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin:2rem 0;display:flex;gap:1.5rem;align-items:flex-start}
+    .callout__icon{font-size:2rem;flex-shrink:0}
+    .callout__content{flex:1}
+    .callout__title{font-size:0.85rem;color:#fff;margin-bottom:0.3rem;font-weight:400}
+    .callout__text{font-size:0.82rem;color:var(--text-dim);line-height:1.7;margin:0}
+
+    .nav-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin-top:2rem}
+    .nav-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.5rem;text-decoration:none;transition:all 0.35s cubic-bezier(0.25,0.46,0.45,0.94);display:block;position:relative;overflow:hidden}
+    .nav-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,168,100,0.0),transparent);transition:background 0.35s}
+    .nav-card:hover{transform:translateY(-3px);border-color:var(--border-gold);box-shadow:0 12px 40px rgba(0,0,0,0.4);opacity:1}
+    .nav-card:hover::before{background:linear-gradient(90deg,transparent,rgba(200,168,100,0.4),transparent)}
+    .nav-card__house{font-size:0.9rem;color:#fff;margin-bottom:0.3rem;font-weight:400}
+    .nav-card__stat{font-family:var(--font-serif);font-size:1.2rem;color:var(--gold);margin-bottom:0.3rem}
+    .nav-card__desc{font-size:0.75rem;color:var(--text-dim)}
+    .nav-card__arrow{position:absolute;right:1.5rem;top:50%;transform:translateY(-50%);color:var(--text-dim);font-size:1.2rem;transition:all 0.3s}
+    .nav-card:hover .nav-card__arrow{color:var(--gold);transform:translateY(-50%) translateX(4px)}
+    .nav-card--market{border-color:rgba(200,168,100,0.15);background:linear-gradient(135deg,rgba(200,168,100,0.04),var(--surface))}
+
+    .footer{margin-top:2rem;padding:3rem 2rem;border-top:1px solid var(--border);text-align:center}
+    .footer__links{display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;margin-bottom:1rem}
+    .footer__link{font-size:0.8rem;color:var(--text-dim);text-decoration:none;letter-spacing:0.05em}
+    .footer__link:hover{color:var(--gold)}
+    .footer__copy{font-size:0.75rem;color:var(--text-dim)}
+
+    .fade-in{opacity:0;transform:translateY(12px);animation:fadeInUp 0.6s ease forwards}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+
+    @media(max-width:768px){
+      .stats-bar__inner{grid-template-columns:repeat(3,1fr)}
+      .hero{padding:3.5rem 1.3rem 2rem}
+      .stats-bar{padding:0 1.3rem}
+      .page{padding:0 1.3rem 3rem}
+      .breadcrumb-bar{padding:0 1.3rem}
+      .tier-name{min-width:70px;font-size:0.7rem}
+      .nav-cards{grid-template-columns:1fr}
+      .specialty-grid{grid-template-columns:1fr}
+      .callout{flex-direction:column;gap:1rem}
+      .sale-item{flex-wrap:wrap;gap:0.5rem}
+    }
+    @media(max-width:480px){
+      .stats-bar__inner{grid-template-columns:repeat(2,1fr)}
+      .header__nav{gap:1rem}
+      .header__link{font-size:0.7rem}
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <a href="/" class="header__logo">Edition</a>
+    <nav class="header__nav">
+      <a href="/artists" class="header__link">Artists</a>
+      <a href="/market" class="header__link header__link--active">Market</a>
+      <a href="/kanteishi" class="header__link header__link--accent">KANTEISHI</a>
+      <a href="/docs" class="header__link">API</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <span class="hero__label">Auction House Analysis</span>
+    <h1 class="hero__title">Est-Ouest Auctions<br><em>Market Analysis</em></h1>
+    <p class="hero__jp">エスト・ウェスト オークション</p>
+    <p class="hero__subtitle">
+      東京と香港の二拠点で展開する国際オークションハウス。
+      現代アートを中心に、オールジャンルの美術品を取り扱う。
+      New Art Est-Ouest Auctions Co., Ltd.
+    </p>
+    <div class="hero__line"></div>
+    <div class="hero__badge">
+      <span class="hero__badge-dot"></span>
+      国際展開 — 東京銀座 × 香港 H Queen's
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <div class="stats-bar">
+    <div class="stats-bar__inner">
+      <div class="stats-bar__item">
+        <span class="stats-bar__val">2,670</span>
+        <span class="stats-bar__label">総落札件数</span>
+      </div>
+      <div class="stats-bar__item">
+        <span class="stats-bar__val">¥28億</span>
+        <span class="stats-bar__label">総取引額</span>
+      </div>
+      <div class="stats-bar__item">
+        <span class="stats-bar__val">¥105万</span>
+        <span class="stats-bar__label">平均落札額</span>
+      </div>
+      <div class="stats-bar__item">
+        <span class="stats-bar__val">¥14.9万</span>
+        <span class="stats-bar__label">中央値</span>
+      </div>
+      <div class="stats-bar__item">
+        <span class="stats-bar__val">15</span>
+        <span class="stats-bar__label">セール数</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-bar" style="margin-bottom:2rem">
+    <nav class="breadcrumb">
+      <a href="/">EDITION</a>
+      <span class="sep">›</span>
+      <a href="/market">Market</a>
+      <span class="sep">›</span>
+      <span>Est-Ouest Auctions</span>
+    </nav>
+  </div>
+
+  <div class="page">
+
+    <!-- Market Profile -->
+    <section class="section fade-in">
+      <h2 class="section__title">Market Profile</h2>
+      <div class="profile-card">
+        <p>
+          <strong>エスト・ウェスト オークション</strong>（New Art Est-Ouest Auctions）は、
+          1984年設立の老舗オークションハウスで、<strong>東京・銀座</strong>と
+          <strong>香港・H Queen's</strong>の二拠点体制を構築しています。
+          40年以上の歴史を持ち、日本のオークション業界でもっとも早くから国際展開に取り組んだ先駆者です。
+        </p>
+        <p>
+          取扱ジャンルは<strong>現代アート</strong>（草間彌生、奈良美智、KAWS等）から
+          西洋近代美術、中国書画、装飾芸術、ジュエリー・時計まで幅広く、
+          オールジャンル型のセールと専門セールを組み合わせた運営スタイルが特徴です。
+          総取引額<strong>¥28.2億</strong>のうち、最高落札額は<strong>¥2.57億</strong>に達しています。
+        </p>
+        <p>
+          東京セールではJPY建て、香港セールではHKD建ての決済となり、
+          アジアの美術品市場の国際的な価格形成に寄与しています。
+          <strong>落札率83%</strong>（2025年5月セール）という高い成約率も、
+          適切なエスティメート設定と質の高い出品物を反映しています。
+        </p>
+      </div>
+
+      <div class="specialty-grid">
+        <div class="specialty-card">
+          <span class="specialty-card__icon">🎨</span>
+          <div class="specialty-card__title">現代アート</div>
+          <div class="specialty-card__desc">草間彌生・奈良美智・KAWS</div>
+        </div>
+        <div class="specialty-card">
+          <span class="specialty-card__icon">🌏</span>
+          <div class="specialty-card__title">国際二拠点</div>
+          <div class="specialty-card__desc">東京銀座 × 香港 H Queen's</div>
+        </div>
+        <div class="specialty-card">
+          <span class="specialty-card__icon">💎</span>
+          <div class="specialty-card__title">装飾芸術</div>
+          <div class="specialty-card__desc">ジュエリー・時計・ガラス工芸</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Callout -->
+    <div class="callout fade-in" style="animation-delay:0.05s">
+      <div class="callout__icon">🌏</div>
+      <div class="callout__content">
+        <div class="callout__title">東京 × 香港 — 日本オークション業界の国際派</div>
+        <p class="callout__text">
+          1984年の設立以来、エスト・ウェストは日本のオークション業界でいち早く
+          国際展開に着手しました。香港のH Queen's（中環皇后大道中80号）に
+          常設ギャラリーを構え、アジアのコレクターと日本美術をつなぐ架け橋として
+          機能しています。2025年からはシンガポールでのセールも開始しています。
+        </p>
+      </div>
+    </div>
+
+    <!-- Price Tier Distribution -->
+    <section class="section fade-in" style="animation-delay:0.1s">
+      <h2 class="section__title">価格帯別分布</h2>
+      <p class="section__subtitle">Price Tier Distribution — 2,670 Lots</p>
+      <p>エスト・ウェストの価格帯構成。中央値¥14.9万と比較的手頃な価格帯が中心ながら、¥2.57億のトップエンドまで幅広い。</p>
+      <div class="tier-chart" id="tierChart">
+        <div class="tier-row">
+          <span class="tier-name">¥5万未満</span>
+          <div class="tier-bar-track">
+            <div class="tier-bar-fill" style="width:0%" data-width="43%"></div>
+            <span class="tier-bar-label">649</span>
+          </div>
+          <span class="tier-pct">24.3%</span>
+        </div>
+        <div class="tier-row">
+          <span class="tier-name">¥5万〜10万</span>
+          <div class="tier-bar-track">
+            <div class="tier-bar-fill" style="width:0%" data-width="31%"></div>
+            <span class="tier-bar-label">467</span>
+          </div>
+          <span class="tier-pct">17.5%</span>
+        </div>
+        <div class="tier-row">
+          <span class="tier-name">¥10万〜50万</span>
+          <div class="tier-bar-track">
+            <div class="tier-bar-fill" style="width:0%" data-width="100%"></div>
+            <span class="tier-bar-label">915</span>
+          </div>
+          <span class="tier-pct">34.3%</span>
+        </div>
+        <div class="tier-row">
+          <span class="tier-name">¥50万〜100万</span>
+          <div class="tier-bar-track">
+            <div class="tier-bar-fill" style="width:0%" data-width="18%"></div>
+            <span class="tier-bar-label">267</span>
+          </div>
+          <span class="tier-pct">10.0%</span>
+        </div>
+        <div class="tier-row">
+          <span class="tier-name">¥100万〜500万</span>
+          <div class="tier-bar-track">
+            <div class="tier-bar-fill" style="width:0%" data-width="17%"></div>
+            <span class="tier-bar-label">254</span>
+          </div>
+          <span class="tier-pct">9.5%</span>
+        </div>
+        <div class="tier-row">
+          <span class="tier-name">¥500万以上</span>
+          <div class="tier-bar-track">
+            <div class="tier-bar-fill" style="width:0%" data-width="8%"></div>
+            <span class="tier-bar-label">118</span>
+          </div>
+          <span class="tier-pct">4.4%</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sale Timeline -->
+    <section class="section fade-in" style="animation-delay:0.2s">
+      <h2 class="section__title">セール一覧</h2>
+      <p class="section__subtitle">Sale Timeline — 15 Sales (2022–2025)</p>
+      <div class="sale-timeline">
+        <div class="sale-item">
+          <span class="sale-item__date">2025.10.05</span>
+          <span class="sale-item__name">Hong Kong Autumn Auction 2025</span>
+          <span class="sale-item__location sale-item__location--hk">HK</span>
+          <span class="sale-item__lots">126 lots</span>
+          <span class="sale-item__value">—</span>
+        </div>
+        <div class="sale-item">
+          <span class="sale-item__date">2025.05.31</span>
+          <span class="sale-item__name">Modern & Contemporary 2025</span>
+          <span class="sale-item__location sale-item__location--tokyo">TKY</span>
+          <span class="sale-item__lots">250 lots</span>
+          <span class="sale-item__value">¥3.7億</span>
+        </div>
+        <div class="sale-item">
+          <span class="sale-item__date">2025.04.19</span>
+          <span class="sale-item__name">Decorative Arts 2025</span>
+          <span class="sale-item__location sale-item__location--tokyo">TKY</span>
+          <span class="sale-item__lots">247 lots</span>
+          <span class="sale-item__value">—</span>
+        </div>
+        <div class="sale-item">
+          <span class="sale-item__date">2025.03.29</span>
+          <span class="sale-item__name">中国書画 香港オークション</span>
+          <span class="sale-item__location sale-item__location--hk">HK</span>
+          <span class="sale-item__lots">74 lots</span>
+          <span class="sale-item__value">—</span>
+        </div>
+        <div class="sale-item">
+          <span class="sale-item__date">2025.02.22</span>
+          <span class="sale-item__name">Early Spring 2025</span>
+          <span class="sale-item__location sale-item__location--tokyo">TKY</span>
+          <span class="sale-item__lots">162 lots</span>
+          <span class="sale-item__value">—</span>
+        </div>
+        <div class="sale-item">
+          <span class="sale-item__date">2024.11.30</span>
+          <span class="sale-item__name">All Genre Art Auction</span>
+          <span class="sale-item__location sale-item__location--tokyo">TKY</span>
+          <span class="sale-item__lots">228 lots</span>
+          <span class="sale-item__value">—</span>
+        </div>
+        <div class="sale-item">
+          <span class="sale-item__date">2024.08.31</span>
+          <span class="sale-item__name">All Genre Art Auction in Himeji</span>
+          <span class="sale-item__location sale-item__location--tokyo">TKY</span>
+          <span class="sale-item__lots">174 lots</span>
+          <span class="sale-item__value">—</span>
+        </div>
+        <div class="sale-item">
+          <span class="sale-item__date">2024.05.18</span>
+          <span class="sale-item__name">40th Anniversary Auction</span>
+          <span class="sale-item__location sale-item__location--tokyo">TKY</span>
+          <span class="sale-item__lots">213 lots</span>
+          <span class="sale-item__value">—</span>
+        </div>
+        <div class="sale-item">
+          <span class="sale-item__date">2024.02.23</span>
+          <span class="sale-item__name">All Genre Art Auction</span>
+          <span class="sale-item__location sale-item__location--tokyo">TKY</span>
+          <span class="sale-item__lots">209 lots</span>
+          <span class="sale-item__value">—</span>
+        </div>
+        <div class="sale-item">
+          <span class="sale-item__date">2023.11.25</span>
+          <span class="sale-item__name">All Genre Art Auction</span>
+          <span class="sale-item__location sale-item__location--tokyo">TKY</span>
+          <span class="sale-item__lots">240 lots</span>
+          <span class="sale-item__value">¥1.9億</span>
+        </div>
+        <div class="sale-item">
+          <span class="sale-item__date">2023.09.30</span>
+          <span class="sale-item__name">All Genre Art Day Sale</span>
+          <span class="sale-item__location sale-item__location--tokyo">TKY</span>
+          <span class="sale-item__lots">168 lots</span>
+          <span class="sale-item__value">—</span>
+        </div>
+        <div class="sale-item">
+          <span class="sale-item__date">2023.07.30</span>
+          <span class="sale-item__name">All Genre Art Day Sale</span>
+          <span class="sale-item__location sale-item__location--tokyo">TKY</span>
+          <span class="sale-item__lots">168 lots</span>
+          <span class="sale-item__value">—</span>
+        </div>
+        <div class="sale-item">
+          <span class="sale-item__date">2023.03.04</span>
+          <span class="sale-item__name">All Genre Art Day Sale</span>
+          <span class="sale-item__location sale-item__location--tokyo">TKY</span>
+          <span class="sale-item__lots">252 lots</span>
+          <span class="sale-item__value">¥0.8億</span>
+        </div>
+        <div class="sale-item">
+          <span class="sale-item__date">2022.11.26</span>
+          <span class="sale-item__name">All Genre Art Day Sale</span>
+          <span class="sale-item__location sale-item__location--tokyo">TKY</span>
+          <span class="sale-item__lots">240 lots</span>
+          <span class="sale-item__value">¥1.9億</span>
+        </div>
+        <div class="sale-item">
+          <span class="sale-item__date">2022.09.24</span>
+          <span class="sale-item__name">Contemporary & Modern Art at Warehouse TERRADA</span>
+          <span class="sale-item__location sale-item__location--tokyo">TKY</span>
+          <span class="sale-item__lots">109 lots</span>
+          <span class="sale-item__value">¥8.6億</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Data Note -->
+    <div class="callout fade-in" style="animation-delay:0.3s">
+      <div class="callout__icon">📊</div>
+      <div class="callout__content">
+        <div class="callout__title">データについて</div>
+        <p class="callout__text">
+          本ページのデータは、エスト・ウェスト オークションが公開する落札結果PDFから
+          取得した2,670件の落札データに基づいています。
+          現時点では落札価格のみの集計であり、アーティスト別の詳細分析は
+          カタログデータの統合後に公開予定です。
+          香港セールの一部はHKD建てのため、円換算値には為替変動の影響があります。
+        </p>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <section class="section fade-in" style="animation-delay:0.4s">
+      <h2 class="section__title">他のオークションハウス</h2>
+      <div class="nav-cards">
+        <a href="/market/sbi" class="nav-card">
+          <div class="nav-card__house">SBI Art Auction</div>
+          <div class="nav-card__stat">¥414億</div>
+          <div class="nav-card__desc">総取引額No.1 — コンテンポラリーアートの中核</div>
+          <span class="nav-card__arrow">→</span>
+        </a>
+        <a href="/market/mainichi" class="nav-card">
+          <div class="nav-card__house">毎日オークション</div>
+          <div class="nav-card__stat">¥160億</div>
+          <div class="nav-card__desc">取扱件数No.1 — 伝統美術からガラス工芸まで最広範囲</div>
+          <span class="nav-card__arrow">→</span>
+        </a>
+        <a href="/market/shinwa" class="nav-card">
+          <div class="nav-card__house">Shinwa Auction</div>
+          <div class="nav-card__stat">¥78億</div>
+          <div class="nav-card__desc">近代巨匠と陶芸のスペシャリスト</div>
+          <span class="nav-card__arrow">→</span>
+        </a>
+        <a href="/market" class="nav-card nav-card--market">
+          <div class="nav-card__house">← Market Overview</div>
+          <div class="nav-card__stat">¥653億+</div>
+          <div class="nav-card__desc">4社横断の総合市場レポート</div>
+          <span class="nav-card__arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__links">
+      <a href="/" class="footer__link">Home</a>
+      <a href="/artists" class="footer__link">Artists</a>
+      <a href="/market" class="footer__link">Market Report</a>
+      <a href="/market/top-sales" class="footer__link">Top Sales</a>
+      <a href="/categories" class="footer__link">Categories</a>
+      <a href="/kanteishi" class="footer__link">KANTEISHI</a>
+      <a href="/docs" class="footer__link">API Docs</a>
+    </div>
+    <p class="footer__copy">© 2026 EDITION — Japanese Cultural Assets Intelligence</p>
+  </footer>
+
+  <script>
+  (function() {
+    'use strict';
+
+    // Animate bars on load
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        document.querySelectorAll('.tier-bar-fill').forEach(bar => {
+          bar.style.width = bar.dataset.width;
+        });
+      }, 300);
+    });
+
+    // Intersection Observer for fade-in
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = 'running';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => {
+      el.style.animationPlayState = 'paused';
+      observer.observe(el);
+    });
+  })();
+  </script>
+
+</body>
+</html>
