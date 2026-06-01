@@ -1,10 +1,1576 @@
 {
-  "audit_timestamp": "2026-05-14T07:47:32.278033",
   "summary": {
-    "total": 0,
-    "critical": 0,
-    "warning": 0,
-    "info": 0
+    "audit_date": "2026-06-01",
+    "audit_type": "full",
+    "domains_audited": 18,
+    "total_entries": 97,
+    "total_errors": 18,
+    "total_warnings": 110,
+    "health_score": 94.4
   },
-  "results": []
+  "domains": {
+    "regulation": {
+      "domain": "regulation",
+      "entries_audited": 10,
+      "total_errors": 0,
+      "total_warnings": 30,
+      "average_score": 0.7,
+      "entries": [
+        {
+          "domain": "regulation",
+          "entry_id": "人材派遣",
+          "entry_name": "人材派遣",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "name_ja",
+              "description": "Missing common field: name_ja"
+            },
+            {
+              "severity": "warning",
+              "field": "name_en",
+              "description": "Missing common field: name_en"
+            },
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 3,
+          "accuracy_score": 0.7
+        },
+        {
+          "domain": "regulation",
+          "entry_id": "飲食店",
+          "entry_name": "飲食店",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "name_ja",
+              "description": "Missing common field: name_ja"
+            },
+            {
+              "severity": "warning",
+              "field": "name_en",
+              "description": "Missing common field: name_en"
+            },
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 3,
+          "accuracy_score": 0.7
+        },
+        {
+          "domain": "regulation",
+          "entry_id": "不動産業",
+          "entry_name": "不動産業",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "name_ja",
+              "description": "Missing common field: name_ja"
+            },
+            {
+              "severity": "warning",
+              "field": "name_en",
+              "description": "Missing common field: name_en"
+            },
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 3,
+          "accuracy_score": 0.7
+        },
+        {
+          "domain": "regulation",
+          "entry_id": "ECサイト",
+          "entry_name": "ECサイト",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "name_ja",
+              "description": "Missing common field: name_ja"
+            },
+            {
+              "severity": "warning",
+              "field": "name_en",
+              "description": "Missing common field: name_en"
+            },
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 3,
+          "accuracy_score": 0.7
+        },
+        {
+          "domain": "regulation",
+          "entry_id": "建設業",
+          "entry_name": "建設業",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "name_ja",
+              "description": "Missing common field: name_ja"
+            },
+            {
+              "severity": "warning",
+              "field": "name_en",
+              "description": "Missing common field: name_en"
+            },
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 3,
+          "accuracy_score": 0.7
+        },
+        {
+          "domain": "regulation",
+          "entry_id": "宿泊業",
+          "entry_name": "宿泊業",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "name_ja",
+              "description": "Missing common field: name_ja"
+            },
+            {
+              "severity": "warning",
+              "field": "name_en",
+              "description": "Missing common field: name_en"
+            },
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 3,
+          "accuracy_score": 0.7
+        },
+        {
+          "domain": "regulation",
+          "entry_id": "医療・介護",
+          "entry_name": "医療・介護",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "name_ja",
+              "description": "Missing common field: name_ja"
+            },
+            {
+              "severity": "warning",
+              "field": "name_en",
+              "description": "Missing common field: name_en"
+            },
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 3,
+          "accuracy_score": 0.7
+        },
+        {
+          "domain": "regulation",
+          "entry_id": "金融・保険",
+          "entry_name": "金融・保険",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "name_ja",
+              "description": "Missing common field: name_ja"
+            },
+            {
+              "severity": "warning",
+              "field": "name_en",
+              "description": "Missing common field: name_en"
+            },
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 3,
+          "accuracy_score": 0.7
+        },
+        {
+          "domain": "regulation",
+          "entry_id": "運送業",
+          "entry_name": "運送業",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "name_ja",
+              "description": "Missing common field: name_ja"
+            },
+            {
+              "severity": "warning",
+              "field": "name_en",
+              "description": "Missing common field: name_en"
+            },
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 3,
+          "accuracy_score": 0.7
+        },
+        {
+          "domain": "regulation",
+          "entry_id": "教育",
+          "entry_name": "教育",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "name_ja",
+              "description": "Missing common field: name_ja"
+            },
+            {
+              "severity": "warning",
+              "field": "name_en",
+              "description": "Missing common field: name_en"
+            },
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 3,
+          "accuracy_score": 0.7
+        }
+      ]
+    },
+    "protocol": {
+      "domain": "protocol",
+      "entries_audited": 6,
+      "total_errors": 0,
+      "total_warnings": 6,
+      "average_score": 0.9,
+      "entries": [
+        {
+          "domain": "protocol",
+          "entry_id": "nemawashi",
+          "entry_name": "根回し",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "_meta.source_url",
+              "description": "No source URL for independent verification"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "protocol",
+          "entry_id": "ringi",
+          "entry_name": "稟議",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "_meta.source_url",
+              "description": "No source URL for independent verification"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "protocol",
+          "entry_id": "horenso",
+          "entry_name": "報連相（ほうれんそう）",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "_meta.source_url",
+              "description": "No source URL for independent verification"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "protocol",
+          "entry_id": "meishi",
+          "entry_name": "名刺交換",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "_meta.source_url",
+              "description": "No source URL for independent verification"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "protocol",
+          "entry_id": "sekiji",
+          "entry_name": "席順（上座・下座）",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "_meta.source_url",
+              "description": "No source URL for independent verification"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "protocol",
+          "entry_id": "zoto",
+          "entry_name": "贈答",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "_meta.source_url",
+              "description": "No source URL for independent verification"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        }
+      ]
+    },
+    "calendar": {
+      "domain": "calendar",
+      "entries_audited": 5,
+      "total_errors": 0,
+      "total_warnings": 0,
+      "average_score": 1.0,
+      "entries": [
+        {
+          "domain": "calendar",
+          "entry_id": "fiscal_year",
+          "entry_name": "会計年度",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "calendar",
+          "entry_id": "public_holidays",
+          "entry_name": "祝日・大型連休",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "calendar",
+          "entry_id": "gift_seasons",
+          "entry_name": "贈答シーズン",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "calendar",
+          "entry_id": "administrative_deadlines",
+          "entry_name": "行政・税務の主要締切",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "calendar",
+          "entry_id": "seasonal_business",
+          "entry_name": "季節性のあるビジネスイベント",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        }
+      ]
+    },
+    "regional": {
+      "domain": "regional",
+      "entries_audited": 4,
+      "total_errors": 0,
+      "total_warnings": 0,
+      "average_score": 1.0,
+      "entries": [
+        {
+          "domain": "regional",
+          "entry_id": "major_regions",
+          "entry_name": "主要地域の特性",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "regional",
+          "entry_id": "prefectural_incentives",
+          "entry_name": "自治体の助成金・優遇制度",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "regional",
+          "entry_id": "regional_regulations",
+          "entry_name": "地域特有の規制・条例",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "regional",
+          "entry_id": "regional_business_culture",
+          "entry_name": "地域のビジネス文化",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        }
+      ]
+    },
+    "organization": {
+      "domain": "organization",
+      "entries_audited": 5,
+      "total_errors": 0,
+      "total_warnings": 0,
+      "average_score": 1.0,
+      "entries": [
+        {
+          "domain": "organization",
+          "entry_id": "corporate_hierarchy",
+          "entry_name": "企業の役職体系",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "organization",
+          "entry_id": "keiretsu",
+          "entry_name": "系列・企業グループ",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "organization",
+          "entry_id": "payment_practices",
+          "entry_name": "支払慣行",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "organization",
+          "entry_id": "contract_customs",
+          "entry_name": "契約慣行",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "organization",
+          "entry_id": "industry_associations",
+          "entry_name": "業界団体",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        }
+      ]
+    },
+    "foreign_entry": {
+      "domain": "foreign_entry",
+      "entries_audited": 6,
+      "total_errors": 0,
+      "total_warnings": 0,
+      "average_score": 1.0,
+      "entries": [
+        {
+          "domain": "foreign_entry",
+          "entry_id": "company_incorporation",
+          "entry_name": "法人設立",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "foreign_entry",
+          "entry_id": "business_visa",
+          "entry_name": "経営管理ビザ（在留資格）",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "foreign_entry",
+          "entry_id": "bank_account",
+          "entry_name": "法人銀行口座の開設",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "foreign_entry",
+          "entry_id": "real_estate",
+          "entry_name": "事務所・店舗の物件探し",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "foreign_entry",
+          "entry_id": "tax_registration",
+          "entry_name": "税務届出",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "foreign_entry",
+          "entry_id": "employee_hiring",
+          "entry_name": "従業員の雇用",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        }
+      ]
+    },
+    "travel": {
+      "domain": "travel",
+      "entries_audited": 4,
+      "total_errors": 0,
+      "total_warnings": 0,
+      "average_score": 1.0,
+      "entries": [
+        {
+          "domain": "travel",
+          "entry_id": "transportation",
+          "entry_name": "交通機関",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "travel",
+          "entry_id": "accommodation",
+          "entry_name": "宿泊",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "travel",
+          "entry_id": "dining",
+          "entry_name": "飲食",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "travel",
+          "entry_id": "practical_info",
+          "entry_name": "実用情報",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        }
+      ]
+    },
+    "entertainment": {
+      "domain": "entertainment",
+      "entries_audited": 4,
+      "total_errors": 0,
+      "total_warnings": 0,
+      "average_score": 1.0,
+      "entries": [
+        {
+          "domain": "entertainment",
+          "entry_id": "oshikatsu",
+          "entry_name": "推し活",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "entertainment",
+          "entry_id": "anime_manga",
+          "entry_name": "アニメ・マンガ",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "entertainment",
+          "entry_id": "live_entertainment",
+          "entry_name": "ライブエンターテインメント",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "entertainment",
+          "entry_id": "seasonal_events",
+          "entry_name": "季節のイベント",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        }
+      ]
+    },
+    "daily_life": {
+      "domain": "daily_life",
+      "entries_audited": 4,
+      "total_errors": 0,
+      "total_warnings": 0,
+      "average_score": 1.0,
+      "entries": [
+        {
+          "domain": "daily_life",
+          "entry_id": "postal_address",
+          "entry_name": "住所・郵便",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "daily_life",
+          "entry_id": "garbage_sorting",
+          "entry_name": "ゴミ分別",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "daily_life",
+          "entry_id": "utilities",
+          "entry_name": "公共料金",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "daily_life",
+          "entry_id": "healthcare",
+          "entry_name": "医療",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        }
+      ]
+    },
+    "language": {
+      "domain": "language",
+      "entries_audited": 4,
+      "total_errors": 0,
+      "total_warnings": 0,
+      "average_score": 1.0,
+      "entries": [
+        {
+          "domain": "language",
+          "entry_id": "keigo",
+          "entry_name": "敬語体系",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "language",
+          "entry_id": "counters",
+          "entry_name": "助数詞（数え方）",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "language",
+          "entry_id": "names_addresses",
+          "entry_name": "名前と住所の構造",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "language",
+          "entry_id": "business_japanese",
+          "entry_name": "ビジネス日本語",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        }
+      ]
+    },
+    "food": {
+      "domain": "food",
+      "entries_audited": 4,
+      "total_errors": 0,
+      "total_warnings": 0,
+      "average_score": 1.0,
+      "entries": [
+        {
+          "domain": "food",
+          "entry_id": "dining_etiquette",
+          "entry_name": "食事マナー",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "food",
+          "entry_id": "cuisine_types",
+          "entry_name": "料理分類",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "food",
+          "entry_id": "restaurant_guide",
+          "entry_name": "飲食店ガイド",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "food",
+          "entry_id": "dietary_restrictions",
+          "entry_name": "アレルギー・食制限",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        }
+      ]
+    },
+    "disaster": {
+      "domain": "disaster",
+      "entries_audited": 4,
+      "total_errors": 0,
+      "total_warnings": 0,
+      "average_score": 1.0,
+      "entries": [
+        {
+          "domain": "disaster",
+          "entry_id": "earthquake",
+          "entry_name": "地震",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "disaster",
+          "entry_id": "typhoon_flood",
+          "entry_name": "台風・水害",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "disaster",
+          "entry_id": "emergency_contacts",
+          "entry_name": "緊急連絡先",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        },
+        {
+          "domain": "disaster",
+          "entry_id": "disaster_preparation",
+          "entry_name": "防災準備",
+          "issues": [],
+          "error_count": 0,
+          "warning_count": 0,
+          "accuracy_score": 1.0
+        }
+      ]
+    },
+    "tax": {
+      "domain": "tax",
+      "entries_audited": 8,
+      "total_errors": 0,
+      "total_warnings": 8,
+      "average_score": 0.9,
+      "entries": [
+        {
+          "domain": "tax",
+          "entry_id": "income_tax",
+          "entry_name": "所得税（個人）",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "tax",
+          "entry_id": "consumption_tax",
+          "entry_name": "消費税・インボイス",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "tax",
+          "entry_id": "corporate_tax",
+          "entry_name": "法人税",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "tax",
+          "entry_id": "withholding_tax",
+          "entry_name": "源泉徴収・年末調整",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "tax",
+          "entry_id": "tax_treaty",
+          "entry_name": "租税条約・二重課税",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "tax",
+          "entry_id": "furusato_nozei",
+          "entry_name": "ふるさと納税",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "tax",
+          "entry_id": "capital_gains",
+          "entry_name": "譲渡所得・株式・暗号資産",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "tax",
+          "entry_id": "kakutei_shinkoku",
+          "entry_name": "確定申告",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        }
+      ]
+    },
+    "visa_immigration": {
+      "domain": "visa_immigration",
+      "entries_audited": 8,
+      "total_errors": 0,
+      "total_warnings": 8,
+      "average_score": 0.9,
+      "entries": [
+        {
+          "domain": "visa_immigration",
+          "entry_id": "status_of_residence",
+          "entry_name": "在留資格の種類",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "visa_immigration",
+          "entry_id": "permanent_residency",
+          "entry_name": "永住許可（永住権）",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "visa_immigration",
+          "entry_id": "points_based_system",
+          "entry_name": "高度人材ポイント制",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "visa_immigration",
+          "entry_id": "management_visa",
+          "entry_name": "経営・管理ビザ",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "visa_immigration",
+          "entry_id": "work_visa_change",
+          "entry_name": "在留資格の変更・更新",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "visa_immigration",
+          "entry_id": "immigration_procedures",
+          "entry_name": "入管手続き・届出",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "visa_immigration",
+          "entry_id": "visa_exempt_countries",
+          "entry_name": "ビザ免除国・短期滞在",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "visa_immigration",
+          "entry_id": "naturalization",
+          "entry_name": "帰化（日本国籍取得）",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        }
+      ]
+    },
+    "banking_finance": {
+      "domain": "banking_finance",
+      "entries_audited": 6,
+      "total_errors": 0,
+      "total_warnings": 6,
+      "average_score": 0.9,
+      "entries": [
+        {
+          "domain": "banking_finance",
+          "entry_id": "bank_account_opening",
+          "entry_name": "銀行口座開設",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "banking_finance",
+          "entry_id": "international_transfers",
+          "entry_name": "海外送金・国際送金",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "banking_finance",
+          "entry_id": "mobile_payments",
+          "entry_name": "モバイル決済・キャッシュレス",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "banking_finance",
+          "entry_id": "credit_cards",
+          "entry_name": "クレジットカード",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "banking_finance",
+          "entry_id": "atm_usage",
+          "entry_name": "ATM利用ガイド",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "banking_finance",
+          "entry_id": "foreign_exchange",
+          "entry_name": "外貨両替・為替",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        }
+      ]
+    },
+    "healthcare": {
+      "domain": "healthcare",
+      "entries_audited": 7,
+      "total_errors": 0,
+      "total_warnings": 7,
+      "average_score": 0.9,
+      "entries": [
+        {
+          "domain": "healthcare",
+          "entry_id": "health_insurance",
+          "entry_name": "健康保険制度",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "healthcare",
+          "entry_id": "high_cost_medical",
+          "entry_name": "高額療養費制度",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "healthcare",
+          "entry_id": "hospital_visit",
+          "entry_name": "病院受診ガイド",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "healthcare",
+          "entry_id": "prescription_system",
+          "entry_name": "処方薬・薬局",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "healthcare",
+          "entry_id": "maternity_childcare",
+          "entry_name": "出産・育児支援",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "healthcare",
+          "entry_id": "mental_health",
+          "entry_name": "メンタルヘルス",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "healthcare",
+          "entry_id": "long_term_care",
+          "entry_name": "介護保険制度",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        }
+      ]
+    },
+    "education": {
+      "domain": "education",
+      "entries_audited": 4,
+      "total_errors": 0,
+      "total_warnings": 4,
+      "average_score": 0.9,
+      "entries": [
+        {
+          "domain": "education",
+          "entry_id": "school_system",
+          "entry_name": "学校制度（6-3-3-4制）",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "education",
+          "entry_id": "university_admission",
+          "entry_name": "大学入学（留学生向け）",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "education",
+          "entry_id": "japanese_language_schools",
+          "entry_name": "日本語学校",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "education",
+          "entry_id": "student_life",
+          "entry_name": "留学生活ガイド",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        }
+      ]
+    },
+    "real_estate": {
+      "domain": "real_estate",
+      "entries_audited": 4,
+      "total_errors": 0,
+      "total_warnings": 4,
+      "average_score": 0.9,
+      "entries": [
+        {
+          "domain": "real_estate",
+          "entry_id": "renting_apartment",
+          "entry_name": "賃貸住宅（部屋探し）",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "real_estate",
+          "entry_id": "buying_property",
+          "entry_name": "不動産購入",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "real_estate",
+          "entry_id": "housing_support",
+          "entry_name": "住宅支援制度",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        },
+        {
+          "domain": "real_estate",
+          "entry_id": "moving_procedures",
+          "entry_name": "引っ越し手続き",
+          "issues": [
+            {
+              "severity": "warning",
+              "field": "summary",
+              "description": "Missing common field: summary"
+            }
+          ],
+          "error_count": 0,
+          "warning_count": 1,
+          "accuracy_score": 0.9
+        }
+      ]
+    }
+  },
+  "errors": [
+    {
+      "severity": "error",
+      "domain": "tax",
+      "entry_id": "primary",
+      "description": "Keyword entry 'primary' has no matching DB entry"
+    },
+    {
+      "severity": "error",
+      "domain": "tax",
+      "entry_id": "secondary",
+      "description": "Keyword entry 'secondary' has no matching DB entry"
+    },
+    {
+      "severity": "error",
+      "domain": "tax",
+      "entry_id": "semantic_aliases",
+      "description": "Keyword entry 'semantic_aliases' has no matching DB entry"
+    },
+    {
+      "severity": "error",
+      "domain": "visa_immigration",
+      "entry_id": "primary",
+      "description": "Keyword entry 'primary' has no matching DB entry"
+    },
+    {
+      "severity": "error",
+      "domain": "visa_immigration",
+      "entry_id": "secondary",
+      "description": "Keyword entry 'secondary' has no matching DB entry"
+    },
+    {
+      "severity": "error",
+      "domain": "visa_immigration",
+      "entry_id": "semantic_aliases",
+      "description": "Keyword entry 'semantic_aliases' has no matching DB entry"
+    },
+    {
+      "severity": "error",
+      "domain": "banking_finance",
+      "entry_id": "primary",
+      "description": "Keyword entry 'primary' has no matching DB entry"
+    },
+    {
+      "severity": "error",
+      "domain": "banking_finance",
+      "entry_id": "secondary",
+      "description": "Keyword entry 'secondary' has no matching DB entry"
+    },
+    {
+      "severity": "error",
+      "domain": "banking_finance",
+      "entry_id": "semantic_aliases",
+      "description": "Keyword entry 'semantic_aliases' has no matching DB entry"
+    },
+    {
+      "severity": "error",
+      "domain": "healthcare",
+      "entry_id": "primary",
+      "description": "Keyword entry 'primary' has no matching DB entry"
+    },
+    {
+      "severity": "error",
+      "domain": "healthcare",
+      "entry_id": "secondary",
+      "description": "Keyword entry 'secondary' has no matching DB entry"
+    },
+    {
+      "severity": "error",
+      "domain": "healthcare",
+      "entry_id": "semantic_aliases",
+      "description": "Keyword entry 'semantic_aliases' has no matching DB entry"
+    },
+    {
+      "severity": "error",
+      "domain": "education",
+      "entry_id": "primary",
+      "description": "Keyword entry 'primary' has no matching DB entry"
+    },
+    {
+      "severity": "error",
+      "domain": "education",
+      "entry_id": "secondary",
+      "description": "Keyword entry 'secondary' has no matching DB entry"
+    },
+    {
+      "severity": "error",
+      "domain": "education",
+      "entry_id": "semantic_aliases",
+      "description": "Keyword entry 'semantic_aliases' has no matching DB entry"
+    },
+    {
+      "severity": "error",
+      "domain": "real_estate",
+      "entry_id": "primary",
+      "description": "Keyword entry 'primary' has no matching DB entry"
+    },
+    {
+      "severity": "error",
+      "domain": "real_estate",
+      "entry_id": "secondary",
+      "description": "Keyword entry 'secondary' has no matching DB entry"
+    },
+    {
+      "severity": "error",
+      "domain": "real_estate",
+      "entry_id": "semantic_aliases",
+      "description": "Keyword entry 'semantic_aliases' has no matching DB entry"
+    }
+  ]
 }
